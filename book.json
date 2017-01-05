@@ -2,7 +2,7 @@
     "plugins": [ "versions" ],
     "pluginsConfig": {
         "versions": {
-            "gitbookConfigURL": "https://raw.githubusercontent.com/rackt/history/gh-pages/book.json",
+            "gitbookConfigURL": "https://raw.githubusercontent.com/GeekyAnts/native-base-v2-docs/master/book.json",
             "options": [
                 {
                     "value": "https://rackt.github.io/history/v1.3.0/",
