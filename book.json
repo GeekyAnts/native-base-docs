@@ -1,1 +1,25 @@
-{"plugins":["versions"],"pluginsConfig":{"versions":{"gitbookConfigURL":"https://raw.githubusercontent.com/GeekyAnts/native-base-v2-docs/master/book.json","options":[{"value":"http://nativebase.io/docs-v2/","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-v2-docs/[object Object]/_book/index.html","text":"master"},{"value":"http://rawgit.com/GeekyAnts/native-base-v2-docs/[object Object]/_book/index.html","text":"v0.5.9"}]}},"options":[{"value":"http://nativebase.io/docs-v2/","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-v2-docs/[object Object]/_book/index.html","text":{"name":"master","commit":{"sha":"6e827499bebc5ede97b568685bdd19c3ccbc30d9","url":"https://api.github.com/repos/GeekyAnts/native-base-v2-docs/commits/6e827499bebc5ede97b568685bdd19c3ccbc30d9"}}},{"value":"http://rawgit.com/GeekyAnts/native-base-v2-docs/[object Object]/_book/index.html","text":{"name":"v0.5.9","commit":{"sha":"ac1c4043dc7c4a14085b7e33ac542a6d7dab4d0c","url":"https://api.github.com/repos/GeekyAnts/native-base-v2-docs/commits/ac1c4043dc7c4a14085b7e33ac542a6d7dab4d0c"}}},{"value":"http://rawgit.com/GeekyAnts/native-base-v2-docs/undefined/_book/index.html"}]}
+{
+    "plugins": [
+        "versions"
+    ],
+    "pluginsConfig": {
+        "versions": {
+            "gitbookConfigURL": "https://raw.githubusercontent.com/GeekyAnts/native-base-v2-docs/master/book.json",
+            "options": [
+                {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
+                    "text": "master",
+                    "selected": true
+                },
+                {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
+                    "text": "master"
+                },
+                {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/v0.5.9/_book/index.html",
+                    "text": "v0.5.9"
+                }
+            ]
+        }
+    }
+}
