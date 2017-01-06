@@ -20,7 +20,8 @@
                 },
                 {
                   "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
-                  "text": "master"
+                  "text": "-- select version --",
+                  "selected": false
                 }
             ]
         }
