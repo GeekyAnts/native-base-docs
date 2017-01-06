@@ -12,10 +12,6 @@
                     "selected": true
                 },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
-                    "text": "master"
-                },
-                {
                     "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/v0.5.9/_book/index.html",
                     "text": "v0.5.9"
                 }
