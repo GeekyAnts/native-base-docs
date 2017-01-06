@@ -20,18 +20,18 @@ var populateBookJson = (branches) => {
   const bookJsonContents = require('./book.json');
 
   bookJsonContents.pluginsConfig.versions.options = [{
-      value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html',
-      text: 'master',
+      value: '#',
+      text: 'Select version',
       selected: true
   }];
 
   for(let i=0; i<branches.length; i++) {
-    if(branches[i] !== 'master') {
+    // if(branches[i].name !== 'master') {
       bookJsonContents.pluginsConfig.versions.options.push({
           value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/' + branches[i].name + '/_book/index.html',
           text: branches[i].name
       });
-    }
+    // }
   }
 
   fs.writeFileSync(__dirname + '/book.json', JSON.stringify(bookJsonContents, null, 4), {encoding: 'utf8'});
