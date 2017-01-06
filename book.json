@@ -8,8 +8,7 @@
             "options": [
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
-                    "text": "-- select version --",
-                    "selected": true
+                    "text": "-- select version --"
                 },
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
