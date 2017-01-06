@@ -21,7 +21,7 @@ var populateBookJson = (branches) => {
 
   bookJsonContents.pluginsConfig.versions.options = [{
       value: '#',
-      text: 'Select version',
+      text: '-- select version --',
       selected: true
   }];
 
