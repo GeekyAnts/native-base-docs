@@ -7,7 +7,7 @@
             "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/book.json",
             "options": [
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
+                    "value": "http://nativebase.io/docs-v2/",
                     "text": "latest"
                 },
                 {
