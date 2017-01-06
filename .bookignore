@@ -1,2 +1,3 @@
 populateBookJson.js
 .gitignore
+.bookignore

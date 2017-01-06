@@ -18,23 +18,29 @@ var populateBookJson = (branches) => {
   spawnSync('git', ['checkout', 'master'], {stdio: 'inherit'});
 
   const bookJsonContents = require('./book.json');
-  console.log('bookJsonContents', bookJsonContents);
 
-  bookJsonContents.options = [{
-      "value": "http://nativebase.io/docs-v2/",
-      "text": "latest"
+  bookJsonContents.pluginsConfig.versions.options = [{
+      value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html',
+      text: 'master',
+      selected: true
   }];
 
-  for(let i=0; i<=branches.length; i++) {
+  for(let i=0; i<branches.length; i++) {
     if(branches[i] !== 'master') {
-      bookJsonContents.options.push({
-          value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/' + branches[i] + '/_book/index.html',
-          text: branches[i]
+      bookJsonContents.pluginsConfig.versions.options.push({
+          value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/' + branches[i].name + '/_book/index.html',
+          text: branches[i].name
       });
     }
   }
 
-  fs.writeFileSync(__dirname + '/book.json', JSON.stringify(bookJsonContents), {encoding: 'utf8'});
+  fs.writeFileSync(__dirname + '/book.json', JSON.stringify(bookJsonContents, null, 4), {encoding: 'utf8'});
+
+  spawnSync('gitbook', ['build'], {stdio: 'inherit'});
+  spawnSync('git', ['add', 'book.json'], {stdio: 'inherit'});
+  spawnSync('git', ['add', '_book'], {stdio: 'inherit'});
+  spawnSync('git', ['commit', '-m', 'rebuild book with all versions'], {stdio: 'inherit'});
+  spawnSync('git', ['push', 'origin', 'master'], {stdio: 'inherit'});
 }
 
 var req = https.request(options, (res) => {
@@ -49,6 +55,7 @@ var req = https.request(options, (res) => {
 
   res.on('end', function () {
     try {
+      console.log('responseData', responseData);
       populateBookJson(JSON.parse(responseData));
     } catch(err) {
       console.log('error: ', err);
