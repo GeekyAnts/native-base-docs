@@ -1,3 +1,5 @@
+'use strict';
+
 const https = require('https');
 const fs = require('fs');
 const spawnSync = require('child_process').spawnSync;
@@ -24,8 +26,8 @@ var populateBookJson = (branches) => {
   for(let i=0; i<branches.length; i++) {
     if(branches[i].name === 'master') {
       bookJsonContents.pluginsConfig.versions.options.push({
-          value: 'http://rawgit.com/GeekyAnts/native-base-docs/latest/_book/index.html',
-          text: branches[i].name
+          value: 'http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html',
+          text: 'latest'
       });
     } else {
       bookJsonContents.pluginsConfig.versions.options.push({
