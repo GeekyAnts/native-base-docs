@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -1268,7 +1272,7 @@
 <li><a href="#unrecognized-font">Unrecognized font family ionicons</a></li>
 <li><a href="#icons-peer-installation-failed">react-native-vector-icons peer installation failed</a></li>
 <li><a href="#override-style">How to override style in NativeBase?</a></li>
-<li><a href="#general-build-tools">How do I add events with the components?</a></li>
+<li><a href="#add-events">How do I add events with the components?</a></li>
 <li><a href="#general-when-to-use">None of the above, I have a different error</a></li>
 <li><a href="#general-only-react">How to customize components of NativeBase?</a></li>
 <li><a href="#general-build-tools">I want list of icons with their names used in NativeBase</a></li>
@@ -1346,17 +1350,6 @@
 
 <p><a id="override-style"></a></p>
 <h4 id="how-to-override-style-in-nativebase">How to override style in NativeBase?</h4>
-<div class="panel-heading">
-    <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-5" style="color:Black" onmouseover="this.style.color=&apos;#00c497&apos;" onmouseout="this.style.color=&apos;#000000&apos;">
-        <h4 class="panel-title" id="
-------------how-to-override-style-in-nativebase
-------------
---------">
-            How to override style in NativeBase?
-            <span class="pull-right glyphicon glyphicon-resize-vertical"></span>
-        </h4>
-    </a>
-</div>
 <div id="faq-5" class="panel-collapse collapse">
     <div class="panel-body">
         I didn&apos;t find a way to override style. <br>
@@ -1368,8 +1361,28 @@
         Hence with any component you can pass the style property which will be merged to the default style of that component.<br>
 
         Example: <pre><code class="language-jsx">&lt;Button style={{backgroundColor: <span class="hljs-string">&apos;#FF0000&apos;</span>}}&gt;
-Click me!
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span></code></pre>
+        Click me!
+        <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span></code></pre>
+    </div>
+</div>
+
+
+<p><a id="add-events"></a></p>
+<h4 id="how-do-i-add-events-with-the-components">How do I add events with the components?</h4>
+<div id="faq-6" class="panel-collapse collapse">
+    <div class="panel-body">
+        What events are available for the components?<br>
+        Example buttons, list items etc.
+    </div>
+    <div class="panel-footer">
+        <b>Solution:</b> <br>
+        The <a href="http://nativebase.io/" target="_blank">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br>
+
+        <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can just use the <code>onPress</code> callback function for event handling.<br><br>
+
+        Refer the
+        <a href="">cheatsheet</a>
+        for more details.
     </div>
 </div>
 
@@ -1415,7 +1428,7 @@ Click me!
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.10","depth":1,"next":{"title":"Cheat Sheet","level":"1.11","depth":1,"path":"docs/ChaetSheet.md","ref":"docs/ChaetSheet.md","articles":[]},"previous":{"title":"Contribute","level":"1.9","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["video","livereload"],"pluginsConfig":{"video":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/faq/FAQs.md","mtime":"2017-01-09T10:14:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T10:14:36.854Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.10","depth":1,"next":{"title":"Cheat Sheet","level":"1.11","depth":1,"path":"docs/ChaetSheet.md","ref":"docs/ChaetSheet.md","articles":[]},"previous":{"title":"Contribute","level":"1.9","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","livereload"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/test/_book/index.html","text":"test"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.9/_book/index.html","text":"v0.5.9"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/faq/FAQs.md","mtime":"2017-01-09T10:54:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T10:47:39.501Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1423,6 +1436,10 @@ Click me!
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
