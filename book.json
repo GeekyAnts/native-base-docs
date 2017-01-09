@@ -4,22 +4,22 @@
     ],
     "pluginsConfig": {
         "versions": {
-            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/book.json",
+            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
+                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html",
                     "text": "latest"
                 },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/test/_book/index.html",
+                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/test/_book/index.html",
                     "text": "test"
                 },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/v0.5.9/_book/index.html",
+                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/v0.5.9/_book/index.html",
                     "text": "v0.5.9"
                 },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html",
+                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html",
                     "text": "-- select version --",
                     "selected": false
                 }

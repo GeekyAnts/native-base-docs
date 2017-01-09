@@ -5,7 +5,7 @@ const spawnSync = require('child_process').spawnSync;
 var options = {
   hostname: 'api.github.com',
   port: 443,
-  path: '/repos/GeekyAnts/native-base-v2-docs/branches',
+  path: '/repos/GeekyAnts/native-base-docs/branches',
   method: 'GET',
   headers: {
     'User-Agent': 'Mozilla /5.0 (Compatible MSIE 9.0;Windows NT 6.1;WOW64; Trident/5.0)',
@@ -24,19 +24,19 @@ var populateBookJson = (branches) => {
   for(let i=0; i<branches.length; i++) {
     if(branches[i].name === 'master') {
       bookJsonContents.pluginsConfig.versions.options.push({
-          value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/latest/_book/index.html',
+          value: 'http://rawgit.com/GeekyAnts/native-base-docs/latest/_book/index.html',
           text: branches[i].name
       });
     } else {
       bookJsonContents.pluginsConfig.versions.options.push({
-          value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/' + branches[i].name + '/_book/index.html',
+          value: 'http://rawgit.com/GeekyAnts/native-base-docs/' + branches[i].name + '/_book/index.html',
           text: branches[i].name
       });
     }
   }
 
   bookJsonContents.pluginsConfig.versions.options.push({
-    value: 'http://rawgit.com/GeekyAnts/native-base-v2-docs/master/_book/index.html',
+    value: 'http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html',
     text: '-- select version --',
     selected: false
   });
