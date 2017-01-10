@@ -1,18 +1,24 @@
-<div class="section" id="tabs">
+# Tabs
 
-    <h2>Tabs</h2>
+Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br />
+*Replacing Component: [react-native-scrollable-tab-view <code>&lt;ScrollableTabView></code>](https://github.com/brentvatne/react-native-scrollable-tab-view)*
 
-    <p style="padding-bottom: 15px;">
-        Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br />
-        <i>
-            Replacing Component:
-            <a href="https://github.com/brentvatne/react-native-scrollable-tab-view">react-native-scrollable-tab-view
-                <code>&lt;ScrollableTabView></code>
-            </a>
-        </i>
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/tabs.gif')}}" alt="" /></th>
+      <th><img height="470" width="270" src="{{('../assets/android/components/tabs.gif')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Tabs } from 'native-base';
@@ -33,10 +39,11 @@ export default class TabsExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class="table table-bordered">
+
+**Configuration**
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -53,6 +60,4 @@ export default class TabsExample extends Component {
                 <td>Name for each tab</td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

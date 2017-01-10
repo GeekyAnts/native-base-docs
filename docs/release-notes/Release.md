@@ -1,20 +1,20 @@
-<h1 style="padding-bottom: 10px">Release Notes</h1>
-        {% include "./0-5-0/0-5-13.md" %}
-        {% include "./0-5-0/0-5-12.md" %}
-        {% include "./0-5-0/0-5-11.md" %}
-        {% include "./0-5-0/0-5-10.md" %}
-        {% include "./0-5-0/0-5-9.md" %}
-        {% include "./0-5-0/0-5-8.md" %}
-        {% include "./0-5-0/0-5-7.md" %}
-        {% include "./0-5-0/0-5-6.md" %}
-        {% include "./0-5-0/0-5-5.md" %}
-        {% include "./0-5-0/0-5-4.md" %}
-        {% include "./0-5-0/0-5-3.md" %}
-        {% include "./0-5-0/0-5-2.md" %}
-        {% include "./0-5-0/0-5-0.md" %}
-        {% include "./0-4-0/0-4-6.md" %}
-        {% include "./0-3-0/0-3-1.md" %}
-        {% include "./0-3-0/0-3-0.md" %}
-        {% include "./0-2-0/0-2-1.md" %}
-        {% include "./0-2-0/0-2-0.md" %}
-        {% include "./0-1-0/0-1-0.md" %}
+# Release Notes
+{% include "./0-5-0/0-5-13.md" %}
+{% include "./0-5-0/0-5-12.md" %}
+{% include "./0-5-0/0-5-11.md" %}
+{% include "./0-5-0/0-5-10.md" %}
+{% include "./0-5-0/0-5-9.md" %}
+{% include "./0-5-0/0-5-8.md" %}
+{% include "./0-5-0/0-5-7.md" %}
+{% include "./0-5-0/0-5-6.md" %}
+{% include "./0-5-0/0-5-5.md" %}
+{% include "./0-5-0/0-5-4.md" %}
+{% include "./0-5-0/0-5-3.md" %}
+{% include "./0-5-0/0-5-2.md" %}
+{% include "./0-5-0/0-5-0.md" %}
+{% include "./0-4-0/0-4-6.md" %}
+{% include "./0-3-0/0-3-1.md" %}
+{% include "./0-3-0/0-3-0.md" %}
+{% include "./0-2-0/0-2-1.md" %}
+{% include "./0-2-0/0-2-0.md" %}
+{% include "./0-1-0/0-1-0.md" %}

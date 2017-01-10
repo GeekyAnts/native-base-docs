@@ -1,12 +1,24 @@
-<div class="section" id="cardOnClick">
+#### Card OnClick
 
-    <h4>Card OnClick</h4>
+To navigate between screens on click of a card, include <code>button</code> prop with the <code>&lt;CardItem></code> component.
 
-    <p style="padding-bottom: 15px;">
-        To navigate between screens on click of a card, include <code>button</code> prop with the <code>&lt;CardItem></code> component.
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/card-onclick.gif')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/card-onclick.gif')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text, Thumbnail } from 'native-base';
@@ -26,6 +38,4 @@ export default class CardOnClickExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

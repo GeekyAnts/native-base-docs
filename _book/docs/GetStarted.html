@@ -21,6 +21,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -64,7 +72,7 @@
     <link rel="next" href="components/" />
     
     
-    <link rel="prev" href="introduction/WhatsNew.html" />
+    <link rel="prev" href="introduction/" />
     
 
     </head>
@@ -120,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="introduction/WhatisNB.html">
+        <li class="chapter " data-level="1.2.1" data-path="introduction/">
             
-                <a href="introduction/WhatisNB.html">
+                <a href="introduction/#WhatisNB">
             
                     
                     What is NativeBase?
@@ -133,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="introduction/WhyNB.html">
+        <li class="chapter " data-level="1.2.2" data-path="introduction/">
             
-                <a href="introduction/WhyNB.html">
+                <a href="introduction/#WhyNB">
             
                     
                     Why NativeBase?
@@ -146,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="introduction/WhatsNew.html">
+        <li class="chapter " data-level="1.2.3" data-path="introduction/">
             
-                <a href="introduction/WhatsNew.html">
+                <a href="introduction/#WhatsNew">
             
                     
-                    What's New in v2.0.0?
+                    What's New in v0.5.18?
             
                 </a>
             
@@ -1265,51 +1273,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="quick-setup">
+                                <h1 id="quick-setup">Quick Setup</h1>
+<p>To have <a href="http://nativebase.io/" target="_blank">NativeBase</a> components running onto your native apps, all you need to do is create a fresh <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> project and install the NativeBase command line tools.</p>
+<p><strong>System Requirements</strong></p>
+<ul>
+<li>Globally installed <a href="https://nodejs.org/en/" target="_blank">node</a> &gt;= 4.0</li>
+<li>Globally installed <a href="https://www.npmjs.com/" target="_blank">npm</a> &gt;= 3.0</li>
+<li>Globally installed <a href="https://github.com/rnpm/rnpm" target="_blank">rnpm</a> <em>(only if React Native version &lt; 0.29)</em></li>
+<li>Globally installed <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">React Native CLI</a> which allow you to easily create and initialize projects.   </li>
+<li><a href="Compatibility.html">Click here</a> to know about React Native version compatibility with NativeBase.</li>
+</ul>
+<p><em>Create React Native project</em></p>
+<pre><code class="lang-js">react-native init AwesomeNativeBase
 
-    <h3 id="quick-setup">Quick Setup</h3>
-
-    <p style="padding-bottom: 10px;">
-        To have <a href="http://nativebase.io/" target="_blank">NativeBase</a> components running onto your native apps, all you need to do is create a fresh <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> project and install the NativeBase command line tools.
-    </p>
-
-    <b>System Requirements</b>
-    <ul style="line-height: 1.9em; padding-bottom: 10px;">
-        <li>
-            Globally installed <a href="https://nodejs.org/en/" target="_blank">node</a> &gt;= 4.0
-        </li>
-        <li>
-            Globally installed <a href="https://www.npmjs.com/" target="_blank">npm</a> &gt;= 3.0
-        </li>
-        <li>
-            Globally installed <a href="https://github.com/rnpm/rnpm" target="_blank">rnpm</a>
-            <font size="2">
-                <i>
-                    (only if React Native version &lt; 0.29)
-                </i>
-            </font>
-        </li>
-        <li>
-            Globally installed <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">React Native CLI</a> which allow you to easily create and initialize projects.   
-        </li>
-        <li>
-            <a href="Compatibility.html">Click here</a> to know about React Native version compatibility with NativeBase.
-        </li>
-    </ul>
-
-
-
-    <font size="2"><i>Create React Native project</i></font>
-
-<pre class="command-line language-xxx" data-output="2-23"><code>react-native init AwesomeNativeBase
-
-This will walk you through creating a new React Native project in /User/localhost/AwesomeNativeBase
-Installing react-native package from npm...
-Setting up new React Native app in /User/localhost/AwesomeNativeBase
+This will walk you through creating a <span class="hljs-keyword">new</span> React Native project <span class="hljs-keyword">in</span> /User/localhost/AwesomeNativeBase
+Installing react-native package <span class="hljs-keyword">from</span> npm...
+Setting up <span class="hljs-keyword">new</span> React Native app <span class="hljs-keyword">in</span> /User/localhost/AwesomeNativeBase
 Installing React...
 Installing Jest...
-AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-&#x2514;&#x2500;&#x2500; react@15.3.2
+AwesomeNativeBase@<span class="hljs-number">0.0</span><span class="hljs-number">.1</span> /User/localhost/AwesomeNativeBase
+&#x2514;&#x2500;&#x2500; react@<span class="hljs-number">15.3</span><span class="hljs-number">.2</span>
 .  .  .
 .  .  .
 
@@ -1317,166 +1300,105 @@ To run your app on iOS:
    cd /User/localhost/AwesomeNativeBase
    react-native run-ios
    - or -
-   Open /User/localhost/AwesomeNativeBase/ios/AwesomeNativeBase.xcodeproj in Xcode
+   Open /User/localhost/AwesomeNativeBase/ios/AwesomeNativeBase.xcodeproj <span class="hljs-keyword">in</span> Xcode
    Hit the Run button
 To run your app on Android:
    Have an Android emulator running (quickest way to get started), or a device connected
    cd /User/localhost/AwesomeNativeBase
    react-native run-android
 
-cd AwesomeNativeBase</code></pre><br>
+cd AwesomeNativeBase
+</code></pre>
+<p><em>Install NativeBase</em></p>
+<pre><code class="lang-js">npm install native-base --save
 
-
-    <font size="2"><i>Install NativeBase</i></font>
-
-<pre class="command-line language-xxx" data-output="2-27"><code>npm install native-base --save
-
-AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-&#x2514;&#x2500;&#x252C; native-base@0.5.13
-  &#x251C;&#x2500;&#x2500; clamp@1.0.1
-  &#x251C;&#x2500;&#x252C; color@0.11.4
-  &#x2502; &#x251C;&#x2500;&#x252C; color-convert@1.7.0
-  &#x2502; &#x2502; &#x2514;&#x2500;&#x2500; color-name@1.1.1
-  &#x2502; &#x2514;&#x2500;&#x2500; color-string@0.3.0
-  &#x251C;&#x2500;&#x2500; lodash@4.11.2
-  &#x251C;&#x2500;&#x2500; react-native-checkbox@1.0.15
-  &#x251C;&#x2500;&#x252C; react-native-easy-grid@0.1.5
-  &#x2502; &#x2514;&#x2500;&#x2500; lodash@4.16.6
-  &#x251C;&#x2500;&#x2500; react-native-keyboard-aware-scroll-view@0.2.0
-  &#x2514;&#x2500;&#x252C; react-native-vector-icons@2.1.0
-    &#x251C;&#x2500;&#x2500; lodash@4.16.6
-    &#x2514;&#x2500;&#x252C; yargs@4.8.1
-      &#x251C;&#x2500;&#x2500; cliui@3.2.0
-      &#x251C;&#x2500;&#x2500; window-size@0.2.0
-      &#x2514;&#x2500;&#x252C; yargs-parser@2.4.1
-        &#x2514;&#x2500;&#x2500; camelcase@3.0.0</code></pre><br>
-
-    <p>
-        You&apos;ve successfully setup <a href="http://nativebase.io/" target="_blank">NativeBase</a> with your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> app. Your React Native app is now all set to run on iOS and Android simulator.
-    </p>
-</div>
-
-
-
-<p><br></p>
-<div id="installing-peer-dependencies" style="padding-top: 35px">
-
-    <h3 id="installing-peer-dependencies">Installing Peer Dependencies</h3>
-
-    <p style="padding-bottom: 15px;">
-        The peer dependencies included from any npm package does not automatically get installed. Your application will need to depend on it explicitly. <a href="http://nativebase.io/" target="_blank">NativeBase</a> includes <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a> as one of its peer dependency. So here we help you with the setup.
-    </p>
-
-    <h4 id="ios">iOS</h4>
-    <ul style="padding-bottom: 10px;">
-        <li>
-            <b>On Terminal</b>
-        </li>
-        <ul style="padding-bottom: 10px">
-            <li>
-                React Native &lt; 0.29<br>
-                <code>$rnpm link</code>
-            </li>
-            <li>
-                React Native &gt;= 0.29<br>
-                <code>$react-native link react-native-vector-icons</code>
-            </li>
-        </ul>
-
-
-
-        <li>
-            <b>Manually</b><br>
-            If you want to use any of the bundled icons, you need to add the icon fonts to your Xcode project. Follow these steps:
-        </li>
-        <ul>
-            <li>
-                Right click on you project in Xcode and select <b>Add files to &quot;AwesomeNativeBase&quot;</b>.
-            </li>
-            <li>
-                Browse to <code>node_modules/react-native-vector-icons</code> and select the folder <b>Fonts</b>.<br>
-                Make sure your app is checked under <b>&quot;Add to targets&quot;</b> and that <b>&quot;Create groups&quot;</b> is checked if you add the whole folder.
-            </li>
-            <li>
-                Edit <b>Info.plist</b> and add a property called <b>Fonts provided by application</b> (or <b>UIAppFonts</b> if Xcode won&apos;t autocomplete/not using Xcode) and type in the files you just added.<br>
-                This is how it looks:<br>
-                <img class="img-fix" src="assets/installation.png" alt="" style="padding-top: 10px; padding-bottom:10px">
-            </li>
-            <li>
-                You need to recompile your project after adding new fonts, also ensure that they also appear under <b>Copy Bundle Resources</b> in <b>Build Phases</b>.
-            </li>
-        </ul>
-    </ul>
-
-
-
-
-
-
-    <h4 id="android">Android</h4>
-    <ul>
-       <li>
-            <b>On Terminal</b>
-        </li>
-        <ul style="padding-bottom: 10px">
-            <li>
-                React Native &lt; 0.29<br>
-                <code>$rnpm link</code>
-            </li>
-            <li>
-                React Native &gt;= 0.29<br>
-                <code>$react-native link react-native-vector-icons</code>
-            </li>
-        </ul>
-
-
-
-        <li>
-            <b>With Gradle</b>
-        </li>
-        <ul>
-            <li style="padding-bottom: 10px">
-                Edit <code>android/app/build.gradle</code> and add the following:<br>
-<pre><code class="language-groovy">apply <span class="hljs-string">from:</span> <span class="hljs-string">&quot;../../node_modules/react-native-vector-icons/fonts.gradle&quot;</span></code></pre>
-            </li>
-
-            <li style="padding-bottom: 20px">
-                To customize the files being copied, add the following instead:<br>
+AwesomeNativeBase@<span class="hljs-number">0.0</span><span class="hljs-number">.1</span> /User/localhost/AwesomeNativeBase
+&#x2514;&#x2500;&#x252C; native-base@<span class="hljs-number">0.5</span><span class="hljs-number">.13</span>
+  &#x251C;&#x2500;&#x2500; clamp@<span class="hljs-number">1.0</span><span class="hljs-number">.1</span>
+  &#x251C;&#x2500;&#x252C; color@<span class="hljs-number">0.11</span><span class="hljs-number">.4</span>
+  &#x2502; &#x251C;&#x2500;&#x252C; color-convert@<span class="hljs-number">1.7</span><span class="hljs-number">.0</span>
+  &#x2502; &#x2502; &#x2514;&#x2500;&#x2500; color-name@<span class="hljs-number">1.1</span><span class="hljs-number">.1</span>
+  &#x2502; &#x2514;&#x2500;&#x2500; color-string@<span class="hljs-number">0.3</span><span class="hljs-number">.0</span>
+  &#x251C;&#x2500;&#x2500; lodash@<span class="hljs-number">4.11</span><span class="hljs-number">.2</span>
+  &#x251C;&#x2500;&#x2500; react-native-checkbox@<span class="hljs-number">1.0</span><span class="hljs-number">.15</span>
+  &#x251C;&#x2500;&#x252C; react-native-easy-grid@<span class="hljs-number">0.1</span><span class="hljs-number">.5</span>
+  &#x2502; &#x2514;&#x2500;&#x2500; lodash@<span class="hljs-number">4.16</span><span class="hljs-number">.6</span>
+  &#x251C;&#x2500;&#x2500; react-native-keyboard-aware-scroll-view@<span class="hljs-number">0.2</span><span class="hljs-number">.0</span>
+  &#x2514;&#x2500;&#x252C; react-native-vector-icons@<span class="hljs-number">2.1</span><span class="hljs-number">.0</span>
+    &#x251C;&#x2500;&#x2500; lodash@<span class="hljs-number">4.16</span><span class="hljs-number">.6</span>
+    &#x2514;&#x2500;&#x252C; yargs@<span class="hljs-number">4.8</span><span class="hljs-number">.1</span>
+      &#x251C;&#x2500;&#x2500; cliui@<span class="hljs-number">3.2</span><span class="hljs-number">.0</span>
+      &#x251C;&#x2500;&#x2500; <span class="hljs-built_in">window</span>-size@<span class="hljs-number">0.2</span><span class="hljs-number">.0</span>
+      &#x2514;&#x2500;&#x252C; yargs-parser@<span class="hljs-number">2.4</span><span class="hljs-number">.1</span>
+        &#x2514;&#x2500;&#x2500; camelcase@<span class="hljs-number">3.0</span><span class="hljs-number">.0</span>
+</code></pre>
+<p>You&apos;ve successfully setup <a href="http://nativebase.io/" target="_blank">NativeBase</a> with your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> app. Your React Native app is now all set to run on iOS and Android simulator.</p>
+<h3 id="installing-peer-dependencies">Installing Peer Dependencies</h3>
+<p>The peer dependencies included from any npm package does not automatically get installed. Your application will need to depend on it explicitly. <a href="http://nativebase.io/" target="_blank">NativeBase</a> includes <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a> as one of its peer dependency. So here we help you with the setup.</p>
+<h4 id="ios">iOS</h4>
+<ul>
+<li><strong>On Terminal</strong><ul>
+<li>React Native &lt; 0.29<pre><code class="lang-js">$rnpm link
+</code></pre>
+</li>
+<li>React Native &gt;= 0.29<pre><code class="lang-js">$react-native link react-native-vector-icons
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Manually</strong>
+If you want to use any of the bundled icons, you need to add the icon fonts to your Xcode project. Follow these steps:</p>
+<ul>
+<li>Right click on you project in Xcode and select <strong>Add files to &quot;AwesomeNativeBase&quot;</strong>.</li>
+<li>Browse to <code>node_modules/react-native-vector-icons</code> and select the folder <strong>Fonts</strong>
+Make sure your app is checked under <strong>&quot;Add to targets&quot;</strong> and that <strong>&quot;Create groups&quot;</strong> is checked if you add the whole folder.</li>
+<li><p>Edit <strong>Info.plist</strong> and add a property called <strong>Fonts provided by application</strong> (or <strong>UIAppFonts</strong> if Xcode won&apos;t       autocomplete/not using Xcode) and type in the files you just added.</p>
+<p>This is how it looks:
+<img class="img-fix" src="assets/installation.png" alt="" style="padding-top: 10px; padding-bottom:10px"></p>
+</li>
+<li>You need to recompile your project after adding new fonts, also ensure that they also appear under <strong>Copy Bundle Resources</strong> in <strong>Build Phases</strong>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="android">Android</h4>
+<ul>
+<li><strong>On Terminal</strong><ul>
+<li>React Native &lt; 0.29<pre><code class="lang-js">$rnpm link
+</code></pre>
+</li>
+<li>React Native &gt;= 0.29<pre><code class="lang-js">$react-native link react-native-vector-icons&lt;/code&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>With Gradle</strong><ul>
+<li>Edit <code>android/app/build.gradle</code> and add the following:<pre><code class="lang-js">apply <span class="hljs-keyword">from</span>: <span class="hljs-string">&quot;../../node_modules/react-native-vector-icons/fonts.gradle&quot;</span>
+</code></pre>
+</li>
+<li>To customize the files being copied, add the following instead:
 <pre><code class="language-groovy">project.ext.vectoricons = [
-<span class="hljs-symbol">    iconFontNames:</span> [ <span class="hljs-string">&apos;MaterialIcons.ttf&apos;</span>, <span class="hljs-string">&apos;EvilIcons.ttf&apos;</span> ]             <span class="hljs-comment">// font filenames</span>
-]
-
-apply <span class="hljs-string">from:</span> <span class="hljs-string">&quot;../../node_modules/react-native-vector-icons/fonts.gradle&quot;</span></code></pre>
-            </li>
-        </ul>
-
-
-
-
-        <li>
-            <b>Manually</b></li>
-        <ul>
-            <li>
-                Copy the contents in the <b>Fonts</b> folder to <code>android/app/src/main/assets/fonts</code>.
-            </li>
-
-            <li style="padding-bottom: 10px">
-                Edit <code>android/settings.gradle</code> and add the following:
-<pre><code class="language-groovy">include <span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>
-project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>).projectDir = <span class="hljs-keyword">new</span> File(rootProject.projectDir, <span class="hljs-string">&apos;../node_modules/react-native-vector-icons/android&apos;</span>)</code></pre>
-            </li>
-
-            <li style="padding-bottom: 10px">
-                Edit <code>android/app/build.gradle</code> and add the following:
-<pre><code class="language-groovy">dependencies {
-    .  .  .
-    compile project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
-}</code></pre>
-            </li>
-
-            <li style="padding-bottom: 10px">
-                React Native &lt; 0.29<br>
-                Edit <code>android/app/src/main/java/com/awesomenativebase/MainActivity.java</code> and add the following:
+<span class="hljs-string">iconFontNames:</span> [ <span class="hljs-string">&apos;MaterialIcons.ttf&apos;</span>, <span class="hljs-string">&apos;EvilIcons.ttf&apos;</span> ]             <span class="hljs-comment">// font filenames</span>
+]</code></pre></li>
+</ul>
+</li>
+</ul>
+<p>apply from: &quot;../../node_modules/react-native-vector-icons/fonts.gradle&quot;&lt;/code&gt;&lt;/pre&gt;</p>
+<ul>
+<li><p><strong>Manually</strong></p>
+<ul>
+<li>Copy the contents in the <strong>Fonts</strong> folder to <code>android/app/src/main/assets/fonts</code>.</li>
+<li>Edit <code>android/settings.gradle</code> and add the following:<pre><code class="lang-js">include <span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>
+project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>).projectDir = <span class="hljs-keyword">new</span> File(rootProject.projectDir, <span class="hljs-string">&apos;../node_modules/react-native-vector-icons/android&apos;</span>)
+</code></pre>
+</li>
+<li>Edit <code>android/app/build.gradle</code> and add the following:<pre><code class="lang-js">dependencies {
+.  .  .
+compile project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
+}
+</code></pre>
+</li>
+<li><p>React Native &lt; 0.29</p>
+<p>Edit <code>android/app/src/main/java/com/awesomenativebase/MainActivity.java</code> and add the following:</p>
 <pre><code class="language-java"><span class="hljs-keyword">package</span> com.awesomenativebase;
 .  .  .
 <span class="hljs-keyword">import</span> com.oblador.vectoricons.VectorIconsPackage;
@@ -1494,12 +1416,9 @@ project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
         );
     }
 }
-</code></pre>
-            </li>
-
-            <li style="padding-bottom: 10px">
-                React Native &gt;= 0.29<br>
-                Edit <code>android/app/src/main/java/com/awesomenativebase/MainApplication.java</code> and add the following:
+</code></pre></li>
+<li><p>React Native &gt;= 0.29</p>
+<p>Edit <code>android/app/src/main/java/com/awesomenativebase/MainApplication.java</code> and add the following:</p>
 <pre><code class="language-java"><span class="hljs-keyword">package</span> com.awesomenativebase;
 .  .  .
 <span class="hljs-keyword">import</span> com.oblador.vectoricons.VectorIconsPackage;
@@ -1518,10 +1437,10 @@ project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
     }
 }
 </code></pre>
-            </li>
-        </ul>
-    </ul>
-</div>
+</li>
+</ul>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -1549,7 +1468,7 @@ project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
 
             
                 
-                <a href="introduction/WhatsNew.html" class="navigation navigation-prev " aria-label="Previous page: What's New in v2.0.0?">
+                <a href="introduction/#WhatsNew" class="navigation navigation-prev " aria-label="Previous page: What's New in v0.5.18?">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -1565,7 +1484,7 @@ project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"1.3","depth":1,"next":{"title":"Components","level":"1.4","depth":1,"path":"docs/components/README.md","ref":"docs/components/README.md","articles":[{"title":"Anatomy","level":"1.4.1","depth":2,"path":"docs/components/Anatomy.md","ref":"docs/components/Anatomy.md","articles":[{"title":"Header","level":"1.4.1.1","depth":3,"path":"docs/components/Header.md","ref":"docs/components/Header.md","articles":[]},{"title":"Content","level":"1.4.1.2","depth":3,"path":"docs/components/Content.md","ref":"docs/components/Content.md","articles":[]}]},{"title":"Badge","level":"1.4.2","depth":2,"path":"docs/components/Badge.md","ref":"docs/components/Badge.md","articles":[]},{"title":"Button","level":"1.4.3","depth":2,"path":"docs/components/button/Button.md","ref":"docs/components/button/Button.md","articles":[{"title":"Button Theme","level":"1.4.3.1","depth":3,"path":"docs/components/button/ButtonTheme.md","ref":"docs/components/button/ButtonTheme.md","articles":[]},{"title":"Block Button","level":"1.4.3.2","depth":3,"path":"docs/components/button/BlockButton.md","ref":"docs/components/button/BlockButton.md","articles":[]},{"title":"Rounded Button","level":"1.4.3.3","depth":3,"path":"docs/components/button/RoundButton.md","ref":"docs/components/button/RoundButton.md","articles":[]},{"title":"Icon Button","level":"1.4.3.4","depth":3,"path":"docs/components/button/IconButton.md","ref":"docs/components/button/IconButton.md","articles":[]},{"title":"Outline Button","level":"1.4.3.5","depth":3,"path":"docs/components/button/OutlineButton.md","ref":"docs/components/button/OutlineButton.md","articles":[]},{"title":"Transparent Button","level":"1.4.3.6","depth":3,"path":"docs/components/button/TransparentButton.md","ref":"docs/components/button/TransparentButton.md","articles":[]},{"title":"Button Size","level":"1.4.3.7","depth":3,"path":"docs/components/button/ButtonSize.md","ref":"docs/components/button/ButtonSize.md","articles":[]},{"title":"Disabled Button","level":"1.4.3.8","depth":3,"path":"docs/components/button/DisabledButton.md","ref":"docs/components/button/DisabledButton.md","articles":[]},{"title":"Capitalize Button Size","level":"1.4.3.9","depth":3,"path":"docs/components/button/CustomTextButton.md","ref":"docs/components/button/CustomTextButton.md","articles":[]}]},{"title":"Card","level":"1.4.4","depth":2,"path":"docs/components/card/Card.md","ref":"docs/components/card/Card.md","articles":[{"title":"Card Header and Footer","level":"1.4.4.1","depth":3,"path":"docs/components/card/HeaderAndFooter.md","ref":"docs/components/card/HeaderAndFooter.md","articles":[]},{"title":"Card List","level":"1.4.4.2","depth":3,"path":"docs/components/card/CardList.md","ref":"docs/components/card/CardList.md","articles":[]},{"title":"Card Image","level":"1.4.4.3","depth":3,"path":"docs/components/card/CardImage.md","ref":"docs/components/card/CardImage.md","articles":[]},{"title":"Card Showcase","level":"1.4.4.4","depth":3,"path":"docs/components/card/CardShowcase.md","ref":"docs/components/card/CardShowcase.md","articles":[]},{"title":"Card OnClick","level":"1.4.4.5","depth":3,"path":"docs/components/card/CardOnClick.md","ref":"docs/components/card/CardOnClick.md","articles":[]},{"title":"Dynamic Card","level":"1.4.4.6","depth":3,"path":"docs/components/card/DynamicCard.md","ref":"docs/components/card/DynamicCard.md","articles":[]}]},{"title":"Check Box","level":"1.4.5","depth":2,"path":"docs/components/CheckBox.md","ref":"docs/components/CheckBox.md","articles":[]},{"title":"Deck Swiper","level":"1.4.6","depth":2,"path":"docs/components/DeckSwiper.md","ref":"docs/components/DeckSwiper.md","articles":[]},{"title":"FABs","level":"1.4.7","depth":2,"path":"docs/components/FABs.md","ref":"docs/components/FABs.md","articles":[]},{"title":"Footer Tabs","level":"1.4.8","depth":2,"path":"docs/components/FooterTabs.md","ref":"docs/components/FooterTabs.md","articles":[]},{"title":"Form","level":"1.4.9","depth":2,"path":"docs/components/Form.md","ref":"docs/components/Form.md","articles":[]},{"title":"Icon","level":"1.4.10","depth":2,"path":"docs/components/Icon.md","ref":"docs/components/Icon.md","articles":[]},{"title":"InputGroup","level":"1.4.11","depth":2,"path":"docs/components/input-group/InputGroup.md","ref":"docs/components/input-group/InputGroup.md","articles":[{"title":"Regular Textbox","level":"1.4.11.1","depth":3,"path":"docs/components/input-group/Regular.md","ref":"docs/components/input-group/Regular.md","articles":[]},{"title":"Underlined Textbox","level":"1.4.11.2","depth":3,"path":"docs/components/input-group/Underlined.md","ref":"docs/components/input-group/Underlined.md","articles":[]},{"title":"Rounded Textbox","level":"1.4.11.3","depth":3,"path":"docs/components/input-group/Rounded.md","ref":"docs/components/input-group/Rounded.md","articles":[]},{"title":"Icon Textbox","level":"1.4.11.4","depth":3,"path":"docs/components/input-group/Icon.md","ref":"docs/components/input-group/Icon.md","articles":[]},{"title":"Success Input Textbox","level":"1.4.11.5","depth":3,"path":"docs/components/input-group/Success.md","ref":"docs/components/input-group/Success.md","articles":[]},{"title":"Error Input Textbox","level":"1.4.11.6","depth":3,"path":"docs/components/input-group/Error.md","ref":"docs/components/input-group/Error.md","articles":[]},{"title":"Disabled Textbox","level":"1.4.11.7","depth":3,"path":"docs/components/input-group/Disabled.md","ref":"docs/components/input-group/Disabled.md","articles":[]}]},{"title":"Layout","level":"1.4.12","depth":2,"path":"docs/components/Layout.md","ref":"docs/components/Layout.md","articles":[]},{"title":"List","level":"1.4.13","depth":2,"path":"docs/components/list/List.md","ref":"docs/components/list/List.md","articles":[{"title":"List Divider","level":"1.4.13.1","depth":3,"path":"docs/components/list/ListDivider.md","ref":"docs/components/list/ListDivider.md","articles":[]},{"title":"List Icon","level":"1.4.13.2","depth":3,"path":"docs/components/list/ListIcon.md","ref":"docs/components/list/ListIcon.md","articles":[]},{"title":"List Avatar","level":"1.4.13.3","depth":3,"path":"docs/components/list/ListAvatar.md","ref":"docs/components/list/ListAvatar.md","articles":[]},{"title":"List Thumbnail","level":"1.4.13.4","depth":3,"path":"docs/components/list/ListThumbnail.md","ref":"docs/components/list/ListThumbnail.md","articles":[]},{"title":"Dynamic List","level":"1.4.13.5","depth":3,"path":"docs/components/list/DynamicList.md","ref":"docs/components/list/DynamicList.md","articles":[]},{"title":"List OnClick","level":"1.4.13.6","depth":3,"path":"docs/components/list/ListOnClick.md","ref":"docs/components/list/ListOnClick.md","articles":[]}]},{"title":"Picker","level":"1.4.14","depth":2,"path":"docs/components/Picker.md","ref":"docs/components/Picker.md","articles":[]},{"title":"Radio Button","level":"1.4.15","depth":2,"path":"docs/components/RadioButton.md","ref":"docs/components/RadioButton.md","articles":[]},{"title":"Search Bar","level":"1.4.16","depth":2,"path":"docs/components/SearchBar.md","ref":"docs/components/SearchBar.md","articles":[]},{"title":"Spinner","level":"1.4.17","depth":2,"path":"docs/components/Spinner.md","ref":"docs/components/Spinner.md","articles":[]},{"title":"Tabs","level":"1.4.18","depth":2,"path":"docs/components/Tabs.md","ref":"docs/components/Tabs.md","articles":[]},{"title":"Thumbnail","level":"1.4.19","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},{"title":"Typography","level":"1.4.20","depth":2,"path":"docs/components/Typography.md","ref":"docs/components/Typography.md","articles":[]},{"title":"Ref","level":"1.4.21","depth":2,"path":"docs/components/Ref.md","ref":"docs/components/Ref.md","articles":[]}]},"previous":{"title":"What's New in v2.0.0?","level":"1.2.3","depth":2,"path":"docs/introduction/WhatsNew.md","ref":"docs/introduction/WhatsNew.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/GetStarted.md","mtime":"2017-01-09T07:39:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T11:11:40.700Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"1.3","depth":1,"next":{"title":"Components","level":"1.4","depth":1,"path":"docs/components/README.md","ref":"docs/components/README.md","articles":[{"title":"Anatomy","level":"1.4.1","depth":2,"path":"docs/components/Anatomy.md","ref":"docs/components/Anatomy.md","articles":[{"title":"Header","level":"1.4.1.1","depth":3,"path":"docs/components/Header.md","ref":"docs/components/Header.md","articles":[]},{"title":"Content","level":"1.4.1.2","depth":3,"path":"docs/components/Content.md","ref":"docs/components/Content.md","articles":[]}]},{"title":"Badge","level":"1.4.2","depth":2,"path":"docs/components/Badge.md","ref":"docs/components/Badge.md","articles":[]},{"title":"Button","level":"1.4.3","depth":2,"path":"docs/components/button/Button.md","ref":"docs/components/button/Button.md","articles":[{"title":"Button Theme","level":"1.4.3.1","depth":3,"path":"docs/components/button/ButtonTheme.md","ref":"docs/components/button/ButtonTheme.md","articles":[]},{"title":"Block Button","level":"1.4.3.2","depth":3,"path":"docs/components/button/BlockButton.md","ref":"docs/components/button/BlockButton.md","articles":[]},{"title":"Rounded Button","level":"1.4.3.3","depth":3,"path":"docs/components/button/RoundButton.md","ref":"docs/components/button/RoundButton.md","articles":[]},{"title":"Icon Button","level":"1.4.3.4","depth":3,"path":"docs/components/button/IconButton.md","ref":"docs/components/button/IconButton.md","articles":[]},{"title":"Outline Button","level":"1.4.3.5","depth":3,"path":"docs/components/button/OutlineButton.md","ref":"docs/components/button/OutlineButton.md","articles":[]},{"title":"Transparent Button","level":"1.4.3.6","depth":3,"path":"docs/components/button/TransparentButton.md","ref":"docs/components/button/TransparentButton.md","articles":[]},{"title":"Button Size","level":"1.4.3.7","depth":3,"path":"docs/components/button/ButtonSize.md","ref":"docs/components/button/ButtonSize.md","articles":[]},{"title":"Disabled Button","level":"1.4.3.8","depth":3,"path":"docs/components/button/DisabledButton.md","ref":"docs/components/button/DisabledButton.md","articles":[]},{"title":"Capitalize Button Size","level":"1.4.3.9","depth":3,"path":"docs/components/button/CustomTextButton.md","ref":"docs/components/button/CustomTextButton.md","articles":[]}]},{"title":"Card","level":"1.4.4","depth":2,"path":"docs/components/card/Card.md","ref":"docs/components/card/Card.md","articles":[{"title":"Card Header and Footer","level":"1.4.4.1","depth":3,"path":"docs/components/card/HeaderAndFooter.md","ref":"docs/components/card/HeaderAndFooter.md","articles":[]},{"title":"Card List","level":"1.4.4.2","depth":3,"path":"docs/components/card/CardList.md","ref":"docs/components/card/CardList.md","articles":[]},{"title":"Card Image","level":"1.4.4.3","depth":3,"path":"docs/components/card/CardImage.md","ref":"docs/components/card/CardImage.md","articles":[]},{"title":"Card Showcase","level":"1.4.4.4","depth":3,"path":"docs/components/card/CardShowcase.md","ref":"docs/components/card/CardShowcase.md","articles":[]},{"title":"Card OnClick","level":"1.4.4.5","depth":3,"path":"docs/components/card/CardOnClick.md","ref":"docs/components/card/CardOnClick.md","articles":[]},{"title":"Dynamic Card","level":"1.4.4.6","depth":3,"path":"docs/components/card/DynamicCard.md","ref":"docs/components/card/DynamicCard.md","articles":[]}]},{"title":"Check Box","level":"1.4.5","depth":2,"path":"docs/components/CheckBox.md","ref":"docs/components/CheckBox.md","articles":[]},{"title":"Deck Swiper","level":"1.4.6","depth":2,"path":"docs/components/DeckSwiper.md","ref":"docs/components/DeckSwiper.md","articles":[]},{"title":"FABs","level":"1.4.7","depth":2,"path":"docs/components/FABs.md","ref":"docs/components/FABs.md","articles":[]},{"title":"Footer Tabs","level":"1.4.8","depth":2,"path":"docs/components/FooterTabs.md","ref":"docs/components/FooterTabs.md","articles":[]},{"title":"Form","level":"1.4.9","depth":2,"path":"docs/components/Form.md","ref":"docs/components/Form.md","articles":[]},{"title":"Icon","level":"1.4.10","depth":2,"path":"docs/components/Icon.md","ref":"docs/components/Icon.md","articles":[]},{"title":"InputGroup","level":"1.4.11","depth":2,"path":"docs/components/input-group/InputGroup.md","ref":"docs/components/input-group/InputGroup.md","articles":[{"title":"Regular Textbox","level":"1.4.11.1","depth":3,"path":"docs/components/input-group/Regular.md","ref":"docs/components/input-group/Regular.md","articles":[]},{"title":"Underlined Textbox","level":"1.4.11.2","depth":3,"path":"docs/components/input-group/Underlined.md","ref":"docs/components/input-group/Underlined.md","articles":[]},{"title":"Rounded Textbox","level":"1.4.11.3","depth":3,"path":"docs/components/input-group/Rounded.md","ref":"docs/components/input-group/Rounded.md","articles":[]},{"title":"Icon Textbox","level":"1.4.11.4","depth":3,"path":"docs/components/input-group/Icon.md","ref":"docs/components/input-group/Icon.md","articles":[]},{"title":"Success Input Textbox","level":"1.4.11.5","depth":3,"path":"docs/components/input-group/Success.md","ref":"docs/components/input-group/Success.md","articles":[]},{"title":"Error Input Textbox","level":"1.4.11.6","depth":3,"path":"docs/components/input-group/Error.md","ref":"docs/components/input-group/Error.md","articles":[]},{"title":"Disabled Textbox","level":"1.4.11.7","depth":3,"path":"docs/components/input-group/Disabled.md","ref":"docs/components/input-group/Disabled.md","articles":[]}]},{"title":"Layout","level":"1.4.12","depth":2,"path":"docs/components/Layout.md","ref":"docs/components/Layout.md","articles":[]},{"title":"List","level":"1.4.13","depth":2,"path":"docs/components/list/List.md","ref":"docs/components/list/List.md","articles":[{"title":"List Divider","level":"1.4.13.1","depth":3,"path":"docs/components/list/ListDivider.md","ref":"docs/components/list/ListDivider.md","articles":[]},{"title":"List Icon","level":"1.4.13.2","depth":3,"path":"docs/components/list/ListIcon.md","ref":"docs/components/list/ListIcon.md","articles":[]},{"title":"List Avatar","level":"1.4.13.3","depth":3,"path":"docs/components/list/ListAvatar.md","ref":"docs/components/list/ListAvatar.md","articles":[]},{"title":"List Thumbnail","level":"1.4.13.4","depth":3,"path":"docs/components/list/ListThumbnail.md","ref":"docs/components/list/ListThumbnail.md","articles":[]},{"title":"Dynamic List","level":"1.4.13.5","depth":3,"path":"docs/components/list/DynamicList.md","ref":"docs/components/list/DynamicList.md","articles":[]},{"title":"List OnClick","level":"1.4.13.6","depth":3,"path":"docs/components/list/ListOnClick.md","ref":"docs/components/list/ListOnClick.md","articles":[]}]},{"title":"Picker","level":"1.4.14","depth":2,"path":"docs/components/Picker.md","ref":"docs/components/Picker.md","articles":[]},{"title":"Radio Button","level":"1.4.15","depth":2,"path":"docs/components/RadioButton.md","ref":"docs/components/RadioButton.md","articles":[]},{"title":"Search Bar","level":"1.4.16","depth":2,"path":"docs/components/SearchBar.md","ref":"docs/components/SearchBar.md","articles":[]},{"title":"Spinner","level":"1.4.17","depth":2,"path":"docs/components/Spinner.md","ref":"docs/components/Spinner.md","articles":[]},{"title":"Tabs","level":"1.4.18","depth":2,"path":"docs/components/Tabs.md","ref":"docs/components/Tabs.md","articles":[]},{"title":"Thumbnail","level":"1.4.19","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},{"title":"Typography","level":"1.4.20","depth":2,"path":"docs/components/Typography.md","ref":"docs/components/Typography.md","articles":[]},{"title":"Ref","level":"1.4.21","depth":2,"path":"docs/components/Ref.md","ref":"docs/components/Ref.md","articles":[]}]},"previous":{"title":"What's New in v0.5.18?","level":"1.2.3","depth":2,"anchor":"#WhatsNew","path":"docs/introduction/README.md","ref":"docs/introduction/README.md#WhatsNew","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","toggle-chapters","ace","livereload"],"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/GetStarted.md","mtime":"2017-01-10T06:24:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-10T13:20:25.445Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1576,6 +1495,22 @@ project(<span class="hljs-string">&apos;:react-native-vector-icons&apos;</span>)
     
         
         <script src="../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

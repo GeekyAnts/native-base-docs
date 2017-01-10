@@ -1,12 +1,24 @@
-<div class="section" id="cardList">
+#### Card List
 
-    <h4>Card List</h4>
+Include <code>CardItem</code> subsequently within <code>Card</code> to create a card with lists.
 
-    <p style="padding-bottom: 15px;">
-        Include <code>CardItem</code> subsequently within <code>Card</code> to create a card with lists.
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/card-list.png" alt="" /></th>
+          <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/card-list.png" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text, Icon } from 'native-base';
@@ -26,6 +38,4 @@ export default class CardListExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

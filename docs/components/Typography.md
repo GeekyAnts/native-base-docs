@@ -1,20 +1,24 @@
-<div class="section" id="typography">
+# Typography
 
-    <h2>Typography</h2>
+NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br />
+*Replacing Component for H1, H2, H3, Text: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Text></code>](https://facebook.github.io/react-native/docs/text.html)*
 
-    <p style="padding-bottom: 15px;">
-        NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.
-        <br />
-        <i>
-            Replacing Component for H1, H2, H3, Text:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="http://facebook.github.io/react-native/docs/text.html">
-                <code>&lt;Text></code>
-            </a>
-        </i>
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/typography.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/typography.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, H1, H2, H3, Text } from 'native-base';
@@ -32,10 +36,11 @@ export default class TypographyExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class="table table-bordered">
+
+**Configuration**
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -64,6 +69,4 @@ export default class TypographyExample extends Component {
                 <td>Heading tag &lt;H3></td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

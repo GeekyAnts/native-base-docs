@@ -1,10 +1,8 @@
 # Summary
-* [Introduction](README.md)
-
 * [Guide](/docs/introduction/README.md)
-  * [What is NativeBase?](/docs/introduction/WhatisNB.md)
-  * [Why NativeBase?](/docs/introduction/WhyNB.md)
-  * [What's New in v2.0.0?](/docs/introduction/WhatsNew.md)
+  * [What is NativeBase?](/docs/introduction/README.md#WhatisNB)
+  * [Why NativeBase?](/docs/introduction/README.md#WhyNB)
+  * [What's New in v0.5.18?](/docs/introduction/README.md#WhatsNew)
 
 * [Getting Started](/docs/GetStarted.md)
 

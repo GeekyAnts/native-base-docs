@@ -1,12 +1,24 @@
-<div class="section" id="badge">
+# Badge
 
-    <h2>Badge</h2>
+All of us must have seen notification badges somewhere, such as on smart phones or facebook. [NativeBase](http://nativebase.io/) is here to include this into your collection of readymade components. Badges are numerical indicators of how many items are associated with an element. Badges can notify you that there are new or unread messages or notifications. These can be very effective in alerting the user to new things on your app.
 
-    <p style="padding-bottom: 15px;">
-       All of us must have seen notification badges somewhere, such as on smart phones or facebook. <a href="http://nativebase.io/">NativeBase</a> is here to include this into your collection of readymade components. Badges are numerical indicators of how many items are associated with an element. Badges can notify you that there are new or unread messages or notifications. These can be very effective in alerting the user to new things on your app.
-    </p>
+<br />
+  <table>
+    <thead>
+      <tr style="border-style: hidden">
+        <th style="border-style: hidden">IOS</th>
+        <th>Android</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="border-style: hidden">
+        <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/badge.png" alt="" /></th>
+        <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/badge.png" alt="" /></th>
+      </tr>
+    </thead>
+  </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Badge } from 'native-base';
@@ -33,22 +45,11 @@ export default class BadgeExample extends Component {
     }
 }</code></pre><br />
 
-    <ul>
-        <li>
-            <a href="http://nativebase.io/">NativeBase</a> spectrum of colors are compatible with Badge.
-        </li>
-        <li>
-            <i>
-                Replacing Component:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/view.html">
-                    <code>&lt;View></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
+* [NativeBase](http://nativebase.io/) spectrum of colors are compatible with Badge.
+* Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)
 
-    <b>Configuration</b><br />
+
+**Configuration**<br />
     <table class = "table table-bordered">
         <thead>
             <tr>
@@ -91,11 +92,4 @@ export default class BadgeExample extends Component {
             </tr>
         </tbody>
     </table>
-    <br /><br />
-
-
-</div>
-
-
-
-<hr>
+    <br />

@@ -1,9 +1,8 @@
-<div class="docs-desc with-right-sidebar">
+# Packages Used
+<br />
 
-        <h1>Packages Used</h1>
-        <br />
+*package.json*
 
-        <i>package.json</i>
 <pre class="line-numbers"><code class="language-json">{
     "name": <a href="https://github.com/GeekyAnts/NativeBase">"native-base"</a>,
     "description": "Essential cross-platform UI components for React Native",
@@ -23,5 +22,3 @@
         <a href="https://facebook.github.io/react-native/">"react-native"</a>: ">=0.26.0",
     }
 }</code></pre>
-
-</div>

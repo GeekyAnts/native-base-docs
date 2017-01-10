@@ -1,13 +1,25 @@
-<div class="section" id="blockButton">
+#### Block Button
 
-    <h4>Block Button</h4>
+A block level button spans the entire width of the parent element.
+Create block level buttons by adding <code>block</code> prop with the <code>Button</code>.
 
-    <p style="padding-bottom: 15px;">
-        A block level button spans the entire width of the parent element.
-        Create block level buttons by adding <code>block</code> prop with the <code>Button</code>.
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/block-button.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/block-button.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -27,5 +39,3 @@ export default class BlockButtonExample extends Component {
         );
     }
 }</code></pre><br />
-
-</div>

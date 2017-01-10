@@ -1,13 +1,24 @@
-<div class="section" id="capitalizeButtonText">
+#### Capitalize Button Text
 
-    <h4>Capitalize Button Text</h4>
+To have Button text rendered with uppercase, include <code>capitalize</code> prop.<br />
+**Note:** This prop is applicable only for Android.
 
-    <p style="padding-bottom: 15px;">
-        To have Button text rendered with uppercase, include <code>capitalize</code> prop.<br />
-        <b>Note:</b> This prop is applicable only for Android.
-    </p>
-
-    <i>Syntax</i>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/capitalize-button-text.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/capitalize-button-text.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -26,7 +37,4 @@ export default class CapitalizeButtonTextExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-
-</div>
+}</code></pre>

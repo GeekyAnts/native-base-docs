@@ -1,5 +1,8 @@
-## Guide
+<a id="WhatisNB"></a>
+{% include "./WhatisNB.md" %}
 
-* [What is NativeBase?](/docs/introduction/WhatisNB.md)
-* [Why NativeBase?](/docs/introduction/WhyNB.md)
-* [What's New in v2.0.0?](/docs/introduction/WhatsNew.md)
+<a id="WhyNB"></a>
+{% include "./WhyNB.md" %}
+
+<a id="WhatsNew"></a>
+{% include "./WhatsNew.md" %}

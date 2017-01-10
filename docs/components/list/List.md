@@ -1,26 +1,32 @@
-<div class="section" id="list">
+# List
 
-    <h2>List</h2>
+This component is completely built by [NativeBase](http://nativebase.io/).<br />
+A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
-    <p>
-        This component is completely built by <a href="http://nativebase.io/">NativeBase</a>.<br />
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-basic.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-basic.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-        A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.
-    </p><br />
+**Contents:**
+* [List Divider](/docs/components/list/ListDivider.md)
+* [List Icon](/docs/components/list/ListIcon.md)
+* [List Avatar](/docs/components/list/ListAvatar.md)
+* [List Thumbnail](/docs/components/list/ListThumbnail.md)
+* [Dynamic List](/docs/components/list/DynamicList.md)
+* [List OnClick](/docs/components/list/ListOnClick.md)
 
-    <p>
-        <ul style="list-style-type:none">
-            <li><b>Contents:</b></li>
-            <li><a href="/docs/components/list/ListDivider.md">List Divider</a></li>
-            <li><a href="/docs/components/list/ListIcon.md">List Icon</a></li>
-            <li><a href="/docs/components/list/ListAvatar.md">List Avatar</a></li>
-            <li><a href="/docs/components/list/ListThumbnail.md">List Thumbnail</a></li>
-            <li><a href="/docs/components/list/DynamicList.md">Dynamic List</a></li>
-            <li><a href="/docs/components/list/ListOnClick.md">List OnClick</a></li>
-        </ul>
-    </p><br />
-
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Text } from 'native-base';
@@ -46,54 +52,22 @@ export default class ListExample extends Component {
         );
     }
 }
-</code></pre><br />
+</code></pre>
 
-    <ul>
-        <li>
-            <code>List</code>: This component defines a section to include your list items.
-        </li>
-        <li>
-            <code>ListItem</code>:
-            <ul>
-                <li>
-                    This is the child component of <code>List</code>.
-                </li>
-                <li>
-                    Defines a list item.
-                </li>
-                <li>
-                    Adds border at bottom of each ListItem.
-                </li>
-                <li>
-                    List takes any number of ListItem.
-                </li>
-            </ul>
-        </li>
-        <li>
-            ListItem component takes input such as: Text, Badge, Thumbnail, Icon.
-        </li>
-        <li>
-            <i>
-                Replacing Component for List:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/view.html">
-                    <code>&lt;View></code>
-                </a>
-            </i>
-        </li>
-        <li>
-            <i>
-                Replacing Component for ListItem:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="http://facebook.github.io/react-native/docs/touchableopacity.html">
-                    <code>&lt;TouchableOpacity></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
+* <code>List</code>: This component defines a section to include your list items.
+* <code>ListItem</code>:
+  * This is the child component of <code>List</code>.
+  * Defines a list item.
+  * Adds border at bottom of each ListItem.
+  * List takes any number of ListItem.
+* ListItem component takes input such as: Text, Badge, Thumbnail, Icon.
+* *Replacing Component for List: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
+* *Replacing Component for ListItem: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](https://facebook.github.io/react-native/docs/touchableopacity.html)*
 
-    <b>Configuration</b><br />
-    <table class="table table-bordered">
+
+**Configuration**
+
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -156,6 +130,4 @@ export default class ListExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

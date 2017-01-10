@@ -21,6 +21,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -120,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../introduction/WhatisNB.html">
+        <li class="chapter " data-level="1.2.1" data-path="../introduction/">
             
-                <a href="../introduction/WhatisNB.html">
+                <a href="../introduction/#WhatisNB">
             
                     
                     What is NativeBase?
@@ -133,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../introduction/WhyNB.html">
+        <li class="chapter " data-level="1.2.2" data-path="../introduction/">
             
-                <a href="../introduction/WhyNB.html">
+                <a href="../introduction/#WhyNB">
             
                     
                     Why NativeBase?
@@ -146,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../introduction/WhatsNew.html">
+        <li class="chapter " data-level="1.2.3" data-path="../introduction/">
             
-                <a href="../introduction/WhatsNew.html">
+                <a href="../introduction/#WhatsNew">
             
                     
-                    What's New in v2.0.0?
+                    What's New in v0.5.18?
             
                 </a>
             
@@ -1265,32 +1273,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="section" id="ref">
-
-    <h2 id="ref-to-components">Ref to Components</h2>
-
-    <p style="padding-bottom: 15px;">
-        <ul>
-            <li>
-                NativeBase is built on top of React Native. Hence, the components of NativeBase have respective replacing React Native elements.
-            </li>
-            <li>
-                NativeBase has now made it easy for developers, to access the any of its components using <b>ref</b>, along with its associated React Native elements.
-            </li>
-            <li>
-                After building your component, you may find yourself wanting to <i>reach out</i> and invoke methods on component instances returned from <b>render()</b>.
-            </li>
-            <li>
-                This can be achieved from <b>refs</b>. Refs are a great way to send a message to a particular child instance.
-            </li>
-            <li>
-                The <b>ref</b> attribute takes a callback function, and the callback will be executed immediately after the component is mounted or unmounted.   
-            </li>
-        </ul>
-    </p>
-
-    <i>Syntax</i>
-
+                                <h1 id="ref-to-components">Ref to Components</h1>
+<ul>
+<li>NativeBase is built on top of React Native. Hence, the components of NativeBase have respective replacing React Native elements.</li>
+<li>NativeBase has now made it easy for developers, to access the any of its components using <b>ref</b>, along with its associated React Native elements.</li>
+<li>After building your component, you may find yourself wanting to <em>reach out</em> and invoke methods on component instances returned from <strong>render()</strong>.</li>
+<li>This can be achieved from <strong>refs</strong>. Refs are a great way to send a message to a particular child instance.</li>
+<li>The <strong>ref</strong> attribute takes a callback function, and the callback will be executed immediately after the component is mounted or unmounted.   </li>
+</ul>
+<p><em>Syntax</em></p>
 <pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 &#x200B;
@@ -1306,24 +1297,14 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
         );
     }
-}</code></pre><br>
-
-    <p>
-        <ul>
-            <li>
-                <code>this._button</code> gets you the reference of NativeBase Button.   
-            </li>
-            <li>
-                <code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.
-            </li>
-            <li>
-                This feature is accessible with all of NativeBase components.
-            </li>
-        </ul>
-    </p>
+}</code></pre>
 
 
-</div>
+<ul>
+<li><code>this._button</code> gets you the reference of NativeBase Button.   </li>
+<li><code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.</li>
+<li>This feature is accessible with all of NativeBase components.</li>
+</ul>
 
                                 
                                 </section>
@@ -1367,7 +1348,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ref","level":"1.4.21","depth":2,"next":{"title":"Customize","level":"1.5","depth":1,"path":"docs/customize/README.md","ref":"docs/customize/README.md","articles":[{"title":"Set Up","level":"1.5.1","depth":2,"path":"docs/customize/SetUp.md","ref":"docs/customize/SetUp.md","articles":[]},{"title":"Theme Color","level":"1.5.2","depth":2,"path":"docs/customize/ThemeColor.md","ref":"docs/customize/ThemeColor.md","articles":[]},{"title":"Theme Font","level":"1.5.3","depth":2,"path":"docs/customize/ThemeFont.md","ref":"docs/customize/ThemeFont.md","articles":[]},{"title":"Badge","level":"1.5.4","depth":2,"path":"docs/customize/Badge.md","ref":"docs/customize/Badge.md","articles":[]},{"title":"Button","level":"1.5.5","depth":2,"path":"docs/customize/Button.md","ref":"docs/customize/Button.md","articles":[]},{"title":"Card","level":"1.5.6","depth":2,"path":"docs/customize/Card.md","ref":"docs/customize/Card.md","articles":[]},{"title":"Check Box","level":"1.5.7","depth":2,"path":"docs/customize/CheckBox.md","ref":"docs/customize/CheckBox.md","articles":[]},{"title":"Footer Tabs","level":"1.5.8","depth":2,"path":"docs/customize/FooterTabs.md","ref":"docs/customize/FooterTabs.md","articles":[]},{"title":"Header","level":"1.5.9","depth":2,"path":"docs/customize/Header.md","ref":"docs/customize/Header.md","articles":[]},{"title":"Icon","level":"1.5.10","depth":2,"path":"docs/customize/Icon.md","ref":"docs/customize/Icon.md","articles":[]},{"title":"InputGroup","level":"1.5.11","depth":2,"path":"docs/customize/InputGroup.md","ref":"docs/customize/InputGroup.md","articles":[]},{"title":"List","level":"1.5.12","depth":2,"path":"docs/customize/List.md","ref":"docs/customize/List.md","articles":[]},{"title":"Picker","level":"1.5.13","depth":2,"path":"docs/customize/Picker.md","ref":"docs/customize/Picker.md","articles":[]},{"title":"Radio Button","level":"1.5.14","depth":2,"path":"docs/customize/RadioButton.md","ref":"docs/customize/RadioButton.md","articles":[]},{"title":"Search Bar","level":"1.5.15","depth":2,"path":"docs/customize/SearchBar.md","ref":"docs/customize/SearchBar.md","articles":[]},{"title":"Tabs","level":"1.5.16","depth":2,"path":"docs/customize/Tabs.md","ref":"docs/customize/Tabs.md","articles":[]},{"title":"Typography","level":"1.5.17","depth":2,"path":"docs/customize/Typography.md","ref":"docs/customize/Typography.md","articles":[]}]},"previous":{"title":"Typography","level":"1.4.20","depth":2,"path":"docs/components/Typography.md","ref":"docs/components/Typography.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/components/Ref.md","mtime":"2017-01-06T14:21:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T11:11:40.700Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ref","level":"1.4.21","depth":2,"next":{"title":"Customize","level":"1.5","depth":1,"path":"docs/customize/README.md","ref":"docs/customize/README.md","articles":[{"title":"Set Up","level":"1.5.1","depth":2,"path":"docs/customize/SetUp.md","ref":"docs/customize/SetUp.md","articles":[]},{"title":"Theme Color","level":"1.5.2","depth":2,"path":"docs/customize/ThemeColor.md","ref":"docs/customize/ThemeColor.md","articles":[]},{"title":"Theme Font","level":"1.5.3","depth":2,"path":"docs/customize/ThemeFont.md","ref":"docs/customize/ThemeFont.md","articles":[]},{"title":"Badge","level":"1.5.4","depth":2,"path":"docs/customize/Badge.md","ref":"docs/customize/Badge.md","articles":[]},{"title":"Button","level":"1.5.5","depth":2,"path":"docs/customize/Button.md","ref":"docs/customize/Button.md","articles":[]},{"title":"Card","level":"1.5.6","depth":2,"path":"docs/customize/Card.md","ref":"docs/customize/Card.md","articles":[]},{"title":"Check Box","level":"1.5.7","depth":2,"path":"docs/customize/CheckBox.md","ref":"docs/customize/CheckBox.md","articles":[]},{"title":"Footer Tabs","level":"1.5.8","depth":2,"path":"docs/customize/FooterTabs.md","ref":"docs/customize/FooterTabs.md","articles":[]},{"title":"Header","level":"1.5.9","depth":2,"path":"docs/customize/Header.md","ref":"docs/customize/Header.md","articles":[]},{"title":"Icon","level":"1.5.10","depth":2,"path":"docs/customize/Icon.md","ref":"docs/customize/Icon.md","articles":[]},{"title":"InputGroup","level":"1.5.11","depth":2,"path":"docs/customize/InputGroup.md","ref":"docs/customize/InputGroup.md","articles":[]},{"title":"List","level":"1.5.12","depth":2,"path":"docs/customize/List.md","ref":"docs/customize/List.md","articles":[]},{"title":"Picker","level":"1.5.13","depth":2,"path":"docs/customize/Picker.md","ref":"docs/customize/Picker.md","articles":[]},{"title":"Radio Button","level":"1.5.14","depth":2,"path":"docs/customize/RadioButton.md","ref":"docs/customize/RadioButton.md","articles":[]},{"title":"Search Bar","level":"1.5.15","depth":2,"path":"docs/customize/SearchBar.md","ref":"docs/customize/SearchBar.md","articles":[]},{"title":"Tabs","level":"1.5.16","depth":2,"path":"docs/customize/Tabs.md","ref":"docs/customize/Tabs.md","articles":[]},{"title":"Typography","level":"1.5.17","depth":2,"path":"docs/customize/Typography.md","ref":"docs/customize/Typography.md","articles":[]}]},"previous":{"title":"Typography","level":"1.4.20","depth":2,"path":"docs/components/Typography.md","ref":"docs/components/Typography.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","toggle-chapters","ace","livereload"],"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/components/Ref.md","mtime":"2017-01-10T11:26:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-10T13:20:25.445Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1378,6 +1359,22 @@
     
         
         <script src="../../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

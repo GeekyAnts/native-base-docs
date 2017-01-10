@@ -1,12 +1,19 @@
-<div class="section" id="themePicker">
+## Customize Picker
 
-    <h3>Customize Picker</h3>
+Customize Header for Picker
+<br />
 
-    <p style="padding-bottom: 10px;">
-        Customize Header for Picker
-    </p>
 
-    <i>Syntax</i>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/guide/theme-picker.gif')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, Picker } from 'native-base';
 
@@ -56,6 +63,4 @@ export default class ThemePickerExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

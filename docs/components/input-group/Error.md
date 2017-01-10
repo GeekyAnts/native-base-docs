@@ -1,12 +1,24 @@
-<div class="section" id="errorInputTextbox" >
+#### Error Input Textbox
 
-    <h4>Error Input Textbox</h4>
+To display textbox with invalid data, include the <code>error</code> prop with <code>&lt;InputGroup></code>.
 
-    <p style="padding-bottom: 15px;">
-        To display textbox with invalid data, include the <code>error</code> prop with <code>&lt;InputGroup></code>.
-    </p>
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/error-input-textbox.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/error-input-textbox.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input, Icon } from 'native-base';
 ​
@@ -23,5 +35,4 @@ export default class ErrorInputTextboxExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-</div>
+}</code></pre>

@@ -1,20 +1,26 @@
-<div class="section" id="cardHeaderAndFooter">
+#### Card Header and Footer
 
-    <h4>Card Header and Footer</h4>
+To add an optional header and/or footer within a card, include <code>header</code> prop with the <code>CardItem</code>.<br />
+* **Card Header**: Include <code>header</code> prop with first instance of CardItem within Card.
+* **Card Footer**: Include <code>header</code> prop with last instance of CardItem within Card.
 
-    <p>
-        To add an optional header and/or footer within a card, include <code>header</code> prop with the <code>CardItem</code>.<br />
-        <ul style="padding-bottom: 15px;">
-            <li>
-                <b>Card Header</b>: Include <code>header</code> prop with first instance of CardItem within Card.
-            </li>
-            <li>
-                <b>Card Footer</b>: Include <code>header</code> prop with last instance of CardItem within Card.
-            </li>
-        </ul>
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/card-header-and-footer.png" alt="" /></th>
+          <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/card-header-and-footer.png" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text } from 'native-base';
@@ -43,6 +49,4 @@ export default class CardHeaderFooterExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

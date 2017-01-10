@@ -1,13 +1,24 @@
-<div class="section" id="listDivider">
+#### List Divider
 
-    <h4>List Divider</h4>
+The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.<br />
+The List Divider of NativeBase comes with default style which is easily customisable.
 
-    <p style="padding-bottom: 15px;">
-        The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.
-        The List Divider of NativeBase comes with default style which is easily customisable.
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-divider.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-divider.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text } from 'native-base';
@@ -39,6 +50,4 @@ export default class ListDividerExample extends Component {
         );
     }
 }
-</code></pre><br />
-
-</div>
+</code></pre>

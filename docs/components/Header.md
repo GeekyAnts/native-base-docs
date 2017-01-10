@@ -1,43 +1,35 @@
-<div class="section" id="header">
-    <h2>Header</h2>
+# Header
+* [NativeBase](http://nativebase.io/) component that renders as Header (navbar) for your screen.
+* There can be a single Header component into your Container.
+* To have Header for your screen, include <code>&lt;Header></code> component within <code>&lt;Container></code>.
+* NativeBase gives you flexibility to define your <code>Header</code> component anywhere in the bounds of Container.
+* Header takes input as: Button and Title (Text)
+* The components those are defined within <code>&lt;Header></code> will be rendered in the same order that you define them.
+* Header provides you with stylesheet.
+* User can add custom styles while defining <code>&lt;Header></code> within their app.
+* *Replacing Component:
+  [React Native](https://facebook.github.io/react-native/)
+  [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-    <p>
-        <ul style="padding-bottom: 15px;">
-            <li>
-                <a href="http://nativebase.io/">NativeBase</a> component that renders as Header (navbar) for your screen.
-            </li>
-            <li>There can be a single Header component into your Container.</li>
-            <li>
-                To have Header for your screen, include <code>&lt;Header></code> component within <code>&lt;Container></code>.
-            </li>
-            <li>
-                NativeBase gives you flexibility to define your <code>Header</code> component anywhere in the bounds of Container.
-            </li>
-            <li>
-                Header takes input as: Button and Title (Text)
-            </li>
-            <li>
-                The components those are defined within <code>&lt;Header></code> will be rendered in the same order that you define them.
-            </li>
-            <li>Header provides you with stylesheet.</li>
-            <li>
-                User can add custom styles while defining <code>&lt;Header></code> within their app.
-            </li>
-            <li>
-                <i>
-                    Replacing Component:
-                    <a href="https://facebook.github.io/react-native/">React Native</a>
-                    <a href="https://facebook.github.io/react-native/docs/view.html">
-                        <code>&lt;View></code>
-                    </a>
-                </i>
-            </li>
-        </ul>
-    </p>
+<br />
+  <table>
+    <thead>
+      <tr style="border-style: hidden">
+        <th style="border-style: hidden">IOS</th>
+        <th>Android</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr style="border-style: hidden">
+        <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/header.png')}}" alt="" /></th>
+        <th><img height="470" width="270" src="{{('../assets/android/components/header.png')}}" alt="" /></th>
+      </tr>
+    </thead>
+  </table>
 
-    <i>Syntax</i>
+*Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+<pre><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Title, Button, Icon } from 'native-base';
 ​
 export default class HeaderExample extends Component {
@@ -58,9 +50,10 @@ export default class HeaderExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
+
+**Configuration**<br />
     <table class = "table table-bordered">
         <thead>
             <tr>
@@ -88,5 +81,3 @@ export default class HeaderExample extends Component {
             </tr>
         </tbody>
     </table><br />
-
-</div>

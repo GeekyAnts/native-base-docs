@@ -1,12 +1,23 @@
-<div class="section" id="roundedButton">
+#### Rounded Button
 
-    <h4>Rounded Button</h4>
+Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.
 
-    <p style="padding-bottom: 15px;">
-        Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.
-    </p>
-
-    <i>Syntax</i>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/rounded-button.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/rounded-button.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -26,6 +37,3 @@ export default class RoundedButtonExample extends Component {
         );
     }
 }</code></pre><br />
-
-
-</div>

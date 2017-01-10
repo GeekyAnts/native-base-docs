@@ -1,12 +1,23 @@
-<div class="section" id="underlinedTextbox">
+#### Underlined Textbox
 
-    <h4>Underlined Textbox</h4>
+To use the underlined textbox, include the <code>borderType</code> property and assign it with value as **underline**.
 
-    <p style="padding-bottom: 15px;">
-        To use the underlined textbox, include the <code>borderType</code> property and assign it with value as <b>underline</b>.
-    </p>
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/underlined-textbox.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/underlined-textbox.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input, Icon } from 'native-base';
 ​
@@ -24,6 +35,4 @@ export default class UnderlinedTextboxExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

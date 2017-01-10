@@ -1,12 +1,23 @@
-<div class="section" id="regularTextbox" >
+#### Regular Textbox
 
-    <h4>Regular Textbox</h4>
+To use the regular textbox which is rectangular in shape, include the <code>borderType</code> property and assign it with value as **regular**.
 
-    <p style="padding-bottom: 15px;">
-        To use the regular textbox which is rectangular in shape, include the <code>borderType</code> property and assign it with value as <b>regular</b>.
-    </p>
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/regular-textbox.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/regular-textbox.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>        
+*Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input } from 'native-base';
 ​
@@ -23,6 +34,4 @@ export default class RegularTextboxExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

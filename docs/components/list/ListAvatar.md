@@ -1,12 +1,23 @@
-<div class="section" id="listAvatar">
+#### List Avatar
 
-    <h4>List Avatar</h4>
+List Avatars are medium to showcase an image with your list item whose dimension lays between icon and dimension. To create a avatar list, nest <code>&lt;Thumbnail></code> component within <code>&lt;ListItem></code> component.
 
-    <p style="padding-bottom: 15px;">
-        List Avatars are medium to showcase an image with your list item whose dimension lays between icon and dimension. To create a avatar list, nest <code>&lt;Thumbnail></code> component within <code>&lt;ListItem></code> component.
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-avatar.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-avatar.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Thumbnail, Text } from 'native-base';
@@ -33,6 +44,4 @@ export default class ListAvatarExample extends Component {
         );
     }
 }
-</code></pre><br />
-
-</div>
+</code></pre>

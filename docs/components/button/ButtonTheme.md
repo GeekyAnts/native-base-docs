@@ -1,20 +1,30 @@
-<div class="section" id="buttonTheme">
+#### Button Theme
 
-    <h4>Button Theme</h4>
+[NativeBase](http://nativebase.io/) provides buttons with wide range of colors, size and variuos other props.<br />
+NativeBase provides following color themes:
+  * Primary (default)
+  * Success
+  * Info
+  * Warning
+  * Danger
 
-    <p>
-        <a href="http://nativebase.io/">NativeBase</a> provides buttons with wide range of colors, size and variuos other props.<br />
-        NativeBase provides following color themes:
-        <ul style="padding-bottom: 15px;">
-            <li>Primary (default)</li>
-            <li>Success</li>
-            <li>Info</li>
-            <li>Warning</li>
-            <li>Danger</li>
-        </ul>
-    </p>
+<br />
+      <table>
+        <thead>
+          <tr style="border-style: hidden">
+            <th style="border-style: hidden">IOS</th>
+            <th>Android</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr style="border-style: hidden">
+            <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/button-theme.png')}}" alt="" /></th>
+            <th><img height="470" width="270" src="{{('../../assets/android/components/button-theme.png')}}" alt="" /></th>
+          </tr>
+        </thead>
+      </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -34,57 +44,3 @@ export default class ButtonThemeExample extends Component {
         );
     }
 }</code></pre><br />
-
-    <!-- <b>Configuration</b><br />
-    <table class = "table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>borderType</td>
-                <td>block</td>
-                <td>
-                    rounded<br />
-                    block<br />
-                    bordered<br />
-                </td>
-                <td>Wraps the textbox with predefined border options.</td>
-            </tr>
-            <tr>
-                <td>borderWidth</td>
-                <td>zero</td>
-                <td>user-defined value</td>
-                <td>
-                    Defines border width for button.<br />
-                    Supports for button with all borderTypes.
-                </td>
-            </tr>
-            <tr>
-                <td>borderColor</td>
-                <td>button color</td>
-                <td>user-defined value</td>
-                <td>
-                    Defines border color for button.
-                </td>
-            </tr>
-            <tr>
-                <td>size</td>
-                <td> - </td>
-                <td>
-                    small<br />
-                    large<br />
-                </td>
-                <td>Defines button text style</td>
-            </tr>
-        </tbody>
-    </table>
-     -->
-    <br />
-    
-</div>

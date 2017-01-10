@@ -1,6 +1,4 @@
-<div class="docs-desc" style="width: 90%">
-
-<h1>NativeBase Theme Variables</h1>
+# NativeBase Theme Variables
 
 <pre class="line-numbers"><code class="language-jsx">
 import Color from 'color';
@@ -237,5 +235,3 @@ export default {
 }
 
 </code></pre>
-
-    </div>

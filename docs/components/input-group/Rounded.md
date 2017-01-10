@@ -1,12 +1,23 @@
-<div class="section" id="roundedTextbox" >
+#### Rounded Textbox
 
-    <h4>Rounded Textbox</h4>
+To have a textbox with round type border, include the <code>borderType</code> property and assign it with value as **rounded**.
 
-    <p style="padding-bottom: 15px;">
-        To have a textbox with round type border, include the <code>borderType</code> property and assign it with value as <b>rounded</b>.
-    </p>
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/rounded-textbox.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/rounded-textbox.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>        
+*Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input, Icon } from 'native-base';
 ​
@@ -24,6 +35,4 @@ export default class RoundedTextboxExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

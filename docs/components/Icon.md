@@ -1,30 +1,30 @@
-<div class="section" id="icon">
+# Icon
 
-    <h2>Icon</h2>
+***Choose from 700+ Icons . . .***<br />
+Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="http://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 
-    <p>
-        <b><i>Choose from 700+ Icons . . .</i></b><br />
-        Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="http://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
-        <b>
-            Features of <a href="https://github.com/oblador/react-native-vector-icons">React Native Vector Icons</a>:
-        </b>
-        <ul style="padding-bottom: 15px;">
-            <li>
-                Can use your own custom icon sets. Supports SVG via Fontello or regular icon fonts.        
-            </li>
-            <li>
-                Can use native TabBarIOS.
-            </li>
-            <li>
-                Can use icons inline with Text components as emojis or to create buttons.
-            </li>
-            <li>
-                Can use the icon as an image if a native component requires it (such as NavigatorIOS).
-            </li>
-        </ul>
-    </p>
+*Features of [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons):*
+* Can use your own custom icon sets. Supports SVG via Fontello or regular icon fonts.        
+* Can use native TabBarIOS.
+* Can use icons inline with Text components as emojis or to create buttons.
+* Can use the icon as an image if a native component requires it (such as NavigatorIOS).
 
-    <i>Syntax</i>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/icon.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/icon.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Icon } from 'native-base';
@@ -40,33 +40,17 @@ export default class IconExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <ul>
-        <li>
-            <code>Icon</code> takes two attributes: name, style.
-        </li>
-        <li>
-            In case if you want to include icon with custom color, size etc then that should go into <code>style</code>.
-        </li>
-        <li>
-            All the icons in the icon libraries of NativeBase, are scalable vector icons that can be customized size, color, etc.
-        </li>
-        <li>
-            <i>
-                Replacing Component:
-                <a href="https://github.com/oblador/react-native-vector-icons">
-                    React Native Vector Icons
-                </a>
-                <a href="https://github.com/oblador/react-native-vector-icons#icon-component">
-                    <code>&lt;Icon></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+* <code>Icon</code> takes two attributes: name, style.
+* In case if you want to include icon with custom color, size etc then that should go into <code>style</code>.
+* All the icons in the icon libraries of NativeBase, are scalable vector icons that can be customized size, color, etc.
+* *Replacing Component: [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)  [<code>&lt;Icon></code>](https://github.com/oblador/react-native-vector-icons#icon-component)*
+
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -107,6 +91,4 @@ export default class IconExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

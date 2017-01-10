@@ -1,13 +1,24 @@
-<div class="section" id="searchBar">
+# Search Bar
 
-    <h2>Search Bar</h2>
+It’s kind of common on the Internet where – if we fail to get what we are looking for on a website, we resort to searching. Search box has always been an essential part of any application.
+We provide you with the one, which filters the list based on your search input.
 
-    <p style="padding-bottom: 15px;">
-        It’s kind of common on the Internet where – if we fail to get what we are looking for on a website, we resort to searching. Search box has always been an essential part of any application.
-        We provide you with the one, which filters the list based on your search input.
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/searchbar.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/searchbar.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base';
@@ -29,25 +40,15 @@ export default class SearchBarExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <ul>
-        <li>
-            <code>searchBar</code>: Prop to be used with <code>&lt;Header></code> component to have Search bar onto the Header section of your screen.
-        </li>
-        <li>
-            <i>
-                Replacing Component:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/view.html">
-                    <code>&lt;View></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
+* <code>searchBar</code>: Prop to be used with <code>&lt;Header></code> component to have Search bar onto the Header section of your screen.
+* *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+
+
+**Configuration**
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -66,7 +67,4 @@ export default class SearchBarExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-
-</div>
+    </table>

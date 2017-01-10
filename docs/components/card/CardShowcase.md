@@ -1,20 +1,26 @@
-<div class="section" id="cardShowcase">
+#### Card Showcase
 
-    <h4>Card Showcase</h4>
+Card Showcase is further customization of Card Image. It uses several different items.
+* Begins with the Card List component, which is similar to out List Avatar.
+* <code>cardBody</code> prop for images and text.
 
-    <p>
-        Card Showcase is further customization of Card Image. It uses several different items.
-        <ul style="padding-bottom: 15px;">
-            <li>
-                Begins with the Card List component, which is similar to out List Avatar.
-            </li>
-            <li>
-                <code>cardBody</code> prop for images and text.
-            </li>
-        </ul>
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/card-showcase.png" alt="" /></th>
+          <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/card-showcase.png" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
@@ -47,6 +53,4 @@ export default class CardShowcaseExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

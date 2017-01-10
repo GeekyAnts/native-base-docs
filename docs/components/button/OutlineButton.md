@@ -1,12 +1,23 @@
-<div class="section" id="outlineButton">
+#### Outline Button
 
-    <h4>Outline Button</h4>
+Include <code>bordered</code> prop with Button to apply outline button style.
 
-    <p style="padding-bottom: 15px;">
-        Include <code>bordered</code> prop with Button to apply outline button style.
-    </p>
-
-    <i>Syntax</i>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/outline-button.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/outline-button.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -25,7 +36,4 @@ export default class OutlineButtonExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-
-</div>
+}</code></pre>

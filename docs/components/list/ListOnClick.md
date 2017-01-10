@@ -1,12 +1,23 @@
-<div class="section" id="listOnClick">
+#### List OnClick
 
-    <h4>List OnClick</h4>
+To navigate between screens on click of a list item, include <code>button</code> prop with the <code>&lt;ListItem></code> component.
 
-    <p style="padding-bottom: 15px;">
-        To navigate between screens on click of a list item, include <code>button</code> prop with the <code>&lt;ListItem></code> component.
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/list-onclick.gif')}}" alt="" /></th>
+      <th><img height="470" width="270" src="{{('../../assets/android/components/list-onclick.gif')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Thumbnail } from 'native-base';
@@ -26,6 +37,4 @@ export default class ListOnClickExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

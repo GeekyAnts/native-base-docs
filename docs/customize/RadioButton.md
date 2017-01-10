@@ -1,12 +1,18 @@
-<div class="section" id="themeRadioButton">
+# Customize Radio Button
 
-    <h3>Customize Radio Button</h3>
+Steps to customize theme for Radio Button attributes:
+<br />
 
-    <p style="padding-bottom: 10px;">
-        Steps to customize theme for Radio Button attributes:
-    </p>
 
-    <table class = "table table-hover" style="width: 75%; ">
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/guide/theme-radio-button.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+
+<table class = "table table-hover" style="width: 75%; ">
         <thead>
             <tr>
                 <th>Property</th>
@@ -29,7 +35,9 @@
         </tbody>
     </table>
 
-    <i>Syntax</i>
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Radio, Text } from 'native-base';
 import myTheme from './Themes/myTheme';
@@ -53,6 +61,4 @@ export default class ThemeRadioButtonExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

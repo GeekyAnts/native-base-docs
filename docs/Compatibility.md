@@ -1,8 +1,6 @@
-<div class="docs-desc with-right-sidebar">
+# NativeBase Compatibility Modes
 
-        <h1>NativeBase Compatibility Modes</h1>
-
-        <table width="80%" class="table table-hover">
+<table width="80%" class="table table-hover">
             <thead>
                 <tr>
                     <th>NativeBase</th>
@@ -28,4 +26,3 @@
                 </tr>
             </tbody>
         </table><br />
-</div>

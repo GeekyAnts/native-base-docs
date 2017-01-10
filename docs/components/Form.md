@@ -1,12 +1,23 @@
-<div class="section" id="form">
+# Form
 
-    <h2>Form</h2>
+[NativeBase](http://nativebase.io/) makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.
 
-    <p style="padding-bottom: 15px;">
-        <a href="http://nativebase.io/">NativeBase</a> makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/form.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/form.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button } from 'native-base';
@@ -87,10 +98,11 @@ export default class FormExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -119,7 +131,4 @@ export default class FormExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-
-</div>
+    </table>

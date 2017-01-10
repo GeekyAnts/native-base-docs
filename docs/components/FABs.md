@@ -1,20 +1,24 @@
-<div class="section" id="fab">
+# FABs
 
-    <h2>FABs</h2>
+FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Animated></code>](http://facebook.github.io/react-native/docs/animated.html)*
 
-    <p style="padding-bottom: 15px;">
-        FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br />
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/fab.gif')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../assets/android/components/fab.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="http://facebook.github.io/react-native/docs/animated.html">
-                <code>&lt;Animated></code>
-            </a>
-        </i>
-    </p>
-
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Icon, Fab } from 'native-base';
@@ -36,8 +40,7 @@ export default class FABExample extends Component {
                         containerStyle=&#123;{ marginLeft: 10 }}
                         style=&#123;{ backgroundColor: '#5067FF' }}
                         position="topLeft"
-                        onPress={() => this.setState({ active: !this.state.active })}
-                    >
+                        onPress={() => this.setState({ active: !this.state.active })}>
                         &lt;Icon name="md-share" />
                         &lt;Button style=&#123;{ backgroundColor: '#34A34F' }}>
                             &lt;Icon name="logo-whatsapp" />
@@ -53,10 +56,11 @@ export default class FABExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -127,7 +131,4 @@ export default class FABExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-
-</div>
+    </table>

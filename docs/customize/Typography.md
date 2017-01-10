@@ -1,12 +1,9 @@
-<div class="section" id="themeTypography">
+## Customize Header Tags
 
-    <h3>Customize Header Tags</h3>
+Steps to customize theme for Header Tag attributes:
 
-    <p style="padding-bottom: 10px;">
-        Steps to customize theme for Header Tag attributes:
-    </p>
 
-    <table class = "table table-hover" style="width: 75%; ">
+<table class = "table table-hover" style="width: 75%; ">
         <thead>
             <tr>
                 <th>Property</th>
@@ -41,7 +38,9 @@
         </tbody>
     </table>
 
-    <i>Syntax</i>
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, H1, H2, H3 } from 'native-base';
 import myTheme from './Themes/myTheme';
@@ -58,6 +57,4 @@ export default class ThemeTypographyExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

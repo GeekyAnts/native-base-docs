@@ -1,8 +1,7 @@
-<div class="docs-desc">
-        <h1>NativeBase Cheat Sheet</h1>
+# NativeBase Cheat Sheet
 
-        <h3>Basic Layout</h3>
-        <table width="80%" class="table table-hover">
+### Basic Layout
+<table width="80%" class="table table-hover">
             <thead>
                 <tr>
                     <th>Component</th>
@@ -41,8 +40,9 @@
             </tbody>
         </table><br />
 
-        <h3>Components</h3>
-        <table width="100%" class="table table-hover">
+### Components
+
+<table width="100%" class="table table-hover">
             <thead>
                 <tr>
                     <th>Component</th>

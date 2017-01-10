@@ -1,27 +1,33 @@
-<div class="section" id="inputGroup">
+# InputGroup
 
-    <h2>InputGroup</h2>
+This is a [NativeBase](http://nativebase.io/) component built on top of [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput></code>.<br />
+A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.
 
-    <p>
-        This is a <a href="http://nativebase.io/">NativeBase</a> component built on top of <a href="https://facebook.github.io/react-native/">React Native</a>'s <code>&lt;TextInput></code>.<br />
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/inputgroup.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/inputgroup.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-        A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.
-    </p><br />
+**Contents:**
+* [Regular Textbox](/docs/components/input-group/Regular.md)
+* [Underlined Textbox](/docs/components/input-group/Underlined.md)
+* [Rounded Textbox](/docs/components/input-group/Rounded.md)
+* [Icon Textbox](/docs/components/input-group/Icon.md)
+* [Success Input Textbox](/docs/components/input-group/Success.md)
+* [Error Input Textbox](/docs/components/input-group/Error.md)
+* [Disabled Textbox](/docs/components/input-group/Disabled.md)
 
-    <p>
-        <ul style="list-style-type:none">
-        	<li><b>Contents:</b></li>
-            <li><a href="/docs/components/input-group/Regular.md">Regular Textbox</a></li>
-            <li><a href="/docs/components/input-group/Underlined.md">Underlined Textbox</a></li>
-            <li><a href="/docs/components/input-group/Rounded.md">Rounded Textbox</a></li>
-            <li><a href="/docs/components/input-group/Icon.md">Icon Textbox</a></li>
-            <li><a href="/docs/components/input-group/Success.md">Success Input Textbox</a></li>
-            <li><a href="/docs/components/input-group/Error.md">Error Input Textbox</a></li>
-            <li><a href="/docs/components/input-group/Disabled.md">Disabled Textbox</a></li>
-        </ul>
-    </p><br />
-
-    <i>General Syntax</i>
+*General Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input } from 'native-base';
@@ -38,45 +44,20 @@ export default class InputGroupExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <ul>
-        <li>
-            <a href="http://nativebase.io/">NativeBase</a>
-            extends <a href="https://facebook.github.io/react-native/">React Native</a>'s
-            <code>&lt;TextInput/&gt;</code> by adding several attributes and props to
-            <code>&lt;Input /&gt;</code>.
-        </li>
-        <li>NativeBase defines textbox for you, by just defining <code>&lt;Input /></code> in your app.</li>
-        <li>Supports custom styles on both iOS and Android devices.</li>
-        <li>InputGroup component renders elements such as: Text, Input, Icon.
-        </li>
-        <li>
-            The props of <code>&lt;TextInput></code> are smoothly applicable to <code>&lt;Input></code>.
-        </li>
-        <li>InputGroup also takes in props value.</li>
-        <li>
-            <i>
-                Replacing Component for InputGroup:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/view.html">
-                    <code>&lt;View></code>
-                </a>
-            </i>
-        </li>
-        <li>
-            <i>
-                Replacing Component for Input:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/textinput.html">
-                    <code>&lt;TextInput></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
+* [NativeBase](http://nativebase.io/) extends [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput/&gt;</code> by adding several attributes and props to <code>&lt;Input /&gt;</code>.
+* NativeBase defines textbox for you, by just defining <code>&lt;Input /></code> in your app.
+* Supports custom styles on both iOS and Android devices.
+* InputGroup component renders elements such as: Text, Input, Icon.
+* The props of <code>&lt;TextInput></code> are smoothly applicable to <code>&lt;Input></code>.
+* InputGroup also takes in props value.</li>
+* *Replacing Component for InputGroup: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
+* *Replacing Component for Input: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TextInput></code>](https://facebook.github.io/react-native/docs/textinput.html)*
 
-    <b>Configuration</b><br />
-    <table class="table table-bordered">
+**Configuration**
+
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -130,6 +111,4 @@ export default class InputGroupExample extends Component {
                 <td>Disables inputting data.</td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

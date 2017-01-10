@@ -1,19 +1,24 @@
-<div class="section" id="thumbnail">
+# Thumbnail
 
-    <h2>Thumbnail</h2>
+Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Image></code>](https://facebook.github.io/react-native/docs/image.html)*
 
-    <p style="padding-bottom: 15px;">
-        Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br />
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="https://facebook.github.io/react-native/docs/image.html">
-                <code>&lt;Image></code>
-            </a>
-        </i>
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/thumbnail.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/thumbnail.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Thumbnail, Text } from 'native-base';
@@ -34,10 +39,11 @@ export default class ThumbnailExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class="table table-bordered">
+
+**Configuration**
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -69,6 +75,4 @@ export default class ThumbnailExample extends Component {
                 <td>Dimension of thumbnail.</td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

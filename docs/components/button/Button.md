@@ -1,28 +1,38 @@
-<div class="section" id="button">
+# Button
 
-    <h2>Button</h2>
+Button is a pure [NativeBase](http://nativebase.io/) component.<br />
+Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.
 
-    <p>
-        Button is a pure <a href="http://nativebase.io/">NativeBase</a> component.<br />
-        Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.
-    </p><br />
 
-    <p>
-        <ul style="list-style-type:none">
-            <li><b>Contents:</b></li>
-            <li><a href="/docs/components/button/ButtonTheme.md">Button Theme</a></li>
-            <li><a href="/docs/components/button/BlockButton.md">Block Button</a></li>
-            <li><a href="/docs/components/button/RoundButton.md">Rounded Button</a></li>
-            <li><a href="/docs/components/button/IconButton.md">Icon Button</a></li>
-            <li><a href="/docs/components/button/OutlineButton.md">Outline Button</a></li>
-            <li><a href="/docs/components/button/TransparentButton.md">Transparent Button</a></li>
-            <li><a href="/docs/components/button/ButtonSize.md">Button Size</a></li>
-            <li><a href="/docs/components/button/DisabledButton.md">Disabled Button</a></li>
-            <li><a href="/docs/components/button/CustomTextButton.md">Capitalize Button Text</a></li>
-        </ul>
-    </p><br />
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/button.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/button.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+**Contents:**
+* [Button Theme](/docs/components/button/ButtonTheme.md)
+* [Block Button](/docs/components/button/BlockButton.md)
+* [Rounded Button](/docs/components/button/RoundButton.md)
+* [Icon Button](/docs/components/button/IconButton.md)
+* [Outline Button](/docs/components/button/OutlineButton.md)
+* [Transparent Button](/docs/components/button/TransparentButton.md)
+* [Button Size](/docs/components/button/ButtonSize.md)
+* [Disabled Button](/docs/components/button/DisabledButton.md)
+* [Capitalize Button Size](/docs/components/button/CustomTextButton.md)
+
+
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -39,36 +49,20 @@ export default class ButtonExample extends Component {
         );
     }
 }</code></pre><br />
-    <ul>
-        <li>
-            <a href="http://nativebase.io/">NativeBase</a> provides <code>Button</code> component which is readily not available in <a href="https://facebook.github.io/react-native/">React Native</a>.
-        </li>
-        <li>Supports React Native app on both iOS and Android devices.</li>
-        <li>
-            Button component takes input such as: Text, Icon,
-            Text with Icon.
-        </li>
-        <li>
-            NativeBase gives you privilege to customize the props of this component.<br />
-            <i>Example</i>: To have custom style for button, include them in <code>style</code> prop of button.
-        </li>
-        <li>Intakes user-defined styles.</li>
-        <li>
-            NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
-        </li>
-        <li>
-            <i>
-                Replacing Component:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/touchableopacity.html">
-                    <code>&lt;TouchableOpacity></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+* [NativeBase](http://nativebase.io/) provides <code>Button</code> component which is readily not available in [React Native](https://facebook.github.io/react-native/).
+* Supports React Native app on both iOS and Android devices.
+* Button component takes input such as: Text, Icon, Text with Icon.
+* NativeBase gives you privilege to customize the props of this component.<br />
+  *Example*: To have custom style for button, include them in <code>style</code> prop of button.
+* Intakes user-defined styles.
+* NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
+* *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](https://facebook.github.io/react-native/docs/touchableopacity.html)*
+
+<br />
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -173,6 +167,4 @@ export default class ButtonExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

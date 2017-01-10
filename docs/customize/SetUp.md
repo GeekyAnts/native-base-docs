@@ -1,46 +1,22 @@
-<div id="themingNativeBaseApp">
+# Theming NativeBase Apps
 
-    <h1>Theming NativeBase Apps</h1>
+Customizing [NativeBase](http://nativebase.io/) will be a cakewalk for you. That is due to the fact, [NativeBase](http://nativebase.io/) has categorized its screens into different sections. It provides a separate file inclusive of color schemes for different sections.<br />
 
-    <p>
-        Customizing <a href="http://nativebase.io/">NativeBase</a> will be a cakewalk for you. That is due to the fact, <a href="http://nativebase.io/">NativeBase</a> has categorized its screens into different sections. It provides a separate file inclusive of color schemes for different sections.
-        <br /><br />
+**Note:** *[NativeBase](http://nativebase.io/) is built on top of [React Native](https://facebook.github.io/react-native/).<br />*
+*Hence with any component you can pass the style property which will be merged to the default style of that component.<br /><br />*
 
-        <i>
-            <b>Note:</b> <a href="http://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
-            Hence with any component you can pass the style property which will be merged to the default style of that component.<br /><br />
-        </i>
-    </p>
+Steps to be followed to customize NativeBase theme:
+* Copy the file <code>light.js</code> *(/node_modules/native-base/Components/Themes/light.js)*
+* Create a folder <code>Themes</code> under your rootProject and paste the file here.<br />
+Say <code>myTheme.js</code>
+* Import the file Themes/myTheme.js into your code.<br />
+Make the necessary theme changes into myTheme.js.
+* Include prop <code>theme</code> with the component whose theme you wish to change.
 
-    <p>
-        Steps to be followed to customize NativeBase theme:
-        <ul>
-            <li>
-                Copy the file <code>light.js</code>
-                <font size="2">
-                    <i>(/node_modules/native-base/Components/Themes/light.js)</i>
-                </font>
-            </li>
-            <li>
-                Create a folder <code>Themes</code> under your rootProject and paste the file here.<br />
-                Say <code>myTheme.js</code>
-            </li>
-            <li>
-                Import the file Themes/myTheme.js into your code.<br />
-                Make the necessary theme changes into myTheme.js.
-            </li>
-            <li>
-                Include prop <code>theme</code> with the component whose theme you wish to change.
-            </li>
-        </ul>
+Now your project is ready for theme customization.
+<br />
 
-        Now your project is ready for theme customization.
-    </p>
-</div>
-
-<div class="section" id="theme">
-
-    <i>General Syntax</i>
+*General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text} from 'native-base';
 import React, {Component} from 'react-native';
 import myTheme from './Themes/myTheme';
@@ -57,23 +33,10 @@ export default class ThemeExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <ul>
-        <li>
-            The <code>theme</code> prop can be applied to any component of NativeBase.
-        </li>
-        <li>
-            The theme holds good with all its descendants.
-        </li>
-        <li>
-            The above code for theme change works this way:<br />
-            Go to Themes/myTheme.js and modify color code for <code>textColor</code>.
-        </li>
-        <li>
-            Similarly you can customize theme for the rest of NativeBase components by modifying color code of their respective attributes, some of which are explained below.
-        </li>
-    </ul><br />
-
-
-</div>
+* The <code>theme</code> prop can be applied to any component of NativeBase.
+* The theme holds good with all its descendants.
+* The above code for theme change works this way:<br />
+Go to Themes/myTheme.js and modify color code for <code>textColor</code>.
+* Similarly you can customize theme for the rest of NativeBase components by modifying color code of their respective attributes, some of which are explained below.

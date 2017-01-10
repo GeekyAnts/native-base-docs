@@ -21,6 +21,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -120,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../introduction/WhatisNB.html">
+        <li class="chapter " data-level="1.2.1" data-path="../introduction/">
             
-                <a href="../introduction/WhatisNB.html">
+                <a href="../introduction/#WhatisNB">
             
                     
                     What is NativeBase?
@@ -133,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../introduction/WhyNB.html">
+        <li class="chapter " data-level="1.2.2" data-path="../introduction/">
             
-                <a href="../introduction/WhyNB.html">
+                <a href="../introduction/#WhyNB">
             
                     
                     Why NativeBase?
@@ -146,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../introduction/WhatsNew.html">
+        <li class="chapter " data-level="1.2.3" data-path="../introduction/">
             
-                <a href="../introduction/WhatsNew.html">
+                <a href="../introduction/#WhatsNew">
             
                     
-                    What's New in v2.0.0?
+                    What's New in v0.5.18?
             
                 </a>
             
@@ -1265,85 +1273,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="section" id="themeFont">
-
-    <h3 id="theme-font">Theme Font</h3>
-
-    <p>
-        Having different font types in your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> apps is not tough any more.<br>
-        <a href="http://nativebase.io/" target="_blank">NativeBase</a> provides you with a set of nine font families.<br>
-    </p>
-
-    <ul style="padding-bottom: 10px; ">
-        <li>
-            To include these fonts into your app, go to <b>Themes/myTheme.js</b>
-        </li>
-        <li>
-            Replace value for <code>fontFamily</code> with your choice of font name.
-        </li>
-    </ul>
-
-    Font families included with NativeBase:
-    <ul style="padding-bottom: 10px;">
-        <li>Andale Mono</li>
-        <li>Arial</li>
-        <li>Arial Black</li>
-        <li>Chalkboard</li>
-        <li>Cochin</li>
-        <li>Comic Sans MS</li>
-        <li>Courier New</li>
-        <li>Devanagiri</li>
-        <li>Georgia</li>
-        <li>Microsoft Sans Serif</li>
-        <li>Skia</li>
-        <li>Times New Roman</li>
-    </ul>
-
-
-
-    <p>
-        NativeBase allows you to add more font styles on your own.
-    </p>
-
-    <h4 id="ios">iOS</h4>
-    <ul>
-        <li>
-            <b>With rnpm</b><br>
-            Run this command on your terminal<br>
-<pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre>
-        </li>
-        <li>
-            <b>Manually</b>
-        </li>
-        <ul>
-            <li>
-                Browse through <b>node_modules</b> and drag the font file the ones you want to your project in Xcode. Make sure your app is checked under <b>&quot;Add to targets&quot;</b> and that <b>&quot;Create groups&quot;</b> is checked if you add the whole folder.
-            </li>
-            <li>
-                Edit <b>Info.plist</b> and include in property called <b>Fonts provided by application</b> and type in the files you just added.
-            </li>
-        </ul>
-    </ul>
-
-    <h4 id="android">Android</h4>
-    <ul>
-        <li>
-            <b>With rnpm</b><br>
-            Run this command on your terminal<br>
-<pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre>
-        </li>
-        <li>
-            <b>Manually</b>
-        </li>
-        <ul>
-            <li>
-                Copy the font files to <code>android/app/src/main/assets/fonts.</code>
-            </li>
-        </ul>
-    </ul><br>
-
-
-</div>
+                                <h2 id="theme-font">Theme Font</h2>
+<p>Having different font types in your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> apps is not tough any more.<br>
+<a href="http://nativebase.io/" target="_blank">NativeBase</a> provides you with a set of nine font families.<br></p>
+<ul>
+<li>To include these fonts into your app, go to <strong>Themes/myTheme.js</strong></li>
+<li>Replace value for <code>fontFamily</code> with your choice of font name.</li>
+</ul>
+<p>Font families included with NativeBase:</p>
+<ul>
+<li>Andale Mono</li>
+<li>Arial</li>
+<li>Arial Black</li>
+<li>Chalkboard</li>
+<li>Cochin</li>
+<li>Comic Sans MS</li>
+<li>Courier New</li>
+<li>Devanagiri</li>
+<li>Georgia</li>
+<li>Microsoft Sans Serif</li>
+<li>Skia</li>
+<li>Times New Roman</li>
+</ul>
+<p>NativeBase allows you to add more font styles on your own.</p>
+<h4 id="ios">iOS</h4>
+<ul>
+<li><strong>With rnpm</strong><br>
+Run this command on your terminal<br><pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre></li>
+<li><strong>Manually</strong><ul>
+<li>Browse through <strong>node_modules</strong> and drag the font file the ones you want to your project in Xcode. Make sure your app is checked under <strong>&quot;Add to targets&quot;</strong> and that <strong>&quot;Create groups&quot;</strong> is checked if you add the whole folder.</li>
+<li>Edit <strong>Info.plist</strong> and include in property called <strong>Fonts provided by application</strong> and type in the files you just added.</li>
+</ul>
+</li>
+</ul>
+<h4 id="android">Android</h4>
+<ul>
+<li><strong>With rnpm</strong><br>
+Run this command on your terminal<br><pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre></li>
+<li><strong>Manually</strong><ul>
+<li>Copy the font files to <code>android/app/src/main/assets/fonts.</code></li>
+</ul>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -1387,7 +1358,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Theme Font","level":"1.5.3","depth":2,"next":{"title":"Badge","level":"1.5.4","depth":2,"path":"docs/customize/Badge.md","ref":"docs/customize/Badge.md","articles":[]},"previous":{"title":"Theme Color","level":"1.5.2","depth":2,"path":"docs/customize/ThemeColor.md","ref":"docs/customize/ThemeColor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/customize/ThemeFont.md","mtime":"2017-01-09T08:07:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T11:11:40.700Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Theme Font","level":"1.5.3","depth":2,"next":{"title":"Badge","level":"1.5.4","depth":2,"path":"docs/customize/Badge.md","ref":"docs/customize/Badge.md","articles":[]},"previous":{"title":"Theme Color","level":"1.5.2","depth":2,"path":"docs/customize/ThemeColor.md","ref":"docs/customize/ThemeColor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","toggle-chapters","ace","livereload"],"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/customize/ThemeFont.md","mtime":"2017-01-10T12:11:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-10T13:20:25.445Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1398,6 +1369,22 @@
     
         
         <script src="../../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

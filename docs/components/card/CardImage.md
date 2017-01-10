@@ -1,14 +1,26 @@
-<div class="section" id="cardImage">
+#### Card Image
 
-    <h4>Card Image</h4>
+Want to have something more with Card Lists? <br />
+Include image with <code>CardItem</code> within <code>Card</code> along with some text before and after image to create a card with lists. <br />
+Here is your Card Image ready !
 
-    <p style="padding-bottom: 15px;">
-        Want to have something more with Card Lists? <br />
-        Include image with <code>CardItem</code> within <code>Card</code> along with some text before and after image to create a card with lists. <br />
-        Here is your Card Image ready !
-    </p>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/card-image.png" alt="" /></th>
+          <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/card-image.png" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
@@ -41,5 +53,4 @@ export default class CardImageExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-</div>
+}</code></pre>

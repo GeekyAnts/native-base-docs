@@ -1,6 +1,8 @@
 {
     "plugins": [
-        "versions"
+        "versions",
+        "toggle-chapters",
+        "ace"
     ],
     "pluginsConfig": {
         "versions": {

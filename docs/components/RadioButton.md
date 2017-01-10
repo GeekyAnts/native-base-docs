@@ -1,20 +1,24 @@
-<div class="section" id="radioButton">
+# Radio Button
 
-    <h2>Radio Button</h2>
+Radio buttons let the user select any one from a set of options.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](http://facebook.github.io/react-native/docs/touchableopacity.html)*
 
-    <p style="padding-bottom: 15px;">
-        Radio buttons let the user select any one from a set of options.<br />
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/radio.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/radio.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="http://facebook.github.io/react-native/docs/touchableopacity.html">
-                <code>&lt;TouchableOpacity></code>
-            </a>
-        </i>
-    </p>
-
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text, Radio } from 'native-base';
@@ -38,10 +42,12 @@ export default class RadioButtonExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -63,7 +69,4 @@ export default class RadioButtonExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-
-</div>
+    </table>

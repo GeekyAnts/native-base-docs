@@ -1,12 +1,23 @@
-<div class="section" id="disabledTextbox" >
+#### Disabled Textbox
 
-    <h4>Disabled Textbox</h4>
+To restrict inputting data into textbox, include the <code>disabled</code> prop with <code>&lt;InputGroup></code>.
 
-    <p style="padding-bottom: 15px;">
-        To restrict inputting data into textbox, include the <code>disabled</code> prop with <code>&lt;InputGroup></code>.
-    </p>
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/disabled-textbox.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/disabled-textbox.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-    <i>Syntax</i>
+*Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, InputGroup, Input, Icon } from 'native-base';
 ​
@@ -23,6 +34,4 @@ export default class DisabledTextboxExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

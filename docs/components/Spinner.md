@@ -1,19 +1,24 @@
-<div class="section" id="spinner">
+# Spinner
 
-    <h2>Spinner</h2>
+If you have certain screens of your app that take some time to load, you may want to consider a page loader. A page loader is any kind of animation that visually communicates to a visitor that the page is loading and to just sit tight for a few seconds. Without a page loader, user might think that the app is being unresponsive and just click away in frustration. A page loader also provides a small distraction which can actually makes the wait seem much shorter.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/docs/getting-started.html) [<code>&lt;ActivityIndicator></code>](https://facebook.github.io/react-native/docs/activityindicator.html)*
 
-    <p style="padding-bottom: 15px;">
-        If you have certain screens of your app that take some time to load, you may want to consider a page loader. A page loader is any kind of animation that visually communicates to a visitor that the page is loading and to just sit tight for a few seconds. Without a page loader, user might think that the app is being unresponsive and just click away in frustration. A page loader also provides a small distraction which can actually makes the wait seem much shorter.<br />
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/docs/getting-started.html">React Native</a>
-            <a href="https://facebook.github.io/react-native/docs/activityindicator.html">
-                <code>&lt;ActivityIndicator></code>
-            </a>
-        </i>
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/spinner.gif')}}" alt="" /></th>
+      <th><img height="470" width="270" src="{{('../assets/android/components/spinner.gif')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Spinner } from 'native-base';
@@ -31,10 +36,11 @@ export default class SpinnerExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+
+**Configuration**
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -51,6 +57,4 @@ export default class SpinnerExample extends Component {
                 <td>Color of Spinner.</td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

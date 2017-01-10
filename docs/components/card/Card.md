@@ -1,27 +1,34 @@
-<div class="section" id="card">
+# Card
 
-    <h2>Card</h2>
+Card is a pure [NativeBase](http://nativebase.io/) component.<br />
+Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
+[NativeBase](http://nativebase.io/) Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-    <p>
-        Card is a pure <a href="http://nativebase.io/">NativeBase</a> component.<br />
-        Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/card.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/card.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-        <a href="http://nativebase.io/">NativeBase</a> Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
-    </p><br />
+  **Contents:**
+  * [Card Header and Footer](/docs/components/card/HeaderAndFooter.md)
+  * [Card List](/docs/components/card/CardList.md)
+  * [Card Image](/docs/components/card/CardImage.md)
+  * [Card Showcase](/docs/components/card/CardShowcase.md)
+  * [Card OnClick](/docs/components/card/CardOnClick.md)
+  * [Dynamic Card](/docs/components/card/DynamicCard.md)
 
-    <p>
-        <ul style="list-style-type:none">
-            <li><b>Contents:</b></li>
-            <li><a href="/docs/components/card/HeaderAndFooter.md">Card Header and Footer</a></li>
-            <li><a href="/docs/components/card/CardList.md">Card List</a></li>
-            <li><a href="/docs/components/card/CardImage.md">Card Image</a></li>
-            <li><a href="/docs/components/card/CardShowcase.md">Card Showcase</a></li>
-            <li><a href="/docs/components/card/CardOnClick.md">Card OnClick</a></li>
-            <li><a href="/docs/components/card/DynamicCard.md">Dynamic Card</a></li>
-        </ul>
-    </p><br />
-
-    <i>Genertal Syntax</i>
+*Genertal Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text } from 'native-base';
@@ -42,40 +49,17 @@ export default class CardExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
+}</code></pre>
 
-    <ul>
-        <li>
-            <code>Card</code>: This component adds a box-shadow by default. Also provides default spacing and alignment between cards.
-        </li>
-        <li>
-            <code>CardItem</code>: This is the child component of <code>Card</code>. Works very similar to the list items of list. Card takes any number of CardItem.
-        </li>
-        <li>
-            CardItem component takes input such as: Text, Button, Image, Thumbnail, Icon.
-        </li>
-        <li>
-            <i>
-                Replacing Component for Card:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/view.html">
-                    <code>&lt;View></code>
-                </a>
-            </i>
-        </li>
-        <li>
-            <i>
-                Replacing Component for CardItem:
-                <a href="https://facebook.github.io/react-native/">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/touchableopacity.html">
-                    <code>&lt;TouchableOpacity></code>
-                </a>
-            </i>
-        </li>
-    </ul><br />
+* <code>Card</code>: This component adds a box-shadow by default. Also provides default spacing and alignment between cards.
+* <code>CardItem</code>: This is the child component of <code>Card</code>. Works very similar to the list items of list. Card takes any number of CardItem.
+* CardItem component takes input such as: Text, Button, Image, Thumbnail, Icon.
+* *Replacing Component for Card: [React Native](https://facebook.github.io/react-native/)  [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
+* *Replacing Component for CardItem: [React Native](https://facebook.github.io/react-native/)  [<code>&lt;TouchableOpacity></code>](https://facebook.github.io/react-native/docs/touchableopacity.html)*
 
-    <b>Configuration</b><br />
-    <table class = "table table-bordered">
+**Configuration**
+
+<table class = "table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -115,6 +99,4 @@ export default class CardExample extends Component {
                 </td>
             </tr>
         </tbody>
-    </table><br />
-
-</div>
+    </table>

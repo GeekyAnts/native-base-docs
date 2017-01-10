@@ -1,12 +1,17 @@
-<div class="section" id="themeBadge">
+## Customize Badge
 
-    <h3>Customize Badge</h3>
+Steps to customize theme for Badge attributes:
+<br />
 
-    <p style="padding-bottom: 10px; ">
-        Steps to customize theme for Badge attributes:
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/guide/theme-badge.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <table class = "table table-hover" style="width: 75%; ">
+<table class = "table table-hover" style="width: 75%; ">
         <thead>
             <tr>
                 <th>Property</th>
@@ -25,7 +30,8 @@
         </tbody>
     </table>
 
-    <i>Syntax</i>
+
+*Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, Badge } from 'native-base';
 import myTheme from './Themes/myTheme';
@@ -46,8 +52,3 @@ export default class ThemeBadgeExample extends Component {
         );
     }
 }</code></pre>
-
-    <br />
-
-
-</div>

@@ -1,12 +1,18 @@
-<div class="section" id="themeList">
+## Customize List
 
-    <h3>Customize List</h3>
+Steps to customize theme for List attributes:
+<br />
 
-    <p style="padding-bottom: 10px;">
-        Steps to customize theme for List attributes:
-    </p>
 
-    <table class = "table table-hover" style="width: 75%; ">
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/guide/theme-list.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+
+<table class = "table table-hover" style="width: 75%; ">
         <thead>
             <tr>
                 <th>Property</th>
@@ -41,7 +47,8 @@
         </tbody>
     </table>
 
-    <i>Syntax</i>
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Text, Icon } from 'native-base';
 import myTheme from './Themes/myTheme';
@@ -80,6 +87,4 @@ export default class ThemeListExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

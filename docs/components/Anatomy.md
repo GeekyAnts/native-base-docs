@@ -1,16 +1,29 @@
 # Anatomy
 
 Automatically animates views to their new positions.<br />
-A common way to use [NativeBase](http://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code>.<br /><br />
+A common way to use [NativeBase](http://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code>.
+
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/anatomy.png" alt="" /></th>
+      <th><img height="470" width="270" src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/anatomy.png" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+
+**Contents:**
+* [Header](/docs/components/Header.md)
+* [Content](/docs/components/Content.md)
 
 
-
-<b>Contents:</b>
-* <a href='/docs/components/Header.md'>Header</a>
-* <a href='/docs/components/Content.md'>Content</a><br /><br />  
-
-
-<i>General Syntax</i>
+*General Syntax*
 <pre><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 ​
@@ -38,16 +51,7 @@ export default class AnatomyExample extends Component {
     }
 }</code></pre>
 
-  <div style="display: inline-block">
-    <h4 style="text-align: center;color: #00c497">iOS</h4>
-    <img src="{{('/docs/assets/ios/components/footer-tabs.png')}}" alt="" />
-  </div>
 
-  <div style="display: inline-block">
-    <h4 style="text-align: center;color: #00c497">Android</h4>
-    <img src="{{('/docs/assets/android/components/footer-tabs.png')}}" alt="" />
-  </div>
-<br /><br />
 
 * [NativeBase](http://nativebase.io/) provides its own frame component, named after <code>&lt;Container></code>.
 * All the components should be included within the Container.
@@ -56,7 +60,7 @@ export default class AnatomyExample extends Component {
 * Usage of Container's <code>Header</code> component is very similar to your HTML &lt;head>. So is with <code>Footer</code>.
 * The <code>Content</code> component of Container is nothing but the body section of your screen.<br /><br />
 
-    <b>Configuration</b><br />
+    **Configuration**
     <table class="table table-bordered">
         <thead>
             <tr>

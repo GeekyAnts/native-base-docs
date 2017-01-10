@@ -1,21 +1,26 @@
-<div class="section" id="buttonSize">
+#### Button Size
 
-    <h4>Button Size</h4>
+Want to have buttons of fancy size?<br />
+Include the following props with your <code>Button</code>.
+* <code>small</code>: for small size button.
+* <code>large</code>: for large size button.
 
-    <p>
-        Want to have buttons of fancy size?<br />
-        Include the following props with your <code>Button</code>.
-        <ul style="padding-bottom: 15px;">
-            <li>
-                <code>small</code>: for small size button.
-            </li>
-            <li>
-                <code>large</code>: for large size button.
-            </li>
-        </ul>
-    </p>
-
-    <i>Syntax</i>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/button-size.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/button-size.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
@@ -37,6 +42,4 @@ export default class ButtonSizeExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

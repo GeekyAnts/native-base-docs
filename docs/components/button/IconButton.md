@@ -1,14 +1,24 @@
-<div class="section" id="iconButton">
+#### Icon Button
 
-    <h4>Icon Button</h4>
+The Icon Buttons, can take text and/or icon as child elements inside the Button.<br />
+This goes as simple as this: include your choice of icon using <code>Icon</code> component within the <code>Button</code> component.
 
-    <p style="padding-bottom: 15px;">
-        The Icon Buttons, can take text and/or icon as child elements inside the Button.
-        <br />
-        This goes as simple as this: include your choice of icon using <code>Icon</code> component within the <code>Button</code> component.
-    </p>
-
-    <i>Syntax</i>
+<br />
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/icon-button.png')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../../assets/android/components/icon-button.png')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Icon } from 'native-base';
@@ -48,6 +58,4 @@ export default class IconButtonExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-</div>
+}</code></pre>

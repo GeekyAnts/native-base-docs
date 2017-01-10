@@ -1,19 +1,24 @@
-<div class="section" id="picker">
+# Picker
 
-    <h2>Picker</h2>
+Renders the native picker component on iOS and Android.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Picker></code>](https://facebook.github.io/react-native/docs/picker.html)*
 
-    <p style="padding-bottom: 15px;">
-        Renders the native picker component on iOS and Android.<br />
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="https://facebook.github.io/react-native/docs/picker.html">
-                <code>&lt;Picker></code>
-            </a>
-        </i>
-    </p>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/picker.gif')}}" alt="" /></th>
+      <th><img height="470" width="270" src="{{('../assets/android/components/picker.gif')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
 
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Picker } from 'native-base';
@@ -55,8 +60,4 @@ export default class PickerExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-    <br />
-
-</div>
+}</code></pre>

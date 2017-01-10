@@ -21,6 +21,14 @@
                 
             
                 
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -120,9 +128,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../../introduction/WhatisNB.html">
+        <li class="chapter " data-level="1.2.1" data-path="../../introduction/">
             
-                <a href="../../introduction/WhatisNB.html">
+                <a href="../../introduction/#WhatisNB">
             
                     
                     What is NativeBase?
@@ -133,9 +141,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../../introduction/WhyNB.html">
+        <li class="chapter " data-level="1.2.2" data-path="../../introduction/">
             
-                <a href="../../introduction/WhyNB.html">
+                <a href="../../introduction/#WhyNB">
             
                     
                     Why NativeBase?
@@ -146,12 +154,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../../introduction/WhatsNew.html">
+        <li class="chapter " data-level="1.2.3" data-path="../../introduction/">
             
-                <a href="../../introduction/WhatsNew.html">
+                <a href="../../introduction/#WhatsNew">
             
                     
-                    What's New in v2.0.0?
+                    What's New in v0.5.18?
             
                 </a>
             
@@ -1265,33 +1273,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div class="section" id="button">
-
-    <h2 id="button">Button</h2>
-
-    <p>
-        Button is a pure <a href="http://nativebase.io/" target="_blank">NativeBase</a> component.<br>
-        Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.
-    </p><br>
-
-    <p>
-        <ul style="list-style-type:none">
-            <li><b>Contents:</b></li>
-            <li><a href="ButtonTheme.html">Button Theme</a></li>
-            <li><a href="BlockButton.html">Block Button</a></li>
-            <li><a href="RoundButton.html">Rounded Button</a></li>
-            <li><a href="IconButton.html">Icon Button</a></li>
-            <li><a href="OutlineButton.html">Outline Button</a></li>
-            <li><a href="TransparentButton.html">Transparent Button</a></li>
-            <li><a href="ButtonSize.html">Button Size</a></li>
-            <li><a href="DisabledButton.html">Disabled Button</a></li>
-            <li><a href="CustomTextButton.html">Capitalize Button Text</a></li>
-        </ul>
-    </p><br>
-
-    <i>Syntax</i>
-
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+                                <h1 id="button">Button</h1>
+<p>Button is a pure <a href="http://nativebase.io/" target="_blank">NativeBase</a> component.<br>
+Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.</p>
+<p><br>
+    <table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="../../assets/ios/components/button.png" alt=""></th>
+          <th><img height="470" width="270" src="../../assets/android/components/button.png" alt=""></th>
+        </tr>
+      </thead>
+    </table></p>
+<p><strong>Contents:</strong></p>
+<ul>
+<li><a href="ButtonTheme.html">Button Theme</a></li>
+<li><a href="BlockButton.html">Block Button</a></li>
+<li><a href="RoundButton.html">Rounded Button</a></li>
+<li><a href="IconButton.html">Icon Button</a></li>
+<li><a href="OutlineButton.html">Outline Button</a></li>
+<li><a href="TransparentButton.html">Transparent Button</a></li>
+<li><a href="ButtonSize.html">Button Size</a></li>
+<li><a href="DisabledButton.html">Disabled Button</a></li>
+<li><a href="CustomTextButton.html">Capitalize Button Size</a></li>
+</ul>
+<p><em>Syntax</em></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 &#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -1305,37 +1318,20 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
         );
     }
-}</code></pre><br>
-    <ul>
-        <li>
-            <a href="http://nativebase.io/" target="_blank">NativeBase</a> provides <code>Button</code> component which is readily not available in <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>.
-        </li>
-        <li>Supports React Native app on both iOS and Android devices.</li>
-        <li>
-            Button component takes input such as: Text, Icon,
-            Text with Icon.
-        </li>
-        <li>
-            NativeBase gives you privilege to customize the props of this component.<br>
-            <i>Example</i>: To have custom style for button, include them in <code>style</code> prop of button.
-        </li>
-        <li>Intakes user-defined styles.</li>
-        <li>
-            NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
-        </li>
-        <li>
-            <i>
-                Replacing Component:
-                <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>
-                <a href="https://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank">
-                    <code>&lt;TouchableOpacity&gt;</code>
-                </a>
-            </i>
-        </li>
-    </ul><br>
-
-    <b>Configuration</b><br>
-    <table class="table table-bordered">
+}</code></pre><br></p>
+<ul>
+<li><a href="http://nativebase.io/" target="_blank">NativeBase</a> provides <code>Button</code> component which is readily not available in <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>.</li>
+<li>Supports React Native app on both iOS and Android devices.</li>
+<li>Button component takes input such as: Text, Icon, Text with Icon.</li>
+<li>NativeBase gives you privilege to customize the props of this component.<br>
+<em>Example</em>: To have custom style for button, include them in <code>style</code> prop of button.</li>
+<li>Intakes user-defined styles.</li>
+<li>NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.</li>
+<li><em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank"><code>&lt;TouchableOpacity&gt;</code></a></em></li>
+</ul>
+<p><br>
+<strong>Configuration</strong></p>
+<table class="table table-bordered">
         <thead>
             <tr>
                 <th>Property</th>
@@ -1440,9 +1436,7 @@
                 </td>
             </tr>
         </tbody>
-    </table><br>
-
-</div>
+    </table>
 
                                 
                                 </section>
@@ -1486,7 +1480,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Button","level":"1.4.3","depth":2,"next":{"title":"Button Theme","level":"1.4.3.1","depth":3,"path":"docs/components/button/ButtonTheme.md","ref":"docs/components/button/ButtonTheme.md","articles":[]},"previous":{"title":"Badge","level":"1.4.2","depth":2,"path":"docs/components/Badge.md","ref":"docs/components/Badge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions"],"pluginsConfig":{"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/components/button/Button.md","mtime":"2017-01-06T13:55:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-09T11:11:40.700Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Button","level":"1.4.3","depth":2,"next":{"title":"Button Theme","level":"1.4.3.1","depth":3,"path":"docs/components/button/ButtonTheme.md","ref":"docs/components/button/ButtonTheme.md","articles":[]},"previous":{"title":"Badge","level":"1.4.2","depth":2,"path":"docs/components/Badge.md","ref":"docs/components/Badge.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["versions","toggle-chapters","ace","livereload"],"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/master/_book/index.html","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/components/button/Button.md","mtime":"2017-01-10T09:18:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-10T13:20:25.445Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1497,6 +1491,22 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

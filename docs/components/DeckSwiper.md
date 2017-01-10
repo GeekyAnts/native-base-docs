@@ -1,22 +1,25 @@
-<div class="section" id="deckSwiper">
+# Deck Swiper
 
-    <h2>Deck Swiper</h2>
+Looking at data one piece at a time is more efficient when you consider people you might want to date, restaurants, streaming music, or local events you might want to check out. <br />
+[NativeBase](http://nativebase.io/) Deck Swiper helps you evaluate one option at a time, instead of selecting from a set of options.<br />
+*Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-    <p style="padding-bottom: 15px;">
-        Looking at data one piece at a time is more efficient when you consider people you might want to date, restaurants, streaming music, or local events you might want to check out. <br />
+<table>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden">IOS</th>
+          <th>Android</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr style="border-style: hidden">
+          <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/components/deck-swiper.gif')}}" alt="" /></th>
+          <th><img height="470" width="270" src="{{('../assets/android/components/deck-swiper.gif')}}" alt="" /></th>
+        </tr>
+      </thead>
+    </table>
 
-        <a href="http://nativebase.io/">NativeBase</a> Deck Swiper helps you evaluate one option at a time, instead of selecting from a set of options.<br />
-
-        <i>
-            Replacing Component:
-            <a href="https://facebook.github.io/react-native/">React Native</a>
-            <a href="https://facebook.github.io/react-native/docs/view.html">
-                <code>&lt;View></code>
-            </a>
-        </i>
-    </p>
-
-    <i>Syntax</i>
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
@@ -60,8 +63,4 @@ export default class DeckSwiperExample extends Component {
             &lt;/Container>
         );
     }
-}</code></pre><br />
-
-
-
-</div>
+}</code></pre>
