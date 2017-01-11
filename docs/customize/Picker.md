@@ -7,7 +7,7 @@ Customize Header for Picker
 <table>
   <thead>
     <tr style="border-style: hidden">
-      <th style="border-style: hidden"><img height="470" width="270" src="{{('../assets/ios/guide/theme-picker.gif')}}" alt="" /></th>
+      <th style="border-style: hidden"><div style="background: url(../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('../assets/ios/guide/theme-picker.gif')}}" alt="" /></div></th>
     </tr>
   </thead>
 </table>

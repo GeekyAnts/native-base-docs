@@ -10,14 +10,16 @@ In favor of active development, we accept contributions from everyone. [NativeBa
 * [Coding Style](#coding-style)
 * [Git Flow](#git-flow)
 
+<a id="coding-style"></a>
 ### Coding Style
 
 To keep project away from disputes we make use of [ESLint](https://github.com/roadhump/SublimeLinter-eslint), which is really a handy linting tool that enforces strict coding styles and makes sure your files are free from dead code. Each module of [NativeBase](http://nativebase.io/) has bundled ESLint as a dev dependency. In order to lint your code run following command.
 
 <pre class="command-line language-xxx" data-output="2-19"><code>cd AwesomeNativeBase
 npm install eslint</code></pre>
-<br /><br />
+<br />
 
+<a id="git-flow"></a>
 ### Git Flow
 
 [NativeBase](http://nativebase.io/) is an infant and growing rapidly, so we planned to stick to Git Flow. Below are the rules you need to follow:

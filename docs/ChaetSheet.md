@@ -40,7 +40,7 @@
             </tbody>
         </table><br />
 
-### Components
+<h3>Components</h3>
 
 <table width="100%" class="table table-hover">
             <thead>
@@ -793,4 +793,3 @@
                 </tr>
             </tbody>
         </table>
-</div>
