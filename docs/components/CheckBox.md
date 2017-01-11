@@ -21,23 +21,21 @@ Check Box allows the user to select a number of items from a set of choices.<br 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text, CheckBox } from 'native-base';
+import { Container, Content, ListItem, Text, CheckBox } from 'native-base';
 ​
 export default class CheckBoxExample extends Component {
     render() {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;List>
-                        &lt;ListItem>
-                            &lt;CheckBox checked={true} />
-                            &lt;Text>Daily Stand Up&lt;/Text>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;CheckBox checked={false} />
-                            &lt;Text>Discussion with Client&lt;/Text>
-                        &lt;/ListItem>
-                    &lt;/List>
+                    &lt;ListItem>
+                        &lt;CheckBox checked={true} />
+                        &lt;Text>Daily Stand Up&lt;/Text>
+                    &lt;/ListItem>
+                    &lt;ListItem>
+                        &lt;CheckBox checked={false} />
+                        &lt;Text>Discussion with Client&lt;/Text>
+                    &lt;/ListItem>
                 &lt;/Content>
             &lt;/Container>
         );

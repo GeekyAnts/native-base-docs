@@ -36,7 +36,7 @@ Buttons are the integral part of an application. They are used for various purpo
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button } from 'native-base';
+import { Container, Content, Button, Text } from 'native-base';
 ​
 export default class ButtonExample extends Component {
     render() {
@@ -44,7 +44,9 @@ export default class ButtonExample extends Component {
             &lt;Container>
                 &lt;Content>
                     // NativeBase default style
-                    &lt;Button> Click Me! &lt;/Button>
+                    &lt;Button>
+                      &lt;Text> Click Me! &lt;/Text>
+                    &lt;/Button>
                 &lt;/Content>
             &lt;/Container>
         );
@@ -122,26 +124,7 @@ export default class ButtonExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>For large size button</td>
-            </tr>
-            <tr>
-                <td>iconLeft</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Used for Icon alignment.<br />
-                    Aligns icon to the left in button.<br />
-                    By default, icons are aligned to the left in button.
-                </td>
-            </tr>
-            <tr>
-                <td>iconRight</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Used for Icon alignment.<br />
-                    Aligns icon to the right in button.
-                </td>
-            </tr>            
+            </tr>           
             <tr>
                 <td>disabled</td>
                 <td>true</td>

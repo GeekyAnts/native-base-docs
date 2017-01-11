@@ -27,7 +27,7 @@ export default class UnderlinedTextboxExample extends Component {
             &lt;Container>
                 &lt;Content>​
                     // Underlined text input box with placeholder text and an icon
-                    &lt;InputGroup borderType='underline' >
+                    &lt;InputGroup underline>
                         &lt;Icon name='ios-home' style=&#123;{color:'#384850'}}/>
                         &lt;Input placeholder='Type your text here' />
                     &lt;/InputGroup>

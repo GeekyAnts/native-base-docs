@@ -21,7 +21,7 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Icon } from 'native-base';
+import { Container, Content, Button, Icon, Text } from 'native-base';
 ​
 export default class IconButtonExample extends Component {
     render() {
@@ -30,16 +30,16 @@ export default class IconButtonExample extends Component {
                 &lt;Content>
                     &lt;Button primary>
                         &lt;Icon name='ios-home' />
-                        Home
+                        &lt;Text> Home &lt;/Text>
                     &lt;/Button>
 
                     &lt;Button success iconRight>
-                        Next
+                        &lt;Text> Next &lt;/Text>
                         &lt;Icon name='ios-arrow-forward' />
                     &lt;/Button>
 
                     &lt;Button info>
-                        Previous
+                        &lt;Text> Previous &lt;/Text>
                         &lt;Icon name='ios-arrow-back' />
                     &lt;/Button>
 

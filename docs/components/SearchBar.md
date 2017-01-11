@@ -34,7 +34,7 @@ export default class SearchBarExample extends Component {
                         &lt;Icon name="ios-people" />
                     &lt;/InputGroup>
                     &lt;Button transparent>
-                        Search
+                        &lt;Text>Search&lt;/Text>
                     &lt;/Button>
                 &lt;/Header>
             &lt;/Container>

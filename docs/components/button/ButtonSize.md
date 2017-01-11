@@ -23,7 +23,7 @@ Include the following props with your <code>Button</code>.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button } from 'native-base';
+import { Container, Content, Button, Text } from 'native-base';
 ​
 export default class ButtonSizeExample extends Component {
     render() {
@@ -31,13 +31,19 @@ export default class ButtonSizeExample extends Component {
             &lt;Container>
                 &lt;Content>
                     //Small size button
-                    &lt;Button small primary> Primary &lt;/Button>
+                    &lt;Button small primary>
+                      &lt;Text> Primary &lt;/Text>
+                    &lt;/Button>
 
                     //Regular size button
-                    &lt;Button success> Success &lt;/Button>
+                    &lt;Button success>
+                      &lt;Text> Success &lt;/Text>
+                    &lt;/Button>
 
                     //Large size button
-                    &lt;Button large info> Info &lt;/Button>
+                    &lt;Button large info>
+                      &lt;Text> Info &lt;/Text>
+                    &lt;/Button>
                 &lt;/Content>
             &lt;/Container>
         );

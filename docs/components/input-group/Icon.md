@@ -35,9 +35,9 @@ export default class IconTextboxExample extends Component {
                     &lt;/InputGroup>
 
                     // Text input box with icon aligned to the right
-                    &lt;InputGroup iconRight>
-                        &lt;Icon name='ios-swap' style=&#123;{color:'#00C497'}}/>
+                    &lt;InputGroup>
                         &lt;Input placeholder='Icon Alignment in Textbox'/>
+                        &lt;Icon name='ios-swap' style=&#123;{color:'#00C497'}}/>
                     &lt;/InputGroup>
                 &lt;/Content>
             &lt;/Container>

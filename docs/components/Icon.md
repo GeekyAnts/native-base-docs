@@ -1,14 +1,7 @@
 # Icon
 
-***Choose from 700+ Icons . . .***<br />
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="http://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
-
-*Features of [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons):*
-* Can use your own custom icon sets. Supports SVG via Fontello or regular icon fonts.        
-* Can use native TabBarIOS.
-* Can use icons inline with Text components as emojis or to create buttons.
-* Can use the icon as an image if a native component requires it (such as NavigatorIOS).
-
+*Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 <table>
   <thead>
     <tr style="border-style: hidden">
@@ -34,8 +27,8 @@ export default class IconExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;Icon name='ios-home' />
-                    &lt;Icon name='ios-menu' style=&#123;{fontSize: 20, color: 'red'}}/>
+                    &lt;Icon name='home' />
+                    &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>
                 &lt;/Content>
             &lt;/Container>
         );
@@ -43,10 +36,9 @@ export default class IconExample extends Component {
 }</code></pre>
 
 
-* <code>Icon</code> takes two attributes: name, style.
+* <code>Icon</code> can take any two of the following attributes: name, ios, android.
 * In case if you want to include icon with custom color, size etc then that should go into <code>style</code>.
 * All the icons in the icon libraries of NativeBase, are scalable vector icons that can be customized size, color, etc.
-* *Replacing Component: [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)  [<code>&lt;Icon></code>](https://github.com/oblador/react-native-vector-icons#icon-component)*
 
 **Configuration**
 
@@ -67,6 +59,18 @@ export default class IconExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>Name of the icon.</td>
+            </tr>
+            <tr>
+                <td>ios</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon for IOS devices.</td>
+            </tr>
+            <tr>
+                <td>android</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon for Android devices.</td>
             </tr>
             <tr>
                 <td>color</td>

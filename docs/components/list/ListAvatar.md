@@ -20,7 +20,7 @@ List Avatars are medium to showcase an image with your list item whose dimension
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, List, ListItem, Thumbnail, Text } from 'native-base';
+import { Container, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base';
 ​
 export default class ListAvatarExample extends Component {
     render() {
@@ -30,13 +30,17 @@ export default class ListAvatarExample extends Component {
                     &lt;List>
                         &lt;ListItem>
                             &lt;Thumbnail source={require('./img/one.png')} />
-                            &lt;Text>Kumar Pratik&lt;/Text>
-                            &lt;Text note>Doing what you like will always keep you happy . .&lt;/Text>
+                            &lt;Body>
+                                &lt;Text>Kumar Pratik&lt;/Text>
+                                &lt;Text note>Doing what you like will always keep you happy . .&lt;/Text>
+                            &lt;/Body>
                         &lt;/ListItem>
                         &lt;ListItem>
                             &lt;Thumbnail source={require('./img/two.png')} />
-                            &lt;Text>Kumar Sanket&lt;/Text>
-                            &lt;Text note>Life is one time offer! Use it well&lt;/Text>
+                            &lt;Body>
+                                &lt;Text>Kumar Sanket&lt;/Text>
+                                &lt;Text note>Life is one time offer! Use it well&lt;/Text>
+                            &lt;/Body>
                         &lt;/ListItem>
                     &lt;/List>
                 &lt;/Content>

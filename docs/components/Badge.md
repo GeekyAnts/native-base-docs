@@ -22,23 +22,34 @@ All of us must have seen notification badges somewhere, such as on smart phones 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Badge } from 'native-base';
+import { Container, Content, Badge, Text } from 'native-base';
 ​
 export default class BadgeExample extends Component {
     render() {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;Badge>2&lt;/Badge>
-                    &lt;Badge primary>2&lt;/Badge>
-                    &lt;Badge success>2&lt;/Badge>
-                    &lt;Badge info>2&lt;/Badge>
-                    &lt;Badge warning>2&lt;/Badge>
-                    &lt;Badge danger>2&lt;/Badge>
+                    &lt;Badge>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
+                    &lt;Badge primary>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
+                    &lt;Badge success>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
+                    &lt;Badge info>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
+                    &lt;Badge warning>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
+                    &lt;Badge danger>
+                        &lt;Text>2&lt;/Text>
+                    &lt;/Badge>
                     &lt;Badge
-                      style=&#123;{ backgroundColor: 'black' }}
-                      textStyle=&#123;{ color: 'white' }}>
-                        1866
+                      style=&#123;{ backgroundColor: 'black' }}>
+                        &lt;Text style=&#123;{ color: 'white' }}>1866&lt;/Text>
                     &lt;/Badge>
                 &lt;/Content>
             &lt;/Container>
@@ -84,12 +95,6 @@ export default class BadgeExample extends Component {
                 <td> - </td>
                 <td>user-defined</td>
                 <td>Text font size of badge.</td>
-            </tr>
-            <tr>
-                <td>lineHeight</td>
-                <td> - </td>
-                <td>user-defined</td>
-                <td>Padding on top of Text</td>
             </tr>
         </tbody>
     </table>

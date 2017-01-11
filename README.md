@@ -1,4 +1,4 @@
-# <img src='/docs/assets/native-base.png' height='100' align="center">   NativeBase
+# <img src='/docs/assets/native-base.png' height='100' align="center">   NativeBase 2.0
 
 
 #### Essential cross-platform UI components for React Native

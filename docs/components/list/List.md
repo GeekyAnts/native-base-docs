@@ -92,34 +92,16 @@ export default class ListExample extends Component {
                 <td>Sub caption for List Item.</td>
             </tr>
             <tr>
-                <td>iconLeft</td>
-                <td>true</td>
-                <td>
-                    true<br />
-                    false<br />
-                </td>
-                <td>Aligns icon to the left of ListeItem.</td>
-            </tr>
-            <tr>
-                <td>iconRight</td>
-                <td>true</td>
-                <td>
-                    true<br />
-                    false<br />
-                </td>
-                <td>Aligns icon to the right of ListeItem.</td>
-            </tr>
-            <tr>
-                <td>dataArray</td>
+                <td>dataSource</td>
                 <td>Array</td>
                 <td>user-defined array</td>
-                <td>Array of data chunks to render iteratively.</td>
+                <td>data chunks to render iteratively.</td>
             </tr>
             <tr>
                 <td>renderRow</td>
                 <td>Function</td>
                 <td> - </td>
-                <td>Callback which takes a chunk of data from <code>dataArray</code> and returns as a component.</td>
+                <td>Callback which takes a chunk of data from <code>dataSource</code> and returns as a component.</td>
             </tr>
             <tr>
                 <td>button</td>

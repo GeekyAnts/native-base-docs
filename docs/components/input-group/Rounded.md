@@ -27,7 +27,7 @@ export default class RoundedTextboxExample extends Component {
             &lt;Container>
                 &lt;Content>
                     // Rounded text input box with icon
-                    &lt;InputGroup borderType='rounded' >
+                    &lt;InputGroup rounded>
                         &lt;Icon name='ios-home' style=&#123;{color:'#384850'}}/>
                         &lt;Input placeholder='Type your text here'/>
                     &lt;/InputGroup>

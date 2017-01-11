@@ -23,7 +23,7 @@ Looking at data one piece at a time is more efficient when you consider people y
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text } from 'native-base';
+import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
 
 const cards = [
     {
@@ -45,11 +45,15 @@ export default class DeckSwiperExample extends Component {
                         renderItem={item =>
                             &lt;Card style=&#123;{ elevation: 3 }}>
                                 &lt;CardItem>
-                                    &lt;Thumbnail source={item.image} />
-                                    &lt;Text>{item.text}&lt;/Text>
-                                    &lt;Text note>NativeBase&lt;/Text>
+                                    &lt;Left>
+                                        &lt;Thumbnail source={item.image} />
+                                        &lt;Body>
+                                            &lt;Text>{item.text}&lt;/Text>
+                                            &lt;Text note>NativeBase&lt;/Text>
+                                        &lt;/Body>
+                                    &lt;/Left>
                                 &lt;/CardItem>
-                                &lt;CardItem>
+                                &lt;CardItem cardBody>
                                     &lt;Image style=&#123;{ resizeMode: 'cover', width: null }} source={item.image} />
                                 &lt;/CardItem>
                                 &lt;CardItem>

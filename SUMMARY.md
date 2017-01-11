@@ -1,4 +1,5 @@
 # Summary
+* [Migration](/docs/Migration.md)
 * [Guide](/docs/introduction/README.md)
   * [What is NativeBase?](/docs/introduction/README.md#WhatisNB)
   * [Why NativeBase?](/docs/introduction/README.md#WhyNB)

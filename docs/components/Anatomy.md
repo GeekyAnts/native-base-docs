@@ -33,14 +33,16 @@ A common way to use [NativeBase](http://nativebase.io/) screen structure is to h
 
 *General Syntax*
 <pre><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Icon } from 'native-base';
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Icon, Body } from 'native-base';
 ​
 export default class AnatomyExample extends Component {
     render() {
         return (
             &lt;Container>
                 &lt;Header>
-                    &lt;Title>Header&lt;/Title>
+                    &lt;Body>
+                        &lt;Title>Header&lt;/Title>
+                    &lt;/Body>
                 &lt;/Header>
 
                 &lt;Content>

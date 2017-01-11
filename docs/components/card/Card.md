@@ -31,7 +31,7 @@ Card is a flexible and extensible content container. It includes options for hea
 *Genertal Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Text } from 'native-base';
+import { Container, Content, Card, CardItem, Text, Body } from 'native-base';
 ​
 export default class CardExample extends Component {
     render() {
@@ -39,10 +39,12 @@ export default class CardExample extends Component {
             &lt;Container>
                 &lt;Content>
                     &lt;Card>
-                        &lt;CardItem>                        
+                        &lt;CardItem>
+                          &lt;Body>
                             &lt;Text>
                                 //Your text here
                             &lt;/Text>
+                          &lt;/Body>
                         &lt;/CardItem>
                     &lt;/Card>
                 &lt;/Content>
@@ -87,7 +89,7 @@ export default class CardExample extends Component {
                 <td> - </td>
                 <td>
                     Defines section for body of card.<br />
-                    The child components are rendered with proper spacing and alignment.
+                    The child components are rendered without any spacing or padding.
                 </td>
             </tr>
             <tr>

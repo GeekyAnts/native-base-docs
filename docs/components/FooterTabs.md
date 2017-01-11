@@ -21,7 +21,7 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Icon, Badge } from 'native-base';
+import { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } from 'native-base';
 ​
 export default class FooterTabsExample extends Component {
     render() {
@@ -29,24 +29,23 @@ export default class FooterTabsExample extends Component {
             &lt;Container>
                 &lt;Content />
 
-                &lt;Footer >
+                &lt;Footer>
                     &lt;FooterTab>
-                        &lt;Button>
-                            &lt;Badge>2&lt;/Badge>
-                            Apps
+                        &lt;Button badgeValue={2}>
                             &lt;Icon name='ios-apps-outline' />
+                            &lt;Text>Apps&lt;/Text>
                         &lt;/Button>
                         &lt;Button>
-                            Camera
                             &lt;Icon name='ios-camera-outline' />
+                            &lt;Text>Camera&lt;/Text>
                         &lt;/Button>
                         &lt;Button active>
-                            Navigate
                             &lt;Icon name='ios-compass' />
+                            &lt;Text>Navigate&lt;/Text>
                         &lt;/Button>
                         &lt;Button>
-                            Contact
                             &lt;Icon name='ios-contact-outline' />
+                            &lt;Text>Contact&lt;/Text>
                         &lt;/Button>
                     &lt;/FooterTab>
                 &lt;/Footer>
@@ -54,3 +53,43 @@ export default class FooterTabsExample extends Component {
         );
     }
 }</code></pre>
+
+
+**Configuration**
+
+<table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>badgeValue</td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>
+                    Represents the value in badge.
+                </td>
+            </tr>
+            <tr>
+                <td>badgeColor</td>
+                <td>-</td>
+                <td>primary</td>
+                <td>
+                    Background color for badge.
+                </td>
+            </tr>
+            <tr>
+                <td>badgeValueStyle</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                    Style for value in badge.
+                </td>
+            </tr>
+        </tbody>
+    </table>

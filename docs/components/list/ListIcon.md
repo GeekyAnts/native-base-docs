@@ -22,7 +22,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, List, ListItem, Text, Icon, Badge } from 'native-base';
+import { Container, Content, List, ListItem, Text, Icon, Badge, Left, Body, Right } from 'native-base';
 ​
 export default class ListIconExample extends Component {
     render() {
@@ -30,20 +30,35 @@ export default class ListIconExample extends Component {
             &lt;Container>
                 &lt;Content>
                     &lt;List>
-                        &lt;ListItem iconLeft>
-                            &lt;Icon name="ios-plane" style=&#123;{ color: '#0A69FE' }} />
-                            &lt;Text>Airplane Mode&lt;/Text>
-                            &lt;Text note>Off&lt;/Text>
+                        &lt;ListItem>
+                            &lt;Left>
+                                &lt;Icon name="ios-plane" style=&#123;{ color: '#0A69FE' }} />
+                                &lt;Text>Airplane Mode&lt;/Text>
+                            &lt;/Left>
+                            &lt;Body />
+                            &lt;Right>
+                                &lt;Text note>Off&lt;/Text>
+                            &lt;/Right>
                         &lt;/ListItem>
-                        &lt;ListItem iconLeft>
-                            &lt;Icon name="ios-settings-outline" style=&#123;{ color: '#0A69FE' }} />
-                            &lt;Text>Software Update&lt;/Text>
-                            &lt;Badge style=&#123;{ backgroundColor: '#8C97B5' }}>2&lt;/Badge>
+                        &lt;ListItem>
+                            &lt;Left>
+                                &lt;Icon name="ios-settings-outline" style=&#123;{ color: '#0A69FE' }} />
+                                &lt;Text>Software Update&lt;/Text>
+                            &lt;/Left>
+                            &lt;Body />
+                            &lt;Right>
+                                &lt;Badge style=&#123;{ backgroundColor: '#8C97B5' }}>2&lt;/Badge>
+                            &lt;/Right>
                         &lt;/ListItem>
-                        &lt;ListItem iconLeft>
-                            &lt;Icon name="ios-mail-outline" style=&#123;{ color: '#0A69FE' }} />
-                            &lt;Text>Mail&lt;/Text>
-                            &lt;Badge>12&lt;/Badge>
+                        &lt;ListItem>
+                            &lt;Left>
+                                &lt;Icon name="ios-mail-outline" style=&#123;{ color: '#0A69FE' }} />
+                                &lt;Text>Mail&lt;/Text>
+                            &lt;/Left>
+                            &lt;Body />
+                            &lt;Right>
+                                &lt;Badge>12&lt;/Badge>
+                            &lt;/Right>
                         &lt;/ListItem>
                     &lt;/List>
                 &lt;/Content>

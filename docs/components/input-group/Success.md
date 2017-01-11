@@ -26,9 +26,9 @@ export default class SuccessInputTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;InputGroup iconRight success>
-                        &lt;Icon name='ios-checkmark-circle' style=&#123;{color:'#00C497'}}/>
+                    &lt;InputGroup success>
                         &lt;Input placeholder='Textbox with Success Input'/>
+                        &lt;Icon name='ios-checkmark-circle' style=&#123;{color:'#00C497'}}/>
                     &lt;/InputGroup>
                 &lt;/Content>
             &lt;/Container>

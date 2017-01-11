@@ -74,10 +74,22 @@ export default class InputGroupExample extends Component {
                 <td>The string that will be rendered before text input has been entered. Optional user-defined placeholder for textbox.</td>
             </tr>
             <tr>
-                <td>borderType</td>
+                <td>regular</td>
+                <td>false</td>
+                <td>true <br />false <br />
+                <td>Wraps the textbox with sharp border.</td>
+            </tr>
+            <tr>
                 <td>underline</td>
-                <td>regular <br />underline <br />rounded</td>
-                <td>Wraps the textbox with predefined border options.</td>
+                <td>false</td>
+                <td>true <br />false <br />
+                <td>textbox with only bottom border.</td>
+            </tr>
+            <tr>
+                <td>rounded</td>
+                <td>false</td>
+                <td>true <br />false <br />
+                <td>Wraps the textbox with rounded border.</td>
             </tr>
             <tr>
                 <td>secureTextEntry</td>
@@ -85,12 +97,6 @@ export default class InputGroupExample extends Component {
                 <td>true <br /> false</td>
                 <td>If true, the text input obscures the text entered so that sensitive text like passwords stay secure.<br />
                 This prop can be passed to <code>&lt;Input></code>.</td>
-            </tr>
-            <tr>
-                <td>iconRight</td>
-                <td>true</td>
-                <td>true <br /> false</td>
-                <td>If true, the icon in the input text box appears to the right.</td>
             </tr>
             <tr>
                 <td>success</td>

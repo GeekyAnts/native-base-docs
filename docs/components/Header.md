@@ -32,22 +32,28 @@
 *Syntax*
 
 <pre><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Title, Button, Icon } from 'native-base';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base';
 ​
 export default class HeaderExample extends Component {
     render() {
         return (
             &lt;Container>
                 &lt;Header>
-                    &lt;Button transparent>
-                        &lt;Icon name='ios-arrow-back' />
-                    &lt;/Button>
+                    &lt;Left>
+                        &lt;Button transparent>
+                            &lt;Icon name='ios-arrow-back' />
+                        &lt;/Button>
+                    &lt;/Left>
 
-                    &lt;Title>Header&lt;/Title>
+                    &lt;Body>
+                        &lt;Title>Header&lt;/Title>
+                    &lt;/Body>
 
-                    &lt;Button transparent>
-                        &lt;Icon name='ios-menu' />
-                    &lt;/Button>
+                    &lt;Right>
+                        &lt;Button transparent>
+                            &lt;Icon name='ios-menu' />
+                        &lt;/Button>
+                    &lt;/Right>
                 &lt;/Header>
             &lt;/Container>
         );

@@ -23,7 +23,7 @@ To add an optional header and/or footer within a card, include <code>header</cod
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Text } from 'native-base';
+import { Container, Content, Card, CardItem, Text, Body } from 'native-base';
 ​
 export default class CardHeaderFooterExample extends Component {
     render() {
@@ -36,9 +36,11 @@ export default class CardHeaderFooterExample extends Component {
                         &lt;/CardItem>
 
                         &lt;CardItem>
-                            &lt;Text>
-                                //Your text here
-                            &lt;/Text>
+                            &lt;Body>
+                                &lt;Text>
+                                    //Your text here
+                                &lt;/Text>
+                            &lt;/Body>
                         &lt;/CardItem>
 
                         &lt;CardItem header>

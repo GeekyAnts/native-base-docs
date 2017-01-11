@@ -20,7 +20,7 @@ List Thumbnails are medium to exhibit an image with your list item. To create a 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, List, ListItem, Thumbnail, Text } from 'native-base';
+import { Container, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base';
 ​
 export default class ListThumbnailExample extends Component {
     render() {
@@ -30,8 +30,10 @@ export default class ListThumbnailExample extends Component {
                     &lt;List>
                         &lt;ListItem>
                             &lt;Thumbnail square size={80} source={require('./img/one.png')} />
-                            &lt;Text>Sankhadeep&lt;/Text>
-                            &lt;Text note>Its time to build a difference . .&lt;/Text>
+                            &lt;Body>
+                                &lt;Text>Sankhadeep&lt;/Text>
+                                &lt;Text note>Its time to build a difference . .&lt;/Text>
+                            &lt;/Body>
                         &lt;/ListItem>
                     &lt;/List>
                 &lt;/Content>
