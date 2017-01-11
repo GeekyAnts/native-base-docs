@@ -12,14 +12,14 @@ NativeBase provides following color themes:
       <table>
         <thead>
           <tr style="border-style: hidden">
-            <th style="border-style: hidden">IOS</th>
-            <th>Android</th>
+            <th style="border-style: hidden; padding-right: 34px;">IOS</th>
+            <th style="padding-right: 140px;">Android</th>
           </tr>
         </thead>
         <thead>
           <tr style="border-style: hidden">
-            <th style="border-style: hidden"><img height="470" width="270" src="{{('../../assets/ios/components/button-theme.png')}}" alt="" /></th>
-            <th><img height="470" width="270" src="{{('../../assets/android/components/button-theme.png')}}" alt="" /></th>
+            <th style="border-style: hidden"><div style="background: url(../../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('../../assets/ios/components/button-theme.png')}}" alt="" /></div></th>
+            <th><div style="background: url(../../assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img height="490px" width="266px" src="{{('../../assets/android/components/button-theme.png')}}" alt="" /></div></th>
           </tr>
         </thead>
       </table>
