@@ -1,33 +1,25 @@
-# What's new in 0.5.18
+# What's new in 2.0
+
+The main goal with v2.0 was to make all NativeBase components fully customizable. Now with NativeBase 2.0, each NativeBase component can be fully customized as per your need for your project.<br />
+With the help of <code>connectStyle</code> function and <code>StyleProvider</code> component, each component of NativeBase you use or write a new one can be customized very easily.
 
 #### New Features
-* **Badge with FooterTab Button:** NativeBase Badge with Buttons in FooterTab; much like Facebook notifications.
-* **FABs:** A special type of promoted action, which when clicked may contain more related actions.
-* **Shallow Merge:** NativeBase switched to shallow merge.
-* **Top TabBar**
+* **Tab:** Uncontrolled Tabs similar to FooterTabs.
+* **Icon:** Gives platform specific icons.
+* **Form Components**
+  * **Item:** Much like InputGroup with added features of inline label, stacked label, and floating label.
+* **Left, Body, Right:** Views which aligns its content to the left, center, right respectively.
+* **Smart Components:**
+  * **Header**
+  * **Button**
+  * **Tabs**
+* **StyleProvider:** To apply themes and customize any components.
+
 
 #### Enhancement Features
-* **Badge:** Updated Text style for Badge.
-* **Button:** Improved alignment.
-* **Card:** Button in Card renders with proper size.
-* **CardItem:** Fixed padding between card items for iOS and Android.
-* **FooterTab:** Improved alignment.
-* **Header:**
-  * Supports <code>Title</code> to be used as single component in Header with proper alignment for iOS and Android.
-  * Updated Buttons in Header.
-  * Improved alignment.
-**ListItem:**
-  * Improved alignment.
-  * Alignment for Badge.
-  * Alignment for Button.
-* **Picker:** Improved alignment.
-* **Ref:** Added _root ref to all components.
-* **Searchbar:** Alignment of Icon and placeholder text in Searchbar.
+* With <code>StyleProvider</code>, all components are fully customizable.
+* **CardItem, Header and ListItem:** Use of <code>Left</code>, <code>Body</code> and <code>Right</code> components for proper alignments and customization.
 
-#### Bug Fixes
-* **ListItem:** Fixed bug in case of null child.
-* **Tabs:** Updated Tabs background color.
-* **Vector Icons:** Fixed installation dependency of [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons).
 
 #### RoadMap
 * Image Lightbox

@@ -2,7 +2,6 @@
 * [NativeBase](http://nativebase.io/) component that renders as Header (navbar) for your screen.
 * There can be a single Header component into your Container.
 * To have Header for your screen, include <code>&lt;Header></code> component within <code>&lt;Container></code>.
-* NativeBase gives you flexibility to define your <code>Header</code> component anywhere in the bounds of Container.
 * Header takes input as: Button and Title (Text)
 * The components those are defined within <code>&lt;Header></code> will be rendered in the same order that you define them.
 * Header provides you with stylesheet.

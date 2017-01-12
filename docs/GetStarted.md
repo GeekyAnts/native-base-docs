@@ -19,7 +19,7 @@ Setting up new React Native app in /User/localhost/AwesomeNativeBase
 Installing React...
 Installing Jest...
 AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-└── react@15.3.2
+└── react@15.4.2
 .  .  .
 .  .  .
 
@@ -43,25 +43,26 @@ cd AwesomeNativeBase
 ```js
 npm install native-base --save
 
-AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-└─┬ native-base@0.5.13
+AwesomeNativeBase@0.0.1 /Users/sahusoft/AwesomeNativeBase
+└─┬ native-base@2.0.0-alpha1
+  ├─┬ @shoutem/animation@0.8.10
+  │ └── hoist-non-react-statics@1.2.0
+  ├── @shoutem/theme@0.8.8
+  ├── blueimp-md5@2.6.0
   ├── clamp@1.0.1
   ├─┬ color@0.11.4
-  │ ├─┬ color-convert@1.7.0
+  │ ├─┬ color-convert@1.8.2
   │ │ └── color-name@1.1.1
   │ └── color-string@0.3.0
   ├── lodash@4.11.2
-  ├── react-native-checkbox@1.0.15
-  ├─┬ react-native-easy-grid@0.1.5
-  │ └── lodash@4.16.6
+  ├── react-native-checkbox@1.0.17
+  ├── react-native-easy-grid@0.1.7
   ├── react-native-keyboard-aware-scroll-view@0.2.0
-  └─┬ react-native-vector-icons@2.1.0
-    ├── lodash@4.16.6
-    └─┬ yargs@4.8.1
-      ├── cliui@3.2.0
-      ├── window-size@0.2.0
-      └─┬ yargs-parser@2.4.1
-        └── camelcase@3.0.0
+  ├── react-native-vector-icons@3.0.0
+  ├─┬ react-tween-state@0.1.5
+  │ └─┬ raf@3.3.0
+  │   └── performance-now@0.2.0
+  └── tween-functions@1.2.0
 ```
 You've successfully setup [NativeBase](http://nativebase.io/) with your [React Native](https://facebook.github.io/react-native/) app. Your React Native app is now all set to run on iOS and Android simulator.
 

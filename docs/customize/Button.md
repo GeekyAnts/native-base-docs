@@ -44,26 +44,49 @@ Steps to customize theme for Button attributes:
     </table>
 
 
+#### With Button theme
+
+With this theme of Button component you can modify any style rules applied to the default Button component.
+
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, Button, Icon } from 'native-base';
-import myTheme from './Themes/myTheme';
-​
+import { Container, Content, Button, Icon, Text, StyleProvider } from 'native-base';
+import buttonTheme from './Themes/buttonTheme';
+​// buttonTheme is the customized theme of Button Component​
+
 export default class ThemeButtonExample extends Component {
     render() {
         return (
             &lt;Container>
-                &lt;Content theme={myTheme}>
-                    &lt;Button primary> Primary &lt;/Button>
-                    &lt;Button success> Success &lt;/Button>
-                    &lt;Button info> Info &lt;/Button>
-                    &lt;Button warning> Warning &lt;/Button>
-                    &lt;Button danger> Danger &lt;/Button>
+                &lt;Content>
+                    &lt;StyleProvider style={buttonTheme()}>
+                      &lt;Button primary>
+                        &lt;Text> Primary &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button success>
+                        &lt;Text> Success &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button info>
+                        &lt;Text> Info &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button warning>
+                        &lt;Text> Warning &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button danger>
+                        &lt;Text> Danger &lt;/Text>
+                      &lt;/Button>
 
-                    &lt;Button small>Small&lt;/Button>
-                    &lt;Button>Default&lt;/Button>
-                    &lt;Button large>Large&lt;/Button>
+                      &lt;Button small>
+                        &lt;Text> Small &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button>
+                        &lt;Text> Default &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button large>
+                        &lt;Text> Large &lt;/Text>
+                      &lt;/Button>
+                    &lt;/StyleProvider>
                 &lt;/Content>
             &lt;/Container>
         );
@@ -71,4 +94,55 @@ export default class ThemeButtonExample extends Component {
 }</code></pre>
 
 
-***Note:** To customise button theme, refer [Theme Color](#themeColor)*
+#### With Variables
+
+With the <code>variable.js</code> file you can modify the variable values passed to the theme of the Button component.<br />
+Say value of <code>btnTextSize</code> to change the fontSize of the Text in Button.
+
+*Syntax*
+
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
+import { Container, Content, Button, Icon, Text, getTheme, StyleProvider } from 'native-base';
+import customVariables from './Themes/variable';
+​// getTheme is default theme of NativeBase Components
+// customVariables is customized variables used in the components theme
+
+export default class ThemeButtonExample extends Component {
+    render() {
+        return (
+            &lt;Container>
+                &lt;Content>
+                    &lt;StyleProvider style={buttonTheme(customVariables)}>
+                      &lt;Button primary>
+                        &lt;Text> Primary &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button success>
+                        &lt;Text> Success &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button info>
+                        &lt;Text> Info &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button warning>
+                        &lt;Text> Warning &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button danger>
+                        &lt;Text> Danger &lt;/Text>
+                      &lt;/Button>
+
+                      &lt;Button small>
+                        &lt;Text> Small &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button>
+                        &lt;Text> Default &lt;/Text>
+                      &lt;/Button>
+                      &lt;Button large>
+                        &lt;Text> Large &lt;/Text>
+                      &lt;/Button>
+                    &lt;/StyleProvider>
+                &lt;/Content>
+            &lt;/Container>
+        );
+    }
+}</code></pre>
+
+***Note:** To customise button theme, refer [Theme Color](/docs/customize/ThemeColor.md)*

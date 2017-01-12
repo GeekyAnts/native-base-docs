@@ -29,6 +29,7 @@ A common way to use [NativeBase](http://nativebase.io/) screen structure is to h
 **Contents:**
 * [Header](/docs/components/Header.md)
 * [Content](/docs/components/Content.md)
+* [Footer](/docs/components/Footer.md)
 
 
 *General Syntax*

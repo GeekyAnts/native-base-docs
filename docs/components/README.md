@@ -24,6 +24,7 @@
 * [Radio Button](/docs/components/RadioButton.md)
 * [Search Bar](/docs/components/SearchBar.md)
 * [Spinner](/docs/components/Spinner.md)
+* [Tab](/docs/components/Tab.md)
 * [Tabs](/docs/components/Tabs.md)
 * [Thumbnail](/docs/components/Thumbnail.md)
 * [Typography](/docs/components/Typography.md)

@@ -27,16 +27,16 @@ NativeBase allows you to add more font styles on your own.
 
 
 #### iOS
-* **With rnpm**<br />
+* **With react-native**<br />
 Run this command on your terminal<br />
-<pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre>
+<pre class="command-line language-xxx" data-output="2-19"><code>react-native link</code></pre>
 * **Manually**
   * Browse through **node_modules** and drag the font file the ones you want to your project in Xcode. Make sure your app is checked under **"Add to targets"** and that **"Create groups"** is checked if you add the whole folder.
   * Edit **Info.plist** and include in property called **Fonts provided by application** and type in the files you just added.
 
 #### Android
-* **With rnpm**<br />
+* **With react-native**<br />
 Run this command on your terminal<br />
-<pre class="command-line language-xxx" data-output="2-19"><code>rnpm link</code></pre>
+<pre class="command-line language-xxx" data-output="2-19"><code>react-native link</code></pre>
 * **Manually**
   * Copy the font files to <code>android/app/src/main/assets/fonts.</code>
