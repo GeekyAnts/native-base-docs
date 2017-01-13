@@ -19,7 +19,7 @@ Setting up new React Native app in /User/localhost/AwesomeNativeBase
 Installing React...
 Installing Jest...
 AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-└── react@15.3.2
+└── react@15.4.2
 .  .  .
 .  .  .
 

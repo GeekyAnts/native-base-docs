@@ -21,7 +21,7 @@
                     <td>v0.26.0 - v0.27.1</td>
                 </tr>
                 <tr>
-                    <td>v0.5.0 to v{{$theme['version']}}</td>
+                    <td>v0.5.0 to v0.5.20</td>
                     <td>v0.26.0 and above</td>
                 </tr>
             </tbody>
