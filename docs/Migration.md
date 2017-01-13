@@ -16,7 +16,7 @@ Now you can use <code>StyleProvider</code> component to apply your own custom th
 
 *General Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text, getTheme} from 'native-base/backward';
+<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text, StyleProvider, getTheme} from 'native-base/backward';
 import React, {Component} from 'react-native';
 import variable from './Themes/variable';
 ​
@@ -31,6 +31,40 @@ export default class ThemeExample extends Component {
                         &lt;/Text>
                     &lt;/Content>
                 &lt;/StyleProvider>
+            &lt;/Container>
+        );
+    }
+}</code></pre>
+
+#### Styles to the Component
+
+*General Syntax of <code>style.js</code> object*
+
+<pre class="line-numbers"><code class="language-jsx">export default {
+  container: {
+    backgroundColor: '#FBFAFA',
+  },
+  text: {
+    color: 'red',
+  },
+}</code></pre>
+
+*General Syntax*
+
+<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text, getTheme} from 'native-base/backward';
+import React, {Component} from 'react-native';
+// Style object import
+import styles from './style';
+​
+export default class ThemeExample extends Component {
+    render() {
+        return (
+            &lt;Container style={styles.container}>
+                  &lt;Content>
+                      &lt;Text style={styles.text}>
+                          I have changed the text color.
+                      &lt;/Text>
+                  &lt;/Content>
             &lt;/Container>
         );
     }
