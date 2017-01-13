@@ -2,7 +2,7 @@
 * [Guide](/docs/introduction/README.md)
   * [What is NativeBase?](/docs/introduction/README.md#WhatisNB)
   * [Why NativeBase?](/docs/introduction/README.md#WhyNB)
-  * [What's New in v0.5.18?](/docs/introduction/README.md#WhatsNew)
+  * [What's New in v0.5.20?](/docs/introduction/README.md#WhatsNew)
 
 * [Getting Started](/docs/GetStarted.md)
 
@@ -88,6 +88,6 @@
 
 * [FAQs](/docs/faq/FAQs.md)
 
-* [Cheat Sheet](/docs/ChaetSheet.md)
+* [Cheat Sheet](/docs/CheatSheet.md)
 
 * [Compatibility](/docs/Compatibility.md)

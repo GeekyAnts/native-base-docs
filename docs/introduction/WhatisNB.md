@@ -10,7 +10,7 @@
 
 ## Magic of NativeBase
 
-<iframe width="800" height="500" src="{{('/docs/assets/magic-with-nativebase-020.mp4')}}" frameborder="0" allowfullscreen style="margin-top: 20px; margin-bottom: 20px">
+<iframe width="800" height="500" src="{{('../assets/magic-with-nativebase-020.mp4')}}" frameborder="0" allowfullscreen style="margin-top: 20px; margin-bottom: 20px">
 </iframe>
 
 Get on the mobile fast track with [NativeBase](http://nativebase.io/), the fastest-growing platform and tool set for iOS and Android development. Place apart the Objective-C and Swift tutorials, and start coding iOS apps with JavaScript. Get an introduction to [NativeBase](http://nativebase.io/) and work through an instance application that highlights [React Native](https://facebook.github.io/react-native/) programming techniques.

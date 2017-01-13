@@ -1,4 +1,4 @@
-# What's new in 0.5.18
+# What's new in 0.5.20
 
 #### New Features
 * **Badge with FooterTab Button:** NativeBase Badge with Buttons in FooterTab; much like Facebook notifications.

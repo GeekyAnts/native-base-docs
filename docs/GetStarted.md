@@ -44,7 +44,7 @@ cd AwesomeNativeBase
 npm install native-base --save
 
 AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
-└─┬ native-base@0.5.13
+└─┬ native-base@0.5.20
   ├── clamp@1.0.1
   ├─┬ color@0.11.4
   │ ├─┬ color-convert@1.7.0
@@ -52,10 +52,10 @@ AwesomeNativeBase@0.0.1 /User/localhost/AwesomeNativeBase
   │ └── color-string@0.3.0
   ├── lodash@4.11.2
   ├── react-native-checkbox@1.0.15
-  ├─┬ react-native-easy-grid@0.1.5
+  ├─┬ react-native-easy-grid@0.1.7
   │ └── lodash@4.16.6
   ├── react-native-keyboard-aware-scroll-view@0.2.0
-  └─┬ react-native-vector-icons@2.1.0
+  └─┬ react-native-vector-icons@4.0.0
     ├── lodash@4.16.6
     └─┬ yargs@4.8.1
       ├── cliui@3.2.0
