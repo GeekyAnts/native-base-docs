@@ -10,17 +10,17 @@
             "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
+                  "value": "http://docs.nativebase.io",
+                  "text": "-- select version --",
+                  "selected": false
+                },
+                {
                     "value": "http://docs.nativebase.io",
                     "text": "latest"
                 },
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html",
                     "text": "v0.5.20"
-                },
-                {
-                    "value": "http://docs.nativebase.io",
-                    "text": "-- select version --",
-                    "selected": true
                 }
             ]
         }
