@@ -19,7 +19,6 @@
                 {
                     "value": "http://docs.nativebase.io/",
                     "text": "-- select version --",
-                    "selected": true
                 }
             ]
         }
