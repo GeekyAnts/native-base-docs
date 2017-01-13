@@ -6,7 +6,7 @@
 <pre class="line-numbers"><code class="language-json">{
     "name": <a href="https://github.com/GeekyAnts/NativeBase">"native-base"</a>,
     "description": "Essential cross-platform UI components for React Native",
-    "version": "{{$theme['version']}}",
+    "version": "2.0.0-alpha1",
     "private": false,
     "dependencies": {
         "@shoutem/animation": "^0.8.9",

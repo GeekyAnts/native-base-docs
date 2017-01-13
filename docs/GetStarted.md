@@ -3,9 +3,8 @@
 To have [NativeBase](http://nativebase.io/) components running onto your native apps, all you need to do is create a fresh [React Native](https://facebook.github.io/react-native/) project and install the NativeBase command line tools.
 
 **System Requirements**
-* Globally installed [node](https://nodejs.org/en/) >= 4.0
-* Globally installed [npm](https://www.npmjs.com/) >= 3.0
-* Globally installed [rnpm](https://github.com/rnpm/rnpm) *(only if React Native version < 0.29)*
+* Globally installed [node](https://nodejs.org/en/) >= 6.0
+* Globally installed [npm](https://www.npmjs.com/) >= 4.0
 * Globally installed [React Native CLI](https://facebook.github.io/react-native/docs/getting-started.html) which allow you to easily create and initialize projects.   
 * [Click here](/docs/Compatibility.md) to know about React Native version compatibility with NativeBase.
 
@@ -73,11 +72,7 @@ The peer dependencies included from any npm package does not automatically get i
 
 #### iOS
 * **On Terminal**
-  * React Native < 0.29
-    ```js
-    $rnpm link
-    ```
-  * React Native >= 0.29
+  * React Native
     ```js
     $react-native link react-native-vector-icons
     ```
@@ -99,11 +94,7 @@ The peer dependencies included from any npm package does not automatically get i
 
 #### Android
 * **On Terminal**
-  * React Native < 0.29
-    ```js
-    $rnpm link
-    ```
-  * React Native >= 0.29
+  * React Native
     ```js
     $react-native link react-native-vector-icons</code>
     ```
@@ -132,27 +123,6 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"</code></
     compile project(':react-native-vector-icons')
   }
   ```
-  * React Native < 0.29
-
-    Edit <code>android/app/src/main/java/com/awesomenativebase/MainActivity.java</code> and add the following:
-    <pre><code class="language-java">package com.awesomenativebase;
-    .  .  .
-    import com.oblador.vectoricons.VectorIconsPackage;
-    .  .  .
-
-    public class MainActivity extends ReactActivity {
-        .  .  .
-        &#64;Override
-        protected List&lt;ReactPackage> getPackages() {
-            return Arrays.&lt;ReactPackage>asList(
-                new MainReactPackage(),
-                .  .  .
-                new VectorIconsPackage(),
-                .  .  .
-            );
-        }
-    }
-    </code></pre>
   * React Native >= 0.29
 
     Edit <code>android/app/src/main/java/com/awesomenativebase/MainApplication.java</code> and add the following:

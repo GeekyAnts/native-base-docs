@@ -141,9 +141,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="introduction/">
+        <li class="chapter " data-level="1.3.1" data-path="introduction/WhatisNB.html">
             
-                <a href="introduction/#WhatisNB">
+                <a href="introduction/WhatisNB.html">
             
                     
                     What is NativeBase?
@@ -154,9 +154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="introduction/">
+        <li class="chapter " data-level="1.3.2" data-path="introduction/WhyNB.html">
             
-                <a href="introduction/#WhyNB">
+                <a href="introduction/WhyNB.html">
             
                     
                     Why NativeBase?
@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="introduction/">
+        <li class="chapter " data-level="1.3.3" data-path="introduction/WhatsNew.html">
             
-                <a href="introduction/#WhatsNew">
+                <a href="introduction/WhatsNew.html">
             
                     
                     What's New in v2.0?
@@ -1203,50 +1203,61 @@
                                 
                                 <h1 id="contributing-to-nativebase">Contributing to NativeBase</h1>
 <p>Thank you for your interest in contributing to the <a href="http://nativebase.io/" target="_blank">NativeBase</a> project!</p>
-<blockquote>
-<p>NativeBase is completely open-source. Feel free to clone it or fork it!</p>
-</blockquote>
-<p>In favor of active development, we accept contributions from everyone. <a href="http://nativebase.io/" target="_blank">NativeBase</a> team is constantly marking issues and features that the community can implement. You can contribute by submitting a bug, creating pull requests or even by improving documentation. Beneath is the manual to be accompanied strictly earlier than submitting your pull requests.<br></p>
-<p><strong>Manual:</strong></p>
-<ul>
-<li><a href="#coding-style">Coding Style</a></li>
-<li><a href="#git-flow">Git Flow</a></li>
+<p>In favor of active development, we accept contributions from everyone. NativeBase team is constantly marking issues and features that the community can implement. You can contribute by submitting a bug, creating pull requests or even by improving documentation. Beneath is the manual to be accompanied strictly earlier than submitting your pull requests / issues.</p>
+<p>Take a look at <a href="http://stackoverflow.com/questions/tagged/native-base" target="_blank">NativeBase on StackOverflow</a></p>
+<h2 id="manual">Manual</h2>
+<ol>
+<li><a href="#1-coding-style">Coding Style</a></li>
+<li><a href="#2-git-flow">Git Flow</a><ul>
+<li><a href="#a-reporting-bugs">Reporting Bugs</a></li>
+<li><a href="#b-request-for-new-feature">Request for New Feature</a></li>
+<li><a href="#c-code-fixes-and-enhancements">Code Fixes and Enhancements</a></li>
 </ul>
-<p><a id="coding-style"></a></p>
-<h3 id="coding-style">Coding Style</h3>
-<p>To keep project away from disputes we make use of <a href="https://github.com/roadhump/SublimeLinter-eslint" target="_blank">ESLint</a>, which is really a handy linting tool that enforces strict coding styles and makes sure your files are free from dead code. Each module of <a href="http://nativebase.io/" target="_blank">NativeBase</a> has bundled ESLint as a dev dependency. In order to lint your code run following command.</p>
-<p><pre class="command-line language-xxx" data-output="2-19"><code>cd AwesomeNativeBase
-npm install eslint</code></pre>
-<br></p>
-<p><a id="git-flow"></a></p>
-<h3 id="git-flow">Git Flow</h3>
-<p><a href="http://nativebase.io/" target="_blank">NativeBase</a> is an infant and growing rapidly, so we planned to stick to Git Flow. Below are the rules you need to follow:</p>
-<h4 id="reporting-bugs">Reporting Bugs</h4>
+</li>
+</ol>
+<h3 id="1-coding-style">1. Coding Style</h3>
+<p>To keep project away from disputes we make use of <strong>ESLint</strong>, which is really a handy linting tool that enforces strict coding styles and makes sure your files are free from dead code. Each module of NativeBase has bundled ESLint as a dev dependency.</p>
+<p>In order to lint your code run following command.</p>
+<pre><code>cd AwesomeNativeBase
+
+npm install eslint
+</code></pre><h3 id="2-git-flow">2. Git Flow</h3>
+<p>NativeBase is an infant and growing rapidly, so we planned to stick to Git Flow. Below are the rules you need to follow:</p>
+<h4 id="a-reporting-bugs">a. Reporting Bugs</h4>
 <ul>
 <li>Always update to the most recent <code>master</code> release; the bug may already be resolved.</li>
-<li>If you are interested in fixing bugs, you can follow them here - <a href="https://github.com/GeekyAnts/NativeBase/issues" target="_blank">Issues</a>.</li>
 <li>Search for similar issues in the issues list for this repo. It may already be an identified problem.</li>
-<li>If you want to contribute to an issue that is not part of this list you are also more than welcome to submit your issue to our <a href="https://github.com/GeekyAnts/NativeBase/issues" target="_blank">GitHub Repository</a>.</li>
-<li>In that case, provide a short description of the visible symptoms. If applicable, include error messages, screen shots, and stack traces.</li>
-<li>If applicable, submit a step-by-step walkthrough of how to reproduce the issue.<br></li>
+<li>If you want to contribute to an issue that is not part of this list, you are welcome to submit <a href="https://github.com/GeekyAnts/NativeBase/issues/new" target="_blank">new issue</a> to our GitHub Repository.<ul>
+<li>In that case, provide a short description of the visible symptoms. Include error messages, screen shots, and stack traces.</li>
+<li>If applicable, submit a step-by-step walkthrough of how to reproduce the issue.</li>
 </ul>
-<h4 id="request-for-new-feature">Request for New Feature</h4>
+</li>
+<li>In any case, a <strong>closed issue</strong> is not necessarily the end of the story! If more info becomes available after an issue is closed, it can be reopened for further consideration.</li>
+</ul>
+<h4 id="b-request-for-new-feature">b. Request for New Feature</h4>
 <ul>
 <li>Use <a href="https://github.com/GeekyAnts/NativeBase/issues" target="_blank">Github Issues</a> to submit feature requests.</li>
-<li>Search for a similar request and extend it if applicable. This way it would be easier for the <a href="http://nativebase.io/" target="_blank">NativeBase</a> community to track the features.</li>
-<li>When a brand new feature is requested, try to give as many details on your need as feasible. We prefer that you explain the need rather than explaining a technical solution for it. That might trigger a nice conversation on finding the best and broadest technical solution to a specific need.<br></li>
+<li>Search for a similar request and extend it if applicable. This way it would be easier for the NativeBase community to track the features.</li>
+<li>When a fresh new feature is requested, try to give as many details on your need as feasible. We prefer that you explain the need rather than explaining a technical solution for it. That might trigger a nice conversation on finding the best and broadest technical solution to a specific need.</li>
 </ul>
-<h4 id="code-fixes-and-enhancements">Code Fixes and Enhancements</h4>
+<h4 id="c-code-fixes-and-enhancements">c. Code Fixes and Enhancements</h4>
 <ul>
+<li>Before submitting a pull request, we appreciate if you create an issue first to discuss the change.</li>
 <li>Fork the repo you are planning to work on.</li>
-<li>Create a new branch from <code>development</code> branch and not <code>master</code> branch.<br>
-<em>Example:</em> <code>my-new-feature</code><br>
-<em>Note: Please have your branch named apart from <code>master</code> and <code>development</code>.</em></li>
+<li>Create a new branch from branch <code>master</code>.<ul>
+<li>Example: <code>my-new-feature</code></li>
+<li>Note: Please have your branch named apart from <code>master</code> and <code>development</code>.</li>
+</ul>
+</li>
 <li>Work on your branch until you are confident enough to create a pull request.</li>
 <li>Conclude working on your branch and push to your forked repo.</li>
-<li>Create a pull request of your branch to NativeBase repo <code>development</code> branch.</li>
+<li>Create a pull request of your branch to NativeBase repo <code>master</code> branch.</li>
+<li>Provide a short description of the necessity and functionality of your PR. Include a step-by-step walkthrough of it with an use case example.</li>
+<li>Link the issues that are related to your PR in the body.</li>
 <li>If you have perfectly accompanied our contribution guide and that if your new feature / bug fixes sounds good to us, then we will merge the changes and you are free to delete your branch.</li>
+<li>After your contribution is merged, it&#x2019;s not immediately available to all users. Your change will be shipped as part of the next release.</li>
 </ul>
+<p><strong>Note:</strong> NativeBase changes a lot and is in constant mutation. We usually merge multiple PRs per day, so sometimes when we are done reviewing, your code might not work with the latest <code>master</code> branch anymore. To prevent this, before you make any changes after your code has been reviewed, you should always rebase the latest changes from the <code>master</code> branch.</p>
 
                                 
                                 </section>
@@ -1290,7 +1301,7 @@ npm install eslint</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Contribute","level":"1.10","depth":1,"next":{"title":"FAQs","level":"1.11","depth":1,"path":"docs/faq/FAQs.md","ref":"docs/faq/FAQs.md","articles":[]},"previous":{"title":"Release Notes","level":"1.9","depth":1,"path":"docs/release-notes/Release.md","ref":"docs/release-notes/Release.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","ace"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/Contribute.md","mtime":"2017-01-11T08:50:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-13T10:33:12.118Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Contribute","level":"1.10","depth":1,"next":{"title":"FAQs","level":"1.11","depth":1,"path":"docs/faq/FAQs.md","ref":"docs/faq/FAQs.md","articles":[]},"previous":{"title":"Release Notes","level":"1.9","depth":1,"path":"docs/release-notes/Release.md","ref":"docs/release-notes/Release.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","ace","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/Contribute.md","mtime":"2017-01-13T13:09:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-13T13:01:28.499Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1313,6 +1324,10 @@ npm install eslint</code></pre>
     
         
         <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

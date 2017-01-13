@@ -22,11 +22,16 @@ With the help of <code>connectStyle</code> function and <code>StyleProvider</cod
 
 
 #### RoadMap
+* Revise components against iOS and Android design guidelines, includes platform specific fixes as well
+* Enhance Components with new props
+* Test Cases
 * Image Lightbox
 * ListView Swipe
+* Growls
+* Chips
+* Dialogs and Alerts
 * Date Picker
 * Slider input
 * Range slider input
-* Add growls
+* In-app notifications
 * NativeBase CLI to rename app
-* Translucent Header
