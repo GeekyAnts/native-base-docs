@@ -11,8 +11,8 @@
     ],
     "pluginsConfig": {
         "edit-link": {
-          "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
-          "label": "Edit This Page"
+            "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
+            "label": "Edit This Page"
         },
         "include-codeblock": {
             "template": "ace",
