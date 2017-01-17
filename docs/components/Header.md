@@ -29,41 +29,54 @@
   </table>
 
 *Syntax*
-
-<pre><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base';
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Icon } from 'native-base/ui';
+import { Header } from 'native-base';
 ​
 export default class HeaderExample extends Component {
     render() {
         return (
-            &lt;Container>
-                &lt;Header>
-                    &lt;Left>
-                        &lt;Button transparent>
-                            &lt;Icon name='ios-arrow-back' />
-                        &lt;/Button>
-                    &lt;/Left>
-
-                    &lt;Body>
-                        &lt;Title>Header&lt;/Title>
-                    &lt;/Body>
-
-                    &lt;Right>
-                        &lt;Button transparent>
-                            &lt;Icon name='ios-menu' />
-                        &lt;/Button>
-                    &lt;/Right>
-                &lt;/Header>
-            &lt;/Container>
+            <Container>
+                <Header leftButton={<Icon name="arrow-back" />} title="Header" rightButton={<Icon name="apps" />} />
+            </Container>
         );
     }
-}</code></pre>
-
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
+​
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header>
+                    <Left>
+                        <Button transparent>
+                            <Icon name="arow-back" />
+                        </Button>
+                    </Left>
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right>
+                        <Button>
+                            <Icon name="menu" />
+                        </Button>
+                    </Right>
+                </Header>
+            </Container>
+        );
+    }
+}
+{%- endcodetabs %}
 
 **Configuration**<br />
     <table class = "table table-bordered">
         <thead>
             <tr>
+                <th></th>
                 <th>Property</th>
                 <th>Default</th>
                 <th>Option</th>
@@ -72,6 +85,45 @@ export default class HeaderExample extends Component {
         </thead>
         <tbody>
             <tr>
+                <th rowspan="5">Basic</th>
+                <td>leftButton</td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>Can take <code>Text</code> or <code>Icon</code> or any custom <code>View</code> which aligns to the left of Header</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>Title Text of the Header aligned at the center</td>
+            </tr>
+            <tr>
+                <td>rightButton</td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>Can take <code>Text</code> or <code>Icon</code> or any custom <code>View</code> which aligns to the right of Header</td>
+            </tr>
+            <tr>
+                <td>
+                  leftButtonPress<br />
+                  rightButtonPress
+                </td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>functions on onPress of respective Button</td>
+            </tr>
+            <tr>
+                <td>
+                  leftButtonStyle<br />
+                  titleStyle<br />
+                  rightButtonStyle
+                </td>
+                <td>-</td>
+                <td>user-defined</td>
+                <td>Styles for respective components</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Advanced</th>
                 <td>backgroundColor</td>
                 <td>
                     iOS: #F8F8F8<br />

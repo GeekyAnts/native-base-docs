@@ -21,7 +21,7 @@ We provide you with the one, which filters the list based on your search input.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base';
+import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base/ui';
 ​
 export default class SearchBarExample extends Component {
     render() {

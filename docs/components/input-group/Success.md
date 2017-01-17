@@ -19,7 +19,7 @@ To display textbox with valid data, include the <code>success</code> prop with <
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input, Icon } from 'native-base';
+import { Container, Content, InputGroup, Input, Icon } from 'native-base/ui';
 ​
 export default class SuccessInputTextboxExample extends Component {
     render() {

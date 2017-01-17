@@ -31,7 +31,7 @@
 *Syntax*
 
 <pre><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Text, Button, Icon, Left, Body, Right } from 'native-base';
+import { Container, Header, Text, Button, Icon, Left, Body, Right } from 'native-base/ui';
 ​
 export default class HeaderExample extends Component {
     render() {

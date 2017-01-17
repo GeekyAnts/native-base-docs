@@ -24,7 +24,7 @@ Card Showcase is further customization of Card Image. It uses several different 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
+import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base/ui';
 ​
 export default class CardShowcaseExample extends Component {
     render() {

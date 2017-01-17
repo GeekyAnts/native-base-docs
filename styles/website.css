@@ -1,0 +1,11 @@
+.book .book-summary ul.summary > li:nth-child(2) {
+  color: transparent;
+  background-image: url(../docs/assets/NB.png);
+  background-size: 96%;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  min-height: 81px;
+}
+.book .book-summary ul.summary > li:nth-child(2) a {
+  color: transparent;
+}

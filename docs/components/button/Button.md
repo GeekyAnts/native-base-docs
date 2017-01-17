@@ -34,25 +34,42 @@ Buttons are the integral part of an application. They are used for various purpo
 
 
 *Syntax*
-
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Content } from 'native-base/ui';
+import { Button } from 'native-base';
 ​
 export default class ButtonExample extends Component {
     render() {
         return (
-            &lt;Container>
-                &lt;Content>
+            <Container>
+                <Content>
                     // NativeBase default style
-                    &lt;Button>
-                      &lt;Text> Click Me! &lt;/Text>
-                    &lt;/Button>
-                &lt;/Content>
-            &lt;/Container>
+                    <Button buttonText="Click Me!" />
+                </Content>
+            </Container>
         );
     }
-}</code></pre><br />
-
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Content, Button, Text } from 'native-base/ui';
+​
+export default class ButtonExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Content>
+                    // NativeBase default style
+                    <Button>
+                      <Text> Click Me! </Text>
+                    </Button>
+                </Content>
+            </Container>
+        );
+    }
+}
+{%- endcodetabs %}
 * [NativeBase](http://nativebase.io/) provides <code>Button</code> component which is readily not available in [React Native](https://facebook.github.io/react-native/).
 * Supports React Native app on both iOS and Android devices.
 * Button component takes input such as: Text, Icon, Text with Icon.
@@ -68,6 +85,7 @@ export default class ButtonExample extends Component {
 <table class = "table table-bordered">
         <thead>
             <tr>
+                <th></th>
                 <th>Property</th>
                 <th>Default</th>
                 <th>Option</th>
@@ -76,6 +94,32 @@ export default class ButtonExample extends Component {
         </thead>
         <tbody>
             <tr>
+                <th rowspan="4">Basic</th>
+                <td>IconLeft</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Defines Icon aligned left in the Button</td>
+            </tr>
+            <tr>
+                <td>IconRight</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Defines Icon aligned right in the Button</td>
+            </tr>
+            <tr>
+                <td>buttonText</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Defines Text for the Button</td>
+            </tr>
+            <tr>
+                <td>buttonTextStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Defines button text style</td>
+            </tr>
+            <tr>
+                <th rowspan="10">Both Basic and Advanced</th>
                 <td>style</td>
                 <td> - </td>
                 <td> - </td>

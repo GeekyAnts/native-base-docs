@@ -20,7 +20,7 @@ Include <code>bordered</code> prop with Button to apply outline button style.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Content, Button, Text } from 'native-base/ui';
 ​
 export default class OutlineButtonExample extends Component {
     render() {

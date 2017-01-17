@@ -19,7 +19,7 @@ To restrict inputting data into textbox, include the <code>disabled</code> prop 
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input, Icon } from 'native-base';
+import { Container, Content, InputGroup, Input, Icon } from 'native-base/ui';
 ​
 export default class DisabledTextboxExample extends Component {
     render() {

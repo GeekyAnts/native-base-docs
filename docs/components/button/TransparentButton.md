@@ -20,7 +20,7 @@ Include <code>transparent</code> prop with Button. This will render button witho
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Content, Button, Text } from 'native-base/ui';
 ​
 export default class TransparentButtonExample extends Component {
     render() {

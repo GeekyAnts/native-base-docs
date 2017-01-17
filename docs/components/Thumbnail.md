@@ -21,7 +21,7 @@ Thumbnail component works very similar to Image. It helps you to showcase an ima
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Thumbnail, Text } from 'native-base';
+import { Container, Content, Thumbnail, Text } from 'native-base/ui';
 ​
 export default class ThumbnailExample extends Component {
     render() {

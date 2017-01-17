@@ -10,7 +10,7 @@
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button } from 'native-base';
+import { Container, Content, Button } from 'native-base/ui';
 ​
 export default class RefExample extends Component {
     render() {

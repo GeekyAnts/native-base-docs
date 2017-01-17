@@ -1,10 +1,6 @@
 # Summary
-* [Migration](/docs/Migration.md)
-* [Guide](/docs/introduction/README.md)
-  * [What is NativeBase?](/docs/introduction/WhatisNB.md)
-  * [Why NativeBase?](/docs/introduction/WhyNB.md)
-  * [What's New in v2.0?](/docs/introduction/WhatsNew.md)
-
+* [NativeBase](http://nativebase.io/)
+* [Introduction](README.md)
 * [Getting Started](/docs/GetStarted.md)
 
 * [Components](/docs/components/README.md)
@@ -61,11 +57,9 @@
   * [Thumbnail](/docs/components/Thumbnail.md)
   * [Typography](/docs/components/Typography.md)
   * [Ref](/docs/components/Ref.md)
-
-* [Smart Components](/docs/smart/README.md)
-  * [Smart Header](/docs/smart/smartHeader.md)
-  * [Smart Button](/docs/smart/smartButton.md)
-  * [Smart Tabs](/docs/smart/smartTabs.md)
+  
+* [Migration](/docs/Migration.md)
+* [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 
 * [Customize](/docs/customize/README.md)
   * [Set Up](/docs/customize/SetUp.md)

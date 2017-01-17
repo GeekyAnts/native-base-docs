@@ -21,7 +21,7 @@ Radio buttons let the user select any one from a set of options.<br />
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, Radio } from 'native-base';
+import { Container, Content, ListItem, Text, Radio } from 'native-base/ui';
 ​
 export default class RadioButtonExample extends Component {
     render() {

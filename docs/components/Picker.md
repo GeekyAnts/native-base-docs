@@ -21,7 +21,7 @@ Renders the native picker component on iOS and Android.<br />
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Picker } from 'native-base';
+import { Container, Content, Picker } from 'native-base/ui';
 
 const Item = Picker.Item;​
 export default class PickerExample extends Component {

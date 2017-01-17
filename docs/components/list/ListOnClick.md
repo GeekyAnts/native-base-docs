@@ -20,7 +20,7 @@ To navigate between screens on click of a list item, include <code>button</code>
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text, Thumbnail } from 'native-base';
+import { Container, Content, List, ListItem, Text, Thumbnail } from 'native-base/ui';
 ​
 export default class ListOnClickExample extends Component {
     render() {

@@ -3,9 +3,17 @@
     "plugins": [
         "versions",
         "toggle-chapters",
-        "ace"
+        "codetabs",
+        "include-codeblock",
+        "ace",
+        "copy-code-button"
     ],
     "pluginsConfig": {
+        "include-codeblock": {
+            "template": "ace",
+            "unindent": "true",
+            "theme": "monokai"
+        },
         "versions": {
             "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [

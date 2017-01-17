@@ -19,7 +19,7 @@ To use the underlined textbox, include the <code>borderType</code> property and 
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input, Icon } from 'native-base';
+import { Container, Content, InputGroup, Input, Icon } from 'native-base/ui';
 ​
 export default class UnderlinedTextboxExample extends Component {
     render() {

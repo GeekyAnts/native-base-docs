@@ -20,8 +20,32 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Tabs } from 'native-base';
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Content, Text } from 'native-base/ui';
+import { Tabs, TabContent } from 'native-base';
+​
+export default class TabsExample extends Component {
+    render() {
+        return (
+            <Container>
+                <View>
+                    <Tabs>
+                        <TabContent padder tabLabel='One'>
+                          <Text>This is Tab One</Text>
+                        </TabContent>
+                        <TabContent padder tabLabel='Two'>
+                          <Text>This is Tab Two</Text>
+                        </TabContent>
+                    </Tabs>
+                </View>
+            </Container>
+        );
+    }
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Content, Tabs } from 'native-base/ui';
 
 import TabOne from './tabOne';
 import TabTwo from './tabTwo';
@@ -29,23 +53,25 @@ import TabTwo from './tabTwo';
 export default class TabsExample extends Component {
     render() {
         return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;Tabs>
-                        &lt;TabOne tabLabel='One' />
-                        &lt;TabTwo tabLabel='Two' />
-                    &lt;/Tabs>
-                &lt;/Content>
-            &lt;/Container>
+            <Container>
+                <Content>
+                    <Tabs>
+                        <TabOne tabLabel='One' />
+                        <TabTwo tabLabel='Two' />
+                    </Tabs>
+                </Content>
+            </Container>
         );
     }
-}</code></pre>
+}
+{%- endcodetabs %}
 
 
 **Configuration**
 <table class="table table-bordered">
         <thead>
             <tr>
+                <th></th>
                 <th>Property</th>
                 <th>Default</th>
                 <th>Option</th>
@@ -54,6 +80,55 @@ export default class TabsExample extends Component {
         </thead>
         <tbody>
             <tr>
+                <th rowspan="6">Basic</th>
+                <td>initialPage</td>
+                <td> 1 </td>
+                <td> - </td>
+                <td>Index of initially selected Tab</td>
+            </tr>
+            <tr>
+                <td>tabBarPosition</td>
+                <td> top </td>
+                <td>
+                  top<br />
+                  bottom
+                </td>
+                <td>Position of Tabs in the Screen</td>
+            </tr>
+            <tr>
+                <td>tabLabel</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name for each tab(TabContent prop)</td>
+            </tr>
+            <tr>
+                <td>tabIcon</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Icon for each tab(TabContent prop)</td>
+            </tr>
+            <tr>
+                <td>vertical</td>
+                <td> false </td>
+                <td>
+                  true<br />
+                  false
+                </td>
+                <td>Aligns tabLabel and tabIcon in column</td>
+            </tr>
+            <tr>
+                <td>
+                  tabBarIconStyle<br />
+                  tabBarTextStyle<br />
+                  tabBarStyle<br />
+                  underlineStyle<br />
+                </td>
+                <td> - </td>
+                <td> - </td>
+                <td>Styles for tabIcon, tabLabel, Tabs, and underline of Tabs respectively</td>
+            </tr>
+            <tr>
+                <th rowspan="1">Both Basic and Advanced</th>
                 <td>tabLabel</td>
                 <td> - </td>
                 <td> - </td>

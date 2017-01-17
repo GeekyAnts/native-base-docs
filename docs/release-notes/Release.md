@@ -1,6 +1,7 @@
 # Release Notes
 {% include "./2-0-0/2-0-0-alpha1.md" %}
 {% include "./0-5-0/0-5-19.md" %}
+{% include "./0-5-0/0-5-17.md" %}
 {% include "./0-5-0/0-5-16.md" %}
 {% include "./0-5-0/0-5-15.md" %}
 {% include "./0-5-0/0-5-14.md" %}

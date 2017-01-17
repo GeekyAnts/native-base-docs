@@ -119,9 +119,9 @@ class CustomComponent extends Component {
           // connect styles to props.style defined by the theme
           const styles = this.props.style;
             &lt;StyleProvider style={customTheme}>
-                      &lt;Button customStyleProp>
-                        &lt;Text>Custom Button&lt;/Text>
-                      &lt;Button>
+                &lt;Button customStyleProp>
+                    &lt;Text>Custom Button&lt;/Text>
+                &lt;/Button>
             &lt;/StyleProvider>
         );
     }

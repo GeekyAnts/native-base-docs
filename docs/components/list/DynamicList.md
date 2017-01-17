@@ -20,7 +20,7 @@ A center aspect designed for efficient representation of vertically scrolling li
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text } from 'native-base';
+import { Container, Content, List, ListItem, Text } from 'native-base/ui';
 ​
 export default class DynamicListExample extends Component {
     render() {
