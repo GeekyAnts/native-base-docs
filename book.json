@@ -6,9 +6,14 @@
         "codetabs",
         "include-codeblock",
         "ace",
-        "copy-code-button"
+        "copy-code-button",
+        "edit-link"
     ],
     "pluginsConfig": {
+        "edit-link": {
+          "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
+          "label": "Edit This Page"
+        },
         "include-codeblock": {
             "template": "ace",
             "unindent": "true",
