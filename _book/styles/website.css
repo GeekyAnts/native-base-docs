@@ -3,9 +3,8 @@
   background-image: url(../docs/assets/NB.png);
   background-size: 70%;
   background-repeat: no-repeat;
-  margin-left: 10px;
   min-height: 70px;
-  align-item: 'center',
+  background-position: : 'center',
 }
 .book .book-summary ul.summary > li:nth-child(2) a {
   color: transparent;
