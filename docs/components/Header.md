@@ -46,7 +46,7 @@ export default class HeaderExample extends Component {
 {%- language name="Advanced", type="js" -%}
 import React, { Component } from 'react';
 import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
-​
+
 export default class HeaderExample extends Component {
     render() {
         return (
