@@ -179,6 +179,123 @@ export default class HeaderExample extends Component {
     }
 }
 {%- endcodetabs %}
+<br />
+
+#### With Icon Button and Text
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">
+        <img src="{{('../assets/ios/components/header/custom.png')}}" alt="" /></th>
+      <th>
+        <img src="{{('../assets/ios/components/header/custom.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+*Syntax*
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Icon, Text, Button } from 'native-base/ui';
+import { Header } from 'native-base';
+​
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header left={<Button><Icon name="menu" /></Button>} title="Header" right={<Text>Cancel</Text>} />
+            </Container>
+        );
+    }
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
+
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header>
+                    <Left>
+                      <Button transparent>
+                        <Icon name="menu" />
+                      </Button>
+                    </Left>
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right>
+                      <Text>Cancel</Text>
+                    </Right>
+                </Header>
+            </Container>
+        );
+    }
+}
+{%- endcodetabs %}
+#### Custom Background
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">
+        <img src="{{('../assets/ios/components/header/customBg.png')}}" alt="" /></th>
+      <th>
+        <img src="{{('../assets/ios/components/header/customBg.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+*Syntax*
+{% codetabs name="Basic", type="js" -%}
+{% raw %}
+import React, { Component } from 'react';
+import { Container, Icon } from 'native-base/ui';
+import { Header } from 'native-base';
+​
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header title="Header" style={{ backgroundColor:'red' }} titleStyle={{ color:'#FFF' }} />
+            </Container>
+        );
+    }
+}
+{% endraw %}
+{%- language name="Advanced", type="js" -%}
+{% raw %}
+import React, { Component } from 'react';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
+
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header style={{ backgroundColor: 'red' }}>
+                    <Left />
+                    <Body>
+                        <Title style={{ color: '#FFF' }}>Header</Title>
+                    </Body>
+                    <Right />
+                </Header>
+            </Container>
+        );
+    }
+}
+{% endraw %}
+{%- endcodetabs %}
+
 **Configuration**<br />
     <table class = "table table-bordered">
         <thead>

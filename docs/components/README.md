@@ -5,7 +5,7 @@
 
 [NativeBase](http://nativebase.io/) includes components such as anatomy of your app screens, header, textbox, buttons, badge, icon, inputgroup, form, checkbox, radio-button, list, card, thumbnail, progress bar, spinner, layout, search bar etc.<br /><br />
 
-<img src="{{('/docs/assets/iphone.png')}}" alt="" align="right" />
+<img src="{{('/docs/assets/iosphone.png')}}" alt="" align="right" />
 
 * [Anatomy](/docs/components/Anatomy.md)
 * [Badge](/docs/components/Badge.md)
