@@ -1115,12 +1115,12 @@
 <p>NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br>
 <em>Replacing Component for H1, H2, H3, Text: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/text.html" target="_blank"><code>&lt;Text&gt;</code></a></em></p>
 <table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-      <th style="padding-right: 140px;">Android</th>
-    </tr>
-  </thead>
+<thead>
+  <tr style="border-style: hidden;">
+    <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+    <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+  </tr>
+</thead>
   <thead>
     <tr style="border-style: hidden">
       <th style="border-style: hidden"><div style="background: url(../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/typography.png" alt=""></div></th>
@@ -1148,7 +1148,43 @@
     }
 }</code></pre>
 
+<h4 id="custom-headers">Custom Headers</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <th style="border-style: hidden;">
+        <img src="../assets/ios/components/typography/custom.png" alt=""></th>
+      <th>
+        <img src="../assets/ios/components/typography/custom.png" alt=""></th>
+    </tr>
+  </thead>
+</table>
 
+<p><em>Syntax</em></p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, H1, H2, H3, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TypographyExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">H1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{color:&apos;red&apos;}}</span>&gt;</span>Header One<span class="hljs-tag">&lt;/<span class="hljs-name">H1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">H2</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{color:&apos;red&apos;}}</span>&gt;</span>Header Two<span class="hljs-tag">&lt;/<span class="hljs-name">H2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">H3</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{color:&apos;red&apos;}}</span>&gt;</span>Header Three<span class="hljs-tag">&lt;/<span class="hljs-name">H3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{color:&apos;red&apos;}}</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}
+</code></pre>
 <p><strong>Configuration</strong></p>
 <table class="table table-bordered">
         <thead>
@@ -1223,7 +1259,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Typography","level":"1.4.24","depth":2,"next":{"title":"Ref","level":"1.4.25","depth":2,"path":"docs/components/Ref.md","ref":"docs/components/Ref.md","articles":[]},"previous":{"title":"Thumbnail","level":"1.4.23","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","codetabs","include-codeblock","ace","copy-code-button","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"include-codeblock":{"template":"ace","unindent":"true","theme":"monokai"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/Typography.md","mtime":"2017-01-17T09:33:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-19T07:50:08.936Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Typography","level":"1.4.24","depth":2,"next":{"title":"Ref","level":"1.4.25","depth":2,"path":"docs/components/Ref.md","ref":"docs/components/Ref.md","articles":[]},"previous":{"title":"Thumbnail","level":"1.4.23","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","codetabs","include-codeblock","ace","copy-code-button","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"include-codeblock":{"template":"ace","unindent":"true","theme":"monokai"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/Typography.md","mtime":"2017-01-19T14:11:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-19T14:09:53.637Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1258,6 +1294,10 @@
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

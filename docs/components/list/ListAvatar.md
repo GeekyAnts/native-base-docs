@@ -3,12 +3,12 @@
 List Avatars are medium to showcase an image with your list item whose dimension lays between icon and dimension. To create a avatar list, nest <code>&lt;Thumbnail></code> component within <code>&lt;ListItem></code> component.
 
 <table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-      <th style="padding-right: 140px;">Android</th>
-    </tr>
-  </thead>
+<thead>
+  <tr style="border-style: hidden;">
+    <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+    <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+  </tr>
+</thead>
   <thead>
     <tr style="border-style: hidden">
       <th style="border-style: hidden"><div style="background: url(../../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-avatar.png" alt="" /></div></th>

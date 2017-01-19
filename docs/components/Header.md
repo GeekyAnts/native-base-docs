@@ -12,12 +12,12 @@
 
 <br />
   <table>
-    <thead>
-      <tr style="border-style: hidden">
-        <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-        <th style="padding-right: 140px;">Android</th>
-      </tr>
-    </thead>
+  <thead>
+    <tr style="border-style: hidden;">
+      <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
     <thead>
       <tr style="border-style: hidden">
         <th style="border-style: hidden;">
@@ -72,13 +72,13 @@ export default class HeaderExample extends Component {
 #### Header with Buttons
 <table>
   <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden;">IOS</th>
-      <th>Android</th>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
     </tr>
   </thead>
   <thead>
-    <tr style="border-style: hidden">
+    <tr style="border-style: hidden;background-color: #E8F1FF">
       <th style="border-style: hidden;">
         <img src="{{('../assets/ios/components/header/iOSLTHeader.png')}}" alt="" /></th>
       <th>
@@ -130,13 +130,13 @@ export default class HeaderExample extends Component {
 #### Only Title
 <table>
   <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden;">IOS</th>
-      <th>Android</th>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
     </tr>
   </thead>
   <thead>
-    <tr style="border-style: hidden">
+    <tr style="border-style: hidden;background-color: #E8F1FF">
       <th style="border-style: hidden;">
         <img src="{{('../assets/ios/components/header/iOSTHeader.png')}}" alt="" /></th>
       <th>
@@ -184,13 +184,13 @@ export default class HeaderExample extends Component {
 #### With Icon Button and Text
 <table>
   <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden;">IOS</th>
-      <th>Android</th>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
     </tr>
   </thead>
   <thead>
-    <tr style="border-style: hidden">
+    <tr style="border-style: hidden;background-color: #E8F1FF">
       <th style="border-style: hidden;">
         <img src="{{('../assets/ios/components/header/custom.png')}}" alt="" /></th>
       <th>
@@ -242,13 +242,13 @@ export default class HeaderExample extends Component {
 #### Custom Background
 <table>
   <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden;">IOS</th>
-      <th>Android</th>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
     </tr>
   </thead>
   <thead>
-    <tr style="border-style: hidden">
+    <tr style="border-style: hidden;background-color: #E8F1FF">
       <th style="border-style: hidden;">
         <img src="{{('../assets/ios/components/header/customBg.png')}}" alt="" /></th>
       <th>
@@ -267,7 +267,7 @@ export default class HeaderExample extends Component {
     render() {
         return (
             <Container>
-                <Header title="Header" style={{ backgroundColor:'red' }} titleStyle={{ color:'#FFF' }} />
+                <Header title="Header" style={{backgroundColor:'red'}} titleStyle={{color:'#FFF'}} />
             </Container>
         );
     }
@@ -282,10 +282,10 @@ export default class HeaderExample extends Component {
     render() {
         return (
             <Container>
-                <Header style={{ backgroundColor: 'red' }}>
+                <Header style={{backgroundColor:'red'}}>
                     <Left />
                     <Body>
-                        <Title style={{ color: '#FFF' }}>Header</Title>
+                        <Title style={{color:'#FFF'}}>Header</Title>
                     </Body>
                     <Right />
                 </Header>

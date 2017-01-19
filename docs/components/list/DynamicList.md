@@ -3,12 +3,12 @@
 A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an easy array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.
 
 <table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-      <th style="padding-right: 140px;">Android</th>
-    </tr>
-  </thead>
+<thead>
+  <tr style="border-style: hidden;">
+    <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+    <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+  </tr>
+</thead>
   <thead>
     <tr style="border-style: hidden">
       <th style="border-style: hidden"><div style="background: url(../../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('../../assets/ios/components/dynamic-list.png')}}" alt="" /></div></th>

@@ -4,12 +4,12 @@ This is a [NativeBase](http://nativebase.io/) component built on top of [React N
 A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.
 
 <table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-      <th style="padding-right: 140px;">Android</th>
-    </tr>
-  </thead>
+<thead>
+  <tr style="border-style: hidden;">
+    <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+    <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+  </tr>
+</thead>
   <thead>
     <tr style="border-style: hidden">
       <th style="border-style: hidden"><div style="background: url(../../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/inputgroup.png" alt="" /></div></th>

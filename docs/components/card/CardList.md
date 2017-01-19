@@ -5,9 +5,9 @@ Include <code>CardItem</code> subsequently within <code>Card</code> to create a 
 <br />
     <table>
       <thead>
-        <tr style="border-style: hidden">
-          <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-          <th style="padding-right: 140px;">Android</th>
+        <tr style="border-style: hidden;">
+          <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+          <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
         </tr>
       </thead>
       <thead>

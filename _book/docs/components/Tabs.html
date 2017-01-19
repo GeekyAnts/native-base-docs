@@ -1115,12 +1115,12 @@
 <p>Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br>
 <em>Replacing Component: <a href="https://github.com/brentvatne/react-native-scrollable-tab-view" target="_blank">react-native-scrollable-tab-view <code>&lt;ScrollableTabView&gt;</code></a></em></p>
 <table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
-      <th style="padding-right: 140px;">Android</th>
-    </tr>
-  </thead>
+<thead>
+  <tr style="border-style: hidden;">
+    <td style="border-style: hidden;padding-left: 50px"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+    <td style="padding-left: 50px"><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+  </tr>
+</thead>
   <thead>
     <tr style="border-style: hidden">
       <th style="border-style: hidden"><div style="background: url(../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="../assets/ios/components/tabs.gif" alt=""></div></th>
@@ -1171,7 +1171,214 @@
         );
     }
 }</code></pre></div></div></div></p>
-<p><strong>Configuration</strong></p>
+<h4 id="tabs-with-tabicon">Tabs with TabIcon</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <th style="border-style: hidden;">
+        <img src="../assets/ios/components/tabs/1.png" alt=""></th>
+      <th>
+        <img src="../assets/ios/components/tabs/1.png" alt=""></th>
+    </tr>
+  </thead>
+</table>
+
+<p><em>Syntax</em></p>
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+<span class="hljs-keyword">import</span> { Tabs, TabContent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Tabs</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-person&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Profile<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-mail&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Message<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Tabs</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}</code></pre></div></div></div></p>
+<h4 id="tabs-with-tabicon-and-tablabel-horizontal">Tabs with TabIcon and TabLabel (Horizontal)</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <th style="border-style: hidden;">
+        <img src="../assets/ios/components/tabs/2.png" alt=""></th>
+      <th>
+        <img src="../assets/ios/components/tabs/2.png" alt=""></th>
+    </tr>
+  </thead>
+</table>
+
+<p><em>Syntax</em></p>
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+<span class="hljs-keyword">import</span> { Tabs, TabContent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Tabs</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-person&quot;</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Profile&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Profile<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-mail&quot;</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Messages&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Message<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Tabs</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}</code></pre></div></div></div></p>
+<h4 id="tabs-with-tabicon-and-tablabel-vertical">Tabs with TabIcon and TabLabel (Vertical)</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <th style="border-style: hidden;">
+        <img src="../assets/ios/components/tabs/3.png" alt=""></th>
+      <th>
+        <img src="../assets/ios/components/tabs/3.png" alt=""></th>
+    </tr>
+  </thead>
+</table>
+
+<p><em>Syntax</em></p>
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+<span class="hljs-keyword">import</span> { Tabs, TabContent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Tabs</span> <span class="hljs-attr">vertical</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-person&quot;</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Profile&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Profile<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabIcon</span>=<span class="hljs-string">&quot;ios-mail&quot;</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Messages&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Message<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Tabs</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}</code></pre></div></div></div></p>
+<h4 id="custom-tabs">Custom Tabs</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <td style="border-style: hidden;"><i class="fa fa-apple fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">iOS</span></td>
+      <td><i class="fa fa-android fa-5x" style="color: grey"></i>   <span style="color: grey;font-weight: 500">Android</span></td>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden;background-color: #E8F1FF">
+      <th style="border-style: hidden;">
+        <img src="../assets/ios/components/tabs/4.png" alt=""></th>
+      <th>
+        <img src="../assets/ios/components/tabs/4.png" alt=""></th>
+    </tr>
+  </thead>
+</table>
+
+<p><em>Syntax</em></p>
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+<span class="hljs-keyword">import</span> { Tabs, TabContent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Tabs</span> <span class="hljs-attr">tabBarStyle</span>=<span class="hljs-string">{{backgroundColor:&apos;#DCF3FB&apos;}}</span> <span class="hljs-attr">underlineStyle</span>=<span class="hljs-string">{{backgroundColor:&apos;#00AADF&apos;}}</span> <span class="hljs-attr">tabBarTextStyle</span>=<span class="hljs-string">{{color:</span> &apos;#<span class="hljs-attr">00AADF</span>&apos;}}&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Tab One&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab One<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Tab Two&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Two<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Tabs</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}
+</code></pre></div></div></div></p>
+<h4 id="tabs-at-the-bottom">Tabs at the Bottom</h4>
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden; padding-right: 34px;">IOS</th>
+      <th style="padding-right: 140px;">Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden"><div style="background: url(../assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="../assets/ios/components/tabs/5.png" alt=""></div></th>
+      <th><div style="background: url(../assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img height="490" width="266" src="../assets/ios/components/tabs/5.png" alt=""></div></th>
+    </tr>
+  </thead>
+</table>
+
+<p><em>Syntax</em></p>
+<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
+<span class="hljs-keyword">import</span> { Tabs, TabContent } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+&#x200B;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Tabs</span> <span class="hljs-attr">tabBarPosition</span>=<span class="hljs-string">&quot;bottom&quot;</span> <span class="hljs-attr">underlineStyle</span>=<span class="hljs-string">{{color:&apos;transparent&apos;}}</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Tab One&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab One<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">TabContent</span> <span class="hljs-attr">tabLabel</span>=<span class="hljs-string">&quot;Tab Two&quot;</span> <span class="hljs-attr">padder</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Content of Tab Two<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">TabContent</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Tabs</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        );
+    }
+}
+</code></pre></div></div></div>
+<strong>Configuration</strong></p>
 <table class="table table-bordered">
         <thead>
             <tr>
@@ -1283,7 +1490,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Tabs","level":"1.4.22","depth":2,"next":{"title":"Thumbnail","level":"1.4.23","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},"previous":{"title":"Tab","level":"1.4.21","depth":2,"path":"docs/components/Tab.md","ref":"docs/components/Tab.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","codetabs","include-codeblock","ace","copy-code-button","edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"include-codeblock":{"template":"ace","unindent":"true","theme":"monokai"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/Tabs.md","mtime":"2017-01-17T10:30:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-19T07:50:08.936Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tabs","level":"1.4.22","depth":2,"next":{"title":"Thumbnail","level":"1.4.23","depth":2,"path":"docs/components/Thumbnail.md","ref":"docs/components/Thumbnail.md","articles":[]},"previous":{"title":"Tab","level":"1.4.21","depth":2,"path":"docs/components/Tab.md","ref":"docs/components/Tab.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","toggle-chapters","codetabs","include-codeblock","ace","copy-code-button","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://docs.nativebase.io","text":"latest"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html","text":"v0.5.20"},{"value":"http://docs.nativebase.io","text":"-- select version --","selected":false}]},"include-codeblock":{"template":"ace","unindent":"true","theme":"monokai"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/Tabs.md","mtime":"2017-01-19T14:13:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-19T14:09:53.637Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1318,6 +1525,10 @@
     
         
         <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
