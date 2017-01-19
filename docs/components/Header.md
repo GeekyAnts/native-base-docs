@@ -38,7 +38,65 @@ export default class HeaderExample extends Component {
     render() {
         return (
             <Container>
-                <Header leftButton={<Icon name="arrow-back" />} title="Header" rightButton={<Icon name="apps" />} />
+                <Header leftIcon="arrow-back" title="Header" rightIcon="apps" />
+            </Container>
+        );
+    }
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
+
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header>
+                    <Left>
+                        <Icon name="arow-back" />
+                    </Left>
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right>
+                        <Icon name="menu" />
+                    </Right>
+                </Header>
+            </Container>
+        );
+    }
+}
+{%- endcodetabs %}
+<br />
+
+#### Header with Buttons
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">
+        <img src="{{('../assets/ios/components/header/iOSLTHeader.png')}}" alt="" /></th>
+      <th>
+        <img src="{{('../assets/ios/components/header/iOSLTHeader.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+*Syntax*
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Icon } from 'native-base/ui';
+import { Header } from 'native-base';
+​
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header left={<Button transparent><Icon name="menu" /></Button>} title="Header" />
             </Container>
         );
     }
@@ -54,24 +112,73 @@ export default class HeaderExample extends Component {
                 <Header>
                     <Left>
                         <Button transparent>
-                            <Icon name="arow-back" />
+                            <Icon name="menu" />
                         </Button>
                     </Left>
                     <Body>
                         <Title>Header</Title>
                     </Body>
-                    <Right>
-                        <Button>
-                            <Icon name="menu" />
-                        </Button>
-                    </Right>
+                    <Right />
                 </Header>
             </Container>
         );
     }
 }
 {%- endcodetabs %}
+<br />
 
+#### Only Title
+<table>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">IOS</th>
+      <th>Android</th>
+    </tr>
+  </thead>
+  <thead>
+    <tr style="border-style: hidden">
+      <th style="border-style: hidden;">
+        <img src="{{('../assets/ios/components/header/iOSTHeader.png')}}" alt="" /></th>
+      <th>
+        <img src="{{('../assets/ios/components/header/iOSTHeader.png')}}" alt="" /></th>
+    </tr>
+  </thead>
+</table>
+*Syntax*
+{% codetabs name="Basic", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Icon } from 'native-base/ui';
+import { Header } from 'native-base';
+​
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header title="Header" />
+            </Container>
+        );
+    }
+}
+{%- language name="Advanced", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Title, Button, Icon, Left, Body, Right } from 'native-base/ui';
+
+export default class HeaderExample extends Component {
+    render() {
+        return (
+            <Container>
+                <Header>
+                    <Left />
+                    <Body>
+                        <Title>Header</Title>
+                    </Body>
+                    <Right />
+                </Header>
+            </Container>
+        );
+    }
+}
+{%- endcodetabs %}
 **Configuration**<br />
     <table class = "table table-bordered">
         <thead>

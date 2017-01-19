@@ -5,9 +5,6 @@
 
 * [Components](/docs/components/README.md)
   * [Anatomy](/docs/components/Anatomy.md)
-    * [Header](/docs/components/Header.md)
-    * [Content](/docs/components/Content.md)
-    * [Footer](/docs/components/Footer.md)
   * [Badge](/docs/components/Badge.md)
   * [Button](/docs/components/button/Button.md)
     * [Button Theme](/docs/components/button/ButtonTheme.md)
@@ -27,10 +24,13 @@
     * [Card OnClick](/docs/components/card/CardOnClick.md)
     * [Dynamic Card](/docs/components/card/DynamicCard.md)
   * [Check Box](/docs/components/CheckBox.md)
+  * [Content](/docs/components/Content.md)
   * [Deck Swiper](/docs/components/DeckSwiper.md)
   * [FABs](/docs/components/FABs.md)
+  * [Footer](/docs/components/Footer.md)
   * [Footer Tabs](/docs/components/FooterTabs.md)
   * [Form](/docs/components/Form.md)
+  * [Header](/docs/components/Header.md)
   * [Icon](/docs/components/Icon.md)
   * [InputGroup](/docs/components/input-group/InputGroup.md)
     * [Regular Textbox](/docs/components/input-group/Regular.md)
@@ -57,7 +57,7 @@
   * [Thumbnail](/docs/components/Thumbnail.md)
   * [Typography](/docs/components/Typography.md)
   * [Ref](/docs/components/Ref.md)
-  
+
 * [Migration](/docs/Migration.md)
 * [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 

@@ -1,11 +1,19 @@
 .book .book-summary ul.summary > li:nth-child(2) {
   color: transparent;
   background-image: url(../docs/assets/NB.png);
-  background-size: 70%;
+  background-size: 80%;
   background-repeat: no-repeat;
   min-height: 70px;
   background-position: center;
 }
 .book .book-summary ul.summary > li:nth-child(2) a {
   color: transparent;
+}
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #558674;
+}
+.book .book-summary ul.summary li a:hover,
+.book .book-summary ul.summary li.active>a {
+  color: #558674;
+  font-weight: bold;
 }
