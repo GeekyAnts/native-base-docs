@@ -22,7 +22,7 @@ Now your project is ready for theme customization.
 <br />
 
 *General Syntax*
-<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text} from 'native-base';
+<pre class="line-numbers"><code class="language-jsx">import {StyleProvider, Container, Content, Text} from 'native-base';
 import React, {Component} from 'react-native';
 import TextTheme from './Themes/TextTheme';
 import variable from './Themes/variable';
