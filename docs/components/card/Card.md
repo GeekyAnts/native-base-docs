@@ -12,8 +12,6 @@ Card is a flexible and extensible content container. It includes options for hea
   * [Card List](COMPONENTS.md#Card_List)
   * [Card Image](COMPONENTS.md#Card_Image)
   * [Card Showcase](COMPONENTS.md#Card_Showcase)
-  * [Card OnClick](COMPONENTS.md#Card_OnClick)
-  * [Dynamic Card](COMPONENTS.md#Dynamic_Card)
 
 *Genertal Syntax*
 

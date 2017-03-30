@@ -401,32 +401,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5.5" data-path="COMPONENTS.html">
-            
-                <a href="COMPONENTS.html#Card_OnClick">
-            
-                    
-                    Card OnClick
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.5.6" data-path="COMPONENTS.html">
-            
-                <a href="COMPONENTS.html#Dynamic_Card">
-            
-                    
-                    Dynamic Card
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
@@ -661,7 +635,7 @@
     
         <li class="chapter " data-level="1.4.12" data-path="COMPONENTS.html">
             
-                <a href="COMPONENTS.html#Icon">
+                <a href="COMPONENTS.html#Icon_Default">
             
                     
                     Icon
@@ -1177,7 +1151,7 @@
 <li><a href="COMPONENTS.html#FABs">FABs</a></li>
 <li><a href="COMPONENTS.html#Footer_Tabs">Footer Tabs</a></li>
 <li><a href="COMPONENTS.html#Form">Form</a></li>
-<li><a href="COMPONENTS.html#Icon">Icon</a></li>
+<li><a href="COMPONENTS.html#Icon_Default">Icon</a></li>
 <li><a href="COMPONENTS.html#InputGroup_Default">InputGroup</a></li>
 <li><a href="COMPONENTS.html#Layout">Layout</a></li>
 <li><a href="COMPONENTS.html#List_Default">List</a></li>
@@ -1602,8 +1576,8 @@ NativeBase provides following color themes:</p>
 <li>Warning</li>
 <li>Danger<br></li>
 </ul>
-<p><img src="../docs/assets/ios/components/button-theme.png" alt="Preview ios Button_Theme">
-<img src="../docs/assets/android/components/button-theme.png" alt="Preview android Button_Theme"></p>
+<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png" alt="Preview ios Button_Theme">
+<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png" alt="Preview android Button_Theme"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -1938,8 +1912,6 @@ Card is a flexible and extensible content container. It includes options for hea
 <li><a href="COMPONENTS.html#Card_List">Card List</a></li>
 <li><a href="COMPONENTS.html#Card_Image">Card Image</a></li>
 <li><a href="COMPONENTS.html#Card_Showcase">Card Showcase</a></li>
-<li><a href="COMPONENTS.html#Card_OnClick">Card OnClick</a></li>
-<li><a href="COMPONENTS.html#Dynamic_Card">Dynamic Card</a></li>
 </ul>
 <p><em>Genertal Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
@@ -2173,62 +2145,6 @@ Here is your Card Image ready !</p>
         );
     }
 }</code></pre><br></p>
-<h4 id="Card_OnClick">4.0.14. Card OnClick</h4>
-<p>To navigate between screens on click of a card, include <code>button</code> prop with the <code>&lt;CardItem&gt;</code> component.</p>
-<p><img src="../docs/assets/ios/components/card-onclick.gif" alt="Preview ios Card_OnClick">
-<img src="../docs/assets/android/components/card-onclick.gif" alt="Preview android Card_OnClick"></p>
-<p><em>Syntax</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Thumbnail } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardOnClickExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span> <span class="hljs-attr">button</span> <span class="hljs-attr">onPress</span>=<span class="hljs-string">{function_call()}</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">Thumbnail</span> <span class="hljs-attr">source</span>=<span class="hljs-string">{require(&apos;.</span>/<span class="hljs-attr">img</span>/<span class="hljs-attr">NSP.png</span>&apos;)} /&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Native Starter Pro<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
-                   <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
-        );
-    }
-}</span></code></pre><br></p>
-<h4 id="Dynamic_Card">4.0.15. Dynamic Card</h4>
-<p>A center aspect designed for efficient representation of vertically scrolling lists of changing data. This can be achieved on the same lines as that of <b>dataArray</b> concept of <b>List</b>.<br>
-Create a <code>Card dataArray</code>, populate it with an easy array of data chunks, and instantiate a <code>CardItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.</p>
-<p><img src="../docs/assets/ios/components/dynamic-card.png" alt="Preview ios Dynamic_Card">
-<img src="../docs/assets/android/components/dynamic-card.png" alt="Preview android Dynamic_Card"></p>
-<p><em>Syntax</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Thumbnail } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
-<span class="hljs-keyword">let</span> themes = [
-    {
-        name: <span class="hljs-string">&apos;Native Starter Pro&apos;</span>,
-        image: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./img/NSP.png&apos;</span>)
-    },
-    . . .];
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DynamicCardExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span> <span class="hljs-attr">dataArray</span>=<span class="hljs-string">{themes}</span>
-                          <span class="hljs-attr">renderRow</span>=<span class="hljs-string">{(theme)</span> =&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">Thumbnail</span> <span class="hljs-attr">source</span>=<span class="hljs-string">{theme.image}</span> /&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{theme.name}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
-                        }&gt;
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
-        );
-    }
-}
-</span></code></pre><br></p>
 <h1 id="Check_Box">Check Box</h1>
 <p>Check Box allows the user to select a number of items from a set of choices.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank"><code>&lt;TouchableOpacity&gt;</code></a></em></p>
@@ -2283,8 +2199,8 @@ Create a <code>Card dataArray</code>, populate it with an easy array of data chu
 <p>Looking at data one piece at a time is more efficient when you consider people you might want to date, restaurants, streaming music, or local events you might want to check out. <br>
 <a href="http://nativebase.io/" target="_blank">NativeBase</a> Deck Swiper helps you evaluate one option at a time, instead of selecting from a set of options.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank"><code>&lt;View&gt;</code></a></em></p>
-<p><img src="../docs/assets/ios/components/deck-swiper.gif" alt="Preview ios Deck_Swiper">
-<img src="../docs/assets/android/components/deck-swiper.gif" alt="Preview android Deck_Swiper"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper.gif" alt="Preview ios Deck_Swiper">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deck-swiper.gif" alt="Preview android Deck_Swiper"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
@@ -2724,216 +2640,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
             </tr>
         </tbody>
     </table><br></p>
-<h1 id="Form">Form</h1>
-<p><a href="http://nativebase.io/" target="_blank">NativeBase</a> makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.<br>
-Input is a NativeBase component built on top of React Native&apos;s <textinput>. Item component is wrap around it apply the specific styles.
-A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br>
-Note: Form in native base is just a wrapper around the inputs and hence has no onSubmit function.<br>
-<strong>Contents:</strong></textinput></p>
-<ul>
-<li><a href="COMPONENTS.html#Fixed_Label">Fixed Label</a></li>
-<li><a href="COMPONENTS.html#Inline_Label">Inline Label</a></li>
-<li><a href="COMPONENTS.html#Floating_Label">Floating Label</a></li>
-<li><a href="COMPONENTS.html#Stacked_Label">Stacked Label</a></li>
-<li><a href="COMPONENTS.html#Regular_Textbox">Regular Textbox</a></li>
-<li><a href="COMPONENTS.html#Underlined_Textbox">Underlined Textbox</a></li>
-<li><a href="COMPONENTS.html#Rounded_Textbox">Rounded Textbox</a></li>
-<li><a href="COMPONENTS.html#Icon_Textbox">Icon Textbox</a></li>
-<li><a href="COMPONENTS.html#Success_Input_Textbox">Success Input Textbox</a></li>
-<li><a href="COMPONENTS.html#Error_Input_Textbox">Error Input Textbox</a></li>
-<li><a href="COMPONENTS.html#Disabled_Textbox">Disabled Textbox</a></li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/form.png" alt="Preview ios Form">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/form.png" alt="Preview android Form"></p>
-<p><em>Syntax</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Item, Label, Left, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
-&#x200B;<span class="hljs-keyword">const</span> PickerItem = Picker.Item;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    <span class="hljs-keyword">constructor</span>(props) {
-        <span class="hljs-keyword">super</span>(props);
-        <span class="hljs-keyword">this</span>.state = {
-            selectedItem: <span class="hljs-literal">undefined</span>,
-            selected1: <span class="hljs-string">&apos;key0&apos;</span>,
-            results: {
-                items: [],
-            },
-        };
-    }
-    onValueChange(value: string) {
-        <span class="hljs-keyword">this</span>.setState({
-            selected1: value,
-        });
-    }
-    render() {
-        <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;Content&gt;
-                    &lt;Item&gt;
-                        &lt;Label&gt;First Name&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;Item inlineLabel&gt;
-                        &lt;Label&gt;Last Name&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;Item floatingLabel&gt;
-                        &lt;Label&gt;Floating Label&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-person&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;EMAIL&quot; /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-unlock&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;PASSWORD&quot; secureTextEntry /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-call&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;PHONE&quot; keyboardType=&quot;numeric&quot; /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;Item stackedLabel&gt;
-                        &lt;Label&gt;Permanent Address&lt;Label&gt;
-                        &lt;Input placeholder=&quot;Address&quot; /&gt;
-                    &lt;Item&gt;
-                    &lt;Button style={{ alignSelf: &apos;center&apos;, marginTop: 20, marginBottom: 20 }}&gt;
-                        &lt;Text&gt;Sign Up&lt;/Text&gt;
-                    &lt;/Button&gt;
-                &lt;/Content&gt;
-            &lt;/Container&gt;
-        );
-    }
-}</code></pre><br></p>
-<p><strong>Configuration</strong></p>
-<p><table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">
-                    Description
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>fixedLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Label is Fixed to the left of the Input and does not hide when text is entered.
-                </td>
-            </tr>
-            <tr>
-                <td>floatingLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Label that animates upwards when the input is selected and animates downward when input is erased.
-                </td>
-            </tr>
-            <tr>
-                <td>inlineLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Label placed to the left of the input element. When the user enters text, the label does not hide. This can also be used along with placeholder.
-                </td>
-            </tr>
-            <tr>
-                <td>stackedLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Places the label on top of the input element which appears like a stack. This can also be used along with placeholder.
-                </td>
-            </tr>
-            <tr>
-                <td>placeholderLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Renders the same way the TextInput does with the form styling of NativeBase.
-                </td>
-            </tr>
-            <tr>
-                <td>bordered</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Includes border with the textbox.
-                </td>
-            </tr>
-            <tr>
-                <td>rounded</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Includes rounded border with the textbox.
-                </td>
-            </tr>
-            <tr>
-                <td>underline</td>
-                <td> true </td>
-                <td> - </td>
-                <td>
-                    Includes and underline border with the textbox.
-                </td>
-            </tr>
-            <tr>
-                <td>disabled</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Disables inputting data.
-                </td>
-            </tr>
-            <tr>
-                <td>error</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    The border color of textbox for invalid input.
-                </td>
-            </tr>
-            <tr>
-                <td>placeholder</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    The string that will be rendered before text input has been entered. Optional user-defined placeholder for textbox.
-                </td>
-            </tr>
-            <tr>
-                <td>secureTextEntry</td>
-                <td> false </td>
-                <td> true false</td>
-                <td>
-                If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
-                This prop can be passed to Input.
-                </td>
-            </tr>
-            <tr>
-                <td>success</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    The border color of textbox for valid input.
-                </td>
-            </tr>
-            <tr>
-                <td>last</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Style the Form Item for the last Item of the Form.
-                </td>
-            </tr>
-        </tbody>
-    </table><br></p>
-<h4 id="Fixed_Label">4.0.16. Fixed Label</h4>
+<h4 id="Fixed_Label">4.0.14. Fixed Label</h4>
 <p>The fixedLabel property creates a Input component, whose Label is fixed at the left of the Input, which does not hide when text is entered. The input aligns on the same position, regardless of the length of the label. It can be used with placeholder as well.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/fixedInput.png" alt="Preview ios Fixed_Label">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/fixedInput.png" alt="Preview android Fixed_Label"></p>
@@ -2961,7 +2668,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Inline_Label">4.0.17. Inline Label</h4>
+<h4 id="Inline_Label">4.0.15. Inline Label</h4>
 <p>The inlineLabel property creates a Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/inlineInput.png" alt="Preview ios Inline_Label">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/inlineInput.png" alt="Preview android Inline_Label"></p>
@@ -2989,7 +2696,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Floating_Label">4.0.18. Floating Label</h4>
+<h4 id="Floating_Label">4.0.16. Floating Label</h4>
 <p>The inlineLabel property creates a Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/floatingInput.gif" alt="Preview ios Floating_Label">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/floating-label.gif" alt="Preview android Floating_Label"></p>
@@ -3017,7 +2724,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Stacked_Label">4.0.19. Stacked Label</h4>
+<h4 id="Stacked_Label">4.0.17. Stacked Label</h4>
 <p>The inlineLabel property creates a Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/stackedInput.png" alt="Preview ios Stacked_Label">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/stackedInput.png" alt="Preview android Stacked_Label"></p>
@@ -3045,7 +2752,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Regular_Textbox">4.0.20. Regular Textbox</h4>
+<h4 id="Regular_Textbox">4.0.18. Regular Textbox</h4>
 <p>To use the regular textbox which is rectangular in shape, include the <code>borderType</code> property and assign it with value as <strong>regular</strong>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/regularInput.png" alt="Preview ios Regular_Textbox">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/regular.png" alt="Preview android Regular_Textbox"></p>
@@ -3066,7 +2773,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</span></code></pre><br></p>
-<h4 id="Underlined_Textbox">4.0.21. Underlined Textbox</h4>
+<h4 id="Underlined_Textbox">4.0.19. Underlined Textbox</h4>
 <p>To use the underlined textbox, include the <code>borderType</code> property and assign it with value as <strong>underline</strong>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/underlineInput.png" alt="Preview ios Underlined_Textbox">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/underlineInput.png" alt="Preview android Underlined_Textbox"></p>
@@ -3088,7 +2795,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Rounded_Textbox">4.0.22. Rounded Textbox</h4>
+<h4 id="Rounded_Textbox">4.0.20. Rounded Textbox</h4>
 <p>To have a textbox with round type border, include the <code>borderType</code> property and assign it with value as <strong>rounded</strong>.</p>
 <p><img src="../docs/assets/ios/components/rounded-textbox.png" alt="Preview ios Rounded_Textbox">
 <img src="../docs/assets/android/components/rounded-textbox.png" alt="Preview android Rounded_Textbox"></p>
@@ -3110,7 +2817,7 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
         );
     }
 }</code></pre><br></p>
-<h4 id="Icon_Textbox">4.0.23. Icon Textbox</h4>
+<h4 id="Icon_Textbox">4.0.21. Icon Textbox</h4>
 <p>Icons can be easily added to the NativeBase Textbox. To do so, include an icon within the <code>&lt;InputGroup&gt;</code>. <br>
 By default the icon will be aligned to the left in the textbox.<br>
 However, you can also render icon to the right. To display icon at the end of textbox, include <code>iconRight</code> prop with the <code>&lt;InputGroup&gt;</code>.</p>
@@ -3139,7 +2846,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h4 id="Success_Input_Textbox">4.0.24. Success Input Textbox</h4>
+<h4 id="Success_Input_Textbox">4.0.22. Success Input Textbox</h4>
 <p>To display textbox with valid data, include the <code>success</code> prop with <code>&lt;InputGroup&gt;</code>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/successInput.png" alt="Preview ios Success_Input_Textbox">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/successInput.png" alt="Preview android Success_Input_Textbox"></p>
@@ -3161,7 +2868,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h4 id="Error_Input_Textbox">4.0.25. Error Input Textbox</h4>
+<h4 id="Error_Input_Textbox">4.0.23. Error Input Textbox</h4>
 <p>To display textbox with invalid data, include the <code>error</code> prop with <code>&lt;InputGroup&gt;</code>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/errorInput.png" alt="Preview ios Error_Input_Textbox">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/errorInput.png" alt="Preview android Error_Input_Textbox"></p>
@@ -3182,7 +2889,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h4 id="Disabled_Textbox">4.0.26. Disabled Textbox</h4>
+<h4 id="Disabled_Textbox">4.0.24. Disabled Textbox</h4>
 <p>To restrict inputting data into textbox, include the <code>disabled</code> prop with <code>&lt;InputGroup&gt;</code>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/disabledInput.png" alt="Preview ios Disabled_Textbox">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/disabledInput.png" alt="Preview android Disabled_Textbox"></p>
@@ -3224,7 +2931,7 @@ However, you can also render icon to the right. To display icon at the end of te
 </li>
 </ul>
 <p><img src="../docs/assets/ios/components/header.png" alt="Preview ios Header">
-<img src="../docs/assets/android/components/header.png" alt="Preview android Header"></p>
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png" alt="Preview android Header"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3252,7 +2959,7 @@ However, you can also render icon to the right. To display icon at the end of te
     }
 }</code></pre><br>
 <br></p>
-<h4 id="Header_with_only_title">4.0.27. Header with only title</h4>
+<h4 id="Header_with_only_title">4.0.25. Header with only title</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -3270,7 +2977,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h4 id="Header_with_Icon_and_Text_Buttons">4.0.28. Header with Icon and Text Buttons</h4>
+<h4 id="Header_with_Icon_and_Text_Buttons">4.0.26. Header with Icon and Text Buttons</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -3294,7 +3001,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</span></code></pre><br></p>
-<h4 id="Header_with_title_and_Subtitle">4.0.29. Header with title and Subtitle</h4>
+<h4 id="Header_with_title_and_Subtitle">4.0.27. Header with title and Subtitle</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -3317,11 +3024,11 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h1 id="Icon">Icon</h1>
+<h1 id="Icon_Default">Icon Default</h1>
 <p>Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="http://nativebase.io/" target="_blank">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br>
 <em>Uses Ionicons from <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a></em></p>
-<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/icons.png" alt="Preview ios Icon">
-<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/icons.png" alt="Preview android Icon"></p>
+<p><img src="../docs/assets/ios/components/icon.png" alt="Preview ios Icon_Default">
+<img src="../docs/assets/android/components/icon.png" alt="Preview android Icon_Default"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3432,8 +3139,8 @@ Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much
 <h1 id="List_Default">List Default</h1>
 <p>This component is completely built by <a href="http://nativebase.io/" target="_blank">NativeBase</a>.<br>
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br></p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-basic.png" alt="Preview ios List_Default">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-basic.png" alt="Preview android List_Default"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/listBasic.png" alt="Preview ios List_Default">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicList.png" alt="Preview android List_Default"></p>
 <p><strong>Contents:</strong></p>
 <ul>
 <li><a href="COMPONENTS.html#List_Divider">List Divider</a></li>
@@ -3561,11 +3268,11 @@ A base component for specifying lists of information. List must contain one or m
             </tr>
         </tbody>
     </table><br></p>
-<h4 id="List_Divider">4.0.30. List Divider</h4>
+<h4 id="List_Divider">4.0.28. List Divider</h4>
 <p>The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.<br>
 The List Divider of NativeBase comes with default style which is easily customisable.</p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-divider.png" alt="Preview ios List_Divider">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-divider.png" alt="Preview android List_Divider"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/dividerList.png" alt="Preview ios List_Divider">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/listDivider.png" alt="Preview android List_Divider"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3597,12 +3304,12 @@ The List Divider of NativeBase comes with default style which is easily customis
     }
 }
 </code></pre><br></p>
-<h4 id="List_Icon">4.0.31. List Icon</h4>
+<h4 id="List_Icon">4.0.29. List Icon</h4>
 <p>Lists can have icons assigned either to the left and/or right side of each list item.
 Along with icons, list item can also have badges assigned.
 To have note kind of text for list item, include <code>note</code> prop with <code>Text</code> component of <code>ListItem</code>.</p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-icon.png" alt="Preview ios List_Icon">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-icon.png" alt="Preview android List_Icon"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconList.png" alt="Preview ios List_Icon">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/listIcon.png" alt="Preview android List_Icon"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text, Icon, Badge, Left, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3649,7 +3356,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
     }
 }
 </code></pre><br></p>
-<h4 id="List_Avatar">4.0.32. List Avatar</h4>
+<h4 id="List_Avatar">4.0.30. List Avatar</h4>
 <p>List Avatars are medium to showcase an image with your list item whose dimension lays between icon and dimension. To create a avatar list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-avatar.png" alt="Preview ios List_Avatar">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-avatar.png" alt="Preview android List_Avatar"></p>
@@ -3683,7 +3390,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
     }
 }
 </code></pre><br></p>
-<h4 id="List_Thumbnail">4.0.33. List Thumbnail</h4>
+<h4 id="List_Thumbnail">4.0.31. List Thumbnail</h4>
 <p>List Thumbnails are medium to exhibit an image with your list item. To create a thumbnail list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component with few props and style.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-thumbnail.png" alt="Preview ios List_Thumbnail">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-thumbnail.png" alt="Preview android List_Thumbnail"></p>
@@ -3710,10 +3417,10 @@ To have note kind of text for list item, include <code>note</code> prop with <co
     }
 }
 </span></code></pre><br></p>
-<h4 id="Dynamic_List">4.0.34. Dynamic List</h4>
+<h4 id="Dynamic_List">4.0.32. Dynamic List</h4>
 <p>A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an easy array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.</p>
 <p><img src="../docs/assets/ios/components/dynamic-list.png" alt="Preview ios Dynamic_List">
-<img src="../docs/assets/android/components/dynamic-list.png" alt="Preview android Dynamic_List"></p>
+<img src="../docs/assets/android/components/dynamicList.png" alt="Preview android Dynamic_List"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3737,7 +3444,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 }
 </code></pre><br></p>
 <p>For more advanced implementation of rendering list dynamically, take a look at <a href="https://github.com/GeekyAnts/nativebase-tutorial" target="_blank">nativebase-tutorial</a>.</p>
-<h4 id="List_Separator">4.0.35. List Separator</h4>
+<h4 id="List_Separator">4.0.33. List Separator</h4>
 <p>Seperator component is a separator usually used in list, which can be used for grouping list items. To create a seperator between list of items. Though it is used with List, You can use it anywhere in your app.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/separatorList.png" alt="Preview ios List_Separator">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/separatorList.png" alt="Preview android List_Separator"></p>
@@ -3892,8 +3599,8 @@ Pro tip: It is advisable to use hasSegment prop with Header if you&apos;re using
 <h1 id="Radio_Button">Radio Button</h1>
 <p>Radio buttons let the user select any one from a set of options.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="http://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank"><code>&lt;TouchableOpacity&gt;</code></a></em></p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/radio.png" alt="Preview ios Radio_Button">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/radio.png" alt="Preview android Radio_Button"></p>
+<p><img src="../docs/assets/ios/components/radio.png" alt="Preview ios Radio_Button">
+<img src="../docs/assets/android/components/radio.png" alt="Preview android Radio_Button"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, Radio } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3942,8 +3649,8 @@ Pro tip: It is advisable to use hasSegment prop with Header if you&apos;re using
 <h1 id="Search_Bar">Search Bar</h1>
 <p>It&#x2019;s kind of common on the Internet where &#x2013; if we fail to get what we are looking for on a website, we resort to searching. Search box has always been an essential part of any application.
 We provide you with the one, which filters the list based on your search input.</p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/searchbar.png" alt="Preview ios Search_Bar">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/searchbar.png" alt="Preview android Search_Bar"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/searchbar.png" alt="Preview ios Search_Bar">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/searchbar.png" alt="Preview android Search_Bar"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, InputGroup, Input, Icon, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -4120,8 +3827,8 @@ We provide you with the one, which filters the list based on your search input.<
 <h1 id="Thumbnail">Thumbnail</h1>
 <p>Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/image.html" target="_blank"><code>&lt;Image&gt;</code></a></em></p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/thumbnail.png" alt="Preview ios Thumbnail">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/thumbnail.png" alt="Preview android Thumbnail"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/thumbnail.png" alt="Preview ios Thumbnail">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/thumbnail.png" alt="Preview android Thumbnail"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Thumbnail, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -4371,7 +4078,7 @@ Drawer is used from react-native-drawer Drawer</p>
 <li><code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.</li>
 <li>This feature is accessible with all of NativeBase components.</li>
 </ul>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Ref_to_Components">Ref to Components</a></p><li><a href="#Anatomy">1. Anatomy</a></li><li><a href="#ActionSheet">2. ActionSheet</a></li><li><a href="#Badge">3. Badge</a></li><li><a href="#Button_Default">4. Button Default</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">4.0.1. Button Theme</a></li><li><a href="#Block_Button">4.0.2. Block Button</a></li><li><a href="#Full_Button">4.0.3. Full Button</a></li><li><a href="#Rounded_Button">4.0.4. Rounded Button</a></li><li><a href="#Icon_Button">4.0.5. Icon Button</a></li><li><a href="#Outline_Button">4.0.6. Outline Button</a></li><li><a href="#Transparent_Button">4.0.7. Transparent Button</a></li><li><a href="#Button_Size">4.0.8. Button Size</a></li><li><a href="#Disabled_Button">4.0.9. Disabled Button</a></li><li><a href="#Card_Header_and_Footer">4.0.10. Card Header and Footer</a></li><li><a href="#Card_List">4.0.11. Card List</a></li><li><a href="#Card_Image">4.0.12. Card Image</a></li><li><a href="#Card_Showcase">4.0.13. Card Showcase</a></li><li><a href="#Card_OnClick">4.0.14. Card OnClick</a></li><li><a href="#Dynamic_Card">4.0.15. Dynamic Card</a></li><li><a href="#Fixed_Label">4.0.16. Fixed Label</a></li><li><a href="#Inline_Label">4.0.17. Inline Label</a></li><li><a href="#Floating_Label">4.0.18. Floating Label</a></li><li><a href="#Stacked_Label">4.0.19. Stacked Label</a></li><li><a href="#Regular_Textbox">4.0.20. Regular Textbox</a></li><li><a href="#Underlined_Textbox">4.0.21. Underlined Textbox</a></li><li><a href="#Rounded_Textbox">4.0.22. Rounded Textbox</a></li><li><a href="#Icon_Textbox">4.0.23. Icon Textbox</a></li><li><a href="#Success_Input_Textbox">4.0.24. Success Input Textbox</a></li><li><a href="#Error_Input_Textbox">4.0.25. Error Input Textbox</a></li><li><a href="#Disabled_Textbox">4.0.26. Disabled Textbox</a></li><li><a href="#Header_with_only_title">4.0.27. Header with only title</a></li><li><a href="#Header_with_Icon_and_Text_Buttons">4.0.28. Header with Icon and Text Buttons</a></li><li><a href="#Header_with_title_and_Subtitle">4.0.29. Header with title and Subtitle</a></li><li><a href="#List_Divider">4.0.30. List Divider</a></li><li><a href="#List_Icon">4.0.31. List Icon</a></li><li><a href="#List_Avatar">4.0.32. List Avatar</a></li><li><a href="#List_Thumbnail">4.0.33. List Thumbnail</a></li><li><a href="#Dynamic_List">4.0.34. Dynamic List</a></li><li><a href="#List_Separator">4.0.35. List Separator</a></li></ul></ul><li><a href="#Toast">5. Toast</a></li></ul></div><a href="#Anatomy" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Ref_to_Components">Ref to Components</a></p><li><a href="#Anatomy">1. Anatomy</a></li><li><a href="#ActionSheet">2. ActionSheet</a></li><li><a href="#Badge">3. Badge</a></li><li><a href="#Button_Default">4. Button Default</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">4.0.1. Button Theme</a></li><li><a href="#Block_Button">4.0.2. Block Button</a></li><li><a href="#Full_Button">4.0.3. Full Button</a></li><li><a href="#Rounded_Button">4.0.4. Rounded Button</a></li><li><a href="#Icon_Button">4.0.5. Icon Button</a></li><li><a href="#Outline_Button">4.0.6. Outline Button</a></li><li><a href="#Transparent_Button">4.0.7. Transparent Button</a></li><li><a href="#Button_Size">4.0.8. Button Size</a></li><li><a href="#Disabled_Button">4.0.9. Disabled Button</a></li><li><a href="#Card_Header_and_Footer">4.0.10. Card Header and Footer</a></li><li><a href="#Card_List">4.0.11. Card List</a></li><li><a href="#Card_Image">4.0.12. Card Image</a></li><li><a href="#Card_Showcase">4.0.13. Card Showcase</a></li><li><a href="#Fixed_Label">4.0.14. Fixed Label</a></li><li><a href="#Inline_Label">4.0.15. Inline Label</a></li><li><a href="#Floating_Label">4.0.16. Floating Label</a></li><li><a href="#Stacked_Label">4.0.17. Stacked Label</a></li><li><a href="#Regular_Textbox">4.0.18. Regular Textbox</a></li><li><a href="#Underlined_Textbox">4.0.19. Underlined Textbox</a></li><li><a href="#Rounded_Textbox">4.0.20. Rounded Textbox</a></li><li><a href="#Icon_Textbox">4.0.21. Icon Textbox</a></li><li><a href="#Success_Input_Textbox">4.0.22. Success Input Textbox</a></li><li><a href="#Error_Input_Textbox">4.0.23. Error Input Textbox</a></li><li><a href="#Disabled_Textbox">4.0.24. Disabled Textbox</a></li><li><a href="#Header_with_only_title">4.0.25. Header with only title</a></li><li><a href="#Header_with_Icon_and_Text_Buttons">4.0.26. Header with Icon and Text Buttons</a></li><li><a href="#Header_with_title_and_Subtitle">4.0.27. Header with title and Subtitle</a></li><li><a href="#List_Divider">4.0.28. List Divider</a></li><li><a href="#List_Icon">4.0.29. List Icon</a></li><li><a href="#List_Avatar">4.0.30. List Avatar</a></li><li><a href="#List_Thumbnail">4.0.31. List Thumbnail</a></li><li><a href="#Dynamic_List">4.0.32. Dynamic List</a></li><li><a href="#List_Separator">4.0.33. List Separator</a></li></ul></ul><li><a href="#Toast">5. Toast</a></li></ul></div><a href="#Anatomy" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -4414,7 +4121,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/blob/allNew/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-03-30T06:33:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T08:10:20.243Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/blob/allNew/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-03-30T10:53:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T11:42:39.099Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

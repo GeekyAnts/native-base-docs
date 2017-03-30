@@ -3,7 +3,7 @@
 A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an easy array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.
 
 ![Preview ios Dynamic_List](../docs/assets/ios/components/dynamic-list.png)
-![Preview android Dynamic_List](../docs/assets/android/components/dynamic-list.png)
+![Preview android Dynamic_List](../docs/assets/android/components/dynamicList.png)
 
 *Syntax*
 

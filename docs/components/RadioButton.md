@@ -4,8 +4,8 @@ Radio buttons let the user select any one from a set of options.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](http://facebook.github.io/react-native/docs/touchableopacity.html)*
 
 
-![Preview ios Radio_Button](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/radio.png)
-![Preview android Radio_Button](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/radio.png)
+![Preview ios Radio_Button](../docs/assets/ios/components/radio.png)
+![Preview android Radio_Button](../docs/assets/android/components/radio.png)
 
 *Syntax*
 

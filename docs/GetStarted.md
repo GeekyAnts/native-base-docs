@@ -31,3 +31,15 @@ You've successfully setup [NativeBase](http://nativebase.io/) with your [React N
 
 
 **Gif/video of a init new projet and adding a Button component to a new blank project(iOS and Android) goes here**
+
+## Setup with CRNA
+*Create React Native project using the CRNA cli.* <br />
+
+*Install NativeBase*
+```js
+npm install native-base --save
+```
+*Install @expo/vector-icons*
+```js
+npm install @expo/vector-icons --save
+```

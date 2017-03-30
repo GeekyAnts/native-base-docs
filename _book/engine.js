@@ -170,8 +170,6 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
           }
         }
       }
-      console.log(filterListIos);
-      console.log(filterListAndroid);
 
 
       if(window.location.href.includes("COMPONENTS.html")){

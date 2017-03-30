@@ -4,8 +4,8 @@ Lists can have icons assigned either to the left and/or right side of each list 
 Along with icons, list item can also have badges assigned.
 To have note kind of text for list item, include <code>note</code> prop with <code>Text</code> component of <code>ListItem</code>.
 
-![Preview ios List_Icon](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-icon.png)
-![Preview android List_Icon](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-icon.png)
+![Preview ios List_Icon](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconList.png)
+![Preview android List_Icon](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/listIcon.png)
 
 *Syntax*
 

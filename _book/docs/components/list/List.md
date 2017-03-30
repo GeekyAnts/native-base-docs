@@ -3,8 +3,8 @@
 This component is completely built by [NativeBase](http://nativebase.io/).<br />
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
-![Preview ios List_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-basic.png)
-![Preview android List_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-basic.png)
+![Preview ios List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/listBasic.png)
+![Preview android List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicList.png)
 
 **Contents:**
 * [List Divider](COMPONENTS.md#List_Divider)

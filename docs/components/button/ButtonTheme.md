@@ -8,8 +8,8 @@ NativeBase provides following color themes:
   * Warning
   * Danger<br />
 
-![Preview ios Button_Theme](../docs/assets/ios/components/button-theme.png)
-![Preview android Button_Theme](../docs/assets/android/components/button-theme.png)
+![Preview ios Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
+![Preview android Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
 
 *Syntax*
 

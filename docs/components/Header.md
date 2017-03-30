@@ -16,7 +16,7 @@
   * [Header with title and Subtitle](COMPONENTS.md#Header_with_title_and_Subtitle)
 
 ![Preview ios Header](../docs/assets/ios/components/header.png)
-![Preview android Header](../docs/assets/android/components/header.png)
+![Preview android Header](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
