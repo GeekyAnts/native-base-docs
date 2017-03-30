@@ -1,4 +1,4 @@
-# What's new in 2.0
+# WhatsNew
 
 The main goal with v2.0 was to make all NativeBase components fully customizable. Now with NativeBase 2.0, each NativeBase component can be fully customized as per your need for your project.<br />
 With the help of <code>connectStyle</code> function and <code>StyleProvider</code> component, each component of NativeBase you use or write a new one can be customized very easily.

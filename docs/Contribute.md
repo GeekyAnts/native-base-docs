@@ -9,11 +9,8 @@ Take a look at [NativeBase on StackOverflow](http://stackoverflow.com/questions/
 
 ## Manual
 
-1. [Coding Style](#1-coding-style)
-2. [Git Flow](#2-git-flow)
-	- [Reporting Bugs](#a-reporting-bugs)
-    - [Request for New Feature](#b-request-for-new-feature)
-    - [Code Fixes and Enhancements](#c-code-fixes-and-enhancements)
+1. Coding style
+2. Git Flow
 
 
 ### 1. Coding Style

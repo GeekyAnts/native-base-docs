@@ -1,23 +1,12 @@
 # FAQs
 
-
-- [Installation Failed](#installation-failed)
-- [Watchman Error](#watchman-error)
-- [Unrecognized font family ionicons](#unrecognized-font)
-- [react-native-vector-icons peer installation failed](#icons-peer-installation-failed)
-- [How to override style in NativeBase?](#override-style)
-- [How do I add events with the components?](#add-events)
-- [None of the above, I have a different error](#none)
-- [How to customize components of NativeBase?](#customize)
-- [I want list of icons with their names used in NativeBase](#list-icons)
-
 <br />
 <a id="installation-failed"></a>
 #### I am facing issues while setting up.
 
 <b>Solution:</b>
 
-Please verify the system requirements mentioned in [installation]('/docs/GetStarted.md') procedure.
+Please verify the system requirements mentioned in [installation](/docs/GetStarted.md#Quick_Setup) procedure.
 
 <br />
 <hr>
@@ -92,9 +81,7 @@ Please verify the system requirements mentioned in [installation]('/docs/GetStar
     </div>
     <b>Solution 2:</b>
     Please complete the installation procedure for <b>react-native-vector-icons</b> by taking up the
-    <a href="">
-        manual setup
-    </a> mentioned in the docs.
+    manual setup mentioned in the docs.
 </div>
 
 <br />
@@ -140,8 +127,7 @@ Please verify the system requirements mentioned in [installation]('/docs/GetStar
 
         <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can just use the <code>onPress</code> callback function for event handling.<br /><br />
 
-        Refer the
-        <a href="">cheatsheet</a>
+        Refer the cheatsheet
         for more details.
     </div>
 </div>
@@ -163,7 +149,7 @@ Please verify the system requirements mentioned in [installation]('/docs/GetStar
     <div class="panel-footer">
         <b>Solution:</b> <br />
         We welcome all your issues. Feel free to raise issues on GitHub.<br />
-        Please go through the <a href="">Git Flow</a> to report issues.
+        Please go through the gitflow to report issues.
     </div>
 </div>
 
@@ -182,7 +168,7 @@ Please verify the system requirements mentioned in [installation]('/docs/GetStar
     <div class="panel-footer">
         <b> Solution: </b><br />
         <a href="http://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
-        Go through <a href="">Customize</a> section of docs.
+        Go through customize section of docs.
     </div>
 </div>
 

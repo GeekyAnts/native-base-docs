@@ -20,6 +20,13 @@ cd AwesomeNativeBase
 ```js
 npm install native-base --save
 ```
+*Install Peer Dependencies*<br />
+The peer dependencies included from any npm packages does not automatically get installed. Your application will not depend on it explicitly.
+
+```js
+react-native link
+```
+
 You've successfully setup [NativeBase](http://nativebase.io/) with your [React Native](https://facebook.github.io/react-native/) app. Your React Native app is now all set to run on iOS and Android simulator.
 
 

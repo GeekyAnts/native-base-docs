@@ -6,7 +6,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     // Update the select with a list of versions
     function updateVersions(_versions) {
         versions = _versions || versions;
-        current  = $('.versions-select select').val();
+        current  = $('.versions-select select').val() || current;
 
         // Cleanup existing selector
         $('.versions-select').remove();

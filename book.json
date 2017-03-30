@@ -2,21 +2,26 @@
     "title": "NativeBase",
     "plugins": [
         "versions",
-        "toggle-chapters",
         "codetabs",
         "include-codeblock",
         "ace",
         "copy-code-button",
-        "edit-link"
+        "edit-link",
+        "scripts",
+        "navigator"
     ],
     "pluginsConfig": {
+      "scripts": {
+            "files": [
+                "./engine.js"
+            ]
+        },
         "edit-link": {
             "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
             "label": "Edit This Page"
         },
         "include-codeblock": {
             "template": "ace",
-            "unindent": "true",
             "theme": "monokai"
         },
         "versions": {
@@ -27,8 +32,8 @@
                     "text": "latest"
                 },
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/v0.5.20/_book/index.html",
-                    "text": "v0.5.20"
+                    "value": "http://nativebase.io/docs/v0.5.13/",
+                    "text": "v0.5.13"
                 },
                 {
                     "value": "http://docs.nativebase.io",
