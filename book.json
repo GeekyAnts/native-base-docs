@@ -30,15 +30,6 @@
                 {
                     "value": "http://docs.nativebase.io",
                     "text": "latest"
-                },
-                {
-                    "value": "http://nativebase.io/docs/v0.5.13/",
-                    "text": "v0.5.13"
-                },
-                {
-                    "value": "http://docs.nativebase.io",
-                    "text": "-- select version --",
-                    "selected": false
                 }
             ]
         }
