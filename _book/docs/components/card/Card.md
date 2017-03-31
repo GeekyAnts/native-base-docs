@@ -57,32 +57,39 @@ export default class CardExample extends Component {
         </thead>
         <tbody>
             <tr>
-                <td>header</td>
+                <td>button</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Displays both as header and footer for cards.</td>
-            </tr>
-            <tr>
-                <td>note</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Sub caption for Card header.</td>
+                <td>To navigate on click of a card item.</td>
             </tr>
             <tr>
                 <td>cardBody</td>
                 <td> - </td>
                 <td> - </td>
+                <td>Defines section for body of card. The child components are rendered with proper spacing and alignment.</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                    Defines section for body of card.<br />
-                    The child components are rendered without any spacing or padding.
+                    Displays text as footer for cards
                 </td>
             </tr>
             <tr>
-                <td>button</td>
+                <td>header</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    To navigate on click of a card item.
+                    Displays text as header for cards
+                </td>
+            </tr>
+            <tr>
+                <td>bordered</td>
+                <td> false </td>
+                <td> true false </td>
+                <td>
+                    To add border to the cardItems
                 </td>
             </tr>
         </tbody>

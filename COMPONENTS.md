@@ -38,6 +38,7 @@
 {% include "./docs/components/Layout.md" %}
 {% include "./docs/components/list/List.md" %}
 {% include "./docs/components/list/ListDivider.md" %}
+{% include "./docs/components/list/listHeader.md" %}
 {% include "./docs/components/list/ListIcon.md" %}
 {% include "./docs/components/list/ListAvatar.md" %}
 {% include "./docs/components/list/ListThumbnail.md" %}

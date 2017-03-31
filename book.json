@@ -25,7 +25,7 @@
             "theme": "monokai"
         },
         "versions": {
-            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/blob/allNew/book.json",
+            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
                     "value": "https://nativebase.io/docs/v2.0.0/",

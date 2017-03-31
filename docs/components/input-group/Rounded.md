@@ -2,8 +2,8 @@
 
 To have a textbox with round type border, include the <code>borderType</code> property and assign it with value as **rounded**.
 
-![Preview ios Rounded_Textbox](../docs/assets/ios/components/rounded-textbox.png)
-![Preview android Rounded_Textbox](../docs/assets/android/components/rounded-textbox.png)
+![Preview ios Rounded_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/roundedInput.png)
+![Preview android Rounded_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/roundedinput.png)
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

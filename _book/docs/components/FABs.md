@@ -1,10 +1,10 @@
-# FABs
+# FABs Default
 
 FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Animated></code>](http://facebook.github.io/react-native/docs/animated.html)*
 
-![Preview ios FABs](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/singleFAB.gif)
-![Preview android FABs](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/single-FAB.gif)
+![Preview ios FABs_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/singleFAB.gif)
+![Preview android FABs_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/single-FAB.gif)
 
 *Syntax*
 
@@ -17,8 +17,8 @@ export default class FABExample extends Component {
         };
     }
       render() {
-        return (
-            &lt;Container>
+        return (  
+                      &lt;Container>
                 &lt;Content>
                     &lt;Fab
                         active={this.state.active}
@@ -118,3 +118,45 @@ export default class FABExample extends Component {
             </tr>
         </tbody>
     </table><br />
+
+# Multiple FABs
+
+![Preview ios Multiple_FABs](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/multipleFABs.gif)
+![Preview android Multiple_FABs](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/multiple-FAB.gif)
+
+*Syntax*
+
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+import { Container, Content, Button, Icon, Fab, Text, View } from 'native-base';
+​export default class FABExample extends Component {
+    constructor() {
+        this.state = {
+            active: 'true'
+        };
+    }
+    render() {
+        return (
+            &lt;Container>
+                &lt;View>
+                    &lt;Fab
+                        active={this.state.active}
+                        direction="up"
+                        containerStyle={ marginLeft: 10 }
+                        position="bottomRight"
+                        onPress={() => this.setState({ active: !this.state.active })}>
+                      ....
+                    &lt;/Fab>
+                    &lt;Fab direction="left" position="topRight">
+                      ....
+                    &lt;/Fab>
+                    &lt;Fab direction="down" position="topLeft">
+                      ....
+                    &lt;/Fab>
+                    &lt;Fab direction="right" position="bottomLeft">
+                      ....
+                    &lt;/Fab>
+                &lt;/View>
+            &lt;/Container>
+        );
+    }
+}</code></pre><br />

@@ -8,6 +8,7 @@ A base component for specifying lists of information. List must contain one or m
 
 **Contents:**
 * [List Divider](COMPONENTS.md#List_Divider)
+* [List Header](COMPONENTS.md#List_Header)
 * [List Icon](COMPONENTS.md#List_Icon)
 * [List Avatar](COMPONENTS.md#List_Avatar)
 * [List Thumbnail](COMPONENTS.md#List_Thumbnail)

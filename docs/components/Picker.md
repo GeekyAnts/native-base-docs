@@ -2,6 +2,7 @@
 
 Renders the native picker component on iOS and Android.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Picker></code>](https://facebook.github.io/react-native/docs/picker.html)*
+For Android use this [React Native Picker](https://facebook.github.io/react-native/docs/picker.html). <br />
 
 ![Preview ios Picker](../docs/assets/ios/components/picker.gif)
 ![Preview android Picker](../docs/assets/android/components/picker.gif)
@@ -36,13 +37,54 @@ export default class PickerExample extends Component {
                         mode="dropdown"
                         selectedValue={this.state.selected1}
                         onValueChange={this.onValueChange.bind(this)}>
-                        &lt;Item label="Cats" value="key0" />
-                        &lt;Item label="Dogs" value="key1" />
-                        &lt;Item label="Birds" value="key2" />
-                        &lt;Item label="Elephants" value="key3" />
+                        &lt;Item label="Wallet" value="key0" />
+                        &lt;Item label="ATM Card" value="key1" />
+                        &lt;Item label="Credit Card" value="key2" />
+                        &lt;Item label="Debit Card" value="key3" />
                    &lt;/Picker>
                 &lt;/Content>
             &lt;/Container>
         );
     }
 }</code></pre><br />
+
+**Configuration**
+
+<table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>headerComponent</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon.</td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon.</td>
+            </tr>
+            <tr>
+                <td>itemStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon.</td>
+            </tr>
+            <tr>
+                <td>itemTextStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Name of the icon.</td>
+            </tr>
+            </tbody>
+            </table><br />

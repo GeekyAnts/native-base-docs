@@ -55,10 +55,16 @@ export default class ThumbnailExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>size</td>
-                <td>30</td>
-                <td>user-defined</td>
-                <td>Dimension of thumbnail.</td>
+                <td>small</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Small thumbnail with width and height of 40px.</td>
+            </tr>
+            <tr>
+                <td>large</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Large thumbnail with width and height of 80px.</td>
             </tr>
         </tbody>
     </table><br />
