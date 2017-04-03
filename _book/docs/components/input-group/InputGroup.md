@@ -1,6 +1,6 @@
 # InputGroup Default
 
-This is a [NativeBase](http://nativebase.io/) component built on top of [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput></code>.<br />
+This is a [NativeBase](https://nativebase.io/) component built on top of [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput></code>.<br />
 A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.
 
 ![Preview ios InputGroup_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/inputgroup.png)
@@ -33,7 +33,7 @@ export default class InputGroupExample extends Component {
     }
 }</code></pre><br />
 
-* [NativeBase](http://nativebase.io/) extends [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput/&gt;</code> by adding several attributes and props to <code>&lt;Input /&gt;</code>.
+* [NativeBase](https://nativebase.io/) extends [React Native](https://facebook.github.io/react-native/)'s <code>&lt;TextInput/&gt;</code> by adding several attributes and props to <code>&lt;Input /&gt;</code>.
 * NativeBase defines textbox for you, by just defining <code>&lt;Input /></code> in your app.
 * Supports custom styles on both iOS and Android devices.
 * InputGroup component renders elements such as: Text, Input, Icon.

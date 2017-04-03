@@ -1,7 +1,7 @@
 ## Anatomy_Default
 
 Automatically animates views to their new positions.<br />
-A common way to use [NativeBase](http://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
+A common way to use [NativeBase](https://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
 
 ![Preview ios Anatomy_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/anatomy.png)
 ![Preview android Anatomy_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/anatomy.png)
@@ -48,7 +48,7 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
 
 
 
-* [NativeBase](http://nativebase.io/) provides its own frame component, named after <code>&lt;Container></code>.
+* [NativeBase](https://nativebase.io/) provides its own frame component, named after <code>&lt;Container></code>.
 * All the components should be included within the Container.
 * Container takes mainly three components: <code>&lt;Header></code>, <code>&lt;Content></code> and <code>&lt;Footer></code>.
 * Container comes with its predefined stylesheet, with an added advantage of accepting user-defined styles.

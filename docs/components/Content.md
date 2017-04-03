@@ -1,6 +1,6 @@
 # Content
 
-* This is a [NativeBase](http://nativebase.io/) component which renders as <b>body</b> element of your screen.
+* This is a [NativeBase](https://nativebase.io/) component which renders as <b>body</b> element of your screen.
 * Each screen can have only one <code>&lt;Content></code> component and can be defined anywhere within the Container.
 * Content takes in the whole collection of [React Native](https://facebook.github.io/react-native/) and NativeBase components.
 * Content provides you with stylesheet.

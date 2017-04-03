@@ -1,5 +1,5 @@
 # Footer Default
-* [NativeBase](http://nativebase.io/) component that renders as Footer for your screen.
+* [NativeBase](https://nativebase.io/) component that renders as Footer for your screen.
 * There can be a single Footer component into your Container.
 * To have Footer for your screen, include <code>&lt;Footer></code> component within <code>&lt;Container></code>.
 * Footer takes input as: Button, Text, Icon, InputGroup or any other custom View.

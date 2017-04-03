@@ -1,6 +1,6 @@
 # Contributing to NativeBase
 
-Thank you for your interest in contributing to the [NativeBase](http://nativebase.io/) project!
+Thank you for your interest in contributing to the [NativeBase](https://nativebase.io/) project!
 
 In favor of active development, we accept contributions from everyone. NativeBase team is constantly marking issues and features that the community can implement. You can contribute by submitting a bug, creating pull requests or even by improving documentation. Beneath is the manual to be accompanied strictly earlier than submitting your pull requests / issues.
 

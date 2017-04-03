@@ -1,6 +1,6 @@
 # Quick Setup
 
-To have [NativeBase](http://nativebase.io/) components running onto your native apps, all you need to do is create a fresh [React Native](https://facebook.github.io/react-native/) project and install the NativeBase command line tools.
+To have [NativeBase](https://nativebase.io/) components running onto your native apps, all you need to do is create a fresh [React Native](https://facebook.github.io/react-native/) project and install the NativeBase command line tools.
 
 **System Requirements**
 * Globally installed [node](https://nodejs.org/en/) >= 6.0
@@ -27,7 +27,7 @@ The peer dependencies included from any npm packages does not automatically get 
 react-native link
 ```
 
-You've successfully setup [NativeBase](http://nativebase.io/) with your [React Native](https://facebook.github.io/react-native/) app. Your React Native app is now all set to run on iOS and Android simulator.
+You've successfully setup [NativeBase](https://nativebase.io/) with your [React Native](https://facebook.github.io/react-native/) app. Your React Native app is now all set to run on iOS and Android simulator.
 
 
 **Gif/video of a init new projet and adding a Button component to a new blank project(iOS and Android) goes here**

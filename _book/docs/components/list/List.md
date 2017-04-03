@@ -1,6 +1,6 @@
 # List Default
 
-This component is completely built by [NativeBase](http://nativebase.io/).<br />
+This component is completely built by [NativeBase](https://nativebase.io/).<br />
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
 ![Preview ios List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/listBasic.png)

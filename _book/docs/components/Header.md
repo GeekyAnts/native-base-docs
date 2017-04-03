@@ -1,5 +1,5 @@
 # Header Default
-* [NativeBase](http://nativebase.io/) component that renders as Header (navbar) for your screen.
+* [NativeBase](https://nativebase.io/) component that renders as Header (navbar) for your screen.
 * There can be a single Header component into your Container.
 * To have Header for your screen, include <code>&lt;Header></code> component within <code>&lt;Container></code>.
 * Header takes input as: Button and Title (Text)

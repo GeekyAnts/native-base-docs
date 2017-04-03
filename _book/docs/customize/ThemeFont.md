@@ -1,7 +1,7 @@
 ## Theme Font
 
 Having different font types in your [React Native](https://facebook.github.io/react-native/) apps is not tough any more.<br />
-[NativeBase](http://nativebase.io/) provides you with a set of nine font families.<br />
+[NativeBase](https://nativebase.io/) provides you with a set of nine font families.<br />
 
 
 * To include these fonts into your app, go to **Themes/myTheme.js**

@@ -1,6 +1,6 @@
 # Icon Default
 
-Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="http://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
+Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 
 ![Preview ios Icon_Default](../docs/assets/ios/components/icon.png)

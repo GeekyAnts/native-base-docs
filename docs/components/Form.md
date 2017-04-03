@@ -1,6 +1,6 @@
 # Form
 
-[NativeBase](http://nativebase.io/) makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.<br/>
+[NativeBase](https://nativebase.io/) makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.<br/>
 Input is a NativeBase component built on top of React Native's <TextInput>. Item component is wrap around it apply the specific styles.
 A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 Note: Form in native base is just a wrapper around the inputs and hence has no onSubmit function.<br />

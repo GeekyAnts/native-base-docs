@@ -99,7 +99,7 @@ Please verify the system requirements mentioned in [installation](/docs/GetStart
     <br />
     <div class="panel-footer">
         <b> Solution: </b><br />
-        <a href="http://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
+        <a href="https://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
         Hence with any component you can pass the style property which will be merged to the default style of that component.<br />
 
         Example:
@@ -123,7 +123,7 @@ Please verify the system requirements mentioned in [installation](/docs/GetStart
     <br />
     <div class="panel-footer">
         <b>Solution:</b> <br />
-        The <a href="http://nativebase.io/">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br />
+        The <a href="https://nativebase.io/">NativeBase</a> components are built on top of <a href="https://facebook.github.io/react-native/">React Native</a> components. Hence the callback events of React Native holds good with NativeBase components. <br />
 
         <i>Example:</i> The <code>Button</code> component is actually a wrapper of the <code>TouchableOpacity</code> component of React Native. So you can just use the <code>onPress</code> callback function for event handling.<br /><br />
 
@@ -167,7 +167,7 @@ Please verify the system requirements mentioned in [installation](/docs/GetStart
     <br />
     <div class="panel-footer">
         <b> Solution: </b><br />
-        <a href="http://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
+        <a href="https://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
         Go through customize section of docs.
     </div>
 </div>

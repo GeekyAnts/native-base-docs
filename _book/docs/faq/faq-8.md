@@ -20,7 +20,7 @@
         </div>
         <div class="panel-footer">
             <b> Solution: </b><br />
-            <a href="http://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
+            <a href="https://nativebase.io/">NativeBase</a> provides a separate file inclusive of color schemes for all components.<br />
             Go through <a href="{{ url('customize') }}">Customize</a> section of docs.
         </div>
     </div>

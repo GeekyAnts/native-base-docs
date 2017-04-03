@@ -4,8 +4,8 @@ Card Showcase is further customization of Card Image. It uses several different 
 * Begins with the Card List component, which is similar to out List Avatar.
 * <code>cardBody</code> prop for images and text.
 
-![Preview ios Card_Showcase](../docs/assets/ios/components/CardShowcase.png)
-![Preview android Card_Showcase](../docs/assets/android/components/CardShowcase.png)
+![Preview ios Card_Showcase](../docs/assets/ios/components/cardShowcase.png)
+![Preview android Card_Showcase](../docs/assets/android/components/cardShowcase.png)
 
 *Syntax*
 

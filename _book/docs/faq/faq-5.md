@@ -21,7 +21,7 @@
         </div>
         <div class="panel-footer">
             <b> Solution: </b><br />
-            <a href="http://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
+            <a href="https://nativebase.io/">NativeBase</a> is built on top of <a href="https://facebook.github.io/react-native/">React Native</a>.<br />
             Hence with any component you can pass the style property which will be merged to the default style of that component.<br />
 
             Example: <pre><code class="language-jsx">&lt;Button style=&#123;{backgroundColor: '#FF0000'}}>

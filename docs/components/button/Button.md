@@ -1,6 +1,6 @@
 ## Button Default
 
-Button is a pure [NativeBase](http://nativebase.io/) component.<br />
+Button is a pure [NativeBase](https://nativebase.io/) component.<br />
 Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.<br />
 
 
@@ -56,7 +56,7 @@ export default class ButtonExample extends Component {
     }
 }
 {%- endcodetabs %}<br />
-* [NativeBase](http://nativebase.io/) provides <code>Button</code> component which is readily not available in [React Native](https://facebook.github.io/react-native/).
+* [NativeBase](https://nativebase.io/) provides <code>Button</code> component which is readily not available in [React Native](https://facebook.github.io/react-native/).
 * Supports React Native app on both iOS and Android devices.
 * Button component takes input such as: Text, Icon, Text with Icon.
 * NativeBase gives you privilege to customize the props of this component.<br />

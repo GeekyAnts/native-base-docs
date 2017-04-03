@@ -102,7 +102,7 @@ const customTheme = {
 
 
 
-You can also add more style rules to the [NativeBase 2.0](http://nativebase.io/) components by adding your own style rules to the theme file of that component (provided for each component). The default [NativeBase 2.0](http://nativebase.io/) component style should be at the bottom of the style object. This style will always be applied as a base style. After that any theme style will be merged with the style, i.e., the theme style rules will override the base component rules. In the end, any style specified through the style prop directly on the component will be merged on top of the styles mentioned above to get the final component style.
+You can also add more style rules to the [NativeBase 2.0](https://nativebase.io/) components by adding your own style rules to the theme file of that component (provided for each component). The default [NativeBase 2.0](https://nativebase.io/) component style should be at the bottom of the style object. This style will always be applied as a base style. After that any theme style will be merged with the style, i.e., the theme style rules will override the base component rules. In the end, any style specified through the style prop directly on the component will be merged on top of the styles mentioned above to get the final component style.
 
 Rules above the default component style are the new rule types that are specific to theme styles.
 

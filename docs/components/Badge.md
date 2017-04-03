@@ -44,7 +44,7 @@
       }
   }</code></pre><br />
 
-  * [NativeBase](http://nativebase.io/) spectrum of colors are compatible with Badge.
+  * [NativeBase](https://nativebase.io/) spectrum of colors are compatible with Badge.
   * Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)
 
 
