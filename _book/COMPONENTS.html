@@ -635,7 +635,7 @@
     
         <li class="chapter " data-level="1.4.12" data-path="COMPONENTS.html">
             
-                <a href="COMPONENTS.html#Header">
+                <a href="COMPONENTS.html#Header_Default">
             
                     
                     Header
@@ -1190,6 +1190,7 @@
 <li><a href="COMPONENTS.html#FABs">FABs</a></li>
 <li><a href="COMPONENTS.html#Footer_Tabs">Footer Tabs</a></li>
 <li><a href="COMPONENTS.html#Form">Form</a></li>
+<li><a href="COMPONENTS.html#Header_Default">Header</a></li>
 <li><a href="COMPONENTS.html#Icon_Default">Icon</a></li>
 <li><a href="COMPONENTS.html#InputGroup_Default">InputGroup</a></li>
 <li><a href="COMPONENTS.html#Layout">Layout</a></li>
@@ -1450,8 +1451,8 @@ A common way to use <a href="http://nativebase.io/" target="_blank">NativeBase</
 }</code></pre><br></p>
 <p>Note: The use caseis similar to RN&apos;s ActionSheetIOS.</p>
 <h2 id="Badge">6. Badge</h2>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/badge.png" alt="Preview ios Badge">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/badge.png" alt="Preview android Badge"></p>
+<p><img src="../docs/assets/ios/components/badge.png" alt="Preview ios Badge">
+<img src="../docs/assets/android/components/badge.png" alt="Preview android Badge"></p>
 <p><em>Syntax</em></p>
 <p>  <pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
   <span class="hljs-keyword">import</span> { Container, Content, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -1479,15 +1480,18 @@ A common way to use <a href="http://nativebase.io/" target="_blank">NativeBase</
                       <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">danger</span>&gt;</span>
                           <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                       <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;star&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>
                         <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;<span class="hljs-attr">black</span>&apos; }}&gt;</span>
                           <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">white</span>&apos; }}&gt;</span>1866<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                       <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
                   <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
           );
       }
-  }</code></pre><br></p>
+  }</span></code></pre><br></p>
 <ul>
 <li><a href="http://nativebase.io/" target="_blank">NativeBase</a> spectrum of colors are compatible with Badge.</li>
 <li>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank"><code>&lt;View&gt;</code></a></li>
@@ -1594,7 +1598,6 @@ Buttons are the integral part of an application. They are used for various purpo
 <p><table class="table table-bordered">
         <thead>
             <tr>
-                <th></th>
                 <th>Property</th>
                 <th>Default</th>
                 <th>Option</th>
@@ -1603,104 +1606,87 @@ Buttons are the integral part of an application. They are used for various purpo
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Basic</th>
-                <td>IconLeft</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Icon aligned left in the Button</td>
-            </tr>
-            <tr>
-                <td>IconRight</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Icon aligned right in the Button</td>
-            </tr>
-            <tr>
-                <td>buttonText</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Text for the Button</td>
-            </tr>
-            <tr>
-                <td>buttonTextStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines button text style</td>
-            </tr>
-            <tr>
-                <th rowspan="10">Both Basic and Advanced</th>
                 <td>style</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Defines button style</td>
             </tr>
             <tr>
-                <td>textStyle</td>
+                <td>active</td>
                 <td> - </td>
-                <td> - </td>
-                <td>Defines button text style</td>
+                <td> true </td>
+                <td>Boolean value to describe state of Button</td>
             </tr>
             <tr>
                 <td>block</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Block level button</td>
-            </tr>
-            <tr>
-                <td>rounded</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Renders button with slightly round shaped edges.</td>
+                <td>
+                    Block level button
+                </td>
             </tr>
             <tr>
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Applies outline button style.</td>
+                <td>
+                    Applies outline button style.
+                </td>
             </tr>
             <tr>
-                <td>transparent</td>
+                <td>disabled</td>
+                <td> true </td>
+                <td> true false </td>
+                <td>
+                    Disables click option for button
+                </td>
+            </tr>
+            <tr>
+                <td>large</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Gives you effect of Icon-buttons.<br>
-                    To have button with transparent background, include this prop.
+                <td>
+                    For large size button
+                </td>
+            </tr>
+            <tr>
+                <td>rounded</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Renders button with slightly round shaped edges.
                 </td>
             </tr>
             <tr>
                 <td>small</td>
                 <td> - </td>
                 <td> - </td>
-                <td>For small size button</td>
-            </tr>
-            <tr>
-                <td>large</td>
-                <td> - </td>
-                <td> - </td>
-                <td>For large size button</td>
-            </tr>           
-            <tr>
-                <td>disabled</td>
-                <td>true</td>
                 <td>
-                    true<br>
-                    false
-                </td>
-                <td>
-                    Disables click option for button
+                    For small size button
                 </td>
             </tr>
             <tr>
-                <td>capitalize</td>
-                <td>true</td>
+                <td>full</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                    true<br>
-                    false
+                    full width button
                 </td>
+            </tr>
+            <tr>
+                <td>iconRight</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                    Displays Button text in uppercase.
-                    <font size="1">
-                    <i>(only Android)</i>
-                </font>
+                    Right Padding for the icon
+                </td>
+            </tr>
+            <tr>
+                <td>iconLeft</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Left Padding for the icon.
                 </td>
             </tr>
         </tbody>
@@ -1713,7 +1699,8 @@ NativeBase provides following color themes:</p>
 <li>Success</li>
 <li>Info</li>
 <li>Warning</li>
-<li>Danger<br></li>
+<li>Danger</li>
+<li>Dark<br></li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png" alt="Preview ios Button_Theme">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png" alt="Preview android Button_Theme"></p>
@@ -1740,6 +1727,9 @@ NativeBase provides following color themes:</p>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
                       <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
@@ -2251,8 +2241,8 @@ Here is your Card Image ready !</p>
 <li>Begins with the Card List component, which is similar to out List Avatar.</li>
 <li><code>cardBody</code> prop for images and text.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/card-showcase.png" alt="Preview ios Card_Showcase">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/card-showcase.png" alt="Preview android Card_Showcase"></p>
+<p><img src="../docs/assets/ios/components/CardShowcase.png" alt="Preview ios Card_Showcase">
+<img src="../docs/assets/android/components/CardShowcase.png" alt="Preview android Card_Showcase"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
@@ -2392,6 +2382,31 @@ Here is your Card Image ready !</p>
         );
     }
 }</code></pre><br></p>
+<p><strong>Configuration</strong><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onSwipeRight</td>
+                <td>Function</td>
+                <td>-</td>
+                <td>Callback that is called when the Card is Swipe Right</td>
+            </tr>
+            <tr>
+                <td>onSwipeLeft</td>
+                <td>Function</td>
+                <td>-</td>
+                <td>Callback that is called when the Card is Swipe Left</td>
+            </tr>
+        </tbody>
+    </table><br></p>
 <h1 id="FABs_Default">FABs Default</h1>
 <p>FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="http://facebook.github.io/react-native/docs/animated.html" target="_blank"><code>&lt;Animated&gt;</code></a></em></p>
@@ -2553,8 +2568,8 @@ Here is your Card Image ready !</p>
 <li><a href="COMPONENTS.html#Icon_Footer_with_Text">Footer with icons and text</a></li>
 <li><a href="COMPONENTS.html#Footer_with_badge">Footer Badge</a></li>
 </ul>
-<p><img src="../docs/assets/ios/components/footer-tabs.png" alt="Preview ios Footer_Tabs">
-<img src="../docs/assets/android/components/footer-tabs.png" alt="Preview android Footer_Tabs"></p>
+<p><img src="../docs/assets/ios/components/iconFooter.png" alt="Preview ios Footer_Tabs">
+<img src="../docs/assets/android/components/iconFooter.png" alt="Preview android Footer_Tabs"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -2737,63 +2752,24 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <li><a href="COMPONENTS.html#Error_Input_Textbox">Error Input Textbox</a></li>
 <li><a href="COMPONENTS.html#Disabled_Textbox">Disabled Textbox</a></li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/form.png" alt="Preview ios Form">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/form.png" alt="Preview android Form"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/placeholderInput.png" alt="Preview ios Form">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/placeholderInput.png" alt="Preview android Form"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Item, Label, Left, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
-&#x200B;<span class="hljs-keyword">const</span> PickerItem = Picker.Item;
+<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    <span class="hljs-keyword">constructor</span>(props) {
-        <span class="hljs-keyword">super</span>(props);
-        <span class="hljs-keyword">this</span>.state = {
-            selectedItem: <span class="hljs-literal">undefined</span>,
-            selected1: <span class="hljs-string">&apos;key0&apos;</span>,
-            results: {
-                items: [],
-            },
-        };
-    }
-    onValueChange(value: string) {
-        <span class="hljs-keyword">this</span>.setState({
-            selected1: value,
-        });
-    }
     render() {
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    &lt;Item&gt;
-                        &lt;Label&gt;First Name&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;Item inlineLabel&gt;
-                        &lt;Label&gt;Last Name&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;Item floatingLabel&gt;
-                        &lt;Label&gt;Floating Label&lt;Label&gt;
-                        &lt;Input /&gt;
-                    &lt;Item&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-person&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;EMAIL&quot; /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-unlock&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;PASSWORD&quot; secureTextEntry /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&quot;ios-call&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                        &lt;Input placeholder=&quot;PHONE&quot; keyboardType=&quot;numeric&quot; /&gt;
-                    &lt;/InputGroup&gt;
-                    &lt;Item stackedLabel&gt;
-                        &lt;Label&gt;Permanent Address&lt;Label&gt;
-                        &lt;Input placeholder=&quot;Address&quot; /&gt;
-                    &lt;Item&gt;
-                    &lt;Button style={{ alignSelf: &apos;center&apos;, marginTop: 20, marginBottom: 20 }}&gt;
-                        &lt;Text&gt;Sign Up&lt;/Text&gt;
-                    &lt;/Button&gt;
+                    &lt;Form&gt;
+                        &lt;Item&gt;
+                            &lt;Input placeholder=&quot;Username&quot; /&gt;
+                        &lt;/Item&gt;
+                        &lt;Item last&gt;
+                            &lt;Input placeholder=&quot;Password&quot; /&gt;
+                        &lt;/Item&gt;
+                    &lt;/Form&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -3197,7 +3173,7 @@ However, you can also render icon to the right. To display icon at the end of te
         );
     }
 }</code></pre><br></p>
-<h1 id="Header">Header</h1>
+<h1 id="Header_Default">Header Default</h1>
 <ul>
 <li><a href="http://nativebase.io/" target="_blank">NativeBase</a> component that renders as Header (navbar) for your screen.</li>
 <li>There can be a single Header component into your Container.</li>
@@ -3217,8 +3193,8 @@ However, you can also render icon to the right. To display icon at the end of te
 </ul>
 </li>
 </ul>
-<p><img src="../docs/assets/ios/components/header.png" alt="Preview ios Header">
-<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png" alt="Preview android Header"></p>
+<p><img src="../docs/assets/ios/components/header.png" alt="Preview ios Header_Default">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png" alt="Preview android Header_Default"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3397,8 +3373,8 @@ However, you can also render icon to the right. To display icon at the end of te
 Here comes the <a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">Easy Grid</a> of <a href="http://nativebase.io/" target="_blank">NativeBase</a>, a wrapper of Flexbox.</em><br><br>
 The layout system in <a href="http://nativebase.io/" target="_blank">NativeBase</a> is very powerful and flexible. No more worries about props of Flexbox such as alignItems, flexDirection, justifyContent, margin, padding, position, width etc.  You can create any layout with all the available options that we have. In order to build custom layouts and components, understanding how layout works in NativeBase is not as hard as Flexbox. Flexbox makes it look like percentages, however what actually is happening is just ratios. On the easier part, ratios are easier to represent than percentage/decimals. For this reason, the Easy Grid takes in ratios in place of percentage. <br>
 Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much of calculation.</p>
-<p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/layout.png" alt="Preview ios Layout">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/layout.png" alt="Preview android Layout"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/layout.png" alt="Preview ios Layout">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/layout.png" alt="Preview android Layout"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3437,6 +3413,7 @@ A base component for specifying lists of information. List must contain one or m
 <li><a href="COMPONENTS.html#List_Thumbnail">List Thumbnail</a></li>
 <li><a href="COMPONENTS.html#Dynamic_List">Dynamic List</a></li>
 <li><a href="COMPONENTS.html#List_OnClick">List OnClick</a></li>
+<li><a href="COMPONENTS.html#List_Separator">List Seperator</a></li>
 </ul>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
@@ -3682,7 +3659,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <h4 id="List_Avatar">10.0.18. List Avatar</h4>
 <p>List Avatars are medium to showcase an image with your list item whose dimension lays between icon and dimension. To create a avatar list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-avatar.png" alt="Preview ios List_Avatar">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-avatar.png" alt="Preview android List_Avatar"></p>
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/thumbList.png" alt="Preview android List_Avatar"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Thumbnail, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3716,7 +3693,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <h4 id="List_Thumbnail">10.0.19. List Thumbnail</h4>
 <p>List Thumbnails are medium to exhibit an image with your list item. To create a thumbnail list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component with few props and style.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-thumbnail.png" alt="Preview ios List_Thumbnail">
-<img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-thumbnail.png" alt="Preview android List_Thumbnail"></p>
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/avatarList.png" alt="Preview android List_Thumbnail"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Thumbnail, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/ui&apos;</span>;
@@ -3864,25 +3841,25 @@ For Android use this <a href="https://facebook.github.io/react-native/docs/picke
                 <td>headerComponent</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Takes component that appears as header of the Picker</td>
             </tr>
             <tr>
                 <td>textStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Text style of header.</td>
             </tr>
             <tr>
                 <td>itemStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Style of items in the Picker</td>
             </tr>
             <tr>
                 <td>itemTextStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Text style of item component</td>
             </tr>
             </tbody>
             </table><br></p>
@@ -4133,6 +4110,35 @@ We provide you with the one, which filters the list based on your search input.<
         );
     }
 }</code></pre><br></p>
+<p><strong>Configuration</strong></p>
+<p><table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>locked</td>
+                <td> false </td>
+                <td> true false </td>
+                <td>
+                    Disable swipe
+                </td>
+            </tr>
+            <tr>
+                <td>initialPage</td>
+                <td> - </td>
+                <td> integer </td>
+                <td>
+                    Set default active tab
+                </td>
+            </tr>
+        </tbody>
+    </table><br></p>
 <h1 id="Advanced_Tabs">Advanced Tabs</h1>
 <p><em>Syntax(advanced)</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
@@ -4190,7 +4196,60 @@ We provide you with the one, which filters the list based on your search input.<
         );
     }
 }</code></pre><br></p>
-<h1 id="Thumbnail">Thumbnail</h1>
+<p><table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>heading</td>
+                <td> - </td>
+                <td> string, <tabheading> </tabheading></td>
+                <td>
+                    Label String, or Component
+                </td>
+            </tr>
+            <tr>
+                <td>tabStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for tabbar
+                </td>
+            </tr>
+            <tr>
+                <td>activeTabStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for active tabbar
+                </td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for text
+                </td>
+                </tr><tr>
+                    <td>activeTextStyle</td>
+                    <td> - </td>
+                    <td> style object </td>
+                    <td>
+                        Style for active text
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table><br></p>
+<pre><code>Pro tip: It is advisable to use hasTabs prop with Header while using Tabs. 
+</code></pre><h1 id="Thumbnail">Thumbnail</h1>
 <p>Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/image.html" target="_blank"><code>&lt;Image&gt;</code></a></em></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/thumbnail.png" alt="Preview ios Thumbnail">
@@ -4493,7 +4552,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-03-31T10:05:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T10:26:18.906Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-03-31T10:05:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-03T12:35:13.679Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

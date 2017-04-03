@@ -17,65 +17,26 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 * [Error Input Textbox](COMPONENTS.md#Error_Input_Textbox)
 * [Disabled Textbox](COMPONENTS.md#Disabled_Textbox)
 
-![Preview ios Form](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/form.png)
-![Preview android Form](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/form.png)
+![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/placeholderInput.png)
+![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/placeholderInput.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, InputGroup, Input, Icon, Text, Picker, Button, Item, Label, Left, Body, Right } from 'native-base/ui';
-​const PickerItem = Picker.Item;
+import { Container, Content, Form, Item, Input } from 'native-base';
 export default class FormExample extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedItem: undefined,
-            selected1: 'key0',
-            results: {
-                items: [],
-            },
-        };
-    }
-    onValueChange(value: string) {
-        this.setState({
-            selected1: value,
-        });
-    }
     render() {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;Item>
-                        &lt;Label>First Name&lt;Label>
-                        &lt;Input />
-                    &lt;Item>
-                    &lt;Item inlineLabel>
-                        &lt;Label>Last Name&lt;Label>
-                        &lt;Input />
-                    &lt;Item>
-                    &lt;Item floatingLabel>
-                        &lt;Label>Floating Label&lt;Label>
-                        &lt;Input />
-                    &lt;Item>
-                    &lt;InputGroup>
-                        &lt;Icon name="ios-person" style=&#123;{ color: '#0A69FE' }} />
-                        &lt;Input placeholder="EMAIL" />
-                    &lt;/InputGroup>
-                    &lt;InputGroup>
-                        &lt;Icon name="ios-unlock" style=&#123;{ color: '#0A69FE' }} />
-                        &lt;Input placeholder="PASSWORD" secureTextEntry />
-                    &lt;/InputGroup>
-                    &lt;InputGroup>
-                        &lt;Icon name="ios-call" style=&#123;{ color: '#0A69FE' }} />
-                        &lt;Input placeholder="PHONE" keyboardType="numeric" />
-                    &lt;/InputGroup>
-                    &lt;Item stackedLabel>
-                        &lt;Label>Permanent Address&lt;Label>
-                        &lt;Input placeholder="Address" />
-                    &lt;Item>
-                    &lt;Button style=&#123;{ alignSelf: 'center', marginTop: 20, marginBottom: 20 }}>
-                        &lt;Text>Sign Up&lt;/Text>
-                    &lt;/Button>
+                    &lt;Form>
+                        &lt;Item>
+                            &lt;Input placeholder="Username" />
+                        &lt;/Item>
+                        &lt;Item last>
+                            &lt;Input placeholder="Password" />
+                        &lt;/Item>
+                    &lt;/Form>
                 &lt;/Content>
             &lt;/Container>
         );

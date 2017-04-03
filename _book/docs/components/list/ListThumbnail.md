@@ -3,7 +3,8 @@
 List Thumbnails are medium to exhibit an image with your list item. To create a thumbnail list, nest <code>&lt;Thumbnail></code> component within <code>&lt;ListItem></code> component with few props and style.
 
 ![Preview ios List_Thumbnail](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-thumbnail.png)
-![Preview android List_Thumbnail](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/list-thumbnail.png)
+![Preview android List_Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/avatarList.png)
+
 
 *Syntax*
 

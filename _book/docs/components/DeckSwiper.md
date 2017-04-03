@@ -53,3 +53,29 @@ export default class DeckSwiperExample extends Component {
         );
     }
 }</code></pre><br />
+
+**Configuration**<br />
+    <table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onSwipeRight</td>
+                <td>Function</td>
+                <td>-</td>
+                <td>Callback that is called when the Card is Swipe Right</td>
+            </tr>
+            <tr>
+                <td>onSwipeLeft</td>
+                <td>Function</td>
+                <td>-</td>
+                <td>Callback that is called when the Card is Swipe Left</td>
+            </tr>
+        </tbody>
+    </table><br />

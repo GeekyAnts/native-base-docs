@@ -36,6 +36,37 @@ import Tab2 from './tabTwo';
     }
 }</code></pre><br />
 
+**Configuration**
+
+<table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>locked</td>
+                <td> false </td>
+                <td> true false </td>
+                <td>
+                    Disable swipe
+                </td>
+            </tr>
+            <tr>
+                <td>initialPage</td>
+                <td> - </td>
+                <td> integer </td>
+                <td>
+                    Set default active tab
+                </td>
+            </tr>
+        </tbody>
+    </table><br />
+
 # Advanced Tabs
 
 *Syntax(advanced)*
@@ -97,3 +128,58 @@ import Tab2 from './tabTwo';
         );
     }
 }</code></pre><br />
+
+<table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>heading</td>
+                <td> - </td>
+                <td> string, <TabHeading/> </td>
+                <td>
+                    Label String, or Component
+                </td>
+            </tr>
+            <tr>
+                <td>tabStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for tabbar
+                </td>
+            </tr>
+            <tr>
+                <td>activeTabStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for active tabbar
+                </td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style for text
+                </td>
+                <tr>
+                    <td>activeTextStyle</td>
+                    <td> - </td>
+                    <td> style object </td>
+                    <td>
+                        Style for active text
+                    </td>
+                </tr>
+            </tr>
+        </tbody>
+    </table><br />
+
+    Pro tip: It is advisable to use hasTabs prop with Header while using Tabs. 

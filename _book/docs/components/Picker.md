@@ -66,25 +66,25 @@ export default class PickerExample extends Component {
                 <td>headerComponent</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Takes component that appears as header of the Picker</td>
             </tr>
             <tr>
                 <td>textStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Text style of header.</td>
             </tr>
             <tr>
                 <td>itemStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Style of items in the Picker</td>
             </tr>
             <tr>
                 <td>itemTextStyle</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon.</td>
+                <td>Text style of item component</td>
             </tr>
             </tbody>
             </table><br />

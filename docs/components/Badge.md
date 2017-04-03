@@ -1,7 +1,7 @@
 ## Badge
 
-![Preview ios Badge](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/badge.png)
-![Preview android Badge](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/badge.png)
+![Preview ios Badge](../docs/assets/ios/components/badge.png)
+![Preview android Badge](../docs/assets/android/components/badge.png)
 
 *Syntax*
 
@@ -31,6 +31,9 @@
                       &lt;Badge danger>
                           &lt;Text>2&lt;/Text>
                       &lt;/Badge>
+                      &lt;Badge primary>
+                        &lt;Icon name="star" />
+                    &lt;/Badge>
                       &lt;Badge
                         style=&#123;{ backgroundColor: 'black' }}>
                           &lt;Text style=&#123;{ color: 'white' }}>1866&lt;/Text>

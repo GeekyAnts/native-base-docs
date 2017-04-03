@@ -16,6 +16,7 @@
 * [FABs](COMPONENTS.md#FABs)
 * [Footer Tabs](COMPONENTS.md#Footer_Tabs)
 * [Form](COMPONENTS.md#Form)
+* [Header](COMPONENTS.md#Header_Default)
 * [Icon](COMPONENTS.md#Icon_Default)
 * [InputGroup](COMPONENTS.md#InputGroup_Default)
 * [Layout](COMPONENTS.md#Layout)

@@ -8,8 +8,8 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 * [Footer with icons and text](COMPONENTS.md#Icon_Footer_with_Text)
 * [Footer Badge](COMPONENTS.md#Footer_with_badge)
 
-![Preview ios Footer_Tabs](../docs/assets/ios/components/footer-tabs.png)
-![Preview android Footer_Tabs](../docs/assets/android/components/footer-tabs.png)
+![Preview ios Footer_Tabs](../docs/assets/ios/components/iconFooter.png)
+![Preview android Footer_Tabs](../docs/assets/android/components/iconFooter.png)
 
 *Syntax*
 

@@ -6,8 +6,8 @@ Here comes the <a href="https://github.com/GeekyAnts/react-native-easy-grid">Eas
 The layout system in [NativeBase](http://nativebase.io/) is very powerful and flexible. No more worries about props of Flexbox such as alignItems, flexDirection, justifyContent, margin, padding, position, width etc.  You can create any layout with all the available options that we have. In order to build custom layouts and components, understanding how layout works in NativeBase is not as hard as Flexbox. Flexbox makes it look like percentages, however what actually is happening is just ratios. On the easier part, ratios are easier to represent than percentage/decimals. For this reason, the Easy Grid takes in ratios in place of percentage. <br />
 Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much of calculation.
 
-![Preview ios Layout](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/layout.png)
-![Preview android Layout](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/android/layout.png)
+![Preview ios Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/layout.png)
+![Preview android Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/layout.png)
 
 *Syntax*
 

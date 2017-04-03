@@ -6,7 +6,8 @@ NativeBase provides following color themes:
   * Success
   * Info
   * Warning
-  * Danger<br />
+  * Danger
+  * Dark<br />
 
 ![Preview ios Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
 ![Preview android Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
@@ -35,6 +36,9 @@ export default class ButtonThemeExample extends Component {
                     &lt;/Button>
                     &lt;Button danger>
                       &lt;Text> Danger &lt;/Text>
+                    &lt;/Button>
+                    &lt;Button dark>
+                      &lt;Text> Dark &lt;/Text>
                     &lt;/Button>
                 &lt;/Content>
             &lt;/Container>

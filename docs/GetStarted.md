@@ -34,6 +34,8 @@ You've successfully setup [NativeBase](http://nativebase.io/) with your [React N
 
 ## Setup with CRNA
 *Create React Native project using the CRNA cli.* <br />
+CRNA helps you make React Native apps with no build configuration. Create React App works on macOS, Windows, and Linux. <br />
+Refer to this link for additional information [CRNA](https://github.com/react-community/create-react-native-app)
 
 *Install NativeBase*
 ```js
@@ -43,3 +45,17 @@ npm install native-base --save
 ```js
 npm install @expo/vector-icons --save
 ```
+<br />
+**Note** <br />
+NativeBase uses some custom fonts that can be loaded using **loadAsync** function. Check out [this](https://docs.expo.io/versions/v15.0.0/sdk/font.html#expofontloadasyncname-url) expo link.
+<br />
+Synatx <br />
+```js
+async componentWillMount() {
+      await Expo.Font.loadAsync({
+        'Roboto': require('native-base/Fonts/Roboto.ttf'),
+        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+      });
+```
+<br />
+Check out the [KitchenSink](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/CRNA/js/setup.js) with CRNA for an example of the implementation.<br />

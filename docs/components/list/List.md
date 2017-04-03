@@ -14,6 +14,7 @@ A base component for specifying lists of information. List must contain one or m
 * [List Thumbnail](COMPONENTS.md#List_Thumbnail)
 * [Dynamic List](COMPONENTS.md#Dynamic_List)
 * [List OnClick](COMPONENTS.md#List_OnClick)
+* [List Seperator](COMPONENTS.md#List_Separator)
 
 *Syntax*
 

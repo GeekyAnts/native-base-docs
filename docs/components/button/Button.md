@@ -71,7 +71,6 @@ export default class ButtonExample extends Component {
 <table class = "table table-bordered">
         <thead>
             <tr>
-                <th></th>
                 <th>Property</th>
                 <th>Default</th>
                 <th>Option</th>
@@ -80,104 +79,87 @@ export default class ButtonExample extends Component {
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Basic</th>
-                <td>IconLeft</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Icon aligned left in the Button</td>
-            </tr>
-            <tr>
-                <td>IconRight</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Icon aligned right in the Button</td>
-            </tr>
-            <tr>
-                <td>buttonText</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines Text for the Button</td>
-            </tr>
-            <tr>
-                <td>buttonTextStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Defines button text style</td>
-            </tr>
-            <tr>
-                <th rowspan="10">Both Basic and Advanced</th>
                 <td>style</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Defines button style</td>
             </tr>
             <tr>
-                <td>textStyle</td>
+                <td>active</td>
                 <td> - </td>
-                <td> - </td>
-                <td>Defines button text style</td>
+                <td> true </td>
+                <td>Boolean value to describe state of Button</td>
             </tr>
             <tr>
                 <td>block</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Block level button</td>
-            </tr>
-            <tr>
-                <td>rounded</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Renders button with slightly round shaped edges.</td>
+                <td>
+                    Block level button
+                </td>
             </tr>
             <tr>
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Applies outline button style.</td>
+                <td>
+                    Applies outline button style.
+                </td>
             </tr>
             <tr>
-                <td>transparent</td>
+                <td>disabled</td>
+                <td> true </td>
+                <td> true false </td>
+                <td>
+                    Disables click option for button
+                </td>
+            </tr>
+            <tr>
+                <td>large</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Gives you effect of Icon-buttons.<br />
-                    To have button with transparent background, include this prop.
+                <td>
+                    For large size button
+                </td>
+            </tr>
+            <tr>
+                <td>rounded</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Renders button with slightly round shaped edges.
                 </td>
             </tr>
             <tr>
                 <td>small</td>
                 <td> - </td>
                 <td> - </td>
-                <td>For small size button</td>
-            </tr>
-            <tr>
-                <td>large</td>
-                <td> - </td>
-                <td> - </td>
-                <td>For large size button</td>
-            </tr>           
-            <tr>
-                <td>disabled</td>
-                <td>true</td>
                 <td>
-                    true<br />
-                    false
-                </td>
-                <td>
-                    Disables click option for button
+                    For small size button
                 </td>
             </tr>
             <tr>
-                <td>capitalize</td>
-                <td>true</td>
+                <td>full</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                    true<br />
-                    false
+                    full width button
                 </td>
+            </tr>
+            <tr>
+                <td>iconRight</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                    Displays Button text in uppercase.
-                    <font size="1">
-                    <i>(only Android)</i>
-                </font>
+                    Right Padding for the icon
+                </td>
+            </tr>
+            <tr>
+                <td>iconLeft</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Left Padding for the icon.
                 </td>
             </tr>
         </tbody>

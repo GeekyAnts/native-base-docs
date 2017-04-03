@@ -38,7 +38,7 @@
         * [Success Input Textbox](COMPONENTS.md#Success_Input_Textbox)
         * [Error Input Textbox](COMPONENTS.md#Error_Input_Textbox)
         * [Disabled Textbox](COMPONENTS.md#Disabled_Textbox)
-    * [Header](COMPONENTS.md#Header)
+    * [Header](COMPONENTS.md#Header_Default)
     * [Icon](COMPONENTS.md#Icon_Default)
     * [Layout](COMPONENTS.md#Layout)
     * [List](COMPONENTS.md#List_Default)

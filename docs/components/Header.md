@@ -1,4 +1,4 @@
-# Header
+# Header Default
 * [NativeBase](http://nativebase.io/) component that renders as Header (navbar) for your screen.
 * There can be a single Header component into your Container.
 * To have Header for your screen, include <code>&lt;Header></code> component within <code>&lt;Container></code>.
@@ -15,8 +15,8 @@
   * [Header with icons and text buttons](COMPONENTS.md#Header_with_Icon_and_Text_Buttons)
   * [Header with title and Subtitle](COMPONENTS.md#Header_with_title_and_Subtitle)
 
-![Preview ios Header](../docs/assets/ios/components/header.png)
-![Preview android Header](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)
+![Preview ios Header_Default](../docs/assets/ios/components/header.png)
+![Preview android Header_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
