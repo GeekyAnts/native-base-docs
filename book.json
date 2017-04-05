@@ -8,9 +8,13 @@
         "copy-code-button",
         "edit-link",
         "scripts",
-        "navigator"
+        "navigator",
+        "ga"
     ],
     "pluginsConfig": {
+      "ga": {
+            "token": "UA-96833420-1"
+        },
       "scripts": {
             "files": [
                 "./engine.js"

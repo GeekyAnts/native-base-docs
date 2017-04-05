@@ -3,46 +3,6 @@
 Steps to customize theme for Button attributes:
 <br />
 
-
-<table>
-  <thead>
-    <tr style="border-style: hidden">
-      <th style="border-style: hidden"><div style="background: url(../docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('../docs/assets/ios/guide/theme-button.png')}}" alt="" /></div></th>
-    </tr>
-  </thead>
-</table><br />
-<table class = "table table-hover" style="width: 75%; ">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>btnTextSizeSmall</td>
-                <td>Text font size for button of type <i>small</i></td>
-            </tr>
-            <tr>
-                <td>btnTextSize</td>
-                <td>Text font size for button of type <i>default</i></td>
-            </tr>
-            <tr>
-                <td>btnTextSizeLarge</td>
-                <td>Text font size for button of type <i>large</i></td>
-            </tr>
-            <tr>
-                <td>btnDisabledBg</td>
-                <td>Background color of disabled button</td>
-            </tr>
-            <tr>
-                <td>btnFontFamily</td>
-                <td>Font style for button text</td>
-            </tr>
-        </tbody>
-    </table><br />
-
-
 #### With Button theme
 
 With this theme of Button component you can modify any style rules applied to the default Button component.

@@ -72,6 +72,8 @@
   * [Theme Font](CUSTOMIZE.md#Theme_Font)
   * [Button](CUSTOMIZE.md#Button_Customize)
 
+* [Featured Apps](/docs/FeaturedApps.md)
+
 * [Packages](/docs/Packages.md)
 
 * [Release Notes](/docs/release-notes/Release.md)

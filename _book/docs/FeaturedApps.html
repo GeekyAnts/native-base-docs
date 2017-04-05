@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Migration · NativeBase</title>
+        <title>Featured Apps · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="introduction/WhatsNew.html" />
+    <link rel="next" href="Packages.html" />
     
     
-    <link rel="prev" href="../COMPONENTS.html" />
+    <link rel="prev" href="../CUSTOMIZE.html" />
     
 
     </head>
@@ -943,7 +943,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="Migration.html">
+        <li class="chapter " data-level="1.5" data-path="Migration.html">
             
                 <a href="Migration.html">
             
@@ -1053,7 +1053,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="FeaturedApps.html">
+        <li class="chapter active" data-level="1.8" data-path="FeaturedApps.html">
             
                 <a href="FeaturedApps.html">
             
@@ -1174,7 +1174,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Migration</a>
+        <a href=".." >Featured Apps</a>
     </h1>
 </div>
 
@@ -1189,87 +1189,50 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Migration_from_0_x_to_2_x">Migration from 0.x to 2.x</h1>
-<h3 id="Steps_for_Migrating_NativeBase_from_v0_x_to_v2_x">0.1. Steps for Migrating NativeBase from v0.x to v2.x</h3>
-<ol>
-<li><p>Upgrade NativeBase to <code>2.0.0-alpha1</code> in <code>package.json</code> like this</p>
-<pre><code> &quot;native-base&quot;: &quot;2.0.0-alpha1&quot;
-</code></pre></li>
-<li><p>The core of NativeBase has been re-written with NativeBase 2.0 and the use-cases have also changed but you can continue using the old style of using the components by importing the components from &apos;native-base/backward&apos;</p>
-<pre><code>import { Header, Content, ... } from &apos;native-base/backward&apos;.
-</code></pre></li>
-<li><p>If you have overwritten the styles of NativeBase components in your project using <code>StyleSheet.create()</code>, modify them to plain JavaScript objects. <code>StyleSheet.create()</code> is redundant as it&apos;s been called in the source of NativeBase components itself.</p>
-</li>
-<li><p>If you have modified the theme (using <code>variables.js</code>) then you need to follow these steps</p>
-<ul>
-<li><p>You may use the existing <code>variables.js</code> file in your project but we have added more variables. You can diff the latest  <a href="https://github.com/GeekyAnts/NativeBase/blob/v2.0-alpha1/theme/variables.js" target="_blank"><code>variable.js</code></a> and copy the newly introduced variables to your <code>variables.js</code> file</p>
-</li>
-<li><p>We used to overwrite the default variables of NativeBase using a <code>theme</code> prop in any of the NativeBase component. <em><code>theme</code> prop has been deprecated with NativeBase 2.0</em>. To apply a custom theme, now you need to wrap your app with a  <code>&lt;StyleProvider&gt;</code> component and pass the <code>variables.js</code> as</p>
-<pre><code>import varirables from &apos;./variables&apos;; // From your project
-
-import { StyleProvider, getTheme } from &apos;native-base&apos;;
-
-...
-
-&lt;StyleProvider style={getTheme(variables)}&gt;
-  ...
-&lt;/StyleProvider&gt;
-</code></pre></li>
-</ul>
-</li>
-</ol>
-<p><em>General Syntax to apply theme</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {Container, Content, Text, StyleProvider, getTheme} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/backward&apos;</span>;
-<span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> variable <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Themes/variable&apos;</span>;
-&#x200B;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span>  <span class="hljs-attr">style</span>=<span class="hljs-string">{getTheme(variable)}</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                            I have changed the text color.
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
-    }
-}</code></pre>
-
-<h4 id="Styles_to_the_Component">0.1.1. Styles to the Component</h4>
-<p><em>General Syntax of <code>style.js</code> object</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  container: {
-    backgroundColor: <span class="hljs-string">&apos;#FBFAFA&apos;</span>,
-  },
-  text: {
-    color: <span class="hljs-string">&apos;red&apos;</span>,
-  },
-}</code></pre>
-
-<p><em>General Syntax to overwrite default styles</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {Container, Content, Text, getTheme} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/backward&apos;</span>;
-<span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-comment">// Style object import</span>
-<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./style&apos;</span>;
-&#x200B;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.text}</span>&gt;</span>
-                          I have changed the text color.
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
-    }
-}</code></pre>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Migration_from_0_x_to_2_x">Migration from 0.x to 2.x</a></p><li><a href="#">none</a></li><ul><li><a href="#Steps_for_Migrating_NativeBase_from_v0_x_to_v2_x">0.1. Steps for Migrating NativeBase from v0.x to v2.x</a></li><ul><li><a href="#Styles_to_the_Component">0.1.1. Styles to the Component</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                <h1 id="Featured_Apps">Featured Apps</h1>
+<p>Having tried the free version <a href="https://nativebase.io/" target="_blank">NativeBase</a>, <a href="https://github.com/start-react/native-starter-kit" target="_blank">Native Starter Kit</a> and appreciated our product,
+Get on the mobile fast track with the featured apps of NativeBase, to build high-quality iOS and Android mobile apps.<br></p>
+<p>Based on <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a>, Native Starter Pro, Ecommerce Starter, Flat App Theme are beautifully designed with fusion of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a> and <a href="http://es6-features.org/#Constants" target="_blank">ES6</a>, responsive iOS and Android app source code to quickly get started on your next project. <br></p>
+<p>Check out some of the cool Apps and themes we have already built <a href="https://market.nativebase.io/" target="_blank">here</a>. <br></p>
+<h2 id="Native_Starter_Pro">1. Native Starter Pro</h2>
+<p>A 3 page theme: Login, SignUp and Dashboard, with Integrated Backend APIs. <br>
+Start your mobile project with ready-to-use User Auth and Dashboard with backend integration (Express, Node, MongoDB &amp; JWT). <br></p>
+<p><img src="https://market.nativebase.io/uploads/user/2016/11/30/43/44/xQrkcafIbrfAEJUx.gif" alt="Native Starter pro"> <br>
+Learn more about <a href="https://market.nativebase.io/view/native-starter-pro-with-backend" target="_blank">Native Starter Pro With Backend 6.0.0</a><br></p>
+<h2 id="Dating_App">2. Dating App</h2>
+<p>The ideal starter kit / app script with all the needed UI elements alongwith Redux, NativeBase, CodePush and backend integration (Express, Node, MongoDB and Cloudinary) to build your iOS and Android dating app.</p>
+<p><img src="https://market.nativebase.io/uploads/user/2017/01/04/34/01/B3mfoJVT7R0VNNpY.gif" alt="Dating App"> <br>
+Learn more about <a href="https://market.nativebase.io/view/react-native-dating-app-with-backend" target="_blank">React Native Dating App With Backend 5.2.0</a></p>
+<h2 id="E-Commerce_Starter">3. E-Commerce Starter</h2>
+<p>A well structured React Native starter project to build your iOS and Android e-commerce app. <br>
+Fully customizable pages along-with a rich collection of UI elements specifically for an ideal e-commerce app. <br>
+ <img src="https://market.nativebase.io/uploads/user/2016/12/01/47/07/RLleZfo88Rq5TMoh.gif" alt="Ecommerce App"> <br>
+ Learn more about <a href="https://market.nativebase.io/view/react-native-e-commerce-starter" target="_blank">React Native E-Commerce Starter 6.0.0</a></p>
+<h2 id="Flat_App_Theme">4. Flat App Theme</h2>
+<p>A fascinating React Native starter kit with flat UI design, Redux and NativeBase components for your iOS and Android application. <br></p>
+<p>  <img src="https://market.nativebase.io/uploads/user/2016/12/01/23/31/RtRoqmKAnW2cnUd7.gif" alt="Flat App"> <br>
+  Learn more about <a href="https://market.nativebase.io/view/react-native-flat-app-theme" target="_blank">React Native Flat App Theme 6.0.0</a></p>
+<h2 id="Food_Ordering_App">5. Food Ordering App</h2>
+<p>The ideal starter kit / app script with all the needed UI elements alongwith Redux, NativeBase and CodePush to build your iOS and Android food ordering app like Seamless / Grubhub / Doordash / UberEats / Postmates / Delivery.com / Yelp Eat 24 / Foodler / Swiggy / FoodPanda / Zomato. <br></p>
+<p>  <img src="https://market.nativebase.io/uploads/user/2017/02/08/51/58/sJwsA341BNJ1owK5.gif" alt="Food App"> <br>
+  Learn more about <a href="https://market.nativebase.io/view/react-native-food-ordering-app" target="_blank">React Native Food Ordering App 6.0.0</a></p>
+<h2 id="Messaging_App_with_Backend">6. Messaging App with Backend</h2>
+<p>The ideal starter kit / app script with all the needed UI elements alongwith Mobx, NativeBase, CodePush and backend integration (MongoDB, Feathersjs) to build your iOS and Android messaging app.<br></p>
+<p>  <img src="https://market.nativebase.io/uploads/user/2017/02/08/06/12/ZWJLHZo3lxYKzqOq.gif" alt="React Native Messaging App With Backend 2.0.0-beta"> <br>
+  Learn more about <a href="https://market.nativebase.io/view/react-native-messaging-app-with-backend" target="_blank">React Native Messaging App Theme with Backend 2.0.0-beta</a></p>
+<h2 id="Taxi_App_with_Backend">7. Taxi App with Backend</h2>
+<p>The ideal starter kit with all the needed UI elements and Backend Integration to build your iOS and Android Taxi app like Uber / Ola / Lyft. <br></p>
+<p>  <img src="https://market.nativebase.io/uploads/user/2016/12/27/46/39/MFZhXig5SsmyeSWL.gif" alt="React Native Taxt App With Backend 4.0.0"> <br>
+  Learn more about <a href="https://market.nativebase.io/view/react-native-taxi-app-with-backend" target="_blank">React Native Taxi App Theme with Backend 4.0.0</a></p>
+<h2 id="Social_App_Theme">8. Social App Theme</h2>
+<p>The ideal starter kit / app script with all the needed UI elements alongwith Redux, NativeBase and CodePush to build your iOS and Android social app. <br>
+ <img src="https://market.nativebase.io/uploads/user/2016/12/26/06/54/3OtvwCt9QRMmpbL2.gif" alt="Social App"> <br>
+ Learn more about <a href="https://market.nativebase.io/view/react-native-social-app-theme" target="_blank">React Native Social App Theme 6.0.0</a>. <br></p>
+<h2 id="E-Commerce_Pro_Theme">9. E-Commerce Pro Theme</h2>
+<p>The ideal starter kit / app script with all the needed UI elements alongwith MobX and NativeBase to build your iOS and Android e-commerce app like Mona / JackThreads / Canopy / Flipp. <br>
+ <img src="https://market.nativebase.io/uploads/user/2017/03/31/26/02/dk8SVkEOpDg0qLjT.gif" alt="E-Commerce Pro"> <br>
+ Learn more about <a href="https://market.nativebase.io/view/react-native-e-commerce-pro-theme" target="_blank">React Native E-Commerce Pro Theme 1.0.0</a></p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Featured_Apps">Featured Apps</a></p><li><a href="#Native_Starter_Pro">1. Native Starter Pro</a></li><li><a href="#Dating_App">2. Dating App</a></li><li><a href="#E-Commerce_Starter">3. E-Commerce Starter</a></li><li><a href="#Flat_App_Theme">4. Flat App Theme</a></li><li><a href="#Food_Ordering_App">5. Food Ordering App</a></li><li><a href="#Messaging_App_with_Backend">6. Messaging App with Backend</a></li><li><a href="#Taxi_App_with_Backend">7. Taxi App with Backend</a></li><li><a href="#Social_App_Theme">8. Social App Theme</a></li><li><a href="#E-Commerce_Pro_Theme">9. E-Commerce Pro Theme</a></li></ul></div><a href="#Native_Starter_Pro" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1296,12 +1259,12 @@ import { StyleProvider, getTheme } from &apos;native-base&apos;;
 
             
                 
-                <a href="../COMPONENTS.html#Ref_to_Components" class="navigation navigation-prev " aria-label="Previous page: Ref">
+                <a href="../CUSTOMIZE.html#Button_Customize" class="navigation navigation-prev " aria-label="Previous page: Button">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="introduction/WhatsNew.html" class="navigation navigation-next " aria-label="Next page: What's New in v2.0?">
+                <a href="Packages.html" class="navigation navigation-next " aria-label="Next page: Packages">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1312,7 +1275,7 @@ import { StyleProvider, getTheme } from &apos;native-base&apos;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Migration","level":"1.5","depth":1,"next":{"title":"What's New in v2.0?","level":"1.6","depth":1,"path":"docs/introduction/WhatsNew.md","ref":"docs/introduction/WhatsNew.md","articles":[]},"previous":{"title":"Ref","level":"1.4.27","depth":2,"anchor":"#Ref_to_Components","path":"COMPONENTS.md","ref":"COMPONENTS.md#Ref_to_Components","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/Migration.md","mtime":"2017-03-30T12:43:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T10:09:46.664Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Featured Apps","level":"1.8","depth":1,"next":{"title":"Packages","level":"1.9","depth":1,"path":"docs/Packages.md","ref":"docs/Packages.md","articles":[]},"previous":{"title":"Button","level":"1.7.5","depth":2,"anchor":"#Button_Customize","path":"CUSTOMIZE.md","ref":"CUSTOMIZE.md#Button_Customize","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/FeaturedApps.md","mtime":"2017-04-04T13:12:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-05T10:09:46.664Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

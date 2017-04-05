@@ -5,8 +5,8 @@ Customizing [NativeBase](https://nativebase.io/) will be a cakewalk for you. Tha
 **Note:** *[NativeBase](https://nativebase.io/) is built on top of [React Native](https://facebook.github.io/react-native/).<br />*
 *Hence with any component you can pass the style property which will be merged to the default style of that component.<br /><br />*
 
-* [Set Up](README.md#Theming_NativeBase_Apps)
-* [Theme Your Custom Components](README.md#Theme_Your_Custom_Component)
-* [Theme Color](README.md#Theme_Color)
-* [Theme Font](README.md#Theme_Font)
-* [Button](README.md#Customize_Button)
+* [Set Up](CUSTOMIZE.md#Theming_NativeBase_Apps)
+* [Theme Your Custom Components](CUSTOMIZE.md#Theme_Your_Custom_Component)
+* [Theme Color](CUSTOMIZE.md#Theme_Color)
+* [Theme Font](CUSTOMIZE.md#Theme_Font)
+* [Button](CUSTOMIZE.md#Button_Customize)
