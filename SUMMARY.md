@@ -85,3 +85,5 @@
 * [Cheat Sheet](/docs/ChaetSheet.md)
 
 * [Compatibility](/docs/Compatibility.md)
+
+* [GitApp Example](/docs/ExampleGitApp.md)
