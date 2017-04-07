@@ -9,7 +9,7 @@ Check Box allows the user to select a number of items from a set of choices.<br 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, CheckBox } from 'native-base/ui';
+import { Container, Content, ListItem, Text, CheckBox } from 'native-base';
 export default class CheckBoxExample extends Component {
     render() {
         return (
@@ -50,6 +50,14 @@ export default class CheckBoxExample extends Component {
                 </td>
                 <td>
                     Represents the state value of an item from set of choices.
+                </td>
+            </tr>
+            <tr>
+                <td>onPress</td>
+                <td>Function</td>
+                <td></td>
+                <td>
+                  Callback for the onPress event.
                 </td>
             </tr>
         </tbody>
