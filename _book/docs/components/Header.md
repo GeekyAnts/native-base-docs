@@ -46,6 +46,57 @@ export default class CheckBoxExample extends Component {
 }</code></pre><br />
 <br />
 
+**Configuration**<br />
+    <table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Left</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Components render to the left in Header</td>
+            </tr>
+            <tr>
+                <td>Body</td>
+                <td> - </td>
+                <td>-</td>
+                <td>Components render at the center of Header</td>
+            </tr>
+            <tr>
+                <td>Right</td>
+                <td> - </td>
+                <td>-</td>
+                <td>Components render to the right in Header</td>
+            </tr>
+            <tr>
+                <td>noShadow</td>
+                <td> false </td>
+                <td>true false</td>
+                <td>Text font size of badge.</td>
+            </tr>
+            <tr>
+                <td>iosBarStyle</td>
+                <td> - </td>
+                <td>light-content', 'dark-content' or 'default'</td>
+                <td>Set iOS barStyle</td>
+            </tr>
+            <tr>
+                <td>backgroundColor</td>
+                <td> - </td>
+                <td>string</td>
+                <td>Set android statusBar color</td>
+            </tr>
+        </tbody>
+    </table><br />
+
+
 #### Header with only title
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, ListItem, Text, CheckBox } from 'native-base/ui';
