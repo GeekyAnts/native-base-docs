@@ -18,7 +18,7 @@ A foundational component for inputting text into the app via a keyboard. Props p
 *General Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input } from 'native-base/ui';
+import { Container, Content, InputGroup, Input } from 'native-base';
 export default class InputGroupExample extends Component {
     render() {
         return (

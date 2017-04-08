@@ -9,7 +9,7 @@ FABs (Floating Action Buttons) are used for a special type of promoted action. T
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Icon, Fab } from 'native-base/ui';
+import { Container, Content, Button, Icon, Fab } from 'native-base';
 export default class FABExample extends Component {
     constructor() {
         this.state = {
