@@ -11,7 +11,7 @@ Looking at data one piece at a time is more efficient when you consider people y
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base/ui';
+import { Container, Icon, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
 const cards = [
     {
         text: 'Card One',

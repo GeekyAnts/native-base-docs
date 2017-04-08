@@ -9,7 +9,7 @@ However, you can also render icon to the right. To display icon at the end of te
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input, Icon } from 'native-base/ui';
+import { Container, Content, InputGroup, Input, Icon } from 'native-base';
 export default class IconTextboxExample extends Component {
     render() {
         return (

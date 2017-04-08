@@ -14,7 +14,7 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } from 'native-base/ui';
+import { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } from 'native-base';
 ​
 export default class FooterTabsExample extends Component {
     render() {

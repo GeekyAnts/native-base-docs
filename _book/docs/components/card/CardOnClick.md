@@ -8,7 +8,7 @@ To navigate between screens on click of a card, include <code>button</code> prop
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Text, Thumbnail } from 'native-base/ui';
+import { Container, Content, Card, CardItem, Text, Thumbnail } from 'native-base';
 export default class CardOnClickExample extends Component {
     render() {
         return (

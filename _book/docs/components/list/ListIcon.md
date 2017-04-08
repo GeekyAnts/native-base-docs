@@ -10,7 +10,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, List, ListItem, Text, Icon, Badge, Left, Body, Right } from 'native-base/ui';
+import { Container, Content, List, ListItem, Text, Icon, Badge, Left, Body, Right } from 'native-base';
 export default class ListIconExample extends Component {
     render() {
         return (
