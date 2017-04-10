@@ -10,7 +10,7 @@ NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2<
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, H1, H2, H3, Text } from 'native-base/ui';
+import { Container, Content, H1, H2, H3, Text } from 'native-base';
 export default class TypographyExample extends Component {
     render() {
         return (

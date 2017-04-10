@@ -7,7 +7,7 @@ To use the regular textbox which is rectangular in shape, include the <code>bord
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, InputGroup, Input } from 'native-base/ui';
+import { Container, Content, InputGroup, Input } from 'native-base';
 export default class RegularTextboxExample extends Component {
     render() {
         return (

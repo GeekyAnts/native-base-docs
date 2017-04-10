@@ -8,6 +8,9 @@ We aim to create an 3 page simple application. It will fetch a list of Top Ten G
 
 ## Installation
 
+**Note: <br />
+If you encounter an issue with [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) during building your project, it might be due to issue with latest versions of [React Native](https://github.com/facebook/react-native). Check out [this issue](https://github.com/aksonov/react-native-router-flux/issues/1761). You might have to bump down the versions of [React Native](https://github.com/facebook/react-native) and React** <br />
+
 1. **SetUp React Native Project** <br /> SetUp a React Native project. Refer [this](https://facebook.github.io/react-native/docs/getting-started.html) for more information about setting up a React Native project. <br />
 2. **Installing Libraries** <br /> With a React Native project SetUp, We can now install all required Libraries as follows. <br />
 a. **Redux** and **react-redux** <br />
@@ -138,7 +141,7 @@ We will create ActionCreators which are functions that return action objects wit
 1. **type** : Used to identify the type of action we are sending. It is also used to differentiate between multiple actions. <br />
 2. **payload** : Used to hold any data that might be required to accompany the object. (It should become clear in a while). <br />
 For our purposes, we just need two actions <br />
- **Get_Repos** : To initiate fetch of all Repos from Github API. This action will also change the data returned by our **gitReducer**.
+ **Get_Repos** : To initiate fetch of all Repos from Github API. This action will also change the data returned by our **gitReducer**. <br />
  **Repo_Selected** : Fired when a particular Repo is selected by the user , it changes the activeReducer to return selected user.
 
 #### Redux Thunk Middleware
@@ -440,4 +443,4 @@ Here the <code>key</code> property has been used in our app to provide navigatio
 By now your folder structure should look something like this <br />
 ![newFolder](../docs/assets/FolderFinal.png) <br />
 With that, we have completed setting up our app, build your project and run.<br />
-Find full code [here](https://github.com/Jasbir23/GitApp-Tutorial).
+Find full code [here](https://github.com/GeekyAnts/native-base-example-github-app). <br />

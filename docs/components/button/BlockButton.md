@@ -9,7 +9,7 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base/ui';
+import { Container, Content, Button, Text } from 'native-base';
 ​
 export default class BlockButtonExample extends Component {
     render() {

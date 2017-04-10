@@ -21,7 +21,7 @@
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Container, Text } from 'native-base';
-import { Tabs, TabContent } from 'native-base/ui';
+import { Tabs, TabContent } from 'native-base';
 
 ​
 export default class TabsExample extends Component {

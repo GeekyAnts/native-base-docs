@@ -9,7 +9,7 @@ List Thumbnails are medium to exhibit an image with your list item. To create a 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
-import { Container, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base/ui';
+import { Container, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base';
 export default class ListThumbnailExample extends Component {
     render() {
         return (

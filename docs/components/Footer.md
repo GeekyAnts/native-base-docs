@@ -16,7 +16,7 @@
 *Syntax*
 
 <pre><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Text, Button, Icon, Left, Body, Right } from 'native-base/ui';
+import { Container, Header, Text, Button, Icon, Left, Body, Right } from 'native-base';
 export default class HeaderExample extends Component {
     render() {
         return (

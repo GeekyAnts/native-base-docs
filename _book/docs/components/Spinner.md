@@ -9,7 +9,7 @@ If you have certain screens of your app that take some time to load, you may wan
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Spinner } from 'native-base/ui';
+import { Container, Content, Spinner } from 'native-base';
 export default class SpinnerExample extends Component {
     render() {
         return (
