@@ -15,16 +15,16 @@ export default class IconTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    // Text input box with icon aligned by default to the left
-                    &lt;InputGroup>
-                        &lt;Icon name='ios-home' style=&#123;{color:'#00C497'}}/>
+                    // Text input box with icon aligned to the left
+                    &lt;Item>
+                        &lt;Icon active name='home' />
                         &lt;Input placeholder='Icon Textbox'/>
-                    &lt;/InputGroup>
+                    &lt;/Item>
                     // Text input box with icon aligned to the right
-                    &lt;InputGroup>
+                    &lt;Item>
                         &lt;Input placeholder='Icon Alignment in Textbox'/>
-                        &lt;Icon name='ios-swap' style=&#123;{color:'#00C497'}}/>
-                    &lt;/InputGroup>
+                        &lt;Icon active name='swap' />
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );

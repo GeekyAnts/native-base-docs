@@ -14,9 +14,9 @@ export default class RegularTextboxExample extends Component {
             &lt;Container>
                 &lt;Content>​
                     // Simple rectangular text input box
-                    &lt;InputGroup regular>
-                        &lt;Input placeholder='Type your text here'/>
-                    &lt;/InputGroup>
+                    &lt;Item regular>
+                        &lt;Input placeholder='Regular Textbox'/>
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );

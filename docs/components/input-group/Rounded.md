@@ -13,11 +13,10 @@ export default class RoundedTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    // Rounded text input box with icon
-                    &lt;InputGroup rounded>
-                        &lt;Icon name='ios-home' style=&#123;{color:'#384850'}}/>
-                        &lt;Input placeholder='Type your text here'/>
-                    &lt;/InputGroup>
+                    // Rounded text input box
+                    &lt;Item rounded>
+                        &lt;Input placeholder='Rounded Textbox'/>
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );

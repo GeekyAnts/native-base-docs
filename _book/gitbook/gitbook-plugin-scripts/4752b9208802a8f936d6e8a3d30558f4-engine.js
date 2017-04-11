@@ -109,6 +109,11 @@ setInterval(function(){
     $('.navigation-next').hide();
     $('.navigation-prev').hide();
   }
+  if(nowHref.includes("Example.html") || nowHref.includes("Examples.html")){
+    $('#goTop').hide();
+    $('.navigation-next').hide();
+    $('.navigation-prev').hide();
+  }
   if(nowHref.includes("COMPONENTS.html")){
     $('#goTop').hide();
     $('.navigation-next').hide();
@@ -200,6 +205,18 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
     else if(!(window.location.href.includes("CUSTOMIZE.html"))){
       for(var i=0; i< chapters.length; i++){
         if(chapters[i].href.includes("CUSTOMIZE.html") && !(chapters[i].href.includes('#Customize'))){
+          chapters[i].style.display= "none";
+        }}
+    }
+    if(window.location.href.includes("Examples.html") || window.location.href.includes("Example.html")){
+      for(var i=0; i< chapters.length; i++){
+        if(chapters[i].href.includes("Example.html")){
+          chapters[i].style.display= "inherit";
+        }}
+    }
+    else if(!(window.location.href.includes("Examples.html"))){
+      for(var i=0; i< chapters.length; i++){
+        if(chapters[i].href.includes("Example.html")){
           chapters[i].style.display= "none";
         }}
     }

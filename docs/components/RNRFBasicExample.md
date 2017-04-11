@@ -1,5 +1,6 @@
 # Basic RNRF Example App and Tutorial
 This is a simple 2-page application that demonstrates the basic usage of [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) as a navigation tool. It is extremely easy to understand. This step-by-step tutorial will take you through the basic concepts. We are using [NativeBase](https://nativebase.io/) as the UI library to design our pages.<br />
+** Find full code [here](https://github.com/GeekyAnts/native-base-example-rnrf).** <br />
 ![RNRF Gif](../../docs/assets/RNRFGif.gif) <br />
 
 ## Aim
@@ -159,4 +160,3 @@ AppRegistry.registerComponent('RnrfExample', () => RnrfExample);
 </code></pre><br />
 
 ![RNRFExample Overall](../../docs/assets/RNRFOverall.png) <br />
-Find full code [here](https://github.com/GeekyAnts/native-base-example-rnrf). <br />

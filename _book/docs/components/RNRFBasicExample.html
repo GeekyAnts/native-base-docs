@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>RNRF Example · NativeBase</title>
+        <title>Navigation · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../ExampleGitApp.html" />
+    <link rel="next" href="../GitAppExample.html" />
     
     
-    <link rel="prev" href="../ReduxCounterExample.html" />
+    <link rel="prev" href="../MobxCounterExample.html" />
     
 
     </head>
@@ -1144,12 +1144,26 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="../ReduxCounterExample.html">
+        <li class="chapter " data-level="1.15" data-path="../Examples.html">
+            
+                <a href="../Examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../ReduxCounterExample.html">
             
                 <a href="../ReduxCounterExample.html">
             
                     
-                    Redux Counter Example
+                    Redux
             
                 </a>
             
@@ -1157,12 +1171,25 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.16" data-path="RNRFBasicExample.html">
+        <li class="chapter " data-level="1.15.2" data-path="../MobxCounterExample.html">
+            
+                <a href="../MobxCounterExample.html">
+            
+                    
+                    Mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15.3" data-path="RNRFBasicExample.html">
             
                 <a href="RNRFBasicExample.html">
             
                     
-                    RNRF Example
+                    Navigation
             
                 </a>
             
@@ -1170,16 +1197,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="../ExampleGitApp.html">
+        <li class="chapter " data-level="1.15.4" data-path="../GitAppExample.html">
             
-                <a href="../ExampleGitApp.html">
+                <a href="../GitAppExample.html">
             
                     
-                    GitApp Example
+                    Advanced
             
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1213,7 +1245,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >RNRF Example</a>
+        <a href="../.." >Navigation</a>
     </h1>
 </div>
 
@@ -1230,6 +1262,7 @@
                                 
                                 <h1 id="Basic_RNRF_Example_App_and_Tutorial">Basic RNRF Example App and Tutorial</h1>
 <p>This is a simple 2-page application that demonstrates the basic usage of <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> as a navigation tool. It is extremely easy to understand. This step-by-step tutorial will take you through the basic concepts. We are using <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the UI library to design our pages.<br>
+<strong> Find full code <a href="https://github.com/GeekyAnts/native-base-example-rnrf" target="_blank">here</a>.</strong> <br>
 <img src="../assets/RNRFGif.gif" alt="RNRF Gif"> <br></p>
 <h2 id="Aim">1. Aim</h2>
 <p>We are creating a 2-page application with a button on each page that takes us to the other page <code>onPress</code>. <br></p>
@@ -1377,8 +1410,7 @@ export default class RnrfExample extends Component {
 }
 AppRegistry.registerComponent(&apos;RnrfExample&apos;, () =&gt; RnrfExample);
 </pre><br></p>
-<p><img src="../assets/RNRFOverall.png" alt="RNRFExample Overall"> <br>
-Find full code <a href="https://github.com/GeekyAnts/native-base-example-rnrf" target="_blank">here</a>. <br></p>
+<p><img src="../assets/RNRFOverall.png" alt="RNRFExample Overall"> <br></p>
 <div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Basic_RNRF_Example_App_and_Tutorial">Basic RNRF Example App and Tutorial</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Lets_Play">3. Lets Play</a></li><ul><li><a href="#App_js">3.1. App.js</a></li><li><a href="#PageOne_js">3.2. PageOne.js</a></li><li><a href="#PageTwo_js">3.3. PageTwo.js</a></li><li><a href="#What_Next?">3.4. What Next?</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
@@ -1406,12 +1438,12 @@ Find full code <a href="https://github.com/GeekyAnts/native-base-example-rnrf" t
 
             
                 
-                <a href="../ReduxCounterExample.html" class="navigation navigation-prev " aria-label="Previous page: Redux Counter Example">
+                <a href="../MobxCounterExample.html" class="navigation navigation-prev " aria-label="Previous page: Mobx">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../ExampleGitApp.html" class="navigation navigation-next " aria-label="Next page: GitApp Example">
+                <a href="../GitAppExample.html" class="navigation navigation-next " aria-label="Next page: Advanced">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1422,7 +1454,7 @@ Find full code <a href="https://github.com/GeekyAnts/native-base-example-rnrf" t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"RNRF Example","level":"1.16","depth":1,"next":{"title":"GitApp Example","level":"1.17","depth":1,"path":"docs/ExampleGitApp.md","ref":"docs/ExampleGitApp.md","articles":[]},"previous":{"title":"Redux Counter Example","level":"1.15","depth":1,"path":"docs/ReduxCounterExample.md","ref":"docs/ReduxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/RNRFBasicExample.md","mtime":"2017-04-10T15:52:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-10T16:00:32.866Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Navigation","level":"1.15.3","depth":2,"next":{"title":"Advanced","level":"1.15.4","depth":2,"path":"docs/GitAppExample.md","ref":"docs/GitAppExample.md","articles":[]},"previous":{"title":"Mobx","level":"1.15.2","depth":2,"path":"docs/MobxCounterExample.md","ref":"docs/MobxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/components/RNRFBasicExample.md","mtime":"2017-04-11T11:10:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-11T14:40:54.174Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1456,7 +1488,7 @@ Find full code <a href="https://github.com/GeekyAnts/native-base-example-rnrf" t
         
     
         
-        <script src="../../gitbook/gitbook-plugin-scripts/66aed4e7529938232ceabdb191f02a9c-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-scripts/4752b9208802a8f936d6e8a3d30558f4-engine.js"></script>
         
     
         

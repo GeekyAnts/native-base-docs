@@ -14,10 +14,10 @@ export default class ErrorInputTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;InputGroup error>
+                    &lt;Item error>
                         &lt;Input placeholder='Textbox with Error Input'/>
-                        &lt;Icon name='ios-close-circle' style=&#123;{color:'red'}}/>
-                    &lt;/InputGroup>
+                        &lt;Icon name='close-circle' />
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );

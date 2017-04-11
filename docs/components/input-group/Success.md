@@ -14,10 +14,10 @@ export default class SuccessInputTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;InputGroup success>
+                    &lt;Item success>
                         &lt;Input placeholder='Textbox with Success Input'/>
-                        &lt;Icon name='ios-checkmark-circle' style=&#123;{color:'#00C497'}}/>
-                    &lt;/InputGroup>
+                        &lt;Icon name='checkmark-circle' />
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );

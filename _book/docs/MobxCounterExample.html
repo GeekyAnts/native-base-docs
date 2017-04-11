@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Migration · NativeBase</title>
+        <title>Mobx · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="introduction/WhatsNew.html" />
+    <link rel="next" href="components/RNRFBasicExample.html" />
     
     
-    <link rel="prev" href="../COMPONENTS.html" />
+    <link rel="prev" href="ReduxCounterExample.html" />
     
 
     </head>
@@ -943,7 +943,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="Migration.html">
+        <li class="chapter " data-level="1.5" data-path="Migration.html">
             
                 <a href="Migration.html">
             
@@ -1171,7 +1171,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.2" data-path="MobxCounterExample.html">
+        <li class="chapter active" data-level="1.15.2" data-path="MobxCounterExample.html">
             
                 <a href="MobxCounterExample.html">
             
@@ -1245,7 +1245,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Migration</a>
+        <a href=".." >Mobx</a>
     </h1>
 </div>
 
@@ -1260,87 +1260,142 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Migration_from_0_x_to_2_x">Migration from 0.x to 2.x</h1>
-<h3 id="Steps_for_Migrating_NativeBase_from_v0_x_to_v2_x">0.1. Steps for Migrating NativeBase from v0.x to v2.x</h3>
+                                <h1 id="Mobx_Counter_Example">Mobx Counter Example</h1>
+<p>This is a simple example Counter App made with <a href="https://github.com/mobxjs/mobx" target="_blank">Mobx</a>, <a href="https://nativebase.io/" target="_blank">NativeBase</a> and <a href="https://github.com/react-community/create-react-native-app" target="_blank">Create React Native App</a> tool. Detailed Setup instructions can be found below. <br>
+<strong>Find Full Code <a href="https://github.com/GeekyAnts/native-base-example-mobx-counter" target="_blank">here</a></strong> <br>
+<img src="assets/mobxCounter.gif" alt="Mobx Counter"> <br></p>
+<h2 id="Aim">1. Aim</h2>
+<p>We aim to create a simple App that has a counter with increment and decrement functionality. The logic is implemented in <a href="https://github.com/mobxjs/mobx" target="_blank">Mobx</a>. <br></p>
+<h2 id="Installation">2. Installation</h2>
 <ol>
-<li><p>Upgrade NativeBase to <code>2.0.0-alpha1</code> in <code>package.json</code> like this</p>
-<pre><code> &quot;native-base&quot;: &quot;2.0.0-alpha1&quot;
-</code></pre></li>
-<li><p>The core of NativeBase has been re-written with NativeBase 2.0 and the use-cases have also changed but you can continue using the old style of using the components by importing the components from &apos;native-base/backward&apos;</p>
-<pre><code>import { Header, Content, ... } from &apos;native-base/backward&apos;.
-</code></pre></li>
-<li><p>If you have overwritten the styles of NativeBase components in your project using <code>StyleSheet.create()</code>, modify them to plain JavaScript objects. <code>StyleSheet.create()</code> is redundant as it&apos;s been called in the source of NativeBase components itself.</p>
+<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
+<code>
+$ npm install -g create-react-native-app
+</code> <br>
+<code>
+$ create-react-native-app my-app
+</code> <br>
+<code>
+$ cd my-app/
+</code> <br>
+<code>
+$ npm start
+</code> <br></p>
 </li>
-<li><p>If you have modified the theme (using <code>variables.js</code>) then you need to follow these steps</p>
-<ul>
-<li><p>You may use the existing <code>variables.js</code> file in your project but we have added more variables. You can diff the latest  <a href="https://github.com/GeekyAnts/NativeBase/blob/v2.0-alpha1/theme/variables.js" target="_blank"><code>variable.js</code></a> and copy the newly introduced variables to your <code>variables.js</code> file</p>
+<li><p><strong>Install Mobx</strong>: <br>
+<code>
+npm i mobx mobx-react --save
+</code><br></p>
 </li>
-<li><p>We used to overwrite the default variables of NativeBase using a <code>theme</code> prop in any of the NativeBase component. <em><code>theme</code> prop has been deprecated with NativeBase 2.0</em>. To apply a custom theme, now you need to wrap your app with a  <code>&lt;StyleProvider&gt;</code> component and pass the <code>variables.js</code> as</p>
-<pre><code>import varirables from &apos;./variables&apos;; // From your project
-
-import { StyleProvider, getTheme } from &apos;native-base&apos;;
-
-...
-
-&lt;StyleProvider style={getTheme(variables)}&gt;
-  ...
-&lt;/StyleProvider&gt;
+<li><p><strong>Install babel plugins</strong>: <br>
+<code>
+npm i babel-plugin-transform-decorators-legacy babel-preset-react-native-stage-0 --save-dev
+</code><br></p>
+</li>
+<li>Now, let&#x2019;s create a .babelrc file to configure our babel plugins: <br><pre><code>{
+&apos;presets&apos;: [&apos;react-native&apos;],
+&apos;plugins&apos;: [&apos;transform-decorators-legacy&apos;]
+}
 </code></pre></li>
-</ul>
-</li>
+<li><strong>NativeBase</strong> <br>
+<code>
+npm install native-base --save
+</code> <br>
+<strong>Important: additional steps are required to import fonts from native base. Refer to <a href="GetStarted.html#Setup_with_CRNA">this</a></strong>
+<strong>Configure all dependencies by running the following command</strong> <br>
+<code>
+react-native link
+</code> <br></li>
 </ol>
-<p><em>General Syntax to apply theme</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {Container, Content, Text, StyleProvider, getTheme} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/backward&apos;</span>;
-<span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> variable <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Themes/variable&apos;</span>;
-&#x200B;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span>  <span class="hljs-attr">style</span>=<span class="hljs-string">{getTheme(variable)}</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                            I have changed the text color.
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
+<h2 id="Setting_Things_Up">3. Setting Things Up</h2>
+<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br>
+By the end of all this your project structure and <code>package.json</code> file should look something like this. <br>
+<img src="assets/mobxPackage.png" alt="MobxCounter Package"> <br></p>
+<h2 id="Mobx_Store_Setup">4. Mobx Store Setup</h2>
+<p>We need to create a Mobx store as follows. <br>
+<strong>Code src/counterStore.js</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {observable} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx&apos;</span>;
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CounterStore</span> </span>{
+  @observable counter = <span class="hljs-number">0</span>;
+  increment() { <span class="hljs-keyword">this</span>.counter++;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;increment&quot;</span>, <span class="hljs-keyword">this</span>.counter); }
+  decrement() { <span class="hljs-keyword">this</span>.counter--;
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;decrement&quot;</span>, <span class="hljs-keyword">this</span>.counter); }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> CounterStore();
+</code></pre><br></p>
+<p><strong>Explained</strong>: <br></p>
+<ol>
+<li>We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.</li>
+<li>We create two methods <code>increment()</code> and <code>decrement()</code> that will be called from out component to update the store.</li>
+<li>Lastly, we export a new object of our <code>store</code> class.</li>
+</ol>
+<h2 id="Mobx_Component">5. Mobx Component</h2>
+<p>We create a <code>counter</code> Component and import it in our main App file.<br>
+<strong>Code src/conter.js</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> CounterStore <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counterStore.js&apos;</span>;
+<span class="hljs-keyword">import</span> {observer} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx-react&apos;</span>;
+<span class="hljs-keyword">import</span> {View} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+@observer
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+  <span class="hljs-keyword">constructor</span>(){
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.state={
+      isReady: <span class="hljs-literal">false</span>
     }
-}</code></pre>
-
-<h4 id="Styles_to_the_Component">0.1.1. Styles to the Component</h4>
-<p><em>General Syntax of <code>style.js</code> object</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
-  container: {
-    backgroundColor: <span class="hljs-string">&apos;#FBFAFA&apos;</span>,
-  },
-  text: {
-    color: <span class="hljs-string">&apos;red&apos;</span>,
-  },
-}</code></pre>
-
-<p><em>General Syntax to overwrite default styles</em></p>
-<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {Container, Content, Text, getTheme} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base/backward&apos;</span>;
-<span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-comment">// Style object import</span>
-<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./style&apos;</span>;
-&#x200B;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.text}</span>&gt;</span>
-                          I have changed the text color.
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
+  }
+  <span class="hljs-keyword">async</span> componentWillMount() {
+      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
+        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
+        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
+      });
+      <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
     }
-}</code></pre>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Migration_from_0_x_to_2_x">Migration from 0.x to 2.x</a></p><li><a href="#">none</a></li><ul><li><a href="#Steps_for_Migrating_NativeBase_from_v0_x_to_v2_x">0.1. Steps for Migrating NativeBase from v0.x to v2.x</a></li><ul><li><a href="#Styles_to_the_Component">0.1.1. Styles to the Component</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
+  render(){
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.state.isReady) {
+      <span class="hljs-keyword">return</span> ;
+    }
+    <span class="hljs-keyword">return</span>(
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Mobx Counter<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
+                                {CounterStore.counter}
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.increment()}&gt;
+                             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                         <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.decrement()}&gt;
+                              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Decrement<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                          <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
+                          <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
+}
+</code></pre><br></p>
+<p><strong>Explained</strong> <br></p>
+<ol>
+<li>We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br></li>
+<li><code>async componentWillMount()</code> method is used to load fonts as described <a href="GetStarted.html#Setup_with_CRNA">here</a>. <br></li>
+<li><code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile,we display <code>Expo.AppLoading</code> screen. <br></li>
+<li>We import our <code>counterStore</code> and display the observable store value <code>counter</code> in a <code>Card</code>. Buttons will fire respective functions from the Store Class.</li>
+</ol>
+<h2 id="Finishing_Up">6. Finishing Up</h2>
+<p>Lastly we import our counter component in our <code>App.js</code> file. <br>
+Build project and run.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Mobx_Counter_Example">Mobx Counter Example</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><li><a href="#Mobx_Store_Setup">4. Mobx Store Setup</a></li><li><a href="#Mobx_Component">5. Mobx Component</a></li><li><a href="#Finishing_Up">6. Finishing Up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1367,12 +1422,12 @@ import { StyleProvider, getTheme } from &apos;native-base&apos;;
 
             
                 
-                <a href="../COMPONENTS.html#Ref_to_Components" class="navigation navigation-prev " aria-label="Previous page: Ref">
+                <a href="ReduxCounterExample.html" class="navigation navigation-prev " aria-label="Previous page: Redux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="introduction/WhatsNew.html" class="navigation navigation-next " aria-label="Next page: What's New in v2.0?">
+                <a href="components/RNRFBasicExample.html" class="navigation navigation-next " aria-label="Next page: Navigation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1383,7 +1438,7 @@ import { StyleProvider, getTheme } from &apos;native-base&apos;;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Migration","level":"1.5","depth":1,"next":{"title":"What's New in v2.0?","level":"1.6","depth":1,"path":"docs/introduction/WhatsNew.md","ref":"docs/introduction/WhatsNew.md","articles":[]},"previous":{"title":"Ref","level":"1.4.27","depth":2,"anchor":"#Ref_to_Components","path":"COMPONENTS.md","ref":"COMPONENTS.md#Ref_to_Components","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/Migration.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-11T14:40:54.174Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mobx","level":"1.15.2","depth":2,"next":{"title":"Navigation","level":"1.15.3","depth":2,"path":"docs/components/RNRFBasicExample.md","ref":"docs/components/RNRFBasicExample.md","articles":[]},"previous":{"title":"Redux","level":"1.15.1","depth":2,"path":"docs/ReduxCounterExample.md","ref":"docs/ReduxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/MobxCounterExample.md","mtime":"2017-04-11T14:26:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-11T14:40:54.174Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

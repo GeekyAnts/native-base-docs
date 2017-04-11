@@ -1144,12 +1144,26 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="docs/ReduxCounterExample.html">
+        <li class="chapter " data-level="1.15" data-path="docs/Examples.html">
+            
+                <a href="docs/Examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="docs/ReduxCounterExample.html">
             
                 <a href="docs/ReduxCounterExample.html">
             
                     
-                    Redux Counter Example
+                    Redux
             
                 </a>
             
@@ -1157,12 +1171,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="docs/components/RNRFBasicExample.html">
+        <li class="chapter " data-level="1.15.2" data-path="docs/MobxCounterExample.html">
+            
+                <a href="docs/MobxCounterExample.html">
+            
+                    
+                    Mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="docs/components/RNRFBasicExample.html">
             
                 <a href="docs/components/RNRFBasicExample.html">
             
                     
-                    RNRF Example
+                    Navigation
             
                 </a>
             
@@ -1170,16 +1197,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.17" data-path="docs/ExampleGitApp.html">
+        <li class="chapter " data-level="1.15.4" data-path="docs/GitAppExample.html">
             
-                <a href="docs/ExampleGitApp.html">
+                <a href="docs/GitAppExample.html">
             
                     
-                    GitApp Example
+                    Advanced
             
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -3080,9 +3112,9 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>&#x200B;
                     // Simple rectangular text input box
-                    <span class="hljs-tag">&lt;<span class="hljs-name">InputGroup</span> <span class="hljs-attr">regular</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Type your text here&apos;</span>/&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">InputGroup</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">regular</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Regular Textbox&apos;</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
         );
@@ -3098,18 +3130,17 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UnderlinedTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;Content&gt;&#x200B;
-                    // Underlined text input box with placeholder text and an icon
-                    &lt;InputGroup underline&gt;
-                        &lt;Icon name=&apos;ios-home&apos; style={{color:&apos;#384850&apos;}}/&gt;
-                        &lt;Input placeholder=&apos;Type your text here&apos; /&gt;
-                    &lt;/InputGroup&gt;
-                &lt;/Content&gt;
-            &lt;/Container&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>&#x200B;
+                    // Underlined text input box with placeholder text
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">underline</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Underlined Textbox&apos;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
         );
     }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h4 id="Rounded_Textbox">10.0.7. Rounded Textbox</h4>
 <p>To have a textbox with round type border, include the <code>borderType</code> property and assign it with value as <strong>rounded</strong>.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/roundedInput.png" alt="Preview ios Rounded_Textbox">
@@ -3120,18 +3151,17 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RoundedTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;Content&gt;
-                    // Rounded text input box with icon
-                    &lt;InputGroup rounded&gt;
-                        &lt;Icon name=&apos;ios-home&apos; style={{color:&apos;#384850&apos;}}/&gt;
-                        &lt;Input placeholder=&apos;Type your text here&apos;/&gt;
-                    &lt;/InputGroup&gt;
-                &lt;/Content&gt;
-            &lt;/Container&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    // Rounded text input box
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">rounded</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Rounded Textbox&apos;</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
         );
     }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h4 id="Icon_Textbox">10.0.8. Icon Textbox</h4>
 <p>Icons can be easily added to the NativeBase Textbox. To do so, include an icon within the <code>&lt;InputGroup&gt;</code>. <br>
 By default the icon will be aligned to the left in the textbox.<br>
@@ -3146,16 +3176,16 @@ However, you can also render icon to the right. To display icon at the end of te
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    // Text input box with icon aligned by default to the left
-                    &lt;InputGroup&gt;
-                        &lt;Icon name=&apos;ios-home&apos; style={{color:&apos;#00C497&apos;}}/&gt;
+                    // Text input box with icon aligned to the left
+                    &lt;Item&gt;
+                        &lt;Icon active name=&apos;home&apos; /&gt;
                         &lt;Input placeholder=&apos;Icon Textbox&apos;/&gt;
-                    &lt;/InputGroup&gt;
+                    &lt;/Item&gt;
                     // Text input box with icon aligned to the right
-                    &lt;InputGroup&gt;
+                    &lt;Item&gt;
                         &lt;Input placeholder=&apos;Icon Alignment in Textbox&apos;/&gt;
-                        &lt;Icon name=&apos;ios-swap&apos; style={{color:&apos;#00C497&apos;}}/&gt;
-                    &lt;/InputGroup&gt;
+                        &lt;Icon active name=&apos;swap&apos; /&gt;
+                    &lt;/Item&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -3174,10 +3204,10 @@ However, you can also render icon to the right. To display icon at the end of te
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    &lt;InputGroup success&gt;
+                    &lt;Item success&gt;
                         &lt;Input placeholder=&apos;Textbox with Success Input&apos;/&gt;
-                        &lt;Icon name=&apos;ios-checkmark-circle&apos; style={{color:&apos;#00C497&apos;}}/&gt;
-                    &lt;/InputGroup&gt;
+                        &lt;Icon name=&apos;checkmark-circle&apos; /&gt;
+                    &lt;/Item&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -3195,10 +3225,10 @@ However, you can also render icon to the right. To display icon at the end of te
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    &lt;InputGroup error&gt;
+                    &lt;Item error&gt;
                         &lt;Input placeholder=&apos;Textbox with Error Input&apos;/&gt;
-                        &lt;Icon name=&apos;ios-close-circle&apos; style={{color:&apos;red&apos;}}/&gt;
-                    &lt;/InputGroup&gt;
+                        &lt;Icon name=&apos;close-circle&apos; /&gt;
+                    &lt;/Item&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -3216,10 +3246,10 @@ However, you can also render icon to the right. To display icon at the end of te
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    &lt;InputGroup disabled&gt;
-                        &lt;Input placeholder=&apos;Disabled Textbox&apos;/&gt;
-                        &lt;Icon name=&apos;ios-information-circle&apos; style={{color: &apos;#384850&apos;}}/&gt;
-                    &lt;/InputGroup&gt;
+                    &lt;Item disabled&gt;
+                        &lt;Input disabled placeholder=&apos;Disabled Textbox&apos;/&gt;
+                        &lt;Icon name=&apos;information-circle&apos; /&gt;
+                    &lt;/Item&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -4653,7 +4683,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-08T15:04:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-10T16:00:32.866Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-11T14:40:54.174Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -4687,7 +4717,7 @@ Drawer is used from react-native-drawer Drawer</p>
         
     
         
-        <script src="gitbook/gitbook-plugin-scripts/66aed4e7529938232ceabdb191f02a9c-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-scripts/4752b9208802a8f936d6e8a3d30558f4-engine.js"></script>
         
     
         

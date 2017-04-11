@@ -13,10 +13,10 @@ export default class DisabledTextboxExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;InputGroup disabled>
-                        &lt;Input placeholder='Disabled Textbox'/>
-                        &lt;Icon name='ios-information-circle' style=&#123;{color: '#384850'}}/>
-                    &lt;/InputGroup>
+                    &lt;Item disabled>
+                        &lt;Input disabled placeholder='Disabled Textbox'/>
+                        &lt;Icon name='information-circle' />
+                    &lt;/Item>
                 &lt;/Content>
             &lt;/Container>
         );
