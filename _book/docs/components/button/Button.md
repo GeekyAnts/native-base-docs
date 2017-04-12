@@ -31,7 +31,9 @@ export default class ButtonExample extends Component {
             <Container>
                 <Content>
                     // NativeBase default style
-                    <Button buttonText="Click Me!" />
+                    <Button>
+                        <Text>Click Me! </Text>
+                    </Button>
                 </Content>
             </Container>
         );

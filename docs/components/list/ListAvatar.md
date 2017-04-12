@@ -14,22 +14,18 @@ export default class ListAvatarExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;List>
-                        &lt;ListItem>
+                    &lt;ListItem avatar>
+                        &lt;Left>
                             &lt;Thumbnail source={require('./img/one.png')} />
-                            &lt;Body>
-                                &lt;Text>Kumar Pratik&lt;/Text>
-                                &lt;Text note>Doing what you like will always keep you happy . .&lt;/Text>
-                            &lt;/Body>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;Thumbnail source={require('./img/two.png')} />
-                            &lt;Body>
-                                &lt;Text>Kumar Sanket&lt;/Text>
-                                &lt;Text note>Life is one time offer! Use it well&lt;/Text>
-                            &lt;/Body>
-                        &lt;/ListItem>
-                    &lt;/List>
+                        &lt;/Left>
+                        &lt;Body>
+                            &lt;Text>Kumar Pratik&lt;/Text>
+                            &lt;Text note>Doing what you like will always keep you happy . .&lt;/Text>
+                        &lt;/Body>
+                        &lt;Right>
+                            &lt;Text note>3:43 pm&lt;/Text>
+                        &lt;/Right>
+                    &lt;/ListItem>
                 &lt;/Content>
             &lt;/Container>
         );

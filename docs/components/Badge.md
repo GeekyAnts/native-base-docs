@@ -45,43 +45,4 @@
   }</code></pre><br />
 
   * [NativeBase](https://nativebase.io/) spectrum of colors are compatible with Badge.
-  * Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)
-
-
-  **Configuration**<br />
-      <table class = "table table-bordered">
-          <thead>
-              <tr>
-                  <th>Property</th>
-                  <th>Default</th>
-                  <th>Option</th>
-                  <th width="50%">Description</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>backgroundColor</td>
-                  <td>red</td>
-                  <td>user-defined</td>
-                  <td>Background color for badge.</td>
-              </tr>
-              <tr>
-                  <td>width</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Width of badge.</td>
-              </tr>
-              <tr>
-                  <td>color</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Text color for badge.</td>
-              </tr>
-              <tr>
-                  <td>fontSize</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Text font size of badge.</td>
-              </tr>
-          </tbody>
-      </table><br />
+  * Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html) <br />

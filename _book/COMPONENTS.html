@@ -1578,45 +1578,8 @@ A common way to use <a href="https://nativebase.io/" target="_blank">NativeBase<
   }</span></code></pre><br></p>
 <ul>
 <li><a href="https://nativebase.io/" target="_blank">NativeBase</a> spectrum of colors are compatible with Badge.</li>
-<li>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank"><code>&lt;View&gt;</code></a></li>
+<li>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank"><code>&lt;View&gt;</code></a> <br></li>
 </ul>
-<p>  <strong>Configuration</strong><br>
-      <table class="table table-bordered">
-          <thead>
-              <tr>
-                  <th>Property</th>
-                  <th>Default</th>
-                  <th>Option</th>
-                  <th width="50%">Description</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>backgroundColor</td>
-                  <td>red</td>
-                  <td>user-defined</td>
-                  <td>Background color for badge.</td>
-              </tr>
-              <tr>
-                  <td>width</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Width of badge.</td>
-              </tr>
-              <tr>
-                  <td>color</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Text color for badge.</td>
-              </tr>
-              <tr>
-                  <td>fontSize</td>
-                  <td> - </td>
-                  <td>user-defined</td>
-                  <td>Text font size of badge.</td>
-              </tr>
-          </tbody>
-      </table><br></p>
 <h2 id="Button_Default">7. Button Default</h2>
 <p>Button is a pure <a href="https://nativebase.io/" target="_blank">NativeBase</a> component.<br>
 Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.<br></p>
@@ -1645,12 +1608,14 @@ Buttons are the integral part of an application. They are used for various purpo
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
                     // NativeBase default style
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">buttonText</span>=<span class="hljs-string">&quot;Click Me!&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Click Me! <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
         );
     }
-}</span></code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+}</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 &#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -1797,24 +1762,13 @@ NativeBase provides following color themes:</p>
         <span class="hljs-keyword">return</span> (
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">light</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Light <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
         );
@@ -1834,23 +1788,26 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
         <span class="hljs-keyword">return</span> (
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">light</span> <span class="hljs-attr">block</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span> <span class="hljs-attr">success</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span> <span class="hljs-attr">info</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span> <span class="hljs-attr">warning</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span> <span class="hljs-attr">danger</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">block</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
@@ -1909,23 +1866,26 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
         <span class="hljs-keyword">return</span> (
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">light</span> <span class="hljs-attr">rounded</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">success</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">info</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">warning</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">danger</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Danger<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">rounded</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
@@ -3749,38 +3709,41 @@ To have note kind of text for list item, include <code>note</code> prop with <co
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
                 &lt;Content&gt;
-                    &lt;List&gt;
-                        &lt;ListItem&gt;
-                            &lt;Left&gt;
-                                &lt;Icon name=&quot;ios-plane&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                                &lt;Text&gt;Airplane Mode&lt;/Text&gt;
-                            &lt;/Left&gt;
-                            &lt;Body /&gt;
-                            &lt;Right&gt;
-                                &lt;Text note&gt;Off&lt;/Text&gt;
-                            &lt;/Right&gt;
-                        &lt;/ListItem&gt;
-                        &lt;ListItem&gt;
-                            &lt;Left&gt;
-                                &lt;Icon name=&quot;ios-settings-outline&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                                &lt;Text&gt;Software Update&lt;/Text&gt;
-                            &lt;/Left&gt;
-                            &lt;Body /&gt;
-                            &lt;Right&gt;
-                                &lt;Badge style={{ backgroundColor: &apos;#8C97B5&apos; }}&gt;2&lt;/Badge&gt;
-                            &lt;/Right&gt;
-                        &lt;/ListItem&gt;
-                        &lt;ListItem&gt;
-                            &lt;Left&gt;
-                                &lt;Icon name=&quot;ios-mail-outline&quot; style={{ color: &apos;#0A69FE&apos; }} /&gt;
-                                &lt;Text&gt;Mail&lt;/Text&gt;
-                            &lt;/Left&gt;
-                            &lt;Body /&gt;
-                            &lt;Right&gt;
-                                &lt;Badge&gt;12&lt;/Badge&gt;
-                            &lt;/Right&gt;
-                        &lt;/ListItem&gt;
-                    &lt;/List&gt;
+                    &lt;ListItem icon&gt;
+                        &lt;Left&gt;
+                            &lt;Icon name=&quot;plane&quot; /&gt;
+                        &lt;/Left&gt;
+                        &lt;Body&gt;
+                          &lt;Text&gt;Airplane Mode&lt;/Text&gt;
+                        &lt;/Body&gt;
+                        &lt;Right&gt;
+                            &lt;Switch valur={false} /&gt;
+                        &lt;/Right&gt;
+                    &lt;/ListItem&gt;
+                    &lt;ListItem icon&gt;
+                        &lt;Left&gt;
+                            &lt;Icon name=&quot;wifi&quot; /&gt;
+                        &lt;/Left&gt;
+                        &lt;Body&gt;
+                          &lt;Text&gt;Wi-Fi&lt;/Text&gt;
+                        &lt;/Body&gt;
+                        &lt;Right&gt;
+                            &lt;Text&gt;GeekyAnts&lt;/Text&gt;
+                            &lt;Icon name=&quot;arrow-forward&quot; /&gt;
+                        &lt;/Right&gt;
+                    &lt;/ListItem&gt;
+                    &lt;ListItem icon&gt;
+                        &lt;Left&gt;
+                            &lt;Icon name=&quot;bluetooth&quot; /&gt;
+                        &lt;/Left&gt;
+                        &lt;Body&gt;
+                          &lt;Text&gt;Bluetooth&lt;/Text&gt;
+                        &lt;/Body&gt;
+                        &lt;Right&gt;
+                            &lt;Text&gt;On&lt;/Text&gt;
+                            &lt;Icon name=&quot;arrow-forward&quot; /&gt;
+                        &lt;/Right&gt;
+                    &lt;/ListItem&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -3797,30 +3760,26 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListAvatarExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;Content&gt;
-                    &lt;List&gt;
-                        &lt;ListItem&gt;
-                            &lt;Thumbnail source={require(&apos;./img/one.png&apos;)} /&gt;
-                            &lt;Body&gt;
-                                &lt;Text&gt;Kumar Pratik&lt;/Text&gt;
-                                &lt;Text note&gt;Doing what you like will always keep you happy . .&lt;/Text&gt;
-                            &lt;/Body&gt;
-                        &lt;/ListItem&gt;
-                        &lt;ListItem&gt;
-                            &lt;Thumbnail source={require(&apos;./img/two.png&apos;)} /&gt;
-                            &lt;Body&gt;
-                                &lt;Text&gt;Kumar Sanket&lt;/Text&gt;
-                                &lt;Text note&gt;Life is one time offer! Use it well&lt;/Text&gt;
-                            &lt;/Body&gt;
-                        &lt;/ListItem&gt;
-                    &lt;/List&gt;
-                &lt;/Content&gt;
-            &lt;/Container&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">avatar</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Left</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Thumbnail</span> <span class="hljs-attr">source</span>=<span class="hljs-string">{require(&apos;.</span>/<span class="hljs-attr">img</span>/<span class="hljs-attr">one.png</span>&apos;)} /&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Left</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Kumar Pratik<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">note</span>&gt;</span>Doing what you like will always keep you happy . .<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Right</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">note</span>&gt;</span>3:43 pm<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Right</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
         );
     }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <h4 id="List_Thumbnail">10.0.19. List Thumbnail</h4>
 <p>List Thumbnails are medium to exhibit an image with your list item. To create a thumbnail list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component with few props and style.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/0.5.13/Screenshots/iOS/list-thumbnail.png" alt="Preview ios List_Thumbnail">
@@ -4683,7 +4642,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-11T14:45:54.618Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T06:28:43.005Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

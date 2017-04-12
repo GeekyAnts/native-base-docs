@@ -15,23 +15,26 @@ export default class RoundedButtonExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
+                    &lt;Button light rounded>
+                        &lt;Text>Light&lt;/Text>
+                    &lt;/Button>
                     &lt;Button rounded>
-                      &lt;Text> Primary &lt;/Text>
+                        &lt;Text>Primary&lt;/Text>
                     &lt;/Button>
                     &lt;Button rounded success>
-                      &lt;Text> Success &lt;/Text>
+                        &lt;Text>Success&lt;/Text>
                     &lt;/Button>
                     &lt;Button rounded info>
-                      &lt;Text>Info &lt;/Text>
+                        &lt;Text>Info&lt;/Text>
                     &lt;/Button>
                     &lt;Button rounded warning>
-                      &lt;Text> Warning &lt;/Text>
+                        &lt;Text>Warning&lt;/Text>
                     &lt;/Button>
                     &lt;Button rounded danger>
-                      &lt;Text> Danger &lt;/Text>
+                        &lt;Text>Danger&lt;/Text>
                     &lt;/Button>
                     &lt;Button dark rounded>
-                      &lt;Text> Dark &lt;/Text>
+                        &lt;Text>Dark&lt;/Text>
                     &lt;/Button>
                 &lt;/Content>
             &lt;/Container>

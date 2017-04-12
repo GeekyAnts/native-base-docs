@@ -22,24 +22,13 @@ export default class ButtonThemeExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;Button primary>
-                      &lt;Text> Primary &lt;/Text>
-                    &lt;/Button>
-                    &lt;Button success>
-                      &lt;Text> Success &lt;/Text>
-                    &lt;/Button>
-                    &lt;Button info>
-                      &lt;Text> Info &lt;/Text>
-                    &lt;/Button>
-                    &lt;Button warning>
-                      &lt;Text> Warning &lt;/Text>
-                    &lt;/Button>
-                    &lt;Button danger>
-                      &lt;Text> Danger &lt;/Text>
-                    &lt;/Button>
-                    &lt;Button dark>
-                      &lt;Text> Dark &lt;/Text>
-                    &lt;/Button>
+                    &lt;Button light>&lt;Text> Light &lt;/Text>&lt;/Button>
+                    &lt;Button primary>&lt;Text> Primary &lt;/Text>&lt;/Button>
+                    &lt;Button success>&lt;Text> Success &lt;/Text>&lt;/Button>
+                    &lt;Button info>&lt;Text> Info &lt;/Text>&lt;/Button>
+                    &lt;Button warning>&lt;Text> Warning &lt;/Text>&lt;/Button>
+                    &lt;Button danger>&lt;Text> Danger &lt;/Text>&lt;/Button>
+                    &lt;Button dark>&lt;Text> Dark &lt;/Text>&lt;/Button>
                 &lt;/Content>
             &lt;/Container>
         );

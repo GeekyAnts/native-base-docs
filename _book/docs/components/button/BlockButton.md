@@ -16,23 +16,26 @@ export default class BlockButtonExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
+                    &lt;Button light block>
+                        &lt;Text>Light&lt;/Text>
+                    &lt;/Button>
                     &lt;Button block>
-                      &lt;Text> Primary &lt;/Text>
+                        &lt;Text>Primary&lt;/Text>
                     &lt;/Button>
                     &lt;Button block success>
-                      &lt;Text> Success &lt;/Text>
+                        &lt;Text>Success&lt;/Text>
                     &lt;/Button>
                     &lt;Button block info>
-                      &lt;Text> Info &lt;/Text>
+                        &lt;Text>Info&lt;/Text>
                     &lt;/Button>
                     &lt;Button block warning>
-                      &lt;Text> Warning &lt;/Text>
+                        &lt;Text>Warning&lt;/Text>
                     &lt;/Button>
                     &lt;Button block danger>
-                      &lt;Text> Danger &lt;/Text>
+                        &lt;Text>Danger&lt;/Text>
                     &lt;/Button>
                     &lt;Button dark block>
-                      &lt;Text> Dark &lt;/Text>
+                        &lt;Text>Dark&lt;/Text>
                     &lt;/Button>
                 &lt;/Content>
             &lt;/Container>

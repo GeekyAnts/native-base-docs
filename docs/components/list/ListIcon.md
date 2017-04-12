@@ -16,38 +16,41 @@ export default class ListIconExample extends Component {
         return (
             &lt;Container>
                 &lt;Content>
-                    &lt;List>
-                        &lt;ListItem>
-                            &lt;Left>
-                                &lt;Icon name="ios-plane" style=&#123;{ color: '#0A69FE' }} />
-                                &lt;Text>Airplane Mode&lt;/Text>
-                            &lt;/Left>
-                            &lt;Body />
-                            &lt;Right>
-                                &lt;Text note>Off&lt;/Text>
-                            &lt;/Right>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;Left>
-                                &lt;Icon name="ios-settings-outline" style=&#123;{ color: '#0A69FE' }} />
-                                &lt;Text>Software Update&lt;/Text>
-                            &lt;/Left>
-                            &lt;Body />
-                            &lt;Right>
-                                &lt;Badge style=&#123;{ backgroundColor: '#8C97B5' }}>2&lt;/Badge>
-                            &lt;/Right>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;Left>
-                                &lt;Icon name="ios-mail-outline" style=&#123;{ color: '#0A69FE' }} />
-                                &lt;Text>Mail&lt;/Text>
-                            &lt;/Left>
-                            &lt;Body />
-                            &lt;Right>
-                                &lt;Badge>12&lt;/Badge>
-                            &lt;/Right>
-                        &lt;/ListItem>
-                    &lt;/List>
+                    &lt;ListItem icon>
+                        &lt;Left>
+                            &lt;Icon name="plane" />
+                        &lt;/Left>
+                        &lt;Body>
+                          &lt;Text>Airplane Mode&lt;/Text>
+                        &lt;/Body>
+                        &lt;Right>
+                            &lt;Switch valur={false} />
+                        &lt;/Right>
+                    &lt;/ListItem>
+                    &lt;ListItem icon>
+                        &lt;Left>
+                            &lt;Icon name="wifi" />
+                        &lt;/Left>
+                        &lt;Body>
+                          &lt;Text>Wi-Fi&lt;/Text>
+                        &lt;/Body>
+                        &lt;Right>
+                            &lt;Text>GeekyAnts&lt;/Text>
+                            &lt;Icon name="arrow-forward" />
+                        &lt;/Right>
+                    &lt;/ListItem>
+                    &lt;ListItem icon>
+                        &lt;Left>
+                            &lt;Icon name="bluetooth" />
+                        &lt;/Left>
+                        &lt;Body>
+                          &lt;Text>Bluetooth&lt;/Text>
+                        &lt;/Body>
+                        &lt;Right>
+                            &lt;Text>On&lt;/Text>
+                            &lt;Icon name="arrow-forward" />
+                        &lt;/Right>
+                    &lt;/ListItem>
                 &lt;/Content>
             &lt;/Container>
         );
