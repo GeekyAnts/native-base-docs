@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Packages · NativeBase</title>
+        <title>Redux-Form · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="release-notes/Release.html" />
     
-    
-    <link rel="prev" href="FeaturedApps.html" />
+    <link rel="prev" href="GitAppExample.html" />
     
 
     </head>
@@ -1066,7 +1064,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="Packages.html">
+        <li class="chapter " data-level="1.9" data-path="Packages.html">
             
                 <a href="Packages.html">
             
@@ -1210,7 +1208,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.5" data-path="ReduxFormExample.html">
+        <li class="chapter active" data-level="1.15.5" data-path="ReduxFormExample.html">
             
                 <a href="ReduxFormExample.html">
             
@@ -1258,7 +1256,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Packages</a>
+        <a href=".." >Redux-Form</a>
     </h1>
 </div>
 
@@ -1273,34 +1271,186 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Packages_Used">Packages Used</h1>
-<p><br></p>
-<p><em>package.json</em></p>
-<pre class="line-numbers"><code class="language-json">{
-    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;native-base&quot;</span>,
-    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Essential cross-platform UI components for React Native&quot;</span>,
-    <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;2.0.0-alpha1&quot;</span>,
-    <span class="hljs-string">&quot;private&quot;</span>: <span class="hljs-literal">false</span>,
-    <span class="hljs-string">&quot;dependencies&quot;</span>: {
-        <span class="hljs-string">&quot;@shoutem/animation&quot;</span>: <span class="hljs-string">&quot;^0.8.9&quot;</span>,
-        <span class="hljs-string">&quot;@shoutem/theme&quot;</span>: <span class="hljs-string">&quot;git+https://github.com/GeekyAnts/theme.git&quot;</span>,
-        <span class="hljs-string">&quot;blueimp-md5&quot;</span>: <span class="hljs-string">&quot;^2.5.0&quot;</span>,
-        <span class="hljs-string">&quot;clamp&quot;</span>: <span class="hljs-string">&quot;^1.0.1&quot;</span>,
-        <span class="hljs-string">&quot;color&quot;</span>: <span class="hljs-string">&quot;~0.11.1&quot;</span>,
-        <span class="hljs-string">&quot;lodash&quot;</span>: <span class="hljs-string">&quot;~4.11.1&quot;</span>,
-        <span class="hljs-string">&quot;react-native-checkbox&quot;</span>: <span class="hljs-string">&quot;~1.0.8&quot;</span>,
-        <span class="hljs-string">&quot;react-native-easy-grid&quot;</span>: <span class="hljs-string">&quot;0.1.7&quot;</span>,
-        <span class="hljs-string">&quot;react-native-keyboard-aware-scroll-view&quot;</span>: <span class="hljs-string">&quot;0.2.0&quot;</span>,
-        <span class="hljs-string">&quot;react-native-vector-icons&quot;</span>: <span class="hljs-string">&quot;3.x.x&quot;</span>,
-        <span class="hljs-string">&quot;react-tween-state&quot;</span>: <span class="hljs-string">&quot;^0.1.5&quot;</span>,
-        <span class="hljs-string">&quot;tween-functions&quot;</span>: <span class="hljs-string">&quot;^1.0.1&quot;</span>
-    },
-    <span class="hljs-string">&quot;peerDependencies&quot;</span>: {
-        <span class="hljs-string">&quot;react&quot;</span>: <span class="hljs-string">&quot;&gt;=15.4.0&quot;</span>,
-        <span class="hljs-string">&quot;react-native&quot;</span>: <span class="hljs-string">&quot;&gt;=0.38.0&quot;</span>,
+                                <h1 id="Redux_Form_Example">Redux Form Example</h1>
+<p>Redux Form is a sample app made with <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>, <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>, and <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the main Libraries at work here.<br>
+This is a simple step-by-step tutorial to get familiar with basic concepts of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>(used for state management), and [<a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a>. This simple App should get you familiar with these Libraries and their use case. <br>
+<strong>Find Full code <a href="https://github.com/GeekyAnts/native-base-example-redux-form" target="_blank">here</a></strong> <br>
+<img src="assets/ReduxForm.gif" alt="ReduxForm Gif">
+<br></p>
+<h2 id="Aim">1. Aim</h2>
+<p>We aim to create a single page application that uses <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and has validation functionality.</p>
+<h2 id="Installation">2. Installation</h2>
+<ol>
+<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
+<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
+a. <strong>Redux</strong> and <strong>react-redux</strong> <br>
+In your terminal enter the following <br>
+<code>
+npm install redux react-redux --save
+</code> <br>
+b. <strong>redux-form</strong> <br>
+Do this
+<code>
+npm install --save redux-form
+</code> <br>
+c. <strong>NativeBase</strong> <br>
+<code>
+npm install native-base --save
+</code> <br>
+<strong>Configure all dependencies by running the following command</strong> <br>
+<code>
+react-native link
+</code> <br>
+<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong>
+By the end of Installation, your package.json file should look something like this.<br>
+<img src="assets/ReduxFormPackage.png" alt="Redux-Form package"> <br></li>
+</ol>
+<h2 id="SetUp">3. SetUp</h2>
+<p>Create a <strong>src</strong> folder at root of your project. Create folders <strong>compnoents</strong> <strong>reducers</strong> and one file <strong>Application.js</strong> for our App. <br></p>
+<h3 id="Reducers">3.1. Reducers</h3>
+<p>Create a file <strong>index.js</strong> inside reducers folder. Paste the following code. <br>
+<strong>Code src/reducers/index.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> { reducer <span class="hljs-keyword">as</span> formReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> reducers = {
+  form: formReducer
+}
+<span class="hljs-keyword">const</span> allReducers= combineReducers(reducers);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> allReducers;
+</code></pre><br></p>
+<h3 id="Component">3.2. Component</h3>
+<p>Create a file <strong>SimpleForm.js</strong> inside <code>components</code> folder. <br>
+<strong>Code src/components/SimpleForm.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
+<span class="hljs-keyword">import</span> { View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Item, Input, Header, Body, Content, Title, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Field,reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> validate = values =&gt; {
+  <span class="hljs-keyword">const</span> error= {};
+  error.email= <span class="hljs-string">&apos;&apos;</span>;
+  error.name= <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-keyword">var</span> ema = values.email;
+  <span class="hljs-keyword">var</span> nm = values.name;
+  <span class="hljs-keyword">if</span>(values.email === <span class="hljs-literal">undefined</span>){
+    ema = <span class="hljs-string">&apos;&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(values.name === <span class="hljs-literal">undefined</span>){
+    nm = <span class="hljs-string">&apos;&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(ema.length &lt; <span class="hljs-number">8</span> &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
+    error.email= <span class="hljs-string">&apos;too short&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(!ema.includes(<span class="hljs-string">&apos;@&apos;</span>) &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
+    error.email= <span class="hljs-string">&apos;@ not included&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(nm.length &gt; <span class="hljs-number">8</span>){
+    error.name= <span class="hljs-string">&apos;max 8 characters&apos;</span>;
+  }
+<span class="hljs-keyword">return</span> error;
+};
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(props){
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.state={
+      isReady: <span class="hljs-literal">false</span>
+    };
+    <span class="hljs-keyword">this</span>.renderInput = <span class="hljs-keyword">this</span>.renderInput.bind(<span class="hljs-keyword">this</span>);
+  }
+  <span class="hljs-keyword">async</span> componentWillMount() {
+      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
+        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
+        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
+      });
+      <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
     }
-}</code></pre>
-
+  renderInput({ input, label, type, meta: { touched, error, warning } }){
+    <span class="hljs-keyword">var</span> hasError= <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">if</span>(error !== <span class="hljs-literal">undefined</span>){
+      hasError= <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span>( &lt;Item error= {hasError}&gt;
+                        &lt;Input {...input}/&gt;
+                        {hasError ? &lt;Text&gt;{error}&lt;/Text&gt; : &lt;Text /&gt;}
+                    &lt;/Item&gt; )
+  }
+  render(){
+     const { handleSubmit, reset } = this.props;
+     if (!this.state.isReady) {
+      return &lt;Expo.AppLoading /&gt;;
+    }
+  return (
+    &lt;Container&gt;
+    &lt;Header&gt;
+        &lt;Body&gt;
+          &lt;Title&gt;Redux Form&lt;/Title&gt;
+        &lt;/Body&gt;
+    &lt;/Header&gt;
+    &lt;Content padder&gt;
+      &lt;Field name=&quot;email&quot; component={this.renderInput} /&gt;
+      &lt;Field name=&quot;name&quot; component={this.renderInput} /&gt;
+      &lt;Button block primary onPress= {reset}&gt;
+      &lt;Text&gt;Submit&lt;/Text&gt;
+      &lt;/Button&gt;
+      &lt;/Content&gt;
+    &lt;/Container&gt;
+  )
+}
+}
+export default reduxForm({
+  form: &apos;test&apos;,
+  validate
+})(SimpleForm)
+</code></pre><br></p>
+<p><strong>Explained</strong> <br></p>
+<ol>
+<li>We load fonts using <code>loadAsync</code> as defined in previous examples.</li>
+<li>Note how we have added validate functionality in the end using <code>reduxForm</code> decorator.</li>
+<li>Conditions added to validate are user defined.</li>
+</ol>
+<h3 id="Application">3.3. Application</h3>
+<p><strong>Code src/Application.js</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/index.js&apos;</span>;
+<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> SimpleForm <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/SimpleForm.js&apos;</span>;
+<span class="hljs-keyword">import</span> { Field, reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> store = createStore(allReducers);
+ <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Application</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+  render(){
+    <span class="hljs-keyword">return</span>(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">SimpleForm</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
+  )
+  }
+}
+</span></code></pre><br></p>
+<p><strong>Explained</strong> <br>
+Here we import <code>allReducers</code> containing our <code>formReducer</code> and add it to our <code>store</code>. Next we simply pass our <code>store</code> to <code>Provider</code> component. <br></p>
+<h3 id="Finishing_Up">3.4. Finishing Up</h3>
+<p>Finally add the <code>Application</code> component in our <code>App.js</code> as follows <br>
+<strong>Code App.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { StyleSheet, Text, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> Application <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/Application.js&apos;</span>;
+<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/reducers/index.js&apos;</span>;
+<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, TouchableOpacity } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">const</span> store = createStore(allReducers);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Application</span> /&gt;</span>
+    );
+  }
+}</span></code></pre><br>
+All done. Our App must work now. It looks awesome(unicorn alert). Build and run for magic.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Redux_Form_Example">Redux Form Example</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#SetUp">3. SetUp</a></li><ul><li><a href="#Reducers">3.1. Reducers</a></li><li><a href="#Component">3.2. Component</a></li><li><a href="#Application">3.3. Application</a></li><li><a href="#Finishing_Up">3.4. Finishing Up</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1327,14 +1477,10 @@
 
             
                 
-                <a href="FeaturedApps.html" class="navigation navigation-prev " aria-label="Previous page: Featured Apps">
+                <a href="GitAppExample.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Advanced">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="release-notes/Release.html" class="navigation navigation-next " aria-label="Next page: Release Notes">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1343,7 +1489,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Packages","level":"1.9","depth":1,"next":{"title":"Release Notes","level":"1.10","depth":1,"path":"docs/release-notes/Release.md","ref":"docs/release-notes/Release.md","articles":[]},"previous":{"title":"Featured Apps","level":"1.8","depth":1,"path":"docs/FeaturedApps.md","ref":"docs/FeaturedApps.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/Packages.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T14:44:48.130Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Redux-Form","level":"1.15.5","depth":2,"previous":{"title":"Advanced","level":"1.15.4","depth":2,"path":"docs/GitAppExample.md","ref":"docs/GitAppExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/ReduxFormExample.md","mtime":"2017-04-14T15:10:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-14T14:44:48.130Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
