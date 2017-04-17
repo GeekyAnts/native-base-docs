@@ -64,6 +64,14 @@ import Tab2 from './tabTwo';
                     Set default active tab
                 </td>
             </tr>
+            <tr>
+                <td>tabBarPosition</td>
+                <td> top </td>
+                <td> top, bottom, overlayTop, overlayBottom </td>
+                <td>
+                    Set position of Tabs
+                </td>
+            </tr>
         </tbody>
     </table><br />
 
@@ -182,4 +190,4 @@ import Tab2 from './tabTwo';
         </tbody>
     </table><br />
 
-    Pro tip: It is advisable to use hasTabs prop with Header while using Tabs. 
+    Pro tip: It is advisable to use hasTabs prop with Header while using Tabs.

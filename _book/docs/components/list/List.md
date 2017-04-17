@@ -110,7 +110,7 @@ export default class ListExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>Avatar</td>
+                <td>avatar</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
@@ -118,7 +118,7 @@ export default class ListExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>thumnail</td>
+                <td>thumbnail</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
