@@ -92,3 +92,4 @@
   * [Navigation](/docs/components/RNRFBasicExample.md)
   * [Advanced](/docs/GitAppExample.md)
   * [Redux-Form](/docs/ReduxFormExample.md)
+  * [Sticky Headers](/docs/StickyHeaderExample.md)

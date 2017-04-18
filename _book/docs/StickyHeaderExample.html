@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Mobx · NativeBase</title>
+        <title>Sticky Headers · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="components/RNRFBasicExample.html" />
     
-    
-    <link rel="prev" href="ReduxCounterExample.html" />
+    <link rel="prev" href="ReduxFormExample.html" />
     
 
     </head>
@@ -1171,7 +1169,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.15.2" data-path="MobxCounterExample.html">
+        <li class="chapter " data-level="1.15.2" data-path="MobxCounterExample.html">
             
                 <a href="MobxCounterExample.html">
             
@@ -1223,7 +1221,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.6" data-path="StickyHeaderExample.html">
+        <li class="chapter active" data-level="1.15.6" data-path="StickyHeaderExample.html">
             
                 <a href="StickyHeaderExample.html">
             
@@ -1271,7 +1269,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Mobx</a>
+        <a href=".." >Sticky Headers</a>
     </h1>
 </div>
 
@@ -1286,14 +1284,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Mobx_Counter_Example">Mobx Counter Example</h1>
-<p>This is a simple example Counter App made with <a href="https://github.com/mobxjs/mobx" target="_blank">Mobx</a>, <a href="https://nativebase.io/" target="_blank">NativeBase</a> and <a href="https://github.com/react-community/create-react-native-app" target="_blank">Create React Native App</a> tool. Detailed Setup instructions can be found below. <br>
+                                <h1 id="Sticky_Header_Example">Sticky Header Example</h1>
+<p>This is a simple example of Sticky Headers in List Component of <a href="https://nativebase.io/" target="_blank">NativeBase</a> made with <a href="https://facebook.github.io/react-native/docs/listview.html" target="_blank">Native ListView</a>, <a href="https://nativebase.io/" target="_blank">NativeBase</a> and <a href="https://github.com/react-community/create-react-native-app" target="_blank">Create React Native App</a> tool. Detailed Setup instructions can be found below. <br>
 <br>
-<strong>Find Full Code <a href="https://github.com/GeekyAnts/native-base-example-mobx-counter" target="_blank">here</a></strong> <br>
+<strong>Note: Sticky Header support is currently unavailable for android in <a href="https://facebook.github.io/react-native/docs/listview.html" target="_blank">React Native ListView</a>. It will soon be available, check out <a href="https://github.com/facebook/react-native/issues/2700" target="_blank">this issue</a>.</strong> <br>
 <br>
-<img src="assets/mobxCounter.gif" alt="Mobx Counter"> <br></p>
+<strong>Find Full Code <a href="https://github.com/GeekyAnts/native-base-sticky-header" target="_blank">here</a></strong> <br>
+<br>
+<img src="assets/StickyHeader.gif" alt="Sticky Header"> <br></p>
 <h2 id="Aim">1. Aim</h2>
-<p>We aim to create a simple App that has a counter with increment and decrement functionality. The logic is implemented in <a href="https://github.com/mobxjs/mobx" target="_blank">Mobx</a>. <br></p>
+<p>We aim to create a simple App that implements sticky headers as shown in the GIF above. <br></p>
 <h2 id="Installation">2. Installation</h2>
 <ol>
 <li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
@@ -1310,22 +1310,7 @@ $ cd my-app/
 $ npm start
 </code> <br></p>
 </li>
-<li><p><strong>Install Mobx</strong>: <br>
-<code>
-npm i mobx mobx-react --save
-</code><br></p>
-</li>
-<li><p><strong>Install babel plugins</strong>: <br>
-<code>
-npm i babel-plugin-transform-decorators-legacy babel-preset-react-native-stage-0 --save-dev
-</code><br></p>
-</li>
-<li>Now, let&#x2019;s create a .babelrc file to configure our babel plugins: <br><pre><code>{
-&apos;presets&apos;: [&apos;react-native&apos;],
-&apos;plugins&apos;: [&apos;transform-decorators-legacy&apos;]
-}
-</code></pre></li>
-<li><strong>NativeBase</strong> <br>
+<li><p><strong>NativeBase</strong> <br>
 <code>
 npm install native-base --save
 </code> <br>
@@ -1333,97 +1318,105 @@ npm install native-base --save
 <strong>Configure all dependencies by running the following command</strong> <br>
 <code>
 react-native link
-</code> <br></li>
+</code> <br></p>
+</li>
 </ol>
 <h2 id="Setting_Things_Up">3. Setting Things Up</h2>
-<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br>
+<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create a file by the name of <code>Application.js</code>. <br>
+<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong> <br>
 By the end of all this your project structure and <code>package.json</code> file should look something like this. <br>
-<img src="assets/mobxPackage.png" alt="MobxCounter Package"> <br></p>
-<h2 id="Mobx_Store_Setup">4. Mobx Store Setup</h2>
-<p>We need to create a Mobx store as follows. <br>
-<strong>Code src/counterStore.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {observable} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx&apos;</span>;
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CounterStore</span> </span>{
-  @observable counter = <span class="hljs-number">0</span>;
-  increment() { <span class="hljs-keyword">this</span>.counter++;
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;increment&quot;</span>, <span class="hljs-keyword">this</span>.counter); }
-  decrement() { <span class="hljs-keyword">this</span>.counter--;
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;decrement&quot;</span>, <span class="hljs-keyword">this</span>.counter); }
-}
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> CounterStore();
-</code></pre><br></p>
-<p><strong>Explained</strong>: <br></p>
-<ol>
-<li>We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.</li>
-<li>We create two methods <code>increment()</code> and <code>decrement()</code> that will be called from out component to update the store.</li>
-<li>Lastly, we export a new object of our <code>store</code> class.</li>
-</ol>
-<h2 id="Mobx_Component">5. Mobx Component</h2>
-<p>We create a <code>counter</code> Component and import it in our main App file.<br>
-<strong>Code src/conter.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<img src="assets/StickyPackage.png" alt="StickyHeader Package"> <br></p>
+<h2 id="Making_our_List_Component">4. Making our List Component</h2>
+<p>In your <code>Application.js</code> inside <code>src</code> folder add the following code. <br>
+<strong>Code src/Application.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">import</span> CounterStore <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counterStore.js&apos;</span>;
-<span class="hljs-keyword">import</span> {observer} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx-react&apos;</span>;
-<span class="hljs-keyword">import</span> {View} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-@observer
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+<span class="hljs-keyword">import</span> { ListView, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { List, ListItem, Container, Content, Header, Title, Body, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Application</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(){
     <span class="hljs-keyword">super</span>();
-    <span class="hljs-keyword">this</span>.state={
-      isReady: <span class="hljs-literal">false</span>
-    }
+    <span class="hljs-keyword">this</span>.state= {
+      isReady: <span class="hljs-literal">false</span>,
+      dataSource : <span class="hljs-keyword">new</span> ListView.DataSource({
+                  rowHasChanged           : (row1, row2) =&gt; row1 !== row2,
+                  sectionHeaderHasChanged : (s1, s2) =&gt; s1 !== s2
+    })
+};
+  }
+  populateList() {
+    <span class="hljs-keyword">this</span>.setState({
+                dataSource : <span class="hljs-keyword">this</span>.state.dataSource.cloneWithRowsAndSections([[<span class="hljs-string">&quot;Movies&quot;</span>,<span class="hljs-string">&quot;Prestige&quot;</span>,<span class="hljs-string">&quot;Interstellar&quot;</span>,<span class="hljs-string">&quot;Dark Knight&quot;</span>, <span class="hljs-string">&quot;Neighbours&quot;</span>],[<span class="hljs-string">&quot;Music&quot;</span>,<span class="hljs-string">&quot;Nirvana&quot;</span>, <span class="hljs-string">&quot;Imagine Dragons&quot;</span>, <span class="hljs-string">&quot;Avicii&quot;</span>,<span class="hljs-string">&quot;Maya&quot;</span>],
+              [<span class="hljs-string">&quot;Places&quot;</span>,<span class="hljs-string">&quot;Agra&quot;</span>,<span class="hljs-string">&quot;Jamshedpur&quot;</span>,<span class="hljs-string">&quot;Delhi&quot;</span>, <span class="hljs-string">&quot;Bangalore&quot;</span>], [<span class="hljs-string">&quot;Things&quot;</span>,<span class="hljs-string">&quot;Car&quot;</span>,<span class="hljs-string">&quot;Table&quot;</span>,<span class="hljs-string">&quot;Fan&quot;</span>, <span class="hljs-string">&quot;Chair&quot;</span>], [<span class="hljs-string">&quot;People&quot;</span>,<span class="hljs-string">&quot;Sankho&quot;</span>,<span class="hljs-string">&quot;Aditya&quot;</span>,<span class="hljs-string">&quot;Himanshu&quot;</span>, <span class="hljs-string">&quot;Kuldeep&quot;</span>],
+            [<span class="hljs-string">&quot;Roads&quot;</span>,<span class="hljs-string">&quot;NH-11&quot;</span>,<span class="hljs-string">&quot;MG Road&quot;</span>,<span class="hljs-string">&quot;Brigade Road&quot;</span>, <span class="hljs-string">&quot;Nehru Road&quot;</span>], [<span class="hljs-string">&quot;Buildings&quot;</span>,<span class="hljs-string">&quot;Empire State&quot;</span>,<span class="hljs-string">&quot;Burj Khalifa&quot;</span>,<span class="hljs-string">&quot;Caspian&quot;</span>, <span class="hljs-string">&quot;Narnia&quot;</span>]])
+            });
   }
   <span class="hljs-keyword">async</span> componentWillMount() {
+    <span class="hljs-keyword">this</span>.populateList();
       <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
         <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
         <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
       });
       <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
+  }
+  renderSectionHeader(sectionData, sectionID) {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{sectionData[0]}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span></span>
+        );
     }
-  render(){
+    renderRow(rowData, sectionID, rowID) {
+      <span class="hljs-built_in">console</span>.log(rowID,rowData,sectionID, <span class="hljs-string">&quot;renderRow&quot;</span>);
+      <span class="hljs-keyword">if</span>(rowID == <span class="hljs-number">0</span>){
+        <span class="hljs-built_in">console</span>.log(rowData, <span class="hljs-string">&quot;0 rowId&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+      }
+            <span class="hljs-keyword">return</span> (
+                    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{rowData}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span></span>
+            );
+        }
+  render() {
     <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.state.isReady) {
-      <span class="hljs-keyword">return</span> ;
-    }
-    <span class="hljs-keyword">return</span>(
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Mobx Counter<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                                {CounterStore.counter}
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.increment()}&gt;
-                             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                         <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                         <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.decrement()}&gt;
-                              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Decrement<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
-                          <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+     <span class="hljs-keyword">return</span> &lt;Expo.AppLoading /&gt;;
+   }
+    return (
+      &lt;Container&gt;
+      &lt;Header&gt;
+                    &lt;Body&gt;
+                        &lt;Title&gt;Sticky Headers&lt;/Title&gt;
+                    &lt;/Body&gt;
+                &lt;/Header&gt;
+      &lt;List
+            dataSource={this.state.dataSource}
+            renderRow={this.renderRow}
+            renderSectionHeader={this.renderSectionHeader}
+          /&gt;
+          &lt;/Container&gt;
     );
   }
 }
 </code></pre><br></p>
 <p><strong>Explained</strong> <br></p>
 <ol>
-<li>We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br></li>
-<li><code>async componentWillMount()</code> method is used to load fonts as described <a href="GetStarted.html#Setup_with_CRNA">here</a>. <br></li>
-<li><code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile,we display <code>Expo.AppLoading</code> screen. <br></li>
-<li>We import our <code>counterStore</code> and display the observable store value <code>counter</code> in a <code>Card</code>. Buttons will fire respective functions from the Store Class.</li>
+<li>In our constructor, we initialize our state with a <code>dataSource</code> object. Use similae syntax to initialize the <code>ListView.dataSource</code>.</li>
+<li><code>async componentWillMount</code> function is used to load fonts for <a href="https://nativebase.io/" target="_blank">NativeBase</a> as mentioned in previous examples. Check out <a href="https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/CRNA/js/setup.js" target="_blank">this</a> example.</li>
+<li><code>populateList</code> function creates our dataSource object to be used by our list. <code>dataSource.cloneWithRowsAndSections</code> function will convert data into a ListView Map. Here we have used dummy data in a simple format, implementation can vary according data structure.</li>
+<li>Next we simply place our <code>List</code>(wrapper around ListView) component from <a href="https://nativebase.io/" target="_blank">NativeBase</a> and pass data as props as shown. <br><pre><code>         &lt;List
+         dataSource={this.state.dataSource}
+         renderRow={this.renderRow}
+         renderSectionHeader={this.renderSectionHeader} /&gt;
+</code></pre></li>
+<li>In the <code>renderRow</code> prop we pass our defined function. <code>rowData, rowID and sectionID</code> are the available arguments with the function. <br> We simple return a React component with respective data as shown. <br> For <code>rowID == 0</code> we return null because it is the section header element. We do not want to display it as a list item.</li>
+<li>Similarly we implemented <code>renderSectionHeader</code> function, returning section headers, as shown above. <br></li>
 </ol>
-<h2 id="Finishing_Up">6. Finishing Up</h2>
-<p>Lastly we import our counter component in our <code>App.js</code> file. <br>
-Build project and run.</p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Mobx_Counter_Example">Mobx Counter Example</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><li><a href="#Mobx_Store_Setup">4. Mobx Store Setup</a></li><li><a href="#Mobx_Component">5. Mobx Component</a></li><li><a href="#Finishing_Up">6. Finishing Up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<h2 id="Wrapping_Up">5. Wrapping Up</h2>
+<p>With our component made, we simply import the component in our <code>App.js</code> file and place it inside the render funtion. <br>
+Build and run.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Sticky_Header_Example">Sticky Header Example</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><li><a href="#Making_our_List_Component">4. Making our List Component</a></li><li><a href="#Wrapping_Up">5. Wrapping Up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1450,14 +1443,10 @@ Build project and run.</p>
 
             
                 
-                <a href="ReduxCounterExample.html" class="navigation navigation-prev " aria-label="Previous page: Redux">
+                <a href="ReduxFormExample.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Redux-Form">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="components/RNRFBasicExample.html" class="navigation navigation-next " aria-label="Next page: Navigation">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1466,7 +1455,7 @@ Build project and run.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mobx","level":"1.15.2","depth":2,"next":{"title":"Navigation","level":"1.15.3","depth":2,"path":"docs/components/RNRFBasicExample.md","ref":"docs/components/RNRFBasicExample.md","articles":[]},"previous":{"title":"Redux","level":"1.15.1","depth":2,"path":"docs/ReduxCounterExample.md","ref":"docs/ReduxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/MobxCounterExample.md","mtime":"2017-04-12T07:21:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T09:52:23.720Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Sticky Headers","level":"1.15.6","depth":2,"previous":{"title":"Redux-Form","level":"1.15.5","depth":2,"path":"docs/ReduxFormExample.md","ref":"docs/ReduxFormExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/StickyHeaderExample.md","mtime":"2017-04-18T08:19:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T09:52:23.720Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

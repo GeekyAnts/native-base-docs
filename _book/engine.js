@@ -91,7 +91,7 @@ setInterval(function(){
   }
     if(window.innerWidth < 1650)
     {
-      document.getElementsByClassName('page-wrapper')[0].style.width= '60%';
+      document.getElementsByClassName('page-wrapper')[0].style.width= '70%';
     }
     else if(window.innerWidth > 1650)
     {
