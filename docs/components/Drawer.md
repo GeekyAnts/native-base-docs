@@ -15,16 +15,16 @@ import SideBar from './yourPathToSideBar';
 export default class DrawerExample extends Component {
     render() {
       closeDrawer = () => {
-        this.drawer.root.close()
+        this.drawer._root.close()
       };
       openDrawer = () => {
-        this.drawer.root.open()
+        this.drawer._root.open()
       };
         return (
             &lt;Drawer
               ref={(ref) => { this.drawer = ref; }}
               content={&lt;SideBar navigator={this.navigator} />}
-              onClose={() => this.closeDrawer()} >
+              onClose={ closeDrawer } >
             // Main View
           &lt;/Drawer>
         );
