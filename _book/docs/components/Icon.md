@@ -61,6 +61,12 @@ export default class IconExample extends Component {
                 <td>Name of the icon for Android devices.</td>
             </tr>
             <tr>
+                <td>active</td>
+                <td> default </td>
+                <td> true fasle </td>
+                <td>Renders filled Icons. Note: By default it renders outline Icons.</td>
+            </tr>
+            <tr>
                 <td>color</td>
                 <td>black</td>
                 <td>user-defined</td>

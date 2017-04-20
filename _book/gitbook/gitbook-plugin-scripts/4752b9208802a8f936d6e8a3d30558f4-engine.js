@@ -2,6 +2,7 @@ var chapters=document.getElementsByTagName('a');
 var anchorContainer= document.createElement("div");
 var anchorImage= document.createElement("img");
 var anchor= document.createElement("div");
+var currentHeight= 0;
 
 function removeHeaders(){
 var head2 = document.getElementsByTagName('h2');
@@ -42,8 +43,7 @@ for(var i=0; i<head2.length; i++){
 function getPosition(string, subString, index) {
    return string.split(subString, index).join(subString).length;
 }
-
-anchor.style= "position: fixed; right: 50px;top: 68px;";
+console.log(window.innerHeight, "Window height");
 var andBut= document.createElement('span');
 andBut.style="height: 40px; width: 100px; background-color: grey; display: inline-block; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin: 10px 10px 10px 10px; padding-bottom: 15px;";
 andBut.id="andBut";
@@ -72,6 +72,7 @@ andBut.onclick= function(){
   andBut.style="height: 40px; width: 100px; background-color: #00b386; display: inline-block; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin: 10px 10px 10px 10px; padding-bottom: 15px;";
 };
 anchor.id= "anchor";
+  anchor.style= "position: fixed; right: 50px;top: 78px";
 anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
 anchorContainer.id= "anchorContainer";
 anchorImage.id= "anchorImage";
@@ -85,6 +86,14 @@ var filterListAndroid= [];
 var filterListIos= [];
 
 setInterval(function(){
+  currentHeight= window.innerHeight;
+  if(currentHeight> 830){
+    anchor.style= "position: fixed; right: 50px;top: 178px";
+  }
+  else if(currentHeight< 839){
+    anchor.style= "position: fixed; right: 50px;top: 88px";
+  }
+
   if(window.location.href.includes("COMPONENTS.html")){
     if(window.location.href.includes("#Components") || window.location.href.includes("#Ref")){
     anchorImage.style= "width: 0px; height: 0px;"

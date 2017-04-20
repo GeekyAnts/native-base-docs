@@ -121,11 +121,11 @@ import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'nativ
 ##Content_Anatomy
 
 * This is a NativeBase component which renders as body element of your screen.
-* Each screen can have only one <Content> component and can be defined anywhere within the Container.
+* Each screen can have only one <code>Content</code> component and can be defined anywhere within the Container.
 * Content takes in the whole collection of React Native and NativeBase components.
 * Content provides you with stylesheet.
-* User can add custom styles while defining <Content> within their app.
-* Replacing Component: React Native Keyboard Aware Scroll View's <KeyboardAwareScrollView>
+* User can add custom styles while defining <code>Content</code> within their app.
+* Replacing Component: React Native Keyboard Aware Scroll View's <code>KeyboardAwareScrollView</code>
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
@@ -172,13 +172,13 @@ export default class ContentExample extends Component {
 
 * NativeBase component that renders as footer that includes your favourite apps for your screen.
 * There can be only a single Footer component into your Container.
-* To have Footer for your screen, include <Footer> component within <Container>.
+* To have Footer for your screen, include <code>Footer</code> component within <code>Container</code>.
 * NativeBase gives you flexibility to define your Footer component anywhere in the bounds of Container.
 * Footer takes input as: Left, Body, Right and FooterTab as well.
-* The components those are defined within <Footer> will be rendered in the same order that you define them.
+* The components those are defined within <code>Footer</code> will be rendered in the same order that you define them.
 * Footer provides you with stylesheet.
-* User can add custom styles while defining <Footer> within their app.
-* Replacing Component: React Native <View>
+* User can add custom styles while defining <code>Footer</code> within their app.
+* Replacing Component: React Native <code>View</code>.
 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

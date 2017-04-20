@@ -27,7 +27,7 @@ export default class FABExample extends Component {
                         style=&#123;{ backgroundColor: '#5067FF' }}
                         position="topLeft"
                         onPress={() => this.setState({ active: !this.state.active })}>
-                        &lt;Icon name="md-share" />
+                        &lt;Icon name="share" />
                         &lt;Button style=&#123;{ backgroundColor: '#34A34F' }}>
                             &lt;Icon name="logo-whatsapp" />
                         &lt;/Button>
@@ -35,7 +35,7 @@ export default class FABExample extends Component {
                             &lt;Icon name="logo-facebook" />
                         &lt;/Button>
                         &lt;Button disabled style=&#123;{ backgroundColor: '#DD5144' }}>
-                            &lt;Icon name="ios-mail" />
+                            &lt;Icon name="mail" />
                         &lt;/Button>
                     &lt;/Fab>
                 &lt;/Content>

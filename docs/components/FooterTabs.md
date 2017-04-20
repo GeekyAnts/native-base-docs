@@ -60,23 +60,23 @@ export default class FooterTabsExample extends Component {
                 <td>-</td>
                 <td>user-defined</td>
                 <td>
-                    Represents the value in badge.
-                </td>
-            </tr>
-            <tr>
-                <td>badgeColor</td>
-                <td>-</td>
-                <td>primary</td>
-                <td>
-                    Background color for badge.
+                This is Button prop (applicable with FooterTab only). Value of badge to be displayed
                 </td>
             </tr>
             <tr>
                 <td>badgeValueStyle</td>
-                <td>-</td>
-                <td>-</td>
+                <td> white </td>
+                <td>user-defined</td>
                 <td>
-                    Style for value in badge.
+                This is Button prop (applicable with FooterTab only). Font color of badge text
+                </td>
+            </tr>
+            <tr>
+                <td>badgeColor</td>
+                <td> red </td>
+                <td> user-defined </td>
+                <td>
+                This is Button prop (applicable with FooterTab only). Background color of badge
                 </td>
             </tr>
         </tbody>

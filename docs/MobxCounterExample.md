@@ -52,8 +52,8 @@ react-native link
 
 ## Setting Things Up
 
-With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br />
-By the end of all this your project structure and <code>package.json</code> file should look something like this. <br />
+  With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br />
+  By the end of all this your project structure and <code>package.json</code> file should look something like this. <br />
 ![MobxCounter Package](./assets/mobxPackage.png) <br />
 
 ## Mobx Store Setup

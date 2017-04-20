@@ -42,7 +42,7 @@ export default class DeckSwiperExample extends Component {
                                     &lt;Image style=&#123;{ resizeMode: 'cover', width: null }} source={item.image} />
                                 &lt;/CardItem>
                                 &lt;CardItem>
-                                    &lt;Icon name="ios-heart" style=&#123;{ color: '#ED4A6A' }} />
+                                    &lt;Icon name="heart" style=&#123;{ color: '#ED4A6A' }} />
                                     &lt;Text>{item.name}&lt;/Text>
                                 &lt;/CardItem>
                             &lt;/Card>

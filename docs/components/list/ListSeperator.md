@@ -37,3 +37,26 @@ export default class SeperatorExample extends Component {
         );
     }
 }</code></pre><br />
+
+**Configuration**
+
+<table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bordered</td>
+                <td> - </td>
+                <td> - </td>
+                <td> adds border to the bottom and top of the separator </td>
+            </tr>
+            </tbody>
+            </table><br />

@@ -1432,11 +1432,11 @@ A common way to use <a href="https://nativebase.io/" target="_blank">NativeBase<
 <h2 id="Content_Anatomy">3. Content_Anatomy</h2>
 <ul>
 <li>This is a NativeBase component which renders as body element of your screen.</li>
-<li>Each screen can have only one <content> component and can be defined anywhere within the Container.</content></li>
+<li>Each screen can have only one <code>Content</code> component and can be defined anywhere within the Container.</li>
 <li>Content takes in the whole collection of React Native and NativeBase components.</li>
 <li>Content provides you with stylesheet.</li>
-<li>User can add custom styles while defining <content> within their app.</content></li>
-<li>Replacing Component: React Native Keyboard Aware Scroll View&apos;s <keyboardawarescrollview></keyboardawarescrollview></li>
+<li>User can add custom styles while defining <code>Content</code> within their app.</li>
+<li>Replacing Component: React Native Keyboard Aware Scroll View&apos;s <code>KeyboardAwareScrollView</code></li>
 </ul>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -1482,13 +1482,13 @@ A common way to use <a href="https://nativebase.io/" target="_blank">NativeBase<
 <ul>
 <li>NativeBase component that renders as footer that includes your favourite apps for your screen.</li>
 <li>There can be only a single Footer component into your Container.</li>
-<li>To have Footer for your screen, include <footer> component within <container>.</container></footer></li>
+<li>To have Footer for your screen, include <code>Footer</code> component within <code>Container</code>.</li>
 <li>NativeBase gives you flexibility to define your Footer component anywhere in the bounds of Container.</li>
 <li>Footer takes input as: Left, Body, Right and FooterTab as well.</li>
-<li>The components those are defined within <footer> will be rendered in the same order that you define them.</footer></li>
+<li>The components those are defined within <code>Footer</code> will be rendered in the same order that you define them.</li>
 <li>Footer provides you with stylesheet.</li>
-<li>User can add custom styles while defining <footer> within their app.</footer></li>
-<li>Replacing Component: React Native <view></view></li>
+<li>User can add custom styles while defining <code>Footer</code> within their app.</li>
+<li>Replacing Component: React Native <code>View</code>.</li>
 </ul>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Footer, Left, Body, Right, Button, Icon, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -2309,7 +2309,8 @@ Here is your Card Image ready !</p>
 <p>Card Showcase is further customization of Card Image. It uses several different items.</p>
 <ul>
 <li>Begins with the Card List component, which is similar to out List Avatar.</li>
-<li><code>cardBody</code> prop for images and text.</li>
+<li>Make use of Left, Body and Right components to align the content of your Card header.</li>
+<li>To mixup Image with other NativeBase components in a single CardItem, include the content within Body component.</li>
 </ul>
 <p><img src="../docs/assets/ios/components/cardShowcase.png" alt="Preview ios Card_Showcase">
 <img src="../docs/assets/android/components/cardShowcase.png" alt="Preview android Card_Showcase"></p>
@@ -2441,7 +2442,7 @@ Here is your Card Image ready !</p>
                                     &lt;Image style={{ resizeMode: &apos;cover&apos;, width: null }} source={item.image} /&gt;
                                 &lt;/CardItem&gt;
                                 &lt;CardItem&gt;
-                                    &lt;Icon name=&quot;ios-heart&quot; style={{ color: &apos;#ED4A6A&apos; }} /&gt;
+                                    &lt;Icon name=&quot;heart&quot; style={{ color: &apos;#ED4A6A&apos; }} /&gt;
                                     &lt;Text&gt;{item.name}&lt;/Text&gt;
                                 &lt;/CardItem&gt;
                             &lt;/Card&gt;
@@ -2502,7 +2503,7 @@ Here is your Card Image ready !</p>
                         style={{ backgroundColor: &apos;#5067FF&apos; }}
                         position=&quot;topLeft&quot;
                         onPress={() =&gt; this.setState({ active: !this.state.active })}&gt;
-                        &lt;Icon name=&quot;md-share&quot; /&gt;
+                        &lt;Icon name=&quot;share&quot; /&gt;
                         &lt;Button style={{ backgroundColor: &apos;#34A34F&apos; }}&gt;
                             &lt;Icon name=&quot;logo-whatsapp&quot; /&gt;
                         &lt;/Button&gt;
@@ -2510,7 +2511,7 @@ Here is your Card Image ready !</p>
                             &lt;Icon name=&quot;logo-facebook&quot; /&gt;
                         &lt;/Button&gt;
                         &lt;Button disabled style={{ backgroundColor: &apos;#DD5144&apos; }}&gt;
-                            &lt;Icon name=&quot;ios-mail&quot; /&gt;
+                            &lt;Icon name=&quot;mail&quot; /&gt;
                         &lt;/Button&gt;
                     &lt;/Fab&gt;
                 &lt;/Content&gt;
@@ -2685,23 +2686,23 @@ Here is your Card Image ready !</p>
                 <td>-</td>
                 <td>user-defined</td>
                 <td>
-                    Represents the value in badge.
-                </td>
-            </tr>
-            <tr>
-                <td>badgeColor</td>
-                <td>-</td>
-                <td>primary</td>
-                <td>
-                    Background color for badge.
+                This is Button prop (applicable with FooterTab only). Value of badge to be displayed
                 </td>
             </tr>
             <tr>
                 <td>badgeValueStyle</td>
-                <td>-</td>
-                <td>-</td>
+                <td> white </td>
+                <td>user-defined</td>
                 <td>
-                    Style for value in badge.
+                This is Button prop (applicable with FooterTab only). Font color of badge text
+                </td>
+            </tr>
+            <tr>
+                <td>badgeColor</td>
+                <td> red </td>
+                <td> user-defined </td>
+                <td>
+                This is Button prop (applicable with FooterTab only). Background color of badge
                 </td>
             </tr>
         </tbody>
@@ -3461,6 +3462,12 @@ However, you can also render icon to the right. To display icon at the end of te
                 <td>Name of the icon for Android devices.</td>
             </tr>
             <tr>
+                <td>active</td>
+                <td> default </td>
+                <td> true fasle </td>
+                <td>Renders filled Icons. Note: By default it renders outline Icons.</td>
+            </tr>
+            <tr>
                 <td>color</td>
                 <td>black</td>
                 <td>user-defined</td>
@@ -3895,6 +3902,27 @@ To have note kind of text for list item, include <code>note</code> prop with <co
         );
     }
 }</code></pre><br></p>
+<p><strong>Configuration</strong></p>
+<p><table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">
+                    Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>bordered</td>
+                <td> - </td>
+                <td> - </td>
+                <td> adds border to the bottom and top of the separator </td>
+            </tr>
+            </tbody>
+            </table><br></p>
 <h1 id="Picker">Picker</h1>
 <p>Renders the native picker component on iOS and Android.<br>
 <em>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/picker.html" target="_blank"><code>&lt;Picker&gt;</code></a></em>
@@ -4676,7 +4704,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T09:52:23.720Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#Anatomy_Default","path":"COMPONENTS.md","ref":"COMPONENTS.md#Anatomy_Default","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"anchor":"#Quick_Setup","path":"docs/GetStarted.md","ref":"docs/GetStarted.md#Quick_Setup","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"COMPONENTS.md","mtime":"2017-04-11T05:57:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-20T07:59:53.987Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
