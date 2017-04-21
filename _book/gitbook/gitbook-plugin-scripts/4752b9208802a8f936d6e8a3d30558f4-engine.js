@@ -90,11 +90,11 @@ setInterval(function(){
   if(currentHeight> 830){
     anchor.style= "position: fixed; right: 50px;top: 178px";
   }
-  else if(currentHeight< 839){
+  else if(currentHeight< 830 && currentHeight> 725){
     anchor.style= "position: fixed; right: 50px;top: 88px";
   }
   else if(currentHeight< 725){
-    anchor.style= "position: fixed; right: 50px;top: 0px";
+    anchor.style= "position: fixed; right: 50px;top: 30px";
   }
 
   if(window.location.href.includes("COMPONENTS.html")){
@@ -166,6 +166,7 @@ function setImage(pointer){
 
 require(['gitbook', 'jQuery'], function(gitbook, $) {
     gitbook.events.bind("page.change", function(e, config) {
+      console.log(window.innerHeight,"currentHeight");
       removeHeaders();
       $('#book-search-input').hide();
       $('.navigation-prev').hide();
