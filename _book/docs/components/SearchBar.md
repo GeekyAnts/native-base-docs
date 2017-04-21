@@ -9,17 +9,17 @@ We provide you with the one, which filters the list based on your search input.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base';
+import { Container, Header, Item, Input, Icon, Button } from 'native-base';
 export default class SearchBarExample extends Component {
     render() {
         return (
             &lt;Container>
                 &lt;Header searchBar rounded>
-                    &lt;InputGroup>
+                    &lt;Item>
                         &lt;Icon name="ios-search" />
                         &lt;Input placeholder="Search" />
                         &lt;Icon name="ios-people" />
-                    &lt;/InputGroup>
+                    &lt;/Item>
                     &lt;Button transparent>
                         &lt;Text>Search&lt;/Text>
                     &lt;/Button>

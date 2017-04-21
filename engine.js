@@ -93,6 +93,9 @@ setInterval(function(){
   else if(currentHeight< 839){
     anchor.style= "position: fixed; right: 50px;top: 88px";
   }
+  else if(currentHeight< 725){
+    anchor.style= "position: fixed; right: 50px;top: 0px";
+  }
 
   if(window.location.href.includes("COMPONENTS.html")){
     if(window.location.href.includes("#Components") || window.location.href.includes("#Ref")){
