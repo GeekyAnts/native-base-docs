@@ -43,7 +43,6 @@ for(var i=0; i<head2.length; i++){
 function getPosition(string, subString, index) {
    return string.split(subString, index).join(subString).length;
 }
-console.log(window.innerHeight, "Window height");
 var andBut= document.createElement('span');
 andBut.style="height: 40px; width: 100px; background-color: grey; display: inline-block; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin: 10px 10px 10px 10px; padding-bottom: 15px;";
 andBut.id="andBut";
@@ -97,7 +96,7 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 30px";
   }
 
-  if(window.location.href.includes("COMPONENTS.html")){
+  if(window.location.href.includes("Components.html")){
     if(window.location.href.includes("#Components") || window.location.href.includes("#Ref")){
     anchorImage.style= "width: 0px; height: 0px;"
   }
@@ -126,7 +125,7 @@ setInterval(function(){
     $('.navigation-next').hide();
     $('.navigation-prev').hide();
   }
-  if(nowHref.includes("COMPONENTS.html")){
+  if(nowHref.includes("Components.html")){
     $('#goTop').hide();
     $('.navigation-next').hide();
       $('.navigation-prev').hide();
@@ -166,7 +165,6 @@ function setImage(pointer){
 
 require(['gitbook', 'jQuery'], function(gitbook, $) {
     gitbook.events.bind("page.change", function(e, config) {
-      console.log(window.innerHeight,"currentHeight");
       removeHeaders();
       $('#book-search-input').hide();
       $('.navigation-prev').hide();
@@ -190,34 +188,34 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
       }
 
 
-      if(window.location.href.includes("COMPONENTS.html")){
+      if(window.location.href.includes("Components.html")){
         if(anchorImage.src != '' && anchorImage.src != undefined){
         $('.page-wrapper').append(anchor);
         $("#anchor").show();
       }
       for(var i=0; i< chapters.length; i++){
-        if(chapters[i].href.includes("COMPONENTS.html")){
+        if(chapters[i].href.includes("Components.html")){
           chapters[i].style.display= "inherit";
         }
       }
     }
-    else if(!(window.location.href.includes("COMPONENTS.html"))){
+    else if(!(window.location.href.includes("Components.html"))){
       $("#anchor").hide();
       for(var i=0; i< chapters.length; i++){
-        if(chapters[i].href.includes("COMPONENTS.html") && !(chapters[i].href.includes('#Components'))){
+        if(chapters[i].href.includes("Components.html") && !(chapters[i].href.includes('#Components'))){
           chapters[i].style.display= "none";
         }
       }
     }
-    if(window.location.href.includes("CUSTOMIZE.html")){
+    if(window.location.href.includes("Customize.html")){
       for(var i=0; i< chapters.length; i++){
-        if(chapters[i].href.includes("CUSTOMIZE.html")){
+        if(chapters[i].href.includes("Customize.html")){
           chapters[i].style.display= "inherit";
         }}
     }
-    else if(!(window.location.href.includes("CUSTOMIZE.html"))){
+    else if(!(window.location.href.includes("Customize.html"))){
       for(var i=0; i< chapters.length; i++){
-        if(chapters[i].href.includes("CUSTOMIZE.html") && !(chapters[i].href.includes('#Customize'))){
+        if(chapters[i].href.includes("Customize.html") && !(chapters[i].href.includes('#Customize'))){
           chapters[i].style.display= "none";
         }}
     }

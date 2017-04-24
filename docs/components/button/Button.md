@@ -8,15 +8,15 @@ Buttons are the integral part of an application. They are used for various purpo
 ![Preview android Button_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
 
 **Contents:**
-* [Button Theme](COMPONENTS.md#Button_Theme)
-* [Block Button](COMPONENTS.md#Block_Button)
-* [Full Button](COMPONENTS.md#Full_Button)
-* [Rounded Button](COMPONENTS.md#Rounded_Button)
-* [Icon Button](COMPONENTS.md#Icon_Button)
-* [Outline Button](COMPONENTS.md#Outline_Button)
-* [Transparent Button](COMPONENTS.md#Transparent_Button)
-* [Button Size](COMPONENTS.md#Button_Size)
-* [Disabled Button](COMPONENTS.md#Disabled_Button)
+* [Button Theme](Components.md#Button_Theme)
+* [Block Button](Components.md#Block_Button)
+* [Full Button](Components.md#Full_Button)
+* [Rounded Button](Components.md#Rounded_Button)
+* [Icon Button](Components.md#Icon_Button)
+* [Outline Button](Components.md#Outline_Button)
+* [Transparent Button](Components.md#Transparent_Button)
+* [Button Size](Components.md#Button_Size)
+* [Disabled Button](Components.md#Disabled_Button)
 
 
 *Syntax*

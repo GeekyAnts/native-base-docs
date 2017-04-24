@@ -8,10 +8,10 @@ Card is a flexible and extensible content container. It includes options for hea
 ![Preview android Card_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicCard.png)
 
   **Contents:**
-  * [Card Header and Footer](COMPONENTS.md#Card_Header_and_Footer)
-  * [Card List](COMPONENTS.md#Card_List)
-  * [Card Image](COMPONENTS.md#Card_Image)
-  * [Card Showcase](COMPONENTS.md#Card_Showcase)
+  * [Card Header and Footer](Components.md#Card_Header_and_Footer)
+  * [Card List](Components.md#Card_List)
+  * [Card Image](Components.md#Card_Image)
+  * [Card Showcase](Components.md#Card_Showcase)
 
 *Genertal Syntax*
 

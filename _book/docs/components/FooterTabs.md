@@ -4,9 +4,9 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
 **Contents**
-* [Footer with only icons](COMPONENTS.md#Icon_Footer)
-* [Footer with icons and text](COMPONENTS.md#Icon_Footer_with_Text)
-* [Footer Badge](COMPONENTS.md#Footer_with_badge)
+* [Footer with only icons](Components.md#Icon_Footer)
+* [Footer with icons and text](Components.md#Icon_Footer_with_Text)
+* [Footer Badge](Components.md#Footer_with_badge)
 
 ![Preview ios Footer_Tabs](../docs/assets/ios/components/iconFooter.png)
 ![Preview android Footer_Tabs](../docs/assets/android/components/iconFooter.png)

@@ -7,14 +7,14 @@ A base component for specifying lists of information. List must contain one or m
 ![Preview android List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicList.png)
 
 **Contents:**
-* [List Divider](COMPONENTS.md#List_Divider)
-* [List Header](COMPONENTS.md#List_Header)
-* [List Icon](COMPONENTS.md#List_Icon)
-* [List Avatar](COMPONENTS.md#List_Avatar)
-* [List Thumbnail](COMPONENTS.md#List_Thumbnail)
-* [Dynamic List](COMPONENTS.md#Dynamic_List)
-* [List OnClick](COMPONENTS.md#List_OnClick)
-* [List Seperator](COMPONENTS.md#List_Separator)
+* [List Divider](Components.md#List_Divider)
+* [List Header](Components.md#List_Header)
+* [List Icon](Components.md#List_Icon)
+* [List Avatar](Components.md#List_Avatar)
+* [List Thumbnail](Components.md#List_Thumbnail)
+* [Dynamic List](Components.md#Dynamic_List)
+* [List OnClick](Components.md#List_OnClick)
+* [List Seperator](Components.md#List_Separator)
 
 *Syntax*
 

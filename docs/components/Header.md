@@ -11,9 +11,9 @@
   [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
   **Contents:**
-  * [Header with only title](COMPONENTS.md#Header_with_only_title)
-  * [Header with icons and text buttons](COMPONENTS.md#Header_with_Icon_and_Text_Buttons)
-  * [Header with title and Subtitle](COMPONENTS.md#Header_with_title_and_Subtitle)
+  * [Header with only title](Components.md#Header_with_only_title)
+  * [Header with icons and text buttons](Components.md#Header_with_Icon_and_Text_Buttons)
+  * [Header with title and Subtitle](Components.md#Header_with_title_and_Subtitle)
 
 ![Preview ios Header_Default](../docs/assets/ios/components/header.png)
 ![Preview android Header_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)

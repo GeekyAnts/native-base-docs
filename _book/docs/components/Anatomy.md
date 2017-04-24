@@ -1,4 +1,4 @@
-## Anatomy_Default
+## Anatomy Default
 
 Automatically animates views to their new positions.<br />
 A common way to use [NativeBase](https://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
@@ -7,9 +7,9 @@ A common way to use [NativeBase](https://nativebase.io/) screen structure is to 
 ![Preview android Anatomy_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/anatomy.png)
 
 **Contents:**
-* [Header](COMPONENTS.md#Header_Anatomy)
-* [Content](COMPONENTS.md#Content_Anatomy)
-* [Footer](COMPONENTS.md#Footer_Anatomy)
+* [Header](Components.md#Header_Anatomy)
+* [Content](Components.md#Content_Anatomy)
+* [Footer](Components.md#Footer_Anatomy)
 
 
 *General Syntax*
@@ -94,7 +94,7 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
         </tbody>
     </table><br />
 
-##Header_Anatomy
+##Header Anatomy
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'native-base';
@@ -118,7 +118,7 @@ import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'nativ
     }
 }</code></pre><br />
 
-##Content_Anatomy
+##Content Anatomy
 
 * This is a NativeBase component which renders as body element of your screen.
 * Each screen can have only one <code>Content</code> component and can be defined anywhere within the Container.
@@ -168,7 +168,7 @@ export default class ContentExample extends Component {
         </table>
 
 
-##Footer_Anatomy
+##Footer Anatomy
 
 * NativeBase component that renders as footer that includes your favourite apps for your screen.
 * There can be only a single Footer component into your Container.
