@@ -27,7 +27,7 @@ NativeBase is packed with three preset themes. <br />
 * <code>Common Colors:</code> Most of the brands use a common color scheme for both the platforms but they also follow platform specific icons, font and orientation of the components. Common Colors theme is best suited for such use-cases. <br />
 
 *Syntax to add Material Design*
-<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text} from 'native-base';
+<pre class="line-numbers"><code class="language-jsx">import {Container, Content, Text, StyleProvider} from 'native-base';
 import React, {Component} from 'react-native';
 import getTheme from './native-base-theme/components';
 import material from './native-base-theme/variables/material';
