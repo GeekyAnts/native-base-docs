@@ -71,7 +71,7 @@ andBut.onclick= function(){
   andBut.style="height: 40px; width: 100px; background-color: #00b386; display: inline-block; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin: 10px 10px 10px 10px; padding-bottom: 15px;";
 };
 anchor.id= "anchor";
-  anchor.style= "position: fixed; right: 50px;top: 78px";
+  anchor.style= "position: fixed; right: 50px;top: 78px;";
 anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
 anchorContainer.id= "anchorContainer";
 anchorImage.id= "anchorImage";

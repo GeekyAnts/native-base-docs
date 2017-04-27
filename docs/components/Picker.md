@@ -33,6 +33,7 @@ export default class PickerExample extends Component {
             &lt;Container>
                 &lt;Content>
                     &lt;Picker
+                        supportedOrientations={['potrait','landscape']}
                         iosHeader="Select one"
                         mode="dropdown"
                         selectedValue={this.state.selected1}
@@ -85,6 +86,12 @@ export default class PickerExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>Text style of item component</td>
+            </tr>
+            <tr>
+                <td>supportedOrientations</td>
+                <td> - </td>
+                <td> Potrait, Landscape, Landscape-left, Landscape-right </td>
+                <td>Allows the modal to be rotated to any of the specified orientations</td>
             </tr>
             </tbody>
             </table><br />
