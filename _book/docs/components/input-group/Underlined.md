@@ -1,9 +1,10 @@
+##underlined-textbox-headref
 #### Underlined Textbox
 
 To use the underlined textbox, include the <code>borderType</code> property and assign it with value as **underline**.
 
-![Preview ios Underlined_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/underlineInput.png)
-![Preview android Underlined_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/underlineInput.png)
+![Preview ios underlined-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/underlineInput.png)
+![Preview android underlined-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/underlineInput.png)
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

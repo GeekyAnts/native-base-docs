@@ -1,11 +1,12 @@
+##icon-textbox-headref
 #### Icon Textbox
 
 Icons can be easily added to the NativeBase Textbox. To do so, include an icon within the <code>&lt;InputGroup></code>. <br />
 By default the icon will be aligned to the left in the textbox.<br />
 However, you can also render icon to the right. To display icon at the end of textbox, include <code>iconRight</code> prop with the <code>&lt;InputGroup></code>.
 
-![Preview ios Icon_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconInput.png)
-![Preview android Icon_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconInput.png)
+![Preview ios icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconInput.png)
+![Preview android icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconInput.png)
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

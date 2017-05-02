@@ -1,9 +1,10 @@
+##floating-label-headref
 #### Floating Label
 
 The inlineLabel property creates a Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.
 
-![Preview ios Floating_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/floatingInput.gif)
-![Preview android Floating_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/floating-label.gif)
+![Preview ios floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/floatingInput.gif)
+![Preview android floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/floating-label.gif)
 
 *Syntax*
 

@@ -1,9 +1,10 @@
+##stacked-label-headref
 #### Stacked Label
 
 The inlineLabel property creates a Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.
 
-![Preview ios Stacked_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/stackedInput.png)
-![Preview android Stacked_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/stackedInput.png)
+![Preview ios stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/stackedInput.png)
+![Preview android stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/stackedInput.png)
 
 *Syntax*
 

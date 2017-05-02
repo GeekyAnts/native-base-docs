@@ -1,10 +1,11 @@
+## button-block-headref
 #### Block Button
 
 A block level button spans the entire width of the parent element.
 Create block level buttons by adding <code>block</code> prop with the <code>Button</code><br />
 
-![Preview ios Block_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/blockButtons.png)
-![Preview android Block_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/blockButtons.png)
+![Preview ios button-block-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/blockButtons.png)
+![Preview android button-block-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/blockButtons.png)
 
 *Syntax*
 

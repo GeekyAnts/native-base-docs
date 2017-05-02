@@ -1,11 +1,12 @@
+##card-headfoot-headref
 #### Card Header and Footer
 
 To add an optional header and/or footer within a card, include <code>header</code> prop with the <code>CardItem</code>.<br />
 * **Card Header**: Include <code>header</code> prop with first instance of CardItem within Card.
 * **Card Footer**: Include <code>header</code> prop with last instance of CardItem within Card.
 
-![Preview ios Card_Header_and_Footer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/cardHeader.png)
-![Preview android Card_Header_and_Footer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardHeader.png)
+![Preview ios card-headfoot-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/cardHeader.png)
+![Preview android card-headfoot-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardHeader.png)
 
 *Syntax*
 

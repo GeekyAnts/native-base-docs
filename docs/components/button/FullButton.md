@@ -1,10 +1,11 @@
+##button-full-headref
 #### Full Button
 
 Adding full to a button will make the button take 100% of its parent’s width. However, it will also remove the button’s left and right borders. This style is useful when the button should stretch across the entire width of the display.
 
 
-![Preview ios Full_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/fullButtons.png)
-![Preview android Full_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/fullButtons.png)
+![Preview ios button-full-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/fullButtons.png)
+![Preview android button-full-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/fullButtons.png)
 
 *Syntax*
 

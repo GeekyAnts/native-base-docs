@@ -1,3 +1,4 @@
+##button-size-headref
 #### Button Size
 
 Want to have buttons of fancy size?<br />
@@ -5,8 +6,8 @@ Include the following props with your <code>Button</code>.
 * <code>small</code>: for small size button.
 * <code>large</code>: for large size button.<br />
 
-![Preview ios Button_Size](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/sizeButtons.png)
-![Preview android Button_Size](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/sizeButtons.png)
+![Preview ios button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/sizeButtons.png)
+![Preview android button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/sizeButtons.png)
 
 *Syntax*
 

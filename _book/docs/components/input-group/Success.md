@@ -1,9 +1,10 @@
+##success-textbox-headref
 #### Success Input Textbox
 
 To display textbox with valid data, include the <code>success</code> prop with <code>&lt;InputGroup></code>.
 
-![Preview ios Success_Input_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/successInput.png)
-![Preview android Success_Input_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/successInput.png)
+![Preview ios success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/successInput.png)
+![Preview android success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/successInput.png)
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

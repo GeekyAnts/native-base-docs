@@ -6,7 +6,7 @@
 
 <b>Solution:</b>
 
-Please verify the system requirements mentioned in [installation](/docs/GetStarted.md#Quick_Setup) procedure.
+Please verify the system requirements mentioned in [installation](/docs/GetStarted.md) procedure.
 
 <br />
 <hr>

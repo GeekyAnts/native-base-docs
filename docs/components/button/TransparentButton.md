@@ -1,9 +1,10 @@
+##button-transparent-headref
 #### Transparent Button
 
 Include <code>transparent</code> prop with Button. This will render button without border and background color.<br />
 
-![Preview ios Transparent_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/transparentButtons.png)
-![Preview android Transparent_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/transparentButtons.png)
+![Preview ios button-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/transparentButtons.png)
+![Preview android button-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/transparentButtons.png)
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

@@ -1,11 +1,12 @@
+##deckswiper-headref
 # Deck Swiper
 
 Looking at data one piece at a time is more efficient when you consider people you might want to date, restaurants, streaming music, or local events you might want to check out. <br />
 [NativeBase](https://nativebase.io/) Deck Swiper helps you evaluate one option at a time, instead of selecting from a set of options.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-![Preview ios Deck_Swiper](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper.gif)
-![Preview android Deck_Swiper](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deck-swiper.gif)
+![Preview ios deckswiper-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper.gif)
+![Preview android deckswiper-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deck-swiper.gif)
 
 *Syntax*
 

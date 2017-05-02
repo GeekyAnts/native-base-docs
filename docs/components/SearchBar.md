@@ -1,10 +1,11 @@
+##search-bar-headref
 # Search Bar
 
 It’s kind of common on the Internet where – if we fail to get what we are looking for on a website, we resort to searching. Search box has always been an essential part of any application.
 We provide you with the one, which filters the list based on your search input.
 
-![Preview ios Search_Bar](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/searchbar.png)
-![Preview android Search_Bar](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/searchbar.png)
+![Preview ios search-bar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/searchbar.png)
+![Preview android search-bar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/searchbar.png)
 
 *Syntax*
 

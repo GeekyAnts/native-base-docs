@@ -1,16 +1,11 @@
-## Anatomy Default
+## anatomy-headref
+## Anatomy
 
 Automatically animates views to their new positions.<br />
 A common way to use [NativeBase](https://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
 
-![Preview ios Anatomy_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/anatomy.png)
-![Preview android Anatomy_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/anatomy.png)
-
-**Contents:**
-* [Header](Components.md#Header_Anatomy)
-* [Content](Components.md#Content_Anatomy)
-* [Footer](Components.md#Footer_Anatomy)
-
+![Preview ios anatomy-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/anatomy.png)
+![Preview android anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/anatomy.png)
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
@@ -117,6 +112,7 @@ import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'nativ
         );
     }
 }</code></pre><br />
+
 
 ##Content Anatomy
 

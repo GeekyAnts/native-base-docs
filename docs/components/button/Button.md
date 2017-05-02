@@ -1,22 +1,23 @@
-## Button Default
+## button-headref
+## Button
 
 Button is a pure [NativeBase](https://nativebase.io/) component.<br />
 Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.<br />
 
 
-![Preview ios Button_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
-![Preview android Button_Default](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
+![Preview ios button-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
+![Preview android button-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
 
 **Contents:**
-* [Button Theme](Components.md#Button_Theme)
-* [Block Button](Components.md#Block_Button)
-* [Full Button](Components.md#Full_Button)
-* [Rounded Button](Components.md#Rounded_Button)
-* [Icon Button](Components.md#Icon_Button)
-* [Outline Button](Components.md#Outline_Button)
-* [Transparent Button](Components.md#Transparent_Button)
-* [Button Size](Components.md#Button_Size)
-* [Disabled Button](Components.md#Disabled_Button)
+* [Button Theme](Components.md#button-theme-headref)
+* [Block Button](Components.md#button-block-headref)
+* [Full Button](Components.md#button-full-headref)
+* [Rounded Button](Components.md#button-rounded-headref)
+* [Icon Button](Components.md#button-icon-headref)
+* [Outline Button](Components.md#button-outline-headref)
+* [Transparent Button](Components.md#button-transparent-headref)
+* [Button Size](Components.md#button-size-headref)
+* [Disabled Button](Components.md#button-disabled-headref)
 
 
 *Syntax*

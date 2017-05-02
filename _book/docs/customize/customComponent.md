@@ -1,3 +1,4 @@
+##custom-component-headref
 # Theme Your Custom Component
 
 To add support for themes to your component you only need to make two minor changes to it.

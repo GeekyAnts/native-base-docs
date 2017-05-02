@@ -1,11 +1,12 @@
+##card-image-headref
 #### Card Image
 
 Want to have something more with Card Lists? <br />
 Include image with <code>CardItem</code> within <code>Card</code> along with some text before and after image to create a card with lists. <br />
 Here is your Card Image ready !
 
-![Preview ios Card_Image](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/cardImage.png)
-![Preview android Card_Image](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardImage.png)
+![Preview ios card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/cardImage.png)
+![Preview android card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardImage.png)
 
 
 *Syntax*

@@ -31,6 +31,10 @@ for(var i=0; i<head3.length; i++){
 
 for(var i=0; i<head2.length; i++){
   var title= head2[i].innerHTML;
+  if(title.includes("-headref")){
+    // console.log(head2[i],"header");
+  head2[i].style= "font-size: 0%";
+  }
   var dotpos= 0;
   if(title.includes(".")){
      dotpos= getPosition(title,".",1);
@@ -97,7 +101,7 @@ setInterval(function(){
   }
 
   if(window.location.href.includes("Components.html")){
-    if(window.location.href.includes("#Components") || window.location.href.includes("#Ref")){
+    if(window.location.href.includes("#Components") || window.location.href.includes("#ref-components")){
     anchorImage.style= "width: 0px; height: 0px;"
   }
     if(window.innerWidth < 1650)
@@ -115,7 +119,7 @@ setInterval(function(){
     anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
   }
   var nowHref= window.location.href;
-  if(nowHref.includes("CUSTOMIZE.html")){
+  if(nowHref.includes("Customize.html")){
     $('#goTop').hide();
     $('.navigation-next').hide();
     $('.navigation-prev').hide();

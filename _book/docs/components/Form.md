@@ -5,17 +5,17 @@ Input is a NativeBase component built on top of React Native's <TextInput>. Item
 A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 Note: Form in native base is just a wrapper around the inputs and hence has no onSubmit function.<br />
 **Contents:**
-* [Fixed Label](Components.md#Fixed_Label)
-* [Inline Label](Components.md#Inline_Label)
-* [Floating Label](Components.md#Floating_Label)
-* [Stacked Label](Components.md#Stacked_Label)
-* [Regular Textbox](Components.md#Regular_Textbox)
-* [Underlined Textbox](Components.md#Underlined_Textbox)
-* [Rounded Textbox](Components.md#Rounded_Textbox)
-* [Icon Textbox](Components.md#Icon_Textbox)
-* [Success Input Textbox](Components.md#Success_Input_Textbox)
-* [Error Input Textbox](Components.md#Error_Input_Textbox)
-* [Disabled Textbox](Components.md#Disabled_Textbox)
+* [Fixed Label](Components.md#fixed-label-headref)
+* [Inline Label](Components.md#inline-label-headref)
+* [Floating Label](Components.md#floating-label-headref)
+* [Stacked Label](Components.md#stacked-label-headref)
+* [Regular Textbox](Components.md#regular-textbox-headref)
+* [Underlined Textbox](Components.md#underlined-textbox-headref)
+* [Rounded Textbox](Components.md#rounded-textbox-headref)
+* [Icon Textbox](Components.md#icon-textbox-headref)
+* [Success Input Textbox](Components.md#success-textbox-headref)
+* [Error Input Textbox](Components.md#error-textbox-headref)
+* [Disabled Textbox](Components.md#disabled-textbox-headref)
 
 ![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/placeholderInput.png)
 ![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/placeholderInput.png)

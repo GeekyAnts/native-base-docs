@@ -1,20 +1,20 @@
-# List Default
+##list-def-headref
+# List
 
 This component is completely built by [NativeBase](https://nativebase.io/).<br />
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
-![Preview ios List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/listBasic.png)
-![Preview android List_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicList.png)
+![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/listBasic.png)
+![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicList.png)
 
 **Contents:**
-* [List Divider](Components.md#List_Divider)
-* [List Header](Components.md#List_Header)
-* [List Icon](Components.md#List_Icon)
-* [List Avatar](Components.md#List_Avatar)
-* [List Thumbnail](Components.md#List_Thumbnail)
-* [Dynamic List](Components.md#Dynamic_List)
-* [List OnClick](Components.md#List_OnClick)
-* [List Seperator](Components.md#List_Separator)
+* [List Divider](Components.md#list-divider-headref)
+* [List Header](Components.md#list-header-headref)
+* [List Icon](Components.md#list-icon-headref)
+* [List Avatar](Components.md#list-avatar-headref)
+* [List Thumbnail](Components.md#list-thumbnail-headref)
+* [Dynamic List](Components.md#dynamic-list-headref)
+* [List Separator](Components.md#list-seperator-headref)
 
 *Syntax*
 

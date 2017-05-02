@@ -1,15 +1,16 @@
+##footer-tabs-headref
 # Footer Tabs
 
 Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
 **Contents**
-* [Footer with only icons](Components.md#Icon_Footer)
-* [Footer with icons and text](Components.md#Icon_Footer_with_Text)
-* [Footer Badge](Components.md#Footer_with_badge)
+* [Footer with only icons](Components.md#footer-icon-headref)
+* [Footer with icons and text](Components.md#footer-text-headref)
+* [Footer Badge](Components.md#footer-text-headref)
 
-![Preview ios Footer_Tabs](../docs/assets/ios/components/iconFooter.png)
-![Preview android Footer_Tabs](../docs/assets/android/components/iconFooter.png)
+![Preview ios footer-tabs-headref](../docs/assets/ios/components/iconFooter.png)
+![Preview android footer-tabs-headref](../docs/assets/android/components/iconFooter.png)
 
 *Syntax*
 
@@ -82,6 +83,7 @@ export default class FooterTabsExample extends Component {
         </tbody>
     </table><br />
 
+##footer-icon-headref
 ## Icon Footer
 
 *Syntax*
@@ -114,6 +116,7 @@ export default class FooterTabsExample extends Component {
       }
   }</code></pre><br />
 
+##footer-text-headref
 ## Icon Footer with Text
 
 *Syntax*
@@ -150,6 +153,7 @@ export default class FooterTabsExample extends Component {
       }
   }</code></pre><br />
 
+##footer-badge-headref
 ## Footer with badge
 
 *Syntax*

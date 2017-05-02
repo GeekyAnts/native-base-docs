@@ -1,9 +1,10 @@
+##button-outline-headref
 #### Outline Button
 
 Include <code>bordered</code> prop with Button to apply outline button style.<br />
 
-![Preview ios Outline_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/outlineButtons.png)
-![Preview android Outline_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/outlineButtons.png)
+![Preview ios button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/outlineButtons.png)
+![Preview android button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/outlineButtons.png)
 
 *Syntax*
 

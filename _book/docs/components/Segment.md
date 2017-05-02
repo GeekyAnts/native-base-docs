@@ -39,7 +39,7 @@ import { Container, Content, Segment, Left, Right, Segment, Button, Icon } from 
 }</code></pre><br />
 
 Segment takes Button as children. The active Button shoud be given an active prop (implementation is totally up to you).
-Also the first and last buttons should be given props first and last respectively.
+Also the **first** and **last** buttons should be given props **first** and **last** respectively.
 Pro tip: It is advisable to use hasSegment prop with Header if you're using Segment below the header.
 
 *Syntax(outside header)*

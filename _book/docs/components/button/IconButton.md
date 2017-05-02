@@ -1,10 +1,11 @@
+##button-icon-headref
 #### Icon Button
 
 The Icon Buttons, can take text and/or icon as child elements inside the Button.<br />
 This goes as simple as this: include your choice of icon using <code>Icon</code> component within the <code>Button</code> component.<br />
 
-![Preview ios Icon_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconButtons.png)
-![Preview android Icon_Button](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconButtons.png)
+![Preview ios button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconButtons.png)
+![Preview android button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconButtons.png)
 
 *Syntax*
 

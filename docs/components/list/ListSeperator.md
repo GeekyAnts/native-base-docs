@@ -1,9 +1,10 @@
+##list-seperator-headref
 #### List Separator
 
 Seperator component is a separator usually used in list, which can be used for grouping list items. To create a seperator between list of items. Though it is used with List, You can use it anywhere in your app.
 
-![Preview ios List_Separator](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/separatorList.png)
-![Preview android List_Separator](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/separatorList.png)
+![Preview ios list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/separatorList.png)
+![Preview android list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/separatorList.png)
 
 *Syntax*
 

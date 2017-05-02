@@ -1,10 +1,11 @@
+##card-list-headref
 #### Card List
 
 Include <code>CardItem</code> subsequently within <code>Card</code> to create a card with lists.
 
 
-![Preview ios Card_List](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/CardList.png)
-![Preview android Card_List](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardList.png)
+![Preview ios card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/CardList.png)
+![Preview android card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardList.png)
 
 *Syntax*
 

@@ -1,9 +1,10 @@
+##disabled-textbox-headref
 #### Disabled Textbox
 
 To restrict inputting data into textbox, include the <code>disabled</code> prop with <code>&lt;InputGroup></code>.
 
-![Preview ios Disabled_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/disabledInput.png)
-![Preview android Disabled_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/disabledInput.png)
+![Preview ios disabled-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/disabledInput.png)
+![Preview android disabled-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/disabledInput.png)
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

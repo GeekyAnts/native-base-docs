@@ -1,17 +1,18 @@
-# Card Default
+##card-def-headref
+# Card
 
 Card is a pure [NativeBase](https://nativebase.io/) component.<br />
 Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
 [NativeBase](https://nativebase.io/) Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-![Preview ios Card_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/basicCard.png)
-![Preview android Card_Default](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicCard.png)
+![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/basicCard.png)
+![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicCard.png)
 
   **Contents:**
-  * [Card Header and Footer](Components.md#Card_Header_and_Footer)
-  * [Card List](Components.md#Card_List)
-  * [Card Image](Components.md#Card_Image)
-  * [Card Showcase](Components.md#Card_Showcase)
+* [Card Header and Footer](Components.md#card-headfoot-headref)
+* [Card List](Components.md#card-list-headref)
+* [Card Image](Components.md#card-image-headref)
+* [Card Showcase](Components.md#card-showcase-headref)
 
 *Genertal Syntax*
 
@@ -82,6 +83,14 @@ export default class CardExample extends Component {
                 <td> - </td>
                 <td>
                     Displays text as header for cards
+                </td>
+            </tr>
+            <tr>
+                <td>transparent</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Removes card shadow from iOS and elevation from android
                 </td>
             </tr>
             <tr>

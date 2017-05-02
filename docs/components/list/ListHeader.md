@@ -1,9 +1,10 @@
+##list-header-headref
 #### List Header
 
 The List Header component creates a list header, which can be used for grouping list items. To create a header for any child element of the list, include itemHeader prop with ListItem component. The List Header of NativeBase comes with default style which is easily customisable.
 
-![Preview ios List_Header](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/headerList.png)
-![Preview android List_Header](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/listHeader.png)
+![Preview ios list-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/headerList.png)
+![Preview android list-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/listHeader.png)
 
 *Syntax*
 

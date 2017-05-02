@@ -1,10 +1,11 @@
+##checkbox-headref
 # Check Box
 
 Check Box allows the user to select a number of items from a set of choices.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](https://facebook.github.io/react-native/docs/touchableopacity.html)*
 
-![Preview ios Check_Box](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/checkbox.png)
-![Preview android Check_Box](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/checkbox.png)
+![Preview ios checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/checkbox.png)
+![Preview android checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/checkbox.png)
 
 *Syntax*
 

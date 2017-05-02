@@ -1,9 +1,10 @@
+##regular-textbox-headref
 #### Regular Textbox
 
 To use the regular textbox which is rectangular in shape, include the <code>borderType</code> property and assign it with value as **regular**.
 
-![Preview ios Regular_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/regularInput.png)
-![Preview android Regular_Textbox](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/regular.png)
+![Preview ios regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/regularInput.png)
+![Preview android regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/regular.png)
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

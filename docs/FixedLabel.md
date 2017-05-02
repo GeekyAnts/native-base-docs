@@ -1,9 +1,10 @@
+## fixed-label-headref
 #### Fixed Label
 
 The fixedLabel property creates a Input component, whose Label is fixed at the left of the Input, which does not hide when text is entered. The input aligns on the same position, regardless of the length of the label. It can be used with placeholder as well.
 
-![Preview ios Fixed_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/fixedInput.png)
-![Preview android Fixed_Label](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/fixedInput.png)
+![Preview ios fixed-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/fixedInput.png)
+![Preview android fixed-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/fixedInput.png)
 
 *Syntax*
 

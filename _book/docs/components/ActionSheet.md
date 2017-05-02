@@ -54,4 +54,4 @@ export default class ActionSheet extends Component {
   }
 }</code></pre><br />
 
-Note: The use caseis similar to RN's ActionSheetIOS.
+Note: The use cases similar to RN's ActionSheetIOS.

@@ -1,3 +1,4 @@
+## theme-color-headref
 ## Theme Color
 
 To change the basic theme context of NativeBase, make necessary changes with the following variables:

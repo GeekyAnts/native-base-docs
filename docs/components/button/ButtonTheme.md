@@ -1,3 +1,4 @@
+## button-theme-headref
 #### Button Theme
 
 [NativeBase](https://nativebase.io/) provides buttons with wide range of colors, size and variuos other props.<br />
@@ -9,8 +10,8 @@ NativeBase provides following color themes:
   * Danger
   * Dark<br />
 
-![Preview ios Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
-![Preview android Button_Theme](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
+![Preview ios button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
+![Preview android button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
 
 *Syntax*
 
