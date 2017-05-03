@@ -46,3 +46,60 @@
 
   * [NativeBase](https://nativebase.io/) spectrum of colors are compatible with Badge.
   * Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html) <br />
+
+  **Configuration**
+
+  <table class = "table table-bordered">
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Default</th>
+          <th>Option</th>
+          <th width="50%">
+              Description
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>primary</td>
+      <td> - </td>
+      <td> true,false </td>
+      <td>
+          Add a blue background color to your component
+      </td>
+  </tr>
+  <tr>
+      <td>success</td>
+      <td> - </td>
+      <td> true,false </td>
+      <td>
+          Add a green background color to your component
+      </td>
+  </tr>
+  <tr>
+      <td>info</td>
+      <td> - </td>
+      <td> true,false </td>
+      <td>
+          Add a light blue background color to your component as shown
+      </td>
+  </tr>
+  <tr>
+      <td>warning</td>
+      <td> - </td>
+      <td> true,false </td>
+      <td>
+          Add a yellow warning background color to your component
+      </td>
+  </tr>
+  <tr>
+      <td>danger</td>
+      <td> - </td>
+      <td> true,false </td>
+      <td>
+          Add a red background color to your component
+      </td>
+  </tr>
+  </tbody>
+  </table>

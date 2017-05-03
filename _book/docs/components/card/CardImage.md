@@ -33,11 +33,7 @@ export default class CardImageExample extends Component {
                           &lt;CardItem cardBody>
                               &lt;Image/>
                           &lt;/CardItem>
-                          &lt;CardItem content>
-                              &lt;Text>Wait a minute. Wait a minute, Doc. Uhhh...
-                              Are you telling me that you built a time machine... out of a DeLorean?!
-                              Whoa. This is heavy.&lt;/Text>
-                          &lt;/CardItem>
+                          &lt;CardItem>
                               &lt;Button transparent>
                                   &lt;Icon active name="thumbs-up" />
                                   &lt;Text>12 Likes&lt;/Text>

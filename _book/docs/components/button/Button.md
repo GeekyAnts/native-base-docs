@@ -1,12 +1,12 @@
-## button-headref
+## button-def-headref
 ## Button
 
 Button is a pure [NativeBase](https://nativebase.io/) component.<br />
 Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.<br />
 
 
-![Preview ios button-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
-![Preview android button-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
+![Preview ios button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/buttons.png)
+![Preview android button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/buttons.png)
 
 **Contents:**
 * [Button Theme](Components.md#button-theme-headref)
@@ -163,6 +163,62 @@ export default class ButtonExample extends Component {
                 <td> - </td>
                 <td>
                     Left Padding for the icon.
+                </td>
+            </tr>
+            <tr>
+                <td>primary</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a blue background color to your component
+                </td>
+            </tr>
+            <tr>
+                <td>success</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a green background color to your component
+                </td>
+            </tr>
+            <tr>
+                <td>light</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a light white background color to your component.
+                </td>
+            </tr>
+            <tr>
+                <td>info</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a light blue background color to your component as shown
+                </td>
+            </tr>
+            <tr>
+                <td>warning</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a yellow warning background color to your component
+                </td>
+            </tr>
+            <tr>
+                <td>danger</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a red background color to your component
+                </td>
+            </tr>
+            <tr>
+                <td>dark</td>
+                <td> - </td>
+                <td> true,false </td>
+                <td>
+                    Add a black background color to your component
                 </td>
             </tr>
         </tbody>

@@ -33,7 +33,7 @@ export default class PickerExample extends Component {
             &lt;Container>
                 &lt;Content>
                     &lt;Picker
-                        supportedOrientations={['potrait','landscape']}
+                        supportedOrientations={['portrait','landscape']}
                         iosHeader="Select one"
                         mode="dropdown"
                         selectedValue={this.state.selected1}

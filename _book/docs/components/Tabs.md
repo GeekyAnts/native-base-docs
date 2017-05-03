@@ -75,6 +75,9 @@ import Tab2 from './tabTwo';
             </tr>
         </tbody>
     </table><br />
+<br />
+**Known Issues :** Custom tabHeading is not yet supported for <code>ScrollableTab</code> heading only accepts a string. <br />
+**Pro-Tip :** It is advisable to use hasTabs prop with Header while using Tabs. <br />
 
 ##advanced-tabs-headref
 # Advanced Tabs

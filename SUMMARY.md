@@ -6,7 +6,7 @@
     * [Anatomy](Components.md#anatomy-headref)
     * [ActionSheet](Components.md#ActionSheet)
     * [Badge](Components.md#Badge)
-    * [Button](Components.md#button-headref)
+    * [Button](Components.md#button-def-headref)
         * [Button Theme](Components.md#button-theme-headref)
         * [Block Button](Components.md#button-block-headref)
         * [Full Button](Components.md#button-full-headref)
