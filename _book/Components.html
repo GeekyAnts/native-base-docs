@@ -469,6 +469,51 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.10.1" data-path="Components.html">
+            
+                <a href="Components.html#footer-icon-headref">
+            
+                    
+                    Footer with only icons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.2" data-path="Components.html">
+            
+                <a href="Components.html#footer-text-headref">
+            
+                    
+                    Footer with icons and text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.3" data-path="Components.html">
+            
+                <a href="Components.html#footer-badge-headref">
+            
+                    
+                    Footer Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.4.11" data-path="Components.html">
@@ -2769,10 +2814,10 @@ Here is your Card Image ready !</p>
 <ul>
 <li><a href="Components.html#footer-icon-headref">Footer with only icons</a></li>
 <li><a href="Components.html#footer-text-headref">Footer with icons and text</a></li>
-<li><a href="Components.html#footer-text-headref">Footer Badge</a></li>
+<li><a href="Components.html#footer-badge-headref">Footer Badge</a></li>
 </ul>
-<p><img src="../docs/assets/ios/components/iconFooter.png" alt="Preview ios footer-tabs-headref">
-<img src="../docs/assets/android/components/iconFooter.png" alt="Preview android footer-tabs-headref"></p>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/textBtnFooter.png" alt="Preview ios footer-tabs-headref">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/textFooter.png" alt="Preview android footer-tabs-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -2829,10 +2874,20 @@ Here is your Card Image ready !</p>
                 This is Button prop (applicable with FooterTab only). Set to true if using Badges.
                 </td>
             </tr>
+            <tr>
+                <td>vertical</td>
+                <td> - </td>
+                <td>true, false</td>
+                <td>
+                This is Button prop (applicable with FooterTab only). Use this prop to vertically align footer elements like icons and text. Necessary when using Badge in Footer Tabs.
+                </td>
+            </tr>
         </tbody>
     </table><br></p>
 <h2 id="footer-icon-headref">29. footer-icon-headref</h2>
 <h2 id="Icon_Footer">30. Icon Footer</h2>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconBtnFooter.png" alt="Preview ios footer-icon-headref">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconFooter.png" alt="Preview android footer-icon-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
   <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -2863,6 +2918,8 @@ Here is your Card Image ready !</p>
   }</code></pre><br></p>
 <h2 id="footer-text-headref">31. footer-text-headref</h2>
 <h2 id="Icon_Footer_with_Text">32. Icon Footer with Text</h2>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconTextBtnsFooter.png" alt="Preview ios footer-text-headref">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextFooter.png" alt="Preview android footer-text-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
   <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -2873,19 +2930,19 @@ Here is your Card Image ready !</p>
                   &lt;Content /&gt;
                   &lt;Footer &gt;
                       &lt;FooterTab&gt;
-                          &lt;Button&gt;
+                          &lt;Button vertical&gt;
                               &lt;Icon name=&quot;apps&quot; /&gt;
                               &lt;Text&gt;Apps&lt;/Text&gt;
                           &lt;/Button&gt;
-                          &lt;Button&gt;
+                          &lt;Button vertical&gt;
                               &lt;Icon name=&quot;camera&quot; /&gt;
                               &lt;Text&gt;Camera&lt;/Text&gt;
                           &lt;/Button&gt;
-                          &lt;Button active&gt;
+                          &lt;Button active vertical&gt;
                               &lt;Icon active name=&quot;navigate&quot; /&gt;
                               &lt;Text&gt;Navigate&lt;/Text&gt;
                           &lt;/Button&gt;
-                          &lt;Button&gt;
+                          &lt;Button vertical&gt;
                               &lt;Icon name=&quot;person&quot; /&gt;
                               &lt;Text&gt;Contact&lt;/Text&gt;
                           &lt;/Button&gt;
@@ -2897,6 +2954,8 @@ Here is your Card Image ready !</p>
   }</code></pre><br></p>
 <h2 id="footer-badge-headref">33. footer-badge-headref</h2>
 <h2 id="Footer_with_badge">34. Footer with badge</h2>
+<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/badgeFooter.png" alt="Preview ios footer-badge-headref">
+<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/badgeFooter.png" alt="Preview android footer-badge-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
   <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
@@ -2907,7 +2966,7 @@ Here is your Card Image ready !</p>
                   &lt;Content /&gt;
                   &lt;Footer &gt;
                       &lt;FooterTab&gt;
-                          &lt;Button badge&gt;
+                          &lt;Button badge vertical&gt;
                               &lt;Badge&gt;&lt;Text&gt;2&lt;/Text&gt;&lt;/Badge&gt;
                               &lt;Icon name=&quot;apps&quot; /&gt;
                               &lt;Text&gt;Apps&lt;/Text&gt;
@@ -2916,7 +2975,7 @@ Here is your Card Image ready !</p>
                               &lt;Icon name=&quot;camera&quot; /&gt;
                               &lt;Text&gt;Camera&lt;/Text&gt;
                           &lt;/Button&gt;
-                          &lt;Button active badge&gt;
+                          &lt;Button active badge vertical&gt;
                               &lt;Badge &gt;&lt;Text&gt;51&lt;/Text&gt;&lt;/Badge&gt;
                               &lt;Icon active name=&quot;navigate&quot; /&gt;
                               &lt;Text&gt;Navigate&lt;/Text&gt;
@@ -3528,8 +3587,8 @@ However, you can also render icon to the right. To display icon at the end of te
     </table><br></p>
 <h4 id="Header_with_only_title">46.0.1. Header with only title</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox,Header } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderTitle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
@@ -3546,8 +3605,8 @@ However, you can also render icon to the right. To display icon at the end of te
 }</code></pre><br></p>
 <h4 id="Header_with_Icon_and_Text_Buttons">46.0.2. Header with Icon and Text Buttons</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox,Header } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderIconText</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
@@ -3570,8 +3629,8 @@ However, you can also render icon to the right. To display icon at the end of te
 }</span></code></pre><br></p>
 <h4 id="Header_with_title_and_Subtitle">46.0.3. Header with title and Subtitle</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, CheckBox, Header } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderTitle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
             &lt;Container&gt;
@@ -4920,7 +4979,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-04T06:44:57.088Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-04T10:00:17.971Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -148,8 +148,8 @@ export default class CheckBoxExample extends Component {
 
 #### Header with only title
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, CheckBox } from 'native-base';
-export default class CheckBoxExample extends Component {
+import { Container, Content, ListItem, Text, CheckBox,Header } from 'native-base';
+export default class HeaderTitle extends Component {
     render() {
         return (
             &lt;Container>
@@ -168,8 +168,8 @@ export default class CheckBoxExample extends Component {
 
 #### Header with Icon and Text Buttons
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, CheckBox } from 'native-base';
-export default class CheckBoxExample extends Component {
+import { Container, Content, ListItem, Text, CheckBox,Header } from 'native-base';
+export default class HeaderIconText extends Component {
     render() {
         return (
             &lt;Container>
@@ -194,8 +194,8 @@ export default class CheckBoxExample extends Component {
 
 #### Header with title and Subtitle
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, CheckBox } from 'native-base';
-export default class CheckBoxExample extends Component {
+import { Container, Content, ListItem, Text, CheckBox, Header } from 'native-base';
+export default class HeaderTitle extends Component {
     render() {
         return (
             &lt;Container>
