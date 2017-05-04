@@ -3,7 +3,7 @@ This is a simple 2-page application that demonstrates the basic usage of [React 
 <br />
 ** Find full code [here](https://github.com/GeekyAnts/native-base-example-rnrf).** <br />
 <br />
-![RNRF Gif](../docs/assets/rnrfgif.gif) <br />
+![RNRF Gif](../docs/assets/RNRFGif.gif) <br />
 
 ## Aim
 We are creating a 2-page application with a button on each page that takes us to the other page <code>onPress</code>. <br />
@@ -30,7 +30,7 @@ react-native link
 </code> <br />
 By the end of Installation, your package.json file should look something like this.<br />
 
-![RNRFExample PackageJson](../docs/assets/rnrfpackage.png) <br />
+![RNRFExample PackageJson](../docs/assets/RNRFPackage.png) <br />
 
 ## Lets Play
 
@@ -161,4 +161,4 @@ export default class RnrfExample extends Component {
 AppRegistry.registerComponent('RnrfExample', () => RnrfExample);
 </code></pre><br />
 
-![RNRFExample Overall](../docs/assets/rnrfoverall.png) <br />
+![RNRFExample Overall](../docs/assets/RNRFOverall.png) <br />

@@ -257,7 +257,7 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
         }}
     }
     // Hide children from summary table
-    else if(!(window.location.href.includes("Examples.html"))){
+    else if(!(window.location.href.includes("Examples.html")) && !(window.location.href.includes("Example.html"))){
       for(var i=0; i< chapters.length; i++){
         if(chapters[i].href.includes("Example.html")){
           chapters[i].style.display= "none";
