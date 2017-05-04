@@ -230,7 +230,7 @@ import { Actions } from 'react-native-router-flux';
                     &lt;/Body>
                     &lt;Right />
                 &lt;/Header>
-                &lt;Content contentContainerStyle =
+                &lt;Content contentContainerStyle ={{
                   justifyContent: 'center',
                  alignItems: 'center',
                   paddingTop: 40,
@@ -248,7 +248,7 @@ import { Actions } from 'react-native-router-flux';
                         &lt;/CardItem>
                     &lt;/Card>
                 &lt;Button dark block
-                onPress= {() =>{ Actions.RepoList();}} style= marginTop: 40}}>
+                onPress= {() =>{ Actions.RepoList();}} style= {{marginTop: 40}}>
                       &lt;Text> Fetch Github Repos &lt;/Text>
                     &lt;/Button>
                 &lt;/Content>
