@@ -72,12 +72,6 @@ export default class CheckBoxExample extends Component {
                 <td>Components render to the right in Header</td>
             </tr>
             <tr>
-                <td>noShadow</td>
-                <td> false </td>
-                <td>true false</td>
-                <td>Text font size of badge.</td>
-            </tr>
-            <tr>
                 <td>iosBarStyle</td>
                 <td> - </td>
                 <td>'light-content', 'dark-content' or 'default'</td>
@@ -100,12 +94,6 @@ export default class CheckBoxExample extends Component {
                 <td> - </td>
                 <td> true,false </td>
                 <td>Add subtitle to the Header Component</td>
-            </tr>
-            <tr>
-                <td>noShadow</td>
-                <td> - </td>
-                <td> true,false </td>
-                <td>Removes shadow from iOS and elevation from android</td>
             </tr>
             <tr>
                 <td>noShadow</td>

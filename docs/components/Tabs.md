@@ -120,7 +120,7 @@ import Tab2 from './tabTwo';
         return (
             &lt;Container>
         &lt;Header hasTabs/>
-        &lt;Tabs renderTabBar={()=> &lt;ScrollableTab />}
+        &lt;Tabs renderTabBar={()=> &lt;ScrollableTab />}>
           &lt;Tab heading="Tab1">
               &lt;Tab1 />
           &lt;/Tab>

@@ -44,9 +44,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { connectStyle } from 'native-base';
 class CustomComponent extends Component {
     render() {
+      // connect styles to props.style defined by the theme
+        const styles = this.props.style;
         return (
-          // connect styles to props.style defined by the theme
-          const styles = this.props.style;
             &lt;View style={styles.container}>
                 &lt;Text style={styles.textContent}>
                     Your Component with static style

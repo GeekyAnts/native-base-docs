@@ -32,7 +32,7 @@ render() {
         &lt;/Header>
         &lt;Content padder>
           &lt;Button onPress={()=> Toast.show({
-              supportedOrientations={['potrait','landscape']}
+              supportedOrientations= ['potrait','landscape'],
               text: 'Wrong password!',
               position: 'bottom',
               buttonText: 'Okay'
