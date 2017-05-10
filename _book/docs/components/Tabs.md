@@ -7,8 +7,8 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 
 ![Preview ios tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/tabs.png)
 ![Preview android tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/tabs.png)
-![Preview ios advanced-tabs-headref](../docs/assets/ios/components/tabs2.png)
-![Preview android advanced-tabs-headref](../docs/assets/android/components/tabs2.png)
+![Preview ios advanced-tabs-headref](https://docs.nativebase.io/docs/assets/ios/components/tabs2.png)
+![Preview android advanced-tabs-headref](https://docs.nativebase.io/docs/assets/android/components/tabs2.png)
 
 *Syntax(simple)*
 

@@ -4,8 +4,8 @@ Renders the native picker component on iOS and Android.<br />
 *Replacing Component: [React Native](https://facebook.github.io/react-native/) [<code>&lt;Picker></code>](https://facebook.github.io/react-native/docs/picker.html)*
 For Android use this [React Native Picker](https://facebook.github.io/react-native/docs/picker.html). <br />
 
-![Preview ios Picker](../docs/assets/ios/components/picker.gif)
-![Preview android Picker](../docs/assets/android/components/picker.gif)
+![Preview ios Picker](https://docs.nativebase.io/docs/assets/ios/components/picker.gif)
+![Preview android Picker](https://docs.nativebase.io/docs/assets/android/components/picker.gif)
 
 *Syntax*
 

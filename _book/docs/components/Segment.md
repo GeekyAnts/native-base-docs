@@ -1,8 +1,8 @@
 # Segment
 Segments are best used as an alternative for tabs. Mainly used in iOS.
 
-![Preview ios Segment](../docs/assets/ios/components/headerSegment.png)
-![Preview android Segment](../docs/assets/android/components/headerSegment.png)
+![Preview ios Segment](https://docs.nativebase.io/docs/assets/ios/components/headerSegment.png)
+![Preview android Segment](https://docs.nativebase.io/docs/assets/android/components/headerSegment.png)
 
 *Syntax(simple)*
 

@@ -11,7 +11,7 @@
   [React Native](https://facebook.github.io/react-native/)
   [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-![Preview ios header-def-headref](../docs/assets/ios/components/header.png)
+![Preview ios header-def-headref](https://docs.nativebase.io/docs/assets/ios/components/header.png)
 ![Preview android header-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)
 
 *Syntax*

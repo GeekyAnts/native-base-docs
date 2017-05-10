@@ -2,8 +2,8 @@
 
 To navigate between screens on click of a card, include <code>button</code> prop with the <code>&lt;CardItem></code> component.
 
-![Preview ios Card_OnClick](../docs/assets/ios/components/card-onclick.gif)
-![Preview android Card_OnClick](../docs/assets/android/components/card-onclick.gif)
+![Preview ios Card_OnClick](https://docs.nativebase.io/docs/assets/ios/components/card-onclick.gif)
+![Preview android Card_OnClick](https://docs.nativebase.io/docs/assets/android/components/card-onclick.gif)
 
 *Syntax*
 

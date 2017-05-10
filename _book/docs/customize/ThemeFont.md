@@ -40,4 +40,4 @@ Run this command on your terminal<br />
 Run this command on your terminal<br />
 <pre class="command-line language-xxx" data-output="2-19"><code>react-native link</code></pre>
 * **Manually**
-  * Copy the font files to <code>android/app/src/main/../docs/assets/fonts.</code>
+  * Copy the font files to <code>android/app/src/main/https://docs.nativebase.io/docs/assets/fonts.</code>

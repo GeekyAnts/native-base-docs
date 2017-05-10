@@ -4,8 +4,8 @@
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 
-![Preview ios icon-def-headref](../docs/assets/ios/components/icon.png)
-![Preview android icon-def-headref](../docs/assets/android/components/icon.png)
+![Preview ios icon-def-headref](https://docs.nativebase.io/docs/assets/ios/components/icon.png)
+![Preview android icon-def-headref](https://docs.nativebase.io/docs/assets/android/components/icon.png)
 
 *Syntax*
 

@@ -2,8 +2,8 @@
 
 NativeBase ActionSheet is a wrapper around the react-native ActionSheetIOS component.
 
-![Preview ios ActionSheet](../docs/assets/ios/components/actionsheet.gif)
-![Preview android ActionSheet](../docs/assets/android/components/actionsheet.gif)
+![Preview ios ActionSheet](https://docs.nativebase.io/docs/assets/ios/components/actionsheet.gif)
+![Preview android ActionSheet](https://docs.nativebase.io/docs/assets/android/components/actionsheet.gif)
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

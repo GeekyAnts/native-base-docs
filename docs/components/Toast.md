@@ -2,8 +2,8 @@
 
 NativeBase Toast can be used to display quick warning or error messages. <br />
 
-![Preview ios Toast](../docs/assets/ios/components/toast.gif)
-![Preview android Toast](../docs/assets/android/components/toast.gif)
+![Preview ios Toast](https://docs.nativebase.io/docs/assets/ios/components/toast.gif)
+![Preview android Toast](https://docs.nativebase.io/docs/assets/android/components/toast.gif)
 
 *Syntax*
 

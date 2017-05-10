@@ -196,6 +196,13 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
       var and=0;
       var ios=0;
 
+       // Making summary.md image clickable
+      for(var i=0; i< chapters.length; i++){
+        if(chapters[i].href.includes("http://nativebase.io/")){
+          chapters[i].style= "height: 80px";
+        }
+      }
+
       // Populate our filter image arrays
       var list=document.getElementsByTagName("img");
       for(var i=0; i< list.length; i++){

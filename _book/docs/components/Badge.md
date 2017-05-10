@@ -1,7 +1,7 @@
 ## Badge
 
-![Preview ios Badge](../docs/assets/ios/components/badge.png)
-![Preview android Badge](../docs/assets/android/components/badge.png)
+![Preview ios Badge](https://docs.nativebase.io/docs/assets/ios/components/badge.png)
+![Preview android Badge](https://docs.nativebase.io/docs/assets/android/components/badge.png)
 
 *Syntax*
 

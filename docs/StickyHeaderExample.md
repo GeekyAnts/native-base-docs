@@ -5,7 +5,7 @@ This is a simple example of Sticky Headers in List Component of [NativeBase](htt
 <br />
 **Find Full Code [here](https://github.com/GeekyAnts/native-base-sticky-header)** <br />
 <br />
-![Sticky Header](../docs/assets/StickyHeader.gif) <br />
+![Sticky Header](https://docs.nativebase.io/docs/assets/StickyHeader.gif) <br />
 
 ## Aim
 We aim to create a simple App that implements sticky headers as shown in the GIF above. <br />
@@ -41,7 +41,7 @@ react-native link
 With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create a file by the name of <code>Application.js</code>. <br />
 **Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code>** <br />
 By the end of all this your project structure and <code>package.json</code> file should look something like this. <br />
-![StickyHeader Package](../docs/assets/StickyPackage.png) <br />
+![StickyHeader Package](https://docs.nativebase.io/docs/assets/StickyPackage.png) <br />
 
 ## Making our List Component
 In your <code>Application.js</code> inside <code>src</code> folder add the following code. <br />

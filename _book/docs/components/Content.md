@@ -8,8 +8,8 @@
 * *Replacing Component:
   [React Native Keyboard Aware Scroll View's <code>&lt;KeyboardAwareScrollView></code>](https://github.com/APSL/react-native-keyboard-aware-scroll-view)*
 
-![Preview ios Content](../docs/assets/ios/components/content.png)
-![Preview android Content](../docs/assets/android/components/content.png)
+![Preview ios Content](https://docs.nativebase.io/docs/assets/ios/components/content.png)
+![Preview android Content](https://docs.nativebase.io/docs/assets/android/components/content.png)
 
 *Syntax*
 

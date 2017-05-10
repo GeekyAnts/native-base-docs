@@ -3,7 +3,7 @@ This is a simple single page application that uses [Redux](https://github.com/re
 <br />
 **Find full code [here](https://github.com/GeekyAnts/native-base-example-redux-counter).** <br />
 <br />
-![ReduxCounter Example](../docs/assets/ReduxCounterExample.gif) <br />
+![ReduxCounter Example](https://docs.nativebase.io/docs/assets/ReduxCounterExample.gif) <br />
 
 ## Aim
 
@@ -29,7 +29,7 @@ npm install native-base --save
 react-native link
 </code> <br />
 By the end of Installation, your package.json file should look something like this.<br />
-![Redux Counter](../docs/assets/ReduxCounterPackage.png) <br />
+![Redux Counter](https://docs.nativebase.io/docs/assets/ReduxCounterPackage.png) <br />
 ## Setting Things Up
 
 With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create three folders namely <code>reducers, actions, components</code> and one file <code>App.js</code>. <br />

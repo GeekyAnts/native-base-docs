@@ -1,6 +1,6 @@
 .book .book-summary ul.summary > li:nth-child(2) {
   color: transparent;
-  background-image: url(../docs/assets/NBSideBar.png);
+  background-image: url(https://docs.nativebase.io/docs/assets/NBSideBar.png);
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 80px;

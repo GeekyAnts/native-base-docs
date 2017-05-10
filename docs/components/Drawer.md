@@ -3,8 +3,8 @@
 Drawer for both iOS and Android.<br />
 Drawer is used from react-native-drawer Drawer
 
-![Preview ios Drawer](../docs/assets/ios/components/drawer.png)
-![Preview android Drawer](../docs/assets/android/components/drawer.png)
+![Preview ios Drawer](https://docs.nativebase.io/docs/assets/ios/components/drawer.png)
+![Preview android Drawer](https://docs.nativebase.io/docs/assets/android/components/drawer.png)
 
 *Syntax*
 

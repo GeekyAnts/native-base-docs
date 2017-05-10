@@ -83,7 +83,7 @@ andBut.onclick= function(){
 // Style anchor and its chilren
 anchor.id= "anchor";
   anchor.style= "position: fixed; right: 50px;top: 78px;";
-anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
+anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
 anchorContainer.id= "anchorContainer";
 anchorImage.id= "anchorImage";
 anchorImage.src='';
@@ -127,9 +127,9 @@ setInterval(function(){
 
   // Set Anchor background Phone image with button changes
   if(androidSelected){
-    anchorContainer.style= "background: url(../docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
+    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
   } else if(!androidSelected){
-    anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
+    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
   }
 
   // Hide useless buttons for our big pages
@@ -195,6 +195,13 @@ require(['gitbook', 'jQuery'], function(gitbook, $) {
       $('#goTop').hide();
       var and=0;
       var ios=0;
+
+       // Making summary.md image clickable
+      for(var i=0; i< chapters.length; i++){
+        if(chapters[i].href.includes("http://nativebase.io/")){
+          chapters[i].style= "height: 80px";
+        }
+      }
 
       // Populate our filter image arrays
       var list=document.getElementsByTagName("img");

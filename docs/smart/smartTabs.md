@@ -10,8 +10,8 @@
   </thead>
   <thead>
     <tr style="border-style: hidden">
-      <th style="border-style: hidden"><div style="background: url(../docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('../docs/assets/ios/components/tabs.gif')}}" alt="" /></div></th>
-      <th><div style="background: url(../docs/assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img height="490" width="266" src="{{('../docs/assets/android/components/tabs.gif')}}" alt="" /></div></th>
+      <th style="border-style: hidden"><div style="background: url(https://docs.nativebase.io/docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('https://docs.nativebase.io/docs/assets/ios/components/tabs.gif')}}" alt="" /></div></th>
+      <th><div style="background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img height="490" width="266" src="{{('https://docs.nativebase.io/docs/assets/android/components/tabs.gif')}}" alt="" /></div></th>
     </tr>
   </thead>
 </table>

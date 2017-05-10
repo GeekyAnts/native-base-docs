@@ -4,7 +4,7 @@ This is a simple step-by-step tutorial to get familiar with basic concepts of [R
 <br />
 **Find full code [here](https://github.com/GeekyAnts/native-base-example-github-app).** <br />
 <br />
-![GitAppGif](../docs/assets/GitAppGif.gif)
+![GitAppGif](https://docs.nativebase.io/docs/assets/GitAppGif.gif)
 ## Aim
 
 We aim to create an 3 page simple application. It will fetch a list of Top Ten Github Libraries and once the user clicks on any of the items, App will display the information about the item clicked in the next page.
@@ -36,7 +36,7 @@ react-native link
 </code> <br />
 By the end of Installation, your package.json file should look something like this.<br />
 
-![GitApp PackageJson](../docs/assets/GitAppPackageJson.png)
+![GitApp PackageJson](https://docs.nativebase.io/docs/assets/GitAppPackageJson.png)
 
 ## Some Important stuff
 Before starting with the development of the App, Let's first create a required folder structure for setting up Redux. <br />
@@ -44,7 +44,7 @@ We first need a **src** folder that resides in the App root location and holds a
 Inside **src**, we have three folders namely => **actions** , **reducers** , **components** and one file **App.js**. **App.js** is where our App lives mainly. We will import our App from this file.<br />
 We will populate these folders with their respective files as an when we need them. <br />
 The folder structure should look something like this. <br />
-![FolderStructure](../docs/assets/FolderStructureGitApp.png)
+![FolderStructure](https://docs.nativebase.io/docs/assets/FolderStructureGitApp.png)
 <br />
 
 ## Getting Hands Dirty
@@ -444,5 +444,5 @@ export default class App extends Component{
 
 Here the <code>key</code> property has been used in our app to provide navigation Actions like: <code>Actions.RepoList</code> <br />
 By now your folder structure should look something like this <br />
-![newFolder](../docs/assets/FolderFinal.png) <br />
+![newFolder](https://docs.nativebase.io/docs/assets/FolderFinal.png) <br />
 With that, we have completed setting up our app, build your project and run.<br />

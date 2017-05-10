@@ -10,8 +10,8 @@
   [React Native](https://facebook.github.io/react-native/)
   [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-![Preview ios Footer_Default](../docs/assets/ios/components/footer.png)
-![Preview android Footer_Default](../docs/assets/android/components/footer.png)
+![Preview ios Footer_Default](https://docs.nativebase.io/docs/assets/ios/components/footer.png)
+![Preview android Footer_Default](https://docs.nativebase.io/docs/assets/android/components/footer.png)
 
 *Syntax*
 

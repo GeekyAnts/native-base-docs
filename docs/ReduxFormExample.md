@@ -2,7 +2,7 @@
 Redux Form is a sample app made with [React Native](https://github.com/facebook/react-native), [Redux](https://github.com/reactjs/react-redux), and [Redux-Form](https://github.com/erikras/redux-form) and [NativeBase](https://nativebase.io/) as the main Libraries at work here.<br />
 This is a simple step-by-step tutorial to get familiar with basic concepts of [Redux](https://github.com/reactjs/react-redux)(used for state management), and [[Redux-Form](https://github.com/erikras/redux-form). This simple App should get you familiar with these Libraries and their use case. <br />
 **Find Full code [here](https://github.com/GeekyAnts/native-base-example-redux-form)** <br />
-![ReduxForm Gif](../docs/assets/ReduxForm.gif)
+![ReduxForm Gif](https://docs.nativebase.io/docs/assets/ReduxForm.gif)
 <br />
 
 ## Aim
@@ -34,7 +34,7 @@ react-native link
 </code> <br />
 **Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code>**
 By the end of Installation, your package.json file should look something like this.<br />
-![Redux-Form package](../docs/assets/ReduxFormPackage.png) <br />
+![Redux-Form package](https://docs.nativebase.io/docs/assets/ReduxFormPackage.png) <br />
 
 ## SetUp
 Create a **src** folder at root of your project. Create folders **compnoents** **reducers** and one file **Application.js** for our App. <br />

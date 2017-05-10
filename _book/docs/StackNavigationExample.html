@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Redux-Form · NativeBase</title>
+        <title>React Navigation(StackNavigation) · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="StickyHeaderExample.html" />
     
-    
-    <link rel="prev" href="GitAppExample.html" />
+    <link rel="prev" href="StickyHeaderExample.html" />
     
 
     </head>
@@ -1255,7 +1253,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.15.5" data-path="ReduxFormExample.html">
+        <li class="chapter " data-level="1.15.5" data-path="ReduxFormExample.html">
             
                 <a href="ReduxFormExample.html">
             
@@ -1281,7 +1279,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.7" data-path="StackNavigationExample.html">
+        <li class="chapter active" data-level="1.15.7" data-path="StackNavigationExample.html">
             
                 <a href="StackNavigationExample.html">
             
@@ -1329,7 +1327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Redux-Form</a>
+        <a href=".." >React Navigation(StackNavigation)</a>
     </h1>
 </div>
 
@@ -1344,29 +1342,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Redux_Form_Example">Redux Form Example</h1>
-<p>Redux Form is a sample app made with <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>, <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>, and <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the main Libraries at work here.<br>
-This is a simple step-by-step tutorial to get familiar with basic concepts of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>(used for state management), and [<a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a>. This simple App should get you familiar with these Libraries and their use case. <br>
-<strong>Find Full code <a href="https://github.com/GeekyAnts/native-base-example-redux-form" target="_blank">here</a></strong> <br>
-<img src="https://docs.nativebase.io/docs/assets/ReduxForm.gif" alt="ReduxForm Gif">
-<br></p>
+                                <h1 id="Basic_StackNavigation_Example_App_and_Tutorial">Basic StackNavigation Example App and Tutorial</h1>
+<p>This is a simple 3-page application that demonstrates the basic usage of <a href="https://reactnavigation.org/" target="_blank">React Navigation</a> as a navigation tool. It is extremely easy to understand. This step-by-step tutorial will take you through the basic concepts. We are using <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the UI library to design our pages.<br>
+<br>
+<strong> Find full code <a href="https://github.com/GeekyAnts/native-base-react-navigation-stack-navigator" target="_blank">here</a>.</strong> <br>
+<br>
+<img src="https://docs.nativebase.io/docs/assets/StackNavigation.gif" alt="StackNavigation Gif"> <br></p>
 <h2 id="Aim">1. Aim</h2>
-<p>We aim to create a single page application that uses <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and has validation functionality.</p>
+<p>We are creating a 3-page application with buttons on each page that takes us to the other page <code>onPress</code>. <br></p>
 <h2 id="Installation">2. Installation</h2>
 <ol>
-<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
-<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
-a. <strong>Redux</strong> and <strong>react-redux</strong> <br>
-In your terminal enter the following <br>
+<li><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
 <code>
-npm install redux react-redux --save
+$ npm install -g create-react-native-app
 </code> <br>
-b. <strong>redux-form</strong> <br>
+<code>
+$ create-react-native-app my-app
+</code> <br>
+<code>
+$ cd my-app/
+</code> <br>
+<code>
+$ npm start
+</code> <br></li>
+<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
+a. <strong>React Navigation</strong> <br>
 Do this
 <code>
-npm install --save redux-form
+npm install --save react-navigation
 </code> <br>
-c. <strong>NativeBase</strong> <br>
+b. <strong>NativeBase</strong> <br>
 <code>
 npm install native-base --save
 </code> <br>
@@ -1374,156 +1379,194 @@ npm install native-base --save
 <code>
 react-native link
 </code> <br>
-<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong>
-By the end of Installation, your package.json file should look something like this.<br>
-<img src="https://docs.nativebase.io/docs/assets/ReduxFormPackage.png" alt="Redux-Form package"> <br></li>
+By the end of Installation, your package.json file should look something like this.<br></li>
 </ol>
-<h2 id="SetUp">3. SetUp</h2>
-<p>Create a <strong>src</strong> folder at root of your project. Create folders <strong>compnoents</strong> <strong>reducers</strong> and one file <strong>Application.js</strong> for our App. <br></p>
-<h3 id="Reducers">3.1. Reducers</h3>
-<p>Create a file <strong>index.js</strong> inside reducers folder. Paste the following code. <br>
-<strong>Code src/reducers/index.js</strong></p>
+<p><img src="https://docs.nativebase.io/docs/assets/StackNavigationPackage.png" alt="StackNavigation PackageJson"> <br></p>
+<h2 id="Lets_Play">3. Lets Play</h2>
+<p>With our basic project setup we can now start building our App. <br>
+Make a folder at the project root by the name of <code>src</code>. Inside this folder we make 3 files <code>ChatScreen.js</code> <code>HomeScreen.js</code> <code>Profile.js</code>. <br></p>
+<h2 id="HomeScreen_js">4. HomeScreen.js</h2>
+<p>This is going to be the first landing screen of out App. We are going to implement the navigation logic here.<br>
+For our purpose here, we have used <strong>StackNavigator</strong> for navigation.<br>
+Go ahead and add the following file in your project. <br></p>
+<p><strong>Code</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {
+  AppRegistry
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Button, Text, Container, Card, CardItem, Body, Content, Header, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { StackNavigator } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-navigation&apos;</span>;
+<span class="hljs-keyword">import</span> ChatScreen <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./ChatScreen.js&apos;</span>;
+<span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Profile.js&apos;</span>;
+ <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HomeScreen</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> navigationOptions = {
+    header:
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Welcome<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span></span>
+  };
+  render() {
+    <span class="hljs-keyword">const</span> { navigate } = <span class="hljs-keyword">this</span>.props.navigation;
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Chat App to talk to lucy!<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">full</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">style</span>= {{ <span class="hljs-attr">marginTop:</span> <span class="hljs-attr">10</span> }}
+                <span class="hljs-attr">onPress</span>=<span class="hljs-string">{()</span> =&gt;</span> navigate(&apos;Chat&apos;)}&gt;
+                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Chat With Lucy<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">full</span> <span class="hljs-attr">primary</span>
+                <span class="hljs-attr">style</span>= {{ <span class="hljs-attr">marginTop:</span> <span class="hljs-attr">10</span> }}
+                <span class="hljs-attr">onPress</span>=<span class="hljs-string">{()</span> =&gt;</span> navigate(&apos;Profile&apos;)}&gt;
+                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Goto Lucy Profile<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> SimpleApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Chat: { screen: ChatScreen },
+  Profile: { screen: Profile }
+});</code></pre><br></p>
+<p><strong>Explained</strong></p>
+<ol>
+<li>We are importing out <strong>StackNavigator</strong> from &apos;react-navigation&apos;, which we will use later to define our routes.</li>
+<li>We are being optimistic here while importing the other two <strong>screen</strong> components, we will make these components later.</li>
+<li>We are making our custom <a href="https://nativebase.io/" target="_blank">NativeBase</a> header component after the class defination as shown above. Using <strong>static navigationOptions</strong>, we can pass our header component to the header attribute as shown.</li>
+<li>This screen simply has two buttons as shown above, each navigates to the <strong>Chat</strong> and <strong>Profile</strong> pages using the prop <strong>this.props.navigation</strong></li>
+<li>Lastly we create our <strong>StackNavigator</strong> object and pass all <strong>screens</strong> we are going to be needing to the object as shown above in the code.</li>
+</ol>
+<h2 id="ChatScreen_js">5. ChatScreen.js</h2>
+<p>This screen is the intermediate chat screen. It simply has two buttons to take us to <em>HomeScreen</em> and <em>Profile</em> screens.<br>
+Go ahead and add the following file in your project. <br></p>
+<p><strong>Code</strong> <br></p>
 <p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> { reducer <span class="hljs-keyword">as</span> formReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
-<span class="hljs-keyword">const</span> reducers = {
-  form: formReducer
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {
+  AppRegistry
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Button, Text, Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+      <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ChatScreen</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+        <span class="hljs-keyword">static</span> navigationOptions = ({ navigation }) =&gt; ({
+          header: &lt;Header&gt;
+                     &lt;Left&gt;
+                        &lt;Button transparent onPress= {()=&gt; navigation.goBack()}&gt;
+                            &lt;Icon name=&apos;arrow-back&apos; /&gt;
+                        &lt;/Button&gt;
+                      &lt;/Left&gt;
+                      &lt;Body&gt;
+                          &lt;Title&gt;ChatScreen&lt;/Title&gt;
+                      &lt;/Body&gt;
+                      &lt;Right /&gt;
+                  &lt;/Header&gt;,
+        });
+        render() {
+          const {navigate}= this.props.navigation;
+          return (
+            &lt;Container&gt;
+              &lt;Content&gt;
+                &lt;Card&gt;
+                  &lt;CardItem&gt;
+                    &lt;Body&gt;
+                      &lt;Text&gt;Chat with Lucy&lt;/Text&gt;
+                    &lt;/Body&gt;
+                  &lt;/CardItem&gt;
+                &lt;/Card&gt;
+                  &lt;Button full primary
+                    onPress={() =&gt; navigate(&apos;Profile&apos;)}&gt;&lt;Text&gt;Goto Lucy Profile&lt;/Text&gt;&lt;/Button&gt;
+              &lt;/Content&gt;
+            &lt;/Container&gt;
+          );
+        }
 }
-<span class="hljs-keyword">const</span> allReducers= combineReducers(reducers);
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> allReducers;
-</code></pre><br></p>
-<h3 id="Component">3.2. Component</h3>
-<p>Create a file <strong>SimpleForm.js</strong> inside <code>components</code> folder. <br>
-<strong>Code src/components/SimpleForm.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
-<span class="hljs-keyword">import</span> { View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Item, Input, Header, Body, Content, Title, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">import</span> { Field,reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
-<span class="hljs-keyword">const</span> validate = values =&gt; {
-  <span class="hljs-keyword">const</span> error= {};
-  error.email= <span class="hljs-string">&apos;&apos;</span>;
-  error.name= <span class="hljs-string">&apos;&apos;</span>;
-  <span class="hljs-keyword">var</span> ema = values.email;
-  <span class="hljs-keyword">var</span> nm = values.name;
-  <span class="hljs-keyword">if</span>(values.email === <span class="hljs-literal">undefined</span>){
-    ema = <span class="hljs-string">&apos;&apos;</span>;
-  }
-  <span class="hljs-keyword">if</span>(values.name === <span class="hljs-literal">undefined</span>){
-    nm = <span class="hljs-string">&apos;&apos;</span>;
-  }
-  <span class="hljs-keyword">if</span>(ema.length &lt; <span class="hljs-number">8</span> &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
-    error.email= <span class="hljs-string">&apos;too short&apos;</span>;
-  }
-  <span class="hljs-keyword">if</span>(!ema.includes(<span class="hljs-string">&apos;@&apos;</span>) &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
-    error.email= <span class="hljs-string">&apos;@ not included&apos;</span>;
-  }
-  <span class="hljs-keyword">if</span>(nm.length &gt; <span class="hljs-number">8</span>){
-    error.name= <span class="hljs-string">&apos;max 8 characters&apos;</span>;
-  }
-<span class="hljs-keyword">return</span> error;
-};
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-  <span class="hljs-keyword">constructor</span>(props){
-    <span class="hljs-keyword">super</span>(props);
-    <span class="hljs-keyword">this</span>.state={
-      isReady: <span class="hljs-literal">false</span>
-    };
-    <span class="hljs-keyword">this</span>.renderInput = <span class="hljs-keyword">this</span>.renderInput.bind(<span class="hljs-keyword">this</span>);
-  }
-  <span class="hljs-keyword">async</span> componentWillMount() {
-      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
-        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
-        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
-      });
-      <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
-    }
-  renderInput({ input, label, type, meta: { touched, error, warning } }){
-    <span class="hljs-keyword">var</span> hasError= <span class="hljs-literal">false</span>;
-    <span class="hljs-keyword">if</span>(error !== <span class="hljs-literal">undefined</span>){
-      hasError= <span class="hljs-literal">true</span>;
-    }
-    <span class="hljs-keyword">return</span>( &lt;Item error= {hasError}&gt;
-                        &lt;Input {...input}/&gt;
-                        {hasError ? &lt;Text&gt;{error}&lt;/Text&gt; : &lt;Text /&gt;}
-                    &lt;/Item&gt; )
-  }
-  render(){
-     const { handleSubmit, reset } = this.props;
-     if (!this.state.isReady) {
-      return &lt;Expo.AppLoading /&gt;;
-    }
-  return (
-    &lt;Container&gt;
-    &lt;Header&gt;
-        &lt;Body&gt;
-          &lt;Title&gt;Redux Form&lt;/Title&gt;
-        &lt;/Body&gt;
-    &lt;/Header&gt;
-    &lt;Content padder&gt;
-      &lt;Field name=&quot;email&quot; component={this.renderInput} /&gt;
-      &lt;Field name=&quot;name&quot; component={this.renderInput} /&gt;
-      &lt;Button block primary onPress= {reset}&gt;
-      &lt;Text&gt;Submit&lt;/Text&gt;
-      &lt;/Button&gt;
-      &lt;/Content&gt;
-    &lt;/Container&gt;
-  )
-}
-}
-export default reduxForm({
-  form: &apos;test&apos;,
-  validate
-})(SimpleForm)
 </code></pre><br></p>
 <p><strong>Explained</strong> <br></p>
 <ol>
-<li>We load fonts using <code>loadAsync</code> as defined in previous examples.</li>
-<li>Note how we have added validate functionality in the end using <code>reduxForm</code> decorator.</li>
-<li>Conditions added to validate are user defined.</li>
+<li>Notice how here we have received the <strong>navigation</strong> attribute in the <strong>static navigationOptions</strong> defination. We are doing this to have navigation functionality within our custom header as shown. In our header we have placed a back button, it calls the <code>navigation.goback()</code> function to pop the navigation Stack.</li>
+<li>In the body of the App, we simply have a button to take us to <strong>Profile</strong> screen.</li>
 </ol>
-<h3 id="Application">3.3. Application</h3>
-<p><strong>Code src/Application.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/index.js&apos;</span>;
-<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
-<span class="hljs-keyword">import</span> SimpleForm <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/SimpleForm.js&apos;</span>;
-<span class="hljs-keyword">import</span> { Field, reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
-<span class="hljs-keyword">const</span> store = createStore(allReducers);
- <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Application</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
-  render(){
-    <span class="hljs-keyword">return</span>(
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">SimpleForm</span> /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
-  )
+<h2 id="Profile_js">6. Profile.js</h2>
+<p>This is our third screen. This screen will only have a back button to take us to the previous page. Like in the previous screen, we make a back button in our custom header. <br>
+<strong>Code</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {
+  AppRegistry,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Text, Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Profile</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> navigationOptions = ({ navigation }) =&gt; ({
+    header: &lt;Header&gt;
+               &lt;Left&gt;
+                  &lt;Button transparent onPress= {()=&gt; navigation.goBack()}&gt;
+                      &lt;Icon name=&apos;arrow-back&apos; /&gt;
+                  &lt;/Button&gt;
+                &lt;/Left&gt;
+                &lt;Body&gt;
+                    &lt;Title&gt;Profile&lt;/Title&gt;
+                &lt;/Body&gt;
+                &lt;Right /&gt;
+            &lt;/Header&gt;,
+          });
+          render() {
+            return (
+              &lt;Container&gt;
+                &lt;Content&gt;
+                  &lt;Card&gt;
+                    &lt;CardItem&gt;
+                      &lt;Body&gt;
+                        &lt;Text&gt;Oops!! Looks like Lucy is private person&lt;/Text&gt;
+                      &lt;/Body&gt;
+                    &lt;/CardItem&gt;
+                  &lt;/Card&gt;
+                &lt;/Content&gt;
+              &lt;/Container&gt;
+            );
+          }
+      }
+</code></pre><br></p>
+<h2 id="Finishing_up">7. Finishing up</h2>
+<p>Lastly we import our <strong>routes</strong> component from <strong>HomeScreen</strong> to our <strong>App.js</strong> file as shown. <br></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Picker, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
+<span class="hljs-keyword">import</span> HomeScreen <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/HomeScreen.js&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AwesomeApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(){
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.state={
+      isReady: <span class="hljs-literal">false</span>
+    }
   }
-}
-</span></code></pre><br></p>
-<p><strong>Explained</strong> <br>
-Here we import <code>allReducers</code> containing our <code>formReducer</code> and add it to our <code>store</code>. Next we simply pass our <code>store</code> to <code>Provider</code> component. <br></p>
-<h3 id="Finishing_Up">3.4. Finishing Up</h3>
-<p>Finally add the <code>Application</code> component in our <code>App.js</code> as follows <br>
-<strong>Code App.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { StyleSheet, Text, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> Application <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/Application.js&apos;</span>;
-<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/reducers/index.js&apos;</span>;
-<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
-<span class="hljs-keyword">import</span> { TextInput, TouchableOpacity } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">const</span> store = createStore(allReducers);
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+ <span class="hljs-keyword">async</span> componentWillMount() {
+      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
+        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
+        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
+        <span class="hljs-string">&apos;Ionicons&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Ionicons.ttf&apos;</span>),
+      });
+    <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
+  }
   render() {
     <span class="hljs-keyword">return</span> (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Application</span> /&gt;</span>
-    );
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HomeScreen</span> /&gt;</span>
+        )
+      }
   }
-}</span></code></pre><br>
-All done. Our App must work now. It looks awesome(unicorn alert). Build and run for magic.</p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Redux_Form_Example">Redux Form Example</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#SetUp">3. SetUp</a></li><ul><li><a href="#Reducers">3.1. Reducers</a></li><li><a href="#Component">3.2. Component</a></li><li><a href="#Application">3.3. Application</a></li><li><a href="#Finishing_Up">3.4. Finishing Up</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
+</span></code></pre><br>
+All has been taken care of now. Build and run.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Basic_StackNavigation_Example_App_and_Tutorial">Basic StackNavigation Example App and Tutorial</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Lets_Play">3. Lets Play</a></li><li><a href="#HomeScreen_js">4. HomeScreen.js</a></li><li><a href="#ChatScreen_js">5. ChatScreen.js</a></li><li><a href="#Profile_js">6. Profile.js</a></li><li><a href="#Finishing_up">7. Finishing up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1550,14 +1593,10 @@ All done. Our App must work now. It looks awesome(unicorn alert). Build and run 
 
             
                 
-                <a href="GitAppExample.html" class="navigation navigation-prev " aria-label="Previous page: Advanced">
+                <a href="StickyHeaderExample.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Sticky Headers">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="StickyHeaderExample.html" class="navigation navigation-next " aria-label="Next page: Sticky Headers">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1566,7 +1605,7 @@ All done. Our App must work now. It looks awesome(unicorn alert). Build and run 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Redux-Form","level":"1.15.5","depth":2,"next":{"title":"Sticky Headers","level":"1.15.6","depth":2,"path":"docs/StickyHeaderExample.md","ref":"docs/StickyHeaderExample.md","articles":[]},"previous":{"title":"Advanced","level":"1.15.4","depth":2,"path":"docs/GitAppExample.md","ref":"docs/GitAppExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/ReduxFormExample.md","mtime":"2017-05-10T13:15:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-10T11:35:36.393Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React Navigation(StackNavigation)","level":"1.15.7","depth":2,"previous":{"title":"Sticky Headers","level":"1.15.6","depth":2,"path":"docs/StickyHeaderExample.md","ref":"docs/StickyHeaderExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/StackNavigationExample.md","mtime":"2017-05-10T13:15:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-10T11:35:36.393Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
