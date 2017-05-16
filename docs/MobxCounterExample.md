@@ -1,7 +1,8 @@
 # Mobx Counter Example
 This is a simple example Counter App made with [Mobx](https://github.com/mobxjs/mobx), [NativeBase](https://nativebase.io/) and [Create React Native App](https://github.com/react-community/create-react-native-app) tool. Detailed Setup instructions can be found below. <br />
 <br />
-**Find Full Code [here](https://github.com/GeekyAnts/native-base-example-mobx-counter)** <br />
+
+# Find Full Code [here](https://github.com/GeekyAnts/native-base-example-mobx-counter)
 <br />
 ![Mobx Counter](https://docs.nativebase.io/docs/assets/mobxCounter.gif) <br />
 

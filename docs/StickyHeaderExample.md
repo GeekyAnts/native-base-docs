@@ -3,7 +3,7 @@ This is a simple example of Sticky Headers in List Component of [NativeBase](htt
 <br />
 **Note: Sticky Header support is currently unavailable for android in [React Native ListView](https://facebook.github.io/react-native/docs/listview.html). It will soon be available, check out [this issue](https://github.com/facebook/react-native/issues/2700).** <br />
 <br />
-**Find Full Code [here](https://github.com/GeekyAnts/native-base-sticky-header)** <br />
+# Find Full Code [here](https://github.com/GeekyAnts/native-base-sticky-header)
 <br />
 ![Sticky Header](https://docs.nativebase.io/docs/assets/StickyHeader.gif) <br />
 

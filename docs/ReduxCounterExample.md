@@ -1,7 +1,7 @@
 # Basic Redux Counter Example
 This is a simple single page application that uses [Redux](https://github.com/reactjs/react-redux) and [NativeBase](https://nativebase.io/) as the main Libraries. <br />
 <br />
-**Find full code [here](https://github.com/GeekyAnts/native-base-example-redux-counter).** <br />
+# Find full code [here](https://github.com/GeekyAnts/native-base-example-redux-counter)
 <br />
 ![ReduxCounter Example](https://docs.nativebase.io/docs/assets/ReduxCounterExample.gif) <br />
 

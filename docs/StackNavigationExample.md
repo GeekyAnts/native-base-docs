@@ -1,9 +1,8 @@
-# Basic StackNavigation Example App and Tutorial
+# Basic ReactNavigation Example App and Tutorial
 This is a simple 3-page application that demonstrates the basic usage of [React Navigation](https://reactnavigation.org/) as a navigation tool. It is extremely easy to understand. This step-by-step tutorial will take you through the basic concepts. We are using [NativeBase](https://nativebase.io/) as the UI library to design our pages.<br />
+# Find full code [here](https://github.com/GeekyAnts/native-base-react-navigation-stack-navigator)
 <br />
-** Find full code [here](https://github.com/GeekyAnts/native-base-react-navigation-stack-navigator).** <br />
-<br />
-![StackNavigation Gif](https://docs.nativebase.io/docs/assets/StackNavigation.gif) <br />
+![ReactNavigation Gif](https://github.com/GeekyAnts/native-base-docs/raw/master/docs/assets/StackNavigation.gif) <br />
 
 ## Aim
 We are creating a 3-page application with buttons on each page that takes us to the other page <code>onPress</code>. <br />
@@ -39,7 +38,7 @@ react-native link
 </code> <br />
 By the end of Installation, your package.json file should look something like this.<br />
 
-![StackNavigation PackageJson](https://docs.nativebase.io/docs/assets/StackNavigationPackage.png) <br />
+![StackNavigation PackageJson](https://github.com/GeekyAnts/native-base-docs/raw/master/docs/assets/StackNavigationPackage.png) <br />
 
 ## Lets Play
 
@@ -207,7 +206,7 @@ export default class SideBar extends React.Component {
 }
 </code></pre><br />
 
-## ChatScreen.js
+## ChatScreen
 
 This screen comprises of **TabNavigator** component. We are going to have three screens here to chat to three different people. <br />
 We will also create our own custom component for Tabs. Its done as follows.
