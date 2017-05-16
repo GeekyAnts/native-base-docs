@@ -16,11 +16,8 @@ Customize Header for Picker
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, Picker } from 'native-base';
-
 const Item = Picker.Item;
-​
 export default class ThemePickerExample extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -31,13 +28,11 @@ export default class ThemePickerExample extends Component {
             }
         }
     }
-
     onValueChange (value: string) {
         this.setState({
             selected1 : value
         });
     }
-
     render() {
         return (
             &lt;Container>

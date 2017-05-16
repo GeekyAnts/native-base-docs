@@ -1229,16 +1229,48 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.3" data-path="docs/RNRFBasicExample.html">
+        <li class="chapter " data-level="1.15.3" data-path="docs/NavigationExample.html">
             
-                <a href="docs/RNRFBasicExample.html">
+                <a href="docs/NavigationExample.html">
             
                     
-                    Navigation(RNRF)
+                    Navigation
             
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.3.1" data-path="docs/StackNavigationExample.html">
+            
+                <a href="docs/StackNavigationExample.html">
+            
+                    
+                    React Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3.2" data-path="docs/RNRFBasicExample.html">
+            
+                <a href="docs/RNRFBasicExample.html">
+            
+                    
+                    RNRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1247,7 +1279,7 @@
                 <a href="docs/GitAppExample.html">
             
                     
-                    Advanced
+                    Full App
             
                 </a>
             
@@ -1274,19 +1306,6 @@
             
                     
                     Sticky Headers
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.15.7" data-path="docs/StackNavigationExample.html">
-            
-                <a href="docs/StackNavigationExample.html">
-            
-                    
-                    React Navigation(StackNavigation)
             
                 </a>
             
@@ -1493,7 +1512,6 @@ A common way to use <a href="https://nativebase.io/" target="_blank">NativeBase<
 </ul>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ContentExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -1617,44 +1635,43 @@ A common way to use <a href="https://nativebase.io/" target="_blank">NativeBase<
 <p><img src="https://docs.nativebase.io/docs/assets/ios/components/badge.png" alt="Preview ios Badge">
 <img src="https://docs.nativebase.io/docs/assets/android/components/badge.png" alt="Preview android Badge"></p>
 <p><em>Syntax</em></p>
-<p>  <pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-  <span class="hljs-keyword">import</span> { Container, Content, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-  &#x200B;
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BadgeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-      render() {
-          <span class="hljs-keyword">return</span> (
-              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">success</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">info</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">warning</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">danger</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;star&quot;</span> /&gt;</span>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BadgeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
                     <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>
-                        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;<span class="hljs-attr">black</span>&apos; }}&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">white</span>&apos; }}&gt;</span>1866<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-                  <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
-          );
-      }
-  }</span></code></pre><br></p>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">success</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">info</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">warning</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">danger</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;star&quot;</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>
+                      <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;<span class="hljs-attr">black</span>&apos; }}&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">white</span>&apos; }}&gt;</span>1866<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+        );
+    }
+}</span></code></pre><br></p>
 <ul>
 <li><a href="https://nativebase.io/" target="_blank">NativeBase</a> spectrum of colors are compatible with Badge.</li>
 <li><p>Replacing Component: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank"><code>&lt;View&gt;</code></a> <br></p>
@@ -1736,9 +1753,7 @@ Buttons are the integral part of an application. They are used for various purpo
 </ul>
 <p><em>Syntax</em>
 <div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div><div class="tab" data-codetab="1">Advanced</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
+<span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -1754,7 +1769,6 @@ Buttons are the integral part of an application. They are used for various purpo
     }
 }</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -1950,7 +1964,6 @@ NativeBase provides following color themes:</p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -1977,7 +1990,6 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BlockButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2017,7 +2029,6 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FullButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2057,7 +2068,6 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RoundedButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2098,7 +2108,6 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IconButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2137,7 +2146,6 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OutlineButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2177,7 +2185,6 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 <em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TransparentButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2222,7 +2229,6 @@ Include the following props with your <code>Button</code>.</p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonSizeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2254,7 +2260,6 @@ The disabled prop of NativeBase Button is of type boolean. When present, it spec
 <em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DisabledButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2292,7 +2297,6 @@ Card is a flexible and extensible content container. It includes options for hea
 <p><em>Genertal Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2388,7 +2392,6 @@ Card is a flexible and extensible content container. It includes options for hea
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardHeaderFooterExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2422,7 +2425,6 @@ Card is a flexible and extensible content container. It includes options for hea
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Icon, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2453,7 +2455,6 @@ Here is your Card Image ready !</p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardImageExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2503,7 +2504,6 @@ Here is your Card Image ready !</p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardShowcaseExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -2834,7 +2834,6 @@ Here is your Card Image ready !</p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Badge, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooterTabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3181,7 +3180,6 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input,Label} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3210,7 +3208,6 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input,Label} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3239,7 +3236,6 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input,Label} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3268,7 +3264,6 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input,Label} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3393,7 +3388,6 @@ However, you can also render icon to the right. To display icon at the end of te
 <p><em>Syntax</em>        </p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, InputGroup, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuccessInputTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -3789,7 +3783,6 @@ A base component for specifying lists of information. List must contain one or m
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -4887,7 +4880,6 @@ Drawer is used from react-native-drawer Drawer</p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Drawer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> SideBar <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./yourPathToSideBar&apos;</span>;
-&#x200B;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DrawerExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     render() {
       closeDrawer = () =&gt; {
@@ -4980,7 +4972,7 @@ Drawer is used from react-native-drawer Drawer</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-10T11:35:36.393Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-16T06:20:13.706Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

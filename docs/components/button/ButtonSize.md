@@ -13,7 +13,6 @@ Include the following props with your <code>Button</code>.
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Text } from 'native-base';
-​
 export default class ButtonSizeExample extends Component {
     render() {
         return (

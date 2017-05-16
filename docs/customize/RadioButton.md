@@ -41,7 +41,6 @@ Steps to customize theme for Radio Button attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Radio, Text } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeRadioButtonExample extends Component {
     render() {
         return (

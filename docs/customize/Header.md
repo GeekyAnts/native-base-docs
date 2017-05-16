@@ -48,7 +48,6 @@ Steps to customize theme for Header attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Header, Button, Title, Icon } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeHeaderExample extends Component {
     render() {
         return (

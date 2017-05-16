@@ -44,7 +44,6 @@ Steps to customize theme for Header Tag attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, H1, H2, H3 } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeTypographyExample extends Component {
     render() {
         return (

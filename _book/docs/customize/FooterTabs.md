@@ -40,7 +40,6 @@ Steps to customize theme for Footer Tabs attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeFooterTabsExample extends Component {
     render() {
         return (

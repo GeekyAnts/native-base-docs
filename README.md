@@ -13,7 +13,6 @@ One of our main goal with [NativeBase](https://nativebase.io/) **2.0** is to mak
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Button, Text } from 'native-base';
-​
 export default class IconExample extends Component {
     render() {
         return (

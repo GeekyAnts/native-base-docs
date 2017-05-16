@@ -81,7 +81,6 @@ With the above simple changes, we have a component that can receive styles from 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { StyleProvider } from 'native-base';
-​
 class CustomComponent extends Component {
     render() {
         return (
@@ -111,7 +110,6 @@ These style objects in the theme for any components can be applied to them as a 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { StyleProvider, Button, Text } from 'native-base';
-​
 class CustomComponent extends Component {
     render() {
         return (

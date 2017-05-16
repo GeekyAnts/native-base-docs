@@ -10,7 +10,6 @@ The inlineLabel property creates a Input component, whose Label is in-line with 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Form, Item, Input,Label} from 'native-base';
-​
 export default class FormExample extends Component {
     render() {
         return (

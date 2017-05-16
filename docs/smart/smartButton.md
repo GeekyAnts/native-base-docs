@@ -22,7 +22,6 @@
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Icon } from 'native-base';
 import { Button } from 'native-base';
-​
 export default class ButtonExample extends Component {
     render() {
         return (

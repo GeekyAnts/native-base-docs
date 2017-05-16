@@ -9,7 +9,8 @@
         "edit-link",
         "scripts",
         "navigator",
-        "ga"
+        "ga",
+        "livereload"
     ],
     "pluginsConfig": {
       "ga": {

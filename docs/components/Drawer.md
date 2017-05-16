@@ -11,7 +11,6 @@ Drawer is used from react-native-drawer Drawer
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Drawer } from 'native-base';
 import SideBar from './yourPathToSideBar';
-​
 export default class DrawerExample extends Component {
     render() {
       closeDrawer = () => {

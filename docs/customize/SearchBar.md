@@ -37,7 +37,6 @@ Steps to customize theme for Search Bar attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Header, Button, Icon, InputGroup, Input } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeSearchBarExample extends Component {
     render() {
         return (

@@ -11,7 +11,6 @@ Include <code>CardItem</code> subsequently within <code>Card</code> to create a 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
-​
 export default class CardListExample extends Component {
     render() {
         return (

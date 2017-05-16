@@ -52,7 +52,6 @@ Steps to customize theme for List attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, List, ListItem, Text, Icon } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeListExample extends Component {
     render() {
         return (

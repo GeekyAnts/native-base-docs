@@ -23,9 +23,7 @@ Buttons are the integral part of an application. They are used for various purpo
 *Syntax*
 {% codetabs name="Basic", type="js" -%}
 import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
-import { Button } from 'native-base';
-​
+import { Container, Content, Button } from 'native-base';
 export default class ButtonExample extends Component {
     render() {
         return (
@@ -43,7 +41,6 @@ export default class ButtonExample extends Component {
 {%- language name="Advanced", type="js" -%}
 import React, { Component } from 'react';
 import { Container, Content, Button, Text } from 'native-base';
-​
 export default class ButtonExample extends Component {
     render() {
         return (

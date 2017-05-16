@@ -11,7 +11,6 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Icon, Text } from 'native-base';
-​
 export default class IconButtonExample extends Component {
     render() {
         return (

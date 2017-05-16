@@ -20,7 +20,6 @@ A base component for specifying lists of information. List must contain one or m
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text } from 'native-base';
-​
 export default class ListExample extends Component {
     render() {
         return (

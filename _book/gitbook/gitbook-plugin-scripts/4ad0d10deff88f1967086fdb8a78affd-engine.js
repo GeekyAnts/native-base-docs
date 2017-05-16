@@ -83,7 +83,7 @@ andBut.onclick= function(){
 // Style anchor and its chilren
 anchor.id= "anchor";
   anchor.style= "position: fixed; right: 50px;top: 78px;";
-anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
+anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
 anchorContainer.id= "anchorContainer";
 anchorImage.id= "anchorImage";
 anchorImage.src='';
@@ -127,9 +127,9 @@ setInterval(function(){
 
   // Set Anchor background Phone image with button changes
   if(androidSelected){
-    anchorContainer.style= "background: url(../docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
+    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
   } else if(!androidSelected){
-    anchorContainer.style= "background: url(../docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
+    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
   }
 
   // Hide useless buttons for our big pages

@@ -61,7 +61,6 @@ Steps to customize theme for InputGroup attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, InputGroup, Input } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeInputGroupExample extends Component {
     render() {
         return (

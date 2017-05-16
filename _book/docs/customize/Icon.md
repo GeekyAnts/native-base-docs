@@ -41,7 +41,6 @@ Steps to customize theme for Icon attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react-native';
 import { Container, Content, Icon } from 'native-base';
 import myTheme from './Themes/myTheme';
-​
 export default class ThemeIconExample extends Component {
     render() {
         return (

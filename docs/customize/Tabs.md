@@ -41,10 +41,8 @@ Steps to customize theme for Tab attributes:
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Tabs } from 'native-base';
 import myTheme from './Themes/myTheme';
-
 import TabOne from './tabOne';
 import TabTwo from './tabTwo';
-​
 export default class ThemeTabsExample extends Component {
     render() {
         return (
