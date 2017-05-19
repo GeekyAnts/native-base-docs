@@ -23,7 +23,7 @@ export default class DrawerExample extends Component {
             &lt;Drawer
               ref={(ref) => { this.drawer = ref; }}
               content={&lt;SideBar navigator={this.navigator} />}
-              onClose={() => this.closeDrawer()} >
+              onClose={ closeDrawer } >
             // Main View
           &lt;/Drawer>
         );
