@@ -53,5 +53,13 @@ export default class CheckBoxExample extends Component {
                     Represents the state value of an item from set of choices.
                 </td>
             </tr>
+            <tr>
+                <td>onPress</td>
+                <td>Function</td>
+                <td></td>
+                <td>
+                  Callback for the onPress event.
+                </td>
+            </tr>
         </tbody>
     </table><br/>
