@@ -11,7 +11,7 @@ For Android use this [React Native Picker](https://facebook.github.io/react-nati
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Picker } from 'native-base';
-const Item = Picker.Item;​
+const Item = Picker.Item;
 export default class PickerExample extends Component {
     constructor(props) {
         super(props);

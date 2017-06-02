@@ -15,3 +15,4 @@ This section features some basic Apps made using <br />
    [Full App Example](./GitAppExample.md) <br />
    [Redux Form Example](./ReduxFormExample.md) <br />
    [Sticky headers Example](./StickyHeaderExample.md) <br />
+   [FlatList + Sticky Headers](/docs/FlatListExample.md)

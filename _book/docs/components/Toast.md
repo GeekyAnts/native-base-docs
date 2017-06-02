@@ -7,16 +7,16 @@ NativeBase Toast can be used to display quick warning or error messages. <br />
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Toast, Button, Text, Header, Left, Right, Body, Title } from 'native-base';
-​export default class Toast extends Component {
-  constructor(props) {
+<pre class="line-numbers"><code class="language-jsx">import React, &lcub; Component } from 'react';
+import &lcub; Container, Content, Toast, Button, Text, Header, Left, Right, Body, Title, Icon } from 'native-base';
+export default class Toast extends Component &lcub;
+  constructor(props) &lcub;
   super(props);
-  this.state = {
+  this.state = &lcub;
     showToast: false
   }
 }
-render() {
+render() &lcub;
   return (
       &lt;Container>
         &lt;Header>
@@ -31,8 +31,8 @@ render() {
           &lt;Right />
         &lt;/Header>
         &lt;Content padder>
-          &lt;Button onPress={()=> Toast.show({
-              supportedOrientations= ['potrait','landscape'],
+          &lt;Button onPress=&lcub;()=> Toast.show(&lcub;
+              supportedOrientations: ['potrait','landscape'],
               text: 'Wrong password!',
               position: 'bottom',
               buttonText: 'Okay'

@@ -98,3 +98,4 @@
   * [Full App](/docs/GitAppExample.md)
   * [Redux-Form](/docs/ReduxFormExample.md)
   * [Sticky Headers](/docs/StickyHeaderExample.md)
+  * [FlatList + Sticky Headers](/docs/FlatListExample.md)

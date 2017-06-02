@@ -1,12 +1,12 @@
 # Drawer
 
 Drawer for both iOS and Android.<br />
-Drawer is used from react-native-drawer Drawer
+Drawer can be the perfect option to provide navigation options. <br />
 
 ![Preview ios Drawer](https://docs.nativebase.io/docs/assets/ios/components/drawer.png)
 ![Preview android Drawer](https://docs.nativebase.io/docs/assets/android/components/drawer.png)
 
-*Syntax*
+**Syntax**
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Drawer } from 'native-base';

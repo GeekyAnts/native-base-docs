@@ -74,7 +74,7 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
                 <td> - </td>
                 <td> - </td>
                 <td>Represents the main content of your screen.<br />
-                    There can be only one <code style="background-color: #FFF">Content></code> component in a screen.
+                    There can be only one <code style="background-color: #FFF">&lt;Content></code> component in a screen.
                 </td>
             </tr>
             <tr>
@@ -121,7 +121,7 @@ import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'nativ
 * Content takes in the whole collection of React Native and NativeBase components.
 * Content provides you with stylesheet.
 * User can add custom styles while defining <code>Content</code> within their app.
-* Replacing Component: React Native Keyboard Aware Scroll View's <code>KeyboardAwareScrollView</code>
+* Replacing Component: [ScrollView](https://facebook.github.io/react-native/docs/scrollview.html) of [react-native](https://facebook.github.io/react-native/).
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content } from 'native-base';

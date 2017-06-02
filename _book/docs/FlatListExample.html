@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Redux · NativeBase</title>
+        <title>FlatList + Sticky Headers · NativeBase</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="MobxCounterExample.html" />
     
-    
-    <link rel="prev" href="Examples.html" />
+    <link rel="prev" href="StickyHeaderExample.html" />
     
 
     </head>
@@ -1203,7 +1201,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.15.1" data-path="ReduxCounterExample.html">
+        <li class="chapter " data-level="1.15.1" data-path="ReduxCounterExample.html">
             
                 <a href="ReduxCounterExample.html">
             
@@ -1313,7 +1311,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.7" data-path="FlatListExample.html">
+        <li class="chapter active" data-level="1.15.7" data-path="FlatListExample.html">
             
                 <a href="FlatListExample.html">
             
@@ -1361,7 +1359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Redux</a>
+        <a href=".." >FlatList + Sticky Headers</a>
     </h1>
 </div>
 
@@ -1376,188 +1374,151 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="Basic_Redux_Counter_Example">Basic Redux Counter Example</h1>
-<p>This is a simple single page application that uses <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the main Libraries. <br>
+                                <h1 id="FlatList_Sticky_Header_Example">FlatList Sticky Header Example</h1>
+<p>This is a simple example of Sticky Headers in <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">FlatList</a> Component of <a href="https://facebook.github.io/react-native/" target="_blank">ReactNative</a> made with <a href="https://nativebase.io/" target="_blank">NativeBase</a> and <a href="https://github.com/react-community/create-react-native-app" target="_blank">Create React Native App</a> tool. Detailed Setup instructions can be found below. <br>
 <br></p>
-<h1 id="Find_full_code_here">Find full code <a href="https://github.com/GeekyAnts/native-base-example-redux-counter" target="_blank">here</a></h1>
+<h1 id="Find_Full_Code_here">Find Full Code <a href="https://github.com/GeekyAnts/native-base-example-flatlist-stickyHeaders" target="_blank">here</a></h1>
 <p><br>
-<img src="https://docs.nativebase.io/docs/assets/ReduxCounterExample.gif" alt="ReduxCounter Example"> <br></p>
+<img src="https://docs.nativebase.io/docs/assets/FlatListSticky.gif" alt="Sticky Header"> <br></p>
 <h2 id="Aim">1. Aim</h2>
-<p>We aim to create a simple App that has a counter with increment and decrement functionality. The logic is implemented in <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>. <br></p>
+<p>We aim to create a simple App that implements sticky headers as shown in the GIF above. <br></p>
 <h2 id="Installation">2. Installation</h2>
-<p><strong>Note: <br>
-If you encounter an issue with <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> during building your project, it might be due to issue with latest versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>. Check out <a href="https://github.com/aksonov/react-native-router-flux/issues/1761" target="_blank">this issue</a>. You might have to bump down the versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> and React</strong> <br></p>
 <ol>
-<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
-<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
-a. <strong>Redux</strong> and <strong>react-redux</strong> <br>
-In your terminal enter the following <br>
+<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
 <code>
-npm install redux react-redux --save
+$ npm install -g create-react-native-app
 </code> <br>
-b. <strong>NativeBase</strong> <br>
+<code>
+$ create-react-native-app my-app
+</code> <br>
+<code>
+$ cd my-app/
+</code> <br>
+<code>
+$ npm start
+</code> <br></p>
+</li>
+<li><p><strong>NativeBase</strong> <br>
 <code>
 npm install native-base --save
 </code> <br>
+<strong>Important: additional steps are required to import fonts from native base. Refer to <a href="GetStarted.html#Setup_with_CRNA">this</a></strong>
 <strong>Configure all dependencies by running the following command</strong> <br>
 <code>
 react-native link
-</code> <br>
-By the end of Installation, your package.json file should look something like this.<br>
-<img src="https://docs.nativebase.io/docs/assets/ReduxCounterPackage.png" alt="Redux Counter"> <br><h2 id="Setting_Things_Up">3. Setting Things Up</h2>
+</code> <br></p>
 </li>
 </ol>
-<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create three folders namely <code>reducers, actions, components</code> and one file <code>App.js</code>. <br></p>
-<h3 id="Redux_Store_Setup">3.1. Redux Store Setup</h3>
-<p>We need to create our store inside our <code>App.js</code> file. If you are unfamiliar with basic Redux concepts, refer <a href="http://redux.js.org/" target="_blank">this Documentation</a>. <br>
-<strong>App.js Code</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/index.js&apos;</span>;
-<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
-<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/counter.js&apos;</span>;
-<span class="hljs-keyword">const</span> store = createStore(allReducers);
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
-  render(){
-    <span class="hljs-keyword">return</span>(
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
-     <span class="hljs-tag">&lt;<span class="hljs-name">Counter</span> /&gt;</span>
-     <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
-    );
-  }
-}</span></code></pre><br>
-Here <br></p>
-<ol>
-<li>We are optimistic here while importing <code>allReducers</code> from <code>reducers</code> folder. <br></li>
-<li><code>createStore</code> function takes in our <code>allReducers</code> object and creates our Store. <br></li>
-<li><code>Provider</code> component makes the store available throughout our App. <br></li>
-</ol>
-<h3 id="Redux_Reducers_Setup">3.2. Redux Reducers Setup</h3>
-<p>Reducers will return the data needed by our app. Here we simply need a reducer to return the <code>Counter</code> value. <br>
-Create a file <code>countReducer.js</code> inside <code>reducers</code> folder. <br>
-<strong>Code reducers/countReducer.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">let</span> count= <span class="hljs-number">0</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state=count, action</span>)</span>{
-  <span class="hljs-keyword">switch</span> (action.type) {
-    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;Increment&quot;</span>: count++;
-      <span class="hljs-keyword">break</span>;
-      <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;Decrement&quot;</span>: count--;
-      <span class="hljs-keyword">break</span>;
-  }
-  <span class="hljs-keyword">return</span> count;
-}</code></pre><br>
-The reducer defined above will return the always return count value. <code>Increment</code> and <code>Decrement</code> action types will manipulate the count value as shown.<br>
-We combine all reducers inside <code>index.js</code> file inside <code>reducers</code> function. <br>
-<strong>Code reducers/index.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> countReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./countReducer.js&apos;</span>;
-<span class="hljs-keyword">const</span> allReducers= combineReducers({
-  count: countReducer,
-});
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> allReducers;</code></pre><br></p>
-<h3 id="Redux_Actions_Setup">3.3. Redux Actions Setup</h3>
-<p>We will simply create two actions <code>Increment</code> and <code>Decrement</code>. <br>
-<strong>Code actions/index.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">increment</span>(<span class="hljs-params"></span>)</span>{
-  <span class="hljs-keyword">return</span>{
-    type: <span class="hljs-string">&quot;Increment&quot;</span>
-  };
-}
-<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decrement</span>(<span class="hljs-params"></span>)</span>{
-  <span class="hljs-keyword">return</span>{
-    type: <span class="hljs-string">&quot;Decrement&quot;</span>
-  };
-}</code></pre><br></p>
-<h3 id="Redux_Component_Setup">3.4. Redux Component Setup</h3>
-<p>We just need one component here. A counter component.</p>
-<h3 id="Important_stuff_">3.5. Important stuff </h3>
-<p>In order to be able to use Reducers and actions, we need to use two important functions. Both these functions have extremely simple applications(although the names sound scary enough).<br></p>
-<ol>
-<li><p><code>mapStateToProps</code> =&gt; This function, simply takes your reducer data, that is required, and converts it into a usable <a href="https://facebook.github.io/react-native/docs/props.html" target="_blank">Prop</a>. Now we can use the data as a prop. example <code>this.props.data</code>. <br></p>
-<p><strong>General Syntax of mapStateToProps</strong> <br></p>
+<h2 id="Setting_Things_Up">3. Setting Things Up</h2>
+<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create a file by the name of <code>StickyHeader.js</code>. <br>
+<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong> <br>
+By the end of all this your project structure and <code>package.json</code> file should look something like this. <br>
+<img src="https://docs.nativebase.io/docs/assets/FlatListStickyPackage.png" alt="StickyHeader Package"> <br></p>
+<h2 id="Making_our_List_Component">4. Making our List Component</h2>
+<p>In your <code>StickyHeader.js</code> inside <code>src</code> folder add the following code. <br>
+<strong>Code src/StickyHeader.js</strong></p>
 <p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapStateToProps</span>(<span class="hljs-params">state</span>)</span>{
-<span class="hljs-keyword">return</span>{
- dataObj : state.reducerName
-};
-}
-</code></pre><br></p>
-<p><strong>Remember how we allotted names to Reducers in the <code>combineReducers</code> function. We use the same name to call respective Reducer</strong></p>
-<ol>
-<li><code>matchDispatchToProps</code> =&gt; This function simply converts our <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Actions</a> into usable props. <br>
-<strong>General Syntax of matchDispatchToProps</strong> <br></li>
-</ol>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">matchDispatchToProps</span>(<span class="hljs-params">dispatch</span>)</span>{
-<span class="hljs-keyword">return</span> bindActionCreators({action1: importedAction1, action2: importedAction2}, dispatch)
-}
-</code></pre><br>
-<strong>bindActionCreators function here simply combines our actions into a single object.</strong> <br></p>
-</li>
-</ol>
-<p><strong>Code components/counter.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">import</span> { increment, decrement } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions/index.js&apos;</span>;
-<span class="hljs-keyword">import</span> {bindActionCreators} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
-  render(){
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.props.count);
-    <span class="hljs-keyword">return</span>(
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Redux Counter<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                                {this.props.count}
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> this.props.increment()}&gt;
-                             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                         <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                         <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> this.props.decrement()}&gt;
-                              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Decrement<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                 <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-    );
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> { FlatList } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
+<span class="hljs-keyword">import</span> { Text, ListItem, Left, Body, Icon, Right, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.state = {
+      data: [
+        { name: <span class="hljs-string">&quot;Movie&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;interstellar&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Dark Knight&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Pop&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Butter&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Tea&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Music&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Adams&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Nirvana&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Amrit Maan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Oye Hoye&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Eminem&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Places&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Jordan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Punjab&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Ludhiana&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;jsr&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;india&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;People&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Jazzy&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Appie&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Baby&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Sunil&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Arrow&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;THings&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;table&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;chair&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;fan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Cup&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Cube&quot;</span>, header: <span class="hljs-literal">false</span> }
+      ],
+      stickyHeaderIndices: []
+    };
   }
-}
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapStateToProps</span>(<span class="hljs-params">state</span>)</span>{
-<span class="hljs-keyword">return</span>{
- count : state.count
-};
-}
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">matchDispatchToProps</span>(<span class="hljs-params">dispatch</span>)</span>{
-<span class="hljs-keyword">return</span> bindActionCreators({increment: increment, decrement: decrement}, dispatch)
-}
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(mapStateToProps, matchDispatchToProps)(Counter);
-</code></pre><br></p>
-<h3 id="Finishing_up">3.6. Finishing up</h3>
-<p>Lastly we import our <code>App</code> in our index.js file.</p>
-<p><strong>Code index.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> {
-  AppRegistry,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/App.js&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReduxCounter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  componentWillMount() {
+    <span class="hljs-keyword">var</span> arr = [];
+    <span class="hljs-keyword">this</span>.state.data.map(obj =&gt; {
+      <span class="hljs-keyword">if</span> (obj.header) {
+        arr.push(<span class="hljs-keyword">this</span>.state.data.indexOf(obj));
+      }
+    });
+    arr.push(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">this</span>.setState({
+      stickyHeaderIndices: arr
+    });
+  }
+  renderItem = ({ item }) =&gt; {
+    <span class="hljs-keyword">if</span> (item.header) {
+      <span class="hljs-keyword">return</span> (
+        &lt;ListItem
+          style={{ backgroundColor: &quot;rgb(17, 124, 73)&quot;, marginLeft: 0 }}&gt;
+          &lt;Left /&gt;
+          &lt;Body&gt;
+            &lt;Text style={{ fontWeight: &quot;bold&quot; }}&gt;{item.name}&lt;/Text&gt;
+          &lt;/Body&gt;
+          &lt;Right /&gt;
+        &lt;/ListItem&gt;
+      );
+    } else if (!item.header) {
+      return (
+        &lt;ListItem style={{ marginLeft: 0 }}&gt;
+          &lt;Body&gt;
+            &lt;Text&gt;{item.name}&lt;/Text&gt;
+          &lt;/Body&gt;
+        &lt;/ListItem&gt;
+      );
+    }
+  };
   render() {
-    <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+    return (
+      &lt;FlatList
+        data={this.state.data}
+        renderItem={this.renderItem}
+        keyExtractor={item =&gt; item.name}
+        stickyHeaderIndices={this.state.stickyHeaderIndices}
+      /&gt;
     );
   }
 }
-AppRegistry.registerComponent(&apos;ReduxCounter&apos;, () =&gt; ReduxCounter);
-</span></code></pre><br></p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_full_code_here">Find full code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><ul><li><a href="#Redux_Store_Setup">3.1. Redux Store Setup</a></li><li><a href="#Redux_Reducers_Setup">3.2. Redux Reducers Setup</a></li><li><a href="#Redux_Actions_Setup">3.3. Redux Actions Setup</a></li><li><a href="#Redux_Component_Setup">3.4. Redux Component Setup</a></li><li><a href="#Important_stuff_">3.5. Important stuff </a></li><li><a href="#Finishing_up">3.6. Finishing up</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
+</code></pre><br></p>
+<p><strong>Explained</strong> <br></p>
+<ol>
+<li>We import our <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">FlatList</a> component from <a href="https://facebook.github.io/react-native/" target="_blank">ReactNative</a>. Also we take care of a few other imports from <a href="https://nativebase.io/" target="_blank">NativeBase</a> as we will require them further.</li>
+<li>Next we are <strong>hard-coding</strong> our app data in our App <strong>state</strong>. Our data here just has a name and a boolean variable for header.</li>
+<li>Next we fetch the <strong>indices</strong> of all the headers we would like to <strong>stick</strong> in our List. Notice how we have done that in the <strong>componentWillMount</strong> method.</li>
+<li>In our <strong>render</strong> method, we have simply passed our <strong>FlatList</strong> Component with data provided. <strong>renderItem</strong> is called each time a new item appears in our List data.</li>
+<li><strong>keyExtractor</strong> prop is required to properly differentiate between data items using a unique <strong>key</strong>. We have used the names here.</li>
+<li><strong>stickyHeaderIndices</strong> will take an array of all the indices we want to stick. We pass the array we previously populated in <strong>3</strong>.</li>
+<li>Lastly, in the <strong>renderItem</strong> method we include a check for header items and children items. Accordingly we show different styles for each.</li>
+</ol>
+<h2 id="Finishing_Up">5. Finishing Up</h2>
+<p>We have successfully made our List component. Go ahead and include it in our <strong>App.js</strong> file. Build and run.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_Full_Code_here">Find Full Code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><li><a href="#Making_our_List_Component">4. Making our List Component</a></li><li><a href="#Finishing_Up">5. Finishing Up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1584,14 +1545,10 @@ AppRegistry.registerComponent(&apos;ReduxCounter&apos;, () =&gt; ReduxCounter);
 
             
                 
-                <a href="Examples.html" class="navigation navigation-prev " aria-label="Previous page: Examples">
+                <a href="StickyHeaderExample.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Sticky Headers">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="MobxCounterExample.html" class="navigation navigation-next " aria-label="Next page: Mobx">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1600,7 +1557,7 @@ AppRegistry.registerComponent(&apos;ReduxCounter&apos;, () =&gt; ReduxCounter);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Redux","level":"1.15.1","depth":2,"next":{"title":"Mobx","level":"1.15.2","depth":2,"path":"docs/MobxCounterExample.md","ref":"docs/MobxCounterExample.md","articles":[]},"previous":{"title":"Examples","level":"1.15","depth":1,"path":"docs/Examples.md","ref":"docs/Examples.md","articles":[{"title":"Redux","level":"1.15.1","depth":2,"path":"docs/ReduxCounterExample.md","ref":"docs/ReduxCounterExample.md","articles":[]},{"title":"Mobx","level":"1.15.2","depth":2,"path":"docs/MobxCounterExample.md","ref":"docs/MobxCounterExample.md","articles":[]},{"title":"Navigation","level":"1.15.3","depth":2,"path":"docs/NavigationExample.md","ref":"docs/NavigationExample.md","articles":[{"title":"React Navigation","level":"1.15.3.1","depth":3,"path":"docs/StackNavigationExample.md","ref":"docs/StackNavigationExample.md","articles":[]},{"title":"RNRF","level":"1.15.3.2","depth":3,"path":"docs/RNRFBasicExample.md","ref":"docs/RNRFBasicExample.md","articles":[]}]},{"title":"Full App","level":"1.15.4","depth":2,"path":"docs/GitAppExample.md","ref":"docs/GitAppExample.md","articles":[]},{"title":"Redux-Form","level":"1.15.5","depth":2,"path":"docs/ReduxFormExample.md","ref":"docs/ReduxFormExample.md","articles":[]},{"title":"Sticky Headers","level":"1.15.6","depth":2,"path":"docs/StickyHeaderExample.md","ref":"docs/StickyHeaderExample.md","articles":[]},{"title":"FlatList + Sticky Headers","level":"1.15.7","depth":2,"path":"docs/FlatListExample.md","ref":"docs/FlatListExample.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/ReduxCounterExample.md","mtime":"2017-05-16T08:05:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-02T07:45:40.121Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FlatList + Sticky Headers","level":"1.15.7","depth":2,"previous":{"title":"Sticky Headers","level":"1.15.6","depth":2,"path":"docs/StickyHeaderExample.md","ref":"docs/StickyHeaderExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/FlatListExample.md","mtime":"2017-06-02T08:51:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-02T07:45:40.121Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

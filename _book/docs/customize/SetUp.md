@@ -7,7 +7,7 @@ Customizing [NativeBase](https://nativebase.io/) will be a cakewalk for you. Tha
 Hence with any component you can pass the style property which will be merged to the default style of that component.
 
 #### Steps to be followed to customize NativeBase:
-* Run node *node_modules/native-base/ejectTheme.js* from your terminal after installing native-base.
+* Run node **node_modules/native-base/ejectTheme.js** from your terminal after installing native-base.
 * All the theme files and variables get added to your project root. Change the variables or theme files.
 * Wrap the code or component to which you want to apply the theme with *<StyleProvider>*.
 * Pass the variable i.e *platform/material/commonColors.js* as the parameter of theme function, which is passed as a value to style prop of component *<StyleProvider>*.
