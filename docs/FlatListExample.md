@@ -54,36 +54,36 @@ export default class App extends React.Component {
     super();
     this.state = {
       data: [
-        { name: "Movie", header: true },
-        { name: "interstellar", header: false },
-        { name: "Dark Knight", header: false },
-        { name: "Pop", header: false },
-        { name: "Butter", header: false },
-        { name: "Tea", header: false },
-        { name: "Music", header: true },
-        { name: "Adams", header: false },
-        { name: "Nirvana", header: false },
-        { name: "Amrit Maan", header: false },
-        { name: "Oye Hoye", header: false },
-        { name: "Eminem", header: false },
-        { name: "Places", header: true },
-        { name: "Jordan", header: false },
-        { name: "Punjab", header: false },
-        { name: "Ludhiana", header: false },
-        { name: "jsr", header: false },
-        { name: "india", header: false },
-        { name: "People", header: true },
-        { name: "Jazzy", header: false },
-        { name: "Appie", header: false },
-        { name: "Baby", header: false },
-        { name: "Sunil", header: false },
-        { name: "Arrow", header: false },
-        { name: "THings", header: true },
-        { name: "table", header: false },
-        { name: "chair", header: false },
-        { name: "fan", header: false },
-        { name: "Cup", header: false },
-        { name: "Cube", header: false }
+      { name: "Movies", header: true },
+      { name: "Interstellar", header: false },
+      { name: "Dark Knight", header: false },
+      { name: "Pop", header: false },
+      { name: "Pulp Fiction", header: false },
+      { name: "Burning Train", header: false },
+      { name: "Music", header: true },
+      { name: "Adams", header: false },
+      { name: "Nirvana", header: false },
+      { name: "Amrit Maan", header: false },
+      { name: "Oye Hoye", header: false },
+      { name: "Eminem", header: false },
+      { name: "Places", header: true },
+      { name: "Jordan", header: false },
+      { name: "Punjab", header: false },
+      { name: "Ludhiana", header: false },
+      { name: "Jamshedpur", header: false },
+      { name: "India", header: false },
+      { name: "People", header: true },
+      { name: "Jazzy", header: false },
+      { name: "Appie", header: false },
+      { name: "Baby", header: false },
+      { name: "Sunil", header: false },
+      { name: "Arrow", header: false },
+      { name: "Things", header: true },
+      { name: "table", header: false },
+      { name: "chair", header: false },
+      { name: "fan", header: false },
+      { name: "cup", header: false },
+      { name: "cube", header: false }
       ],
       stickyHeaderIndices: []
     };
@@ -103,11 +103,12 @@ export default class App extends React.Component {
   renderItem = ({ item }) => {
     if (item.header) {
       return (
-        &lt;ListItem
-          style=&lcub;&lcub; backgroundColor: "rgb(17, 124, 73)", marginLeft: 0 }}>
+        &lt;ListItem itemDivider>
           &lt;Left />
-          &lt;Body>
-            &lt;Text style=&lcub;&lcub; fontWeight: "bold" }}>{item.name}&lt;/Text>
+          &lt;Body style=&lcub;&lcub; marginRight: 40 }}>
+            &lt;Text style=&lcub;&lcub; fontWeight: "bold" }}>
+              {item.name}
+            &lt;/Text>
           &lt;/Body>
           &lt;Right />
         &lt;/ListItem>
