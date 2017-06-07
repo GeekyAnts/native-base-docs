@@ -90,14 +90,6 @@ export default class FormExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>placeholderLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Renders the same way the TextInput does with the form styling of NativeBase.
-                </td>
-            </tr>
-            <tr>
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>

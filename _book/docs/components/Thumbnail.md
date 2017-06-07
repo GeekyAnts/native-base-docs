@@ -17,10 +17,10 @@ export default class ThumbnailExample extends Component {
                 &lt;Content>
                     &lt;Text>Square Thumbnail&lt;/Text>
                     &lt;Thumbnail square source={require('./img/one.png')} />
-                    &lt;Thumbnail square size={80} source={require('./img/one.png')} />
+                    &lt;Thumbnail square source={require('./img/one.png')} />
                     &lt;Text>Circular Thumbnail&lt;/Text>
                     &lt;Thumbnail source={require('./img/two.png')} />
-                    &lt;Thumbnail size={80} source={require('./img/two.png')} />
+                    &lt;Thumbnail source={require('./img/two.png')} />
                 &lt;/Content>
             &lt;/Container>
         );

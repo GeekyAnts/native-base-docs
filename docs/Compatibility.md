@@ -29,8 +29,12 @@
                     <td>v0.38.0 - v0.39.0 </td>
                 </tr>
                 <tr>
-                    <td>v2.0.0-alpha1</td>
-                    <td>v0.38.0 and above</td>
+                    <td>v2.0.0-alpha1 to v2.1.3</td>
+                    <td>v0.38.0 to v43.0<.0/td>
+                </tr>
+                <tr>
+                    <td>v2.1.4</td>
+                    <td>v44.0.0 and above<.0/td>
                 </tr>
             </tbody>
         </table><br />

@@ -2676,6 +2676,12 @@ Here is your Card Image ready !</p>
                 <td>-</td>
                 <td>Callback that is called when the Card is Swipe Left</td>
             </tr>
+            <tr>
+                <td>looping</td>
+                <td> true </td>
+                <td> true, false </td>
+                <td>Enable or disable looping of DeckSwiper on end reached.</td>
+            </tr>
         </tbody>
     </table><br></p>
 <h2 id="fabs-def-headref">26. fabs-def-headref</h2>
@@ -3100,14 +3106,6 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
                 <td> - </td>
                 <td>
                     Places the label on top of the input element which appears like a stack. This can also be used along with placeholder.
-                </td>
-            </tr>
-            <tr>
-                <td>placeholderLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Renders the same way the TextInput does with the form styling of NativeBase.
                 </td>
             </tr>
             <tr>
@@ -4243,25 +4241,25 @@ For Android use this <a href="https://facebook.github.io/react-native/docs/picke
         </thead>
         <tbody>
             <tr>
-                <td>headerComponent</td>
+                <td>renderHeader (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Takes component that appears as header of the Picker</td>
+                <td>Takes component that appears as header of the Picker, comes with a <code>backAction</code> prop to close the picker. Like <code>renderHeader={(backAction) =&gt;{ // BODY }</code></td>
             </tr>
             <tr>
-                <td>textStyle</td>
+                <td>textStyle (iOS only) </td>
                 <td> - </td>
                 <td> - </td>
                 <td>Text style of header.</td>
             </tr>
             <tr>
-                <td>itemStyle</td>
+                <td>itemStyle (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Style of items in the Picker</td>
             </tr>
             <tr>
-                <td>itemTextStyle</td>
+                <td>itemTextStyle (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Text style of item component</td>
@@ -4559,6 +4557,86 @@ We provide you with the one, which filters the list based on your search input.<
                     Set position of Tabs
                 </td>
             </tr>
+            <tr>
+                <td>renderTabBar</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Accept 1 argument props and should return a component to use as the tab bar
+                </td>
+            </tr>
+            <tr>
+                <td>onChangeTab</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Function to call when tab changes
+                </td>
+            </tr>
+            <tr>
+                <td>onScroll</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Function to call when the pages are sliding, should accept 1 argument which is an Float number representing the page position in the slide frame
+                </td>
+            </tr>
+            <tr>
+                <td>children</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Each top-level child component should have a tabLabel prop that can be used by the tab bar component to render out the labels
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarUnderlineStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Style of the default tab bar&apos;s underline
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarBackgroundColor</td>
+                <td> white </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar&apos;s background
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarActiveTextColor</td>
+                <td> navy </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar&apos;s text when active
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarInactiveTextColor</td>
+                <td> black </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar&apos;s text when not active.
+                </td>
+            </tr>
+            <tr>
+                <td>scrollWithoutAnimation</td>
+                <td> false </td>
+                <td> true, false </td>
+                <td>
+                    On tab press change tab without animation.
+                </td>
+            </tr>
+            <tr>
+                <td>prerenderingSiblingsNumber</td>
+                <td> 0 </td>
+                <td> - </td>
+                <td>
+                    pre-render nearby # sibling, Infinity === render all the siblings, default to 0 === render current page
+                </td>
+            </tr>
         </tbody>
     </table><br>
 <br>
@@ -4690,10 +4768,10 @@ We provide you with the one, which filters the list based on your search input.<
                 &lt;Content&gt;
                     &lt;Text&gt;Square Thumbnail&lt;/Text&gt;
                     &lt;Thumbnail square source={require(&apos;./img/one.png&apos;)} /&gt;
-                    &lt;Thumbnail square size={80} source={require(&apos;./img/one.png&apos;)} /&gt;
+                    &lt;Thumbnail square source={require(&apos;./img/one.png&apos;)} /&gt;
                     &lt;Text&gt;Circular Thumbnail&lt;/Text&gt;
                     &lt;Thumbnail source={require(&apos;./img/two.png&apos;)} /&gt;
-                    &lt;Thumbnail size={80} source={require(&apos;./img/two.png&apos;)} /&gt;
+                    &lt;Thumbnail source={require(&apos;./img/two.png&apos;)} /&gt;
                 &lt;/Content&gt;
             &lt;/Container&gt;
         );
@@ -4769,7 +4847,7 @@ render() {
         &lt;/Header&gt;
         &lt;Content padder&gt;
           &lt;Button onPress={()=&gt; Toast.show({
-              supportedOrientations: [&apos;potrait&apos;,&apos;landscape&apos;],
+              supportedOrientations: [&apos;portrait&apos;,&apos;landscape&apos;],
               text: &apos;Wrong password!&apos;,
               position: &apos;bottom&apos;,
               buttonText: &apos;Okay&apos;
@@ -4825,12 +4903,36 @@ render() {
             <tr>
                 <td>supportedOrientations</td>
                 <td> - </td>
-                <td> Potrait, Landscape, Landscape-left, Landscape-right </td>
+                <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
                 <td>Allows the modal to be rotated to any of the specified orientations</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Attach any style to toast component.</td>
+            </tr>
+            <tr>
+                <td>buttonTextStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Attach any style to toast Button Text.</td>
+            </tr>
+            <tr>
+                <td>buttonStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Attach any style to toast Button.</td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Attach any style to toast Text component.</td>
             </tr>
             </tbody>
         </table><br></p>
-<p>Note: For Toast to work, it has to be called inside Container.</p>
+<p><strong>Note: For Toast to work, it has to be called inside Container.</strong></p>
 <h1 id="Typography">Typography</h1>
 <p>NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br>
 <em>Replacing Component for H1, H2, H3, Text: <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> <br></em></p>
@@ -4985,7 +5087,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-06T06:34:40.042Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-96833420-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"latest"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-05-04T06:16:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-07T07:38:13.241Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

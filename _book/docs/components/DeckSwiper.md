@@ -78,5 +78,11 @@ export default class DeckSwiperExample extends Component {
                 <td>-</td>
                 <td>Callback that is called when the Card is Swipe Left</td>
             </tr>
+            <tr>
+                <td>looping</td>
+                <td> true </td>
+                <td> true, false </td>
+                <td>Enable or disable looping of DeckSwiper on end reached.</td>
+            </tr>
         </tbody>
     </table><br />

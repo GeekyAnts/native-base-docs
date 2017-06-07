@@ -73,6 +73,86 @@ import Tab2 from './tabTwo';
                     Set position of Tabs
                 </td>
             </tr>
+            <tr>
+                <td>renderTabBar</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Accept 1 argument props and should return a component to use as the tab bar
+                </td>
+            </tr>
+            <tr>
+                <td>onChangeTab</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Function to call when tab changes
+                </td>
+            </tr>
+            <tr>
+                <td>onScroll</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Function to call when the pages are sliding, should accept 1 argument which is an Float number representing the page position in the slide frame
+                </td>
+            </tr>
+            <tr>
+                <td>children</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Each top-level child component should have a tabLabel prop that can be used by the tab bar component to render out the labels
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarUnderlineStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Style of the default tab bar's underline
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarBackgroundColor</td>
+                <td> white </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar's background
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarActiveTextColor</td>
+                <td> navy </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar's text when active
+                </td>
+            </tr>
+            <tr>
+                <td>tabBarInactiveTextColor</td>
+                <td> black </td>
+                <td> - </td>
+                <td>
+                    Color of the default tab bar's text when not active.
+                </td>
+            </tr>
+            <tr>
+                <td>scrollWithoutAnimation</td>
+                <td> false </td>
+                <td> true, false </td>
+                <td>
+                    On tab press change tab without animation.
+                </td>
+            </tr>
+            <tr>
+                <td>prerenderingSiblingsNumber</td>
+                <td> 0 </td>
+                <td> - </td>
+                <td>
+                    pre-render nearby # sibling, Infinity === render all the siblings, default to 0 === render current page
+                </td>
+            </tr>
         </tbody>
     </table><br />
 <br />

@@ -64,25 +64,25 @@ export default class PickerExample extends Component {
         </thead>
         <tbody>
             <tr>
-                <td>headerComponent</td>
+                <td>renderHeader (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Takes component that appears as header of the Picker</td>
+                <td>Takes component that appears as header of the Picker, comes with a <code>backAction</code> prop to close the picker. Like <code>renderHeader={(backAction) =>{ // BODY }</code></td>
             </tr>
             <tr>
-                <td>textStyle</td>
+                <td>textStyle (iOS only) </td>
                 <td> - </td>
                 <td> - </td>
                 <td>Text style of header.</td>
             </tr>
             <tr>
-                <td>itemStyle</td>
+                <td>itemStyle (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Style of items in the Picker</td>
             </tr>
             <tr>
-                <td>itemTextStyle</td>
+                <td>itemTextStyle (iOS only)</td>
                 <td> - </td>
                 <td> - </td>
                 <td>Text style of item component</td>
