@@ -90,7 +90,7 @@ export default class PickerExample extends Component {
             <tr>
                 <td>supportedOrientations</td>
                 <td> - </td>
-                <td> Potrait, Landscape, Landscape-left, Landscape-right </td>
+                <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
                 <td>Allows the modal to be rotated to any of the specified orientations</td>
             </tr>
             </tbody>
