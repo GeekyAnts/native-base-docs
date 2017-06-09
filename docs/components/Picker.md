@@ -93,5 +93,17 @@ export default class PickerExample extends Component {
                 <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
                 <td>Allows the modal to be rotated to any of the specified orientations</td>
             </tr>
+            <tr>
+                <td>headerBackButtonText</td>
+                <td> - </td>
+                <td> Strings </td>
+                <td>Used for custom backButton text</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td> - </td>
+                <td> Strings </td>
+                <td>Pass placeholder for Picker component</td>
+            </tr>
             </tbody>
             </table><br />
