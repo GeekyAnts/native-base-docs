@@ -29,7 +29,7 @@
             "theme": "monokai"
         },
         "versions": {
-          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/book.json",
+          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
