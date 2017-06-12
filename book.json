@@ -30,13 +30,13 @@
         },
 
         "versions": {
-          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/book.json",
+          "gitbookConfigURL": "https://raw.githubusercontent.com/GeekyAnts/native-base-docs/v2.2/book.json",
           "type": "branches",
             "options": [
                 {
-                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
+                    "value": "https://raw.githubusercontent.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
                     "text": "v2.2.0",
-                    "selected": true
+                    "selected": "true"
                 },
                 {
                     "value": "https://nativebase.io/docs/v2.0.0/",
