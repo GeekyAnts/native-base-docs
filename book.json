@@ -30,7 +30,8 @@
         },
 
         "versions": {
-          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
+          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/book.json",
+          "type": "branches",
             "options": [
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
