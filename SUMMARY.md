@@ -85,7 +85,7 @@
 
 * [FAQs](/docs/faq/FAQs.md)
 
-* [Cheat Sheet](/docs/ChaetSheet.md)
+* [Cheat Sheet](/docs/CheatSheet.md)
 
 * [Compatibility](/docs/Compatibility.md)
 

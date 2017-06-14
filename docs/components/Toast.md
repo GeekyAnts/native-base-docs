@@ -32,7 +32,7 @@ render() &lcub;
         &lt;/Header>
         &lt;Content padder>
           &lt;Button onPress=&lcub;()=> Toast.show(&lcub;
-              supportedOrientations: ['potrait','landscape'],
+              supportedOrientations: ['portrait','landscape'],
               text: 'Wrong password!',
               position: 'bottom',
               buttonText: 'Okay'
@@ -89,7 +89,7 @@ render() &lcub;
             <tr>
                 <td>supportedOrientations</td>
                 <td> - </td>
-                <td> Potrait, Landscape, Landscape-left, Landscape-right </td>
+                <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
                 <td>Allows the modal to be rotated to any of the specified orientations</td>
             </tr>
             </tbody>
