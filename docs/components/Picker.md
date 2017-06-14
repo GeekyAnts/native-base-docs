@@ -16,16 +16,12 @@ export default class PickerExample extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedItem: undefined,
-            selected1: 'key1',
-            results: {
-                items: []
-            }
+            selected: 'key1'
         }
     }
     onValueChange (value: string) {
         this.setState({
-            selected1 : value
+            selected : value
         });
     }
     render() {
@@ -36,7 +32,7 @@ export default class PickerExample extends Component {
                         supportedOrientations={['portrait','landscape']}
                         iosHeader="Select one"
                         mode="dropdown"
-                        selectedValue={this.state.selected1}
+                        selectedValue={this.state.selected}
                         onValueChange={this.onValueChange.bind(this)}>
                         &lt;Item label="Wallet" value="key0" />
                         &lt;Item label="ATM Card" value="key1" />

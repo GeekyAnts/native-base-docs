@@ -85,10 +85,10 @@ import Tab2 from './tabTwo';
 *Syntax(advanced)*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Tab, Tabs } from 'native-base';
+import { Container, Content, Tab, Tabs, TabHeading } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
-​export default class TabsExample extends Component {
+export default class TabsExample extends Component {
     render() {
         return (
             &lt;Container>
