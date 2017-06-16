@@ -1,14 +1,14 @@
 ## ActionSheet
 
-NativeBase ActionSheet is a wrapper around the react-native ActionSheetIOS component.
+NativeBase ActionSheet is a wrapper around the React Native [ActionSheetIOS](http://facebook.github.io/react-native/releases/0.44/docs/actionsheetios.html) component.
 
 ![Preview ios ActionSheet](https://docs.nativebase.io/docs/assets/ios/components/actionsheet.gif)
 ![Preview android ActionSheet](https://docs.nativebase.io/docs/assets/android/components/actionsheet.gif)
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ActionSheet, Button, Text, Header, Left, Right, Body, Title } from 'native-base';
-​var BUTTONS = [
+import { Container, Header, Left, Button, Body, Title, Icon, Right, Content, ActionSheet, Text } from 'native-base';
+var BUTTONS = [
   'Option 0',
   'Option 1',
   'Option 2',
@@ -54,4 +54,4 @@ export default class ActionSheet extends Component {
   }
 }</code></pre><br />
 
-Note: The use cases similar to RN's ActionSheetIOS.
+Note: *The use case is similar to RN's ActionSheetIOS.*

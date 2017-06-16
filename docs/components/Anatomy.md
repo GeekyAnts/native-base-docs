@@ -1,7 +1,7 @@
 ## anatomy-headref
 ## Anatomy
 
-Automatically animates views to their new positions.<br />
+Automatically animates view to its new position.<br />
 A common way to use [NativeBase](https://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
 
 ![Preview ios anatomy-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/anatomy.png)
@@ -10,37 +10,35 @@ A common way to use [NativeBase](https://nativebase.io/) screen structure is to 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
-​export default class AnatomyExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Header>
-                    &lt;Left>
-                        &lt;Button transparent>
-                            &lt;Icon name='menu' />
-                        &lt;/Button>
-                    &lt;/Left>
-                    &lt;Body>
-                        &lt;Title>Header&lt;/Title>
-                    &lt;/Body>
-                    &lt;Right />
-                &lt;/Header>
-                &lt;Content>
-                    // Your main content goes here
-                &lt;/Content>
-                &lt;Footer>
-                    &lt;FooterTab>
-                        &lt;Button full>
-                            &lt;Text>Footer&lt;/Text>
-                        &lt;/Button>
-                    &lt;/FooterTab>
-                &lt;/Footer>
-            &lt;/Container>
-        );
-    }
+export default class AnatomyExample extends Component {
+  render() {
+    return (
+      &lt;Container>
+        &lt;Header>
+          &lt;Left>
+            &lt;Button transparent>
+              &lt;Icon name='menu' />
+            &lt;/Button>
+          &lt;/Left>
+          &lt;Body>
+            &lt;Title>Header&lt;/Title>
+          &lt;/Body>
+          &lt;Right />
+        &lt;/Header>
+        &lt;Content>
+          // Your main content goes here
+        &lt;/Content>
+        &lt;Footer>
+          &lt;FooterTab>
+            &lt;Button full>
+              &lt;Text>Footer&lt;/Text>
+            &lt;/Button>
+          &lt;/FooterTab>
+        &lt;/Footer>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
-
-
 
 
 * [NativeBase](https://nativebase.io/) provides its own frame component, named after <code>&lt;Container></code>.
@@ -89,52 +87,53 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
         </tbody>
     </table><br />
 
-##Header Anatomy
+#### Header Anatomy
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'native-base';
-​export default class HeaderExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Header>
-                    &lt;Left>
-                        &lt;Button transparent>
-                            &lt;Icon name='menu' />
-                        &lt;/Button>
-                    &lt;/Left>
-                    &lt;Body>
-                        &lt;Title>Header&lt;/Title>
-                    &lt;/Body>
-                    &lt;Right />
-                &lt;/Header>
-            &lt;/Container>
-        );
-    }
+export default class HeaderExample extends Component {
+  render() {
+    return (
+      &lt;Container>
+        &lt;Header>
+          &lt;Left>
+            &lt;Button transparent>
+              &lt;Icon name='menu' />
+            &lt;/Button>
+          &lt;/Left>
+          &lt;Body>
+            &lt;Title>Header&lt;/Title>
+          &lt;/Body>
+          &lt;Right />
+        &lt;/Header>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 
-##Content Anatomy
+#### Content Anatomy
 
 * This is a NativeBase component which renders as body element of your screen.
 * Each screen can have only one <code>Content</code> component and can be defined anywhere within the Container.
 * Content takes in the whole collection of React Native and NativeBase components.
 * Content provides you with stylesheet.
 * User can add custom styles while defining <code>Content</code> within their app.
-* Replacing Component: [ScrollView](https://facebook.github.io/react-native/docs/scrollview.html) of [react-native](https://facebook.github.io/react-native/).
+* Replacing Component:
+  React Native Keyboard Aware Scroll View's [KeyboardAwareScrollView](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
 export default class ContentExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    // Your main content goes here
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          // Your main content goes here
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 <table class="table table-bordered">
@@ -149,47 +148,53 @@ export default class ContentExample extends Component {
     <tbody>
         <tr>
             <td>padder</td>
-            <td> true </td>
-            <td> true, false </td>
+            <td>true</td>
+            <td>boolean</td>
             <td>Applies margin at all sides to Content section. Can be used with NativeBase View as well.</td>
         </tr>
         <tr>
             <td>disableKBDismissScroll</td>
-            <td> false </td>
-            <td> true, false </td>
+            <td>false</td>
+            <td>boolean</td>
             <td>Disables automatic scroll on focus.</td>
         </tr>
-        </tbody>
-        </table>
+        <tr>
+            <td>enableResetScrollToCoords</td>
+            <td>true</td>
+            <td>boolean</td>
+            <td>Lets the user enable or disable automatic resetScrollToCoords.</td>
+        </tr>
+    </tbody>
+</table>
 
 
-##Footer Anatomy
+#### Footer Anatomy
 
-* NativeBase component that renders as footer that includes your favourite apps for your screen.
+* NativeBase component that renders as footer, include your favourite apps for your screen.
 * There can be only a single Footer component into your Container.
 * To have Footer for your screen, include <code>Footer</code> component within <code>Container</code>.
 * NativeBase gives you flexibility to define your Footer component anywhere in the bounds of Container.
-* Footer takes input as: Left, Body, Right and FooterTab as well.
+* Footer takes input as: FooterTab.
 * The components those are defined within <code>Footer</code> will be rendered in the same order that you define them.
 * Footer provides you with stylesheet.
 * User can add custom styles while defining <code>Footer</code> within their app.
-* Replacing Component: React Native <code>View</code>.
+* Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html).
 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Footer, Left, Body, Right, Button, Icon, Title } from 'native-base';
-​export default class FooterExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Footer>
-                    &lt;FooterTab>
-                        &lt;Button full>
-                            &lt;Text>Footer&lt;/Text>
-                        &lt;/Button>
-                    &lt;/FooterTab>
-                &lt;/Footer>
-            &lt;/Container>
-        );
-    }
+import { Container, Footer, FooterTab, Button, Text } from 'native-base';
+export default class FooterExample extends Component {
+  render() {
+    return (
+      &lt;Container>
+        &lt;Footer>
+          &lt;FooterTab>
+            &lt;Button full>
+              &lt;Text>Footer&lt;/Text>
+            &lt;/Button>
+          &lt;/FooterTab>
+        &lt;/Footer>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />

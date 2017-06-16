@@ -1,9 +1,15 @@
-# Form
+## Form
 
 [NativeBase](https://nativebase.io/) makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.<br/>
-Input is a NativeBase component built on top of React Native's <TextInput>. Item component is wrap around it apply the specific styles.
-A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
-Note: Form in native base is just a wrapper around the inputs and hence has no onSubmit function.<br />
+Input is a NativeBase component built on top of React Native's <code>TextInput</code>. Item component is wrap around it apply the specific styles.<br />
+A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.<br />
+Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
+Replacing Component:
+*   <b>Form</b>: React Native [View](https://facebook.github.io/react-native/docs/view.html)
+*   <b>Item</b>: React Native [TouchableOpacity](http://facebook.github.io/react-native/docs/touchableopacity.html)
+*   <b>Input</b>: React Native [TextInput](http://facebook.github.io/react-native/docs/textinput.html)
+*   <b>Label</b>: React Native [Text](http://facebook.github.io/react-native/docs/text.html)
+
 **Contents:**
 * [Fixed Label](Components.md#fixed-label-headref)
 * [Inline Label](Components.md#inline-label-headref)
@@ -25,22 +31,22 @@ Note: Form in native base is just a wrapper around the inputs and hence has no o
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Form, Item, Input } from 'native-base';
 export default class FormExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;Form>
-                        &lt;Item>
-                            &lt;Input placeholder="Username" />
-                        &lt;/Item>
-                        &lt;Item last>
-                            &lt;Input placeholder="Password" />
-                        &lt;/Item>
-                    &lt;/Form>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          &lt;Form>
+            &lt;Item>
+              &lt;Input placeholder="Username" />
+            &lt;/Item>
+            &lt;Item last>
+              &lt;Input placeholder="Password" />
+            &lt;/Item>
+          &lt;/Form>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 **Configuration**
@@ -59,16 +65,16 @@ export default class FormExample extends Component {
         <tbody>
             <tr>
                 <td>fixedLabel</td>
-                <td> - </td>
-                <td> - </td>
+                <td>true</td>
+                <td>boolean</td>
                 <td>
                     Label is Fixed to the left of the Input and does not hide when text is entered.
                 </td>
             </tr>
             <tr>
                 <td>floatingLabel</td>
-                <td> - </td>
-                <td> - </td>
+                <td>true</td>
+                <td>boolean</td>
                 <td>
                     Label that animates upwards when the input is selected and animates downward when input is erased.
                 </td>
@@ -76,7 +82,7 @@ export default class FormExample extends Component {
             <tr>
                 <td>inlineLabel</td>
                 <td> - </td>
-                <td> - </td>
+                <td>boolean</td>
                 <td>
                     Label placed to the left of the input element. When the user enters text, the label does not hide. This can also be used along with placeholder.
                 </td>
@@ -87,14 +93,6 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td>
                     Places the label on top of the input element which appears like a stack. This can also be used along with placeholder.
-                </td>
-            </tr>
-            <tr>
-                <td>placeholderLabel</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Renders the same way the TextInput does with the form styling of NativeBase.
                 </td>
             </tr>
             <tr>
@@ -130,11 +128,11 @@ export default class FormExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>error</td>
+                <td>placeholderLabel</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    The border color of textbox for invalid input.
+                    Renders the same way the TextInput does with the form styling of NativeBase.
                 </td>
             </tr>
             <tr>
@@ -146,12 +144,19 @@ export default class FormExample extends Component {
                 </td>
             </tr>
             <tr>
-                <td>secureTextEntry</td>
-                <td> false </td>
-                <td> true false</td>
+                <td>last</td>
+                <td> - </td>
+                <td> - </td>
                 <td>
-                If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
-                This prop can be passed to Input.
+                    Style the Form Item for the last Item of the Form.
+                </td>
+            </tr>
+            <tr>
+                <td>error</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    The border color of textbox for invalid input.
                 </td>
             </tr>
             <tr>
@@ -162,13 +167,6 @@ export default class FormExample extends Component {
                     The border color of textbox for valid input.
                 </td>
             </tr>
-            <tr>
-                <td>last</td>
-                <td> - </td>
-                <td> - </td>
-                <td>
-                    Style the Form Item for the last Item of the Form.
-                </td>
-            </tr>
         </tbody>
     </table><br />
+**Note:** Form in NativeBase is just a wrapper around the inputs and hence has no onSubmit function.<br /><br />

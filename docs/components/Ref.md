@@ -1,5 +1,5 @@
 ##ref-components-headref
-# Ref to Components
+## Ref to Components
 
 * NativeBase is built on top of React Native. Hence, the components of NativeBase have respective replacing React Native elements.
 * NativeBase has now made it easy for developers, to access the any of its components using <b>ref</b>, along with its associated React Native elements.

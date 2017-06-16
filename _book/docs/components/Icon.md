@@ -1,5 +1,5 @@
-##icon-def-headref
-# Icon
+## icon-def-headref
+## Icon
 
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
@@ -27,7 +27,7 @@ export default class IconExample extends Component {
 
 * <code>Icon</code> can take any two of the following attributes: name, ios, android.
 * In case if you want to include icon with custom color, size etc then that should go into <code>style</code>.
-* All the icons in the icon libraries of NativeBase, are scalable vector icons that can be customized size, color, etc.
+* All the icons in the icon libraries of NativeBase, are scalable vector icons that can be customized in terms of size, color, etc.
 
 **Configuration**
 
@@ -53,7 +53,7 @@ export default class IconExample extends Component {
                 <td>ios</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Name of the icon for IOS devices.</td>
+                <td>Name of the icon for iOS devices.</td>
             </tr>
             <tr>
                 <td>android</td>
@@ -63,9 +63,11 @@ export default class IconExample extends Component {
             </tr>
             <tr>
                 <td>active</td>
-                <td> default </td>
-                <td> true fasle </td>
-                <td>Renders filled Icons. Note: By default it renders outline Icons.</td>
+                <td>default</td>
+                <td>boolean</td>
+                <td>Renders filled icons.<br />
+                    By default renders outline icon.
+                </td>
             </tr>
             <tr>
                 <td>color</td>
@@ -73,9 +75,7 @@ export default class IconExample extends Component {
                 <td>user-defined</td>
                 <td>
                     Renders icon with defined color.<br />
-                    <font size="1">
-                        <i>Note: Include this prop within <code style="background-color: #FFF">style</code></i>
-                    </font>
+                    Include this prop within <code>style</code>
                 </td>
             </tr>
             <tr>
@@ -84,9 +84,7 @@ export default class IconExample extends Component {
                 <td>user-defined</td>
                 <td>
                     Renders icon with defined icon-size.<br />
-                    <font size="1">
-                        <i>Note: Include this prop within <code>style</code></i>
-                    </font>
+                    Include this prop within <code>style</code>
                 </td>
             </tr>
         </tbody>

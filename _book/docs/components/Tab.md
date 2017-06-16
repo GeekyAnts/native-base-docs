@@ -1,4 +1,4 @@
-# Tab Default
+## Tab Default
 
 Tab are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br />
 They are much similar to <code>FooterTabs</code>.

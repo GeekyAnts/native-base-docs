@@ -8,28 +8,17 @@ NativeBase Toast can be used to display quick warning or error messages. <br />
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, &lcub; Component } from 'react';
-import &lcub; Container, Content, Toast, Button, Text, Header, Left, Right, Body, Title, Icon } from 'native-base';
+import { Container, Content, Toast, Button, Text, Icon } from 'native-base';
 export default class Toast extends Component &lcub;
-  constructor(props) &lcub;
-  super(props);
-  this.state = &lcub;
-    showToast: false
+  constructor(props) {
+    super(props);
+    this.state = &lcub;
+      showToast: false
+    }
   }
-}
-render() &lcub;
-  return (
+  render() &lcub;
+    return (
       &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Hello&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
         &lt;Content padder>
           &lt;Button onPress=&lcub;()=> Toast.show(&lcub;
               supportedOrientations: ['portrait','landscape'],
@@ -41,8 +30,8 @@ render() &lcub;
           &lt;/Button>
         &lt;/Content>
       &lt;/Container>
-  );
-}
+    );
+  }
 }</code></pre><br />
 
 **Configuration**
@@ -71,7 +60,7 @@ render() &lcub;
             <tr>
                 <td>position</td>
                 <td> bottom </td>
-                <td> top,bottom,center </td>
+                <td> top, bottom, center </td>
                 <td>Sets position for the toast.</td>
             </tr>
             <tr>
@@ -95,4 +84,4 @@ render() &lcub;
             </tbody>
         </table><br />
 
-Note: For Toast to work, it has to be called inside Container.
+**Note:** For Toast to work, it has to be called inside Container.
