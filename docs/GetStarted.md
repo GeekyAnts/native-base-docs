@@ -56,6 +56,7 @@ async componentWillMount() {
         'Roboto': require('native-base/Fonts/Roboto.ttf'),
         'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
       });
+  }
 ```
 <br />
 Check out the [KitchenSink](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/CRNA/js/setup.js) with CRNA for an example of the implementation.<br />
