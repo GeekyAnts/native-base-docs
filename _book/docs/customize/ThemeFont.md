@@ -1,27 +1,26 @@
-##theme-font-headref
+##t heme-font-headref
 ## Theme Font
 
 Having different font types in your [React Native](https://facebook.github.io/react-native/) apps is not tough any more.<br />
 [NativeBase](https://nativebase.io/) provides you with a set of nine font families.<br />
 
 
-* To include these fonts into your app, go to **Themes/myTheme.js**
+* To include these fonts into your app, go to `Themes/myTheme.js`
 * Replace value for <code>fontFamily</code> with your choice of font name.
 
 
 Font families included with NativeBase:
-* Andale Mono
-* Arial
-* Arial Black
-* Chalkboard
-* Cochin
-* Comic Sans MS
-* Courier New
-* Devanagiri
-* Georgia
-* Microsoft Sans Serif
-* Skia
-* Times New Roman
+* Entypo
+* EvilIcons
+* FontAwesome
+* Foundation
+* Ionicons
+* MaterialIcons
+* Octicons
+* Roboto
+* Roboto_medium
+* SimpleLineIcons
+* Zocial
 
 
 NativeBase allows you to add more font styles on your own.

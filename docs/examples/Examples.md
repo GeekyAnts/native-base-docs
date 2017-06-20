@@ -8,11 +8,11 @@ This section features some basic Apps made using <br />
 6. [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) <br />
 
 ## Check these out
-   [Redux Example Counter](./ReduxCounterExample.md) <br />
-   [Mobx Example Counter](./MobxCounterExample.md) <br />
-   [Navigation React Navigation](./StackNavigationExample.md) <br />
-   [Navigation RNRF](./RNRFBasicExample.md) <br />
-   [Full App Example](./GitAppExample.md) <br />
-   [Redux Form Example](./ReduxFormExample.md) <br />
-   [Sticky headers Example](./StickyHeaderExample.md) <br />
-   [FlatList + Sticky Headers](/docs/FlatListExample.md)
+- [Redux Example Counter](./ReduxCounterExample.md)
+- [Mobx Example Counter](./MobxCounterExample.md)
+- [Navigation - React Navigation](./StackNavigationExample.md)
+- [Navigation - RNRF](./RNRFBasicExample.md)
+- [Full App Example](./GitAppExample.md)
+- [Redux Form Example](./ReduxFormExample.md)
+- [Sticky Headers Example](./StickyHeaderExample.md)
+- [FlatList + Sticky Headers](/docs/FlatListExample.md)

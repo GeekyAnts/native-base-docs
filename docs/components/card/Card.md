@@ -97,10 +97,10 @@ export default class CardExample extends Component {
     </thead>
     <tbody>
         <tr>
-            <td>button</td>
+            <td>header</td>
             <td> - </td>
             <td> - </td>
-            <td>To navigate on click of a card item.</td>
+            <td>Displays text as header for cards</td>
         </tr>
         <tr>
             <td>cardBody</td>
@@ -115,10 +115,10 @@ export default class CardExample extends Component {
             <td>Displays text as footer for cards</td>
         </tr>
         <tr>
-            <td>header</td>
+            <td>button</td>
             <td> - </td>
             <td> - </td>
-            <td>Displays text as header for cards</td>
+            <td>To navigate on click of a card item.</td>
         </tr>
         <tr>
             <td>bordered</td>

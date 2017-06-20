@@ -52,5 +52,17 @@ export default class CheckBoxExample extends Component {
                 <td>boolean</td>
                 <td>Represents the state value of an item from set of choices.</td>
             </tr>
+            <tr>
+                <td>color</td>
+                <td> - </td>
+                <td>user-defined</td>
+                <td>Background color of checkbox</td>
+            </tr>
+            <tr>
+                <td>onPress</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Handler to be called when the user selects / unselects the checkbox</td>
+            </tr>
         </tbody>
     </table><br/>

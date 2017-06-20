@@ -1175,20 +1175,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="docs/CheatSheet.html">
-            
-                <a href="docs/CheatSheet.html">
-            
-                    
-                    Cheat Sheet
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.14" data-path="docs/Compatibility.html">
+        <li class="chapter " data-level="1.13" data-path="docs/Compatibility.html">
             
                 <a href="docs/Compatibility.html">
             
@@ -1201,7 +1188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="docs/examples/Examples.html">
+        <li class="chapter " data-level="1.14" data-path="docs/examples/Examples.html">
             
                 <a href="docs/examples/Examples.html">
             
@@ -1215,7 +1202,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.1" data-path="docs/examples/ReduxCounterExample.html">
+        <li class="chapter " data-level="1.14.1" data-path="docs/examples/ReduxCounterExample.html">
             
                 <a href="docs/examples/ReduxCounterExample.html">
             
@@ -1228,7 +1215,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.2" data-path="docs/examples/MobxCounterExample.html">
+        <li class="chapter " data-level="1.14.2" data-path="docs/examples/MobxCounterExample.html">
             
                 <a href="docs/examples/MobxCounterExample.html">
             
@@ -1241,7 +1228,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.3" data-path="docs/examples/navigation/NavigationExample.html">
+        <li class="chapter " data-level="1.14.3" data-path="docs/examples/navigation/NavigationExample.html">
             
                 <a href="docs/examples/navigation/NavigationExample.html">
             
@@ -1255,7 +1242,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.3.1" data-path="docs/examples/navigation/StackNavigationExample.html">
+        <li class="chapter " data-level="1.14.3.1" data-path="docs/examples/navigation/StackNavigationExample.html">
             
                 <a href="docs/examples/navigation/StackNavigationExample.html">
             
@@ -1268,7 +1255,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.3.2" data-path="docs/examples/navigation/RNRFBasicExample.html">
+        <li class="chapter " data-level="1.14.3.2" data-path="docs/examples/navigation/RNRFBasicExample.html">
             
                 <a href="docs/examples/navigation/RNRFBasicExample.html">
             
@@ -1286,7 +1273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.4" data-path="docs/examples/GitAppExample.html">
+        <li class="chapter " data-level="1.14.4" data-path="docs/examples/GitAppExample.html">
             
                 <a href="docs/examples/GitAppExample.html">
             
@@ -1299,7 +1286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.5" data-path="docs/examples/ReduxFormExample.html">
+        <li class="chapter " data-level="1.14.5" data-path="docs/examples/ReduxFormExample.html">
             
                 <a href="docs/examples/ReduxFormExample.html">
             
@@ -1312,7 +1299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.6" data-path="docs/examples/StickyHeaderExample.html">
+        <li class="chapter " data-level="1.14.6" data-path="docs/examples/StickyHeaderExample.html">
             
                 <a href="docs/examples/StickyHeaderExample.html">
             
@@ -1325,7 +1312,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.7" data-path="docs/examples/FlatListExample.html">
+        <li class="chapter " data-level="1.14.7" data-path="docs/examples/FlatListExample.html">
             
                 <a href="docs/examples/FlatListExample.html">
             
@@ -1400,87 +1387,95 @@
 <li><a href="Customize.html#Button_Customize">Button</a></li>
 </ul>
 <h2 id="theaming-nb-headref">1. theaming-nb-headref</h2>
-<h1 id="Theming_NativeBase_Apps">Theming NativeBase Apps</h1>
+<h2 id="Theming_NativeBase_Apps">2. Theming NativeBase Apps</h2>
 <p>Customizing <a href="https://nativebase.io/" target="_blank">NativeBase</a> will be a cakewalk for you. That is due to the fact, <a href="https://nativebase.io/" target="_blank">NativeBase</a> has categorized its screens into different sections. It provides a separate file inclusive of color schemes for different sections. <br></p>
-<p><em>Note:</em> NativeBase is built on top of React Native.
+<p><strong>Note:</strong> NativeBase is built on top of React Native.
 Hence with any component you can pass the style property which will be merged to the default style of that component.</p>
-<h4 id="Steps_to_be_followed_to_customize_NativeBase:">1.0.1. Steps to be followed to customize NativeBase:</h4>
+<h5 id="Steps_to_be_followed_to_customize_NativeBase:">Steps to be followed to customize NativeBase:</h5>
 <ul>
-<li>Run node <strong>node_modules/native-base/ejectTheme.js</strong> from your terminal after installing native-base.</li>
-<li>All the theme files and variables get added to your project root. Change the variables or theme files.</li>
-<li>Wrap the code or component to which you want to apply the theme with <em><styleprovider></styleprovider></em>.</li>
-<li>Pass the variable i.e <em>platform/material/commonColors.js</em> as the parameter of theme function, which is passed as a value to style prop of component <em><styleprovider></styleprovider></em>.</li>
+<li><p>Run this command from your terminal after installing native-base.</p>
+<p>  <code>node node_modules/native-base/ejectTheme.js</code></p>
+</li>
+<li><p>All the theme files and variables get added to your project root. Change the variables or theme files.</p>
+</li>
+<li>Wrap the code or component to which you want to apply the theme with <strong>StyleProvider</strong>.</li>
+<li>Pass the variable i.e., <code>platform/material/commonColors.js</code> as the parameter of theme function, which is passed as a value to style prop of component <strong>StyleProvider</strong>.</li>
+<li>The theme you pass should be a function.</li>
 </ul>
 <p>Now your project is ready for theme customization.
 <br></p>
-<h2 id="What_are_themes_and_variables_and_how_to_change_them?">2. What are themes and variables and how to change them?</h2>
-<p>When you run node node_modules/native-base/ejectTheme.js from your terminal, a folder named native-base-theme gets copied to your project root. Inside the directory are two folders named components and variables. <br>
-The components folder contains the theme styling files for all the components. This is where you would change the style properties of your components if you need to<br>
-For example, if you need to change the height of Button component, you&apos;ll need to change this line in native-base-theme/components/Button.js. <br>
-The variables folder contains the three preset theme variables. You can change the variables,(color, fontFamily, iconFamily etc) for a uniform look and feel throughout your app. <br></p>
-<h4 id="Three_themes_to_start_with">2.0.1. Three themes to start with</h4>
+<h2 id="What_are_themes_and_variables_and_how_to_change_them?">3. What are themes and variables and how to change them?</h2>
+<ul>
+<li>When you run <code>node node_modules/native-base/ejectTheme.js</code> from your terminal, a folder named <strong>native-base-theme</strong> gets copied to your project root. Inside the directory are two folders named <strong>components</strong> and <strong>variables</strong>.</li>
+<li>The <strong>components</strong> folder contain the theme styling files for all the components. This is where you would change the style properties of the components if you need to.</li>
+</ul>
+<p>Example, if you need to change the height of Button component, you&apos;ll need to change this line in <code>native-base-theme/components/Button.js</code>.</p>
+<ul>
+<li>The <strong>variables</strong> folder contain three preset theme variables. You can change the variables (for color, fontFamily, iconFamily etc) for a uniform look and feel throughout your app. <br></li>
+</ul>
+<h5 id="Three_themes_to_start_with">Three themes to start with</h5>
 <p>NativeBase is packed with three preset themes. <br></p>
 <ul>
-<li><code>Platform:</code> The default theme of NativeBase which maps to the design of the platform where the app runs.</li>
-<li><code>Material:</code> Sometimes, you need Material design for both the platforms. Not everyone is a fan but Google does use Material design on iOS. This theme is not 100% material yet but it can be used today. <br></li>
-<li><code>Common Colors:</code> Most of the brands use a common color scheme for both the platforms but they also follow platform specific icons, font and orientation of the components. Common Colors theme is best suited for such use-cases. <br></li>
+<li><strong>Platform:</strong> The default theme of NativeBase which maps to the design of the platform where the app runs.</li>
+<li><strong>Material:</strong> Sometimes, you need Material design for both the platforms. Not everyone is a fan but Google does use Material design on iOS. This theme is not 100% material yet but, it can be used today. <br></li>
+<li><strong>Common Colors:</strong> Most of the brands use a common color scheme for both the platforms but they also follow platform specific icons, font and orientation of the components. Common Colors theme is best suited for such use-cases. <br></li>
 </ul>
 <p><em>Syntax to add Material Design</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {Container, Content, Text, StyleProvider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text, StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> getTheme <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./native-base-theme/components&apos;</span>;
 <span class="hljs-keyword">import</span> material <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./native-base-theme/variables/material&apos;</span>;
 &#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{getTheme(material)}</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                            I have changed the text color.
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{getTheme(material)}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
+              I have changed the text color.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
+    );
+  }
 }</code></pre><br></p>
 <ul>
 <li>The <code>&lt;StyleProvider&gt;</code> with theme can be applied to any component of NativeBase.</li>
 <li>The theme holds good with all its descendants.</li>
 <li>The above code for theme change works this way:<br>
-Go to native-base-theme/variables/platform.js and modify color code for textColor.</li>
-<li>Similarly you can customize theme for the rest of NativeBase components by modifying color code of their respective attributes, some of which are explained below.</li>
+Go to <code>native-base-theme/variables/platform.js</code> and modify color code for <strong>textColor</strong>.</li>
+<li>Similarly you can customize theme for rest of the NativeBase components by modifying color code of their respective attributes, some of which are explained below.</li>
 </ul>
-<h2 id="custom-component-headref">3. custom-component-headref</h2>
-<h1 id="Theme_Your_Custom_Component">Theme Your Custom Component</h1>
-<p>To add support for themes to your component you only need to make two minor changes to it.
+<h2 id="custom-component-headref">4. custom-component-headref</h2>
+<h2 id="Theme_Your_Custom_Component">5. Theme Your Custom Component</h2>
+<p>To add support for themes to your component you need to make two simple minor changes to it.
 <br></p>
-<p>The main thing you need to change is to start using the style rules from the props.style property, instead of using the static variable defined alongside the component. You can define the default style of the component statically (the same way as before) but you shouldn&#x2019;t use that property to get the actual style in runtime. This allows us to merge the default style with any theme style that may be active in the app, and provide the final style to components.
+<p>The main thing you need to change is to start using the style rules from the <code>props.style</code> property, instead of using the static variable defined alongside the component. You can define the default style of the component statically (the same way as before) but you shouldn&#x2019;t use that property to get the actual style in runtime. This allows us to merge the default style with any theme style that may be active in the app, and provide the final style to components.
 <br></p>
 <p><em>Simple component with static style</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { View, Text, StyleSheet } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.textContent}</span>&gt;</span>
-                    Your Component with static style
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
-        );
-    }
-    <span class="hljs-keyword">const</span> styles = StyleSheet.create({
-        container: {
-          flex: <span class="hljs-number">1</span>,
-          backgroundColor: <span class="hljs-string">&apos;green&apos;</span>,
-        },
-        textContent: {
-          fontSize: <span class="hljs-number">20</span>,
-          color: <span class="hljs-string">&apos;red&apos;</span>,
-        },
-    });
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.textContent}</span>&gt;</span>
+          Your Component with static style
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
+    );
+  }
+  <span class="hljs-keyword">const</span> styles = StyleSheet.create({
+    container: {
+      flex: <span class="hljs-number">1</span>,
+      backgroundColor: <span class="hljs-string">&apos;green&apos;</span>,
+    },
+    textContent: {
+      fontSize: <span class="hljs-number">20</span>,
+      color: <span class="hljs-string">&apos;red&apos;</span>,
+    },
+  });
 }</code></pre><br></p>
 <p>In order to support themes, we need to:</p>
 <ol>
@@ -1491,90 +1486,96 @@ Go to native-base-theme/variables/platform.js and modify color code for textColo
 <span class="hljs-keyword">import</span> { View, Text, StyleSheet } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
 <span class="hljs-keyword">import</span> { connectStyle } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-      <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
-        <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.textContent}</span>&gt;</span>
-                    Your Component with static style
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
+    <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.textContent}</span>&gt;</span>
+          Your Component with static style
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span></span>
+    );
   }
-  <span class="hljs-keyword">const</span> styles = {
-      container: {
-        flex: <span class="hljs-number">1</span>,
-        backgroundColor: <span class="hljs-string">&apos;green&apos;</span>,
-      },
-      textContent: {
-        fontSize: <span class="hljs-number">20</span>,
-        color: <span class="hljs-string">&apos;red&apos;</span>,
-      },
-  };
-  <span class="hljs-comment">// connect the component to the theme</span>
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connectStyle(<span class="hljs-string">&apos;yourTheme.CustomComponent&apos;</span>, styles)(CustomComponent);
+}
+<span class="hljs-keyword">const</span> styles = {
+  container: {
+    flex: <span class="hljs-number">1</span>,
+    backgroundColor: <span class="hljs-string">&apos;green&apos;</span>,
+  },
+  textContent: {
+    fontSize: <span class="hljs-number">20</span>,
+    color: <span class="hljs-string">&apos;red&apos;</span>,
+  },
+};
+<span class="hljs-comment">// connect the component to the theme</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connectStyle(<span class="hljs-string">&apos;yourTheme.CustomComponent&apos;</span>, styles)(CustomComponent);
 </code></pre><br></p>
 <p><a id="connectStyle"></a>
-The <code>connectStyle</code> function receives two arguments. The first one represents the fully qualified name that component will be referenced by in the theme, and the second one is the default component style. Fully qualified name of the component needs to have <code>namespace</code> prefix, separated with <code>.</code> from the component name (yourTheme.CustomComponent).</p>
-<p>Any styles defined in the theme will be merged with the default style, and theme rules will override the rules from the default style. The style that is sent to <code>connectStyle</code> shouldn&#x2019;t be created using the <code>StyleSheet.create</code>. Style sheet will be created by the <code>connectStyle</code> function at appropriate time.</p>
-<h4 id="Use_StyleProvider_to_Customize_components">3.0.1. Use StyleProvider to Customize components</h4>
-<p>With the above simple changes, we have a component that can receive styles from the outside. The only thing left to do is to initialize the style provider within the app, so that theme styles are correctly distributed to components. To do this, we need to initialize the StyleProvider component, and render any customizable components within it:</p>
+The <code>connectStyle</code> function receives two arguments.</p>
+<ul>
+<li>The first one represents the fully qualified name that component will be referenced by in the theme</li>
+<li>The second is the default component style.</li>
+</ul>
+<p>Fully qualified name of the component needs to have <code>namespace</code> prefix, separated with <code>.</code> from the component name (yourTheme.CustomComponent).</p>
+<p>Any styles defined in the theme will be merged with the default style, and theme rules will override the rules from the default style. The style that is sent to <code>connectStyle</code> shouldn&#x2019;t be created using the <code>StyleSheet.create</code>.<br>
+Style sheet will be created by the <code>connectStyle</code> function at appropriate time.</p>
+<h5 id="Use_StyleProvider_to_Customize_components">Use <code>StyleProvider</code> to Customize components</h5>
+<p>With the above simple changes, we have a component that can receive styles from the outside. The only thing left to do is to initialize the style provider within the app, so that theme styles are correctly distributed to components. To do this, we need to initialize the <strong>StyleProvider</strong> component, and render any customizable components within it</p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-          <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
-          <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{customTheme}</span>&gt;</span>
-                    Your Custom Components
-            <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
+      <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{customTheme}</span>&gt;</span>
+        Your Custom Components
+      <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
+    );
+  }
 }
 <span class="hljs-comment">// Define your own Custom theme</span>
 <span class="hljs-keyword">const</span> customTheme = {
-    <span class="hljs-string">&apos;yourTheme.CustomComponent&apos;</span>: {
-      <span class="hljs-comment">// overrides CustomComponent style...</span>
-    }
+  <span class="hljs-string">&apos;yourTheme.CustomComponent&apos;</span>: {
+    <span class="hljs-comment">// overrides CustomComponent style...</span>
+  }
 };
 </code></pre><br></p>
-<p>You can also add more style rules to the <a href="https://nativebase.io/" target="_blank">NativeBase 2.0</a> components by adding your own style rules to the theme file of that component (provided for each component). The default <a href="https://nativebase.io/" target="_blank">NativeBase 2.0</a> component style should be at the bottom of the style object. This style will always be applied as a base style. After that any theme style will be merged with the style, i.e., the theme style rules will override the base component rules. In the end, any style specified through the style prop directly on the component will be merged on top of the styles mentioned above to get the final component style.</p>
+<p>You can also add more style rules to the <a href="https://nativebase.io/" target="_blank">NativeBase 2.0</a> components by adding your own style rules to the theme file of that component (provided for each component). The default <a href="https://nativebase.io/" target="_blank">NativeBase 2.0</a> component style should be at the bottom of the style object. This style will always be applied as a base style and then any other theme style will be merged with the style, i.e., the theme style rules will override the base component rules. At the end, any style specified through the <code>style</code> prop directly on the component will be merged on top of the styles mentioned above to get the final component style.</p>
 <p>Rules above the default component style are the new rule types that are specific to theme styles.</p>
 <p>These style objects in the theme for any components can be applied to them as a property.</p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { StyleProvider, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomComponent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-          <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
-          <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{customTheme}</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">customStyleProp</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Custom Button<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="hljs-comment">// connect styles to props.style defined by the theme</span>
+      <span class="hljs-keyword">const</span> styles = <span class="hljs-keyword">this</span>.props.style;
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{customTheme}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">customStyleProp</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Custom Button<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span></span>
+    );
+  }
 }
 <span class="hljs-comment">// Define your own Custom theme</span>
 <span class="hljs-keyword">const</span> customTheme = {
-    <span class="hljs-string">&apos;NativeBase.Button&apos;</span>: {
-      .customStyleProp: {
-        height: <span class="hljs-number">70</span>,
-        borderRadius: <span class="hljs-number">35</span>,
-      },
-      <span class="hljs-comment">// Default styles of NativeBase Button Component</span>
-      ....
-    }
+  <span class="hljs-string">&apos;NativeBase.Button&apos;</span>: {
+    .customStyleProp: {
+      height: <span class="hljs-number">70</span>,
+      borderRadius: <span class="hljs-number">35</span>,
+    },
+    <span class="hljs-comment">// Default styles of NativeBase Button Component</span>
+    ....
+  }
 };
 </code></pre><br></p>
-<h4 id="Style_exposed_to_Children">3.0.2. Style exposed to Children</h4>
-<p>The rule <code>*.button-content</code> will be available to child components of the customComponent defined above.</p>
-<h2 id="theme-color-headref">4. theme-color-headref</h2>
-<h2 id="Theme_Color">5. Theme Color</h2>
+<h5 id="Style_exposed_to_Children">Style exposed to Children</h5>
+<p>The rule <code>*.button-content</code> will be available to child components of the CustomComponent defined above.</p>
+<h2 id="theme-color-headref">6. theme-color-headref</h2>
+<h2 id="Theme_Color">7. Theme Color</h2>
 <p>To change the basic theme context of NativeBase, make necessary changes with the following variables:</p>
 <ul>
 <li><strong>Primary color:</strong> <code>brandPrimary</code></li>
@@ -1583,31 +1584,30 @@ The <code>connectStyle</code> function receives two arguments. The first one rep
 <li><strong>Danger color:</strong> <code>brandDanger</code></li>
 <li><strong>Warning color:</strong> <code>brandWarning</code></li>
 </ul>
-<h2 id="theme-font-headref">6. theme-font-headref</h2>
-<h2 id="Theme_Font">7. Theme Font</h2>
+<h2 id="t_heme-font-headref">8. t heme-font-headref</h2>
+<h2 id="Theme_Font">9. Theme Font</h2>
 <p>Having different font types in your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> apps is not tough any more.<br>
 <a href="https://nativebase.io/" target="_blank">NativeBase</a> provides you with a set of nine font families.<br></p>
 <ul>
-<li>To include these fonts into your app, go to <strong>Themes/myTheme.js</strong></li>
+<li>To include these fonts into your app, go to <code>Themes/myTheme.js</code></li>
 <li>Replace value for <code>fontFamily</code> with your choice of font name.</li>
 </ul>
 <p>Font families included with NativeBase:</p>
 <ul>
-<li>Andale Mono</li>
-<li>Arial</li>
-<li>Arial Black</li>
-<li>Chalkboard</li>
-<li>Cochin</li>
-<li>Comic Sans MS</li>
-<li>Courier New</li>
-<li>Devanagiri</li>
-<li>Georgia</li>
-<li>Microsoft Sans Serif</li>
-<li>Skia</li>
-<li>Times New Roman</li>
+<li>Entypo</li>
+<li>EvilIcons</li>
+<li>FontAwesome</li>
+<li>Foundation</li>
+<li>Ionicons</li>
+<li>MaterialIcons</li>
+<li>Octicons</li>
+<li>Roboto</li>
+<li>Roboto_medium</li>
+<li>SimpleLineIcons</li>
+<li>Zocial</li>
 </ul>
 <p>NativeBase allows you to add more font styles on your own.</p>
-<h4 id="iOS">7.0.1. iOS</h4>
+<h4 id="iOS">9.0.1. iOS</h4>
 <ul>
 <li><strong>With react-native</strong><br>
 Run this command on your terminal<br><pre class="command-line language-xxx" data-output="2-19"><code>react-native link</code></pre></li>
@@ -1617,7 +1617,7 @@ Run this command on your terminal<br><pre class="command-line language-xxx" data
 </ul>
 </li>
 </ul>
-<h4 id="Android">7.0.2. Android</h4>
+<h4 id="Android">9.0.2. Android</h4>
 <ul>
 <li><strong>With react-native</strong><br>
 Run this command on your terminal<br><pre class="command-line language-xxx" data-output="2-19"><code>react-native link</code></pre></li>
@@ -1626,100 +1626,100 @@ Run this command on your terminal<br><pre class="command-line language-xxx" data
 </ul>
 </li>
 </ul>
-<h2 id="customize-button-headref">8. customize-button-headref</h2>
-<h2 id="Button_Customize">9. Button Customize</h2>
+<h2 id="customize-button-headref">10. customize-button-headref</h2>
+<h2 id="Button_Customize">11. Button Customize</h2>
 <p>Steps to customize theme for Button attributes:
 <br></p>
-<h4 id="With_Button_theme">9.0.1. With Button theme</h4>
+<h5 id="With_Button_theme">With Button theme</h5>
 <p>With this theme of Button component you can modify any style rules applied to the default Button component.</p>
 <p><em>Syntax</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Icon, Text, StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button, Text, StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> buttonTheme <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Themes/buttonTheme&apos;</span>;
 &#x200B;<span class="hljs-comment">// buttonTheme is the customized theme of Button Component&#x200B;</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{buttonTheme()}</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">small</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Small <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Default <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">large</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Large <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{buttonTheme()}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">small</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Small <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Default <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">large</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Large <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
 }</code></pre><br></p>
-<h4 id="With_Variables">9.0.2. With Variables</h4>
+<h5 id="With_Variables">With Variables</h5>
 <p>With the <code>variable.js</code> file you can modify the variable values passed to the theme of the Button component.<br>
 Say value of <code>btnTextSize</code> to change the fontSize of the Text in Button.</p>
 <p><em>Syntax</em></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Icon, Text, getTheme, StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Button, Text, getTheme, StyleProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> customVariables <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Themes/variable&apos;</span>;
 &#x200B;<span class="hljs-comment">// getTheme is default theme of NativeBase Components</span>
 <span class="hljs-comment">// customVariables is customized variables used in the components theme</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThemeButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{buttonTheme(customVariables)}</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">small</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Small <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Default <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                      <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">large</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Large <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                      <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
-        );
-    }
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">StyleProvider</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{buttonTheme(customVariables)}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">success</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Success <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">info</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Info <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">warning</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Warning <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">small</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Small <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Default <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">large</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Large <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">StyleProvider</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+    );
+  }
 }</code></pre><br></p>
-<p><strong>*Note:</strong> To customise button theme, refer <a href="docs/customize/ThemeColor.md">Theme Color</a>*</p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Theme_Your_Custom_Component">Theme Your Custom Component</a></p><li><a href="#theaming-nb-headref">1. theaming-nb-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Steps_to_be_followed_to_customize_NativeBase:">1.0.1. Steps to be followed to customize NativeBase:</a></li></ul></ul><li><a href="#What_are_themes_and_variables_and_how_to_change_them?">2. What are themes and variables and how to change them?</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Three_themes_to_start_with">2.0.1. Three themes to start with</a></li></ul></ul><li><a href="#custom-component-headref">3. custom-component-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Use_StyleProvider_to_Customize_components">3.0.1. Use StyleProvider to Customize components</a></li><li><a href="#Style_exposed_to_Children">3.0.2. Style exposed to Children</a></li></ul></ul><li><a href="#theme-color-headref">4. theme-color-headref</a></li><li><a href="#Theme_Color">5. Theme Color</a></li><li><a href="#theme-font-headref">6. theme-font-headref</a></li><li><a href="#Theme_Font">7. Theme Font</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#iOS">7.0.1. iOS</a></li><li><a href="#Android">7.0.2. Android</a></li></ul></ul><li><a href="#customize-button-headref">8. customize-button-headref</a></li><li><a href="#Button_Customize">9. Button Customize</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#With_Button_theme">9.0.1. With Button theme</a></li><li><a href="#With_Variables">9.0.2. With Variables</a></li></ul></ul></ul></div><a href="#theaming-nb-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<p><strong>Note:</strong> To customise button theme, refer <a href="docs/customize/ThemeColor.md">Theme Color</a></p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Customize">Customize</a></p><li><a href="#theaming-nb-headref">1. theaming-nb-headref</a></li><li><a href="#Theming_NativeBase_Apps">2. Theming NativeBase Apps</a></li><li><a href="#What_are_themes_and_variables_and_how_to_change_them?">3. What are themes and variables and how to change them?</a></li><li><a href="#custom-component-headref">4. custom-component-headref</a></li><li><a href="#Theme_Your_Custom_Component">5. Theme Your Custom Component</a></li><li><a href="#theme-color-headref">6. theme-color-headref</a></li><li><a href="#Theme_Color">7. Theme Color</a></li><li><a href="#t_heme-font-headref">8. t heme-font-headref</a></li><li><a href="#Theme_Font">9. Theme Font</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#iOS">9.0.1. iOS</a></li><li><a href="#Android">9.0.2. Android</a></li></ul></ul><li><a href="#customize-button-headref">10. customize-button-headref</a></li><li><a href="#Button_Customize">11. Button Customize</a></li></ul></div><a href="#theaming-nb-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -1762,7 +1762,7 @@ Say value of <code>btnTextSize</code> to change the fontSize of the Text in Butt
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.7","depth":1,"next":{"title":"Set Up","level":"1.7.1","depth":2,"anchor":"#theaming-nb-headref","path":"Customize.md","ref":"Customize.md#theaming-nb-headref","articles":[]},"previous":{"title":"What's New in v2.0?","level":"1.6","depth":1,"path":"docs/introduction/WhatsNew.md","ref":"docs/introduction/WhatsNew.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.0","selected":true},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Customize.md","mtime":"2017-06-12T07:49:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-16T12:43:51.410Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Customize","level":"1.7","depth":1,"next":{"title":"Set Up","level":"1.7.1","depth":2,"anchor":"#theaming-nb-headref","path":"Customize.md","ref":"Customize.md#theaming-nb-headref","articles":[]},"previous":{"title":"What's New in v2.0?","level":"1.6","depth":1,"path":"docs/introduction/WhatsNew.md","ref":"docs/introduction/WhatsNew.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.0","selected":true},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Customize.md","mtime":"2017-06-12T07:49:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-20T10:15:34.192Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

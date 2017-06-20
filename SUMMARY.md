@@ -85,8 +85,6 @@
 
 * [FAQs](/docs/faq/FAQs.md)
 
-* [Cheat Sheet](/docs/CheatSheet.md)
-
 * [Compatibility](/docs/Compatibility.md)
 
 * [Examples](/docs/examples/Examples.md)

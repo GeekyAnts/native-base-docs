@@ -93,10 +93,10 @@ export default class ButtonExample extends Component {
             <td>Boolean value to describe state of Button</td>
         </tr>
         <tr>
-            <td>block</td>
-            <td> - </td>
-            <td> - </td>
-            <td>Block level button</td>
+            <td>transparent</td>
+            <td> true </td>
+            <td> boolean </td>
+            <td>Renders child element of button</td>
         </tr>
         <tr>
             <td>bordered</td>
@@ -105,22 +105,28 @@ export default class ButtonExample extends Component {
             <td>Applies outline button style.</td>
         </tr>
         <tr>
-            <td>disabled</td>
-            <td> true </td>
-            <td> boolean </td>
-            <td>Disables click option for button</td>
-        </tr>
-        <tr>
             <td>rounded</td>
             <td> - </td>
             <td> - </td>
-            <td>Renders button with slightly round shaped edges.</td>
+            <td>Renders button with slightly round shaped edges</td>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td> - </td>
+            <td> - </td>
+            <td>Block level button</td>
         </tr>
         <tr>
             <td>full</td>
             <td> - </td>
             <td> - </td>
             <td>Full width button</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td> true </td>
+            <td> boolean </td>
+            <td>Disables click option for button</td>
         </tr>
         <tr>
             <td>small</td>
