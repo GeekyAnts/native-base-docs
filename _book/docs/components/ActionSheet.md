@@ -38,20 +38,24 @@ export default class ActionSheet extends Component {
         &lt;/Header>
         &lt;Content padder>
           &lt;Button onPress={()=> ActionSheet.show(
-            {
-              options: BUTTONS,
-              cancelButtonIndex: CANCEL_INDEX,
-              destructiveButtonIndex: DESTRUCTIVE_INDEX,
-              title: 'Testing ActionSheet'
-            },
-            (buttonIndex) => {
-              this.setState({ clicked: BUTTONS[buttonIndex] });
-            }
-            )}>&lt;Text>Actionsheet&lt;/Text>&lt;/Button>
+          {
+            options: BUTTONS,
+            cancelButtonIndex: CANCEL_INDEX,
+            destructiveButtonIndex: DESTRUCTIVE_INDEX,
+            title: 'Testing ActionSheet'
+          },
+          (buttonIndex) => {
+            this.setState({ clicked: BUTTONS[buttonIndex] });
+          }
+          )}>
+            &lt;Text>Actionsheet&lt;/Text>
+          &lt;/Button>
         &lt;/Content>
       &lt;/Container>
     );
   }
 }</code></pre><br />
 
-Note: *The use case is similar to RN's ActionSheetIOS.*
+**Note:**
+- For ActionSheet to work, it has to be called inside Container.
+- The use case is similar to RN's ActionSheetIOS.
