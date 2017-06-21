@@ -15,6 +15,7 @@
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 export default class HeaderExample extends Component {
   render() {
@@ -38,6 +39,31 @@ export default class HeaderExample extends Component {
       &lt;/Container>
     );
   }
+=======
+import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from 'native-base';
+export default class CheckBoxExample extends Component {
+    render() {
+        return (
+            &lt;Container>
+                &lt;Header>
+                    &lt;Left>
+                        &lt;Button transparent>
+                            &lt;Icon name='arrow-back' />
+                        &lt;/Button>
+                    &lt;/Left>
+                    &lt;Body>
+                        &lt;Title>Header&lt;/Title>
+                    &lt;/Body>
+                    &lt;Right>
+                        &lt;Button transparent>
+                            &lt;Icon name='menu' />
+                        &lt;/Button>
+                    &lt;/Right>
+                &lt;/Header>
+            &lt;/Container>
+        );
+    }
+>>>>>>> ac2b3849889bde7f7db7270c8926eed973d59e51
 }</code></pre><br />
 <br />
 
@@ -135,6 +161,7 @@ export default class HeaderExample extends Component {
 
 #### Header with only title
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Container, Header, Left, Body, Right, Title } from 'native-base';
 export default class HeaderTitleExample extends Component {
   render() {
@@ -150,11 +177,29 @@ export default class HeaderTitleExample extends Component {
       &lt;/Container>
     );
   }
+=======
+import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from 'native-base';
+export default class HeaderTitle extends Component {
+    render() {
+        return (
+            &lt;Container>
+                &lt;Header>
+                    &lt;Left/>
+                    &lt;Body>
+                        &lt;Title>Header&lt;/Title>
+                    &lt;/Body>
+                    &lt;Right />
+                &lt;/Header>
+            &lt;/Container>
+        );
+    }
+>>>>>>> ac2b3849889bde7f7db7270c8926eed973d59e51
 }</code></pre><br />
 
 
 #### Header with Icon and Text Buttons
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
 export default class HeaderIconTextExample extends Component {
   render() {
@@ -178,11 +223,35 @@ export default class HeaderIconTextExample extends Component {
       &lt;/Container>
     );
   }
+=======
+import { Container, Content, ListItem, Text, CheckBox,Header, Left, Right, Body } from 'native-base';
+export default class HeaderIconText extends Component {
+    render() {
+        return (
+            &lt;Container>
+            &lt;Header>
+                &lt;Left>
+                    &lt;Button transparent>
+                        &lt;Icon name='arrow-back' />
+                    &lt;/Button>
+                &lt;/Left>
+                &lt;Body>
+                    &lt;Title>Header&lt;/Title>
+                &lt;/Body>
+                &lt;Right>
+                    &lt;Text>Cancel&lt;/Text>
+                &lt;/Right>
+            &lt;/Header>
+        &lt;/Container>
+        );
+    }
+>>>>>>> ac2b3849889bde7f7db7270c8926eed973d59e51
 }</code></pre><br />
 
 
 #### Header with Title and Subtitle
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from 'native-base';
 export default class HeaderTitleSubtitleExample extends Component {
   render() {
@@ -203,4 +272,26 @@ export default class HeaderTitleSubtitleExample extends Component {
       &lt;/Container>
     );
   }
+=======
+import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from 'native-base';
+export default class HeaderTitle extends Component {
+    render() {
+        return (
+            &lt;Container>
+            &lt;Header>
+                &lt;Left>
+                    &lt;Button transparent>
+                        &lt;Icon name='arrow-back' />
+                    &lt;/Button>
+                &lt;/Left>
+                &lt;Body>
+                    &lt;Title>Title&lt;/Title>
+                    &lt;Subtitle>Subtitle&lt;/Subtitle>
+                &lt;/Body>
+                &lt;Right />
+            &lt;/Header>
+        &lt;/Container>
+        );
+    }
+>>>>>>> ac2b3849889bde7f7db7270c8926eed973d59e51
 }</code></pre><br />

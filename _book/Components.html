@@ -1175,12 +1175,19 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="docs/Compatibility.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="docs/CheatSheet.md">
             
-                <a href="docs/Compatibility.html">
+                <span>
             
                     
-                    Compatibility
+                    Cheat Sheet
             
                 </a>
             
@@ -1188,7 +1195,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="docs/examples/Examples.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="docs/examples/Examples.html">
             
                 <a href="docs/examples/Examples.html">
             
@@ -1202,7 +1216,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.1" data-path="docs/examples/ReduxCounterExample.html">
+        <li class="chapter " data-level="3.1.1" data-path="docs/examples/ReduxCounterExample.html">
             
                 <a href="docs/examples/ReduxCounterExample.html">
             
@@ -1215,7 +1229,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.2" data-path="docs/examples/MobxCounterExample.html">
+        <li class="chapter " data-level="3.1.2" data-path="docs/examples/MobxCounterExample.html">
             
                 <a href="docs/examples/MobxCounterExample.html">
             
@@ -1228,7 +1242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3" data-path="docs/examples/navigation/NavigationExample.html">
+        <li class="chapter " data-level="3.1.3" data-path="docs/examples/navigation/NavigationExample.html">
             
                 <a href="docs/examples/navigation/NavigationExample.html">
             
@@ -1242,7 +1256,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.3.1" data-path="docs/examples/navigation/StackNavigationExample.html">
+        <li class="chapter " data-level="3.1.3.1" data-path="docs/examples/navigation/StackNavigationExample.html">
             
                 <a href="docs/examples/navigation/StackNavigationExample.html">
             
@@ -1255,7 +1269,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.3.2" data-path="docs/examples/navigation/RNRFBasicExample.html">
+        <li class="chapter " data-level="3.1.3.2" data-path="docs/examples/navigation/RNRFBasicExample.html">
             
                 <a href="docs/examples/navigation/RNRFBasicExample.html">
             
@@ -1273,7 +1287,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.4" data-path="docs/examples/GitAppExample.html">
+        <li class="chapter " data-level="3.1.4" data-path="docs/examples/GitAppExample.html">
             
                 <a href="docs/examples/GitAppExample.html">
             
@@ -1286,7 +1300,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.5" data-path="docs/examples/ReduxFormExample.html">
+        <li class="chapter " data-level="3.1.5" data-path="docs/examples/ReduxFormExample.html">
             
                 <a href="docs/examples/ReduxFormExample.html">
             
@@ -1299,7 +1313,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.6" data-path="docs/examples/StickyHeaderExample.html">
+        <li class="chapter " data-level="3.1.6" data-path="docs/examples/StickyHeaderExample.html">
             
                 <a href="docs/examples/StickyHeaderExample.html">
             
@@ -1312,7 +1326,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14.7" data-path="docs/examples/FlatListExample.html">
+        <li class="chapter " data-level="3.1.7" data-path="docs/examples/FlatListExample.html">
             
                 <a href="docs/examples/FlatListExample.html">
             
@@ -3470,10 +3484,11 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png" alt="Preview android header-def-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from &apos;native-base&apos;;
+export default class HeaderExample extends Component {
   render() {
-    <span class="hljs-keyword">return</span> (
+    return (
       &lt;Container&gt;
         &lt;Header&gt;
           &lt;Left&gt;
@@ -3491,10 +3506,48 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
           &lt;/Right&gt;
         &lt;/Header&gt;
       &lt;/Container&gt;
-    );
-  }
-}</code></pre><br>
+    );</code></pre></p>
+<h1 id="__}">  }</h1>
+<p>import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from &apos;native-base&apos;;
+export default class CheckBoxExample extends Component {
+    render() {
+        return (
+            &lt;Container&gt;
+                &lt;Header&gt;
+                    &lt;Left&gt;
+                        &lt;Button transparent&gt;
+                            &lt;Icon name=&apos;arrow-back&apos; /&gt;
+                        &lt;/Button&gt;
+                    &lt;/Left&gt;
+                    &lt;Body&gt;
+                        &lt;Title&gt;Header&lt;/Title&gt;
+                    &lt;/Body&gt;
+                    &lt;Right&gt;
+                        &lt;Button transparent&gt;
+                            &lt;Icon name=&apos;menu&apos; /&gt;
+                        &lt;/Button&gt;
+                    &lt;/Right&gt;
+                &lt;/Header&gt;
+            &lt;/Container&gt;
+        );
+    }</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ac2b3849889bde7f7db7270c8926eed973d59e51
+}&lt;/code&gt;&lt;/pre&gt;<br>
 <br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <p><strong>Configuration</strong><br>
     <table class="table table-bordered">
         <thead>
@@ -3588,10 +3641,11 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
     </table><br></p>
 <h4 id="Header_with_only_title">47.0.1. Header with only title</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderTitleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+import { Container, Header, Left, Body, Right, Title } from &apos;native-base&apos;;
+export default class HeaderTitleExample extends Component {
   render() {
-    <span class="hljs-keyword">return</span> (
+    return (
       &lt;Container&gt;
         &lt;Header&gt;
             &lt;Left/&gt;
@@ -3601,41 +3655,109 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
             &lt;Right /&gt;
         &lt;/Header&gt;
       &lt;/Container&gt;
-    );
-  }
-}</code></pre><br></p>
+    );</code></pre></p>
+<h1 id="__}">  }</h1>
+<p>import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from &apos;native-base&apos;;
+export default class HeaderTitle extends Component {
+    render() {
+        return (
+            &lt;Container&gt;
+                &lt;Header&gt;
+                    &lt;Left/&gt;
+                    &lt;Body&gt;
+                        &lt;Title&gt;Header&lt;/Title&gt;
+                    &lt;/Body&gt;
+                    &lt;Right /&gt;
+                &lt;/Header&gt;
+            &lt;/Container&gt;
+        );
+    }</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ac2b3849889bde7f7db7270c8926eed973d59e51
+}&lt;/code&gt;&lt;/pre&gt;<br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h4 id="Header_with_Icon_and_Text_Buttons">47.0.2. Header with Icon and Text Buttons</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Title, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderIconTextExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from &apos;native-base&apos;;
+export default class HeaderIconTextExample extends Component {
   render() {
-    <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Left</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">transparent</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;arrow-back&apos;</span> /&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Left</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Right</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">transparent</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Right</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
-    );
-  }
-}</span></code></pre><br></p>
+    return (
+      &lt;Container&gt;
+        &lt;Header&gt;
+          &lt;Left&gt;
+            &lt;Button transparent&gt;
+              &lt;Icon name=&apos;arrow-back&apos; /&gt;
+            &lt;/Button&gt;
+          &lt;/Left&gt;
+          &lt;Body&gt;
+            &lt;Title&gt;Header&lt;/Title&gt;
+          &lt;/Body&gt;
+          &lt;Right&gt;
+            &lt;Button transparent&gt;
+              &lt;Text&gt;Cancel&lt;/Text&gt;
+            &lt;/Button&gt;
+          &lt;/Right&gt;
+        &lt;/Header&gt;
+      &lt;/Container&gt;
+    );</code></pre></p>
+<h1 id="__}">  }</h1>
+<p>import { Container, Content, ListItem, Text, CheckBox,Header, Left, Right, Body } from &apos;native-base&apos;;
+export default class HeaderIconText extends Component {
+    render() {
+        return (
+            &lt;Container&gt;
+            &lt;Header&gt;
+                &lt;Left&gt;
+                    &lt;Button transparent&gt;
+                        &lt;Icon name=&apos;arrow-back&apos; /&gt;
+                    &lt;/Button&gt;
+                &lt;/Left&gt;
+                &lt;Body&gt;
+                    &lt;Title&gt;Header&lt;/Title&gt;
+                &lt;/Body&gt;
+                &lt;Right&gt;
+                    &lt;Text&gt;Cancel&lt;/Text&gt;
+                &lt;/Right&gt;
+            &lt;/Header&gt;
+        &lt;/Container&gt;
+        );
+    }</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ac2b3849889bde7f7db7270c8926eed973d59e51
+}&lt;/code&gt;&lt;/pre&gt;<br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h4 id="Header_with_Title_and_Subtitle">47.0.3. Header with Title and Subtitle</h4>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HeaderTitleSubtitleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from &apos;native-base&apos;;
+export default class HeaderTitleSubtitleExample extends Component {
   render() {
-    <span class="hljs-keyword">return</span> (
+    return (
       &lt;Container&gt;
         &lt;Header&gt;
           &lt;Left&gt;
@@ -3650,9 +3772,44 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
           &lt;Right /&gt;
         &lt;/Header&gt;
       &lt;/Container&gt;
-    );
-  }
-}</code></pre><br></p>
+    );</code></pre></p>
+<h1 id="__}">  }</h1>
+<p>import { Container, Content, ListItem, Text, CheckBox, Header, Left, Right, Body } from &apos;native-base&apos;;
+export default class HeaderTitle extends Component {
+    render() {
+        return (
+            &lt;Container&gt;
+            &lt;Header&gt;
+                &lt;Left&gt;
+                    &lt;Button transparent&gt;
+                        &lt;Icon name=&apos;arrow-back&apos; /&gt;
+                    &lt;/Button&gt;
+                &lt;/Left&gt;
+                &lt;Body&gt;
+                    &lt;Title&gt;Title&lt;/Title&gt;
+                    &lt;Subtitle&gt;Subtitle&lt;/Subtitle&gt;
+                &lt;/Body&gt;
+                &lt;Right /&gt;
+            &lt;/Header&gt;
+        &lt;/Container&gt;
+        );
+    }</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ac2b3849889bde7f7db7270c8926eed973d59e51
+}&lt;/code&gt;&lt;/pre&gt;<br></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h2 id="icon-def-headref">48. icon-def-headref</h2>
 <h2 id="Icon">49. Icon</h2>
 <p>Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/" target="_blank">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br>
@@ -4955,7 +5112,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
 <li><code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.</li>
 <li>This feature is accessible with all of NativeBase components.</li>
 </ul>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Components">Components</a></p><li><a href="#anatomy-headref">1. anatomy-headref</a></li><li><a href="#Anatomy">2. Anatomy</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Anatomy">2.0.1. Header Anatomy</a></li><li><a href="#Content_Anatomy">2.0.2. Content Anatomy</a></li><li><a href="#Footer_Anatomy">2.0.3. Footer Anatomy</a></li></ul></ul><li><a href="#ActionSheet">3. ActionSheet</a></li><li><a href="#Badge">4. Badge</a></li><li><a href="#button-def-headref">5. button-def-headref</a></li><li><a href="#Button">6. Button</a></li><li><a href="#button-theme-headref">7. button-theme-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">7.0.1. Button Theme</a></li></ul></ul><li><a href="#button-transparent-headref">8. button-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Button">8.0.1. Transparent Button</a></li></ul></ul><li><a href="#button-outline-headref">9. button-outline-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Outline_Button">9.0.1. Outline Button</a></li></ul></ul><li><a href="#button-rounded-headref">10. button-rounded-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Button">10.0.1. Rounded Button</a></li></ul></ul><li><a href="#button-block-headref">11. button-block-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Block_Button">11.0.1. Block Button</a></li></ul></ul><li><a href="#button-full-headref">12. button-full-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Full_Button">12.0.1. Full Button</a></li></ul></ul><li><a href="#button-icon-headref">13. button-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Button">13.0.1. Icon Button</a></li></ul></ul><li><a href="#button-size-headref">14. button-size-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Size">14.0.1. Button Size</a></li></ul></ul><li><a href="#button-disabled-headref">15. button-disabled-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Button">15.0.1. Disabled Button</a></li></ul></ul><li><a href="#card-def-headref">16. card-def-headref</a></li><li><a href="#Card">17. Card</a></li><li><a href="#card-headfoot-headref">18. card-headfoot-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Header_and_Footer">18.0.1. Card Header and Footer</a></li></ul></ul><li><a href="#card-list-headref">19. card-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_List">19.0.1. Card List</a></li></ul></ul><li><a href="#card-image-headref">20. card-image-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Image">20.0.1. Card Image</a></li></ul></ul><li><a href="#card-showcase-headref">21. card-showcase-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Showcase">21.0.1. Card Showcase</a></li></ul></ul><li><a href="#checkbox-headref">22. checkbox-headref</a></li><li><a href="#Check_Box">23. Check Box</a></li><li><a href="#deckswiper-headref">24. deckswiper-headref</a></li><li><a href="#Deck_Swiper">25. Deck Swiper</a></li><li><a href="#fabs-def-headref">26. fabs-def-headref</a></li><li><a href="#FABs">27. FABs</a></li><li><a href="#fabs-multiple-headref">28. fabs-multiple-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Multiple_FABs">28.0.1. Multiple FABs</a></li></ul></ul><li><a href="#footer-tabs-headref">29. footer-tabs-headref</a></li><li><a href="#Footer_Tabs">30. Footer Tabs</a></li><li><a href="#footer-icon-headref">31. footer-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer">31.0.1. Icon Footer</a></li></ul></ul><li><a href="#footer-text-headref">32. footer-text-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer_with_Text">32.0.1. Icon Footer with Text</a></li></ul></ul><li><a href="#footer-badge-headref">33. footer-badge-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Footer_with_badge">33.0.1. Footer with badge</a></li></ul></ul><li><a href="#Form">34. Form</a></li><li><a href="#fixed-label-headref">35. fixed-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Fixed_Label">35.0.1. Fixed Label</a></li></ul></ul><li><a href="#inline-label-headref">36. inline-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Inline_Label">36.0.1. Inline Label</a></li></ul></ul><li><a href="#floating-label-headref">37. floating-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Floating_Label">37.0.1. Floating Label</a></li></ul></ul><li><a href="#stacked-label-headref">38. stacked-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Stacked_Label">38.0.1. Stacked Label</a></li></ul></ul><li><a href="#regular-textbox-headref">39. regular-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Regular_Textbox">39.0.1. Regular Textbox</a></li></ul></ul><li><a href="#underlined-textbox-headref">40. underlined-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Underlined_Textbox">40.0.1. Underlined Textbox</a></li></ul></ul><li><a href="#rounded-textbox-headref">41. rounded-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Textbox">41.0.1. Rounded Textbox</a></li></ul></ul><li><a href="#icon-textbox-headref">42. icon-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Textbox">42.0.1. Icon Textbox</a></li></ul></ul><li><a href="#success-textbox-headref">43. success-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Success_Input_Textbox">43.0.1. Success Input Textbox</a></li></ul></ul><li><a href="#error-textbox-headref">44. error-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Error_Input_Textbox">44.0.1. Error Input Textbox</a></li></ul></ul><li><a href="#disabled-textbox-headref">45. disabled-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Textbox">45.0.1. Disabled Textbox</a></li></ul></ul><li><a href="#header-def-headref">46. header-def-headref</a></li><li><a href="#Header">47. Header</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_only_title">47.0.1. Header with only title</a></li><li><a href="#Header_with_Icon_and_Text_Buttons">47.0.2. Header with Icon and Text Buttons</a></li><li><a href="#Header_with_Title_and_Subtitle">47.0.3. Header with Title and Subtitle</a></li></ul></ul><li><a href="#icon-def-headref">48. icon-def-headref</a></li><li><a href="#Icon">49. Icon</a></li><li><a href="#Layout">50. Layout</a></li><li><a href="#list-def-headref">51. list-def-headref</a></li><li><a href="#List">52. List</a></li><li><a href="#list-divider-headref">53. list-divider-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Divider">53.0.1. List Divider</a></li></ul></ul><li><a href="#list-header-headref">54. list-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Header">54.0.1. List Header</a></li></ul></ul><li><a href="#list-icon-headref">55. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">55.0.1. List Icon</a></li></ul></ul><li><a href="#list-avatar-headref">56. list-avatar-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Avatar">56.0.1. List Avatar</a></li></ul></ul><li><a href="#list-thumbnail-headref">57. list-thumbnail-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Thumbnail">57.0.1. List Thumbnail</a></li></ul></ul><li><a href="#dynamic-list-headref">58. dynamic-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Dynamic_List">58.0.1. Dynamic List</a></li></ul></ul><li><a href="#list-seperator-headref">59. list-seperator-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Separator">59.0.1. List Separator</a></li></ul></ul><li><a href="#Picker">60. Picker</a></li><li><a href="#radio-button-headref">61. radio-button-headref</a></li><li><a href="#Radio_Button">62. Radio Button</a></li><li><a href="#search-bar-headref">63. search-bar-headref</a></li><li><a href="#Search_Bar">64. Search Bar</a></li><li><a href="#Segment">65. Segment</a></li><li><a href="#Spinner">66. Spinner</a></li><li><a href="#tabs-def-headref">67. tabs-def-headref</a></li><li><a href="#Tabs">68. Tabs</a></li><li><a href="#advanced-tabs-headref">69. advanced-tabs-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Tabs">69.0.1. Advanced Tabs</a></li></ul></ul><li><a href="#Thumbnail">70. Thumbnail</a></li><li><a href="#Toast">71. Toast</a></li><li><a href="#Typography">72. Typography</a></li><li><a href="#Drawer">73. Drawer</a></li><li><a href="#ref-components-headref">74. ref-components-headref</a></li><li><a href="#Ref_to_Components">75. Ref to Components</a></li></ul></div><a href="#anatomy-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#__%7D">  }</a></p><li><a href="#anatomy-headref">1. anatomy-headref</a></li><li><a href="#Anatomy">2. Anatomy</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Anatomy">2.0.1. Header Anatomy</a></li><li><a href="#Content_Anatomy">2.0.2. Content Anatomy</a></li><li><a href="#Footer_Anatomy">2.0.3. Footer Anatomy</a></li></ul></ul><li><a href="#ActionSheet">3. ActionSheet</a></li><li><a href="#Badge">4. Badge</a></li><li><a href="#button-def-headref">5. button-def-headref</a></li><li><a href="#Button">6. Button</a></li><li><a href="#button-theme-headref">7. button-theme-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">7.0.1. Button Theme</a></li></ul></ul><li><a href="#button-transparent-headref">8. button-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Button">8.0.1. Transparent Button</a></li></ul></ul><li><a href="#button-outline-headref">9. button-outline-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Outline_Button">9.0.1. Outline Button</a></li></ul></ul><li><a href="#button-rounded-headref">10. button-rounded-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Button">10.0.1. Rounded Button</a></li></ul></ul><li><a href="#button-block-headref">11. button-block-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Block_Button">11.0.1. Block Button</a></li></ul></ul><li><a href="#button-full-headref">12. button-full-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Full_Button">12.0.1. Full Button</a></li></ul></ul><li><a href="#button-icon-headref">13. button-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Button">13.0.1. Icon Button</a></li></ul></ul><li><a href="#button-size-headref">14. button-size-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Size">14.0.1. Button Size</a></li></ul></ul><li><a href="#button-disabled-headref">15. button-disabled-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Button">15.0.1. Disabled Button</a></li></ul></ul><li><a href="#card-def-headref">16. card-def-headref</a></li><li><a href="#Card">17. Card</a></li><li><a href="#card-headfoot-headref">18. card-headfoot-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Header_and_Footer">18.0.1. Card Header and Footer</a></li></ul></ul><li><a href="#card-list-headref">19. card-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_List">19.0.1. Card List</a></li></ul></ul><li><a href="#card-image-headref">20. card-image-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Image">20.0.1. Card Image</a></li></ul></ul><li><a href="#card-showcase-headref">21. card-showcase-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Showcase">21.0.1. Card Showcase</a></li></ul></ul><li><a href="#checkbox-headref">22. checkbox-headref</a></li><li><a href="#Check_Box">23. Check Box</a></li><li><a href="#deckswiper-headref">24. deckswiper-headref</a></li><li><a href="#Deck_Swiper">25. Deck Swiper</a></li><li><a href="#fabs-def-headref">26. fabs-def-headref</a></li><li><a href="#FABs">27. FABs</a></li><li><a href="#fabs-multiple-headref">28. fabs-multiple-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Multiple_FABs">28.0.1. Multiple FABs</a></li></ul></ul><li><a href="#footer-tabs-headref">29. footer-tabs-headref</a></li><li><a href="#Footer_Tabs">30. Footer Tabs</a></li><li><a href="#footer-icon-headref">31. footer-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer">31.0.1. Icon Footer</a></li></ul></ul><li><a href="#footer-text-headref">32. footer-text-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer_with_Text">32.0.1. Icon Footer with Text</a></li></ul></ul><li><a href="#footer-badge-headref">33. footer-badge-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Footer_with_badge">33.0.1. Footer with badge</a></li></ul></ul><li><a href="#Form">34. Form</a></li><li><a href="#fixed-label-headref">35. fixed-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Fixed_Label">35.0.1. Fixed Label</a></li></ul></ul><li><a href="#inline-label-headref">36. inline-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Inline_Label">36.0.1. Inline Label</a></li></ul></ul><li><a href="#floating-label-headref">37. floating-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Floating_Label">37.0.1. Floating Label</a></li></ul></ul><li><a href="#stacked-label-headref">38. stacked-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Stacked_Label">38.0.1. Stacked Label</a></li></ul></ul><li><a href="#regular-textbox-headref">39. regular-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Regular_Textbox">39.0.1. Regular Textbox</a></li></ul></ul><li><a href="#underlined-textbox-headref">40. underlined-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Underlined_Textbox">40.0.1. Underlined Textbox</a></li></ul></ul><li><a href="#rounded-textbox-headref">41. rounded-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Textbox">41.0.1. Rounded Textbox</a></li></ul></ul><li><a href="#icon-textbox-headref">42. icon-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Textbox">42.0.1. Icon Textbox</a></li></ul></ul><li><a href="#success-textbox-headref">43. success-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Success_Input_Textbox">43.0.1. Success Input Textbox</a></li></ul></ul><li><a href="#error-textbox-headref">44. error-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Error_Input_Textbox">44.0.1. Error Input Textbox</a></li></ul></ul><li><a href="#disabled-textbox-headref">45. disabled-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Textbox">45.0.1. Disabled Textbox</a></li></ul></ul><li><a href="#header-def-headref">46. header-def-headref</a></li><li><a href="#Header">47. Header</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_only_title">47.0.1. Header with only title</a></li><li><a href="#Header_with_Icon_and_Text_Buttons">47.0.2. Header with Icon and Text Buttons</a></li><li><a href="#Header_with_Title_and_Subtitle">47.0.3. Header with Title and Subtitle</a></li></ul></ul><li><a href="#icon-def-headref">48. icon-def-headref</a></li><li><a href="#Icon">49. Icon</a></li><li><a href="#Layout">50. Layout</a></li><li><a href="#list-def-headref">51. list-def-headref</a></li><li><a href="#List">52. List</a></li><li><a href="#list-divider-headref">53. list-divider-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Divider">53.0.1. List Divider</a></li></ul></ul><li><a href="#list-header-headref">54. list-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Header">54.0.1. List Header</a></li></ul></ul><li><a href="#list-icon-headref">55. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">55.0.1. List Icon</a></li></ul></ul><li><a href="#list-avatar-headref">56. list-avatar-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Avatar">56.0.1. List Avatar</a></li></ul></ul><li><a href="#list-thumbnail-headref">57. list-thumbnail-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Thumbnail">57.0.1. List Thumbnail</a></li></ul></ul><li><a href="#dynamic-list-headref">58. dynamic-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Dynamic_List">58.0.1. Dynamic List</a></li></ul></ul><li><a href="#list-seperator-headref">59. list-seperator-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Separator">59.0.1. List Separator</a></li></ul></ul><li><a href="#Picker">60. Picker</a></li><li><a href="#radio-button-headref">61. radio-button-headref</a></li><li><a href="#Radio_Button">62. Radio Button</a></li><li><a href="#search-bar-headref">63. search-bar-headref</a></li><li><a href="#Search_Bar">64. Search Bar</a></li><li><a href="#Segment">65. Segment</a></li><li><a href="#Spinner">66. Spinner</a></li><li><a href="#tabs-def-headref">67. tabs-def-headref</a></li><li><a href="#Tabs">68. Tabs</a></li><li><a href="#advanced-tabs-headref">69. advanced-tabs-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Tabs">69.0.1. Advanced Tabs</a></li></ul></ul><li><a href="#Thumbnail">70. Thumbnail</a></li><li><a href="#Toast">71. Toast</a></li><li><a href="#Typography">72. Typography</a></li><li><a href="#Drawer">73. Drawer</a></li><li><a href="#ref-components-headref">74. ref-components-headref</a></li><li><a href="#Ref_to_Components">75. Ref to Components</a></li></ul></div><a href="#anatomy-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -4998,7 +5155,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.0","selected":true},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-06-21T07:33:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-21T08:11:50.895Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.0","selected":true},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-06-21T08:21:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-21T08:21:44.028Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -5037,10 +5194,6 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     
         
         <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

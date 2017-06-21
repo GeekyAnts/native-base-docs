@@ -85,6 +85,11 @@
 
 * [FAQs](/docs/faq/FAQs.md)
 
+<<<<<<< HEAD
+=======
+* [Cheat Sheet](/docs/CheatSheet.md)
+
+>>>>>>> ac2b3849889bde7f7db7270c8926eed973d59e51
 * [Compatibility](/docs/Compatibility.md)
 
 * [Examples](/docs/examples/Examples.md)
