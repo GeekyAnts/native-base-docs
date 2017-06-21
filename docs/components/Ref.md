@@ -13,17 +13,17 @@
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button } from 'native-base';
 export default class RefExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;Button ref={ (c) => this._button = c }>
-                        Click Me
-                    &lt;/Button>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          &lt;Button ref={ (c) => this._button = c }>
+            Click Me
+          &lt;/Button>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 
