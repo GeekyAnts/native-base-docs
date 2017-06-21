@@ -12,21 +12,21 @@ Include <code>CardItem</code> subsequently within <code>Card</code> to create a 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
 export default class CardListExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;Card>
-                    &lt;CardItem>
-                       &lt;Icon active name="logo-googleplus" />
-                       &lt;Text>Google Plus&lt;/Text>
-                       &lt;Right>
-                          &lt;Icon name="arrow-forward" />
-                       &lt;/Right>
-                     &lt;/CardItem>
-                   &lt;/Card>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          &lt;Card>
+            &lt;CardItem>
+              &lt;Icon active name="logo-googleplus" />
+              &lt;Text>Google Plus&lt;/Text>
+              &lt;Right>
+                &lt;Icon name="arrow-forward" />
+              &lt;/Right>
+             &lt;/CardItem>
+           &lt;/Card>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />

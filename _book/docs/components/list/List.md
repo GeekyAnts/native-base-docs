@@ -1,5 +1,5 @@
-##list-def-headref
-# List
+## list-def-headref
+## List
 
 This component is completely built by [NativeBase](https://nativebase.io/).<br />
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
@@ -21,25 +21,25 @@ A base component for specifying lists of information. List must contain one or m
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, List, ListItem, Text } from 'native-base';
 export default class ListExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;List>
-                        &lt;ListItem >
-                            &lt;Text>Simon Mignolet&lt;/Text>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;Text>Nathaniel Clyne&lt;/Text>
-                        &lt;/ListItem>
-                        &lt;ListItem>
-                            &lt;Text>Dejan Lovren&lt;/Text>
-                        &lt;/ListItem>
-                    &lt;/List>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          &lt;List>
+            &lt;ListItem>
+              &lt;Text>Simon Mignolet&lt;/Text>
+            &lt;/ListItem>
+            &lt;ListItem>
+              &lt;Text>Nathaniel Clyne&lt;/Text>
+            &lt;/ListItem>
+            &lt;ListItem>
+              &lt;Text>Dejan Lovren&lt;/Text>
+            &lt;/ListItem>
+          &lt;/List>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }
 </code></pre><br />
 
@@ -49,9 +49,12 @@ export default class ListExample extends Component {
   * Defines a list item.
   * Adds border at bottom of each ListItem.
   * List takes any number of ListItem.
-* ListItem component takes input such as: Text, Badge, Thumbnail, Icon.
-* *Replacing Component for List: [React Native](https://facebook.github.io/react-native/) [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
-* *Replacing Component for ListItem: [React Native](https://facebook.github.io/react-native/) [<code>&lt;TouchableOpacity></code>](https://facebook.github.io/react-native/docs/touchableopacity.html)*
+  * Takes input such as: Text, Badge, Thumbnail, Icon.
+Replacing Component
+* List: React Native [View](https://facebook.github.io/react-native/docs/view.html)
+* ListItem:
+  -   React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html) for iOS
+  -   React Native [TouchableNativeFeedback](http://facebook.github.io/react-native/docs/touchablenativefeedback.html) for Android
 
 
 **Configuration**
@@ -69,7 +72,7 @@ export default class ListExample extends Component {
             <tr>
                 <td>button</td>
                 <td> - </td>
-                <td> - </td>
+                <td>boolean</td>
                 <td>
                     To navigate on click of a list item.
                 </td>
@@ -83,7 +86,7 @@ export default class ListExample extends Component {
             <tr>
                 <td>itemDivider</td>
                 <td> - </td>
-                <td> - </td>
+                <td>boolean</td>
                 <td>Helps to organize and group the list items.</td>
             </tr>
             <tr>
@@ -97,7 +100,15 @@ export default class ListExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Render as the first Item in the List.
+                    Adds style of first ListItem.
+                </td>
+            </tr>
+            <tr>
+                <td>last</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Adds style of last ListItem.
                 </td>
             </tr>
             <tr>

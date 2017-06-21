@@ -9,7 +9,7 @@
         "spec": "1.1.1",
         "type": "version"
       },
-      "/Users/neeraj/Sites/projects/NBDocs/native-base-docs"
+      "/Volumes/Supriya/projects/docs/native-base-docs"
     ]
   ],
   "_from": "gitbook-plugin-navigator@1.1.1",
@@ -43,7 +43,7 @@
   "_shasum": "b5e17ce78d89cbecce430599f91c9ee0450a0b95",
   "_shrinkwrap": null,
   "_spec": "gitbook-plugin-navigator@1.1.1",
-  "_where": "/Users/neeraj/Sites/projects/NBDocs/native-base-docs",
+  "_where": "/Volumes/Supriya/projects/docs/native-base-docs",
   "author": {
     "name": "zhangzq"
   },

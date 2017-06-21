@@ -15,7 +15,7 @@
                     <td>Complete section of screen</td>
                     <td>React Native
                         <a href="https://facebook.github.io/react-native/docs/view.html">
-                            &lt;View>
+                            View
                         </a>
                     </td>
                 </tr>
@@ -24,7 +24,7 @@
                     <td>Header or Navbar of screen</td>
                     <td>React Native
                         <a href="https://facebook.github.io/react-native/docs/view.html">
-                            &lt;View>
+                            View
                         </a>
                     </td>
                 </tr>
@@ -33,7 +33,7 @@
                     <td>Body element of screen</td>
                     <td>React Native
                         <a href="https://github.com/APSL/react-native-keyboard-aware-scroll-view">
-                            &lt;KeyboardAwareScrollView>
+                            KeyboardAwareScrollView
                         </a>
                     </td>
                 </tr>
@@ -52,6 +52,19 @@
             </thead>
             <tbody>
 
+                <!-- ActionSheet -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;ActionSheet></td>
+                    <td>Flexible and extensible content container</td>
+                    <td>
+                        React Native
+                        <a href="http://facebook.github.io/react-native/docs/modal.html">
+                            Modal
+                        </a>
+                    </td>
+                </tr>
+
+
                 <!-- Badge -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;Badge></td>
@@ -60,53 +73,53 @@
                     </td>
                     <td>React Native
                         <a href="https://facebook.github.io/react-native/docs/view.html">
-                            &lt;View>
+                            View
                         </a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>backgroundColor</li>
+                            <li>primary</li>
                         </ul>
                     </td>
-                    <td>background color for badge</td>
+                    <td>blue background color</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>color</li>
+                            <li>success</li>
                         </ul>
                     </td>
-                    <td>text color for badge</td>
+                    <td>green background color</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>fontSize</li>
+                            <li>info</li>
                         </ul>
                     </td>
-                    <td>text font size for badge</td>
+                    <td>light blue background color</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>width</li>
+                            <li>warning</li>
                         </ul>
                     </td>
-                    <td>dimension of badge</td>
+                    <td>yellow background color</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>lineHeight</li>
+                            <li>danger</li>
                         </ul>
                     </td>
-                    <td>padding on top of badge text</td>
+                    <td>red background color</td>
                     <td></td>
                 </tr>
 
@@ -116,10 +129,13 @@
                     <td>&lt;Button></td>
                     <td>Submit or reset a form, Navigate etc</td>
                     <td>
-                        React Native
+                        React Native - <br />
                         <a href="https://facebook.github.io/react-native/docs/touchableopacity.html">
-                            &lt;TouchableOpacity>
-                        </a>
+                            TouchableOpacity
+                        </a>(iOS)<br />
+                        <a href="http://facebook.github.io/react-native/docs/touchablenativefeedback.html">
+                            TouchableNativeFeedback
+                        </a>(Android)
                     </td>
                 </tr>
                 <tr>
@@ -134,10 +150,37 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>textStyle</li>
+                            <li>active</li>
                         </ul>
                     </td>
-                    <td>button text style</td>
+                    <td>state of button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>transparent</li>
+                        </ul>
+                    </td>
+                    <td>renders child element of button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>bordered</li>
+                        </ul>
+                    </td>
+                    <td>outline button style</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>rounded</li>
+                        </ul>
+                    </td>
+                    <td>button with slightly round shaped edges</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -152,19 +195,19 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>rounded</li>
+                            <li>full</li>
                         </ul>
                     </td>
-                    <td>slightly round shaped edges</td>
+                    <td>full width button</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>transparent</li>
+                            <li>disabled</li>
                         </ul>
                     </td>
-                    <td>renders child element of button</td>
+                    <td>disables click option for button</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -206,10 +249,55 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>disabled</li>
+                            <li>light</li>
                         </ul>
                     </td>
-                    <td>disables click option for button</td>
+                    <td>light white background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>primary</li>
+                        </ul>
+                    </td>
+                    <td>blue background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>success</li>
+                        </ul>
+                    </td>
+                    <td>green background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>info</li>
+                        </ul>
+                    </td>
+                    <td>light blue background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>warning</li>
+                        </ul>
+                    </td>
+                    <td>yellow background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>danger</li>
+                        </ul>
+                    </td>
+                    <td>red background color</td>
                     <td></td>
                 </tr>
 
@@ -223,9 +311,39 @@
                     <td>
                         React Native
                         <a href="https://facebook.github.io/react-native/docs/view.html">
-                            &lt;View>
+                            View
                         </a>
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>transparent</li>
+                        </ul>
+                    </td>
+                    <td>
+                        iOS - no card shadow<br />
+                        Android - no elevation
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>dataArray</li>
+                        </ul>
+                    </td>
+                    <td>array of data chunks to render iteratively</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderRow</li>
+                        </ul>
+                    </td>
+                    <td>callback that returns chunk of data as a component</td>
+                    <td></td>
                 </tr>
 
 
@@ -236,7 +354,10 @@
                     <td>
                         React Native
                         <a href="https://facebook.github.io/react-native/docs/touchableopacity.html">
-                            &lt;TouchableOpacity>
+                            TouchableOpacity 
+                        </a> / 
+                        <a href="https://facebook.github.io/react-native/docs/view.html">
+                            View
                         </a>
                     </td>
                 </tr>
@@ -246,7 +367,7 @@
                             <li>header</li>
                         </ul>
                     </td>
-                    <td>renders as header and footer for cards</td>
+                    <td>renders text as header for cards</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -261,10 +382,10 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>note</li>
+                            <li>footer</li>
                         </ul>
                     </td>
-                    <td>sub caption for card header and footer</td>
+                    <td>renders text as footer for cards</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -274,6 +395,15 @@
                         </ul>
                     </td>
                     <td>navigate on click of a card item</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>bordered</li>
+                        </ul>
+                    </td>
+                    <td>adds border to card item</td>
                     <td></td>
                 </tr>
 
@@ -288,7 +418,7 @@
                     <td>
                         React Native
                         <a href="https://facebook.github.io/react-native/docs/touchableopacity.html">
-                            &lt;TouchableOpacity>
+                            TouchableOpacity
                         </a>
                     </td>
                 </tr>
@@ -299,6 +429,24 @@
                         </ul>
                     </td>
                     <td>represents the state value of an item</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>color</li>
+                        </ul>
+                    </td>
+                    <td>background color of checkbox</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onPress</li>
+                        </ul>
+                    </td>
+                    <td>Handler to be called when checkbox is tapped</td>
                     <td></td>
                 </tr>
 

@@ -1,4 +1,4 @@
-# Content
+## Content
 
 * This is a [NativeBase](https://nativebase.io/) component which renders as <b>body</b> element of your screen.
 * Each screen can have only one <code>&lt;Content></code> component and can be defined anywhere within the Container.

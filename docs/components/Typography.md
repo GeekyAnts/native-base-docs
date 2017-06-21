@@ -1,7 +1,7 @@
-# Typography
+## Typography
 
 NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br />
-*Replacing Component for H1, H2, H3, Text: [React Native](https://facebook.github.io/react-native/) <br />*
+Replacing Component for H1, H2, H3, Text: React Native [Text](http://facebook.github.io/react-native/docs/text.html) <br />
 
 ![Preview ios Typography](https://docs.nativebase.io/docs/assets/ios/components/typo.png)
 ![Preview android Typography](https://docs.nativebase.io/docs/assets/android/components/typo.png)
@@ -12,18 +12,18 @@ NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2<
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, H1, H2, H3, Text } from 'native-base';
 export default class TypographyExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    &lt;H1>Header One&lt;/H1>
-                    &lt;H2>Header Two&lt;/H2>
-                    &lt;H3>Header Three&lt;/H3>
-                    &lt;Text>Default&lt;/Text>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Content>
+          &lt;H1>Header One&lt;/H1>
+          &lt;H2>Header Two&lt;/H2>
+          &lt;H3>Header Three&lt;/H3>
+          &lt;Text>Default&lt;/Text>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 
