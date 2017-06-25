@@ -10,7 +10,7 @@ To have [NativeBase](https://nativebase.io/) components running onto your native
 
 *Create React Native project*
 ```js
-react-native init AwesomeNativeBase
+create-react-native-app AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
