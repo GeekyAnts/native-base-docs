@@ -1,6 +1,6 @@
 # Quick Setup
 
-To have [NativeBase](https://nativebase.io/) components running onto your native apps, all you need to do is, create a fresh [React Native](https://facebook.github.io/react-native/) project and install the NativeBase command line tools.
+To have [NativeBase](https://nativebase.io/) components running onto your native apps, all you need to do is, create a fresh [React Native](https://facebook.github.io/react-native/) project and install the NativeBase using *npm*.
 
 **System Requirements**
 * Globally installed [node](https://nodejs.org/en/) >= 6.0
@@ -57,4 +57,5 @@ async componentWillMount() {
 }
 ```
 <br />
-Check out the [NativeBase KitchenSink](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/CRNA/js/setup.js) with CRNA for an example of NativeBase components implementation.<br />
+Check out the [NativeBase KitchenSink](https://exp.host/@geekyants/nativebase-kitchenSink) with CRNA for an example of NativeBase components implementation.<br />
+Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
