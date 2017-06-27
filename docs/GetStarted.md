@@ -31,8 +31,8 @@ You've successfully setup [NativeBase](https://nativebase.io/) with your [React 
 
 
 ## Setup with CRNA
-Create React Native project using the CRNA CLI.<br />
-CRNA helps you make React Native apps with no build configuration. Create React App works on macOS, Windows, and Linux. <br />
+Create React Native project using the CRNA CLI.  
+CRNA helps you make React Native apps with no build configuration. Create React App works on macOS, Windows, and Linux.  
 Refer this link for additional information [CRNA](https://github.com/react-community/create-react-native-app)
 
 *Install NativeBase*
@@ -43,11 +43,11 @@ npm install native-base --save
 ```js
 npm install @expo/vector-icons --save
 ```
-<br />
+  
 
 NativeBase uses some custom fonts that can be loaded using **loadAsync** function. Check out [this](https://docs.expo.io/versions/v15.0.0/sdk/font.html#expofontloadasyncname-url) expo link.
-<br />
-*Syntax* <br />
+  
+*Syntax*  
 ```js
 async componentWillMount() {
   await Expo.Font.loadAsync({
@@ -56,6 +56,7 @@ async componentWillMount() {
   });
 }
 ```
-<br />
-Check out the [NativeBase KitchenSink](https://exp.host/@geekyants/nativebase-kitchenSink) with CRNA for an example of NativeBase components implementation.<br />
+  
+
+Check out the [NativeBase KitchenSink](https://exp.host/@geekyants/nativebase-kitchenSink) with CRNA for an example of NativeBase components implementation.  
 Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
