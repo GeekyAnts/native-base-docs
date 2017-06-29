@@ -25,6 +25,7 @@
 * [Search Bar](Components.md#search-bar-headref)
 * [Segment](Components.md#Segment)
 * [Spinner](Components.md#Spinner)
+* [Swipable List](Components.md#swipable-def-headref)
 * [Tabs](Components.md#tabs-def-headref)
 * [Thumbnail](Components.md#Thumbnail)
 * [Toast](Components.md#Toast)

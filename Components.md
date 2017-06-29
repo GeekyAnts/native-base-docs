@@ -49,6 +49,7 @@
 {% include "./docs/components/SearchBar.md" %}
 {% include "./docs/components/Segment.md" %}
 {% include "./docs/components/Spinner.md" %}
+{% include "./docs/components/SwipableList.md" %}
 {% include "./docs/components/Tabs.md" %}
 {% include "./docs/components/Thumbnail.md" %}
 {% include "./docs/components/Toast.md" %}

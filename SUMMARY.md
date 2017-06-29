@@ -57,6 +57,8 @@
     * [Search Bar](Components.md#search-bar-headref)
     * [Segment](Components.md#Segment)
     * [Spinner](Components.md#Spinner)
+    * [Swipable List](Components.md#swipable-def-headref)
+        * [SwipeRow](Components.md#single-swipable-def-headref)
     * [Tabs](Components.md#tabs-def-headref)
         * [Advanced Tabs](Components.md#advanced-tabs-headref)
     * [Thumbnail](Components.md#Thumbnail)
