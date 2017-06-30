@@ -15,50 +15,50 @@ Swipable List are ListItems that swipe open and close.Handles default native beh
 import { ListView } from 'react-native';
 import { Container, Header, Content, List, ListItem, Text, Icon, Button } from 'native-base';
 import datas from './datas';
-​export default class TabsExample extends Component {
-    constructor(props) {
-		super(props);
-		this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-		this.state = {
-			basic: true,
-			listViewData: datas,
-		};
-	}
-	deleteRow(secId, rowId, rowMap) {
-		rowMap[`${secId}${rowId}`].props.closeRow();
-		const newData = [...this.state.listViewData];
-		newData.splice(rowId, 1);
-		this.setState({ listViewData: newData });
-	}
-    render() {
-        return (
-        &lt;Container>
-            &lt;Header />
-            &lt;Content scrollEnabled={false}>
-                &lt;List
-                    dataSource={this.ds.cloneWithRows(this.state.listViewData)}
-                    leftOpenValue={75}
-                    rightOpenValue={-75}
-                    renderRow={data =>
-                        &lt;ListItem>
-                            &lt;Text>{data}&lt;/Text>
-                        &lt;/ListItem>
-                    }
-                    renderLeftHiddenRow={data =>
-                        &lt;Button info onPress={() => alert(data)}>
-                            &lt;Icon active name="information-circle" />
-                        &lt;/Button>
-                    }
-                    right={
-                        &lt;Button danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
-                            &lt;Icon active name="trash" />
-                        &lt;/Button>
-                    }
-                />
-            &lt;/Content>
-        &lt;/Container>
-        );
-    }
+​export default class SwipeableListExample extends Component {
+  constructor(props) {
+    super(props);
+    this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    this.state = {
+      basic: true,
+      listViewData: datas,
+    };
+  }
+  deleteRow(secId, rowId, rowMap) {
+    rowMap[`${secId}${rowId}`].props.closeRow();
+    const newData = [...this.state.listViewData];
+    newData.splice(rowId, 1);
+    this.setState({ listViewData: newData });
+  }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Header />
+        &lt;Content scrollEnabled={false}>
+          &lt;List
+            dataSource={this.ds.cloneWithRows(this.state.listViewData)}
+            leftOpenValue={75}
+            rightOpenValue={-75}
+            renderRow={data =>
+              &lt;ListItem>
+                &lt;Text>{data}&lt;/Text>
+              &lt;/ListItem>
+            }
+            renderLeftHiddenRow={data =>
+              &lt;Button info onPress={() => alert(data)}>
+                &lt;Icon active name="information-circle" />
+              &lt;/Button>
+            }
+            right={
+              &lt;Button danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
+                &lt;Icon active name="trash" />
+              &lt;/Button>
+            }
+          />
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />
 
 **Configuration**
@@ -183,31 +183,31 @@ Single Swipable ListItem(Outside List)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Content, SwipeRow, View, Text, Icon, Button } from 'native-base';
-​export default class TabsExample extends Component {
+​export default class SwipeRowExample extends Component {
   render() {
     return (
       &lt;Container>
         &lt;Header />
         &lt;Content scrollEnabled={false}>
-            &lt;SwipeRow
-                leftOpenValue={75}
-                rightOpenValue={-75}
-                left={
-                    &lt;Button success onPress={() => alert('Add')}>
-                        &lt;Icon active name="add" />
-                    &lt;/Button>
-                }
-                body={
-                    &lt;View>
-                        &lt;Text>SwipeRow Body Text&lt;/Text>
-                    &lt;/View>
-                }
-                right={
-                    &lt;Button danger onPress={() => alert('Trash')}>
-                        &lt;Icon active name="trash" />
-                    &lt;/Button>
-                }
-            />
+          &lt;SwipeRow
+            leftOpenValue={75}
+            rightOpenValue={-75}
+            left={
+              &lt;Button success onPress={() => alert('Add')}>
+                &lt;Icon active name="add" />
+              &lt;/Button>
+            }
+            body={
+              &lt;View>
+                &lt;Text>SwipeRow Body Text&lt;/Text>
+              &lt;/View>
+            }
+            right={
+              &lt;Button danger onPress={() => alert('Trash')}>
+                &lt;Icon active name="trash" />
+              &lt;/Button>
+            }
+          />
         &lt;/Content>
       &lt;/Container>
     );
