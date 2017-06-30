@@ -9,8 +9,7 @@
         "edit-link",
         "scripts",
         "navigator",
-        "ga",
-        "livereload"
+        "ga"
     ],
     "pluginsConfig": {
       "ga": {
@@ -30,6 +29,7 @@
             "theme": "monokai"
         },
         "versions": {
+          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
                     "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
