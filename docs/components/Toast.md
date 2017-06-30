@@ -2,6 +2,22 @@
 
 NativeBase Toast can be used to display quick warning or error messages. <br />
 
+For `Toast` to work, you need to wrap your topmost component inside `<Root>` from native-base.
+
+```
+import { Root } from "native-base";
+import { StackNavigator } from "react-navigation";
+const AppNavigator = StackNavigator(
+  {
+    Page: { screen: Page },
+  }
+);
+export default () =>
+  <Root>
+    <AppNavigator />
+  </Root>;
+```
+
 ![Preview ios Toast](../docs/assets/ios/components/toast.gif)
 ![Preview android Toast](../docs/assets/android/components/toast.gif)
 
@@ -32,7 +48,6 @@ render() {
         &lt;/Header>
         &lt;Content padder>
           &lt;Button onPress={()=> Toast.show({
-              supportedOrientations={['potrait','landscape']}
               text: 'Wrong password!',
               position: 'bottom',
               buttonText: 'Okay'
@@ -86,13 +101,6 @@ render() {
                 <td> integer </td>
                 <td>Milliseconds after which Toast disappers</td>
             </tr>
-            <tr>
-                <td>supportedOrientations</td>
-                <td> - </td>
-                <td> Potrait, Landscape, Landscape-left, Landscape-right </td>
-                <td>Allows the modal to be rotated to any of the specified orientations</td>
-            </tr>
             </tbody>
         </table><br />
 
-Note: For Toast to work, it has to be called inside Container.
