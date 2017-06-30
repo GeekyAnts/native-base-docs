@@ -13,7 +13,7 @@
     ],
     "pluginsConfig": {
       "ga": {
-            "token": "UA-96833420-1"
+            "token": "UA-100873927-1"
         },
       "scripts": {
             "files": [
@@ -29,11 +29,16 @@
             "theme": "monokai"
         },
         "versions": {
-            "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
+          "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
             "options": [
                 {
+                    "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
+                    "text": "v2.2.0"
+                },
+                {
                     "value": "https://nativebase.io/docs/v2.0.0/",
-                    "text": "latest"
+                    "text": "v2.0",
+                    "selected": true
                 },
                 {
                   "value": "http://nativebase.io/docs/v0.5.13/",

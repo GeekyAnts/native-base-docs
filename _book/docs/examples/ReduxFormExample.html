@@ -1,0 +1,1732 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redux-Form · NativeBase</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-versions/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-navigator/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="StickyHeaderExample.html" />
+    
+    
+    <link rel="prev" href="GitAppExample.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://nativebase.io/">
+            
+                    
+                    NativeBase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../#Introduction">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../GetStarted.html">
+            
+                <a href="../GetStarted.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Components">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#anatomy-headref">
+            
+                    
+                    Anatomy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#ActionSheet">
+            
+                    
+                    ActionSheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Badge">
+            
+                    
+                    Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-def-headref">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-theme-headref">
+            
+                    
+                    Button Theme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-transparent-headref">
+            
+                    
+                    Transparent Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-outline-headref">
+            
+                    
+                    Outline Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-rounded-headref">
+            
+                    
+                    Rounded Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-block-headref">
+            
+                    
+                    Block Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-full-headref">
+            
+                    
+                    Full Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-icon-headref">
+            
+                    
+                    Icon Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.8" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-size-headref">
+            
+                    
+                    Button Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.9" data-path="../../Components.html">
+            
+                <a href="../../Components.html#button-disabled-headref">
+            
+                    
+                    Disabled Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../Components.html">
+            
+                <a href="../../Components.html#card-def-headref">
+            
+                    
+                    Card
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#card-headfoot-headref">
+            
+                    
+                    Card Header and Footer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#card-list-headref">
+            
+                    
+                    Card List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#card-image-headref">
+            
+                    
+                    Card Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#card-showcase-headref">
+            
+                    
+                    Card Showcase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.5" data-path="../../Components.html">
+            
+                <a href="../../Components.html#dynamic-card-headref">
+            
+                    
+                    Dynamic Card
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../Components.html">
+            
+                <a href="../../Components.html#checkbox-headref">
+            
+                    
+                    Check Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../Components.html">
+            
+                <a href="../../Components.html#deckswiper-headref">
+            
+                    
+                    Deck Swiper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#adv-deckswiper-def-headref">
+            
+                    
+                    Advanced Deck Swiper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../../Components.html">
+            
+                <a href="../../Components.html#fabs-def-headref">
+            
+                    
+                    FABs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#fabs-multiple-headref">
+            
+                    
+                    Muliple Fabs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../../Components.html">
+            
+                <a href="../../Components.html#footer-tabs-headref">
+            
+                    
+                    Footer Tabs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#footer-icon-headref">
+            
+                    
+                    Footer with only icons
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#footer-text-headref">
+            
+                    
+                    Footer with icons and text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#footer-badge-headref">
+            
+                    
+                    Footer Badge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Form">
+            
+                    
+                    Form
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.10.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#fixed-label-headref">
+            
+                    
+                    Fixed Label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#inline-label-headref">
+            
+                    
+                    Inline Label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#floating-label-headref">
+            
+                    
+                    Floating Label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#stacked-label-headref">
+            
+                    
+                    Stacked Label
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.5" data-path="../../Components.html">
+            
+                <a href="../../Components.html#regular-textbox-headref">
+            
+                    
+                    Regular Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.6" data-path="../../Components.html">
+            
+                <a href="../../Components.html#underlined-textbox-headref">
+            
+                    
+                    Underlined Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.7" data-path="../../Components.html">
+            
+                <a href="../../Components.html#rounded-textbox-headref">
+            
+                    
+                    Rounded Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.8" data-path="../../Components.html">
+            
+                <a href="../../Components.html#icon-textbox-headref">
+            
+                    
+                    Icon Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.9" data-path="../../Components.html">
+            
+                <a href="../../Components.html#success-textbox-headref">
+            
+                    
+                    Success Input Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.10" data-path="../../Components.html">
+            
+                <a href="../../Components.html#error-textbox-headref">
+            
+                    
+                    Error Input Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.11" data-path="../../Components.html">
+            
+                <a href="../../Components.html#disabled-textbox-headref">
+            
+                    
+                    Disabled Textbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../../Components.html">
+            
+                <a href="../../Components.html#header-def-headref">
+            
+                    
+                    Header
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../../Components.html">
+            
+                <a href="../../Components.html#icon-def-headref">
+            
+                    
+                    Icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Layout">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-def-headref">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.14.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-divider-headref">
+            
+                    
+                    List Divider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.2" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-header-headref">
+            
+                    
+                    List Header
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.3" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-icon-headref">
+            
+                    
+                    List Icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.4" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-avatar-headref">
+            
+                    
+                    List Avatar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.5" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-thumbnail-headref">
+            
+                    
+                    List Thumbnail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.6" data-path="../../Components.html">
+            
+                <a href="../../Components.html#dynamic-list-headref">
+            
+                    
+                    Dynamic List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14.7" data-path="../../Components.html">
+            
+                <a href="../../Components.html#list-seperator-headref">
+            
+                    
+                    List Separator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Picker">
+            
+                    
+                    Picker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../../Components.html">
+            
+                <a href="../../Components.html#radio-button-headref">
+            
+                    
+                    Radio Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="../../Components.html">
+            
+                <a href="../../Components.html#search-bar-headref">
+            
+                    
+                    Search Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Segment">
+            
+                    
+                    Segment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Spinner">
+            
+                    
+                    Spinner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="../../Components.html">
+            
+                <a href="../../Components.html#swipable-def-headref">
+            
+                    
+                    Swipable List
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.20.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#single-swipable-def-headref">
+            
+                    
+                    SwipeRow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="../../Components.html">
+            
+                <a href="../../Components.html#tabs-def-headref">
+            
+                    
+                    Tabs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.21.1" data-path="../../Components.html">
+            
+                <a href="../../Components.html#advanced-tabs-headref">
+            
+                    
+                    Advanced Tabs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Thumbnail">
+            
+                    
+                    Thumbnail
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Toast">
+            
+                    
+                    Toast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.24" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Typography">
+            
+                    
+                    Typography
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.25" data-path="../../Components.html">
+            
+                <a href="../../Components.html#Drawer">
+            
+                    
+                    Drawer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.26" data-path="../../Components.html">
+            
+                <a href="../../Components.html#ref-components-headref">
+            
+                    
+                    Ref
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Migration.html">
+            
+                <a href="../Migration.html">
+            
+                    
+                    Migration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../introduction/WhatsNew.html">
+            
+                <a href="../introduction/WhatsNew.html">
+            
+                    
+                    What's New in v2.0?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#Customize">
+            
+                    
+                    Customize
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#theaming-nb-headref">
+            
+                    
+                    Set Up
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#custom-component-headref">
+            
+                    
+                    Theme Your Custom Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#theme-color-headref">
+            
+                    
+                    Theme Color
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#theme-font-headref">
+            
+                    
+                    Theme Font
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../Customize.html">
+            
+                <a href="../../Customize.html#customize-button-headref">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../FeaturedApps.html">
+            
+                <a href="../FeaturedApps.html">
+            
+                    
+                    Featured Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Packages.html">
+            
+                <a href="../Packages.html">
+            
+                    
+                    Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../release-notes/Release.html">
+            
+                <a href="../release-notes/Release.html">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Contribute.html">
+            
+                <a href="../Contribute.html">
+            
+                    
+                    Contribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../faq/FAQs.html">
+            
+                <a href="../faq/FAQs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Compatibility.html">
+            
+                <a href="../Compatibility.html">
+            
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="Examples.html">
+            
+                <a href="Examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="ReduxCounterExample.html">
+            
+                <a href="ReduxCounterExample.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="MobxCounterExample.html">
+            
+                <a href="MobxCounterExample.html">
+            
+                    
+                    Mobx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="navigation/NavigationExample.html">
+            
+                <a href="navigation/NavigationExample.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.3.1" data-path="navigation/StackNavigationExample.html">
+            
+                <a href="navigation/StackNavigationExample.html">
+            
+                    
+                    React Navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3.2" data-path="navigation/RNRFBasicExample.html">
+            
+                <a href="navigation/RNRFBasicExample.html">
+            
+                    
+                    RNRF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.4" data-path="GitAppExample.html">
+            
+                <a href="GitAppExample.html">
+            
+                    
+                    Full App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14.5" data-path="ReduxFormExample.html">
+            
+                <a href="ReduxFormExample.html">
+            
+                    
+                    Redux-Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.6" data-path="StickyHeaderExample.html">
+            
+                <a href="StickyHeaderExample.html">
+            
+                    
+                    Sticky Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.7" data-path="FlatListExample.html">
+            
+                <a href="FlatListExample.html">
+            
+                    
+                    FlatList + Sticky Headers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Redux-Form</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="Redux_Form_Example">Redux Form Example</h1>
+<p>Redux Form is a sample app made with <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>, <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>, and <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the main Libraries at work here.<br>
+This is a simple step-by-step tutorial to get familiar with basic concepts of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>(used for state management), and [<a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a>. This simple App should get you familiar with these Libraries and their use case. <br></p>
+<h1 id="Find_Full_code_here">Find Full code <a href="https://github.com/GeekyAnts/native-base-example-redux-form" target="_blank">here</a></h1>
+<p><img src="https://docs.nativebase.io/docs/assets/ReduxForm.gif" alt="ReduxForm Gif">
+<br></p>
+<h2 id="Aim">1. Aim</h2>
+<p>We aim to create a single page application that uses <a href="https://github.com/erikras/redux-form" target="_blank">Redux-Form</a> and has validation functionality.</p>
+<h2 id="Installation">2. Installation</h2>
+<ol>
+<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
+<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
+a. <strong>Redux</strong> and <strong>react-redux</strong> <br>
+In your terminal enter the following <br>
+<code>
+npm install redux react-redux --save
+</code> <br>
+b. <strong>redux-form</strong> <br>
+Do this
+<code>
+npm install --save redux-form
+</code> <br>
+c. <strong>NativeBase</strong> <br>
+<code>
+npm install native-base --save
+</code> <br>
+<strong>Configure all dependencies by running the following command</strong> <br>
+<code>
+react-native link
+</code> <br>
+<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong>
+By the end of Installation, your package.json file should look something like this.<br>
+<img src="https://docs.nativebase.io/docs/assets/ReduxFormPackage.png" alt="Redux-Form package"> <br></li>
+</ol>
+<h2 id="SetUp">3. SetUp</h2>
+<p>Create a <strong>src</strong> folder at root of your project. Create folders <strong>compnoents</strong> <strong>reducers</strong> and one file <strong>Application.js</strong> for our App. <br></p>
+<h3 id="Reducers">3.1. Reducers</h3>
+<p>Create a file <strong>index.js</strong> inside reducers folder. Paste the following code. <br>
+<strong>Code src/reducers/index.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> { reducer <span class="hljs-keyword">as</span> formReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> reducers = {
+  form: formReducer
+}
+<span class="hljs-keyword">const</span> allReducers= combineReducers(reducers);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> allReducers;
+</code></pre><br></p>
+<h3 id="Component">3.2. Component</h3>
+<p>Create a file <strong>SimpleForm.js</strong> inside <code>components</code> folder. <br>
+<strong>Code src/components/SimpleForm.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx">
+<span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
+<span class="hljs-keyword">import</span> { View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Item, Input, Header, Body, Content, Title, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Field,reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> validate = values =&gt; {
+  <span class="hljs-keyword">const</span> error= {};
+  error.email= <span class="hljs-string">&apos;&apos;</span>;
+  error.name= <span class="hljs-string">&apos;&apos;</span>;
+  <span class="hljs-keyword">var</span> ema = values.email;
+  <span class="hljs-keyword">var</span> nm = values.name;
+  <span class="hljs-keyword">if</span>(values.email === <span class="hljs-literal">undefined</span>){
+    ema = <span class="hljs-string">&apos;&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(values.name === <span class="hljs-literal">undefined</span>){
+    nm = <span class="hljs-string">&apos;&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(ema.length &lt; <span class="hljs-number">8</span> &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
+    error.email= <span class="hljs-string">&apos;too short&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(!ema.includes(<span class="hljs-string">&apos;@&apos;</span>) &amp;&amp; ema !== <span class="hljs-string">&apos;&apos;</span>){
+    error.email= <span class="hljs-string">&apos;@ not included&apos;</span>;
+  }
+  <span class="hljs-keyword">if</span>(nm.length &gt; <span class="hljs-number">8</span>){
+    error.name= <span class="hljs-string">&apos;max 8 characters&apos;</span>;
+  }
+<span class="hljs-keyword">return</span> error;
+};
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">constructor</span>(props){
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.state={
+      isReady: <span class="hljs-literal">false</span>
+    };
+    <span class="hljs-keyword">this</span>.renderInput = <span class="hljs-keyword">this</span>.renderInput.bind(<span class="hljs-keyword">this</span>);
+  }
+  <span class="hljs-keyword">async</span> componentWillMount() {
+      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
+        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
+        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
+      });
+      <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
+    }
+  renderInput({ input, label, type, meta: { touched, error, warning } }){
+    <span class="hljs-keyword">var</span> hasError= <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">if</span>(error !== <span class="hljs-literal">undefined</span>){
+      hasError= <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span>( &lt;Item error= {hasError}&gt;
+                        &lt;Input {...input}/&gt;
+                        {hasError ? &lt;Text&gt;{error}&lt;/Text&gt; : &lt;Text /&gt;}
+                    &lt;/Item&gt; )
+  }
+  render(){
+     const { handleSubmit, reset } = this.props;
+     if (!this.state.isReady) {
+      return &lt;Expo.AppLoading /&gt;;
+    }
+  return (
+    &lt;Container&gt;
+    &lt;Header&gt;
+        &lt;Body&gt;
+          &lt;Title&gt;Redux Form&lt;/Title&gt;
+        &lt;/Body&gt;
+    &lt;/Header&gt;
+    &lt;Content padder&gt;
+      &lt;Field name=&quot;email&quot; component={this.renderInput} /&gt;
+      &lt;Field name=&quot;name&quot; component={this.renderInput} /&gt;
+      &lt;Button block primary onPress= {reset}&gt;
+      &lt;Text&gt;Submit&lt;/Text&gt;
+      &lt;/Button&gt;
+      &lt;/Content&gt;
+    &lt;/Container&gt;
+  )
+}
+}
+export default reduxForm({
+  form: &apos;test&apos;,
+  validate
+})(SimpleForm)
+</code></pre><br></p>
+<p><strong>Explained</strong> <br></p>
+<ol>
+<li>We load fonts using <code>loadAsync</code> as defined in previous examples.</li>
+<li>Note how we have added validate functionality in the end using <code>reduxForm</code> decorator.</li>
+<li>Conditions added to validate are user defined.</li>
+</ol>
+<h3 id="Application">3.3. Application</h3>
+<p><strong>Code src/Application.js</strong> <br></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React , { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/index.js&apos;</span>;
+<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> SimpleForm <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/SimpleForm.js&apos;</span>;
+<span class="hljs-keyword">import</span> { Field, reduxForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-form&apos;</span>;
+<span class="hljs-keyword">const</span> store = createStore(allReducers);
+ <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Application</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+  render(){
+    <span class="hljs-keyword">return</span>(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">SimpleForm</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
+  )
+  }
+}
+</span></code></pre><br></p>
+<p><strong>Explained</strong> <br>
+Here we import <code>allReducers</code> containing our <code>formReducer</code> and add it to our <code>store</code>. Next we simply pass our <code>store</code> to <code>Provider</code> component. <br></p>
+<h3 id="Finishing_Up">3.4. Finishing Up</h3>
+<p>Finally add the <code>Application</code> component in our <code>App.js</code> as follows <br>
+<strong>Code App.js</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { StyleSheet, Text, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> Application <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/Application.js&apos;</span>;
+<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/reducers/index.js&apos;</span>;
+<span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, TouchableOpacity } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">const</span> store = createStore(allReducers);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Application</span> /&gt;</span>
+    );
+  }
+}</span></code></pre><br>
+All done. Our App must work now. It looks awesome(unicorn alert). Build and run for magic.</p>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_Full_code_here">Find Full code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#SetUp">3. SetUp</a></li><ul><li><a href="#Reducers">3.1. Reducers</a></li><li><a href="#Component">3.2. Component</a></li><li><a href="#Application">3.3. Application</a></li><li><a href="#Finishing_Up">3.4. Finishing Up</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="GitAppExample.html" class="navigation navigation-prev " aria-label="Previous page: Full App">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="StickyHeaderExample.html" class="navigation navigation-next " aria-label="Next page: Sticky Headers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redux-Form","level":"1.14.5","depth":2,"next":{"title":"Sticky Headers","level":"1.14.6","depth":2,"path":"docs/examples/StickyHeaderExample.md","ref":"docs/examples/StickyHeaderExample.md","articles":[]},"previous":{"title":"Full App","level":"1.14.4","depth":2,"path":"docs/examples/GitAppExample.md","ref":"docs/examples/GitAppExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.0","selected":true},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/ReduxFormExample.md","mtime":"2017-06-30T14:36:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-30T15:58:00.497Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-versions/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-scripts/66aed4e7529938232ceabdb191f02a9c-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
