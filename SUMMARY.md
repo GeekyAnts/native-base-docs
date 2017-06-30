@@ -23,6 +23,7 @@
         * [Card Showcase](Components.md#card-showcase-headref)
     * [Check Box](Components.md#checkbox-headref)
     * [Deck Swiper](Components.md#deckswiper-headref)
+        * [Advanced Deck Swiper](Components.md#adv-deckswiper-def-headref)
     * [FABs](Components.md#fabs-def-headref)
         * [Muliple Fabs](Components.md#fabs-multiple-headref)
     * [Footer Tabs](Components.md#footer-tabs-headref)
