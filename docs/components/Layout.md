@@ -21,8 +21,8 @@ export default class LayoutExample extends Component {
       &lt;Container>
         &lt;Content>
           &lt;Grid>
-            &lt;Col style=&#123;{ backgroundColor: '#D954D7', height: 200 }}>&lt;/Col>
-            &lt;Col style=&#123;{ backgroundColor: '#D93735', height: 200 }}>&lt;/Col>
+            &lt;Col style=&#123;{ backgroundColor: '#635DB7', height: 200 }}>&lt;/Col>
+            &lt;Col style=&#123;{ backgroundColor: '#00CE9F', height: 200 }}>&lt;/Col>
           &lt;/Grid>
         &lt;/Content>
       &lt;/Container>

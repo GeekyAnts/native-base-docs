@@ -17,6 +17,7 @@
 {% include "./docs/components/card/CardList.md" %}
 {% include "./docs/components/card/CardImage.md" %}
 {% include "./docs/components/card/CardShowcase.md" %}
+{% include "./docs/components/card/DynamicCard.md" %}
 {% include "./docs/components/CheckBox.md" %}
 {% include "./docs/components/DeckSwiper.md" %}
 {% include "./docs/components/FABs.md" %}

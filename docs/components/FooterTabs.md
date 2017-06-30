@@ -91,7 +91,7 @@ export default class FooterTabsExample extends Component {
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base';
-​export default class IconFooterTabsExample extends Component {
+export default class IconFooterTabsExample extends Component {
   render() {
     return (
       &lt;Container>
@@ -126,7 +126,7 @@ import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
-​export default class IconTextFooterTabsExample extends Component {
+export default class IconTextFooterTabsExample extends Component {
   render() {
     return (
       &lt;Container>
@@ -165,7 +165,7 @@ import { Container, Content, Footer, FooterTab, Button, Icon, Text } from 'nativ
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon, Text, Badge } from 'native-base';
-​ export default class BadgeFooterTabsExample extends Component {
+export default class BadgeFooterTabsExample extends Component {
   render() {
     return (
       &lt;Container>

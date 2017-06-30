@@ -13,7 +13,7 @@ Here is your Card Image ready !
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
+import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
 export default class CardImageExample extends Component {
   render() {
     return (
@@ -33,15 +33,21 @@ export default class CardImageExample extends Component {
               &lt;Image source=&#123;{uri: 'Image URL'}} style=&#123;{height: 200, width: null, flex: 1}}/>
             &lt;/CardItem>
             &lt;CardItem>
-              &lt;Button transparent>
-                &lt;Icon active name="thumbs-up" />
-                &lt;Text>12 Likes&lt;/Text>
-              &lt;/Button>
-              &lt;Button transparent>
-                &lt;Icon active name="chatbubbles" />
-                &lt;Text>4 Comments&lt;/Text>
-              &lt;/Button>
-              &lt;Text>11h ago&lt;/Text>
+              &lt;Left>
+                &lt;Button transparent>
+                  &lt;Icon active name="thumbs-up" />
+                  &lt;Text>12 Likes&lt;/Text>
+                &lt;/Button>
+              &lt;/Left>
+              &lt;Body>
+                &lt;Button transparent>
+                  &lt;Icon active name="chatbubbles" />
+                  &lt;Text>4 Comments&lt;/Text>
+                &lt;/Button>
+              &lt;/Body>
+              &lt;Right>
+                &lt;Text>11h ago&lt;/Text>
+              &lt;/Right>
             &lt;/CardItem>
           &lt;/Card>
         &lt;/Content>

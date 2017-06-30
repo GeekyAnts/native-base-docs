@@ -13,6 +13,7 @@ Card is a flexible and extensible content container. It includes options for hea
 * [Card List](Components.md#card-list-headref)
 * [Card Image](Components.md#card-image-headref)
 * [Card Showcase](Components.md#card-showcase-headref)
+* [Dynamic Card](Components.md#dynamic-card-headref)
 
 *Genertal Syntax*
 

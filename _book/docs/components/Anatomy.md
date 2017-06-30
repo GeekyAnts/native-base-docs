@@ -9,7 +9,7 @@ A common way to use [NativeBase](https://nativebase.io/) screen structure is to 
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base';
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
 export default class AnatomyExample extends Component {
   render() {
     return (
@@ -26,7 +26,9 @@ export default class AnatomyExample extends Component {
           &lt;Right />
         &lt;/Header>
         &lt;Content>
-          // Your main content goes here
+          &lt;Text>
+            This is Content Section
+          &lt;/Text>
         &lt;/Content>
         &lt;Footer>
           &lt;FooterTab>
@@ -123,14 +125,18 @@ export default class HeaderExample extends Component {
   React Native Keyboard Aware Scroll View's [KeyboardAwareScrollView](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import { Container, Header, Content, Footer, Text } from 'native-base';
 export default class ContentExample extends Component {
   render() {
     return (
       &lt;Container>
-        &lt;Content>
-          // Your main content goes here
+        &lt;Header />
+        &lt;Content padder>
+          &lt;Text>
+            This is Content Section
+          &lt;/Text>
         &lt;/Content>
+        &lt;Footer />
       &lt;/Container>
     );
   }
@@ -182,11 +188,13 @@ export default class ContentExample extends Component {
 
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 export default class FooterExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
+        &lt;Content />
         &lt;Footer>
           &lt;FooterTab>
             &lt;Button full>

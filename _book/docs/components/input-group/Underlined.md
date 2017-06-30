@@ -14,9 +14,9 @@ export default class UnderlinedTextboxExample extends Component {
   render() {
     return (
       &lt;Container>
-        &lt;Content>​
-          &lt;Item underline>
-            &lt;Input placeholder='Underlined Textbox' />
+        &lt;Content>
+          &lt;Item>
+            &lt;Input placeholder="Underline Textbox" />
           &lt;/Item>
         &lt;/Content>
       &lt;/Container>

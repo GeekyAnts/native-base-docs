@@ -88,17 +88,17 @@ export default class HeaderExample extends Component {
                 <td> - </td>
                 <td>string</td>
                 <td>Set background color</td>
-            </tr>
+<!--             </tr>
                 <td>span</td>
                 <td> - </td>
                 <td> boolean </td>
                 <td>Doubles the header size</td>
-            </tr>
+            </tr> -->
             <tr>
                 <td>noShadow</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Removes shadow from iOS and elevation from android</td>
+                <td>Removes elevation from android</td>
             </tr>
             <tr>
                 <td>searchBar</td>

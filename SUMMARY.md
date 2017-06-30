@@ -21,6 +21,7 @@
         * [Card List](Components.md#card-list-headref)
         * [Card Image](Components.md#card-image-headref)
         * [Card Showcase](Components.md#card-showcase-headref)
+        * [Dynamic Card](Components.md#dynamic-card-headref)
     * [Check Box](Components.md#checkbox-headref)
     * [Deck Swiper](Components.md#deckswiper-headref)
     * [FABs](Components.md#fabs-def-headref)

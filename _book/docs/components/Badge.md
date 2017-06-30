@@ -33,7 +33,7 @@ export default class BadgeExample extends Component {
             &lt;Text>2&lt;/Text>
           &lt;/Badge>
           &lt;Badge primary>
-            &lt;Icon name="star" />
+            &lt;Icon name="star" style=&#123;{ fontSize: 15, color: "#fff", lineHeight: 20 }}/>
           &lt;/Badge>
           &lt;Badge style=&#123;{ backgroundColor: 'black' }}>
             &lt;Text style=&#123;{ color: 'white' }}>1866&lt;/Text>

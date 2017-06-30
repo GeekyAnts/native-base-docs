@@ -27,7 +27,7 @@ export default class ButtonSizeExample extends Component {
             &lt;Text>Success Default&lt;/Text>
           &lt;/Button>
           //Large size button
-          &lt;Button large info>
+          &lt;Button large dark>
             &lt;Text>Dark Large&lt;/Text>
           &lt;/Button>
         &lt;/Content>
