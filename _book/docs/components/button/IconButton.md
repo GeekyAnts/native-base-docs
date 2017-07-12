@@ -4,14 +4,14 @@
 The Icon Buttons, can take text and/or icon as child elements inside the Button.<br />
 This goes as simple as this: include your choice of icon using <code>Icon</code> component within the <code>Button</code> component.<br />
 
-![Preview ios button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconButtons.png)
-![Preview android button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconButtons.png)
+![Preview ios button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/button-icon.png)
+![Preview android button-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/button-icon.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Icon, Text } from 'native-base';
-export default class IconButtonExample extends Component {
+export default class ButtonIconExample extends Component {
   render() {
     return (
       &lt;Container>

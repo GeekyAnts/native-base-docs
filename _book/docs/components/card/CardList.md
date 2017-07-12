@@ -4,8 +4,8 @@
 Include <code>CardItem</code> subsequently within <code>Card</code> to create a card with lists.
 
 
-![Preview ios card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/CardList.png)
-![Preview android card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/cardList.png)
+![Preview ios card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/card-list.png)
+![Preview android card-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/card-list.png)
 
 *Syntax*
 

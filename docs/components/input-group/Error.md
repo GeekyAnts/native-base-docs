@@ -3,8 +3,8 @@
 
 To display textbox with invalid data, include the <b>error</b> prop with <code>Item</code>.
 
-![Preview ios error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/errorInput.png)
-![Preview android error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/errorInput.png)
+![Preview ios error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/input-error.png)
+![Preview android error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/input-error.png)
 
 *Syntax*
 

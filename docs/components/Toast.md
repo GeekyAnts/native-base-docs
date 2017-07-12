@@ -18,14 +18,14 @@ export default () =>
   </Root>;
 ```
 
-![Preview ios Toast](../docs/assets/ios/components/toast.gif)
-![Preview android Toast](../docs/assets/android/components/toast.gif)
+![Preview ios Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/toast.gif)
+![Preview android Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/toast.gif)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, &lcub; Component } from 'react';
 import { Container, Content, Toast, Button, Text, Icon } from 'native-base';
-export default class Toast extends Component &lcub;
+export default class ToastExample extends Component &lcub;
   constructor(props) {
     super(props);
     this.state = &lcub;

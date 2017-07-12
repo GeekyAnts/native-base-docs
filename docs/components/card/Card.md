@@ -5,15 +5,14 @@ Card is a pure [NativeBase](https://nativebase.io/) component.<br />
 Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
 [NativeBase](https://nativebase.io/) Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/basicCard.png)
-![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/basicCard.png)
+![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/card-basic.png)
+![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/card-basic.png)
 
   **Contents:**
 * [Card Header and Footer](Components.md#card-headfoot-headref)
 * [Card List](Components.md#card-list-headref)
 * [Card Image](Components.md#card-image-headref)
 * [Card Showcase](Components.md#card-showcase-headref)
-* [Dynamic Card](Components.md#dynamic-card-headref)
 
 *Genertal Syntax*
 

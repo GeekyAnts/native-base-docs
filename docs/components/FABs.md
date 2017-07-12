@@ -4,8 +4,8 @@
 FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br />
 Replacing Component: React Native [Animated](http://facebook.github.io/react-native/docs/animated.html)
 
-![Preview ios fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/singleFAB.gif)
-![Preview android fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/single-FAB.gif)
+![Preview ios fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/FAB-single.gif)
+![Preview android fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/FAB-single.gif)
 
 *Syntax*
 
@@ -97,17 +97,17 @@ export default class FABExample extends Component {
         </tbody>
     </table><br />
 
-##fabs-multiple-headref
+## fabs-multiple-headref
 #### Multiple FABs
 
-![Preview ios fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/multipleFABs.gif)
-![Preview android fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/multiple-FAB.gif)
+![Preview ios fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/FAB-multiple.gif)
+![Preview android fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/FAB-multiple.gif)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, View, Fab, Button, Icon } from 'native-base';
-​export default class FABExample extends Component {
+​export default class FABMultipleExample extends Component {
   constructor() {
     this.state = {
       active: 'true'

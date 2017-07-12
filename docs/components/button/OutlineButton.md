@@ -3,14 +3,14 @@
 
 Include <code>bordered</code> prop with Button to apply outline button style.<br />
 
-![Preview ios button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/outlineButtons.png)
-![Preview android button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/outlineButtons.png)
+![Preview ios button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/button-outline.png)
+![Preview android button-outline-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/button-outline.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Text } from 'native-base';
-export default class OutlineButtonExample extends Component {
+export default class ButtonOutlineExample extends Component {
   render() {
     return (
       &lt;Container>

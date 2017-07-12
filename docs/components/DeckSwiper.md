@@ -1,12 +1,12 @@
-##deckswiper-headref
+## deckswiper-def-headref
 ## Deck Swiper
 
 Looking at data one piece at a time is more efficient when you consider people you might want to date, restaurants, streaming music, or local events you might want to check out. <br />
 [NativeBase](https://nativebase.io/) Deck Swiper helps you evaluate one option at a time, instead of selecting from a set of options.<br />
 Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios deckswiper-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper.gif)
-![Preview android deckswiper-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deck-swiper.gif)
+![Preview ios deckswiper-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper.gif)
+![Preview android deckswiper-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deckswiper.gif)
 
 *Syntax*
 
@@ -117,10 +117,13 @@ export default class DeckSwiperExample extends Component {
         </tbody>
     </table><br />
 
-## adv-deckswiper-def-headref
+## deckswiper-adv-headref
 #### Advanced Deck Swiper
 
 Swipe Deck with callback function.
+
+![Preview ios deckswiper-adv-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/deckswiper-advanced.gif)
+![Preview android deckswiper-adv-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/deckswiper-advanced.gif)
 
 *Syntax*
 
@@ -135,7 +138,7 @@ const cards = [
   },
   .  .  .
 ];
-export default class DeckSwiperExample extends Component {
+export default class DeckSwiperAdvancedExample extends Component {
   render() {
     return (
       &lt;Container>

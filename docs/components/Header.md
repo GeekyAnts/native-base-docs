@@ -10,8 +10,8 @@
 * User can add custom styles while defining <code>Header</code> within their app.
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios header-def-headref](https://docs.nativebase.io/docs/assets/ios/components/header.png)
-![Preview android header-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextBtnsHeader.png)
+![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/ios/header-with-title.png)
+![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/screenshots/android/header-with-title.png)
 
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
@@ -153,7 +153,12 @@ export default class HeaderTitleExample extends Component {
 }</code></pre><br />
 
 
+## header-icon-text-headref
 #### Header with Icon and Text Buttons
+
+![Preview ios header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/header-with-icon-button-and-text.png)
+![Preview android header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/header-with-icon-button-and-text.png)
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
 export default class HeaderIconTextExample extends Component {
@@ -180,8 +185,12 @@ export default class HeaderIconTextExample extends Component {
   }
 }</code></pre><br />
 
-
+## header-title-subtitle-headref
 #### Header with Title and Subtitle
+
+![Preview ios header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/header-with-title-and-subtitle.png)
+![Preview android header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/header-with-title-and-subtitle.png)
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from 'native-base';
 export default class HeaderTitleSubtitleExample extends Component {

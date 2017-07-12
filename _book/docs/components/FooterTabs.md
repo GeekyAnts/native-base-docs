@@ -1,16 +1,16 @@
-##footer-tabs-headref
+## footer-tabs-def-headref
 ## Footer Tabs
 
 Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br />
 Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
 **Contents**
-* [Footer with only icons](Components.md#footer-icon-headref)
-* [Footer with icons and text](Components.md#footer-text-headref)
-* [Footer Badge](Components.md#footer-badge-headref)
+* [Footer with only icons](Components.md#footer-tabs-icon-headref)
+* [Footer with icons and text](Components.md#footer-tabs-icon-text-headref)
+* [Footer Badge](Components.md#footer-tabs-badge-headref)
 
-![Preview ios footer-tabs-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/textBtnFooter.png)
-![Preview android footer-tabs-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/textFooter.png)
+![Preview ios footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/footer-text.png)
+![Preview android footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/footer-text.png)
 
 *Syntax*
 
@@ -82,16 +82,16 @@ export default class FooterTabsExample extends Component {
         </tbody>
     </table><br />
 
-##footer-icon-headref
+## footer-tabs-icon-headref
 #### Icon Footer
-![Preview ios footer-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconBtnFooter.png)
-![Preview android footer-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconFooter.png)
+![Preview ios footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/footer-icon.png)
+![Preview android footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/footer-icon.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base';
-export default class IconFooterTabsExample extends Component {
+export default class FooterTabsIconExample extends Component {
   render() {
     return (
       &lt;Container>
@@ -117,16 +117,16 @@ export default class IconFooterTabsExample extends Component {
   }
 }</code></pre><br />
 
-##footer-text-headref
+## footer-tabs-icon-text-headref
 #### Icon Footer with Text
-![Preview ios footer-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/iconTextBtnsFooter.png)
-![Preview android footer-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/iconTextFooter.png)
+![Preview ios footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/footer-icon-text.png)
+![Preview android footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/footer-icon-text.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
-export default class IconTextFooterTabsExample extends Component {
+export default class FooterTabsIconTextExample extends Component {
   render() {
     return (
       &lt;Container>
@@ -156,16 +156,16 @@ export default class IconTextFooterTabsExample extends Component {
   }
 }</code></pre><br />
 
-##footer-badge-headref
+## footer-tabs-badge-headref
 #### Footer with badge
-![Preview ios footer-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/badgeFooter.png)
-![Preview android footer-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/badgeFooter.png)
+![Preview ios footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/footer-badge.png)
+![Preview android footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/footer-badge.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon, Text, Badge } from 'native-base';
-export default class BadgeFooterTabsExample extends Component {
+export default class FooterTabsBadgeExample extends Component {
   render() {
     return (
       &lt;Container>

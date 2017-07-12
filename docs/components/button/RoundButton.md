@@ -3,14 +3,14 @@
 
 Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.<br/>
 
-![Preview ios button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/roundedButtons.png)
-![Preview android button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/roundedButtons.png)
+![Preview ios button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/button-rounded.png)
+![Preview android button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/button-rounded.png)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Button, Text } from 'native-base';
-export default class RoundedButtonExample extends Component {
+export default class ButtonRoundedExample extends Component {
   render() {
     return (
       &lt;Container>
