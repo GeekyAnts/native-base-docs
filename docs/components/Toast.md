@@ -18,8 +18,8 @@ export default () =>
   </Root>;
 ```
 
-![Preview ios Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/toast.gif)
-![Preview android Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/toast.gif)
+![Preview ios Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/toast.gif)
+![Preview android Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/toast.gif)
 
 *Syntax*
 

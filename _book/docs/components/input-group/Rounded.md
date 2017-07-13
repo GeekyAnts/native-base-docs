@@ -3,8 +3,8 @@
 
 To have a textbox with round type border, include the <b>rounded</b> prop with <code>Item</code>.
 
-![Preview ios rounded-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/input-rounded.png)
-![Preview android rounded-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/input-rounded.png)
+![Preview ios rounded-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-rounded.png)
+![Preview android rounded-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-rounded.png)
 
 *Syntax*
 

@@ -23,8 +23,8 @@ Replacing Component:
 * [Error Input Textbox](Components.md#error-textbox-headref)
 * [Disabled Textbox](Components.md#disabled-textbox-headref)
 
-![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/input-placeholder.png)
-![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/input-placeholder.png)
+![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-placeholder.png)
+![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-placeholder.png)
 
 *Syntax*
 

@@ -1,7 +1,7 @@
 ## segment-outside-header-headref
 
-![Preview ios segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/ios/segment-outside-header.gif)
-![Preview android segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/master/screenshots/android/segment-outside-header.gif)
+![Preview ios segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/segment-outside-header.gif)
+![Preview android segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/segment-outside-header.gif)
 
 *Syntax (Outside Header)*
 
