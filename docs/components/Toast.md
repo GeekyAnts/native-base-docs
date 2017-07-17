@@ -90,6 +90,30 @@ export default class ToastExample extends Component &lcub;
                 <td> integer </td>
                 <td>Milliseconds after which Toast disappers</td>
             </tr>
+            <tr>
+                <td>style</td>
+                <td> - </td>
+                <td> object </td>
+                <td>Styling for the Toast</td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> object </td>
+                <td>Styling for the Toast Text</td>
+            </tr>
+            <tr>
+                <td>buttonStyle</td>
+                <td> - </td>
+                <td> object </td>
+                <td>Styling for the Toast Button</td>
+            </tr>
+            <tr>
+                <td>buttonTextStyle</td>
+                <td> - </td>
+                <td> object </td>
+                <td>Styling for the Toast Button Text</td>
+            </tr>
             </tbody>
         </table><br />
 
