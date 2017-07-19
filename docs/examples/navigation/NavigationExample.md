@@ -5,5 +5,5 @@ If you are new to *ReactNative* you will probably want to use [React Navigation]
  Here, we will try to go over a few examples of what you can do with the Navigator and explain how it all works in depth. <br />
  We have chosen two simple Navigators for our purposes here listed below :- <br />
  <br />
-# [React Navigation](/docs/StackNavigationExample.md)
-# [React Native Router Flux](/docs/RNRFBasicExample.md)
+# [React Navigation](/docs/examples/navigation/StackNavigationExample.md)
+# [React Native Router Flux](/docs/examples/navigation/RNRFBasicExample.md)
