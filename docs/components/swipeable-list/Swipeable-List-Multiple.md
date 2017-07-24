@@ -10,9 +10,18 @@ Swipable List are ListItems that swipe open and close.Handles default native beh
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { ListView } from 'react-native';
-import { Container, Header, Content, List, ListItem, Text, Icon, Button } from 'native-base';
-import datas from './datas';
-​export default class SwipeableListExample extends Component {
+import { Container, Header, Content, Button, Icon, List, ListItem, Text } from 'native-base';
+const datas = [
+  'Simon Mignolet',
+  'Nathaniel Clyne',
+  'Dejan Lovren',
+  'Mama Sakho',
+  'Alberto Moreno',
+  'Emre Can',
+  'Joe Allen',
+  'Phil Coutinho',
+];
+export default class SwipeableListExample extends Component {
   constructor(props) {
     super(props);
     this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
@@ -28,29 +37,27 @@ import datas from './datas';
     this.setState({ listViewData: newData });
   }
   render() {
+    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     return (
       &lt;Container>
         &lt;Header />
-        &lt;Content scrollEnabled={false}>
+        &lt;Content>
           &lt;List
             dataSource={this.ds.cloneWithRows(this.state.listViewData)}
-            leftOpenValue={75}
-            rightOpenValue={-75}
             renderRow={data =>
               &lt;ListItem>
-                &lt;Text>{data}&lt;/Text>
-              &lt;/ListItem>
-            }
+                &lt;Text> {data} &lt;/Text>
+              &lt;/ListItem>}
             renderLeftHiddenRow={data =>
-              &lt;Button info onPress={() => alert(data)}>
+              &lt;Button full onPress={() => alert(data)}>
                 &lt;Icon active name="information-circle" />
-              &lt;/Button>
-            }
-            right={
-              &lt;Button danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
+              &lt;/Button>}
+            renderRightHiddenRow={(data, secId, rowId, rowMap) =>
+              &lt;Button full danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
                 &lt;Icon active name="trash" />
-              &lt;/Button>
-            }
+              &lt;/Button>}
+            leftOpenValue={75}
+            rightOpenValue={-75}
           />
         &lt;/Content>
       &lt;/Container>
