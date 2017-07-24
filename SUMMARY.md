@@ -79,7 +79,6 @@
     * [Drawer](Components.md#Drawer)
     * [Ref](Components.md#ref-components-headref)
 
-* [Migration](/docs/Migration.md)
 * [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 
 * [Customize](Customize.md#Customize)
@@ -90,8 +89,6 @@
   * [Button](Customize.md#customize-button-headref)
 
 * [Featured Apps](/docs/FeaturedApps.md)
-
-* [Packages](/docs/Packages.md)
 
 * [Release Notes](/docs/release-notes/Release.md)
 
