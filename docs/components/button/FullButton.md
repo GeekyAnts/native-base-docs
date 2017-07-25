@@ -10,11 +10,12 @@ Adding full to a button will make the button take 100% of its parent’s width. 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonFullExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Button full light>
             &lt;Text>Light&lt;/Text>

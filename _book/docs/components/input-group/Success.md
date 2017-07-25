@@ -9,11 +9,12 @@ To display textbox with valid data, include the <b>success</b> prop with <code>I
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Item, Input, Icon } from 'native-base';
+import { Container, Header, Content, Item, Input, Icon } from 'native-base';
 export default class SuccessInputTextboxExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Item success>
             &lt;Input placeholder='Textbox with Success Input'/>

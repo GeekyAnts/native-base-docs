@@ -11,11 +11,12 @@
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button } from 'native-base';
+import { Container, Header, Content, Button } from 'native-base';
 export default class RefExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Button ref={ (c) => this._button = c }>
             Click Me

@@ -10,11 +10,12 @@ Include <code>CardItem</code> subsequently within <code>Card</code> to create a 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
 export default class CardListExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Card>
             &lt;CardItem>

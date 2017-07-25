@@ -10,11 +10,12 @@ Replacing Component for H1, H2, H3, Text: React Native [Text](http://facebook.gi
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, H1, H2, H3, Text } from 'native-base';
+import { Container, Header, Content, H1, H2, H3, Text } from 'native-base';
 export default class TypographyExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;H1>Header One&lt;/H1>
           &lt;H2>Header Two&lt;/H2>

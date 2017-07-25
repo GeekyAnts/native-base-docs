@@ -9,11 +9,12 @@ Replacing Component: React Native [Image](https://facebook.github.io/react-nativ
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Thumbnail, Text } from 'native-base';
+import { Container, Header, Content, Thumbnail, Text } from 'native-base';
 export default class ThumbnailExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Text>Square Thumbnail&lt;/Text>
           &lt;Thumbnail square source=&#123;{uri: 'Image URL'}} />

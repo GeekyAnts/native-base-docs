@@ -9,11 +9,12 @@ The <code>fixedLabel</code> property creates an Input component, whose Label is 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Form, Item, Input, Label } from 'native-base';
+import { Container, Header, Content, Form, Item, Input, Label } from 'native-base';
 export default class FixedLabelExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Form>
             &lt;Item fixedLabel>

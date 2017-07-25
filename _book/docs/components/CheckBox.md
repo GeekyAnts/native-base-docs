@@ -10,11 +10,12 @@ Replacing Component: React Native [TouchableOpacity](https://facebook.github.io/
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, CheckBox, Text, Body } from 'native-base';
+import { Container, Header, Content, ListItem, CheckBox, Text, Body } from 'native-base';
 export default class CheckBoxExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;ListItem>
             &lt;CheckBox checked={true} />

@@ -29,4 +29,4 @@ export default class GeneralExample extends Component {
 
 **[How to get started?](/docs/GetStarted.md)**
 
-**[How to migrate from v0.x to v2.x?](/docs/Migration.md)**
+<!-- **[How to migrate from v0.x to v2.x?](/docs/Migration.md)** -->

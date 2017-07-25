@@ -15,11 +15,12 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 export default class FooterTabsExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content />
         &lt;Footer>
           &lt;FooterTab>
@@ -90,11 +91,12 @@ export default class FooterTabsExample extends Component {
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 export default class FooterTabsIconExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content />
         &lt;Footer>
           &lt;FooterTab>
@@ -125,11 +127,12 @@ export default class FooterTabsIconExample extends Component {
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 export default class FooterTabsIconTextExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content />
         &lt;Footer>
           &lt;FooterTab>
@@ -164,11 +167,12 @@ export default class FooterTabsIconTextExample extends Component {
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Footer, FooterTab, Button, Icon, Text, Badge } from 'native-base';
+import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text, Badge } from 'native-base';
 export default class FooterTabsBadgeExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content />
         &lt;Footer>
           &lt;FooterTab>

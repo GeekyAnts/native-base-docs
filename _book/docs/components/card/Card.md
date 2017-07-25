@@ -17,11 +17,12 @@ Card is a flexible and extensible content container. It includes options for hea
 *Genertal Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Card, CardItem, Body, Text } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Body, Text } from 'native-base';
 export default class CardExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Card>
             &lt;CardItem>

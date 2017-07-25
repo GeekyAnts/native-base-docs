@@ -10,7 +10,7 @@ Replacing Component: React Native [Animated](http://facebook.github.io/react-nat
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, View, Button, Icon, Fab } from 'native-base';
+import { Container, Header, View, Button, Icon, Fab } from 'native-base';
 export default class FABExample extends Component {
   constructor() {
     this.state = {
@@ -20,6 +20,7 @@ export default class FABExample extends Component {
   render() {
     return (  
       &lt;Container>
+        &lt;Header />
         &lt;View style=&#123;{ flex: 1 }}>
           &lt;Fab
             active={this.state.active}
@@ -106,7 +107,7 @@ export default class FABExample extends Component {
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, View, Fab, Button, Icon } from 'native-base';
+import { Container, Header, View, Fab, Button, Icon } from 'native-base';
 ​export default class FABMultipleExample extends Component {
   constructor() {
     this.state = {
@@ -116,6 +117,7 @@ import { Container, View, Fab, Button, Icon } from 'native-base';
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;View style=&#123;{ flex: 1 }}>
           &lt;Fab
             active={this.state.active}

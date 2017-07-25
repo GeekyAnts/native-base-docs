@@ -12,7 +12,7 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 const cards = [
   {
     text: 'Card One',
@@ -25,6 +25,7 @@ export default class DeckSwiperExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;View>
           &lt;DeckSwiper
             dataSource={cards}
@@ -129,7 +130,7 @@ Swipe Deck with callback function.
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 const cards = [
   {
     text: 'Card One',
@@ -142,6 +143,7 @@ export default class DeckSwiperAdvancedExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;View>
           &lt;DeckSwiper
             ref={(c) => this._deckSwiper = c}

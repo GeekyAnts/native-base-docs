@@ -23,11 +23,12 @@ Buttons are the integral part of an application. They are used for various purpo
 *Syntax*
 {% codetabs name="Basic", type="js" -%}
 import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonExample extends Component {
   render() {
     return (
       <Container>
+        <Header />
         <Content>
           // NativeBase default style
           <Button>
@@ -40,11 +41,12 @@ export default class ButtonExample extends Component {
 }
 {%- language name="Advanced", type="js" -%}
 import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonExample extends Component {
   render() {
     return (
       <Container>
+        <Header />
         <Content>
           // NativeBase default style
           <Button>

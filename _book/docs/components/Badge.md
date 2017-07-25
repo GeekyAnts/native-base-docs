@@ -8,11 +8,12 @@ All of us must have seen notification badges somewhere, such as on smart phones 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Badge, Text, Icon } from 'native-base';
+import { Container, Header, Content, Badge, Text, Icon } from 'native-base';
 export default class BadgeExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Badge>
             &lt;Text>2&lt;/Text>

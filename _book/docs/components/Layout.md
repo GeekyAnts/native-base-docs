@@ -13,12 +13,13 @@ Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import { Container, Header, Content } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 export default class LayoutExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Grid>
             &lt;Col style=&#123;{ backgroundColor: '#635DB7', height: 200 }}>&lt;/Col>

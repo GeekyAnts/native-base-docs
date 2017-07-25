@@ -9,11 +9,12 @@ Include <code>bordered</code> prop with Button to apply outline button style.<br
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonOutlineExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Button bordered light>
             &lt;Text>Light&lt;/Text>

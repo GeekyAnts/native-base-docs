@@ -1809,19 +1809,7 @@ export default () =&gt;
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/actionsheet.gif" alt="Preview android actionsheet-def-headref"></p>
 <p><em>General Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Container,
-  Header,
-  Left,
-  Button,
-  Body,
-  Title,
-  Icon,
-  Right,
-  Content,
-  ActionSheet,
-  Text
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Button, Content, ActionSheet, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">var</span> BUTTONS = [<span class="hljs-string">&quot;Option 0&quot;</span>, <span class="hljs-string">&quot;Option 1&quot;</span>, <span class="hljs-string">&quot;Option 2&quot;</span>, <span class="hljs-string">&quot;Delete&quot;</span>, <span class="hljs-string">&quot;Cancel&quot;</span>];
 <span class="hljs-keyword">var</span> DESTRUCTIVE_INDEX = <span class="hljs-number">3</span>;
 <span class="hljs-keyword">var</span> CANCEL_INDEX = <span class="hljs-number">4</span>;
@@ -1832,63 +1820,38 @@ export default () =&gt;
   }
   render() {
     <span class="hljs-keyword">return</span> (
-      &lt;Container&gt;
-        &lt;Header&gt;
-          &lt;Left&gt;
-            &lt;Button
-              transparent
-              onPress={() =&gt; this.props.navigation.navigate(&quot;DrawerOpen&quot;)}
-            &gt;
-              &lt;Icon name=&quot;ios-menu&quot; /&gt;
-            &lt;/Button&gt;
-          &lt;/Left&gt;
-          &lt;Body&gt;
-            &lt;Title&gt;ActionSheet&lt;/Title&gt;
-          &lt;/Body&gt;
-          &lt;Right /&gt;
-        &lt;/Header&gt;
-        &lt;Content padder&gt;
-          &lt;Button
-            onPress={() =&gt;
-              ActionSheet.show(
-                {
-                  options: BUTTONS,
-                  cancelButtonIndex: CANCEL_INDEX,
-                  destructiveButtonIndex: DESTRUCTIVE_INDEX,
-                  title: &quot;Testing ActionSheet&quot;
-                },
-                buttonIndex =&gt; {
-                  this.setState({ clicked: BUTTONS[buttonIndex] });
-                }
-              )}
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+            <span class="hljs-attr">onPress</span>=<span class="hljs-string">{()</span> =&gt;</span>
+            ActionSheet.show(
+              {
+                options: BUTTONS,
+                cancelButtonIndex: CANCEL_INDEX,
+                destructiveButtonIndex: DESTRUCTIVE_INDEX,
+                title: &quot;Testing ActionSheet&quot;
+              },
+              buttonIndex =&gt; {
+                this.setState({ clicked: BUTTONS[buttonIndex] });
+              }
+            )}
           &gt;
-            &lt;Text&gt;Actionsheet&lt;/Text&gt;
-          &lt;/Button&gt;
-        &lt;/Content&gt;
-      &lt;/Container&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Actionsheet<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <h2 id="actionsheet-icon-headref">5. actionsheet-icon-headref</h2>
 <h4 id="Icon_ActionSheet_(Android_only)">5.0.1. Icon ActionSheet (Android only)</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/actionsheet.gif" alt="Preview ios actionsheet-icon-headref"></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/actionsheet-icon.gif" alt="Preview android actionsheet-icon-headref"></p>
 <p><em>Syntax for Icon ActionSheet</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Container,
-  Header,
-  Left,
-  Button,
-  Body,
-  Title,
-  Icon,
-  Right,
-  Content,
-  ActionSheet,
-  Text
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Button, Content, ActionSheet, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">var</span> BUTTONS = [
   { text: <span class="hljs-string">&quot;Option 0&quot;</span>, icon: <span class="hljs-string">&quot;american-football&quot;</span>, iconColor: <span class="hljs-string">&quot;#2c8ef4&quot;</span> },
   { text: <span class="hljs-string">&quot;Option 1&quot;</span>, icon: <span class="hljs-string">&quot;analytics&quot;</span>, iconColor: <span class="hljs-string">&quot;#f42ced&quot;</span> },
@@ -1905,44 +1868,31 @@ export default () =&gt;
   }
   render() {
     <span class="hljs-keyword">return</span> (
-      &lt;Container&gt;
-        &lt;Header&gt;
-          &lt;Left&gt;
-            &lt;Button
-              transparent
-              onPress={() =&gt; this.props.navigation.navigate(&quot;DrawerOpen&quot;)}
-            &gt;
-              &lt;Icon name=&quot;ios-menu&quot; /&gt;
-            &lt;/Button&gt;
-          &lt;/Left&gt;
-          &lt;Body&gt;
-            &lt;Title&gt;ActionSheet&lt;/Title&gt;
-          &lt;/Body&gt;
-          &lt;Right /&gt;
-        &lt;/Header&gt;
-        &lt;Content padder&gt;
-          &lt;Button
-            onPress={() =&gt;
-              ActionSheet.show(
-                {
-                  options: BUTTONS,
-                  cancelButtonIndex: CANCEL_INDEX,
-                  destructiveButtonIndex: DESTRUCTIVE_INDEX,
-                  title: &quot;Testing ActionSheet&quot;
-                },
-                buttonIndex =&gt; {
-                  this.setState({ clicked: BUTTONS[buttonIndex] });
-                }
-              )}
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+            <span class="hljs-attr">onPress</span>=<span class="hljs-string">{()</span> =&gt;</span>
+            ActionSheet.show(
+              {
+                options: BUTTONS,
+                cancelButtonIndex: CANCEL_INDEX,
+                destructiveButtonIndex: DESTRUCTIVE_INDEX,
+                title: &quot;Testing ActionSheet&quot;
+              },
+              buttonIndex =&gt; {
+                this.setState({ clicked: BUTTONS[buttonIndex] });
+              }
+            )}
           &gt;
-            &lt;Text&gt;Actionsheet&lt;/Text&gt;
-          &lt;/Button&gt;
-        &lt;/Content&gt;
-      &lt;/Container&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Actionsheet<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <p><em>iconColor</em> is optional. Icons default to black.</p>
 <p>Note: The use cases similar to RN&apos;s ActionSheetIOS.</p>
 <h2 id="Badge">6. Badge</h2>
@@ -1951,41 +1901,42 @@ export default () =&gt;
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/badge.png" alt="Preview android Badge"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Badge, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Badge, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BadgeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">success</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">info</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">warning</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">danger</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">primary</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;star&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">fontSize:</span> <span class="hljs-attr">15</span>, <span class="hljs-attr">color:</span> &quot;#<span class="hljs-attr">fff</span>&quot;, <span class="hljs-attr">lineHeight:</span> <span class="hljs-attr">20</span> }}/&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Badge</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;<span class="hljs-attr">black</span>&apos; }}&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">white</span>&apos; }}&gt;</span>1866<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Badge</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;Badge&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge primary&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge success&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge info&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge warning&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge danger&gt;
+            &lt;Text&gt;2&lt;/Text&gt;
+          &lt;/Badge&gt;
+          &lt;Badge primary&gt;
+            &lt;Icon name=&quot;star&quot; style={{ fontSize: 15, color: &quot;#fff&quot;, lineHeight: 20 }}/&gt;
+          &lt;/Badge&gt;
+          &lt;Badge style={{ backgroundColor: &apos;black&apos; }}&gt;
+            &lt;Text style={{ color: &apos;white&apos; }}&gt;1866&lt;/Text&gt;
+          &lt;/Badge&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <ul>
 <li><a href="https://nativebase.io/" target="_blank">NativeBase</a> spectrum of colors are compatible with Badge.</li>
 <li><p>Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a> <br></p>
@@ -2057,36 +2008,38 @@ Buttons are the integral part of an application. They are used for various purpo
 </ul>
 <p><em>Syntax</em>
 <div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">Basic</div><div class="tab" data-codetab="1">Advanced</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           // NativeBase default style
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Click Me! <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+}</span></code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           // NativeBase default style
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Click Me! <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre></div></div></div><br></p>
+}</span></code></pre></div></div></div><br></p>
 <ul>
 <li>Supports React Native app on both iOS and Android devices.</li>
 <li>Button component takes input such as: Text, Icon, Text with Icon.</li>
@@ -2245,11 +2198,12 @@ NativeBase provides following color themes:</p>
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/buttons.png" alt="Preview android button-theme-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonThemeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">light</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Light <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Primary <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
@@ -2259,10 +2213,10 @@ NativeBase provides following color themes:</p>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">danger</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Danger <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Dark <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-transparent-headref">10. button-transparent-headref</h2>
 <h4 id="Transparent_Button">10.0.1. Transparent Button</h4>
 <p>Include <code>transparent</code> prop with Button. This will render button without border and background color.<br></p>
@@ -2270,11 +2224,12 @@ NativeBase provides following color themes:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-transparent.png" alt="Preview android button-transparent-headref">
 <em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonTransparentExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">transparent</span> <span class="hljs-attr">light</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -2298,10 +2253,10 @@ NativeBase provides following color themes:</p>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-outline-headref">11. button-outline-headref</h2>
 <h4 id="Outline_Button">11.0.1. Outline Button</h4>
 <p>Include <code>bordered</code> prop with Button to apply outline button style.<br></p>
@@ -2309,11 +2264,12 @@ NativeBase provides following color themes:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-outline.png" alt="Preview android button-outline-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonOutlineExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">light</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -2337,10 +2293,10 @@ NativeBase provides following color themes:</p>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-rounded-headref">12. button-rounded-headref</h2>
 <h4 id="Rounded_Button">12.0.1. Rounded Button</h4>
 <p>Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.<br></p>
@@ -2348,11 +2304,12 @@ NativeBase provides following color themes:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-rounded.png" alt="Preview android button-rounded-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonRoundedExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">light</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -2376,10 +2333,10 @@ NativeBase provides following color themes:</p>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-block-headref">13. button-block-headref</h2>
 <h4 id="Block_Button">13.0.1. Block Button</h4>
 <p>A block level button spans the entire width of the parent element.
@@ -2388,11 +2345,12 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-block.png" alt="Preview android button-block-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonBlockExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">block</span> <span class="hljs-attr">light</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -2416,10 +2374,10 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-full-headref">14. button-full-headref</h2>
 <h4 id="Full_Button">14.0.1. Full Button</h4>
 <p>Adding full to a button will make the button take 100% of its parent&#x2019;s width. However, it will also remove the button&#x2019;s left and right borders. This style is useful when the button should stretch across the entire width of the display.</p>
@@ -2427,11 +2385,12 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-full.png" alt="Preview android button-full-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonFullExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">full</span> <span class="hljs-attr">light</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Light<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -2455,10 +2414,10 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-icon-headref">15. button-icon-headref</h2>
 <h4 id="Icon_Button">15.0.1. Icon Button</h4>
 <p>The Icon Buttons, can take text and/or icon as child elements inside the Button.<br>
@@ -2467,11 +2426,12 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-icon.png" alt="Preview android button-icon-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonIconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Button iconLeft light&gt;
             &lt;Icon name=&apos;arrow-back&apos; /&gt;
@@ -2510,11 +2470,12 @@ Include the following props with your <code>Button</code>.</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-size.png" alt="Preview android button-size-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonSizeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           //Small size button
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">small</span> <span class="hljs-attr">primary</span>&gt;</span>
@@ -2529,10 +2490,10 @@ Include the following props with your <code>Button</code>.</p>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Dark Large<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="button-disabled-headref">17. button-disabled-headref</h2>
 <h4 id="Disabled_Button">17.0.1. Disabled Button</h4>
 <p>A disabled button is unusable and un-clickable.<br>
@@ -2541,27 +2502,28 @@ The disabled prop of NativeBase Button is of type boolean. When present, it spec
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-disabled.png" alt="Preview android button-disabled-headref">
 <em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ButtonDisabledExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">bordered</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Bordered<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">rounded</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Rounded<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">large</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">iconRight</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Icon Button<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;home&quot;</span> /&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">block</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Block<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">full</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Full<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;Button disabled&gt;&lt;Text&gt;Default&lt;/Text&gt;&lt;/Button&gt;
+          &lt;Button disabled bordered&gt;&lt;Text&gt;Bordered&lt;/Text&gt;&lt;/Button&gt;
+          &lt;Button disabled rounded&gt;&lt;Text&gt;Rounded&lt;/Text&gt;&lt;/Button&gt;
+          &lt;Button disabled large&gt;&lt;Text&gt;Large&lt;/Text&gt;&lt;/Button&gt;
+          &lt;Button disabled iconRight&gt;
+            &lt;Text&gt;Icon Button&lt;/Text&gt;
+            &lt;Icon name=&quot;home&quot; /&gt;
+          &lt;/Button&gt;
+          &lt;Button disabled block&gt;&lt;Text&gt;Block&lt;/Text&gt;&lt;/Button&gt;
+          &lt;Button disabled full&gt;&lt;Text&gt;Full&lt;/Text&gt;&lt;/Button&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <h2 id="card-def-headref">18. card-def-headref</h2>
 <h2 id="Card">19. Card</h2>
 <p>Card is a pure <a href="https://nativebase.io/" target="_blank">NativeBase</a> component.<br>
@@ -2578,11 +2540,12 @@ Card is a flexible and extensible content container. It includes options for hea
 </ul>
 <p><em>Genertal Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Body, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Card, CardItem, Body, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
@@ -2594,10 +2557,10 @@ Card is a flexible and extensible content container. It includes options for hea
             <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <ul>
 <li><strong>Card</strong><ul>
 <li>This component adds a box-shadow by default.</li>
@@ -2702,11 +2665,12 @@ Card is a flexible and extensible content container. It includes options for hea
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/card-header-and-footer.png" alt="Preview android card-headfoot-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Card, CardItem, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardHeaderFooterExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span> <span class="hljs-attr">header</span>&gt;</span>
@@ -2724,10 +2688,10 @@ Card is a flexible and extensible content container. It includes options for hea
             <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
          <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="card-list-headref">21. card-list-headref</h2>
 <h4 id="Card_List">21.0.1. Card List</h4>
 <p>Include <code>CardItem</code> subsequently within <code>Card</code> to create a card with lists.</p>
@@ -2735,11 +2699,12 @@ Card is a flexible and extensible content container. It includes options for hea
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/card-list.png" alt="Preview android card-list-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Text, Icon, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Card, CardItem, Text, Icon, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Card&gt;
             &lt;CardItem&gt;
@@ -2765,11 +2730,12 @@ Here is your Card Image ready !</p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardImageExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Card&gt;
             &lt;CardItem&gt;
@@ -2820,11 +2786,12 @@ Here is your Card Image ready !</p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CardShowcaseExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Card style={{flex: 0}}&gt;
             &lt;CardItem&gt;
@@ -2866,11 +2833,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/checkbox.png" alt="Preview android checkbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, ListItem, CheckBox, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, ListItem, CheckBox, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CheckBoxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;ListItem&gt;
             &lt;CheckBox checked={true} /&gt;
@@ -2930,7 +2898,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">const</span> cards = [
   {
     text: <span class="hljs-string">&apos;Card One&apos;</span>,
@@ -2943,6 +2911,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;View&gt;
           &lt;DeckSwiper
             dataSource={cards}
@@ -3041,7 +3010,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Image } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">const</span> cards = [
   {
     text: <span class="hljs-string">&apos;Card One&apos;</span>,
@@ -3054,6 +3023,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;View&gt;
           &lt;DeckSwiper
             ref={(c) =&gt; this._deckSwiper = c}
@@ -3106,7 +3076,7 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/FAB-single.gif" alt="Preview android fabs-def-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, View, Button, Icon, Fab } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, View, Button, Icon, Fab } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FABExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>() {
     <span class="hljs-keyword">this</span>.state = {
@@ -3116,6 +3086,7 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
   render() {
     <span class="hljs-keyword">return</span> (  
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;View style={{ flex: 1 }}&gt;
           &lt;Fab
             active={this.state.active}
@@ -3196,7 +3167,7 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/FAB-multiple.gif" alt="Preview android fabs-multiple-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, View, Fab, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, View, Fab, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 &#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FABMultipleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>() {
     <span class="hljs-keyword">this</span>.state = {
@@ -3206,6 +3177,7 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">flex:</span> <span class="hljs-attr">1</span> }}&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Fab</span>
             <span class="hljs-attr">active</span>=<span class="hljs-string">{this.state.active}</span>
@@ -3226,10 +3198,10 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
             ....
           <span class="hljs-tag">&lt;/<span class="hljs-name">Fab</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="footer-tabs-def-headref">32. footer-tabs-def-headref</h2>
 <h2 id="Footer_Tabs">33. Footer Tabs</h2>
 <p>Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br>
@@ -3244,32 +3216,33 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/footer-text.png" alt="Preview android footer-tabs-def-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Footer, FooterTab, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooterTabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">FooterTab</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Apps<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Camera<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">active</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Navigate<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">FooterTab</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Footer</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content /&gt;
+        &lt;Footer&gt;
+          &lt;FooterTab&gt;
+            &lt;Button&gt;
+              &lt;Text&gt;Apps&lt;/Text&gt;
+            &lt;/Button&gt;
+            &lt;Button&gt;
+              &lt;Text&gt;Camera&lt;/Text&gt;
+            &lt;/Button&gt;
+            &lt;Button active&gt;
+              &lt;Text&gt;Navigate&lt;/Text&gt;
+            &lt;/Button&gt;
+            &lt;Button&gt;
+              &lt;Text&gt;Contact&lt;/Text&gt;
+            &lt;/Button&gt;
+          &lt;/FooterTab&gt;
+        &lt;/Footer&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -3313,11 +3286,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/footer-icon.png" alt="Preview android footer-tabs-icon-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Footer, FooterTab, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooterTabsIconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content /&gt;
         &lt;Footer&gt;
           &lt;FooterTab&gt;
@@ -3345,11 +3319,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/footer-icon-text.png" alt="Preview android footer-tabs-icon-text-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooterTabsIconTextExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content /&gt;
         &lt;Footer&gt;
           &lt;FooterTab&gt;
@@ -3381,11 +3356,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/footer-badge.png" alt="Preview android footer-tabs-badge-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Footer, FooterTab, Button, Icon, Text, Badge } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Footer, FooterTab, Button, Icon, Text, Badge } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FooterTabsBadgeExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content /&gt;
         &lt;Footer&gt;
           &lt;FooterTab&gt;
@@ -3443,11 +3419,12 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-placeholder.png" alt="Preview android Form"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FormExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Form&gt;
             &lt;Item&gt;
@@ -3589,11 +3566,12 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-fixed.png" alt="Preview android fixed-label-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FixedLabelExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Form&gt;
             &lt;Item fixedLabel&gt;
@@ -3617,11 +3595,12 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-inline.png" alt="Preview android inline-label-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">InlineLabelExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Form&gt;
             &lt;Item inlineLabel&gt;
@@ -3645,11 +3624,12 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-floating.gif" alt="Preview android floating-label-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FloatingLabelExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Form&gt;
             &lt;Item floatingLabel&gt;
@@ -3673,11 +3653,12 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-stacked.png" alt="Preview android stacked-label-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Input, Label } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StackedLabelExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Form&gt;
             &lt;Item stackedLabel&gt;
@@ -3701,20 +3682,21 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-regular.png" alt="Preview android regular-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Input, Item } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Input, Item } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RegularTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">regular</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Regular Textbox&apos;</span> /&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;Item regular&gt;
+            &lt;Input placeholder=&apos;Regular Textbox&apos; /&gt;
+          &lt;/Item&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <h2 id="underlined-textbox-headref">43. underlined-textbox-headref</h2>
 <h4 id="Underlined_Textbox">43.0.1. Underlined Textbox</h4>
 <p>To use the underlined textbox, include the <b>underline</b> prop with <code>Item</code>.</p>
@@ -3722,20 +3704,21 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-underline.png" alt="Preview android underlined-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UnderlinedTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Item</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Underline Textbox&quot;</span> /&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;Item&gt;
+            &lt;Input placeholder=&quot;Underline Textbox&quot; /&gt;
+          &lt;/Item&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <h2 id="rounded-textbox-headref">44. rounded-textbox-headref</h2>
 <h4 id="Rounded_Textbox">44.0.1. Rounded Textbox</h4>
 <p>To have a textbox with round type border, include the <b>rounded</b> prop with <code>Item</code>.</p>
@@ -3743,20 +3726,21 @@ Replacing Component:</p>
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-rounded.png" alt="Preview android rounded-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RoundedTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Item</span> <span class="hljs-attr">rounded</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;Rounded Textbox&apos;</span>/&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Item</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;Item rounded&gt;
+            &lt;Input placeholder=&apos;Rounded Textbox&apos;/&gt;
+          &lt;/Item&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre><br></p>
+}</code></pre><br></p>
 <h2 id="icon-textbox-headref">45. icon-textbox-headref</h2>
 <h4 id="Icon_Textbox">45.0.1. Icon Textbox</h4>
 <p>Icons can be easily added to the NativeBase Textbox. To do so, include an icon within the <code>&lt;Item&gt;</code>. <br>
@@ -3765,21 +3749,22 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-icon.png" alt="Preview android icon-textbox-headref"></p>
 <p><em>Syntax</em>        </p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IconTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           // Text input box with icon aligned to the left
           &lt;Item&gt;
-              &lt;Icon active name=&apos;home&apos; /&gt;
-              &lt;Input placeholder=&apos;Icon Textbox&apos;/&gt;
+            &lt;Icon active name=&apos;home&apos; /&gt;
+            &lt;Input placeholder=&apos;Icon Textbox&apos;/&gt;
           &lt;/Item&gt;
           // Text input box with icon aligned to the right
           &lt;Item&gt;
-              &lt;Input placeholder=&apos;Icon Alignment in Textbox&apos;/&gt;
-              &lt;Icon active name=&apos;swap&apos; /&gt;
+            &lt;Input placeholder=&apos;Icon Alignment in Textbox&apos;/&gt;
+            &lt;Icon active name=&apos;swap&apos; /&gt;
           &lt;/Item&gt;
         &lt;/Content&gt;
       &lt;/Container&gt;
@@ -3793,11 +3778,12 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-success.png" alt="Preview android success-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SuccessInputTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Item success&gt;
             &lt;Input placeholder=&apos;Textbox with Success Input&apos;/&gt;
@@ -3815,11 +3801,12 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-error.png" alt="Preview android error-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ErrorInputTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Item error&gt;
             &lt;Input placeholder=&apos;Textbox with Error Input&apos;/&gt;
@@ -3837,11 +3824,12 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-disabled.png" alt="Preview android disabled-textbox-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Item, Input, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DisabledTextboxExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Item disabled&gt;
             &lt;Input disabled placeholder=&apos;Disabled Textbox&apos;/&gt;
@@ -3992,11 +3980,11 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
         &lt;Header&gt;
-            &lt;Left/&gt;
-            &lt;Body&gt;
-                &lt;Title&gt;Header&lt;/Title&gt;
-            &lt;/Body&gt;
-            &lt;Right /&gt;
+          &lt;Left/&gt;
+          &lt;Body&gt;
+            &lt;Title&gt;Header&lt;/Title&gt;
+          &lt;/Body&gt;
+          &lt;Right /&gt;
         &lt;/Header&gt;
       &lt;/Container&gt;
     );
@@ -4065,11 +4053,12 @@ The icons render in the order of its definition within <code>Item</code>.<br></p
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/icons.png" alt="Preview android icon-def-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Icon name=&apos;home&apos; /&gt;
           &lt;Icon ios=&apos;ios-menu&apos; android=&quot;md-menu&quot; style={{fontSize: 20, color: &apos;red&apos;}}/&gt;
@@ -4153,22 +4142,23 @@ Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/layout.png" alt="Preview android Layout"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> { Col, Row, Grid } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-easy-grid&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LayoutExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Grid</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;#<span class="hljs-attr">635DB7</span>&apos;, <span class="hljs-attr">height:</span> <span class="hljs-attr">200</span> }}&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">backgroundColor:</span> &apos;#<span class="hljs-attr">00CE9F</span>&apos;, <span class="hljs-attr">height:</span> <span class="hljs-attr">200</span> }}&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Grid</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <p><strong>NOTE:</strong> <code>&lt;Content&gt;</code> component uses <code>&lt;ScrollView&gt;</code>. This is required by <code>&lt;Col&gt;</code> and <code>&lt;Row&gt;</code> elements of Easy-Grid to have a defined height.<br>
 Replacing Component for Grid, Col, Row: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a></p>
 <h2 id="list-def-headref">56. list-def-headref</h2>
@@ -4189,11 +4179,12 @@ A base component for specifying lists of information. List must contain one or m
 </ul>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">List</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span>&gt;</span>
@@ -4207,11 +4198,11 @@ A base component for specifying lists of information. List must contain one or m
             <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <ul>
 <li><code>List</code>: This component defines a section to include your list items.</li>
 <li><code>ListItem</code>:<ul>
@@ -4325,11 +4316,12 @@ The List Divider of NativeBase comes with default style which is easily customis
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-divider.png" alt="Preview android list-divider-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListDividerExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">List</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">itemDivider</span>&gt;</span>
@@ -4349,11 +4341,11 @@ The List Divider of NativeBase comes with default style which is easily customis
             <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <h2 id="list-header-headref">59. list-header-headref</h2>
 <h4 id="List_Header">59.0.1. List Header</h4>
 <p>The List Header component creates a list header, which can be used for grouping list items. To create a header for any child element of the list, include itemHeader prop with ListItem component. The List Header of NativeBase comes with default style which is easily customisable.</p>
@@ -4361,11 +4353,12 @@ The List Divider of NativeBase comes with default style which is easily customis
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-header.png" alt="Preview android list-header-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListHeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">List</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">itemHeader</span> <span class="hljs-attr">first</span>&gt;</span>
@@ -4388,10 +4381,10 @@ The List Divider of NativeBase comes with default style which is easily customis
             <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <h2 id="list-icon-headref">60. list-icon-headref</h2>
 <h4 id="List_Icon">60.0.1. List Icon</h4>
 <p>Lists can have icons assigned either to the left and/or right side of each list item.
@@ -4401,11 +4394,12 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-icon.png" alt="Preview android list-icon-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListIconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;List&gt;
             &lt;ListItem icon&gt;
@@ -4450,6 +4444,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
   }
 }
 </code></pre><br></p>
+<p><strong>Note:</strong> <a href="http://facebook.github.io/react-native/docs/switch.html" target="_blank">Switch</a> included in above example is from React Native.</p>
 <h2 id="list-avatar-headref">61. list-avatar-headref</h2>
 <h4 id="List_Avatar">61.0.1. List Avatar</h4>
 <p>List Avatars are medium to showcase an image with your list item whose dimension lays between icon and thumbnail. To create a avatar list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component.</p>
@@ -4457,32 +4452,33 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-avatar.png" alt="Preview android list-avatar-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Left, Body, Right, Thumbnail, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Left, Body, Right, Thumbnail, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListAvatarExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">List</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span> <span class="hljs-attr">avatar</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Left</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Thumbnail</span> <span class="hljs-attr">source</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">uri:</span> &apos;<span class="hljs-attr">Image</span> <span class="hljs-attr">URL</span>&apos; }} /&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Left</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Kumar Pratik<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">note</span>&gt;</span>Doing what you like will always keep you happy . .<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Right</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">note</span>&gt;</span>3:43 pm<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Right</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;List&gt;
+            &lt;ListItem avatar&gt;
+              &lt;Left&gt;
+                &lt;Thumbnail source={{ uri: &apos;Image URL&apos; }} /&gt;
+              &lt;/Left&gt;
+              &lt;Body&gt;
+                &lt;Text&gt;Kumar Pratik&lt;/Text&gt;
+                &lt;Text note&gt;Doing what you like will always keep you happy . .&lt;/Text&gt;
+              &lt;/Body&gt;
+              &lt;Right&gt;
+                &lt;Text note&gt;3:43 pm&lt;/Text&gt;
+              &lt;/Right&gt;
+            &lt;/ListItem&gt;
+          &lt;/List&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
 }
-</span></code></pre><br></p>
+</code></pre><br></p>
 <h2 id="list-thumbnail-headref">62. list-thumbnail-headref</h2>
 <h4 id="List_Thumbnail">62.0.1. List Thumbnail</h4>
 <p>List Thumbnails are the medium to exhibit an image with your list item. To create a thumbnail list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component with few props and style.</p>
@@ -4490,27 +4486,28 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-thumbnail.png" alt="Preview android list-thumbnail-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Thumbnail, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Thumbnail, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListThumbnailExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">List</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Thumbnail</span> <span class="hljs-attr">square</span> <span class="hljs-attr">size</span>=<span class="hljs-string">{80}</span> <span class="hljs-attr">source</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">uri:</span> &apos;<span class="hljs-attr">Image</span> <span class="hljs-attr">URL</span>&apos; }} /&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Sankhadeep<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span> <span class="hljs-attr">note</span>&gt;</span>Its time to build a difference . .<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;List&gt;
+            &lt;ListItem&gt;
+              &lt;Thumbnail square size={80} source={{ uri: &apos;Image URL&apos; }} /&gt;
+              &lt;Body&gt;
+                &lt;Text&gt;Sankhadeep&lt;/Text&gt;
+                &lt;Text note&gt;Its time to build a difference . .&lt;/Text&gt;
+              &lt;/Body&gt;
+            &lt;/ListItem&gt;
+          &lt;/List&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
 }
-</span></code></pre><br></p>
+</code></pre><br></p>
 <h2 id="dynamic-list-headref">63. dynamic-list-headref</h2>
 <h4 id="Dynamic_List">63.0.1. Dynamic List</h4>
 <p>A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.</p>
@@ -4518,12 +4515,13 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-dynamic.png" alt="Preview android dynamic-list-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DynamicListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">var</span> items = [<span class="hljs-string">&apos;Simon Mignolet&apos;</span>,<span class="hljs-string">&apos;Nathaniel Clyne&apos;</span>,<span class="hljs-string">&apos;Dejan Lovren&apos;</span>,<span class="hljs-string">&apos;Mama Sakho&apos;</span>,<span class="hljs-string">&apos;Emre Can&apos;</span>];
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">List</span> <span class="hljs-attr">dataArray</span>=<span class="hljs-string">{items}</span>
             <span class="hljs-attr">renderRow</span>=<span class="hljs-string">{(item)</span> =&gt;</span>
@@ -4533,11 +4531,11 @@ To have note kind of text for list item, include <code>note</code> prop with <co
             }&gt;
           <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <p>For more advanced implementation of rendering list dynamically, take a look at <a href="https://github.com/GeekyAnts/nativebase-tutorial" target="_blank">nativebase-tutorial</a>.</p>
 <h2 id="list-seperator-headref">64. list-seperator-headref</h2>
 <h4 id="List_Separator">64.0.1. List Separator</h4>
@@ -4547,11 +4545,12 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-separator.png" alt="Preview android list-seperator-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, List, ListItem, Text, Separator } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text, Separator } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListSeparatorExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Separator</span> <span class="hljs-attr">bordered</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>FORWARD<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
@@ -4572,10 +4571,10 @@ To have note kind of text for list item, include <code>note</code> prop with <co
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Caroline Aaron<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -4926,7 +4925,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif" alt="Preview android picker-with-custom-header-headref"></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Platform } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> { Container,Header,Title,Content,Button,Icon,Text,Right,Body,Left,Picker,Form,View,H3,Item <span class="hljs-keyword">as</span> FormItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, View, H3, Item <span class="hljs-keyword">as</span> FormItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">const</span> Item = Picker.Item;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerCustomHeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
@@ -5104,11 +5103,12 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/radio.png" alt="Preview android radio-button-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, ListItem, Text, Radio, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, ListItem, Text, Radio, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RadioButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;ListItem&gt;
             &lt;Text&gt;Daily Stand Up&lt;/Text&gt;
@@ -5287,11 +5287,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/spinner.gif" alt="Preview android Spinner"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Spinner } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Spinner } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SpinnerExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Spinner /&gt;
           &lt;Spinner color=&apos;red&apos; /&gt;
@@ -5739,7 +5740,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/tabs-scrollable.gif" alt="Preview android tabs-scrollable-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Tab, Tabs } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Tab, Tabs } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> Tab1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabOne&apos;</span>;
 <span class="hljs-keyword">import</span> Tab2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabTwo&apos;</span>;
 &#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsScrollableExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -5749,19 +5750,19 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
         &lt;Header hasTabs/&gt;
         &lt;Tabs renderTabBar={()=&gt; &lt;ScrollableTab /&gt;}&gt;
           &lt;Tab heading=&quot;Tab1&quot;&gt;
-              &lt;Tab1 /&gt;
+            &lt;Tab1 /&gt;
           &lt;/Tab&gt;
           &lt;Tab heading=&quot;Tab2&quot;&gt;
-              &lt;Tab2 /&gt;
+            &lt;Tab2 /&gt;
           &lt;/Tab&gt;
           &lt;Tab heading=&quot;Tab3&quot;&gt;
-              &lt;Tab3 /&gt;
+            &lt;Tab3 /&gt;
           &lt;/Tab&gt;
           &lt;Tab heading=&quot;Tab4&quot;&gt;
-              &lt;Tab4 /&gt;
+            &lt;Tab4 /&gt;
           &lt;/Tab&gt;
           &lt;Tab heading=&quot;Tab5&quot;&gt;
-              &lt;Tab5 /&gt;
+            &lt;Tab5 /&gt;
           &lt;/Tab&gt;
         &lt;/Tabs&gt;
       &lt;/Container&gt;
@@ -5827,11 +5828,12 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/thumbnail.png" alt="Preview android Thumbnail"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Thumbnail, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Thumbnail, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThumbnailExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
+        &lt;Header /&gt;
         &lt;Content&gt;
           &lt;Text&gt;Square Thumbnail&lt;/Text&gt;
           &lt;Thumbnail square source={{uri: &apos;Image URL&apos;}} /&gt;
@@ -5902,7 +5904,7 @@ export default () =&gt;
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/toast.gif" alt="Preview android Toast"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Toast, Button, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Toast, Button, Text, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToastExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -5913,6 +5915,7 @@ export default () =&gt;
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onPress</span>=<span class="hljs-string">{()=</span>&gt;</span> Toast.show({
               text: &apos;Wrong password!&apos;,
@@ -5922,10 +5925,10 @@ export default () =&gt;
             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Toast<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -5976,21 +5979,22 @@ Replacing Component for H1, H2, H3, Text: React Native <a href="http://facebook.
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/typography.png" alt="Preview android Typography"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, H1, H2, H3, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, H1, H2, H3, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TypographyExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">H1</span>&gt;</span>Header One<span class="hljs-tag">&lt;/<span class="hljs-name">H1</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">H2</span>&gt;</span>Header Two<span class="hljs-tag">&lt;/<span class="hljs-name">H2</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">H3</span>&gt;</span>Header Three<span class="hljs-tag">&lt;/<span class="hljs-name">H3</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -6061,20 +6065,21 @@ Drawer can be the perfect option to provide navigation options. <br></p>
 </ul>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RefExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{</span> (<span class="hljs-attr">c</span>) =&gt;</span> this._button = c }&gt;
             Click Me
           <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
-}</code></pre><br></p>
+}</span></code></pre><br></p>
 <ul>
 <li><code>this._button</code> gets you the reference of NativeBase Button.   </li>
 <li><code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.</li>
@@ -6123,7 +6128,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-07-12T11:46:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-24T08:51:43.734Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2017-07-12T11:46:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-25T12:30:49.460Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

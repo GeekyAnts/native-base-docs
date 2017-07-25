@@ -34,7 +34,24 @@
                 </tr>
                 <tr>
                     <td>v2.1.4 to v2.1.5</td>
-                    <td>v0.44.0 and above</td>
+                    <td>v0.44.0 to v0.45.0</td>
+                </tr>
+                <tr>
+                    <td>v2.2.0</td>
+                    <td>v0.44.0 to v0.45.0</td>
+                </tr>
+                <tr>
+                    <td>v2.2.1</td>
+                    <td>v0.46.0 and above</td>
+                </tr>
+                <tr>
+                    <td>v2.3.0</td>
+                    <td>
+                        v0.46.0 and above
+                        <font size="1">
+                            <i>(does not support React 16.0.0-alpha.13)</i>
+                        </font>
+                    </td>
                 </tr>
             </tbody>
         </table><br />

@@ -10,11 +10,12 @@ Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Icon } from 'native-base';
+import { Container, Header, Content, Icon } from 'native-base';
 export default class IconExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Icon name='home' />
           &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>

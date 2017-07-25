@@ -11,11 +11,12 @@ Replacing Component: React Native [View](http://facebook.github.io/react-native/
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text, Separator } from 'native-base';
+import { Container, Header, Content, List, ListItem, Text, Separator } from 'native-base';
 export default class ListSeparatorExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Separator bordered>
             &lt;Text>FORWARD&lt;/Text>

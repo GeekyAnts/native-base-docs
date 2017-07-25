@@ -24,7 +24,7 @@ export default () =>
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, &lcub; Component } from 'react';
-import { Container, Content, Toast, Button, Text, Icon } from 'native-base';
+import { Container, Header, Content, Toast, Button, Text, Icon } from 'native-base';
 export default class ToastExample extends Component &lcub;
   constructor(props) {
     super(props);
@@ -35,6 +35,7 @@ export default class ToastExample extends Component &lcub;
   render() &lcub;
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content padder>
           &lt;Button onPress={()=> Toast.show({
               text: 'Wrong password!',

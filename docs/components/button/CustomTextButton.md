@@ -8,22 +8,23 @@ To have Button text rendered with uppercase, include <code>capitalize</code> pro
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class CapitalizeButtonTextExample extends Component {
-    render() {
-        return (
-            &lt;Container>
-                &lt;Content>
-                    // NativeBase default style
-                    &lt;Button>
-                      &lt;Text> Click Me! &lt;/Text>
-                    &lt;/Button>
-                    // Using capitalize prop
-                    &lt;Button capitalize>
-                      &lt;Text> Click Me! &lt;/Text>
-                    &lt;/Button>
-                &lt;/Content>
-            &lt;/Container>
-        );
-    }
+  render() {
+    return (
+      &lt;Container>
+        &lt;Header />
+        &lt;Content>
+          // NativeBase default style
+          &lt;Button>
+            &lt;Text> Click Me! &lt;/Text>
+          &lt;/Button>
+          // Using capitalize prop
+          &lt;Button capitalize>
+            &lt;Text> Click Me! &lt;/Text>
+          &lt;/Button>
+        &lt;/Content>
+      &lt;/Container>
+    );
+  }
 }</code></pre><br />

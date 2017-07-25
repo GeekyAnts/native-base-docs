@@ -141,11 +141,11 @@ export default class HeaderTitleExample extends Component {
     return (
       &lt;Container>
         &lt;Header>
-            &lt;Left/>
-            &lt;Body>
-                &lt;Title>Header&lt;/Title>
-            &lt;/Body>
-            &lt;Right />
+          &lt;Left/>
+          &lt;Body>
+            &lt;Title>Header&lt;/Title>
+          &lt;/Body>
+          &lt;Right />
         &lt;/Header>
       &lt;/Container>
     );

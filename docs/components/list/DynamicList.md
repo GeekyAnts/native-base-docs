@@ -9,12 +9,13 @@ A center aspect designed for efficient representation of vertically scrolling li
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text } from 'native-base';
+import { Container, Header, Content, List, ListItem, Text } from 'native-base';
 export default class DynamicListExample extends Component {
   render() {
     var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;List dataArray={items}
             renderRow={(item) =>

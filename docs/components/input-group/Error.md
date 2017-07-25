@@ -9,11 +9,12 @@ To display textbox with invalid data, include the <b>error</b> prop with <code>I
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Item, Input, Icon } from 'native-base';
+import { Container, Header, Content, Item, Input, Icon } from 'native-base';
 export default class ErrorInputTextboxExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Item error>
             &lt;Input placeholder='Textbox with Error Input'/>

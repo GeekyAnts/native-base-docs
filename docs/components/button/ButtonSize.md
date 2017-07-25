@@ -12,11 +12,12 @@ Include the following props with your <code>Button</code>.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonSizeExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           //Small size button
           &lt;Button small primary>

@@ -57,5 +57,5 @@ async componentWillMount() {
 }
 ```
 <br />
-Check out the [NativeBase KitchenSink](https://exp.host/@geekyants/nativebase-kitchenSink) with CRNA for an example of NativeBase components implementation.<br />
+Check out the [NativeBase KitchenSink](https://expo.io/@geekyants/nativebasekitchensink) with CRNA for an example of NativeBase components implementation.<br />
 Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.

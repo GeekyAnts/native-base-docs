@@ -11,11 +11,12 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
+import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
 export default class ListIconExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;List>
             &lt;ListItem icon>
@@ -60,3 +61,12 @@ export default class ListIconExample extends Component {
   }
 }
 </code></pre><br />
+
+
+
+**Note:** [Switch](http://facebook.github.io/react-native/docs/switch.html) included in above example is from React Native.
+
+
+
+
+

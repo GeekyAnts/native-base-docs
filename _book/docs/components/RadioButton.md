@@ -11,11 +11,12 @@ Replacing Component: React Native [TouchableOpacity](http://facebook.github.io/r
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, ListItem, Text, Radio, Right } from 'native-base';
+import { Container, Header, Content, ListItem, Text, Radio, Right } from 'native-base';
 export default class RadioButtonExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;ListItem>
             &lt;Text>Daily Stand Up&lt;/Text>

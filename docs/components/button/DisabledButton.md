@@ -9,19 +9,20 @@ The disabled prop of NativeBase Button is of type boolean. When present, it spec
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Content, Button, Text, Icon } from 'native-base';
+import { Container, Header, Content, Button, Text, Icon } from 'native-base';
 export default class ButtonDisabledExample extends Component {
   render() {
     return (
       &lt;Container>
+        &lt;Header />
         &lt;Content>
           &lt;Button disabled>&lt;Text>Default&lt;/Text>&lt;/Button>
           &lt;Button disabled bordered>&lt;Text>Bordered&lt;/Text>&lt;/Button>
           &lt;Button disabled rounded>&lt;Text>Rounded&lt;/Text>&lt;/Button>
           &lt;Button disabled large>&lt;Text>Large&lt;/Text>&lt;/Button>
           &lt;Button disabled iconRight>
-              &lt;Text>Icon Button&lt;/Text>
-              &lt;Icon name="home" />
+            &lt;Text>Icon Button&lt;/Text>
+            &lt;Icon name="home" />
           &lt;/Button>
           &lt;Button disabled block>&lt;Text>Block&lt;/Text>&lt;/Button>
           &lt;Button disabled full>&lt;Text>Full&lt;/Text>&lt;/Button>
