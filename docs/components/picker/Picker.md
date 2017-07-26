@@ -86,7 +86,7 @@ export default class PickerExample extends Component {
                 <td>renderHeader</td>
                 <td> - </td>
                 <td> - </td>
-                <td>akes component that appears as header of the Picker, comes with a backAction prop to close the picker. Like renderHeader={(backAction) =>{ // BODY }</td>
+                <td>Makes component that appears as header of the Picker, comes with a backAction prop to close the picker. Like renderHeader={(backAction) =>{ // BODY }</td>
             </tr>
             <tr>
                 <td>headerStyle</td>
@@ -98,7 +98,7 @@ export default class PickerExample extends Component {
                 <td>placeholder</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Default placeholder when no value is selected.</td>
+                <td>Pass placeholder for Picker component.</td>
             </tr>
             <tr>
                 <td>iosHeader</td>
@@ -130,12 +130,6 @@ export default class PickerExample extends Component {
                 <td> - </td>
                 <td>Style of header.</td>
             </tr>
-             <tr>
-                <td>headerStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Style of header.</td>
-            </tr>
             <tr>
                 <td>itemTextStyle</td>
                 <td> - </td>
@@ -153,12 +147,6 @@ export default class PickerExample extends Component {
                 <td>"Back"</td>
                 <td>user-defined text</td>
                 <td>Used for custom backButton text</td>
-            </tr>
-            <tr>
-                <td>placeholder</td>
-                <td> - </td>
-                <td> Strings </td>
-                <td>Pass placeholder for Picker component</td>
             </tr>
             </tbody>
             </table><br />

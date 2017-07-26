@@ -452,6 +452,47 @@
 
 
 
+                <!-- Content-->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Content></td>
+                    <td>Renders as body element of your screen</td>
+                    <td>
+                        React Native
+                        <a href="https://github.com/APSL/react-native-keyboard-aware-scroll-view">
+                            KeyboardAwareScrollView
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>padder</li>
+                        </ul>
+                    </td>
+                    <td>applies margin at all sides to Content section</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disableKBDismissScroll</li>
+                        </ul>
+                    </td>
+                    <td>disables automatic scroll on focus</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>enableResetScrollToCoords</li>
+                        </ul>
+                    </td>
+                    <td>lets the user enable or disable automatic resetScrollToCoords</td>
+                    <td></td>
+                </tr>
+
+
+
                 <!-- Deck Swiper -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;DeckSwiper></td>
@@ -490,6 +531,301 @@
                             &lt;View>
                         </a>
                     </td>
+                </tr>
+
+
+
+                <!-- Form -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Form></td>
+                    <td>Includes group of related input components</td>
+                    <td>
+                        React Native
+                        <a href="https://facebook.github.io/react-native/docs/view.html">
+                            &lt;View>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Input></li>
+                        </ul>
+                    </td>
+                    <td>component for inputting text</td>
+                    <td>
+                        React Native
+                        <a href="http://facebook.github.io/react-native/docs/textinput.html">
+                            &lt;TextInput>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Item></li>
+                        </ul>
+                    </td>
+                    <td>wrap around component with specific styles</td>
+                    <td>
+                        React Native
+                        <a href="http://facebook.github.io/react-native/docs/touchableopacity.html">
+                            &lt;TouchableOpacity>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Label></li>
+                        </ul>
+                    </td>
+                    <td>component for displaying text</td>
+                    <td>
+                        React Native
+                        <a href="http://facebook.github.io/react-native/docs/text.html">
+                            &lt;Text>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>fixedLabel</li>
+                        </ul>
+                    </td>
+                    <td>label is fixed to the left of the Input</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>floatingLabel</li>
+                        </ul>
+                    </td>
+                    <td>label that animates upwards/downwards when input is selected/erased</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>inlineLabel</li>
+                        </ul>
+                    </td>
+                    <td>label placed to the left of the input element</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>stackedLabel</li>
+                        </ul>
+                    </td>
+                    <td>places the label on top of input element which appears like a stack</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>bordered</li>
+                        </ul>
+                    </td>
+                    <td>includes border with the textbox</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>rounded</li>
+                        </ul>
+                    </td>
+                    <td>includes rounded border with the textbox</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>underline</li>
+                        </ul>
+                    </td>
+                    <td>includes underline border with the textbox</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disabled</li>
+                        </ul>
+                    </td>
+                    <td>disables inputting data</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderLabel</li>
+                        </ul>
+                    </td>
+                    <td>renders the same way the TextInput does with the form styling of NativeBase</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholder</li>
+                        </ul>
+                    </td>
+                    <td>string that will be rendered before text input has been entered</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>last</li>
+                        </ul>
+                    </td>
+                    <td>style the Form Item for the last Item of the Form</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>error</li>
+                        </ul>
+                    </td>
+                    <td>border color of textbox for invalid input</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>success</li>
+                        </ul>
+                    </td>
+                    <td>border color of textbox for valid input</td>
+                    <td></td>
+                </tr>
+
+
+
+                <!-- Header -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Header></td>
+                    <td>Renders as Header for your screen</td>
+                    <td>
+                        React Native 
+                        <a href="https://facebook.github.io/react-native/docs/view.html">
+                            &lt;View>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Left></li>
+                        </ul>
+                    </td>
+                    <td>components render to the left in Header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Body></li>
+                        </ul>
+                    </td>
+                    <td>components render at the centre in Header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>&lt;Right></li>
+                        </ul>
+                    </td>
+                    <td>components render to the right in Header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>iosBarStyle</li>
+                        </ul>
+                    </td>
+                    <td>set iOS barStyle</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>androidStatusBarColor</li>
+                        </ul>
+                    </td>
+                    <td>set background color for status bar in android</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>backgroundColor</li>
+                        </ul>
+                    </td>
+                    <td>set background color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>noShadow</li>
+                        </ul>
+                    </td>
+                    <td>removes elevation from android</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>searchBar</li>
+                        </ul>
+                    </td>
+                    <td>add searchBar to header or not</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>rounded</li>
+                        </ul>
+                    </td>
+                    <td>make Header searchBar rounded</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>hasSubtitle</li>
+                        </ul>
+                    </td>
+                    <td>add subtitle to the Header component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>hasSegment</li>
+                        </ul>
+                    </td>
+                    <td>add Segments to Header component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>hasTabs</li>
+                        </ul>
+                    </td>
+                    <td>add Tabs to Header component</td>
+                    <td></td>
                 </tr>
 
 
@@ -537,7 +873,7 @@
 
 
                 <!-- InputGroup -->
-                <tr style="background-color: #f5f5f5">
+                <!-- <tr style="background-color: #f5f5f5">
                     <td>&lt;InputGroup></td>
                     <td>Combines group of components for a textbox</td>
                     <td>
@@ -591,12 +927,12 @@
                     </td>
                     <td>disables inputting data.</td>
                     <td></td>
-                </tr>
+                </tr> -->
 
 
 
                 <!-- Input -->
-                <tr style="background-color: #f5f5f5">
+                <!-- <tr style="background-color: #f5f5f5">
                     <td>&lt;Input></td>
                     <td>Component for inputting text </td>
                     <td>
@@ -614,7 +950,7 @@
                     </td>
                     <td>string that will be rendered before text input has been entered.</td>
                     <td></td>
-                </tr>
+                </tr> -->
 
 
 
@@ -690,11 +1026,23 @@
                     <td>&lt;ListItem></td>
                     <td>Child component of &lt;List></td>
                     <td>
-                        React Native
+                        React Native<br />
                         <a href="http://facebook.github.io/react-native/docs/touchableopacity.html">
                             &lt;TouchableOpacity>
-                        </a>
+                        </a> - iOS<br />
+                        <a href="http://facebook.github.io/react-native/docs/touchablenativefeedback.html">
+                            &lt;TouchableNativeFeedback>
+                        </a> - Android
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>button</li>
+                        </ul>
+                    </td>
+                    <td>navigate on click of a list item</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
@@ -708,37 +1056,55 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>note</li>
+                            <li>itemHeader</li>
                         </ul>
                     </td>
-                    <td>sub caption for List Item.</td>
+                    <td>style the item as the header for the ListItes</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>iconLeft</li>
+                            <li>first</li>
                         </ul>
                     </td>
-                    <td>aligns icon to the left of ListeItem.</td>
+                    <td>adds style of first ListItem</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>iconRight</li>
+                            <li>last</li>
                         </ul>
                     </td>
-                    <td>aligns icon to the right of ListeItem.</td>
+                    <td>adds style of last ListItem</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>button</li>
+                            <li>icon</li>
                         </ul>
                     </td>
-                    <td>navigate on click of a list item</td>
+                    <td>to have list styling of icons</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>avatar</li>
+                        </ul>
+                    </td>
+                    <td>style the list to have Avatars</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>thumbnail</li>
+                        </ul>
+                    </td>
+                    <td>style the list to have Thumbnails</td>
                     <td></td>
                 </tr>
 
@@ -756,10 +1122,105 @@
                         </a>
                     </td>
                 </tr>
-
-
-
-
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderHeader</li>
+                        </ul>
+                    </td>
+                    <td>makes component that appears as header of the Picker</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerStyle</li>
+                        </ul>
+                    </td>
+                    <td>custom style to be given to Header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholder</li>
+                        </ul>
+                    </td>
+                    <td>default placeholder when no value is selected</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>iosHeader</li>
+                        </ul>
+                    </td>
+                    <td>custom text for the header title</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerBackButtonText</li>
+                        </ul>
+                    </td>
+                    <td>custom text for the header back button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>textStyle</li>
+                        </ul>
+                    </td>
+                    <td>text style of header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>itemStyle</li>
+                        </ul>
+                    </td>
+                    <td>style of items in the Picker</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerStyle</li>
+                        </ul>
+                    </td>
+                    <td>style of header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>itemTextStyle</li>
+                        </ul>
+                    </td>
+                    <td>text style of item component in Picker</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>supportedOrientations</li>
+                        </ul>
+                    </td>
+                    <td>allows the modal to be rotated to any of the specified orientations</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerBackButtonText</li>
+                        </ul>
+                    </td>
+                    <td>used for custom backButton text</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -802,11 +1263,25 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>searchBar</li>
+                            <li>rounded</li>
                         </ul>
                     </td>
                     <td>wraps the search bar with predefined border options</td>
                     <td></td>
+                </tr>
+
+
+
+                <!-- Segment -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Segment></td>
+                    <td>Best used as an alternative for tabs</td>
+                    <td>
+                        React Native
+                        <a href="https://facebook.github.io/react-native/docs/view.html">
+                            &lt;View>
+                        </a>
+                    </td>
                 </tr>
 
 
@@ -835,6 +1310,15 @@
 
 
 
+                <!-- Swipeable List -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Swipeable List></td>
+                    <td>ListItems that swipe open and close</td>
+                    <td></td>
+                </tr>
+
+
+
                 <!-- Tabs -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;Tabs></td>
@@ -849,10 +1333,37 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>tabLabel</li>
+                            <li>locked</li>
                         </ul>
                     </td>
-                    <td>name for tabs</td>
+                    <td>disable swipe</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>initialPage</li>
+                        </ul>
+                    </td>
+                    <td>set default active tab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabBarPosition</li>
+                        </ul>
+                    </td>
+                    <td>set position of Tabs</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabBarUnderlineStyle</li>
+                        </ul>
+                    </td>
+                    <td>style of the default tab bar's underline</td>
                     <td></td>
                 </tr>
 
@@ -891,13 +1402,80 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>size</li>
+                            <li>small</li>
                         </ul>
                     </td>
-                    <td>dimension of thumbnail</td>
+                    <td>small thumbnail with width and height of 40px</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>large</li>
+                        </ul>
+                    </td>
+                    <td>large thumbnail with width and height of 80px</td>
                     <td></td>
                 </tr>
 
+
+
+                <!-- Toast -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Toast></td>
+                    <td>Display quick warning or error messages</td>
+                    <td>
+                        React Native
+                        <a href="https://facebook.github.io/react-native/docs/image.html">
+                            &lt;Image>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>text</li>
+                        </ul>
+                    </td>
+                    <td>text content to be shown in the toast</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>buttonText</li>
+                        </ul>
+                    </td>
+                    <td>text to be displayed inside the button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>position</li>
+                        </ul>
+                    </td>
+                    <td>sets position for the Toast</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>type</li>
+                        </ul>
+                    </td>
+                    <td>sets context to the Toast</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>duration</li>
+                        </ul>
+                    </td>
+                    <td>milliseconds after which Toast disappers</td>
+                    <td></td>
+                </tr>
 
 
 

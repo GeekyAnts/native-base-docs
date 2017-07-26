@@ -117,7 +117,7 @@ Replacing Component
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    To have list styling of icons .
+                    To have list styling of icons.
                 </td>
             </tr>
             <tr>

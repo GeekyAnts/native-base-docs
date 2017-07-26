@@ -71,6 +71,14 @@ import Tab2 from './tabTwo';
                     Set position of Tabs
                 </td>
             </tr>
+            <tr>
+                <td>tabBarUnderlineStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Style of the default tab bar's underline.
+                </td>
+            </tr>
         </tbody>
     </table><br />
 <br />

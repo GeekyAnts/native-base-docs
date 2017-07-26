@@ -117,7 +117,7 @@ export default class FormExample extends Component {
                 <td> true </td>
                 <td> - </td>
                 <td>
-                    Includes and underline border with the textbox.
+                    Includes underline border with the textbox.
                 </td>
             </tr>
             <tr>
