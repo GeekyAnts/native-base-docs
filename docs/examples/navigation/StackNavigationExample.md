@@ -10,32 +10,18 @@ We are creating a 3-page application with buttons on each page that takes us to 
 ## Installation
 
 1. **Create React Native App**: Use [CRNA](https://github.com/react-community/create-react-native-app) tool to create an App like this <br />
-<code>
-$ npm install -g create-react-native-app
-</code> <br />
-<code>
+<pre><code>$ npm install -g create-react-native-app
 $ create-react-native-app my-app
-</code> <br />
-<code>
 $ cd my-app/
-</code> <br />
-<code>
-$ npm start
-</code> <br />
+$ npm start</code></pre>
+
 2. **Installing Libraries** <br /> With a React Native project SetUp, We can now install all required Libraries as follows. <br />
 a. **React Navigation** <br />
-Do this
-<code>
-npm install --save react-navigation
-</code> <br />
+<pre><code>npm install --save react-navigation</code></pre>
 b. **NativeBase** <br />
-<code>
-npm install native-base --save
-</code> <br />
-**Configure all dependencies by running the following command** <br />
-<code>
-react-native link
-</code> <br />
+<pre><code>npm install native-base --save</code></pre>
+c. **Configure dependencies** <br />
+<pre><code>react-native link</code></pre>
 By the end of Installation, your package.json file should look something like this.<br />
 
 ![StackNavigation PackageJson](https://github.com/GeekyAnts/native-base-docs/raw/master/docs/assets/StackNavigationPackage.png) <br />
@@ -43,7 +29,11 @@ By the end of Installation, your package.json file should look something like th
 ## Lets Play
 
 With our basic project setup we can now start building our App. <br />
-Make a folder at the project root by the name of <code>src</code>. Inside this folder we make 3 folders <code>ChatScreen</code> <code>HomeScreen</code> <code>ProfileScreen</code>. <br />
+Make a folder at the project root by the name of <code>src</code>.<br />
+Inside this folder we make 3 folders:
+- ChatScreen
+- HomeScreen
+- ProfileScreen
 
 ## HomeScreen
 
@@ -53,22 +43,9 @@ Further screens will have **nested navigators** in them. <br />
 Go ahead and add the following file in your project. <br />
 
 **Code HomeScreen/HomeScreen.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">import React from "react";
+<pre class="line-numbers"><code class="language-jsx">import React from "react";
 import { StatusBar } from "react-native";
-import {
-  Button,
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Title,
-  Left,
-  Icon,
-  Right
-} from "native-base";
+import { Container, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } from "native-base";
 export default class HomeScreen extends React.Component {
   render() {
     return (
@@ -94,18 +71,12 @@ export default class HomeScreen extends React.Component {
               &lt;/Body>
             &lt;/CardItem>
           &lt;/Card>
-          &lt;Button
-            full
-            rounded
-            dark
+          &lt;Button full rounded dark
             style=&lcub;&lcub; marginTop: 10 }}
             onPress={() => this.props.navigation.navigate("Chat")}>
             &lt;Text>Chat With People&lt;/Text>
           &lt;/Button>
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style=&lcub;&lcub; marginTop: 10 }}
             onPress={() => this.props.navigation.navigate("Profile")}>
             &lt;Text>Goto Profiles&lt;/Text>
@@ -122,7 +93,7 @@ export default class HomeScreen extends React.Component {
 2. The **navigation** object is available as a prop to us as we declare this component inside a *DrawerNavigator* in index.js. <br />
 
 **Code HomeScreen/index.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">import React, { Component } from "react";
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import HomeScreen from "./HomeScreen.js";
 import MainScreenNavigator from "../ChatScreen/index.js";
 import Profile from "../ProfileScreen/index.js";
@@ -152,17 +123,9 @@ This is going to be our custom drawer component where we put buttons to navigate
 Navigation object is available as <code>this.props.navigation</code> since we passed the props in the <code>HomeScreen</code> component. <br />
 
 **Code SideBar/SideBar.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">import React from "react";
+<pre class="line-numbers"><code class="language-jsx">import React from "react";
 import { AppRegistry, Image, StatusBar } from "react-native";
-import {
-  Button,
-  Text,
-  Container,
-  List,
-  ListItem,
-  Content,
-  Icon
-} from "native-base";
+import { Container, Content, Text, List, ListItem } from "native-base";
 const routes = ["Home", "Chat", "Profile"];
 export default class SideBar extends React.Component {
   render() {
@@ -212,21 +175,12 @@ This screen comprises of **TabNavigator** component. We are going to have three 
 We will also create our own custom component for Tabs. Its done as follows.
 
 **Code ChatScreen/index.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React, { Component } from "react";
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import LucyChat from "./LucyChat.js";
 import JadeChat from "./JadeChat.js";
 import NineChat from "./NineChat.js";
 import { TabNavigator } from "react-navigation";
-import {
-  Button,
-  Text,
-  Icon,
-  Item,
-  Footer,
-  FooterTab,
-  Label
-} from "native-base";
+import { Button, Text, Icon, Footer, FooterTab } from "native-base";
 export default (MainScreenNavigator = TabNavigator(
   {
     LucyChat: { screen: LucyChat },
@@ -277,31 +231,9 @@ export default (MainScreenNavigator = TabNavigator(
 #### Sample screen
 
 **Code ChatScreen/LucyChat.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React from "react";
+<pre class="line-numbers"><code class="language-jsx">import React from "react";
 import { AppRegistry, View, StatusBar } from "react-native";
-import {
-  Button,
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Input,
-  InputGroup,
-  Item,
-  Tab,
-  Tabs,
-  Footer,
-  FooterTab,
-  Label
-} from "native-base";
+import { Container, Body, Content, Header, Left, Right, Icon, Title, Input, Item, Label, Button, Text } from "native-base";
 import HomeScreen from "../HomeScreen";
 export default class LucyChat extends React.Component {
   render() {
@@ -326,9 +258,7 @@ export default class LucyChat extends React.Component {
             &lt;Label>Lucy Chat&lt;/Label>
             &lt;Input />
           &lt;/Item>
-          &lt;Button
-            rounded
-            danger
+          &lt;Button rounded danger
             style=&lcub;&lcub; marginTop: 20, alignSelf: "center" }}
             onPress={() => navigate("Profile")}>
             &lt;Text>Goto Lucy Profile&lt;/Text>
@@ -343,8 +273,7 @@ export default class LucyChat extends React.Component {
 ## Profile
 This screen includes example for StackNavigation.<br />
 **Code ProfileScreen/index.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React, { Component } from "react";
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import Profile from "./Profile.js";
 import EditScreenOne from "./EditScreenOne.js";
 import EditScreenTwo from "./EditScreenTwo.js";
@@ -357,24 +286,9 @@ export default (DrawNav = StackNavigator({
 </code></pre><br />
 
 **Code ProfileScreen/Profile.js** <br />
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React from "react";
+<pre class="line-numbers"><code class="language-jsx">import React from "react";
 import { AppRegistry, Alert } from "react-native";
-import {
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Button,
-  H1
-} from "native-base";
+import { Container, Header, Left, Body, Title, Card, CardItem, Content, Right, Icon, Button, Text } from "native-base";
 import { StackNavigator } from "react-navigation";
 import EditScreenOne from "./EditScreenOne.js";
 import EditScreenTwo from "./EditScreenTwo.js";
@@ -395,10 +309,7 @@ export default class Profile extends React.Component {
               &lt;/Right>
             &lt;/CardItem>
           &lt;/Card>
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style=&lcub;&lcub; marginTop: 10 }}
             onPress={() => this.props.navigation.navigate("EditScreenOne")}>
             &lt;Text>Goto EditScreen One&lt;/Text>
@@ -432,24 +343,9 @@ Profile.navigationOptions = ({ navigation }) => ({
 **Code ProfileScreen/EditScreenOne.js** <br />
 This screen is a simple part of StackNavigation, we have a header with a back button as shown below. <br />
 
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React from "react";
+<pre class="line-numbers"><code class="language-jsx">import React from "react";
 import { AppRegistry, Alert } from "react-native";
-import {
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Button,
-  H1
-} from "native-base";
+import { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title, Button, Text } from "native-base";
 export default class EditScreenOne extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     header: (
@@ -479,10 +375,7 @@ export default class EditScreenOne extends React.Component {
               &lt;/Right>
             &lt;/CardItem>
           &lt;/Card>
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style=&lcub;&lcub; marginTop: 10 }}
             onPress={() => this.props.navigation.navigate("EditScreenTwo")}>
             &lt;Text>Goto EditScreenTwo&lt;/Text>
@@ -501,10 +394,7 @@ Lastly we import our **routes** component from **HomeScreen** to our **App.js** 
 
 **Code App.js**
 
-<pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
-import React, { Component } from "react";
-import { View } from "react-native";
-import { Container, Content, Picker, Button, Text } from "native-base";
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import Expo from "expo";
 import HomeScreen from "./src/HomeScreen/index.js";
 export default class AwesomeApp extends Component {

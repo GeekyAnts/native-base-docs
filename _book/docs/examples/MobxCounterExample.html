@@ -1584,53 +1584,42 @@
 <p>We aim to create a simple App that has a counter with increment and decrement functionality. The logic is implemented in <a href="https://github.com/mobxjs/mobx" target="_blank">Mobx</a>. <br></p>
 <h2 id="Installation">2. Installation</h2>
 <ol>
-<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
-<code>
-$ npm install -g create-react-native-app
-</code> <br>
-<code>
+<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br></p>
+<pre><code>$ npm install -g create-react-native-app
 $ create-react-native-app my-app
-</code> <br>
-<code>
 $ cd my-app/
-</code> <br>
-<code>
-$ npm start
-</code> <br></p>
+$ npm start</code></pre>
 </li>
-<li><p><strong>Install Mobx</strong>: <br>
-<code>
-npm i mobx mobx-react --save
-</code><br></p>
+<li><p><strong>Install Mobx</strong>: <br></p>
+<pre><code>npm i mobx mobx-react --save</code></pre>
 </li>
-<li><p><strong>Install babel plugins</strong>: <br>
-<code>
-npm i babel-plugin-transform-decorators-legacy babel-preset-react-native-stage-0 --save-dev
-</code><br></p>
+<li><p><strong>Install babel plugins</strong>: <br></p>
+<pre><code>npm i babel-plugin-transform-decorators-legacy babel-preset-react-native-stage-0 --save-dev</code></pre>
 </li>
-<li>Now, let&#x2019;s create a .babelrc file to configure our babel plugins: <br><pre><code>{
+<li><p><strong>.babelrc</strong><br>
+Now, let&#x2019;s create a .babelrc file to configure our babel plugins: <br></p>
+<pre><code>{
 &apos;presets&apos;: [&apos;react-native&apos;],
 &apos;plugins&apos;: [&apos;transform-decorators-legacy&apos;]
 }
 </code></pre></li>
-<li><strong>NativeBase</strong> <br>
-<code>
-npm install native-base --save
-</code> <br>
-<strong>Important: additional steps are required to import fonts from native base. Refer to <a href="GetStarted.md#Setup_with_CRNA">this</a></strong>
-<strong>Configure all dependencies by running the following command</strong> <br>
-<code>
-react-native link
-</code> <br></li>
+<li><p><strong>NativeBase</strong> <br></p>
+<pre><code>npm install native-base --save</code></pre>
+</li>
+<li><p><strong>Configure dependencies</strong> <br></p>
+<pre><code>react-native link</code></pre>
+
+</li>
 </ol>
+<p><strong>Note:</strong> Additional steps are required to import fonts from native base. Refer to <a href="GetStarted.md#Setup_with_CRNA">this</a></p>
 <h2 id="Setting_Things_Up">3. Setting Things Up</h2>
-<p>  With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br>
-  By the end of all this your project structure and <code>package.json</code> file should look something like this. <br>
-<img src="https://docs.nativebase.io/docs/assets/mobxPackage.png" alt="MobxCounter Package"> <br></p>
+<p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create two files, <code>counterStore.js</code>(The Mobx Store) and <code>counter.js</code>(Counter Component). <br>
+By the end of all this your project structure and <code>package.json</code> file should look something like this.<br></p>
+<p><img src="https://docs.nativebase.io/docs/assets/mobxPackage.png" alt="MobxCounter Package"> <br></p>
 <h2 id="Mobx_Store_Setup">4. Mobx Store Setup</h2>
 <p>We need to create a Mobx store as follows. <br>
 <strong>Code src/counterStore.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {observable} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx&apos;</span>;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {observable} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CounterStore</span> </span>{
   @observable counter = <span class="hljs-number">0</span>;
   increment() { <span class="hljs-keyword">this</span>.counter++;
@@ -1639,7 +1628,8 @@ react-native link
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;decrement&quot;</span>, <span class="hljs-keyword">this</span>.counter); }
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> CounterStore();
-</code></pre><br></p>
+</code></pre>
+
 <p><strong>Explained</strong>: <br></p>
 <ol>
 <li>We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.</li>
@@ -1651,7 +1641,7 @@ react-native link
 <strong>Code src/conter.js</strong> <br></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;expo&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> CounterStore <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counterStore.js&apos;</span>;
 <span class="hljs-keyword">import</span> {observer} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mobx-react&apos;</span>;
 <span class="hljs-keyword">import</span> {View} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
@@ -1664,43 +1654,42 @@ react-native link
     }
   }
   <span class="hljs-keyword">async</span> componentWillMount() {
-      <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
-        <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
-        <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
-      });
-      <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
-    }
+    <span class="hljs-keyword">await</span> Expo.Font.loadAsync({
+      <span class="hljs-string">&apos;Roboto&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto.ttf&apos;</span>),
+      <span class="hljs-string">&apos;Roboto_medium&apos;</span>: <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;native-base/Fonts/Roboto_medium.ttf&apos;</span>),
+    });
+    <span class="hljs-keyword">this</span>.setState({isReady: <span class="hljs-literal">true</span>});
+  }
   render(){
     <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.state.isReady) {
       <span class="hljs-keyword">return</span> ;
     }
     <span class="hljs-keyword">return</span>(
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Mobx Counter<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
-                                {CounterStore.counter}
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.increment()}&gt;
-                             <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                         <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                         <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.decrement()}&gt;
-                              <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Decrement<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-                          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
-                          <span class="hljs-tag">&lt;<span class="hljs-name">View</span>&gt;</span>
-                          <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>Mobx Counter<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
+              {CounterStore.counter}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.increment()}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">primary</span> <span class="hljs-attr">block</span> <span class="hljs-attr">onPress</span>= {() =&gt;</span> CounterStore.decrement()}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Decrement<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">View</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
     );
   }
 }
-</code></pre><br></p>
+</span></code></pre><br></p>
 <p><strong>Explained</strong> <br></p>
 <ol>
 <li>We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br></li>
@@ -1754,7 +1743,7 @@ Build project and run.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mobx","level":"1.13.2","depth":2,"next":{"title":"Navigation","level":"1.13.3","depth":2,"path":"docs/examples/navigation/NavigationExample.md","ref":"docs/examples/navigation/NavigationExample.md","articles":[{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]}]},"previous":{"title":"Redux","level":"1.13.1","depth":2,"path":"docs/examples/ReduxCounterExample.md","ref":"docs/examples/ReduxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/MobxCounterExample.md","mtime":"2017-06-21T07:33:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T08:09:53.980Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Mobx","level":"1.13.2","depth":2,"next":{"title":"Navigation","level":"1.13.3","depth":2,"path":"docs/examples/navigation/NavigationExample.md","ref":"docs/examples/navigation/NavigationExample.md","articles":[{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]}]},"previous":{"title":"Redux","level":"1.13.1","depth":2,"path":"docs/examples/ReduxCounterExample.md","ref":"docs/examples/ReduxCounterExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/MobxCounterExample.md","mtime":"2017-07-26T11:23:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-27T06:46:20.287Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

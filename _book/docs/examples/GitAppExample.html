@@ -1576,65 +1576,58 @@
                                 
                                 <h1 id="GitApp_Example">GitApp Example</h1>
 <p>GitApp is a sample app made with <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>, <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>, and <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> and <a href="https://nativebase.io/" target="_blank">NativeBase</a> as the main Libraries at work here.<br>
-This is a simple step-by-step tutorial to get familiar with basic concepts of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a>(used for state management), and <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a>(used for navigation). This simple App should get you familiar with these Libraries and their use case. <br></p>
+This is a simple step-by-step tutorial to get familiar with basic concepts of <a href="https://github.com/reactjs/react-redux" target="_blank">Redux</a> (used for state management), and <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a>(used for navigation). This simple App should get you familiar with these Libraries and their use case. <br></p>
 <h1 id="Find_full_code_here">Find full code <a href="https://github.com/GeekyAnts/native-base-example-github-app" target="_blank">here</a></h1>
 <p><br>
 <img src="https://docs.nativebase.io/docs/assets/GitAppGif.gif" alt="GitAppGif"></p>
 <h2 id="Aim">1. Aim</h2>
 <p>We aim to create an 3 page simple application. It will fetch a list of Top Ten Github Libraries and once the user clicks on any of the items, App will display the information about the item clicked in the next page.</p>
 <h2 id="Installation">2. Installation</h2>
-<p><strong>Note: <br>
-If you encounter an issue with <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> during building your project, it might be due to issue with latest versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>. Check out <a href="https://github.com/aksonov/react-native-router-flux/issues/1761" target="_blank">this issue</a>. You might have to bump down the versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> and React</strong> <br></p>
+<p><strong>Note:</strong> If you encounter an issue with <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> during building your project, it might be due to issue with latest versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>. Check out <a href="https://github.com/aksonov/react-native-router-flux/issues/1761" target="_blank">this issue</a>. You might have to bump down the versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> and React <br></p>
 <ol>
-<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
-<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
+<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br><br></li>
+<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br><br>
 a. <strong>Redux</strong> and <strong>react-redux</strong> <br>
-In your terminal enter the following <br>
-<code>
-npm install redux react-redux --save
-</code> <br>
+<pre><code>npm install redux react-redux --save</code></pre> <br>
 b. <strong>React Native Router Flux</strong> <br>
-Do this
-<code>
-npm install react-native-router-flux --save
-</code> <br>
+<pre><code>npm install react-native-router-flux --save</code></pre> <br>
 c. <strong>NativeBase</strong> <br>
-<code>
-npm install native-base --save
-</code> <br>
-<strong>Configure all dependencies by running the following command</strong> <br>
-<code>
-react-native link
-</code> <br>
+<pre><code>npm install native-base --save</code></pre> <br>
+d. <strong>Configure dependencies</strong> <br>
+<pre><code>react-native link</code></pre> <br>
 By the end of Installation, your package.json file should look something like this.<br></li>
 </ol>
 <p><img src="https://docs.nativebase.io/docs/assets/GitAppPackageJson.png" alt="GitApp PackageJson"></p>
 <h2 id="Some_Important_stuff">3. Some Important stuff</h2>
 <p>Before starting with the development of the App, Let&apos;s first create a required folder structure for setting up Redux. <br>
 We first need a <strong>src</strong> folder that resides in the App root location and holds all our logic. <br>
-Inside <strong>src</strong>, we have three folders namely =&gt; <strong>actions</strong> , <strong>reducers</strong> , <strong>components</strong> and one file <strong>App.js</strong>. <strong>App.js</strong> is where our App lives mainly. We will import our App from this file.<br>
+Inside <strong>src</strong>, we have one file <strong>App.js</strong> and three folders namely</p>
+<ul>
+<li>Actions</li>
+<li>Reducers</li>
+<li>Components</li>
+</ul>
+<p><strong>App.js</strong> is where our App lives mainly. We will import our App from this file.<br>
 We will populate these folders with their respective files as an when we need them. <br>
 The folder structure should look something like this. <br>
 <img src="https://docs.nativebase.io/docs/assets/FolderStructureGitApp.png" alt="FolderStructure">
 <br></p>
 <h2 id="Getting_Hands_Dirty">4. Getting Hands Dirty</h2>
 <p>Now that we have setup our basic project, Let&apos;s get started with some real coding and getting things to work. <br></p>
-<h2 id="Setting_Up_Redux_">5. Setting Up Redux </h2>
+<h2 id="Setting_Up_Redux">5. Setting Up Redux</h2>
 <p>If you are unfamiliar with Redux and it concepts, Go through this <a href="http://redux.js.org/" target="_blank">Documentation</a> and use it as a reference.</p>
 <h4 id="Redux_Store_Setup">5.0.1. Redux Store Setup</h4>
 <p>Back in your <code>index.js</code> file, we will create our <strong>Redux Store</strong>. <strong>Store</strong> is where all data required by our App will live. Also, any data that is required by the App during its execution, is received from the Store.
 <br>
-We are going to be optimistic here and import all files we require.(even the ones we have not created yet). <br>
+We are going to be optimistic here and import all files we require (even the ones we have not created yet). <br>
 Go ahead and include all these imports in your index.js file and create the Store as follows.<br>
-If any of this does not make sense now, it will soon enough ;) <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/reducers/index.js&apos;</span>;
+If any of this does not make sense now, it will soon enough <br></p>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> allReducers <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/reducers/index.js&apos;</span>;
 <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/App.js&apos;</span>;
 <span class="hljs-keyword">import</span> {createStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 <span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
-<span class="hljs-keyword">const</span> store = createStore(allReducers);
-</code></pre><br>
-<br></p>
+<span class="hljs-keyword">const</span> store = createStore(allReducers);</code></pre>
+
 <ul>
 <li><a href="http://redux.js.org/docs/basics/Reducers.html" target="_blank">Reducers</a> can be viewed simply as functions that return some data. All these small pieces of data can be used in App wherever required by importing respective <a href="http://redux.js.org/docs/basics/Reducers.html" target="_blank">Reducers</a>. We will learn more about this soon. <br></li>
 <li>An App can have multiple reducers. We are going to use these reducers to form our much required <strong>Store</strong>.</li>
@@ -1643,13 +1636,13 @@ If any of this does not make sense now, it will soon enough ;) <br></p>
 <li><strong>createStore</strong> function is imported from <em>redux</em> module to create a Store(no surprise there).</li>
 <li>A <strong>Provider</strong> component is imported from <strong>react-redux</strong> module. This component will take our <strong>App</strong> component as a child and make our <strong>Store</strong> data available to all parts of our App. It looks something like this. <br></li>
 </ul>
-<p><pre class="line-numbers"><code class="language-jsx">
-render() { <span class="hljs-keyword">return</span>(
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
+<pre class="line-numbers"><code class="language-jsx">render() { <span class="hljs-keyword">return</span>(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>= {<span class="hljs-attr">store</span>}&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
-    );
-  }</span></code></pre><br></p>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
+  );
+}</span></code></pre>
+
 <ul>
 <li>Lastly we create a <strong>Store</strong> to pass to our <strong>Provider</strong> component. We pass allReducers object to create our <strong>Store</strong>.
 Our index file should look something like this.</li>
@@ -1662,75 +1655,73 @@ Our index file should look something like this.</li>
 We can go ahead and create these two files in our reducers folder we had already created.</li>
 </ol>
 <p><strong>gitReducer.js</strong></p>
-<p><pre class="line-numbers">var gitRepos= [];
-export default function(state=gitRepos, action){
-  switch (action.type) {
-    case &quot;Get_Repos&quot;: { gitRepos = action.payload;
-      console.log(action, &apos;action&apos;);
-      return gitRepos;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">var</span> gitRepos= [];
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state=gitRepos, action</span>)</span>{
+  <span class="hljs-keyword">switch</span> (action.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;Get_Repos&quot;</span>: { gitRepos = action.payload;
+      <span class="hljs-built_in">console</span>.log(action, <span class="hljs-string">&apos;action&apos;</span>);
+      <span class="hljs-keyword">return</span> gitRepos;
     }
-      break;
+    <span class="hljs-keyword">break</span>;
   }
-  return gitRepos;
-}
-</pre><br></p>
+  <span class="hljs-keyword">return</span> gitRepos;
+}</code></pre>
+
 <p><strong>activeReducer.js</strong></p>
-<p><pre class="line-numbers">export default function(state= null, action){
-  switch (action.type) {
-    case &quot;Repo_Selected&quot;: return action.payload;
-      break;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state= null, action</span>)</span>{
+  <span class="hljs-keyword">switch</span> (action.type) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;Repo_Selected&quot;</span>: <span class="hljs-keyword">return</span> action.payload;
+      <span class="hljs-keyword">break</span>;
   }
-  return state;
-}
-</pre><br></p>
+  <span class="hljs-keyword">return</span> state;
+}</code></pre>
+
 <p>It can be observed that reducer functions take in <em>state</em> and <em>action</em> as arguments. In case an <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Action</a> is dispatched form any point in the App, the action will be sent to all Reducers that we have created.<br>
 The code should make more sense once we are actually using these reducers in our components.
 The code above demonstrates the use of actions to manipulate data returned by a <a href="http://redux.js.org/docs/basics/Reducers.html" target="_blank">Reducer</a>. <br>
 More about <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Actions</a> in the coming sections. <br></p>
 <p>Lastly we need a file to <strong>combine</strong> all our reducers into One Big Javascript object. We create a file inside reducers folder, <strong>index.js</strong>.<br>
 <strong>reducers/index.js</strong></p>
-<p><pre class="line-numbers">import {combineReducers} from &apos;redux&apos;;
-import GitReducer from &apos;./gitReducer.js&apos;;
-import ActiveRepo from &apos;./activeReducer.js&apos;;
-const allReducers= combineReducers({
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> GitReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./gitReducer.js&apos;</span>;
+<span class="hljs-keyword">import</span> ActiveRepo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./activeReducer.js&apos;</span>;
+<span class="hljs-keyword">const</span> allReducers= combineReducers({
   repos: GitReducer,
   activeRepo: ActiveRepo
 });
-export default allReducers;
-</pre><br></p>
-<p><strong>Note how the combineReducers function takes in all the reducer objects. The names used to initialize Reducers in the combineReducers function will be used to reference that particular Reducer anywhere in our App. More on this later.</strong></p>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> allReducers;</code></pre>
+
+<p><strong>Note:</strong> How the combineReducers function takes in all the reducer objects. The names used to initialize Reducers in the combineReducers function will be used to reference that particular Reducer anywhere in our App. More on this later.</p>
 <h3 id="Redux_Actions">5.2. Redux Actions</h3>
 <p>We will create ActionCreators which are functions that return action objects with two parameters :- <br></p>
 <ol>
 <li><strong>type</strong> : Used to identify the type of action we are sending. It is also used to differentiate between multiple actions. <br></li>
 <li><strong>payload</strong> : Used to hold any data that might be required to accompany the object. (It should become clear in a while). <br>
-For our purposes, we just need two actions <br>
-<strong>Get_Repos</strong> : To initiate fetch of all Repos from Github API. This action will also change the data returned by our <strong>gitReducer</strong>. <br>
-<strong>Repo_Selected</strong> : Fired when a particular Repo is selected by the user , it changes the activeReducer to return selected user.</li>
+For our purposes, we just need two actions <br><ul>
+<li><strong>Get_Repos</strong> : To initiate fetch of all Repos from Github API. This action will also change the data returned by our <strong>gitReducer</strong>. <br></li>
+<li><strong>Repo_Selected</strong> : Fired when a particular Repo is selected by the user , it changes the activeReducer to return selected user.</li>
+</ul>
+</li>
 </ol>
 <h4 id="Redux_Thunk_Middleware">5.2.1. Redux Thunk Middleware</h4>
-<p><strong>Why is it required?</strong>
+<p><strong>Why is it required?</strong><br>
 The operation of fetching Github Repo list from its API comes under the category of <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operations</a>. <br>
 <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operations</a> are where the response to operation does not come instantly, rather is takes some delay time. <br>
-During normal execution of an App, at run time, when an <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a> is encountered, the program flow would have reached ahead when the response from the <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a> is received. This is not desired. <br>
-We need a mechanism to halt program execution until we receive a response of our <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a>. <br>
-Thus for our Async fetch operation, we make use of <a href="https://github.com/gaearon/redux-thunk" target="_blank">redux-thunk</a>.</p>
-<p><strong>Installation</strong>
-<code>
-npm install --save redux-thunk
-</code> <br></p>
-<p><strong>Setup</strong>
+During normal execution of an App, at run time, when an <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a> is encountered, the program flow would have reached ahead when the response from the <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a> is received. This is not desired. We need a mechanism to halt program execution until we receive a response of our <a href="http://redux.js.org/docs/advanced/AsyncActions.html" target="_blank">Async operation</a>. <br>
+Thus for our Async fetch operation, we make use of <a href="https://github.com/gaearon/redux-thunk" target="_blank">redux-thunk</a>.<br></p>
+<p><strong>Installation</strong><br></p>
+<pre><code>npm install --save redux-thunk</code></pre>
+
+<p><strong>Setup</strong><br>
 Back in our <code>index.js</code> file where we created our store, we have to make the store aware of the Thunk Middleware. Here is how its done.</p>
 <p><strong>../../index.js</strong></p>
-<p><pre class="line-numbers">
-import thunk from &apos;redux-thunk&apos;
-import {createStore, applyMiddleware} from &apos;redux&apos;;
-const store = createStore(allReducers, applyMiddleware(thunk));
-</pre><br></p>
-<p><strong>Now lets create all our actions including the thunk action.</strong> <br></p>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> thunk <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-thunk&apos;</span>
+<span class="hljs-keyword">import</span> {createStore, applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">const</span> store = createStore(allReducers, applyMiddleware(thunk));</code></pre>
+
+<p>Now lets create all our actions including the thunk action.</p>
 <p><strong>/action/index.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-comment">//Action to get all Repos</span>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-comment">//Action to get all Repos</span>
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getRepos</span>(<span class="hljs-params">response</span>) </span>{
   <span class="hljs-keyword">return</span>{
     type: <span class="hljs-string">&apos;Get_Repos&apos;</span>,
@@ -1746,9 +1737,10 @@ const store = createStore(allReducers, applyMiddleware(thunk));
         <span class="hljs-built_in">console</span>.log(response);
         <span class="hljs-keyword">var</span> arr = response.slice(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>);
         dispatch(getRepos(arr))
-      }).catch((error) =&gt; {
-           <span class="hljs-built_in">console</span>.error(error,<span class="hljs-string">&quot;ERRRRRORRR&quot;</span>);
-       });
+      })
+      .catch((error) =&gt; {
+        <span class="hljs-built_in">console</span>.error(error,<span class="hljs-string">&quot;ERRRRRORRR&quot;</span>);
+      });
   }
 }
 <span class="hljs-comment">// Repo selected action</span>
@@ -1757,153 +1749,160 @@ const store = createStore(allReducers, applyMiddleware(thunk));
     type: <span class="hljs-string">&apos;Repo_Selected&apos;</span>,
     payload: repo
   }
-}</code></pre><br></p>
-<p><strong>Note how above actions receive arguments to collect data to pass as a payload, we will pass this data while calling any of the Actions </strong></p>
+}</code></pre>
+
+<p><strong>Note:</strong> How above actions receive arguments to collect data to pass as a payload, we will pass this data while calling any of the Actions.</p>
 <h3 id="Redux_components">5.3. Redux components</h3>
 <p>With all the Redux setup taken care of, we can now create our <strong>Screens</strong> and <strong>Components</strong>. We will be needing three screens. <br>
 We are using <a href="https://nativebase.io/" target="_blank">NativeBase</a> for the UI Library as it will speed up the process considerably. Lets deal with each of these screens individually. <br></p>
 <h3 id="Welcome_Screen">5.4. Welcome Screen</h3>
 <p>This screen will just display some welcome text and includes a button that should navigate to the next screen(note we have not Setup our <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> , we will do it after setting up all our screens).</p>
 <p><strong>Code</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Header, Left, Right, Body, Title, Text, Button, Card, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
- <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Welcome</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-    render() {
-        <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;Header&gt;
-                    &lt;Left /&gt;
-                    &lt;Body&gt;
-                        &lt;Title&gt;Welcome&lt;/Title&gt;
-                    &lt;/Body&gt;
-                    &lt;Right /&gt;
-                &lt;/Header&gt;
-                &lt;Content contentContainerStyle ={{
-                  justifyContent: &apos;center&apos;,
-                 alignItems: &apos;center&apos;,
-                  paddingTop: 40,
-                 paddingHorizontal: 10}}&gt;
-                &lt;Card&gt;
-                        &lt;CardItem&gt;
-                            &lt;Text&gt;
-                                Welcome to Candy Land Folks ;)
-                            &lt;/Text&gt;
-                        &lt;/CardItem&gt;
-                        &lt;CardItem&gt;
-                            &lt;Text&gt;
-                                Press Button to fetch Github Repos
-                            &lt;/Text&gt;
-                        &lt;/CardItem&gt;
-                    &lt;/Card&gt;
-                &lt;Button dark block
-                onPress= {() =&gt;{ Actions.RepoList();}} style= {{marginTop: 40}}&gt;
-                      &lt;Text&gt; Fetch Github Repos &lt;/Text&gt;
-                    &lt;/Button&gt;
-                &lt;/Content&gt;
-            &lt;/Container&gt;
-        );
-    }
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Welcome</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;Container&gt;
+        &lt;Header&gt;
+          &lt;Left /&gt;
+          &lt;Body&gt;
+            &lt;Title&gt;Welcome&lt;/Title&gt;
+          &lt;/Body&gt;
+          &lt;Right /&gt;
+        &lt;/Header&gt;
+        &lt;Content contentContainerStyle ={{
+          justifyContent: &apos;center&apos;, alignItems: &apos;center&apos;,
+          paddingTop: 40, paddingHorizontal: 10}}&gt;
+          &lt;Card&gt;
+            &lt;CardItem&gt;
+              &lt;Text&gt;
+                Welcome to Candy Land Folks ;)
+              &lt;/Text&gt;
+            &lt;/CardItem&gt;
+            &lt;CardItem&gt;
+              &lt;Text&gt;
+                Press Button to fetch Github Repos
+              &lt;/Text&gt;
+            &lt;/CardItem&gt;
+          &lt;/Card&gt;
+        &lt;Button dark block
+          onPress= {() =&gt;{ Actions.RepoList();}} style= {{marginTop: 40}}&gt;
+            &lt;Text&gt; Fetch Github Repos &lt;/Text&gt;
+          &lt;/Button&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
+    );
+  }
 }
-export default Welcome;
-</code></pre><br></p>
-<p><strong>Note: We will use <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> to navigate between screens, hence in the above code, we import <code>Actions</code> from <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> and we have added <code>Actions.RepoList()</code> as an <code>onPress</code> event on the button which will take us to the RepoList Screen.</strong>
+export default Welcome;</code></pre>
+
+<p><strong>Note:</strong> We will use <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> to navigate between screens, hence in the above code, we import <code>Actions</code> from <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> and we have added <code>Actions.RepoList()</code> as an <code>onPress</code> event on the button which will take us to the RepoList Screen.
 The general syntax to navigate between screens in <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> goes like :- <br>
 <code>Actions.ACTION_NAME(PARAMS)</code></p>
 <h3 id="RepoList_Screen">5.5. RepoList Screen</h3>
 <p>This screen will display the List of fetched Repos. We will be needing to use some <a href="http://redux.js.org/docs/basics/Reducers.html" target="_blank">Reducers</a> data and <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Actions</a>. <br></p>
 <h3 id="Important_stuff_">5.6. Important stuff </h3>
 <p>In order to be able to use Reducers and actions, we need to use two important functions. Both these functions have extremely simple applications(although the names sound scary enough).<br></p>
-<ol>
-<li><p><code>mapStateToProps</code> =&gt; This function, simply takes your reducer data, that is required, and converts it into a usable <a href="https://facebook.github.io/react-native/docs/props.html" target="_blank">Prop</a>. Now we can use the data as a prop. example <code>this.props.data</code>. <br></p>
+<ul>
+<li><code>mapStateToProps</code> =&gt; This function, simply takes your reducer data, that is required, and converts it into a usable <a href="https://facebook.github.io/react-native/docs/props.html" target="_blank">Prop</a>. Now we can use the data as a prop. example <code>this.props.data</code>. <br></li>
+</ul>
 <p><strong>General Syntax of mapStateToProps</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapStateToProps</span>(<span class="hljs-params">state</span>)</span>{
-<span class="hljs-keyword">return</span>{
- dataObj : state.reducerName
-};
-}
-</code></pre><br></p>
-<p><strong>Remember how we allotted names to Reducers in the <code>combineReducers</code> function. We use the same name to call respective Reducer</strong></p>
-<ol>
-<li><code>matchDispatchToProps</code> =&gt; This function simply converts our <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Actions</a> into usable props. <br>
-<strong>General Syntax of matchDispatchToProps</strong> <br></li>
-</ol>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">matchDispatchToProps</span>(<span class="hljs-params">dispatch</span>)</span>{
-<span class="hljs-keyword">return</span> bindActionCreators({action1: importedAction1, action2: importedAction2}, dispatch)
-}
-</code></pre><br>
-<strong>bindActionCreators function here simply combines our actions into a single object.</strong> <br>
-Our final code for this screen looks something like this. <br>
-<strong>/components/RepoList.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mapStateToProps</span>(<span class="hljs-params">state</span>)</span>{
+  <span class="hljs-keyword">return</span>{
+    dataObj : state.reducerName
+  };
+}</code></pre>
+
+<p><strong>Note:</strong> Remember how we allotted names to Reducers in the <code>combineReducers</code> function. We use the same name to call respective Reducer</p>
+<ul>
+<li><code>matchDispatchToProps</code> =&gt; This function simply converts our <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Actions</a> into usable props. <br></li>
+</ul>
+<p><strong>General Syntax of matchDispatchToProps</strong> <br></p>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">matchDispatchToProps</span>(<span class="hljs-params">dispatch</span>)</span>{
+  <span class="hljs-keyword">return</span> bindActionCreators({action1: importedAction1, action2: importedAction2}, dispatch)
+}</code></pre>
+
+<p><code>bindActionCreators</code> function here simply combines our actions into a single object.<br>
+ Our final code for this screen looks something like this. <br></p>
+<p> <strong>/components/RepoList.js</strong> <br></p>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Content, Header, Left, Right, Body, Title, Text, Button, Spinner, List, ListItem, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
 <span class="hljs-keyword">import</span> {bindActionCreators} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 <span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
 <span class="hljs-keyword">import</span> {getRepos, getRepoThunk, repoSelected} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions/index&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RepoList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
-componentWillMount(){
- <span class="hljs-keyword">this</span>.props.getRepoThunk();
+  componentWillMount(){
+    <span class="hljs-keyword">this</span>.props.getRepoThunk();
+  }
+  render(){
+    <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.props.repos.length === <span class="hljs-number">0</span>){
+      <span class="hljs-keyword">return</span>(
+        &lt;Container&gt;
+          &lt;Header&gt;
+            &lt;Left&gt;
+              &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
+                &lt;Icon name=&apos;arrow-back&apos; /&gt;
+              &lt;/Button&gt;
+            &lt;/Left&gt;
+            &lt;Body&gt;
+              &lt;Title&gt;Repo List&lt;/Title&gt;
+            &lt;/Body&gt;
+            &lt;Right /&gt;
+          &lt;/Header&gt;
+          &lt;Content &gt;
+            &lt;Text&gt;Loading your repo List, Please wait&lt;/Text&gt;
+            &lt;Spinner /&gt;
+          &lt;/Content&gt;
+        &lt;/Container&gt;
+      );
+    }
+    else if(this.props.repos.length !== 0){
+      return(
+        &lt;Container&gt;
+          &lt;Header&gt;
+            &lt;Left&gt;
+              &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
+                &lt;Icon name=&apos;arrow-back&apos; /&gt;
+              &lt;/Button&gt;
+            &lt;/Left&gt;
+            &lt;Body&gt;
+              &lt;Title&gt;GitHub Repo List&lt;/Title&gt;
+            &lt;/Body&gt;
+            &lt;Right /&gt;
+          &lt;/Header&gt;
+          &lt;Content&gt;
+            &lt;List dataArray={this.props.repos}
+              renderRow={(item) =&gt;
+              &lt;ListItem onPress={() =&gt; { Actions.RepoInfo();
+                this.props.repoSelected(item)}}&gt;
+                &lt;Text&gt;{item.full_name}&lt;/Text&gt;
+              &lt;/ListItem&gt;}&gt;
+            &lt;/List&gt;
+          &lt;/Content&gt;
+        &lt;/Container&gt;
+      );
+    }
+  }
 }
-render(){
- <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.props.repos.length === <span class="hljs-number">0</span>){
- <span class="hljs-keyword">return</span>(
-   &lt;Container&gt;
-   &lt;Header&gt; &lt;Left&gt;
-   &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
-   &lt;Icon name=&apos;arrow-back&apos; /&gt;
-   &lt;/Button&gt;
-   &lt;/Left&gt;
-   &lt;Body&gt;
-   &lt;Title&gt;Repo List&lt;/Title&gt;
-   &lt;/Body&gt;
-   &lt;Right /&gt;
-   &lt;/Header&gt;
-   &lt;Content &gt;
-   &lt;Text&gt;Loading your repo List, Please wait&lt;/Text&gt;
-   &lt;Spinner /&gt;
-   &lt;/Content&gt;
-   &lt;/Container&gt; );}
-   else if(this.props.repos.length !== 0){
-   return(
-   &lt;Container&gt;
-   &lt;Header&gt;
-   &lt;Left&gt;
-   &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
-   &lt;Icon name=&apos;arrow-back&apos; /&gt;
-   &lt;/Button&gt;
-   &lt;/Left&gt;
-   &lt;Body&gt;
-   &lt;Title&gt;GitHub Repo List&lt;/Title&gt;
-   &lt;/Body&gt;
-   &lt;Right /&gt;
-   &lt;/Header&gt;
-   &lt;Content&gt;
-   &lt;List dataArray={this.props.repos}
-   renderRow={(item) =&gt;
-   &lt;ListItem onPress={() =&gt; { Actions.RepoInfo();
-   this.props.repoSelected(item)}}&gt;
-   &lt;Text&gt;{item.full_name}&lt;/Text&gt;
-   &lt;/ListItem&gt;}&gt;
-   &lt;/List&gt;
-   &lt;/Content&gt;
-   &lt;/Container&gt;);}
-}}
 function mapStateToProps(state){
-return{
- repos : state.repos
-};
+  return{
+    repos : state.repos
+  };
 }
 function matchDispatchToProps(dispatch){
-return bindActionCreators({getRepos: getRepos, getRepoThunk: getRepoThunk, repoSelected: repoSelected}, dispatch)
+  return bindActionCreators({
+    getRepos: getRepos,
+    getRepoThunk: getRepoThunk,
+    repoSelected: repoSelected
+  }, dispatch)
 }
-export default connect(mapStateToProps, matchDispatchToProps)(RepoList);
-</code></pre><br></p>
+export default connect(mapStateToProps, matchDispatchToProps)(RepoList);</code></pre>
+
 <p><strong>Explained</strong> <br></p>
-<ol>
+<ul>
 <li>We have imported all the required actions and converted both Reducers and Actions into Props as described above.</li>
 <li>Inside <code>componentWillMount</code> function, we call <code>getRepoThunk</code> function to initiate the fetch action.</li>
 <li>We are listening for changes in the <code>this.props.repos</code> inside render method, to know when the List is fetched. As long as the response is not received, we show a spinner on the screen.</li>
@@ -1911,59 +1910,68 @@ export default connect(mapStateToProps, matchDispatchToProps)(RepoList);
 <li>The back Button present in the <code>Header</code> component will fire a <code>Actions.pop()</code> function of <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> to return to the previous screen.</li>
 <li>Also on clicking any of the <code>ListItem</code> components, we will fire a Redux action <code>Repo_Selected</code>. Our <code>activeReducer</code> is listening for this action as stated above. Also the click will navigate to <code>RepoInfo</code> page through the RNRF action <code>Actions.RepoInfo()</code>. <br></li>
 <li>The last line with the connect function takes in both our smart functions =&gt; <code>mapStateToProps</code> and <code>matchDispatchToProps</code> and combines it to our dumb component to make it smart and powerful, with access to Actions and Reducer data.</li>
-</ol>
-</li>
-</ol>
+</ul>
 <h4 id="RepoInfo_Screen">5.6.1. RepoInfo Screen</h4>
 <p>This screen will display the information about the Repo selected by the user. The code looks like this. <br></p>
 <p><strong>/components/repoinfo.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx">
+<pre class="line-numbers"><code class="language-jsx">
 <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Header, Left, Right, Body, Title, Text, Button, List, ListItem, Icon} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Header, Left, Right, Body, Title, Text, Button, List, ListItem, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
 <span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RepoInfo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
   render(){
     <span class="hljs-keyword">return</span>(
       &lt;Container&gt;
-          &lt;Header&gt;
-              &lt;Left&gt;
-              &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
-                            &lt;Icon name=&apos;arrow-back&apos; /&gt;
-                        &lt;/Button&gt;
-              &lt;/Left&gt;
-              &lt;Body&gt;
-                  &lt;Title&gt;Repo Info&lt;/Title&gt;
-              &lt;/Body&gt;
-              &lt;Right /&gt;
-              &lt;/Header&gt;
-              &lt;Content&gt;
-              &lt;List&gt;
-              &lt;ListItem&gt;&lt;Text&gt;{this.props.activeRepo.full_name}&lt;/Text&gt;&lt;/ListItem&gt;
-              &lt;ListItem&gt;&lt;Text&gt;{this.props.activeRepo.description}&lt;/Text&gt;&lt;/ListItem&gt;
-              &lt;ListItem&gt;&lt;Text&gt;{this.props.activeRepo.id}&lt;/Text&gt;&lt;/ListItem&gt;
-              &lt;ListItem&gt;&lt;Text&gt;{this.props.activeRepo.owner.login}&lt;/Text&gt;&lt;/ListItem&gt;
-              &lt;ListItem&gt;&lt;Text&gt;{this.props.activeRepo.url}&lt;/Text&gt;&lt;/ListItem&gt;
-              &lt;/List&gt;
-              &lt;/Content&gt;
-      &lt;/Container&gt;);
+        &lt;Header&gt;
+          &lt;Left&gt;
+            &lt;Button transparent onPress= {()=&gt;Actions.pop()}&gt;
+              &lt;Icon name=&apos;arrow-back&apos; /&gt;
+            &lt;/Button&gt;
+          &lt;/Left&gt;
+          &lt;Body&gt;
+            &lt;Title&gt;Repo Info&lt;/Title&gt;
+          &lt;/Body&gt;
+          &lt;Right /&gt;
+        &lt;/Header&gt;
+        &lt;Content&gt;
+          &lt;List&gt;
+            &lt;ListItem&gt;
+              &lt;Text&gt;{this.props.activeRepo.full_name}&lt;/Text&gt;
+            &lt;/ListItem&gt;
+            &lt;ListItem&gt;
+              &lt;Text&gt;{this.props.activeRepo.description}&lt;/Text&gt;
+            &lt;/ListItem&gt;
+            &lt;ListItem&gt;
+              &lt;Text&gt;{this.props.activeRepo.id}&lt;/Text&gt;
+            &lt;/ListItem&gt;
+            &lt;ListItem&gt;
+              &lt;Text&gt;{this.props.activeRepo.owner.login}&lt;/Text&gt;
+            &lt;/ListItem&gt;
+            &lt;ListItem&gt;
+              &lt;Text&gt;{this.props.activeRepo.url}&lt;/Text&gt;
+            &lt;/ListItem&gt;
+          &lt;/List&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
+    );
   }
 }
 function mapStateToProps(state){
   return{
     activeRepo : state.activeRepo
   };}
-export default connect(mapStateToProps)(RepoInfo);
-</code></pre><br></p>
+export default connect(mapStateToProps)(RepoInfo);</code></pre>
+
 <p><strong>Explained</strong> <br></p>
-<ol>
+<ul>
 <li>The screen takes reducer data from <code>activeReducer</code>.</li>
 <li>activeReducer is usable as a <a href="https://facebook.github.io/react-native/docs/props.html" target="_blank">Prop</a>.</li>
-</ol>
+</ul>
 <h2 id="Adding_RNRF_and_finishing_up">6. Adding RNRF and finishing up</h2>
 <p>Finally in our <code>App.js</code>, we apply our RNRF logic. For Syntax and tutorial refer <a href="https://github.com/aksonov/react-native-router-flux/blob/master/docs/MINI_TUTORIAL.md" target="_blank">this</a>. <br></p>
 <p><strong>/src/App.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-comment">// RNRF logic here</span>
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-comment">// RNRF logic here</span>
 <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Router, Scene } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
 <span class="hljs-keyword">import</span> Welcome <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/welcome.js&apos;</span>;
@@ -1981,12 +1989,13 @@ export default connect(mapStateToProps)(RepoInfo);
       &lt;/Router&gt;
     );
   }
-}</code></pre><br></p>
-<p>Here the <code>key</code> property has been used in our app to provide navigation Actions like: <code>Actions.RepoList</code> <br>
+}</code></pre>
+
+<p>Here the <code>key</code> property has been used in our app to provide navigation Actions like: <strong>Actions.RepoList</strong> <br>
 By now your folder structure should look something like this <br>
 <img src="https://docs.nativebase.io/docs/assets/FolderFinal.png" alt="newFolder"> <br>
 With that, we have completed setting up our app, build your project and run.<br></p>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_full_code_here">Find full code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Some_Important_stuff">3. Some Important stuff</a></li><li><a href="#Getting_Hands_Dirty">4. Getting Hands Dirty</a></li><li><a href="#Setting_Up_Redux_">5. Setting Up Redux </a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Redux_Store_Setup">5.0.1. Redux Store Setup</a></li></ul><li><a href="#Redux_Reducers">5.1. Redux Reducers</a></li><li><a href="#Redux_Actions">5.2. Redux Actions</a></li><ul><li><a href="#Redux_Thunk_Middleware">5.2.1. Redux Thunk Middleware</a></li></ul><li><a href="#Redux_components">5.3. Redux components</a></li><li><a href="#Welcome_Screen">5.4. Welcome Screen</a></li><li><a href="#RepoList_Screen">5.5. RepoList Screen</a></li><li><a href="#Important_stuff_">5.6. Important stuff </a></li><ul><li><a href="#RepoInfo_Screen">5.6.1. RepoInfo Screen</a></li></ul></ul><li><a href="#Adding_RNRF_and_finishing_up">6. Adding RNRF and finishing up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_full_code_here">Find full code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Some_Important_stuff">3. Some Important stuff</a></li><li><a href="#Getting_Hands_Dirty">4. Getting Hands Dirty</a></li><li><a href="#Setting_Up_Redux">5. Setting Up Redux</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Redux_Store_Setup">5.0.1. Redux Store Setup</a></li></ul><li><a href="#Redux_Reducers">5.1. Redux Reducers</a></li><li><a href="#Redux_Actions">5.2. Redux Actions</a></li><ul><li><a href="#Redux_Thunk_Middleware">5.2.1. Redux Thunk Middleware</a></li></ul><li><a href="#Redux_components">5.3. Redux components</a></li><li><a href="#Welcome_Screen">5.4. Welcome Screen</a></li><li><a href="#RepoList_Screen">5.5. RepoList Screen</a></li><li><a href="#Important_stuff_">5.6. Important stuff </a></li><ul><li><a href="#RepoInfo_Screen">5.6.1. RepoInfo Screen</a></li></ul></ul><li><a href="#Adding_RNRF_and_finishing_up">6. Adding RNRF and finishing up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -2029,7 +2038,7 @@ With that, we have completed setting up our app, build your project and run.<br>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Full App","level":"1.13.4","depth":2,"next":{"title":"Redux-Form","level":"1.13.5","depth":2,"path":"docs/examples/ReduxFormExample.md","ref":"docs/examples/ReduxFormExample.md","articles":[]},"previous":{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/GitAppExample.md","mtime":"2017-06-21T07:33:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T08:09:53.980Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Full App","level":"1.13.4","depth":2,"next":{"title":"Redux-Form","level":"1.13.5","depth":2,"path":"docs/examples/ReduxFormExample.md","ref":"docs/examples/ReduxFormExample.md","articles":[]},"previous":{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/GitAppExample.md","mtime":"2017-07-27T04:31:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-27T06:46:20.287Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -8,7 +8,12 @@ Based on [React Native](https://facebook.github.io/react-native/) and [NativeBas
 Check out some of the cool Apps and themes we have already built [here](https://market.nativebase.io/). <br />
 
 ##  Native Starter Pro
-A 3 page theme: Login, SignUp and Dashboard, with Integrated Backend APIs. <br />
+A three page theme:
+-	Login
+-	SignUp
+-	Dashboard
+
+With Integrated Backend APIs. <br />
 Start your mobile project with ready-to-use User Auth and Dashboard with backend integration (Express, Node, MongoDB & JWT). <br />
 
 ![Native Starter pro](https://market.nativebase.io/uploads/user/2016/11/30/43/44/xQrkcafIbrfAEJUx.gif) <br />

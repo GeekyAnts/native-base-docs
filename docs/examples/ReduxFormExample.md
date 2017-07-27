@@ -1,38 +1,29 @@
 # Redux Form Example
 Redux Form is a sample app made with [React Native](https://github.com/facebook/react-native), [Redux](https://github.com/reactjs/react-redux), and [Redux-Form](https://github.com/erikras/redux-form) and [NativeBase](https://nativebase.io/) as the main Libraries at work here.<br />
-This is a simple step-by-step tutorial to get familiar with basic concepts of [Redux](https://github.com/reactjs/react-redux)(used for state management), and [[Redux-Form](https://github.com/erikras/redux-form). This simple App should get you familiar with these Libraries and their use case. <br />
+This is a simple step-by-step tutorial to get familiar with basic concepts of [Redux](https://github.com/reactjs/react-redux) (used for state management), and [Redux-Form](https://github.com/erikras/redux-form). This simple App should get you familiar with these Libraries and their use case. <br />
 # Find Full code [here](https://github.com/GeekyAnts/native-base-example-redux-form)
 ![ReduxForm Gif](https://docs.nativebase.io/docs/assets/ReduxForm.gif)
 <br />
 
 ## Aim
-
 We aim to create a single page application that uses [Redux-Form](https://github.com/erikras/redux-form) and has validation functionality.
 
 ## Installation
 
 
-1. **SetUp React Native Project** <br /> SetUp a React Native project. Refer [this](https://facebook.github.io/react-native/docs/getting-started.html) for more information about setting up a React Native project. <br />
-2. **Installing Libraries** <br /> With a React Native project SetUp, We can now install all required Libraries as follows. <br />
+1. **SetUp React Native Project** <br /> SetUp a React Native project. Refer [this](https://facebook.github.io/react-native/docs/getting-started.html) for more information about setting up a React Native project. <br /><br />
+2. **Installing Libraries** <br /> With a React Native project SetUp, We can now install all required Libraries as follows. <br /><br />
 a. **Redux** and **react-redux** <br />
 In your terminal enter the following <br />
-<code>
-npm install redux react-redux --save
-</code> <br />
+<pre><code>npm install redux react-redux --save</code></pre><br />
 b. **redux-form** <br />
-Do this
-<code>
-npm install --save redux-form
-</code> <br />
+<pre><code>npm install --save redux-form</code></pre> <br />
 c. **NativeBase** <br />
-<code>
-npm install native-base --save
-</code> <br />
+<pre><code>npm install native-base --save</code></pre> <br />
 **Configure all dependencies by running the following command** <br />
-<code>
-react-native link
-</code> <br />
-**Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code>**
+<pre><code>react-native link</code></pre> <br />
+
+**Note:** You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code>
 By the end of Installation, your package.json file should look something like this.<br />
 ![Redux-Form package](https://docs.nativebase.io/docs/assets/ReduxFormPackage.png) <br />
 
@@ -42,21 +33,19 @@ Create a **src** folder at root of your project. Create folders **compnoents** *
 ### Reducers
 Create a file **index.js** inside reducers folder. Paste the following code. <br />
 **Code src/reducers/index.js**
-<pre class="line-numbers"><code class="language-jsx">
-import {combineReducers} from 'redux';
+<pre class="line-numbers"><code class="language-jsx">import {combineReducers} from 'redux';
 import { reducer as formReducer } from 'redux-form';
 const reducers = {
   form: formReducer
 }
 const allReducers= combineReducers(reducers);
-export default allReducers;
-</code></pre><br />
+export default allReducers;</code></pre>
 
 ### Component
+
 Create a file **SimpleForm.js** inside <code>components</code> folder. <br />
 **Code src/components/SimpleForm.js**
-<pre class="line-numbers"><code class="language-jsx">
-import React , { Component } from 'react';
+<pre class="line-numbers"><code class="language-jsx">import React , { Component } from 'react';
 import Expo from 'expo';
 import { View } from 'react-native';
 import { Container, Item, Input, Header, Body, Content, Title, Button, Text } from 'native-base';
@@ -82,7 +71,7 @@ const validate = values => {
   if(nm.length > 8){
     error.name= 'max 8 characters';
   }
-return error;
+  return error;
 };
 class SimpleForm extends Component {
   constructor(props){
@@ -104,44 +93,45 @@ class SimpleForm extends Component {
     if(error !== undefined){
       hasError= true;
     }
-    return( &lt;Item error= {hasError}>
-                        &lt;Input {...input}/>
-                        {hasError ? &lt;Text>{error}&lt;/Text> : &lt;Text />}
-                    &lt;/Item> )
+    return( 
+      &lt;Item error= {hasError}>
+        &lt;Input {...input}/>
+        {hasError ? &lt;Text>{error}&lt;/Text> : &lt;Text />}
+      &lt;/Item>
+    )
   }
   render(){
      const { handleSubmit, reset } = this.props;
      if (!this.state.isReady) {
       return &lt;Expo.AppLoading />;
     }
-  return (
-    &lt;Container>
-    &lt;Header>
-        &lt;Body>
-          &lt;Title>Redux Form&lt;/Title>
-        &lt;/Body>
-    &lt;/Header>
-    &lt;Content padder>
-      &lt;Field name="email" component={this.renderInput} />
-      &lt;Field name="name" component={this.renderInput} />
-      &lt;Button block primary onPress= {reset}>
-      &lt;Text>Submit&lt;/Text>
-      &lt;/Button>
-      &lt;/Content>
-    &lt;/Container>
-  )
-}
+    return (
+      &lt;Container>
+        &lt;Header>
+          &lt;Body>
+            &lt;Title>Redux Form&lt;/Title>
+          &lt;/Body>
+        &lt;/Header>
+        &lt;Content padder>
+          &lt;Field name="email" component={this.renderInput} />
+          &lt;Field name="name" component={this.renderInput} />
+          &lt;Button block primary onPress= {reset}>
+            &lt;Text>Submit&lt;/Text>
+          &lt;/Button>
+        &lt;/Content>
+      &lt;/Container>
+    )
+  }
 }
 export default reduxForm({
   form: 'test',
   validate
-})(SimpleForm)
-</code></pre><br />
+})(SimpleForm)</code></pre>
 
 **Explained** <br />
-1. We load fonts using <code>loadAsync</code> as defined in previous examples.
-2. Note how we have added validate functionality in the end using <code>reduxForm</code> decorator.
-3. Conditions added to validate are user defined.
+- We load fonts using <code>loadAsync</code> as defined in previous examples.
+- Note how we have added validate functionality in the end using <code>reduxForm</code> decorator.
+- Conditions added to validate are user defined.
 
 ### Application
 **Code src/Application.js** <br />
@@ -155,18 +145,18 @@ const store = createStore(allReducers);
  export default class Application extends Component{
   render(){
     return(
-    &lt;Provider store= {store}>
-    &lt;SimpleForm />
-    &lt;/Provider>
-  )
+      &lt;Provider store= {store}>
+        &lt;SimpleForm />
+      &lt;/Provider>
+    )
   }
-}
-</code></pre><br />
+}</code></pre>
 
 **Explained** <br />
 Here we import <code>allReducers</code> containing our <code>formReducer</code> and add it to our <code>store</code>. Next we simply pass our <code>store</code> to <code>Provider</code> component. <br />
 
 ### Finishing Up
+
 Finally add the <code>Application</code> component in our <code>App.js</code> as follows <br />
 **Code App.js**
 <pre class="line-numbers"><code class="language-jsx">import React from 'react';
@@ -180,7 +170,7 @@ const store = createStore(allReducers);
 export default class App extends React.Component {
   render() {
     return (
-    &lt;Application />
+      &lt;Application />
     );
   }
 }</code></pre><br />

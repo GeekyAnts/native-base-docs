@@ -1583,39 +1583,32 @@
 <p>We are creating a 3-page application with buttons on each page that takes us to the other page <code>onPress</code>. <br></p>
 <h2 id="Installation">2. Installation</h2>
 <ol>
-<li><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
-<code>
-$ npm install -g create-react-native-app
-</code> <br>
-<code>
+<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br></p>
+<pre><code>$ npm install -g create-react-native-app
 $ create-react-native-app my-app
-</code> <br>
-<code>
 $ cd my-app/
-</code> <br>
-<code>
-$ npm start
-</code> <br></li>
-<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
+$ npm start</code></pre>
+</li>
+<li><p><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
 a. <strong>React Navigation</strong> <br>
-Do this
-<code>
-npm install --save react-navigation
-</code> <br>
+<pre><code>npm install --save react-navigation</code></pre>
 b. <strong>NativeBase</strong> <br>
-<code>
-npm install native-base --save
-</code> <br>
-<strong>Configure all dependencies by running the following command</strong> <br>
-<code>
-react-native link
-</code> <br>
-By the end of Installation, your package.json file should look something like this.<br></li>
+<pre><code>npm install native-base --save</code></pre>
+c. <strong>Configure dependencies</strong> <br>
+<pre><code>react-native link</code></pre>
+By the end of Installation, your package.json file should look something like this.<br></p>
+</li>
 </ol>
 <p><img src="https://github.com/GeekyAnts/native-base-docs/raw/master/docs/assets/StackNavigationPackage.png" alt="StackNavigation PackageJson"> <br></p>
 <h2 id="Lets_Play">3. Lets Play</h2>
 <p>With our basic project setup we can now start building our App. <br>
-Make a folder at the project root by the name of <code>src</code>. Inside this folder we make 3 folders <code>ChatScreen</code> <code>HomeScreen</code> <code>ProfileScreen</code>. <br></p>
+Make a folder at the project root by the name of <code>src</code>.<br>
+Inside this folder we make 3 folders:</p>
+<ul>
+<li>ChatScreen</li>
+<li>HomeScreen</li>
+<li>ProfileScreen</li>
+</ul>
 <h2 id="HomeScreen">4. HomeScreen</h2>
 <p>This is going to be the first landing screen of out App. We are going to implement the navigation logic here.<br>
 For our purpose here, we have used <strong>DrawerNavigator</strong> for navigation through the entire app.<br>
@@ -1624,20 +1617,7 @@ Go ahead and add the following file in your project. <br></p>
 <p><strong>Code HomeScreen/HomeScreen.js</strong> <br></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { StatusBar } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Button,
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Title,
-  Left,
-  Icon,
-  Right
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Title, Left, Icon, Right, Button, Body, Content,Text, Card, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HomeScreen</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
@@ -1663,18 +1643,12 @@ Go ahead and add the following file in your project. <br></p>
               &lt;/Body&gt;
             &lt;/CardItem&gt;
           &lt;/Card&gt;
-          &lt;Button
-            full
-            rounded
-            dark
+          &lt;Button full rounded dark
             style={{ marginTop: 10 }}
             onPress={() =&gt; this.props.navigation.navigate(&quot;Chat&quot;)}&gt;
             &lt;Text&gt;Chat With People&lt;/Text&gt;
           &lt;/Button&gt;
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style={{ marginTop: 10 }}
             onPress={() =&gt; this.props.navigation.navigate(&quot;Profile&quot;)}&gt;
             &lt;Text&gt;Goto Profiles&lt;/Text&gt;
@@ -1721,15 +1695,7 @@ Navigation object is available as <code>this.props.navigation</code> since we pa
 <p><strong>Code SideBar/SideBar.js</strong> <br></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { AppRegistry, Image, StatusBar } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Button,
-  Text,
-  Container,
-  List,
-  ListItem,
-  Content,
-  Icon
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text, List, ListItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">const</span> routes = [<span class="hljs-string">&quot;Home&quot;</span>, <span class="hljs-string">&quot;Chat&quot;</span>, <span class="hljs-string">&quot;Profile&quot;</span>];
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SideBar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   render() {
@@ -1776,21 +1742,12 @@ Navigation object is available as <code>this.props.navigation</code> since we pa
 <p>This screen comprises of <strong>TabNavigator</strong> component. We are going to have three screens here to chat to three different people. <br>
 We will also create our own custom component for Tabs. Its done as follows.</p>
 <p><strong>Code ChatScreen/index.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> LucyChat <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./LucyChat.js&quot;</span>;
 <span class="hljs-keyword">import</span> JadeChat <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./JadeChat.js&quot;</span>;
 <span class="hljs-keyword">import</span> NineChat <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./NineChat.js&quot;</span>;
 <span class="hljs-keyword">import</span> { TabNavigator } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-navigation&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Button,
-  Text,
-  Icon,
-  Item,
-  Footer,
-  FooterTab,
-  Label
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Button, Text, Icon, Footer, FooterTab } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> (MainScreenNavigator = TabNavigator(
   {
     LucyChat: { screen: LucyChat },
@@ -1840,31 +1797,9 @@ We will also create our own custom component for Tabs. Its done as follows.</p>
 </ol>
 <h4 id="Sample_screen">6.0.1. Sample screen</h4>
 <p><strong>Code ChatScreen/LucyChat.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { AppRegistry, View, StatusBar } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Button,
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Input,
-  InputGroup,
-  Item,
-  Tab,
-  Tabs,
-  Footer,
-  FooterTab,
-  Label
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Body, Content, Header, Left, Right, Icon, Title, Input, Item, Label, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">import</span> HomeScreen <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../HomeScreen&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LucyChat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   render() {
@@ -1889,9 +1824,7 @@ We will also create our own custom component for Tabs. Its done as follows.</p>
             &lt;Label&gt;Lucy Chat&lt;/Label&gt;
             &lt;Input /&gt;
           &lt;/Item&gt;
-          &lt;Button
-            rounded
-            danger
+          &lt;Button rounded danger
             style={{ marginTop: 20, alignSelf: &quot;center&quot; }}
             onPress={() =&gt; navigate(&quot;Profile&quot;)}&gt;
             &lt;Text&gt;Goto Lucy Profile&lt;/Text&gt;
@@ -1905,8 +1838,7 @@ We will also create our own custom component for Tabs. Its done as follows.</p>
 <h2 id="Profile">7. Profile</h2>
 <p>This screen includes example for StackNavigation.<br>
 <strong>Code ProfileScreen/index.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> Profile <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./Profile.js&quot;</span>;
 <span class="hljs-keyword">import</span> EditScreenOne <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./EditScreenOne.js&quot;</span>;
 <span class="hljs-keyword">import</span> EditScreenTwo <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./EditScreenTwo.js&quot;</span>;
@@ -1918,24 +1850,9 @@ We will also create our own custom component for Tabs. Its done as follows.</p>
 }));
 </code></pre><br></p>
 <p><strong>Code ProfileScreen/Profile.js</strong> <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { AppRegistry, Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Button,
-  H1
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Left, Body, Title, Card, CardItem, Content, Right, Icon, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">import</span> { StackNavigator } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-navigation&quot;</span>;
 <span class="hljs-keyword">import</span> EditScreenOne <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./EditScreenOne.js&quot;</span>;
 <span class="hljs-keyword">import</span> EditScreenTwo <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./EditScreenTwo.js&quot;</span>;
@@ -1956,10 +1873,7 @@ We will also create our own custom component for Tabs. Its done as follows.</p>
               &lt;/Right&gt;
             &lt;/CardItem&gt;
           &lt;/Card&gt;
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style={{ marginTop: 10 }}
             onPress={() =&gt; this.props.navigation.navigate(&quot;EditScreenOne&quot;)}&gt;
             &lt;Text&gt;Goto EditScreen One&lt;/Text&gt;
@@ -1992,24 +1906,9 @@ Profile.navigationOptions = ({ navigation }) =&gt; ({
 </ol>
 <p><strong>Code ProfileScreen/EditScreenOne.js</strong> <br>
 This screen is a simple part of StackNavigation, we have a header with a back button as shown below. <br></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { AppRegistry, Alert } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> {
-  Text,
-  Container,
-  Card,
-  CardItem,
-  Body,
-  Content,
-  Header,
-  Left,
-  Right,
-  Icon,
-  Title,
-  Button,
-  H1
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Card, CardItem, Body, Content, Header, Left, Right, Icon, Title, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EditScreenOne</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">static</span> navigationOptions = ({ navigation }) =&gt; ({
     header: (
@@ -2039,10 +1938,7 @@ This screen is a simple part of StackNavigation, we have a header with a back bu
               &lt;/Right&gt;
             &lt;/CardItem&gt;
           &lt;/Card&gt;
-          &lt;Button
-            full
-            rounded
-            primary
+          &lt;Button full rounded primary
             style={{ marginTop: 10 }}
             onPress={() =&gt; this.props.navigation.navigate(&quot;EditScreenTwo&quot;)}&gt;
             &lt;Text&gt;Goto EditScreenTwo&lt;/Text&gt;
@@ -2057,10 +1953,7 @@ This screen is a simple part of StackNavigation, we have a header with a back bu
 <p>Lastly we import our <strong>routes</strong> component from <strong>HomeScreen</strong> to our <strong>App.js</strong> file as shown. <br>
 <strong>Note</strong> how we have loaded fonts for <a href="https://nativebase.io/" target="_blank">NativeBase</a> since we have used expo here. <br></p>
 <p><strong>Code App.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> { View } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
-<span class="hljs-keyword">import</span> { Container, Content, Picker, Button, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> Expo <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;expo&quot;</span>;
 <span class="hljs-keyword">import</span> HomeScreen <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./src/HomeScreen/index.js&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AwesomeApp</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -2130,7 +2023,7 @@ All has been taken care of now. Build and run.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"React Navigation","level":"1.13.3.1","depth":3,"next":{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]},"previous":{"title":"Navigation","level":"1.13.3","depth":2,"path":"docs/examples/navigation/NavigationExample.md","ref":"docs/examples/navigation/NavigationExample.md","articles":[{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/navigation/StackNavigationExample.md","mtime":"2017-06-21T07:33:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T08:09:53.980Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React Navigation","level":"1.13.3.1","depth":3,"next":{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]},"previous":{"title":"Navigation","level":"1.13.3","depth":2,"path":"docs/examples/navigation/NavigationExample.md","ref":"docs/examples/navigation/NavigationExample.md","articles":[{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},{"title":"RNRF","level":"1.13.3.2","depth":3,"path":"docs/examples/navigation/RNRFBasicExample.md","ref":"docs/examples/navigation/RNRFBasicExample.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/navigation/StackNavigationExample.md","mtime":"2017-07-26T11:44:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-27T06:46:20.287Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

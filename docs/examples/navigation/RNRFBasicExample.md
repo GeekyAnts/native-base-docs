@@ -9,24 +9,18 @@ We are creating a 2-page application with a button on each page that takes us to
 
 ## Installation
 
-**Note: <br />
-If you encounter an issue with [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) during building your project, it might be due to issue with latest versions of [React Native](https://github.com/facebook/react-native). Check out [this issue](https://github.com/aksonov/react-native-router-flux/issues/1761). You might have to bump down the versions of [React Native](https://github.com/facebook/react-native) and React** <br />
+**Note:** If you encounter an issue with [React Native Router Flux](https://github.com/aksonov/react-native-router-flux) during building your project, it might be due to issue with latest versions of [React Native](https://github.com/facebook/react-native). Check out [this issue](https://github.com/aksonov/react-native-router-flux/issues/1761). You might have to bump down the versions of [React Native](https://github.com/facebook/react-native) and React <br />
 
-1. **SetUp React Native Project** <br /> SetUp a React Native project. Refer [this](https://facebook.github.io/react-native/docs/getting-started.html) for more information about setting up a React Native project. <br />
-2. **Installing Libraries** <br /> With a React Native project SetUp, We can now install all required Libraries as follows. <br />
-a. **React Native Router Flux** <br />
-Do this
-<code>
-npm install react-native-router-flux --save
-</code> <br />
-b. **NativeBase** <br />
-<code>
-npm install native-base --save
-</code> <br />
-**Configure all dependencies by running the following command** <br />
-<code>
-react-native link
-</code> <br />
+1. **SetUp React Native Project** <br /> SetUp a React Native project. Refer [this](https://facebook.github.io/react-native/docs/getting-started.html) for more information about setting up a React Native project.
+2. **Installing Libraries**
+With a React Native project SetUp, We can now install all required Libraries as follows.<br />
+a. **React Native Router Flux**<br />
+<pre><code>npm install react-native-router-flux --save</code></pre><br />
+b. **NativeBase**<br />
+<pre><code>npm install native-base --save</code></pre><br />
+c. **Configure dependencies**<br />
+<pre><code>react-native link</code></pre><br />
+
 By the end of Installation, your package.json file should look something like this.<br />
 
 ![RNRFExample PackageJson](https://docs.nativebase.io/docs/assets/RNRFPackage.png) <br />
@@ -45,7 +39,7 @@ The <code>key</code> prop is used to reference our component when we wish to swi
 3. We are going to be optimistic and assume that our Page components are made. Hence we import out page components and pass them to <code>Scene</code>. <br/>
 
 **Code** <br />
-<pre class="line-numbers">import React, { Component } from 'react';
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import PageOne from './pageOne';
 import PageTwo from './pageTwo';
@@ -60,45 +54,48 @@ export default class App extends Component {
       &lt;/Router>
     )
   }
-}</code></pre><br />
+}</code></pre>
 
 ### PageOne.js
 
 This page will simply have one <code>Button</code> to take us to next page. <br />
 We will fire an <code>Action</code> <code>onPress</code> of this <code>Button</code>. <br />
-**Note: We will use [RNRF](https://github.com/aksonov/react-native-router-flux) to navigate between screens, hence in the code below, we import <code>Actions</code> from [RNRF](https://github.com/aksonov/react-native-router-flux) and we have added <code>Actions.pageTwo()</code> as an <code>onPress</code> event on the button which will take us to the PageTwo Screen.**
+
+**Note:** We will use [RNRF](https://github.com/aksonov/react-native-router-flux) to navigate between screens, hence in the code below, we import <code>Actions</code> from [RNRF](https://github.com/aksonov/react-native-router-flux) and we have added <code>Actions.pageTwo()</code> as an <code>onPress</code> event on the button which will take us to the PageTwo Screen.
+
 The general syntax to navigate between screens in [RNRF](https://github.com/aksonov/react-native-router-flux) goes like :- <br />
-<code>Actions.ACTION_NAME(PARAMS)</code> <br />
-**We have already declared <code>ACTION_NAME</code> in the <code>key<code> prop of <code>Scene</code> component back in out <code>App.js</code> file** <br />
-**Code** <br />
-<pre class="line-numbers">import React, { Component } from 'react';
+<pre><code>Actions.ACTION_NAME(PARAMS)</code></pre>
+We have already declared <code>ACTION_NAME</code> in the <code>key<code> prop of <code>Scene</code> component back in out <code>App.js</code> file<br />
+
+**Code**
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 export default class pageOne extends Component {
   render(){
     return(
       &lt;Container>
-                &lt;Header>
-                    &lt;Body>
-                        &lt;Title>PageOne&lt;/Title>
-                    &lt;/Body>
-                &lt;/Header>
-                &lt;Content padder>
-                &lt;Card>
-                        &lt;CardItem>
-                          &lt;Body>
-                            &lt;Text>
-                                This is Page One, Press button to goto page two
-                            &lt;/Text>
-                          &lt;/Body>
-                        &lt;/CardItem>
-                        &lt;/Card>
-                        &lt;Button dark bordered style = alignSelf: 'center', margin: 30}}
-                                onPress= {() => {Actions.pageTwo(); }}>
-                             &lt;Text>Goto Page 2&lt;/Text>
-                         &lt;/Button>
-                 &lt;/Content>
-            &lt;/Container>
+        &lt;Header>
+          &lt;Body>
+            &lt;Title>PageOne&lt;/Title>
+          &lt;/Body>
+        &lt;/Header>
+        &lt;Content padder>
+          &lt;Card>
+            &lt;CardItem>
+              &lt;Body>
+                &lt;Text>
+                  This is Page One, Press button to goto page two
+                &lt;/Text>
+              &lt;/Body>
+            &lt;/CardItem>
+          &lt;/Card>
+          &lt;Button dark bordered style = alignSelf: 'center', margin: 30}}
+            onPress= {() => {Actions.pageTwo(); }}>
+            &lt;Text>Goto Page 2&lt;/Text>
+          &lt;/Button>
+         &lt;/Content>
+      &lt;/Container>
     );
   }
 }</code></pre><br />
@@ -109,46 +106,43 @@ We will fire an <code>Action</code> <code>onPress</code> of this <code>Button</c
 We will use <code>Actions.pop()</code> to return to previous page.
 
 **Code** <br />
-<pre class="line-numbers">import React, { Component } from 'react';
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 export default class pageTwo extends Component {
   render(){
     return(
       &lt;Container>
-                &lt;Header>
-                    &lt;Body>
-                        &lt;Title>PageTwo&lt;/Title>
-                    &lt;/Body>
-                &lt;/Header>
-                &lt;Content padder>
-                &lt;Card>
-                        &lt;CardItem>
-                          &lt;Body>
-                            &lt;Text>
-                                This is Page One, Press button to goto page two
-                            &lt;/Text>
-                          &lt;/Body>
-                        &lt;/CardItem>
-                        &lt;/Card>
-                &lt;Button dark bordered
-                        onPress= {() => {Actions.pop(); }}>
-                     &lt;Text>Goto Page 1&lt;/Text>
-                 &lt;/Button>
-                 &lt;/Content>
-            &lt;/Container>
+        &lt;Header>
+          &lt;Body>
+            &lt;Title>PageTwo&lt;/Title>
+          &lt;/Body>
+        &lt;/Header>
+        &lt;Content padder>
+          &lt;Card>
+            &lt;CardItem>
+              &lt;Body>
+                &lt;Text>
+                  This is Page One, Press button to goto page two
+                &lt;/Text>
+              &lt;/Body>
+            &lt;/CardItem>
+          &lt;/Card>
+          &lt;Button dark bordered
+            onPress= {() => {Actions.pop(); }}>
+            &lt;Text>Goto Page 1&lt;/Text>
+         &lt;/Button>
+        &lt;/Content>
+      &lt;/Container>
     );
   }
-}
-</code></pre><br />
+}</code></pre><br />
 
 ### What Next?
 Well, we are pretty much done. Next we simply import our App component in our <code>index.js</code> file. The file and folder structure will look something like this. <br />
 **Code** <br />
-<pre class="line-numbers">import React, { Component } from 'react';
-import {
-  AppRegistry,
-} from 'react-native';
+<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
 import App from './src/App.js';
 export default class RnrfExample extends Component {
   render() {

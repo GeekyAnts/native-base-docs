@@ -1582,41 +1582,30 @@
 <p>We aim to create a simple App that implements sticky headers as shown in the GIF above. <br></p>
 <h2 id="Installation">2. Installation</h2>
 <ol>
-<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br>
-<code>
-$ npm install -g create-react-native-app
-</code> <br>
-<code>
+<li><p><strong>Create React Native App</strong>: Use <a href="https://github.com/react-community/create-react-native-app" target="_blank">CRNA</a> tool to create an App like this <br></p>
+<pre><code>$ npm install -g create-react-native-app
 $ create-react-native-app my-app
-</code> <br>
-<code>
 $ cd my-app/
-</code> <br>
-<code>
-$ npm start
-</code> <br></p>
+$ npm start</code></pre>
 </li>
-<li><p><strong>NativeBase</strong> <br>
-<code>
-npm install native-base --save
-</code> <br>
-<strong>Important: additional steps are required to import fonts from native base. Refer to <a href="GetStarted.md#Setup_with_CRNA">this</a></strong>
-<strong>Configure all dependencies by running the following command</strong> <br>
-<code>
-react-native link
-</code> <br></p>
+<li><p><strong>NativeBase</strong> <br></p>
+<pre><code>npm install native-base --save</code></pre>
+</li>
+<li><p><strong>Configure dependencies</strong><br></p>
+<pre><code>react-native link</code></pre>
+
 </li>
 </ol>
+<p><strong>Note:</strong> additional steps are required to import fonts from native base. Refer to <a href="GetStarted.md#Setup_with_CRNA">this</a></p>
 <h2 id="Setting_Things_Up">3. Setting Things Up</h2>
 <p>With all required Libraries installed, we can start with some real coding. In the root of your project create a folder <code>src</code>. Inside this folder we create a file by the name of <code>StickyHeader.js</code>. <br>
-<strong>Note: You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code></strong> <br>
+<strong>Note:</strong> You might have some problems setting up the project due to version conflicts, make sure you use same versions as mentioned below in the <code>package.json</code> <br>
 By the end of all this your project structure and <code>package.json</code> file should look something like this. <br>
 <img src="https://docs.nativebase.io/docs/assets/FlatListStickyPackage.png" alt="StickyHeader Package"> <br></p>
 <h2 id="Making_our_List_Component">4. Making our List Component</h2>
 <p>In your <code>StickyHeader.js</code> inside <code>src</code> folder add the following code. <br>
 <strong>Code src/StickyHeader.js</strong></p>
-<p><pre class="line-numbers"><code class="language-jsx">
-<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { FlatList } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-native&quot;</span>;
 <span class="hljs-keyword">import</span> { Text, ListItem, Left, Body, Icon, Right, Title } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
@@ -1624,36 +1613,36 @@ By the end of all this your project structure and <code>package.json</code> file
     <span class="hljs-keyword">super</span>();
     <span class="hljs-keyword">this</span>.state = {
       data: [
-      { name: <span class="hljs-string">&quot;Movies&quot;</span>, header: <span class="hljs-literal">true</span> },
-      { name: <span class="hljs-string">&quot;Interstellar&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Dark Knight&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Pop&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Pulp Fiction&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Burning Train&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Music&quot;</span>, header: <span class="hljs-literal">true</span> },
-      { name: <span class="hljs-string">&quot;Adams&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Nirvana&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Amrit Maan&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Oye Hoye&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Eminem&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Places&quot;</span>, header: <span class="hljs-literal">true</span> },
-      { name: <span class="hljs-string">&quot;Jordan&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Punjab&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Ludhiana&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Jamshedpur&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;India&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;People&quot;</span>, header: <span class="hljs-literal">true</span> },
-      { name: <span class="hljs-string">&quot;Jazzy&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Appie&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Baby&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Sunil&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Arrow&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;Things&quot;</span>, header: <span class="hljs-literal">true</span> },
-      { name: <span class="hljs-string">&quot;table&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;chair&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;fan&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;cup&quot;</span>, header: <span class="hljs-literal">false</span> },
-      { name: <span class="hljs-string">&quot;cube&quot;</span>, header: <span class="hljs-literal">false</span> }
+        { name: <span class="hljs-string">&quot;Movies&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Interstellar&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Dark Knight&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Pop&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Pulp Fiction&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Burning Train&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Music&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Adams&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Nirvana&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Amrit Maan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Oye Hoye&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Eminem&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Places&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Jordan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Punjab&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Ludhiana&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Jamshedpur&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;India&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;People&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;Jazzy&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Appie&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Baby&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Sunil&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Arrow&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;Things&quot;</span>, header: <span class="hljs-literal">true</span> },
+        { name: <span class="hljs-string">&quot;table&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;chair&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;fan&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;cup&quot;</span>, header: <span class="hljs-literal">false</span> },
+        { name: <span class="hljs-string">&quot;cube&quot;</span>, header: <span class="hljs-literal">false</span> }
       ],
       stickyHeaderIndices: []
     };
@@ -1703,10 +1692,10 @@ By the end of all this your project structure and <code>package.json</code> file
       /&gt;
     );
   }
-}
-</code></pre><br></p>
+}</code></pre>
+
 <p><strong>Explained</strong> <br></p>
-<ol>
+<ul>
 <li>We import our <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">FlatList</a> component from <a href="https://facebook.github.io/react-native/" target="_blank">ReactNative</a>. Also we take care of a few other imports from <a href="https://nativebase.io/" target="_blank">NativeBase</a> as we will require them further.</li>
 <li>Next we are <strong>hard-coding</strong> our app data in our App <strong>state</strong>. Our data here just has a name and a boolean variable for header.</li>
 <li>Next we fetch the <strong>indices</strong> of all the headers we would like to <strong>stick</strong> in our List. Notice how we have done that in the <strong>componentWillMount</strong> method.</li>
@@ -1714,7 +1703,7 @@ By the end of all this your project structure and <code>package.json</code> file
 <li><strong>keyExtractor</strong> prop is required to properly differentiate between data items using a unique <strong>key</strong>. We have used the names here.</li>
 <li><strong>stickyHeaderIndices</strong> will take an array of all the indices we want to stick. We pass the array we previously populated in <strong>3</strong>.</li>
 <li>Lastly, in the <strong>renderItem</strong> method we include a check for header items and children items. Accordingly we show different styles for each.</li>
-</ol>
+</ul>
 <h2 id="Finishing_Up">5. Finishing Up</h2>
 <p>We have successfully made our List component. Go ahead and include it in our <strong>App.js</strong> file. Build and run.</p>
 <div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_Full_Code_here">Find Full Code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Setting_Things_Up">3. Setting Things Up</a></li><li><a href="#Making_our_List_Component">4. Making our List Component</a></li><li><a href="#Finishing_Up">5. Finishing Up</a></li></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
@@ -1756,7 +1745,7 @@ By the end of all this your project structure and <code>package.json</code> file
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FlatList + Sticky Headers","level":"1.13.7","depth":2,"previous":{"title":"Sticky Headers","level":"1.13.6","depth":2,"path":"docs/examples/StickyHeaderExample.md","ref":"docs/examples/StickyHeaderExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/FlatListExample.md","mtime":"2017-06-21T07:33:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T08:09:53.980Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FlatList + Sticky Headers","level":"1.13.7","depth":2,"previous":{"title":"Sticky Headers","level":"1.13.6","depth":2,"path":"docs/examples/StickyHeaderExample.md","ref":"docs/examples/StickyHeaderExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/FlatListExample.md","mtime":"2017-07-27T06:42:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-27T06:46:20.287Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

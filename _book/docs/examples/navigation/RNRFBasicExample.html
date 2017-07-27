@@ -1582,26 +1582,19 @@
 <h2 id="Aim">1. Aim</h2>
 <p>We are creating a 2-page application with a button on each page that takes us to the other page <code>onPress</code>. <br></p>
 <h2 id="Installation">2. Installation</h2>
-<p><strong>Note: <br>
-If you encounter an issue with <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> during building your project, it might be due to issue with latest versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>. Check out <a href="https://github.com/aksonov/react-native-router-flux/issues/1761" target="_blank">this issue</a>. You might have to bump down the versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> and React</strong> <br></p>
+<p><strong>Note:</strong> If you encounter an issue with <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">React Native Router Flux</a> during building your project, it might be due to issue with latest versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a>. Check out <a href="https://github.com/aksonov/react-native-router-flux/issues/1761" target="_blank">this issue</a>. You might have to bump down the versions of <a href="https://github.com/facebook/react-native" target="_blank">React Native</a> and React <br></p>
 <ol>
-<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project. <br></li>
-<li><strong>Installing Libraries</strong> <br> With a React Native project SetUp, We can now install all required Libraries as follows. <br>
-a. <strong>React Native Router Flux</strong> <br>
-Do this
-<code>
-npm install react-native-router-flux --save
-</code> <br>
-b. <strong>NativeBase</strong> <br>
-<code>
-npm install native-base --save
-</code> <br>
-<strong>Configure all dependencies by running the following command</strong> <br>
-<code>
-react-native link
-</code> <br>
-By the end of Installation, your package.json file should look something like this.<br></li>
+<li><strong>SetUp React Native Project</strong> <br> SetUp a React Native project. Refer <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">this</a> for more information about setting up a React Native project.</li>
+<li><strong>Installing Libraries</strong>
+With a React Native project SetUp, We can now install all required Libraries as follows.<br>
+a. <strong>React Native Router Flux</strong><br>
+<pre><code>npm install react-native-router-flux --save</code></pre><br>
+b. <strong>NativeBase</strong><br>
+<pre><code>npm install native-base --save</code></pre><br>
+c. <strong>Configure dependencies</strong><br>
+<pre><code>react-native link</code></pre><br></li>
 </ol>
+<p>By the end of Installation, your package.json file should look something like this.<br></p>
 <p><img src="https://docs.nativebase.io/docs/assets/RNRFPackage.png" alt="RNRFExample PackageJson"> <br></p>
 <h2 id="Lets_Play">3. Lets Play</h2>
 <p>With our basic project setup we can now start building our App. <br>
@@ -1616,13 +1609,13 @@ The <code>key</code> prop is used to reference our component when we wish to swi
 <li>We are going to be optimistic and assume that our Page components are made. Hence we import out page components and pass them to <code>Scene</code>. <br></li>
 </ol>
 <p><strong>Code</strong> <br></p>
-<p><pre class="line-numbers">import React, { Component } from &apos;react&apos;;
-import { Router, Scene } from &apos;react-native-router-flux&apos;;
-import PageOne from &apos;./pageOne&apos;;
-import PageTwo from &apos;./pageTwo&apos;;
-export default class App extends Component {
+<pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Router, Scene } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
+<span class="hljs-keyword">import</span> PageOne <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./pageOne&apos;</span>;
+<span class="hljs-keyword">import</span> PageTwo <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./pageTwo&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
-    return (
+    <span class="hljs-keyword">return</span> (
       &lt;Router hideNavBar= &quot;true&quot;&gt;
         &lt;Scene key=&quot;root&quot;&gt;
           &lt;Scene key=&quot;pageOne&quot; component={PageOne} title=&quot;PageOne&quot; initial={true} /&gt;
@@ -1631,100 +1624,98 @@ export default class App extends Component {
       &lt;/Router&gt;
     )
   }
-}</pre><br></p>
+}</code></pre>
+
 <h3 id="PageOne_js">3.2. PageOne.js</h3>
 <p>This page will simply have one <code>Button</code> to take us to next page. <br>
-We will fire an <code>Action</code> <code>onPress</code> of this <code>Button</code>. <br>
-<strong>Note: We will use <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> to navigate between screens, hence in the code below, we import <code>Actions</code> from <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> and we have added <code>Actions.pageTwo()</code> as an <code>onPress</code> event on the button which will take us to the PageTwo Screen.</strong>
-The general syntax to navigate between screens in <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> goes like :- <br>
-<code>Actions.ACTION_NAME(PARAMS)</code> <br>
-<strong>We have already declared <code>ACTION_NAME</code> in the <code>key prop of Scene component back in out App.js file</code></strong> <br>
-<strong>Code</strong> <br></p>
-<p><pre class="line-numbers">import React, { Component } from &apos;react&apos;;
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from &apos;native-base&apos;;
-import { Actions } from &apos;react-native-router-flux&apos;;
-export default class pageOne extends Component {
+We will fire an <code>Action</code> <code>onPress</code> of this <code>Button</code>. <br></p>
+<p><strong>Note:</strong> We will use <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> to navigate between screens, hence in the code below, we import <code>Actions</code> from <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> and we have added <code>Actions.pageTwo()</code> as an <code>onPress</code> event on the button which will take us to the PageTwo Screen.</p>
+<p>The general syntax to navigate between screens in <a href="https://github.com/aksonov/react-native-router-flux" target="_blank">RNRF</a> goes like :- <br></p>
+<p><pre><code>Actions.ACTION_NAME(PARAMS)</code></pre>
+We have already declared <code>ACTION_NAME</code> in the <code>key prop of Scene component back in out App.js file</code></p>
+<p><strong>Code</strong></p>
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">pageOne</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render(){
-    return(
-      &lt;Container&gt;
-                &lt;Header&gt;
-                    &lt;Body&gt;
-                        &lt;Title&gt;PageOne&lt;/Title&gt;
-                    &lt;/Body&gt;
-                &lt;/Header&gt;
-                &lt;Content padder&gt;
-                &lt;Card&gt;
-                        &lt;CardItem&gt;
-                          &lt;Body&gt;
-                            &lt;Text&gt;
-                                This is Page One, Press button to goto page two
-                            &lt;/Text&gt;
-                          &lt;/Body&gt;
-                        &lt;/CardItem&gt;
-                        &lt;/Card&gt;
-                        &lt;Button dark bordered style = alignSelf: &apos;center&apos;, margin: 30}}
-                                onPress= {() =&gt; {Actions.pageTwo(); }}&gt;
-                             &lt;Text&gt;Goto Page 2&lt;/Text&gt;
-                         &lt;/Button&gt;
-                 &lt;/Content&gt;
-            &lt;/Container&gt;
+    <span class="hljs-keyword">return</span>(
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>PageOne<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
+                  This is Page One, Press button to goto page two
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">bordered</span> <span class="hljs-attr">style</span> = <span class="hljs-attr">alignSelf:</span> &apos;<span class="hljs-attr">center</span>&apos;, <span class="hljs-attr">margin:</span> <span class="hljs-attr">30</span>}}
+            <span class="hljs-attr">onPress</span>= {() =&gt;</span> {Actions.pageTwo(); }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Goto Page 2<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
     );
   }
-}</pre><br></p>
+}</code></pre><br></p>
 <h3 id="PageTwo_js">3.3. PageTwo.js</h3>
 <p>This page will simply have one <code>Button</code> to take us to the previous page. <br>
 We will fire an <code>Action</code> <code>onPress</code> of this <code>Button</code>. <br>
 We will use <code>Actions.pop()</code> to return to previous page.</p>
 <p><strong>Code</strong> <br></p>
-<p><pre class="line-numbers">import React, { Component } from &apos;react&apos;;
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from &apos;native-base&apos;;
-import { Actions } from &apos;react-native-router-flux&apos;;
-export default class pageTwo extends Component {
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Actions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native-router-flux&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">pageTwo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render(){
-    return(
-      &lt;Container&gt;
-                &lt;Header&gt;
-                    &lt;Body&gt;
-                        &lt;Title&gt;PageTwo&lt;/Title&gt;
-                    &lt;/Body&gt;
-                &lt;/Header&gt;
-                &lt;Content padder&gt;
-                &lt;Card&gt;
-                        &lt;CardItem&gt;
-                          &lt;Body&gt;
-                            &lt;Text&gt;
-                                This is Page One, Press button to goto page two
-                            &lt;/Text&gt;
-                          &lt;/Body&gt;
-                        &lt;/CardItem&gt;
-                        &lt;/Card&gt;
-                &lt;Button dark bordered
-                        onPress= {() =&gt; {Actions.pop(); }}&gt;
-                     &lt;Text&gt;Goto Page 1&lt;/Text&gt;
-                 &lt;/Button&gt;
-                 &lt;/Content&gt;
-            &lt;/Container&gt;
+    <span class="hljs-keyword">return</span>(
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Title</span>&gt;</span>PageTwo<span class="hljs-tag">&lt;/<span class="hljs-name">Title</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">padder</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">CardItem</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">Body</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>
+                  This is Page One, Press button to goto page two
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Body</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">CardItem</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">dark</span> <span class="hljs-attr">bordered</span>
+            <span class="hljs-attr">onPress</span>= {() =&gt;</span> {Actions.pop(); }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>Goto Page 1<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
     );
   }
-}
-</pre><br></p>
+}</code></pre><br></p>
 <h3 id="What_Next?">3.4. What Next?</h3>
 <p>Well, we are pretty much done. Next we simply import our App component in our <code>index.js</code> file. The file and folder structure will look something like this. <br>
 <strong>Code</strong> <br></p>
-<p><pre class="line-numbers">import React, { Component } from &apos;react&apos;;
-import {
-  AppRegistry,
-} from &apos;react-native&apos;;
-import App from &apos;./src/App.js&apos;;
-export default class RnrfExample extends Component {
+<p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { AppRegistry } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./src/App.js&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RnrfExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
-    return (
-      &lt;App /&gt;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
     );
   }
 }
 AppRegistry.registerComponent(&apos;RnrfExample&apos;, () =&gt; RnrfExample);
-</pre><br></p>
+</span></code></pre><br></p>
 <p><img src="https://docs.nativebase.io/docs/assets/RNRFOverall.png" alt="RNRFExample Overall"> <br></p>
 <div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Find_full_code_here">Find full code here</a></p><li><a href="#Aim">1. Aim</a></li><li><a href="#Installation">2. Installation</a></li><li><a href="#Lets_Play">3. Lets Play</a></li><ul><li><a href="#App_js">3.1. App.js</a></li><li><a href="#PageOne_js">3.2. PageOne.js</a></li><li><a href="#PageTwo_js">3.3. PageTwo.js</a></li><li><a href="#What_Next?">3.4. What Next?</a></li></ul></ul></div><a href="#Aim" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
@@ -1769,7 +1760,7 @@ AppRegistry.registerComponent(&apos;RnrfExample&apos;, () =&gt; RnrfExample);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"RNRF","level":"1.13.3.2","depth":3,"next":{"title":"Full App","level":"1.13.4","depth":2,"path":"docs/examples/GitAppExample.md","ref":"docs/examples/GitAppExample.md","articles":[]},"previous":{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/navigation/RNRFBasicExample.md","mtime":"2017-06-21T07:33:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-26T08:09:53.980Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"RNRF","level":"1.13.3.2","depth":3,"next":{"title":"Full App","level":"1.13.4","depth":2,"path":"docs/examples/GitAppExample.md","ref":"docs/examples/GitAppExample.md","articles":[]},"previous":{"title":"React Navigation","level":"1.13.3.1","depth":3,"path":"docs/examples/navigation/StackNavigationExample.md","ref":"docs/examples/navigation/StackNavigationExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/examples/navigation/RNRFBasicExample.md","mtime":"2017-07-26T12:18:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-27T06:46:20.287Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,4 +1,4 @@
-##t heme-font-headref
+##theme-font-headref
 ## Theme Font
 
 Having different font types in your [React Native](https://facebook.github.io/react-native/) apps is not tough any more.<br />
