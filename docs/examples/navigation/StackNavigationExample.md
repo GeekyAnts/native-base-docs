@@ -89,8 +89,8 @@ export default class HomeScreen extends React.Component {
 </code></pre><br />
 
 **Explained**
-1. Here we have simply added some buttons, each to <code>openDrawer</code> or navigate to other components.
-2. The **navigation** object is available as a prop to us as we declare this component inside a *DrawerNavigator* in index.js. <br />
+- Here we have simply added some buttons, each to <code>openDrawer</code> or navigate to other components.
+- The **navigation** object is available as a prop to us as we declare this component inside a *DrawerNavigator* in index.js. <br />
 
 **Code HomeScreen/index.js** <br />
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
@@ -113,9 +113,9 @@ export default HomeScreenRouter;
 </code></pre><br />
 
 **Explained**
-1. Here we have simply imported all the screens we will be needing. We will be building these screens in the comming sections. These screens in fact are **router components** which themselves have multiple screens.
-2. We pass the screens to the **DrawerNavigator** as shown above.
-3. Note how we have used a custom [NativeBase](https://nativebase.io/) components using **customComponent** prop and we pass our custom *drawer* component.<br />
+- Here we have simply imported all the screens we will be needing. We will be building these screens in the comming sections. These screens in fact are **router components** which themselves have multiple screens.
+- We pass the screens to the **DrawerNavigator** as shown above.
+- Note how we have used a custom [NativeBase](https://nativebase.io/) components using **customComponent** prop and we pass our custom *drawer* component.<br />
 
 ## SideBar
 
@@ -223,10 +223,10 @@ export default (MainScreenNavigator = TabNavigator(
 </code></pre><br />
 
 **Explained** <br />
-1. We have simply imported three screens to work as Tabs as shown above.
-2. We pass these  screens to **TabNavigator** component.
-3. Notice how we pass our Tab component through **tabBarComponent** prop.
-4. Navigation is available as props. <br />
+- We have simply imported three screens to work as Tabs as shown above.
+- We pass these  screens to **TabNavigator** component.
+- Notice how we pass our Tab component through **tabBarComponent** prop.
+- Navigation is available as props. <br />
 
 #### Sample screen
 
@@ -337,8 +337,8 @@ Profile.navigationOptions = ({ navigation }) => ({
 </code></pre><br />
 
 **Explained** <br />
-1. We have Navigation as a **StackNavigation** prop here. In the UI, we have different buttons to navigate to screens on stack. Notice how we imported screens above.
-2. Notice how we passed the **DrawerNavigator** prop inside our Profile screen header above.
+- We have Navigation as a **StackNavigation** prop here. In the UI, we have different buttons to navigate to screens on stack. Notice how we imported screens above.
+- Notice how we passed the **DrawerNavigator** prop inside our Profile screen header above.
 
 **Code ProfileScreen/EditScreenOne.js** <br />
 This screen is a simple part of StackNavigation, we have a header with a back button as shown below. <br />

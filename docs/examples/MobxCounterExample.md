@@ -63,9 +63,9 @@ export default new CounterStore();
 </code></pre>
 
 **Explained**: <br />
-1. We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.
-2. We create two methods <code>increment()</code> and <code>decrement()</code> that will be called from out component to update the store.
-3. Lastly, we export a new object of our <code>store</code> class.
+- We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.
+- We create two methods <code>increment()</code> and <code>decrement()</code> that will be called from out component to update the store.
+- Lastly, we export a new object of our <code>store</code> class.
 
 ## Mobx Component
 We create a <code>counter</code> Component and import it in our main App file.<br />
@@ -124,10 +124,10 @@ export default class Counter extends Component{
 
 **Explained** <br />
 
-1. We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br />
-2. <code>async componentWillMount()</code> method is used to load fonts as described [here](./GetStarted.md#Setup_with_CRNA). <br />
-3. <code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile,we display <code>Expo.AppLoading</code> screen. <br />
-4. We import our <code>counterStore</code> and display the observable store value <code>counter</code> in a <code>Card</code>. Buttons will fire respective functions from the Store Class.
+- We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br />
+- <code>async componentWillMount()</code> method is used to load fonts as described [here](./GetStarted.md#Setup_with_CRNA). <br />
+- <code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile,we display <code>Expo.AppLoading</code> screen. <br />
+- We import our <code>counterStore</code> and display the observable store value <code>counter</code> in a <code>Card</code>. Buttons will fire respective functions from the Store Class.
 
 ## Finishing Up
 

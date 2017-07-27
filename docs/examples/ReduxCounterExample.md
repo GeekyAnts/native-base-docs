@@ -105,7 +105,7 @@ We just need one component here. A counter component.
 ### Important stuff
 
 In order to be able to use Reducers and actions, we need to use two important functions. Both these functions have extremely simple applications (although the names sound scary enough).<br />
-1. <code>mapStateToProps</code> => This function, simply takes your reducer data, that is required, and converts it into a usable [Prop](https://facebook.github.io/react-native/docs/props.html). Now we can use the data as a prop. example <code>this.props.data</code>. <br />
+- <code>mapStateToProps</code> => This function, simply takes your reducer data, that is required, and converts it into a usable [Prop](https://facebook.github.io/react-native/docs/props.html). Now we can use the data as a prop. example <code>this.props.data</code>. <br />
 
 **General Syntax of mapStateToProps**
 
@@ -117,11 +117,10 @@ In order to be able to use Reducers and actions, we need to use two important fu
 
 **Note:** Remember how we allotted names to Reducers in the <code>combineReducers</code> function. We use the same name to call respective Reducer.
 
- 2. <code>matchDispatchToProps</code> => This function simply converts our [Actions](http://redux.js.org/docs/basics/Actions.html) into usable props. <br />
+- <code>matchDispatchToProps</code> => This function simply converts our [Actions](http://redux.js.org/docs/basics/Actions.html) into usable props. <br />
  **General Syntax of matchDispatchToProps** <br />
 
- <pre class="line-numbers"><code class="language-jsx"><code class="language-jsx">
- function matchDispatchToProps(dispatch){
+<pre class="line-numbers"><code class="language-jsx">function matchDispatchToProps(dispatch){
   return bindActionCreators({action1: importedAction1, action2: importedAction2}, dispatch)
 }
  </code></pre>
