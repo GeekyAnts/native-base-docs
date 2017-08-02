@@ -76,7 +76,7 @@ export default class ToastExample extends Component &lcub;
             <tr>
                 <td>position</td>
                 <td> bottom </td>
-                <td> top, bottom, center </td>
+                <td> top, bottom </td>
                 <td>Sets position for the toast.</td>
             </tr>
             <tr>
