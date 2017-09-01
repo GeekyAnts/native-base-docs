@@ -78,16 +78,10 @@ export default class App extends React.Component {
     };
   }
   componentWillMount() {
-    var arr = [];
-    this.state.data.map(obj => {
-      if (obj.header) {
-        arr.push(this.state.data.indexOf(obj));
-      }
-    });
-    arr.push(0);
-    this.setState({
-      stickyHeaderIndices: arr
-    });
+    const stickyHeaderIndices = this.state.data
+      .map(({ header }, i) => (header ? i : false))
+      .filter((i) => i !== false);
+    this.setState({ stickyHeaderIndices });
   }
   renderItem = ({ item }) => {
     if (item.header) {
