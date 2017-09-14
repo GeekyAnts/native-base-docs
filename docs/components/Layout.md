@@ -20,12 +20,10 @@ export default class LayoutExample extends Component {
     return (
       &lt;Container>
         &lt;Header />
-        &lt;Content>
-          &lt;Grid>
-            &lt;Col style=&#123;{ backgroundColor: '#635DB7', height: 200 }}>&lt;/Col>
-            &lt;Col style=&#123;{ backgroundColor: '#00CE9F', height: 200 }}>&lt;/Col>
-          &lt;/Grid>
-        &lt;/Content>
+        &lt;Grid>
+          &lt;Col style=&#123;{ backgroundColor: '#635DB7', height: 200 }}>&lt;/Col>
+          &lt;Col style=&#123;{ backgroundColor: '#00CE9F', height: 200 }}>&lt;/Col>
+        &lt;/Grid>
       &lt;/Container>
     );
   }
@@ -33,5 +31,5 @@ export default class LayoutExample extends Component {
 
 
 
-**NOTE:** <code>&lt;Content></code> component uses <code>&lt;ScrollView></code>. This is required by <code>&lt;Col></code> and <code>&lt;Row></code> elements of Easy-Grid to have a defined height.<br />
+**NOTE:** Do not use inside a <code>&lt;Content></code> component as it uses <code>&lt;ScrollView></code>. This is required by <code>&lt;Col></code> and <code>&lt;Row></code> elements of Easy-Grid to have a defined height.<br />
 Replacing Component for Grid, Col, Row: React Native [View](https://facebook.github.io/react-native/docs/view.html)
