@@ -1,11 +1,6 @@
 ## theaming-nb-headref
 ## Theming NativeBase Apps
 
-Customizing [NativeBase](https://nativebase.io/) will be a cakewalk for you. That is due to the fact, [NativeBase](https://nativebase.io/) has categorized its screens into different sections. It provides a separate file inclusive of color schemes for different sections. <br />
-
-**Note:** NativeBase is built on top of React Native.
-Hence with any component you can pass the style property which will be merged to the default style of that component.
-
 ##### Steps to be followed to customize NativeBase:
 * Run this command from your terminal after installing native-base.
 
