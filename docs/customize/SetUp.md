@@ -1,4 +1,4 @@
-## theaming-nb-headref
+## theming-nb-headref
 ## Theming NativeBase Apps
 
 Customizing [NativeBase](https://nativebase.io/) will be a cakewalk for you. That is due to the fact, [NativeBase](https://nativebase.io/) has categorized its screens into different sections. It provides a separate file inclusive of color schemes for different sections. <br />

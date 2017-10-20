@@ -82,7 +82,7 @@
 * [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 
 * [Customize](Customize.md#Customize)
-  * [Set Up](Customize.md#theaming-nb-headref)
+  * [Set Up](Customize.md#theming-nb-headref)
   * [Theme Your Custom Components](Customize.md#custom-component-headref)
   * [Theme Color](Customize.md#theme-color-headref)
   * [Theme Font](Customize.md#theme-font-headref)
