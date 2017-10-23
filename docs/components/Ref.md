@@ -18,7 +18,7 @@ export default class RefExample extends Component {
       &lt;Container>
         &lt;Header />
         &lt;Content>
-          &lt;Button ref={ (c) => this._button = c }>
+          &lt;Button getRef={ (c) => this._button = c }>
             Click Me
           &lt;/Button>
         &lt;/Content>
