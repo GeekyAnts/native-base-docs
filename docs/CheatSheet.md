@@ -1473,7 +1473,7 @@
                             <li>duration</li>
                         </ul>
                     </td>
-                    <td>milliseconds after which Toast disappers</td>
+                    <td>milliseconds after which Toast disappears</td>
                     <td></td>
                 </tr>
 
