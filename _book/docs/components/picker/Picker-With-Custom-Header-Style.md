@@ -44,11 +44,11 @@ export default class PickerCustomHeaderStyleExample extends Component {
               selectedValue={this.state.selected5}
               onValueChange={this.onValueChange5.bind(this)}
             >
-              &lt;Item label="Wallet" value="key0" />
-              &lt;Item label="ATM Card" value="key1" />
-              &lt;Item label="Debit Card" value="key2" />
-              &lt;Item label="Credit Card" value="key3" />
-              &lt;Item label="Net Banking" value="key4" />
+              &lt;Picker.Item label="Wallet" value="key0" />
+              &lt;Picker.Item label="ATM Card" value="key1" />
+              &lt;Picker.Item label="Debit Card" value="key2" />
+              &lt;Picker.Item label="Credit Card" value="key3" />
+              &lt;Picker.Item label="Net Banking" value="key4" />
             &lt;/Picker>
           &lt;/Form>
         &lt;/Content>

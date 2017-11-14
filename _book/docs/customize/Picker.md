@@ -49,10 +49,10 @@ export default class ThemePickerExample extends Component {
                         mode='dropdown'
                         selectedValue={this.state.selected1}
                         onValueChange={this.onValueChange.bind(this)}>
-                        &lt;Item label='Cats' value='key0' />
-                        &lt;Item label='Dogs' value='key1' />
-                        &lt;Item label='Birds' value='key2' />
-                        &lt;Item label='Elephants' value='key3' />
+                        &lt;Picker.Item label='Cats' value='key0' />
+                        &lt;Picker.Item label='Dogs' value='key1' />
+                        &lt;Picker.Item label='Birds' value='key2' />
+                        &lt;Picker.Item label='Elephants' value='key3' />
                    &lt;/Picker>
                 &lt;/Content>
             &lt;/Container>
