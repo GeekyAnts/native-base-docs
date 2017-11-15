@@ -28,7 +28,7 @@ By the end of Installation, your package.json file should look something like th
 ![Redux-Form package](https://docs.nativebase.io/docs/assets/ReduxFormPackage.png) <br />
 
 ## SetUp
-Create a **src** folder at root of your project. Create folders **compnoents** **reducers** and one file **Application.js** for our App. <br />
+Create a **src** folder at root of your project. Create folders **components** **reducers** and one file **Application.js** for our App. <br />
 
 ### Reducers
 Create a file **index.js** inside reducers folder. Paste the following code. <br />
