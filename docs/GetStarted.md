@@ -52,7 +52,7 @@ NativeBase uses some custom fonts that can be loaded using **loadAsync** functio
 async componentWillMount() {
   await Expo.Font.loadAsync({
     'Roboto': require('native-base/Fonts/Roboto.ttf'),
-    'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+    'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf')
   });
 }
 ```
