@@ -45,7 +45,7 @@ The folder structure should look something like this. <br />
 Now that we have setup our basic project, Let's get started with some real coding and getting things to work. <br />
 
 ## Setting Up Redux
-If you are unfamiliar with Redux and it concepts, Go through this [Documentation](http://redux.js.org/) and use it as a reference.
+If you are unfamiliar with Redux and its concepts, Go through this [Documentation](http://redux.js.org/) and use it as a reference.
 
 #### Redux Store Setup
 
