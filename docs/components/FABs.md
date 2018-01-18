@@ -13,6 +13,7 @@ Replacing Component: React Native [Animated](http://facebook.github.io/react-nat
 import { Container, Header, View, Button, Icon, Fab } from 'native-base';
 export default class FABExample extends Component {
   constructor() {
+    super();
     this.state = {
       active: 'true'
     };
@@ -110,6 +111,7 @@ export default class FABExample extends Component {
 import { Container, Header, View, Fab, Button, Icon } from 'native-base';
 ​export default class FABMultipleExample extends Component {
   constructor() {
+    super();
     this.state = {
       active: 'true'
     };
