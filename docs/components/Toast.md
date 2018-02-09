@@ -28,9 +28,6 @@ import { Container, Header, Content, Toast, Button, Text, Icon } from 'native-ba
 export default class ToastExample extends Component &lcub;
   constructor(props) {
     super(props);
-    this.state = &lcub;
-      showToast: false
-    }
   }
   render() &lcub;
     return (
