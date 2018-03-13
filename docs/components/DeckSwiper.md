@@ -152,6 +152,7 @@ export default class DeckSwiperAdvancedExample extends Component {
               &lt;View style=&#123;{ alignSelf: "center" }}>
                 &lt;Text>Over&lt;/Text>
               &lt;/View>
+            }
             renderItem={item =>
               &lt;Card style=&#123;{ elevation: 3 }}>
                 &lt;CardItem>
