@@ -101,6 +101,12 @@ export default class PickerExample extends Component {
                 <td>Pass placeholder for Picker component.</td>
             </tr>
             <tr>
+                <td>placeholderStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Custom style for placeholder text in iOS</td>
+            </tr>
+            <tr>
                 <td>iosHeader</td>
                 <td> - </td>
                 <td> - </td>
