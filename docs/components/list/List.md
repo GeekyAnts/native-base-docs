@@ -144,5 +144,13 @@ Replacing Component
                     Callback which takes a chunk of data from dataArray and returns as a component.
                 </td>
             </tr>
+            <tr>
+                <td>enableEmptySections</td>
+                <td>-</td>
+                <td>boolean</td>
+                <td>
+                    Flag indicating whether empty section headers should be rendered
+                </td>
+            </tr>
         </tbody>
     </table><br />
