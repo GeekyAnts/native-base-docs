@@ -91,7 +91,7 @@ export default class IconExample extends Component {
             <tr>
                 <td>type</td>
                 <td>Ionicons</td>
-                <td>Ionicons,<br/>Entypo,<br/>FontAwesome,<br/>Foundation,<br/>MaterialIcons,<br/>MaterialCommunityIcons,<br/>Octicons,<br/>Zocial,<br/>SimpleLineIcons</td>
+                <td>Ionicons,<br/>Entypo,<br/>EvilIcons,<br/>FontAwesome,<br/>Foundation,<br/>MaterialIcons,<br/>MaterialCommunityIcons,<br/>Octicons,<br/>SimpleLineIcons,<br/>Zocial</td>
                 <td>Specify an icon type
                 </td>
             </tr>
