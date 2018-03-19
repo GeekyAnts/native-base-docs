@@ -141,5 +141,13 @@ import { Container, Header, Content, SwipeRow, View, Text, Icon, Button } from '
                     Callback function which triggers when a swipe row is animating open/close
                 </td>
             </tr>
+            <tr>
+                <td>style</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style body
+                </td>
+            </tr>
         </tbody>
     </table><br />
