@@ -64,6 +64,7 @@ export default class ButtonExample extends Component {
 * NativeBase gives you privilege to customize the props of this component.<br />
   *Example*: To have custom style for button, include them in <code>style</code> prop of button.
 * Intakes user-defined styles.
+* You can change the default button text case(in Android) from variables file after [ejecting](http://docs.nativebase.io/Customize.html#theaming-nb-headref).
 * NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
 * Replacing Component:
     -   React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html) for iOS
