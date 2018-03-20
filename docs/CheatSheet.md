@@ -1239,6 +1239,15 @@
                     <td>Custom style for placeholder text in iOS</td>
                     <td></td>
                 </tr>
+                 <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderIconColor</li>
+                        </ul>
+                    </td>
+                    <td>Set placeholder icon color in iOS</td>
+                    <td></td>
+                </tr>
 
 
 
