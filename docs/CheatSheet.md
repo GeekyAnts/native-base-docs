@@ -342,6 +342,15 @@
                             <li>renderRow</li>
                         </ul>
                     </td>
+                    <td>Flag indicating whether empty section headers should be rendered</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>
+                        <ul>
+                            <li>enableEmptySections</li>
+                        </ul>
+                    </td>
                     <td>callback that returns chunk of data as a component</td>
                     <td></td>
                 </tr>
