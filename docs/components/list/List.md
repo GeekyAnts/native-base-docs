@@ -3,6 +3,7 @@
 
 This component is completely built by [NativeBase](https://nativebase.io/).<br />
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
+List is deprecated. Use of List for dynamic list generation is discouraged. Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.<br/>
 
 ![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-basic.png)
 ![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-basic.png)
