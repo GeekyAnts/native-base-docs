@@ -868,6 +868,15 @@
                     <td>size of icon</td>
                     <td></td>
                 </tr>
+                 <tr>
+                    <td>
+                        <ul>
+                            <li>type</li>
+                        </ul>
+                    </td>
+                    <td>Specify icon family</td>
+                    <td></td>
+                </tr>
 
 
 
