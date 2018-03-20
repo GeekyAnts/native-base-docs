@@ -1215,10 +1215,10 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>headerBackButtonText</li>
+                            <li>placeholderStyle</li>
                         </ul>
                     </td>
-                    <td>used for custom backButton text</td>
+                    <td>Custom style for placeholder text in iOS</td>
                     <td></td>
                 </tr>
 
