@@ -86,6 +86,14 @@ Replacing Component
                 <td>Array of data chunks to render iteratively.</td>
             </tr>
             <tr>
+                <td>selected</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>
+                    Highlights the selected item
+                </td>
+            </tr>
+            <tr>
                 <td>itemDivider</td>
                 <td> - </td>
                 <td>boolean</td>
