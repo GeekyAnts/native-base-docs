@@ -107,6 +107,12 @@ export default class PickerExample extends Component {
                 <td>Custom style for placeholder text in iOS</td>
             </tr>
             <tr>
+                <td>placeholderIconColor</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Set placeholder icon color in iOS</td>
+            </tr>
+            <tr>
                 <td>iosHeader</td>
                 <td> - </td>
                 <td> - </td>
