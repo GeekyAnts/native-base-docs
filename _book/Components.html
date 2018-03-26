@@ -4499,7 +4499,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-thumbnail.png" alt="Preview android list-thumbnail-headref"></p>
 <p><em>Syntax</em></p>
 <p><pre class="line-numbers"><code class="language-jsx"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Thumbnail, Text, Body } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Thumbnail, Text, Body, Right } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ListThumbnailExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
@@ -4513,6 +4513,11 @@ To have note kind of text for list item, include <code>note</code> prop with <co
                 &lt;Text&gt;Sankhadeep&lt;/Text&gt;
                 &lt;Text note&gt;Its time to build a difference . .&lt;/Text&gt;
               &lt;/Body&gt;
+              &lt;Right&gt;
+                &lt;Button transparent&gt;
+                  &lt;Text>View&lt;/Text&gt;
+                &lt;/Button&gt;
+              &lt;/Right&gt;
             &lt;/ListItem&gt;
           &lt;/List&gt;
         &lt;/Content&gt;
