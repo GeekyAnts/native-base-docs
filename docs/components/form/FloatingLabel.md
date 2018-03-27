@@ -32,4 +32,4 @@ export default class FloatingLabelExample extends Component {
   }
 }</code></pre><br />
 
-When using floatingLabel, use `getRef` to get the reference of `<Input/>` component.
+When using floatingLabel, use `getRef` to get the reference of `<Input/>` component. Always wrap floatingLabel component with `<Form/>`.
