@@ -91,6 +91,12 @@ export default class ToastExample extends Component &lcub;
                 <td> integer </td>
                 <td>Milliseconds after which Toast disappers</td>
             </tr>
+            <tr>
+                <td>onClose</td>
+                <td> - </td>
+                <td> function </td>
+                <td>Called just before the toast hides</td>
+            </tr>
             </tbody>
         </table><br />
 
