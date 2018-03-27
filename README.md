@@ -27,6 +27,9 @@ export default class GeneralExample extends Component {
 }</code></pre>
 <br />
 
+NativeBase on Windows depends on React Native support for Windows.<br/>
+NativeBase is now supported on [snack](https://snack.expo.io/)
+
 **[How to get started?](/docs/GetStarted.md)**
 
 <!-- **[How to migrate from v0.x to v2.x?](/docs/Migration.md)** -->
