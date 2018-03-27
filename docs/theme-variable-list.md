@@ -213,3 +213,199 @@
     </tbody>
 </table>
 <br/>
+<h3>Footer</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>footerHeight</td>
+            <td>number</td>
+            <td>Height of footer</td>
+            <td>55/89</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>footerDefaultBg</td>
+            <td>color</td>
+            <td>Background color for footer</td>
+            <td>#F8F8F8</td>
+            <td>#F8F8F8</td>
+        </tr>
+        <tr>
+            <td>footerPaddingBottom</td>
+            <td>number</td>
+            <td>Bottom padding for footer</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<h3>Footer Tab</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>tabBarTextColor</td>
+            <td>color</td>
+            <td>Text color of tab</td>
+            <td>#6b6b6b</td>
+            <td>#b3c7f9</td>
+        </tr>
+        <tr>
+            <td>tabBarTextSize</td>
+            <td>number</td>
+            <td>Text size of tab</td>
+            <td>14</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>activeTab</td>
+            <td>color</td>
+            <td>-</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>sTabBarActiveTextColor</td>
+            <td>color</td>
+            <td>-</td>
+            <td>#007aff</td>
+            <td>#007aff</td>
+        </tr>
+        <tr>
+            <td>tabBarActiveTextColor</td>
+            <td>color</td>
+            <td>Text color of active tab</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>tabActiveBgColor</td>
+            <td>color</td>
+            <td>Background color of active tab</td>
+            <td>#cde1f9</td>
+            <td>#3F51B5</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<br/>
+<h3>Header</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>toolbarBtnColor</td>
+            <td>color</td>
+            <td>Button color of header</td>
+            <td>#F8F8F8</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>toolbarDefaultBg</td>
+            <td>color</td>
+            <td>Background color for header</td>
+            <td>#F8F8F8</td>
+            <td>#F8F8F8</td>
+        </tr>
+        <tr>
+            <td>toolbarHeight</td>
+            <td>number</td>
+            <td>Height of header</td>
+            <td>64/89</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>toolbarSearchIconSize</td>
+            <td>number</td>
+            <td>Icon size of header search icon</td>
+            <td>20</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>toolbarInputColor</td>
+            <td>number</td>
+            <td>Input color of header</td>
+            <td>#CECDD2</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>searchBarHeight</td>
+            <td>number</td>
+            <td>Height of search bar</td>
+            <td>30</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>searchBarInputHeight</td>
+            <td>number</td>
+            <td>Height of search bar input</td>
+            <td>30</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>toolbarBtnTextColor</td>
+            <td>color</td>
+            <td>Button text color of header</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>toolbarDefaultBorder</td>
+            <td>color</td>
+            <td>Border color of header</td>
+            <td>#a7a6ab</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>iosStatusbar</td>
+            <td>string</td>
+            <td>Theme of iOS status bar</td>
+            <td>dark-content</td>
+            <td>light-content</td>
+        </tr>
+    </tbody>
+</table>
+<br />
