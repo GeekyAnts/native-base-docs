@@ -318,7 +318,6 @@
 </table>
 <br />
 
-<br/>
 <h3>Header</h3>
 <table width="80%" class="table table-hover">
     <thead>
@@ -409,3 +408,158 @@
     </tbody>
 </table>
 <br />
+
+<h3>Icon</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iconFamily</td>
+            <td>string</td>
+            <td>Icon Family</td>
+            <td>Ionicons</td>
+            <td>Ionicons</td>
+        </tr>
+        <tr>
+            <td>iconFontSize</td>
+            <td>number</td>
+            <td>Size of icon</td>
+            <td>30</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>iconHeaderSize</td>
+            <td>number</td>
+            <td>-</td>
+            <td>33</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<h3>Input</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>inputFontSize</td>
+            <td>number</td>
+            <td>Size of input text</td>
+            <td>17</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>inputBorderColor</td>
+            <td>color</td>
+            <td>Color of input text</td>
+            <td>#D9D5DC</td>
+            <td>#D9D5DC</td>
+        </tr>
+        <tr>
+            <td>inputSuccessBorderColor</td>
+            <td>color</td>
+            <td>Border color with success prop</td>
+            <td>#2b8339</td>
+            <td>#2b8339</td>
+        </tr>
+     <tr>
+            <td>inputErrorBorderColor</td>
+            <td>color</td>
+            <td>Border color with error prop</td>
+            <td>#ed2f2f</td>
+            <td>#ed2f2f</td>
+        </tr>
+     <tr>
+            <td>inputHeightBase</td>
+            <td>number</td>
+            <td>Height of input</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<h3>Line height</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>btnLineHeight</td>
+            <td>number</td>
+            <td>Line height of text in button</td>
+            <td>19</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>lineHeightH1</td>
+            <td>number</td>
+            <td>Line height of H1</td>
+            <td>32</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>lineHeightH2</td>
+            <td>number</td>
+            <td>Line height of H2</td>
+            <td>27</td>
+            <td>27</td>
+        </tr>
+     <tr>
+            <td>lineHeightH3</td>
+            <td>number</td>
+            <td>Line height of H3</td>
+            <td>22</td>
+            <td>22</td>
+        </tr>
+     <tr>
+            <td>lineHeight</td>
+            <td>number</td>
+            <td>Default line height</td>
+            <td>20</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
