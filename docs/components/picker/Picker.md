@@ -162,3 +162,5 @@ export default class PickerExample extends Component {
             </tr>
             </tbody>
             </table><br />
+
+Styling Picker is restricted to the style props provided in the table.
