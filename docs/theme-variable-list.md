@@ -956,3 +956,72 @@
     </tbody>
 </table>
 <br />
+<h3>Brand colors</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>brandPrimary</td>
+            <td>color</td>
+            <td>Brand primary color</td>
+            <td>#007aff</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>brandInfo</td>
+            <td>color</td>
+            <td>Brand info color</td>
+            <td>#62B1F6</td>
+            <td>#62B1F6</td>
+        </tr>
+        <tr>
+            <td>brandSuccess</td>
+            <td>color</td>
+            <td>Brand success color</td>
+            <td>#5cb85c</td>
+            <td>#5cb85c</td>
+        </tr>
+        <tr>
+            <td>brandDanger</td>
+            <td>color</td>
+            <td>Brand danger color</td>
+            <td>#d9534f</td>
+            <td>#d9534f</td>
+        </tr>
+        <tr>
+            <td>brandWarning</td>
+            <td>color</td>
+            <td>Brand warning color</td>
+            <td>#f0ad4e</td>
+            <td>#f0ad4e</td>
+        </tr>
+        <tr>
+            <td>brandDark</td>
+            <td>color</td>
+            <td>Brand dark color</td>
+            <td>#000</td>
+            <td>#000</td>
+        </tr>
+        <tr>
+            <td>brandLight</td>
+            <td>color</td>
+            <td>Brand light color</td>
+            <td>#f4f4f4</td>
+            <td>#f4f4f4</td>
+        </tr>
+    </tbody>
+</table>
+<br />
