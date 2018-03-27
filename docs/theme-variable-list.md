@@ -489,14 +489,14 @@
             <td>#2b8339</td>
             <td>#2b8339</td>
         </tr>
-     <tr>
+        <tr>
             <td>inputErrorBorderColor</td>
             <td>color</td>
             <td>Border color with error prop</td>
             <td>#ed2f2f</td>
             <td>#ed2f2f</td>
         </tr>
-     <tr>
+        <tr>
             <td>inputHeightBase</td>
             <td>number</td>
             <td>Height of input</td>
@@ -545,14 +545,14 @@
             <td>27</td>
             <td>27</td>
         </tr>
-     <tr>
+        <tr>
             <td>lineHeightH3</td>
             <td>number</td>
             <td>Line height of H3</td>
             <td>22</td>
             <td>22</td>
         </tr>
-     <tr>
+        <tr>
             <td>lineHeight</td>
             <td>number</td>
             <td>Default line height</td>
@@ -563,3 +563,176 @@
 </table>
 <br />
 
+<h3>List</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>listBg</td>
+            <td>color</td>
+            <td>Background color of list</td>
+            <td>transparent</td>
+            <td>transparent</td>
+        </tr>
+        <tr>
+            <td>listBorderColor</td>
+            <td>color</td>
+            <td>Border color of list</td>
+            <td>#c9c9c9</td>
+            <td>#c9c9c9</td>
+        </tr>
+        <tr>
+            <td>listDividerBg</td>
+            <td>color</td>
+            <td>Divider color of list </td>
+            <td>#f4f4f4</td>
+            <td>#f4f4f4</td>
+        </tr>
+        <tr>
+            <td>listBtnUnderlayColor</td>
+            <td>color</td>
+            <td>-</td>
+            <td>#DDD</td>
+            <td>#DDD</td>
+        </tr>
+        <tr>
+            <td>listItemPadding</td>
+            <td>color</td>
+            <td>Padding for list item</td>
+            <td>10</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>listNoteColor</td>
+            <td>color</td>
+            <td>Color of note text</td>
+            <td>#808080</td>
+            <td>#808080</td>
+        </tr>
+        <tr>
+            <td>listNoteSize</td>
+            <td>color</td>
+            <td>Size of note text</td>
+            <td>13</td>
+            <td>13</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<h3>Radio Button</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>radioBtnSize</td>
+            <td>number</td>
+            <td>Size of radio button</td>
+            <td>25</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>radioSelectedColorAndroid</td>
+            <td>color</td>
+            <td>Color of selected radio button</td>
+            <td>-</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>radioBtnLineHeight</td>
+            <td>number</td>
+            <td>Line height of radio button</td>
+            <td>29</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<h3>Segment</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>segmentBackgroundColor</td>
+            <td>color</td>
+            <td>Background color of segment</td>
+            <td>#F8F8F8</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>segmentActiveBackgroundColor</td>
+            <td>color</td>
+            <td>Background color of active segment</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>segmentTextColor</td>
+            <td>color</td>
+            <td>Color of segment text</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>segmentActiveTextColor</td>
+            <td>color</td>
+            <td>Color of active segment text</td>
+            <td>#fff</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>segmentBorderColor</td>
+            <td>color</td>
+            <td>Color of segment border</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>segmentBorderColorMain</td>
+            <td>color</td>
+            <td>-</td>
+            <td>#a7a6ab</td>
+            <td>#3F51B5</td>
+        </tr>
+    </tbody>
+</table>
+<br />
