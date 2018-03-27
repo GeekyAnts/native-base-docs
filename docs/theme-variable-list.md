@@ -736,3 +736,223 @@
     </tbody>
 </table>
 <br />
+<h3>Spinner</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>defaultSpinnerColor</td>
+            <td>color</td>
+            <td>Default color for spinner</td>
+            <td>#45D56E</td>
+            <td>#45D56E</td>
+        </tr>
+        <tr>
+            <td>inverseSpinnerColor</td>
+            <td>color</td>
+            <td>Inverse color for spinner</td>
+            <td>#1A191B</td>
+            <td>#1A191B</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<h3>Tab</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>tabDefaultBg</td>
+            <td>color</td>
+            <td>Default background color for tab</td>
+            <td>#F8F8F8</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>topTabBarTextColor</td>
+            <td>color</td>
+            <td>Tab text color</td>
+            <td>#6b6b6b</td>
+            <td>#b3c7f9</td>
+        </tr>
+        <tr>
+            <td>topTabBarActiveTextColor</td>
+            <td>color</td>
+            <td>Active tab text color</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>topTabBarBorderColor</td>
+            <td>color</td>
+            <td>Border color for tab</td>
+            <td>#a7a6ab</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>topTabBarActiveBorderColor</td>
+            <td>color</td>
+            <td>Border color for active tab</td>
+            <td>#007aff</td>
+            <td>#fff</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<h3>Tabs</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>tabBgColor</td>
+            <td>color</td>
+            <td>Background color for tab container</td>
+            <td>#F8F8F8</td>
+            <td>#F8F8F8</td>
+        </tr>
+        <tr>
+            <td>tabFontSize</td>
+            <td>number</td>
+            <td>Size of tab font</td>
+            <td>15</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<h3>Text</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>textColor</td>
+            <td>color</td>
+            <td>Text color</td>
+            <td>Ionicons</td>
+            <td>Ionicons</td>
+        </tr>
+        <tr>
+            <td>inverseTextColor</td>
+            <td>color</td>
+            <td>Inverse text color</td>
+            <td>#fff</td>
+            <td>#fff</td>
+        </tr>
+        <tr>
+            <td>noteFontSize</td>
+            <td>number</td>
+            <td>Font size of note text</td>
+            <td>14</td>
+            <td>14</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
+<h3>Title</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>titleFontfamily</td>
+            <td>string</td>
+            <td>Font family of title</td>
+            <td>System</td>
+            <td>Roboto_medium</td>
+        </tr>
+        <tr>
+            <td>titleFontSize</td>
+            <td>number</td>
+            <td>Font size of title</td>
+            <td>17</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>subTitleFontSize</td>
+            <td>number</td>
+            <td>Font size of subtitle</td>
+            <td>12</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>subtitleColor</td>
+            <td>color</td>
+            <td>Color of subtitle text</td>
+            <td>#8e8e93</td>
+            <td>#FFF</td>
+        </tr>
+        <tr>
+            <td>titleFontColor</td>
+            <td>color</td>
+            <td>Color of title text</td>
+            <td>#000</td>
+            <td>#FFF</td>
+        </tr>
+    </tbody>
+</table>
+<br />
