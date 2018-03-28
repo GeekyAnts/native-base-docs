@@ -7,7 +7,7 @@
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Tab, Tabs } from 'native-base';
+import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 ​export default class TabsScrollableExample extends Component {
