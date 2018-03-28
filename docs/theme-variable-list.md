@@ -1,5 +1,7 @@
 # Theme variables Cheat sheet
 
+Cheat sheet uses values from `native-base-theme/variables/platform.js`
+
 <h3>Badge</h3>
 <table width="80%" class="table table-hover">
     <thead>
