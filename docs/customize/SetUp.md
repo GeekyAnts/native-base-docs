@@ -18,7 +18,8 @@ Now your project is ready for theme customization.
 - When you run `node node_modules/native-base/ejectTheme.js` from your terminal, a folder named **native-base-theme** gets copied to your project root. Inside the directory are two folders named **components** and **variables**.
 - The **components** folder contain the theme styling files for all the components. This is where you would change the style properties of the components if you need to.
 
-Example, if you need to change the height of Button component, you'll need to change height in `native-base-theme/components/Button.js`.
+  Example, if you need to change the height of Button component, you'll need to change height in 
+  `native-base-theme/components/Button.js`.
 - The **variables** folder contain three preset theme variables. You can change the variables (for color, fontFamily, iconFamily etc) for a uniform look and feel throughout your app. <br />
 
 ##### Three themes to start with
