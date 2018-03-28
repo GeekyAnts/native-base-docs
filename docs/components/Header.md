@@ -82,12 +82,6 @@ export default class HeaderExample extends Component {
                 <td> - </td>
                 <td>Set background color for status bar in android</td>
             </tr>
-            <tr>
-            <tr>
-                <td>backgroundColor</td>
-                <td> - </td>
-                <td>string</td>
-                <td>Set background color</td>
 <!--             </tr>
                 <td>span</td>
                 <td> - </td>
