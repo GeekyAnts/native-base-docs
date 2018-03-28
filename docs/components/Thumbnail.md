@@ -17,11 +17,11 @@ export default class ThumbnailExample extends Component {
         &lt;Header />
         &lt;Content>
           &lt;Text>Square Thumbnail&lt;/Text>
-          &lt;Thumbnail square source=&#123;{uri: 'Image URL'}} />
-          &lt;Thumbnail square small source=&#123;{uri: 'Image URL'}} />
+          &lt;Thumbnail square source=&#123;{uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"}} />
+          &lt;Thumbnail square small source=&#123;{uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"}} />
           &lt;Text>Circular Thumbnail&lt;/Text>
-          &lt;Thumbnail source=&#123;{uri: 'Image URL'}} />
-          &lt;Thumbnail large source=&#123;{uri: 'Image URL'}} />
+          &lt;Thumbnail source=&#123;{uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"}} />
+          &lt;Thumbnail large source=&#123;{uri: "https://facebook.github.io/react-native/docs/assets/favicon.png"}} />
         &lt;/Content>
       &lt;/Container>
     );
