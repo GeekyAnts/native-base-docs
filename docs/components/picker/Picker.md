@@ -163,4 +163,5 @@ export default class PickerExample extends Component {
             </tbody>
             </table><br />
 
-Styling Picker is restricted to the style props provided in the table.
+Styling Picker is restricted to the style props provided in the table.<br/><br/>
+**Note:** NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements
