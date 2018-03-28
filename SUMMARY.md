@@ -26,7 +26,7 @@
     * [Deck Swiper](Components.md#deckswiper-def-headref)
         * [Advanced Deck Swiper](Components.md#deckswiper-adv-headref)
     * [FABs](Components.md#fabs-def-headref)
-        * [Muliple Fabs](Components.md#fabs-multiple-headref)
+        * [Multiple Fabs](Components.md#fabs-multiple-headref)
     * [Footer Tabs](Components.md#footer-tabs-def-headref)
         * [Footer with only icons](Components.md#footer-tabs-icon-headref)
         * [Footer with icons and text](Components.md#footer-tabs-icon-text-headref)
