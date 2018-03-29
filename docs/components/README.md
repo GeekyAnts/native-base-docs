@@ -34,4 +34,3 @@ You can style these components with StyleSheet objects. This docs have limited e
 * [Typography](Components.md#Typography)
 * [Drawer](Components.md#Drawer)
 * [Ref](Components.md#ref-components-headref)
-* [Best Practices](Components.md#ref-components-best-practices)
