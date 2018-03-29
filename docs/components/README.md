@@ -5,6 +5,8 @@
 
 [NativeBase](https://nativebase.io/) includes components such as anatomy of your app screens, header, input, buttons, badge, icon, form, checkbox, radio-button, list, card, actionsheet, picker, segment, swipeable list, tabs, toast, drawer, thumbnail, spinner, layout, search bar etc.<br /><br />
 
+You can style these components with StyleSheet objects. This docs have limited examples. For more examples see [NativeBase-KitchenSink](https://github.com/GeekyAnts/NativeBase-KitchenSink)<br/><br/> 
+
 
 * [Anatomy](Components.md#anatomy-headref)
 * [ActionSheet](Components.md#actionsheet-def-headref)
