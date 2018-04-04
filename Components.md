@@ -34,6 +34,7 @@
 {% include "./docs/components/input-group/Success.md" %}
 {% include "./docs/components/input-group/Error.md" %}
 {% include "./docs/components/input-group/Disabled.md" %}
+{% include "./docs/components/input-group/Textarea.md" %}
 {% include "./docs/components/Header.md" %}
 {% include "./docs/components/Icon.md" %}
 {% include "./docs/components/Layout.md" %}
