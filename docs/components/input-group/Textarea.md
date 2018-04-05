@@ -1,8 +1,8 @@
 
-## textarea-headref
+## textarea-textbox-headref
 #### Textarea
 
-Creates a text area
+Creates a text area to input multiline text.
 
 ![Preview ios text-area-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/master/screenshots/ios/text-area.png)
 ![Preview android text-area-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/master/screenshots/android/text-area.png)

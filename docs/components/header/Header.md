@@ -13,6 +13,16 @@
 ![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/header-with-title.png)
 ![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/header-with-title.png)
 
+**Contents:**
+* [Header with only title](Components.md#title-header-headref)
+* [Header with Title and Subtitle](Components.md#header-title-subtitle-headref)
+* [Header with Icon Buttons](Components.md#header-icon-headref)
+* [Header with Text Buttons](Components.md#header-text-headref)
+* [Header with Icon Button and Text Button](Components.md#header-icon-button-text-button-headref)
+* [Header with Icon and Text Button](Components.md#header-icon-text-button-headref)
+* [Header with Multiple Icon Button](Components.md#header-multiple-icon-headref)
+
+
 *Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
@@ -126,84 +136,3 @@ export default class HeaderExample extends Component {
             </tr>
         </tbody>
     </table><br />
-
-#### Header with only title
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Title } from 'native-base';
-export default class HeaderTitleExample extends Component {
-  render() {
-    return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left/>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-      &lt;/Container>
-    );
-  }
-}</code></pre><br />
-
-
-## header-icon-text-headref
-#### Header with Icon and Text Buttons
-
-![Preview ios header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/header-with-icon-button-and-text.png)
-![Preview android header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/header-with-icon-button-and-text.png)
-
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
-export default class HeaderIconTextExample extends Component {
-  render() {
-    return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='arrow-back' />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Text>Cancel&lt;/Text>
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-      &lt;/Container>
-    );
-  }
-}</code></pre><br />
-
-## header-title-subtitle-headref
-#### Header with Title and Subtitle
-
-![Preview ios header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/header-with-title-and-subtitle.png)
-![Preview android header-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/header-with-title-and-subtitle.png)
-
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from 'native-base';
-export default class HeaderTitleSubtitleExample extends Component {
-  render() {
-    return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='arrow-back' />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Title&lt;/Title>
-            &lt;Subtitle>Subtitle&lt;/Subtitle>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-      &lt;/Container>
-    );
-  }
-}</code></pre><br />
