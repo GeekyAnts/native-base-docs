@@ -88,5 +88,12 @@ export default class IconExample extends Component {
                     Include this prop within <code>style</code>
                 </td>
             </tr>
+            <tr>
+                <td>type</td>
+                <td>Ionicons</td>
+                <td>Ionicons,<br/>Entypo,<br/>EvilIcons,<br/>Feather,<br/>FontAwesome,<br/>Foundation,<br/>MaterialIcons,<br/>MaterialCommunityIcons,<br/>Octicons,<br/>SimpleLineIcons,<br/>Zocial</td>
+                <td>Specify an icon type
+                </td>
+            </tr>
         </tbody>
     </table><br />

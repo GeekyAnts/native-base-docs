@@ -1,8 +1,9 @@
 ## Form
 
 [NativeBase](https://nativebase.io/) makes use of <code>List</code> to design Forms that include group of related input components. Include any combination of NativeBase components to make up your form.<br/>
-Input is a NativeBase component built on top of React Native's <code>TextInput</code>. Item component is wrap around it apply the specific styles.<br />
-A foundational component for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.<br />
+Input is a NativeBase component built on top of React Native's <code>TextInput</code>. A foundational component for inputting text into the app via a keyboard. Item component wrapper around it that apply specific styles.<br />
+
+Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.<br />
 Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 Replacing Component:
 *   <b>Form</b>: React Native [View](https://facebook.github.io/react-native/docs/view.html)
@@ -22,6 +23,7 @@ Replacing Component:
 * [Success Input Textbox](Components.md#success-textbox-headref)
 * [Error Input Textbox](Components.md#error-textbox-headref)
 * [Disabled Textbox](Components.md#disabled-textbox-headref)
+* [Textarea](Components.md#textarea-headref)
 
 ![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-placeholder.png)
 ![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-placeholder.png)

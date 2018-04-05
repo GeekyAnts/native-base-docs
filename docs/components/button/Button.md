@@ -85,16 +85,10 @@ export default class ButtonExample extends Component {
     </thead>
     <tbody>
         <tr>
-            <td>style</td>
-            <td> - </td>
-            <td> - </td>
-            <td>Defines button style</td>
-        </tr>
-        <tr>
             <td>active</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Boolean value to describe state of Button</td>
+            <td>State of button</td>
         </tr>
         <tr>
             <td>transparent</td>
@@ -106,7 +100,7 @@ export default class ButtonExample extends Component {
             <td>bordered</td>
             <td> - </td>
             <td> - </td>
-            <td>Applies outline button style.</td>
+            <td>Applies outline button style</td>
         </tr>
         <tr>
             <td>rounded</td>
@@ -136,67 +130,67 @@ export default class ButtonExample extends Component {
             <td>small</td>
             <td> - </td>
             <td> - </td>
-            <td>For small size button</td>
+            <td>Small size button</td>
         </tr>
         <tr>
             <td>large</td>
             <td> - </td>
             <td> - </td>
-            <td>For large size button</td>
+            <td>Large size button</td>
         </tr>
         <tr>
             <td>iconRight</td>
             <td> - </td>
             <td> - </td>
-            <td>Right Padding for the icon</td>
+            <td>Right padding for the icon</td>
         </tr>
         <tr>
             <td>iconLeft</td>
             <td> - </td>
             <td> - </td>
-            <td>Left Padding for the icon.</td>
+            <td>Left padding for the icon</td>
         </tr>
         <tr>
             <td>light</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a light white background color to your component.</td>
+            <td>Light white background color for button</td>
         </tr>
         <tr>
             <td>primary</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a blue background color to your component</td>
+            <td>Blue background color for button</td>
         </tr>
         <tr>
             <td>success</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a green background color to your component</td>
+            <td>Green background color for button</td>
         </tr>
         <tr>
             <td>info</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a light blue background color to your component as shown</td>
+            <td>Light blue background color for button</td>
         </tr>
         <tr>
             <td>warning</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a yellow warning background color to your component</td>
+            <td>Yellow background color for button</td>
         </tr>
         <tr>
             <td>danger</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a red background color to your component</td>
+            <td>Red background color for button</td>
         </tr>
         <tr>
             <td>dark</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a black background color to your component</td>
+            <td>Black background color for button</td>
         </tr>
     </tbody>
 </table><br />

@@ -4,6 +4,7 @@
 Button is a pure [NativeBase](https://nativebase.io/) component.<br />
 Buttons are the integral part of an application. They are used for various purposes like, submit or reset a form, navigate, performing interactive actions such as showing or hiding something in an app on click of the button, etc.<br />
 
+**Note:** Always import and use Text from NativeBase with Buttons. 
 
 ![Preview ios button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/buttons.png)
 ![Preview android button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/buttons.png)
@@ -64,6 +65,7 @@ export default class ButtonExample extends Component {
 * NativeBase gives you privilege to customize the props of this component.<br />
   *Example*: To have custom style for button, include them in <code>style</code> prop of button.
 * Intakes user-defined styles.
+* You can change the default button text case(in Android) from variables file after [ejecting](http://docs.nativebase.io/Customize.html#theaming-nb-headref).
 * NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
 * Replacing Component:
     -   React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html) for iOS
@@ -83,16 +85,10 @@ export default class ButtonExample extends Component {
     </thead>
     <tbody>
         <tr>
-            <td>style</td>
-            <td> - </td>
-            <td> - </td>
-            <td>Defines button style</td>
-        </tr>
-        <tr>
             <td>active</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Boolean value to describe state of Button</td>
+            <td>State of button</td>
         </tr>
         <tr>
             <td>transparent</td>
@@ -104,7 +100,7 @@ export default class ButtonExample extends Component {
             <td>bordered</td>
             <td> - </td>
             <td> - </td>
-            <td>Applies outline button style.</td>
+            <td>Applies outline button style</td>
         </tr>
         <tr>
             <td>rounded</td>
@@ -134,67 +130,67 @@ export default class ButtonExample extends Component {
             <td>small</td>
             <td> - </td>
             <td> - </td>
-            <td>For small size button</td>
+            <td>Small size button</td>
         </tr>
         <tr>
             <td>large</td>
             <td> - </td>
             <td> - </td>
-            <td>For large size button</td>
+            <td>Large size button</td>
         </tr>
         <tr>
             <td>iconRight</td>
             <td> - </td>
             <td> - </td>
-            <td>Right Padding for the icon</td>
+            <td>Right padding for the icon</td>
         </tr>
         <tr>
             <td>iconLeft</td>
             <td> - </td>
             <td> - </td>
-            <td>Left Padding for the icon.</td>
+            <td>Left padding for the icon</td>
         </tr>
         <tr>
             <td>light</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a light white background color to your component.</td>
+            <td>Light white background color for button</td>
         </tr>
         <tr>
             <td>primary</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a blue background color to your component</td>
+            <td>Blue background color for button</td>
         </tr>
         <tr>
             <td>success</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a green background color to your component</td>
+            <td>Green background color for button</td>
         </tr>
         <tr>
             <td>info</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a light blue background color to your component as shown</td>
+            <td>Light blue background color for button</td>
         </tr>
         <tr>
             <td>warning</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a yellow warning background color to your component</td>
+            <td>Yellow background color for button</td>
         </tr>
         <tr>
             <td>danger</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a red background color to your component</td>
+            <td>Red background color for button</td>
         </tr>
         <tr>
             <td>dark</td>
             <td> - </td>
             <td> boolean </td>
-            <td>Add a black background color to your component</td>
+            <td>Black background color for button</td>
         </tr>
     </tbody>
 </table><br />

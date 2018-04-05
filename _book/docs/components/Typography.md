@@ -42,19 +42,19 @@ export default class TypographyExample extends Component {
             <tr>
                 <td>H1</td>
                 <td>font-size: 27</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H1></td>
             </tr>
             <tr>
                 <td>H2</td>
                 <td>font-size: 24</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H2></td>
             </tr>
             <tr>
                 <td>H3</td>
                 <td>font-size: 21</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H3></td>
             </tr>
         </tbody>

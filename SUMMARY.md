@@ -1,6 +1,6 @@
 # Summary
 * [NativeBase](http://nativebase.io/)
-* [Introduction](README.md#Introduction)
+* [Introduction](README.md)
 * [Getting Started](/docs/GetStarted.md)
 * [Components](Components.md#Components)
     * [Anatomy](Components.md#anatomy-headref)

@@ -1,7 +1,7 @@
 ## card-headfoot-headref
 #### Card Header and Footer
 
-To add an optional header and/or footer within a card, include <code>header</code> prop with the <code>CardItem</code>.<br />
+To add an optional header and/or footer within a card, include <code>header</code> / <code>footer</code> prop with the <code>CardItem</code>.<br />
 * **Card Header**: Include <code>header</code> prop with first instance of CardItem within Card.
 * **Card Footer**: Include <code>footer</code> prop with last instance of CardItem within Card.
 

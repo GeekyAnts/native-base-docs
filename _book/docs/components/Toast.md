@@ -70,7 +70,7 @@ export default class ToastExample extends Component &lcub;
             <tr>
                 <td>buttonText</td>
                 <td> - </td>
-                <td> string </td>
+                <td> string, blank </td>
                 <td>The text to be displayed inside the button.</td>
             </tr>
             <tr>
@@ -87,9 +87,15 @@ export default class ToastExample extends Component &lcub;
             </tr>
             <tr>
                 <td>duration</td>
-                <td> - </td>
+                <td> 1500 </td>
                 <td> integer </td>
                 <td>Milliseconds after which Toast disappers</td>
+            </tr>
+            <tr>
+                <td>onClose</td>
+                <td> - </td>
+                <td> function </td>
+                <td>Called just before the toast hides</td>
             </tr>
             </tbody>
         </table><br />

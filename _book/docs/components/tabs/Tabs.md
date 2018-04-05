@@ -79,6 +79,14 @@ import Tab2 from './tabTwo';
                     Style of the default tab bar's underline.
                 </td>
             </tr>
+            <tr>
+                <td>page</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Set selected tab
+                </td>
+            </tr>
         </tbody>
     </table><br />
 

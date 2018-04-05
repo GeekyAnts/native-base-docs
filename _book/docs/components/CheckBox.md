@@ -51,7 +51,7 @@ export default class CheckBoxExample extends Component {
                 <td>checked</td>
                 <td>false</td>
                 <td>boolean</td>
-                <td>Represents the state value of an item from set of choices.</td>
+                <td>State value of an item from set of choices</td>
             </tr>
             <tr>
                 <td>color</td>

@@ -20,7 +20,6 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Platform } from "react-native";
 import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
-const Item = Picker.Item;
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);
@@ -55,11 +54,11 @@ export default class PickerExample extends Component {
               selectedValue={this.state.selected1}
               onValueChange={this.onValueChange.bind(this)}
             >
-              &lt;Item label="Wallet" value="key0" />
-              &lt;Item label="ATM Card" value="key1" />
-              &lt;Item label="Debit Card" value="key2" />
-              &lt;Item label="Credit Card" value="key3" />
-              &lt;Item label="Net Banking" value="key4" />
+              &lt;Picker.Item label="Wallet" value="key0" />
+              &lt;Picker.Item label="ATM Card" value="key1" />
+              &lt;Picker.Item label="Debit Card" value="key2" />
+              &lt;Picker.Item label="Credit Card" value="key3" />
+              &lt;Picker.Item label="Net Banking" value="key4" />
             &lt;/Picker>
           &lt;/Form>
         &lt;/Content>
@@ -99,6 +98,18 @@ export default class PickerExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>Pass placeholder for Picker component.</td>
+            </tr>
+            <tr>
+                <td>placeholderStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Custom style for placeholder text in iOS</td>
+            </tr>
+            <tr>
+                <td>placeholderIconColor</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Set placeholder icon color in iOS</td>
             </tr>
             <tr>
                 <td>iosHeader</td>
@@ -150,3 +161,6 @@ export default class PickerExample extends Component {
             </tr>
             </tbody>
             </table><br />
+
+Styling Picker is restricted to the style props provided in the table.<br/><br/>
+**Note:** NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements

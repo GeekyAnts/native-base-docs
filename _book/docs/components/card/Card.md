@@ -125,7 +125,7 @@ export default class CardExample extends Component {
             <td>bordered</td>
             <td>false</td>
             <td>boolean</td>
-            <td>To add border to the cardItems</td>
+            <td>Adds border to the cardItems</td>
         </tr>
     </tbody>
 </table><br />

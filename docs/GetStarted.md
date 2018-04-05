@@ -8,7 +8,8 @@ To have [NativeBase](https://nativebase.io/) components running onto your native
 * Globally installed [React Native CLI](https://facebook.github.io/react-native/docs/getting-started.html) which allow you to easily create and initialize projects.   
 * [Click here](/docs/Compatibility.md) to know about React Native version compatibility with NativeBase.
 
-*Create React Native project*
+## Setup with React Native
+
 ```js
 react-native init AwesomeNativeBase
 cd AwesomeNativeBase
@@ -29,15 +30,17 @@ react-native link
 
 You've successfully setup [NativeBase](https://nativebase.io/) with your [React Native](https://facebook.github.io/react-native/) app. Your React Native app is ready to run on iOS and Android devices.
 
+Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-app) an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
+
 
 ## Setup with CRNA
 Create React Native project using the CRNA CLI.<br />
-CRNA helps you make React Native apps with no build configuration. Create React App works on macOS, Windows, and Linux. <br />
+CRNA helps you make React Native apps with no build configuration. CRNA works on macOS, Windows, and Linux. <br />
 Refer this link for additional information [CRNA](https://github.com/react-community/create-react-native-app)
 
 *Install NativeBase*
 ```js
-npm install native-base --save
+yarn add native-base --save
 ```
 *Install @expo/vector-icons*
 ```js
@@ -45,8 +48,9 @@ npm install @expo/vector-icons --save
 ```
 <br />
 
-NativeBase uses some custom fonts that can be loaded using **loadAsync** function. Check out [this](https://docs.expo.io/versions/v15.0.0/sdk/font.html#expofontloadasyncname-url) expo link.
+NativeBase use some custom fonts that can be loaded using **loadAsync** function. Check out [this](https://docs.expo.io/versions/latest/sdk/font#expofontloadasyncobject) expo link.
 <br />
+
 *Syntax* <br />
 ```js
 async componentWillMount() {
@@ -57,11 +61,10 @@ async componentWillMount() {
 }
 ```
 <br />
-Check out the [NativeBase KitchenSink](https://expo.io/@geekyants/nativebasekitchensink) with CRNA for an example of NativeBase components implementation.<br />
-Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
+Check out the [NativeBase KitchenSink](https://expo.io/@geekyants/nativebasekitchensink) with CRNA for an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/CRNA) for NativeBase KitchenSink.
 
 
-## Using NativeBase on Web
+## Setup with Web
 
 
 ```
@@ -124,3 +127,4 @@ OR
 yarn start
 ```
 
+Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-web-app) with Web support for an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/web-support) for NativeBase KitchenSink.
