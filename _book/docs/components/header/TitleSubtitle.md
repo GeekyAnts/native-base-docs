@@ -11,11 +11,7 @@ export default class HeaderTitleSubtitleExample extends Component {
     return (
       &lt;Container>
         &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='arrow-back' />
-            &lt;/Button>
-          &lt;/Left>
+          &lt;Left />
           &lt;Body>
             &lt;Title>Title&lt;/Title>
             &lt;Subtitle>Subtitle&lt;/Subtitle>

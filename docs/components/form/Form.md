@@ -5,6 +5,7 @@ Input is a NativeBase component built on top of React Native's <code>TextInput</
 
 Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.<br />
 Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
+
 Replacing Component:
 *   <b>Form</b>: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 *   <b>Item</b>: React Native [TouchableOpacity](http://facebook.github.io/react-native/docs/touchableopacity.html)
@@ -71,7 +72,7 @@ export default class FormExample extends Component {
                 <td>true</td>
                 <td>boolean</td>
                 <td>
-                    Label is Fixed to the left of the Input and does not hide when text is entered.
+                    Label is fixed to the left of Input and does not hide when text is entered.
                 </td>
             </tr>
             <tr>
@@ -79,7 +80,7 @@ export default class FormExample extends Component {
                 <td>true</td>
                 <td>boolean</td>
                 <td>
-                    Label that animates upwards when the input is selected and animates downward when input is erased.
+                    Label that animates upward when input is selected and animates downward when input is erased.
                 </td>
             </tr>
             <tr>
@@ -87,7 +88,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td>boolean</td>
                 <td>
-                    Label placed to the left of the input element. When the user enters text, the label does not hide. This can also be used along with placeholder.
+                    Label placed to the left of input element and does not hide when text is entered. This can also be used along with placeholder.
                 </td>
             </tr>
             <tr>
@@ -95,7 +96,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Places the label on top of the input element which appears like a stack. This can also be used along with placeholder.
+                    Places the label on top of input element which appears like a stack. This can also be used along with placeholder.
                 </td>
             </tr>
             <tr>
@@ -103,7 +104,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Includes border with the textbox.
+                    Includes border with the textbox
                 </td>
             </tr>
             <tr>
@@ -119,7 +120,7 @@ export default class FormExample extends Component {
                 <td> true </td>
                 <td> - </td>
                 <td>
-                    Includes underline border with the textbox.
+                    Includes underline border with the textbox
                 </td>
             </tr>
             <tr>
@@ -127,7 +128,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Disables inputting data.
+                    Disables inputting data
                 </td>
             </tr>
             <tr>
@@ -135,7 +136,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Renders the same way the TextInput does with the form styling of NativeBase.
+                    Renders the same way the TextInput does with the form styling of NativeBase
                 </td>
             </tr>
             <tr>
@@ -143,7 +144,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    The string that will be rendered before text input has been entered. Optional user-defined placeholder for textbox.
+                    String that renders before text input is entered
                 </td>
             </tr>
             <tr>
@@ -151,7 +152,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style the Form Item for the last Item of the Form.
+                    Styles last Item of the Form
                 </td>
             </tr>
             <tr>
@@ -159,7 +160,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    The border color of textbox for invalid input.
+                    Border color of textbox for invalid input
                 </td>
             </tr>
             <tr>
@@ -167,9 +168,10 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    The border color of textbox for valid input.
+                    Border color of textbox for valid input
                 </td>
             </tr>
         </tbody>
     </table><br />
-**Note:** Form in NativeBase is just a wrapper around the inputs and hence has no onSubmit function.<br /><br />
+
+**Note:** Form in NativeBase is just a wrapper around the inputs and hence has no <code>onSubmit</code> function.<br /><br />

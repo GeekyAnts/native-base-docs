@@ -83,7 +83,7 @@ export default class HeaderExample extends Component {
             <tr>
                 <td>iosBarStyle</td>
                 <td> - </td>
-                <td>'light-content', 'dark-content' or 'default'</td>
+                <td>light-content, dark-content, default</td>
                 <td>Set iOS barStyle</td>
             </tr>
             <tr>
@@ -92,12 +92,6 @@ export default class HeaderExample extends Component {
                 <td> - </td>
                 <td>Set background color for status bar in android</td>
             </tr>
-<!--             </tr>
-                <td>span</td>
-                <td> - </td>
-                <td> boolean </td>
-                <td>Doubles the header size</td>
-            </tr> -->
             <tr>
                 <td>noShadow</td>
                 <td> - </td>
@@ -108,31 +102,37 @@ export default class HeaderExample extends Component {
                 <td>searchBar</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Add searchBar to header or not</td>
+                <td>Add searchbar to header or not</td>
             </tr>
             <tr>
                 <td>rounded</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Make Header searchBar Rounded</td>
+                <td>Make header searchbar rounded</td>
             </tr>
             <tr>
                 <td>hasSubtitle</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Add subtitle to the Header Component</td>
+                <td>Add subtitle to header</td>
             </tr>
             <tr>
                 <td>hasSegment</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Add Segments to Header Component</td>
+                <td>Add segments to header</td>
             </tr>
             <tr>
                 <td>hasTabs</td>
                 <td> - </td>
                 <td> boolean </td>
-                <td>Add Tabs to Header Component</td>
+                <td>Add tabs to header</td>
             </tr>
+            <!--             </tr>
+                <td>span</td>
+                <td> - </td>
+                <td> boolean </td>
+                <td>Doubles the header size</td>
+            </tr> -->
         </tbody>
     </table><br />

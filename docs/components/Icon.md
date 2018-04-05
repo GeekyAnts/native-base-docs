@@ -64,11 +64,9 @@ export default class IconExample extends Component {
             </tr>
             <tr>
                 <td>active</td>
-                <td>default</td>
+                <td>true</td>
                 <td>boolean</td>
-                <td>Renders filled icons.<br />
-                    By default renders outline icon.
-                </td>
+                <td>Renders filled icons</td>
             </tr>
             <tr>
                 <td>color</td>
@@ -91,9 +89,8 @@ export default class IconExample extends Component {
             <tr>
                 <td>type</td>
                 <td>Ionicons</td>
-                <td>Ionicons,<br/>Entypo,<br/>EvilIcons,<br/>Feather,<br/>FontAwesome,<br/>Foundation,<br/>MaterialIcons,<br/>MaterialCommunityIcons,<br/>Octicons,<br/>SimpleLineIcons,<br/>Zocial</td>
-                <td>Specify an icon type
-                </td>
+                <td>Ionicons, Entypo, EvilIcons, Feather, FontAwesome, Foundation, MaterialIcons, MaterialCommunityIcons, Octicons, SimpleLineIcons, Zocial</td>
+                <td>Specifies icon family from IonIcons</td>
             </tr>
         </tbody>
     </table><br />
