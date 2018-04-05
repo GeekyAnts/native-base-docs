@@ -14,6 +14,7 @@
 {% include "./docs/components/button/ButtonSize.md" %}
 {% include "./docs/components/button/DisabledButton.md" %}
 {% include "./docs/components/card/Card.md" %}
+{% include "./docs/components/card/CardTransparent.md" %}
 {% include "./docs/components/card/HeaderAndFooter.md" %}
 {% include "./docs/components/card/CardList.md" %}
 {% include "./docs/components/card/CardImage.md" %}

@@ -19,6 +19,7 @@
         * [Disabled Button](Components.md#button-disabled-headref)
     * [Card](Components.md#card-def-headref)
         * [Card Header and Footer](Components.md#card-headfoot-headref)
+        * [Card Transparent](Components.md#card-transparent-headref)
         * [Card List](Components.md#card-list-headref)
         * [Card Image](Components.md#card-image-headref)
         * [Card Showcase](Components.md#card-showcase-headref)
