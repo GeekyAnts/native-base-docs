@@ -2031,7 +2031,7 @@ export default () =&gt;
 }
 </span></code></pre><br></p>
 <p><em>iconColor</em> is optional. Icons default to black.</p>
-<p>Note: The use cases similar to RN&apos;s ActionSheetIOS.</p>
+<p><strong>Note:</strong> The use cases similar to RN&apos;s ActionSheetIOS.</p>
 <h2 id="Badge">6. Badge</h2>
 <p>All of us must have seen notification badges somewhere, such as on smart phones or facebook. NativeBase is here to include this into your collection of readymade components. Badges are numerical indicators of how many items are associated with an element. Badges can notify you that there are new or unread messages or notifications. These can be very effective in alerting the user to new things on your app.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/badge.png" alt="Preview ios Badge">
@@ -4483,15 +4483,12 @@ Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much
     );
   }
 }</span></code></pre><br></p>
-<p><strong>NOTE:</strong> 
-If you&apos;re using <code>&lt;Row /&gt;</code> inside a <code>&lt;ScrollView /&gt;</code>, the height of the component would be flexible according to the content, though you can always apply the height styling.</p>
+<p><strong>Note:</strong> If you&apos;re using <code>&lt;Row /&gt;</code> inside a <code>&lt;ScrollView /&gt;</code>, the height of the component would be flexible according to the content, though you can always apply the height styling.</p>
 <p>NativeBase <code>&lt;Content&gt;</code> component uses <code>&lt;ScrollView&gt;</code>. This is required by <code>&lt;Col&gt;</code> and <code>&lt;Row&gt;</code> elements of Easy-Grid to have a defined height.<br>
 Replacing Component for Grid, Col, Row: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a></p>
 <h2 id="list-def-headref">63. list-def-headref</h2>
 <h2 id="List">64. List</h2>
-<p>This component is completely built by <a href="https://nativebase.io/" target="_blank">NativeBase</a>.<br>
-A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br>
-List is deprecated. Use of List for dynamic list generation is discouraged. Use <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">Flatlist</a> instead.<br></p>
+<p>A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follow styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-basic.png" alt="Preview ios list-def-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-basic.png" alt="Preview android list-def-headref"></p>
 <p><strong>Contents:</strong></p>
@@ -4537,13 +4534,15 @@ List is deprecated. Use of List for dynamic list generation is discouraged. Use 
 <li>Defines a list item.</li>
 <li>Adds border at bottom of each ListItem.</li>
 <li>List takes any number of ListItem.</li>
-<li>Takes input such as: Text, Badge, Thumbnail, Icon.
-Replacing Component</li>
+<li>Takes input such as: Text, Badge, Thumbnail, Icon.</li>
 </ul>
 </li>
+</ul>
+<p>Replacing Component</p>
+<ul>
 <li>List: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a></li>
 <li>ListItem:<ul>
-<li>React Native <a href="https://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank">TouchableOpacity</a> for iOS</li>
+<li>React Native <a href="https://facebook.github.io/react-native/docs/touchablehighlight.html" target="_blank">TouchableHighlight</a> for iOS</li>
 <li>React Native <a href="http://facebook.github.io/react-native/docs/touchablenativefeedback.html" target="_blank">TouchableNativeFeedback</a> for Android</li>
 </ul>
 </li>
@@ -4591,14 +4590,14 @@ Replacing Component</li>
                 <td>itemHeader</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Style the item as the header for the ListItems.</td>
+                <td>Style the item as header for ListItems</td>
             </tr>
             <tr>
                 <td>first</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Adds style of first ListItem.
+                    Adds style of first ListItem
                 </td>
             </tr>
             <tr>
@@ -4606,7 +4605,7 @@ Replacing Component</li>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Adds style of last ListItem.
+                    Adds style of last ListItem
                 </td>
             </tr>
             <tr>
@@ -4614,7 +4613,7 @@ Replacing Component</li>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    To have list styling of icons.
+                    To have list styling of icons
                 </td>
             </tr>
             <tr>
@@ -4622,7 +4621,7 @@ Replacing Component</li>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style the list to have Avatars.
+                    Style the list to have Avatars
                 </td>
             </tr>
             <tr>
@@ -4630,7 +4629,7 @@ Replacing Component</li>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style the list to have Thumbnails.
+                    Style the list to have Thumbnails
                 </td>
             </tr>
             <tr>
@@ -4638,7 +4637,7 @@ Replacing Component</li>
                 <td> Function </td>
                 <td> - </td>
                 <td>
-                    Callback which takes a chunk of data from dataArray and returns as a component.
+                    Callback which takes a chunk of data from dataArray and return as a component
                 </td>
             </tr>
             <tr>
@@ -4651,6 +4650,7 @@ Replacing Component</li>
             </tr>
         </tbody>
     </table><br></p>
+<p><strong>Note:</strong> List is deprecated. Use of List for dynamic list generation is discouraged. Use <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">Flatlist</a> instead.</p>
 <h2 id="list-divider-headref">65. list-divider-headref</h2>
 <h4 id="List_Divider">65.0.1. List Divider</h4>
 <p>The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.<br>
@@ -4691,7 +4691,7 @@ The List Divider of NativeBase comes with default style which is easily customis
 </span></code></pre><br></p>
 <h2 id="list-header-headref">66. list-header-headref</h2>
 <h4 id="List_Header">66.0.1. List Header</h4>
-<p>The List Header component creates a list header, which can be used for grouping list items. To create a header for any child element of the list, include itemHeader prop with ListItem component. The List Header of NativeBase comes with default style which is easily customisable.</p>
+<p>The List Header component creates a list header, which can be used for grouping list items. To create a header for any child element of the list, include <code>itemHeader</code> prop with <code>ListItem</code> component. The List Header of NativeBase comes with default style which is easily customisable.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-header.png" alt="Preview ios list-header-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-header.png" alt="Preview android list-header-headref"></p>
 <p><em>Syntax</em></p>
@@ -4790,7 +4790,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 <p><strong>Note:</strong> <a href="http://facebook.github.io/react-native/docs/switch.html" target="_blank">Switch</a> included in above example is from React Native.</p>
 <h2 id="list-avatar-headref">68. list-avatar-headref</h2>
 <h4 id="List_Avatar">68.0.1. List Avatar</h4>
-<p>List Avatars are medium to showcase an image with your list item whose dimension lays between icon and thumbnail. To create a avatar list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component.</p>
+<p>List Avatars are medium to showcase an image with your list item whose dimension lays between icon and thumbnail. To create a avatar list, nest <code>&lt;Thumbnail&gt;</code> component within <code>&lt;ListItem&gt;</code> component with <code>avatar</code> prop.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-avatar.png" alt="Preview ios list-avatar-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-avatar.png" alt="Preview android list-avatar-headref"></p>
 <p><em>Syntax</em></p>
@@ -4935,7 +4935,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>
-                <td> adds border to top and bottom of the separator </td>
+                <td>Adds border to top and bottom of the separator</td>
             </tr>
             </tbody>
             </table><br></p>
@@ -5006,99 +5006,86 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 }</code></pre><br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">
-                    Description
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>renderHeader</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Makes component that appears as header of the Picker, comes with a backAction prop to close the picker. Like renderHeader={(backAction) =&gt;{ // BODY }</td>
-            </tr>
-            <tr>
-                <td>headerStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom style to be given to Header</td>
-            </tr>
-            <tr>
-                <td>placeholder</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Pass placeholder for Picker component.</td>
-            </tr>
-            <tr>
-                <td>placeholderStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom style for placeholder text in iOS</td>
-            </tr>
-            <tr>
-                <td>placeholderIconColor</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Set placeholder icon color in iOS</td>
-            </tr>
-            <tr>
-                <td>iosHeader</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom text for the header title.</td>
-            </tr>
-            <tr>
-                <td>headerBackButtonText</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom text for the header back button.</td>
-            </tr>
-            <tr>
-                <td>textStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Text style of header</td>
-            </tr>
-            <tr>
-                <td>itemStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Style of items in the Picker</td>
-            </tr>
-            <tr>
-                <td>headerStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Style of header.</td>
-            </tr>
-            <tr>
-                <td>itemTextStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Text style of item component in Picker</td>
-            </tr>
-            <tr>
-                <td>supportedOrientations</td>
-                <td> - </td>
-                <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
-                <td>Allows the modal to be rotated to any of the specified orientations</td>
-            </tr>
-            <tr>
-                <td>headerBackButtonText</td>
-                <td>&quot;Back&quot;</td>
-                <td>user-defined text</td>
-                <td>Used for custom backButton text</td>
-            </tr>
-            </tbody>
-            </table><br></p>
-<p>Styling Picker is restricted to the style props provided in the table.<br><br>
-<strong>Note:</strong> NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements</p>
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Default</th>
+          <th>Option</th>
+          <th width="50%">
+              Description
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>renderHeader</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Makes component that appears as header of the Picker, comes with a backAction prop to close the picker.</td>
+      </tr>
+      <tr>
+          <td>headerStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom style for header</td>
+      </tr>
+      <tr>
+          <td>iosHeader</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom text for the header title</td>
+      </tr>
+      <tr>
+          <td>textStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Text style of header</td>
+      </tr>
+      <tr>
+          <td>headerBackButtonText</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom text for the header back button</td>
+      </tr>
+      <tr>
+          <td>placeholder</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Placeholder for Picker component</td>
+      </tr>
+      <tr>
+          <td>placeholderStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom style for placeholder text (iOS)</td>
+      </tr>
+      <tr>
+          <td>placeholderIconColor</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Set placeholder icon color (iOS)</td>
+      </tr>
+      <tr>
+          <td>itemStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Style of items in Picker</td>
+      </tr>
+      <tr>
+          <td>itemTextStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Text style of item component in Picker</td>
+      </tr>
+      <tr>
+          <td>supportedOrientations</td>
+          <td> - </td>
+          <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
+          <td>Allows the modal to rotate to any of the specified orientations</td>
+      </tr>
+    </tbody>
+  </table><br></p>
+<p><strong>Note:</strong> Styling Picker is restricted to the style props provided in the table. NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements.</p>
 <h3 id="Advanced_Pickers_(iOS_only)">73.1. Advanced Pickers (iOS only)</h3>
 <h2 id="picker-placeholder-headref">74. picker-placeholder-headref</h2>
 <h4 id="Placeholder_Picker">74.0.1. Placeholder Picker</h4>
@@ -6496,7 +6483,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-05T11:12:09.128Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-05T11:35:02.750Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

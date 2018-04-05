@@ -70,97 +70,84 @@ export default class PickerExample extends Component {
 **Configuration**
 
 <table class = "table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">
-                    Description
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>renderHeader</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Makes component that appears as header of the Picker, comes with a backAction prop to close the picker. Like renderHeader={(backAction) =>{ // BODY }</td>
-            </tr>
-            <tr>
-                <td>headerStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom style to be given to Header</td>
-            </tr>
-            <tr>
-                <td>placeholder</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Pass placeholder for Picker component.</td>
-            </tr>
-            <tr>
-                <td>placeholderStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom style for placeholder text in iOS</td>
-            </tr>
-            <tr>
-                <td>placeholderIconColor</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Set placeholder icon color in iOS</td>
-            </tr>
-            <tr>
-                <td>iosHeader</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom text for the header title.</td>
-            </tr>
-            <tr>
-                <td>headerBackButtonText</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Custom text for the header back button.</td>
-            </tr>
-            <tr>
-                <td>textStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Text style of header</td>
-            </tr>
-            <tr>
-                <td>itemStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Style of items in the Picker</td>
-            </tr>
-            <tr>
-                <td>headerStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Style of header.</td>
-            </tr>
-            <tr>
-                <td>itemTextStyle</td>
-                <td> - </td>
-                <td> - </td>
-                <td>Text style of item component in Picker</td>
-            </tr>
-            <tr>
-                <td>supportedOrientations</td>
-                <td> - </td>
-                <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
-                <td>Allows the modal to be rotated to any of the specified orientations</td>
-            </tr>
-            <tr>
-                <td>headerBackButtonText</td>
-                <td>"Back"</td>
-                <td>user-defined text</td>
-                <td>Used for custom backButton text</td>
-            </tr>
-            </tbody>
-            </table><br />
+  <thead>
+      <tr>
+          <th>Property</th>
+          <th>Default</th>
+          <th>Option</th>
+          <th width="50%">
+              Description
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>renderHeader</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Makes component that appears as header of the Picker, comes with a backAction prop to close the picker.</td>
+      </tr>
+      <tr>
+          <td>headerStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom style for header</td>
+      </tr>
+      <tr>
+          <td>iosHeader</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom text for the header title</td>
+      </tr>
+      <tr>
+          <td>textStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Text style of header</td>
+      </tr>
+      <tr>
+          <td>headerBackButtonText</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom text for the header back button</td>
+      </tr>
+      <tr>
+          <td>placeholder</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Placeholder for Picker component</td>
+      </tr>
+      <tr>
+          <td>placeholderStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom style for placeholder text (iOS)</td>
+      </tr>
+      <tr>
+          <td>placeholderIconColor</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Set placeholder icon color (iOS)</td>
+      </tr>
+      <tr>
+          <td>itemStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Style of items in Picker</td>
+      </tr>
+      <tr>
+          <td>itemTextStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Text style of item component in Picker</td>
+      </tr>
+      <tr>
+          <td>supportedOrientations</td>
+          <td> - </td>
+          <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
+          <td>Allows the modal to rotate to any of the specified orientations</td>
+      </tr>
+    </tbody>
+  </table><br />
 
-Styling Picker is restricted to the style props provided in the table.<br/><br/>
-**Note:** NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements
+**Note:** Styling Picker is restricted to the style props provided in the table. NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements.

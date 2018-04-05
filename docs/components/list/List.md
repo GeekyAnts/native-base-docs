@@ -1,9 +1,7 @@
 ## list-def-headref
 ## List
 
-This component is completely built by [NativeBase](https://nativebase.io/).<br />
-A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follows styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
-List is deprecated. Use of List for dynamic list generation is discouraged. Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.<br/>
+A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follow styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
 ![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-basic.png)
 ![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-basic.png)
@@ -52,10 +50,11 @@ export default class ListExample extends Component {
   * Adds border at bottom of each ListItem.
   * List takes any number of ListItem.
   * Takes input such as: Text, Badge, Thumbnail, Icon.
+
 Replacing Component
 * List: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 * ListItem:
-  -   React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html) for iOS
+  -   React Native [TouchableHighlight](https://facebook.github.io/react-native/docs/touchablehighlight.html) for iOS
   -   React Native [TouchableNativeFeedback](http://facebook.github.io/react-native/docs/touchablenativefeedback.html) for Android
 
 
@@ -103,14 +102,14 @@ Replacing Component
                 <td>itemHeader</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Style the item as the header for the ListItems.</td>
+                <td>Style the item as header for ListItems</td>
             </tr>
             <tr>
                 <td>first</td>
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Adds style of first ListItem.
+                    Adds style of first ListItem
                 </td>
             </tr>
             <tr>
@@ -118,7 +117,7 @@ Replacing Component
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Adds style of last ListItem.
+                    Adds style of last ListItem
                 </td>
             </tr>
             <tr>
@@ -126,7 +125,7 @@ Replacing Component
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    To have list styling of icons.
+                    To have list styling of icons
                 </td>
             </tr>
             <tr>
@@ -134,7 +133,7 @@ Replacing Component
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style the list to have Avatars.
+                    Style the list to have Avatars
                 </td>
             </tr>
             <tr>
@@ -142,7 +141,7 @@ Replacing Component
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style the list to have Thumbnails.
+                    Style the list to have Thumbnails
                 </td>
             </tr>
             <tr>
@@ -150,7 +149,7 @@ Replacing Component
                 <td> Function </td>
                 <td> - </td>
                 <td>
-                    Callback which takes a chunk of data from dataArray and returns as a component.
+                    Callback which takes a chunk of data from dataArray and return as a component
                 </td>
             </tr>
             <tr>
@@ -163,3 +162,5 @@ Replacing Component
             </tr>
         </tbody>
     </table><br />
+
+**Note:** List is deprecated. Use of List for dynamic list generation is discouraged. Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.
