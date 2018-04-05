@@ -68,6 +68,14 @@ export default class FormExample extends Component {
         </thead>
         <tbody>
             <tr>
+                <td>regular</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>
+                    Provides a rectangular border to the input
+                </td>
+            </tr>
+            <tr>
                 <td>fixedLabel</td>
                 <td>true</td>
                 <td>boolean</td>
