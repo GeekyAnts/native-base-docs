@@ -124,6 +124,14 @@ export default class FormExample extends Component {
                 </td>
             </tr>
             <tr>
+                <td>regular</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Includes rectangluar border with the textbox.
+                </td>
+            </tr>
+            <tr>
                 <td>underline</td>
                 <td> true </td>
                 <td> - </td>
