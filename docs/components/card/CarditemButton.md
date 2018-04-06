@@ -1,5 +1,5 @@
-## card-item-button-headref
-#### Card Item Button
+## carditem-button-headref
+#### CardItem Button
 
 *Syntax*
 
@@ -23,39 +23,17 @@ export default class CardItemButton extends Component {
         &lt;/Header>
         &lt;Content padder>
           &lt;Card>
-            &lt;CardItem header button>
+            &lt;CardItem header button onPress={() => alert("This is Card Header")}>
               &lt;Text>NativeBase&lt;/Text>
             &lt;/CardItem>
-            &lt;CardItem>
+            &lt;CardItem button onPress={() => alert("This is Card Body")}>
               &lt;Body>
                 &lt;Text>
-                  NativeBase is a free and open source framework that enable
-                  developers to build
-                  high-quality mobile apps using React Native iOS and Android
-                  apps
-                  with a fusion of ES6.
+                  Click on any carditem
                 &lt;/Text>
               &lt;/Body>
             &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Body>
-                &lt;Text>
-                  NativeBase builds a layer on top of React Native that provides
-                  you with
-                  basic set of components for mobile application development.
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Body>
-                &lt;Text>
-                  Get on the mobile fast track with NativeBase, the
-                  fastest-growing platform
-                  and tool set for iOS and Android development.
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem footer button>
+            &lt;CardItem footer button onPress={() => alert("This is Card Footer")}>
               &lt;Text>GeekyAnts&lt;/Text>
             &lt;/CardItem>
           &lt;/Card>

@@ -1,5 +1,5 @@
-## card-item-bordered-headref
-#### Card Item Bordered
+## carditem-bordered-headref
+#### CardItem Bordered
 
 *Syntax*
 
@@ -26,7 +26,7 @@ export default class CardItemBordered extends Component {
             &lt;CardItem header bordered>
               &lt;Text>NativeBase&lt;/Text>
             &lt;/CardItem>
-            &lt;CardItem>
+            &lt;CardItem bordered>
               &lt;Body>
                 &lt;Text>
                   NativeBase is a free and open source framework that enable
@@ -37,7 +37,7 @@ export default class CardItemBordered extends Component {
                 &lt;/Text>
               &lt;/Body>
             &lt;/CardItem>
-            &lt;CardItem>
+            &lt;CardItem bordered>
               &lt;Body>
                 &lt;Text>
                   NativeBase builds a layer on top of React Native that provides
@@ -46,7 +46,7 @@ export default class CardItemBordered extends Component {
                 &lt;/Text>
               &lt;/Body>
             &lt;/CardItem>
-            &lt;CardItem>
+            &lt;CardItem bordered>
               &lt;Body>
                 &lt;Text>
                   Get on the mobile fast track with NativeBase, the

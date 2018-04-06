@@ -29,6 +29,12 @@ export default class CheckBoxExample extends Component {
               &lt;Text>Discussion with Client&lt;/Text>
             &lt;/Body>
           &lt;/ListItem>
+          &lt;ListItem>
+            &lt;CheckBox checked={false} color="green"/>
+            &lt;Body>
+              &lt;Text>Finish list Screen&lt;/Text>
+            &lt;/Body>
+          &lt;/ListItem>
         &lt;/Content>
       &lt;/Container>
     );
