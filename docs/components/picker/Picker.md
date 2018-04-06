@@ -14,6 +14,7 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 * [Picker with Custom Header](Components.md#picker-with-custom-header-headref)
 * [Picker with Custom Header Text](Components.md#picker-with-custom-header-text-headref)
 * [Picker with Custom Header Style](Components.md#picker-with-custom-header-style-headref)
+* [Picker with Custom Style](Components.md#picker-with-custom-styles-headref)
 
 *Regular Syntax*
 

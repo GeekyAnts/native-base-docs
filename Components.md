@@ -61,6 +61,7 @@
 {% include "./docs/components/picker/Picker-With-Custom-Header.md" %}
 {% include "./docs/components/picker/Picker-With-Custom-Header-Text.md" %}
 {% include "./docs/components/picker/Picker-With-Custom-Header-Style.md" %}
+{% include "./docs/components/picker/Picker-With-Custom-Styles.md" %}
 {% include "./docs/components/RadioButton.md" %}
 {% include "./docs/components/SearchBar.md" %}
 {% include "./docs/components/segment/Segment-Inside-Header.md" %}

@@ -70,6 +70,7 @@
         * [Picker Custom Header](Components.md#picker-with-custom-header-headref)
         * [Picker Custom Header Text](Components.md#picker-with-custom-header-text-headref)
         * [Picker Custom Header Style](Components.md#picker-with-custom-header-style-headref)
+        * [Picker Custom Styles](Components.md#picker-with-custom-styles-headref)
     * [Radio Button](Components.md#radio-button-headref)
     * [Search Bar](Components.md#search-bar-headref)
     * [Segment](Components.md#segment-inside-header-headref)
