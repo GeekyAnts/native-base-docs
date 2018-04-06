@@ -1,6 +1,8 @@
 ## carditem-bordered-headref
 #### CardItem Bordered
 
+Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for card item.
+
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

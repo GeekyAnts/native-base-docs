@@ -1,31 +1,29 @@
-## header-no-shadow-headref
-#### Header No Shadow (Android)
+## header-span-headref
+#### Header Span
+
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">
 import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
-export default class HeaderNoShadow extends Component {
+export default class HeaderSpan extends Component {
   render() {
     return (
       &lt;Container>
-        &lt;Header noShadow>
+        &lt;Header span>
           &lt;Left>
             &lt;Button transparent>
               &lt;Icon name="arrow-back" />
             &lt;/Button>
           &lt;/Left>
           &lt;Body>
-            &lt;Title>Header No Shadow&lt;/Title>
+            &lt;Title>Header Span&lt;/Title>
           &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Icon name="menu" />
-            &lt;/Button>
-          &lt;/Right>
+          &lt;Right />
         &lt;/Header>
         &lt;Content padder>
           &lt;Text>
-            Header with noShadow prop
+            Header span example
           &lt;/Text>
         &lt;/Content>
       &lt;/Container>
