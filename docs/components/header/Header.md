@@ -128,11 +128,11 @@ export default class HeaderExample extends Component {
                 <td> boolean </td>
                 <td>Add tabs to header</td>
             </tr>
-            <!--             </tr>
+            </tr>
                 <td>span</td>
                 <td> - </td>
                 <td> boolean </td>
                 <td>Doubles the header size</td>
-            </tr> -->
+            </tr>
         </tbody>
     </table><br />
