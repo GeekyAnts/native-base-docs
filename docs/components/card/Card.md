@@ -10,6 +10,8 @@ Card is a flexible and extensible content container. It includes options for hea
 
   **Contents:**
 * [Card Header and Footer](Components.md#card-headfoot-headref)
+* [Card Item Bordered](Components.md#card-item-bordered-headref)
+* [Card Item Button](Components.md#card-item-button-headref)
 * [Card Transparent](Components.md#card-transparent-headref)
 * [Card List](Components.md#card-list-headref)
 * [Card Image](Components.md#card-image-headref)
