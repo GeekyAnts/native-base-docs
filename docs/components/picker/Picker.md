@@ -8,13 +8,14 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 ![Preview android picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
 
   **Contents:**
+* [Picker with Icon](Components.md#picker-with-icon-headref)
 * [Placeholder Picker](Components.md#picker-placeholder-headref)
 * [Placeholder Picker without Note](Components.md#picker-placeholder-without-note-headref)
 * [Picker with Custom Back Button](Components.md#picker-with-custom-back-button-headref)
+* [Picker Text and Item Style](Components.md#picker-text-and-item-text-styles-headref)
 * [Picker with Custom Header](Components.md#picker-with-custom-header-headref)
 * [Picker with Custom Header Text](Components.md#picker-with-custom-header-text-headref)
 * [Picker with Custom Header Style](Components.md#picker-with-custom-header-style-headref)
-* [Picker with Custom Style](Components.md#picker-with-custom-styles-headref)
 
 *Regular Syntax*
 
