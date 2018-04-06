@@ -2811,7 +2811,7 @@ export default class CardTransparentExample extends Component {
           &lt;Right /&gt;
         &lt;/Header&gt;
         &lt;Content padder&gt;
-          &lt;Card style={styles.mb} transparent&gt;
+          &lt;Card transparent&gt;
             &lt;CardItem&gt;
               &lt;Body&gt;
                 &lt;Text&gt;
@@ -4390,6 +4390,7 @@ export default class TextArea extends Component {
         &lt;Content&gt;
           &lt;Icon name=&apos;home&apos; /&gt;
           &lt;Icon ios=&apos;ios-menu&apos; android=&quot;md-menu&quot; style={{fontSize: 20, color: &apos;red&apos;}}/&gt;
+          &lt;Icon type=&quot;FontAwesome&quot; name=&quot;home&quot; /&gt;
         &lt;/Content&gt;
       &lt;/Container&gt;
     );
@@ -6222,8 +6223,8 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
                 <td>Image path for thumbnail.</td>
             </tr>
             <tr>
-                <td>square</td>
-                <td> - </td>
+                <td>circle</td>
+                <td>true</td>
                 <td> - </td>
                 <td>
                     Represents shape of thumbnail.<br>
@@ -6231,16 +6232,24 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
                 </td>
             </tr>
             <tr>
+                <td>square</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Represents shape of thumbnail
+                </td>
+            </tr>
+            <tr>
                 <td>small</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Small thumbnail with width and height of 40px.</td>
+                <td>Small thumbnail with width and height of 36px</td>
             </tr>
             <tr>
                 <td>large</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Large thumbnail with width and height of 80px.</td>
+                <td>Large thumbnail with width and height of 80px</td>
             </tr>
         </tbody>
     </table><br></p>
@@ -6511,7 +6520,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-06T04:36:47.214Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-06T06:55:01.601Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
