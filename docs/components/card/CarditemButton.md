@@ -1,6 +1,7 @@
 ## carditem-button-headref
 #### CardItem Button
 
+Include <code>button</code> prop with &lt;CardItem> to achieve onClick function with card items.
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

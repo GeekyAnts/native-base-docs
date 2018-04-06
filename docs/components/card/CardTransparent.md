@@ -2,7 +2,7 @@
 ## card-transparent-headref
 #### Transparent Card
 
-A transparent card can be created using `transparent` props 
+A transparent card can be created using `transparent` props with &lt;CardItem>.
 
 *Syntax*
 

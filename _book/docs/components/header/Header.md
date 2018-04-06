@@ -21,6 +21,8 @@
 * [Header with Icon Button and Text Button](Components.md#header-icon-button-text-button-headref)
 * [Header with Icon and Text Button](Components.md#header-icon-text-button-headref)
 * [Header with Multiple Icon Button](Components.md#header-multiple-icon-headref)
+* [Header Span](Components.md#header-span-headref)
+* [Header No Shadow](Components.md#header-no-shadow-headref)
 
 
 *Syntax*
