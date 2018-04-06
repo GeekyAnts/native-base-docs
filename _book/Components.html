@@ -3620,6 +3620,14 @@ Provides a number of attributes that follows styling and interaction guidelines 
         </thead>
         <tbody>
             <tr>
+                <td>regular</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>
+                    Provides a rectangular border to the input
+                </td>
+            </tr>
+            <tr>
                 <td>fixedLabel</td>
                 <td>true</td>
                 <td>boolean</td>
@@ -5649,7 +5657,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
     </table><br></p>
 <h2 id="swipeable-multi-def-headref">88. swipeable-multi-def-headref</h2>
 <h2 id="Swipeable_List">89. Swipeable List</h2>
-<p>Swipable List are ListItems that swipe open and close.Handles default native behavior such as closing rows when other rows are opened.<br></p>
+<p>Swipable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br></p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/list-swipe-multiple.gif" alt="Preview ios swipeable-multi-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/list-swipe-multiple.gif" alt="Preview android swipeable-multi-def-headref"></p>
 <p><em>Syntax</em></p>
@@ -6195,6 +6203,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
     );
   }
 }</code></pre><br></p>
+<p><strong>Note:</strong> To have Thumbnail of custom size, include height and width with <code>style</code>.</p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -6238,6 +6247,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <h2 id="Toast">96. Toast</h2>
 <p>NativeBase Toast can be used to display quick warning or error messages. <br></p>
 <p>For <code>Toast</code> to work, you need to wrap your topmost component inside <code>&lt;Root&gt;</code> from native-base.</p>
+<p>Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a>.</p>
 <pre><code>import { Root } from &quot;native-base&quot;;
 import { StackNavigator } from &quot;react-navigation&quot;;
 const AppNavigator = StackNavigator(
@@ -6293,30 +6303,48 @@ export default () =&gt;
                 <td>text</td>
                 <td> - </td>
                 <td> string </td>
-                <td>The text content to be shown in the toast.</td>
+                <td>Text content to be shown in the toast</td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style text content for toast</td>
             </tr>
             <tr>
                 <td>buttonText</td>
                 <td> - </td>
                 <td> string, blank </td>
-                <td>The text to be displayed inside the button.</td>
+                <td>Text to be displayed inside the button</td>
+            </tr>
+            <tr>
+                <td>buttonTextStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style button text for toast</td>
+            </tr>
+            <tr>
+                <td>buttonStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style button for toast</td>
             </tr>
             <tr>
                 <td>position</td>
                 <td> bottom </td>
                 <td> top, bottom </td>
-                <td>Sets position for the toast.</td>
+                <td>Sets position for the toast</td>
             </tr>
             <tr>
                 <td>type</td>
                 <td> - </td>
-                <td> danger,success,warning </td>
-                <td>Sets context to the Toast.</td>
+                <td>danger, success, warning</td>
+                <td>Sets context to the Toast</td>
             </tr>
             <tr>
                 <td>duration</td>
                 <td> 1500 </td>
-                <td> integer </td>
+                <td>user defined (integer)</td>
                 <td>Milliseconds after which Toast disappers</td>
             </tr>
             <tr>
@@ -6483,7 +6511,7 @@ Drawer can be the perfect option to provide navigation options. <br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-05T11:35:02.750Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.4","depth":1,"next":{"title":"Anatomy","level":"1.4.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Getting Started","level":"1.3","depth":1,"path":"docs/GetStarted.md","ref":"docs/GetStarted.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.0.0/","text":"v2.2.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-04-05T10:21:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-06T04:36:47.214Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

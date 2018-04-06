@@ -26,7 +26,7 @@ export default class CardTransparentExample extends Component {
           <Right />
         </Header>
         <Content padder>
-          <Card style={styles.mb} transparent>
+          <Card transparent>
             <CardItem>
               <Body>
                 <Text>

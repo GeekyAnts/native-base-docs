@@ -4,6 +4,8 @@ NativeBase Toast can be used to display quick warning or error messages. <br />
 
 For `Toast` to work, you need to wrap your topmost component inside `<Root>` from native-base.
 
+Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html).
+
 ```
 import { Root } from "native-base";
 import { StackNavigator } from "react-navigation";
@@ -65,30 +67,48 @@ export default class ToastExample extends Component &lcub;
                 <td>text</td>
                 <td> - </td>
                 <td> string </td>
-                <td>The text content to be shown in the toast.</td>
+                <td>Text content to be shown in the toast</td>
+            </tr>
+            <tr>
+                <td>textStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style text content for toast</td>
             </tr>
             <tr>
                 <td>buttonText</td>
                 <td> - </td>
                 <td> string, blank </td>
-                <td>The text to be displayed inside the button.</td>
+                <td>Text to be displayed inside the button</td>
+            </tr>
+            <tr>
+                <td>buttonTextStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style button text for toast</td>
+            </tr>
+            <tr>
+                <td>buttonStyle</td>
+                <td> - </td>
+                <td> - </td>
+                <td>Style button for toast</td>
             </tr>
             <tr>
                 <td>position</td>
                 <td> bottom </td>
                 <td> top, bottom </td>
-                <td>Sets position for the toast.</td>
+                <td>Sets position for the toast</td>
             </tr>
             <tr>
                 <td>type</td>
                 <td> - </td>
-                <td> danger,success,warning </td>
-                <td>Sets context to the Toast.</td>
+                <td>danger, success, warning</td>
+                <td>Sets context to the Toast</td>
             </tr>
             <tr>
                 <td>duration</td>
                 <td> 1500 </td>
-                <td> integer </td>
+                <td>user defined (integer)</td>
                 <td>Milliseconds after which Toast disappers</td>
             </tr>
             <tr>

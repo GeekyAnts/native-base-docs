@@ -29,6 +29,8 @@ export default class ThumbnailExample extends Component {
   }
 }</code></pre><br />
 
+**Note:** To have Thumbnail of custom size, include height and width with <code>style</code>.
+
 
 **Configuration**
 <table class="table table-bordered">
@@ -48,8 +50,8 @@ export default class ThumbnailExample extends Component {
                 <td>Image path for thumbnail.</td>
             </tr>
             <tr>
-                <td>square</td>
-                <td> - </td>
+                <td>circle</td>
+                <td>true</td>
                 <td> - </td>
                 <td>
                     Represents shape of thumbnail.<br />
@@ -57,16 +59,24 @@ export default class ThumbnailExample extends Component {
                 </td>
             </tr>
             <tr>
+                <td>square</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Represents shape of thumbnail
+                </td>
+            </tr>
+            <tr>
                 <td>small</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Small thumbnail with width and height of 40px.</td>
+                <td>Small thumbnail with width and height of 36px</td>
             </tr>
             <tr>
                 <td>large</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Large thumbnail with width and height of 80px.</td>
+                <td>Large thumbnail with width and height of 80px</td>
             </tr>
         </tbody>
     </table><br />

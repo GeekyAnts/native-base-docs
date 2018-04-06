@@ -29,6 +29,8 @@ export default class ThumbnailExample extends Component {
   }
 }</code></pre><br />
 
+**Note:** To have Thumbnail of custom size, include height and width with <code>style</code>.
+
 
 **Configuration**
 <table class="table table-bordered">
