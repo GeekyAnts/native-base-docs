@@ -119,6 +119,12 @@ export default class PickerExample extends Component {
           <td>Custom title style for the header title</td>
       </tr>
       <tr>
+          <td>iosIcon</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Icon with picker dropdown</td>
+      </tr>
+      <tr>
           <td>placeholder</td>
           <td> - </td>
           <td> - </td>

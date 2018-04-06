@@ -1,5 +1,5 @@
 
-##card-transparent-headref
+## card-transparent-headref
 #### Transparent Card
 
 A transparent card can be created using `transparent` props 
