@@ -101,16 +101,28 @@ export default class PickerExample extends Component {
           <td>Custom text for the header title</td>
       </tr>
       <tr>
-          <td>textStyle</td>
-          <td> - </td>
-          <td> - </td>
-          <td>Text style of header</td>
-      </tr>
-      <tr>
           <td>headerBackButtonText</td>
           <td> - </td>
           <td> - </td>
           <td>Custom text for the header back button</td>
+      </tr>
+      <tr>
+          <td>headerBackButtonTextStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom text style for the header back button</td>
+      </tr>
+      <tr>
+          <td>headerTitleStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Custom title style for the header title</td>
+      </tr>
+      <tr>
+          <td>iosIcon</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Icon with picker dropdown</td>
       </tr>
       <tr>
           <td>placeholder</td>
@@ -141,6 +153,12 @@ export default class PickerExample extends Component {
           <td> - </td>
           <td> - </td>
           <td>Text style of item component in Picker</td>
+      </tr>
+      <tr>
+          <td>textStyle</td>
+          <td> - </td>
+          <td> - </td>
+          <td>Text style of header</td>
       </tr>
       <tr>
           <td>supportedOrientations</td>

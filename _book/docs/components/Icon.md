@@ -19,6 +19,7 @@ export default class IconExample extends Component {
         &lt;Content>
           &lt;Icon name='home' />
           &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>
+          &lt;Icon type="FontAwesome" name="home" />
         &lt;/Content>
       &lt;/Container>
     );
