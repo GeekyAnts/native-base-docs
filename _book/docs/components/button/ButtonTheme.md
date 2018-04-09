@@ -1,7 +1,7 @@
 ## button-theme-headref
 #### Button Theme
 
-[NativeBase](https://nativebase.io/) provides button with wide range of colors, size and various other props.<br />
+[NativeBase](https://nativebase.io/) provides button with wide range of colors.<br />
 NativeBase provides following color themes:
   * Primary (default)
   * Success

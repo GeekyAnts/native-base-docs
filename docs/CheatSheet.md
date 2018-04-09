@@ -141,15 +141,6 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>style</li>
-                        </ul>
-                    </td>
-                    <td>button style</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
                             <li>active</li>
                         </ul>
                     </td>
@@ -342,7 +333,7 @@
                             <li>renderRow</li>
                         </ul>
                     </td>
-                    <td>callback that returns chunk of data as a component</td>
+                    <td>Flag indicating whether empty section headers should be rendered</td>
                     <td></td>
                 </tr>
 
@@ -518,6 +509,42 @@
                         </a>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>active</li>
+                        </ul>
+                    </td>
+                    <td>toggle status of FAB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>direction</li>
+                        </ul>
+                    </td>
+                    <td>direction of buttons that popup on click of FAB</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>position</li>
+                        </ul>
+                    </td>
+                    <td>position of FAB on screen</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>containerStyle</li>
+                        </ul>
+                    </td>
+                    <td>padding options to render FAB</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -531,6 +558,33 @@
                             &lt;View>
                         </a>
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>active</li>
+                        </ul>
+                    </td>
+                    <td><code>button</code> prop, sets a footer button active</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>badge</li>
+                        </ul>
+                    </td>
+                    <td><code>button</code> prop, set to <code>true</code> if using Badges.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>vertical</li>
+                        </ul>
+                    </td>
+                    <td><code>button</code> prop, vertically align footer elements.
+                    <td></td>
                 </tr>
 
 
@@ -640,6 +694,15 @@
                         </ul>
                     </td>
                     <td>includes rounded border with the textbox</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>regular</li>
+                        </ul>
+                    </td>
+                    <td>includes rectangular border with the textbox</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -827,6 +890,15 @@
                     <td>add Tabs to Header component</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>span</li>
+                        </ul>
+                    </td>
+                    <td>doubles the header sizet</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -853,6 +925,33 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>ios</li>
+                        </ul>
+                    </td>
+                    <td>name of the icon for iOS devices</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>android</li>
+                        </ul>
+                    </td>
+                    <td>name of the icon for Android devices</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>active</li>
+                        </ul>
+                    </td>
+                    <td>renders filled icon</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>color</li>
                         </ul>
                     </td>
@@ -866,6 +965,15 @@
                         </ul>
                     </td>
                     <td>size of icon</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>
+                        <ul>
+                            <li>type</li>
+                        </ul>
+                    </td>
+                    <td>Specify icon family</td>
                     <td></td>
                 </tr>
 
@@ -1047,6 +1155,24 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>selected</li>
+                        </ul>
+                    </td>
+                    <td>highlights the selected item</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>enableEmptySections</li>
+                        </ul>
+                    </td>
+                    <td>flag indicating whether empty section headers should be rendered</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>itemDivider</li>
                         </ul>
                     </td>
@@ -1143,10 +1269,37 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>placeholder</li>
+                            <li>headerBackButtonText</li>
                         </ul>
                     </td>
-                    <td>default placeholder when no value is selected</td>
+                    <td>custom text for the header back button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerBackButtonTextStyle</li>
+                        </ul>
+                    </td>
+                    <td>custom text style for the header back button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerTitleStyle</li>
+                        </ul>
+                    </td>
+                    <td>custom title style for the header title</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>iosIcon</li>
+                        </ul>
+                    </td>
+                    <td>icon with picker dropdown</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1156,15 +1309,6 @@
                         </ul>
                     </td>
                     <td>custom text for the header title</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>headerBackButtonText</li>
-                        </ul>
-                    </td>
-                    <td>custom text for the header back button</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1188,15 +1332,6 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>headerStyle</li>
-                        </ul>
-                    </td>
-                    <td>style of header</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
                             <li>itemTextStyle</li>
                         </ul>
                     </td>
@@ -1215,10 +1350,28 @@
                 <tr>
                     <td>
                         <ul>
-                            <li>headerBackButtonText</li>
+                            <li>placeholder</li>
                         </ul>
                     </td>
-                    <td>used for custom backButton text</td>
+                    <td>default placeholder when no value is selected</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderStyle</li>
+                        </ul>
+                    </td>
+                    <td>Custom style for placeholder text in iOS</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderIconColor</li>
+                        </ul>
+                    </td>
+                    <td>Set placeholder icon color in iOS</td>
                     <td></td>
                 </tr>
 
@@ -1351,6 +1504,15 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>page</li>
+                        </ul>
+                    </td>
+                    <td>set selected tab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>tabBarPosition</li>
                         </ul>
                     </td>
@@ -1364,6 +1526,24 @@
                         </ul>
                     </td>
                     <td>style of the default tab bar's underline</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onChangeTab</li>
+                        </ul>
+                    </td>
+                    <td>function to call when tab changes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onScroll</li>
+                        </ul>
+                    </td>
+                    <td>function to call when pages are sliding</td>
                     <td></td>
                 </tr>
 
@@ -1393,6 +1573,15 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>circle</li>
+                        </ul>
+                    </td>
+                    <td>shape of thumbnail (default)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>square</li>
                         </ul>
                     </td>
@@ -1405,7 +1594,7 @@
                             <li>small</li>
                         </ul>
                     </td>
-                    <td>small thumbnail with width and height of 40px</td>
+                    <td>small thumbnail with width and height of 36px</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1426,8 +1615,8 @@
                     <td>Display quick warning or error messages</td>
                     <td>
                         React Native
-                        <a href="https://facebook.github.io/react-native/docs/image.html">
-                            &lt;Image>
+                        <a href="https://facebook.github.io/react-native/docs/view.html">
+                            &lt;View>
                         </a>
                     </td>
                 </tr>
@@ -1443,10 +1632,37 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>textStyle</li>
+                        </ul>
+                    </td>
+                    <td>style text content for toast</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>buttonText</li>
                         </ul>
                     </td>
                     <td>text to be displayed inside the button</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>buttonTextStyle</li>
+                        </ul>
+                    </td>
+                    <td>style button text for toast</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>buttonStyle</li>
+                        </ul>
+                    </td>
+                    <td>style button for toast</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1474,6 +1690,15 @@
                         </ul>
                     </td>
                     <td>milliseconds after which Toast disappers</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onClose</li>
+                        </ul>
+                    </td>
+                    <td>called just before the toast hides</td>
                     <td></td>
                 </tr>
 

@@ -1,7 +1,7 @@
 ## inline-label-headref
 #### Inline Label
 
-The <code>inlineLabel</code> property creates an Input component, whose Label is in-line with Input, which does not hide when text is entered. It can be used with placeholder as well.
+The <code>inlineLabel</code> property creates an Input component, whose Label is in-line with Input and does not hide when text is entered. It can be used with placeholder as well.
 
 
 ![Preview ios inline-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-inline.png)

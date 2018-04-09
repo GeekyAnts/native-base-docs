@@ -52,5 +52,5 @@ export default class ActionSheetIconExample extends Component {
 
 *iconColor* is optional. Icons default to black.
 
-Note: The use cases similar to RN's ActionSheetIOS.
+**Note:** The use cases similar to RN's ActionSheetIOS.
 

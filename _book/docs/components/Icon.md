@@ -19,6 +19,7 @@ export default class IconExample extends Component {
         &lt;Content>
           &lt;Icon name='home' />
           &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>
+          &lt;Icon type="FontAwesome" name="home" />
         &lt;/Content>
       &lt;/Container>
     );
@@ -64,11 +65,9 @@ export default class IconExample extends Component {
             </tr>
             <tr>
                 <td>active</td>
-                <td>default</td>
+                <td>true</td>
                 <td>boolean</td>
-                <td>Renders filled icons.<br />
-                    By default renders outline icon.
-                </td>
+                <td>Renders filled icons</td>
             </tr>
             <tr>
                 <td>color</td>
@@ -87,6 +86,12 @@ export default class IconExample extends Component {
                     Renders icon with defined icon-size.<br />
                     Include this prop within <code>style</code>
                 </td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Ionicons</td>
+                <td>Ionicons, Entypo, EvilIcons, Feather, FontAwesome, Foundation, MaterialIcons, MaterialCommunityIcons, Octicons, SimpleLineIcons, Zocial</td>
+                <td>Specifies icon family from IonIcons</td>
             </tr>
         </tbody>
     </table><br />

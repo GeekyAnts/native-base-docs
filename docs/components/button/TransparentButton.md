@@ -1,7 +1,7 @@
 ## button-transparent-headref
 #### Transparent Button
 
-Include <code>transparent</code> prop with Button. This will render button without border and background color.<br />
+Include <code>transparent</code> prop with Button. This will render button with no border and no background color.<br />
 
 ![Preview ios button-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/button-transparent.png)
 ![Preview android button-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-transparent.png)

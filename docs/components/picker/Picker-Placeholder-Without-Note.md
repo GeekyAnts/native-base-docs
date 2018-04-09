@@ -5,9 +5,8 @@
 ![Preview android picker-placeholder-without-note-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
-export default class PickerPlaceholderExample extends Component {
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
+export default class PickerPlaceholderw/oNoteExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +37,9 @@ export default class PickerPlaceholderExample extends Component {
             &lt;Picker
               mode="dropdown"
               placeholder="Select One"
+              placeholderStyle={&#123; color: "#2874F0" }}
               note={false}
+              style={&#123; width: undefined }}
               selectedValue={this.state.selected2}
               onValueChange={this.onValueChange2.bind(this)}
             >

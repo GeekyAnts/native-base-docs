@@ -60,7 +60,7 @@ export default class ListSeparatorExample extends Component {
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>
-                <td> adds border to top and bottom of the separator </td>
+                <td>Adds border to top and bottom of the separator</td>
             </tr>
             </tbody>
             </table><br />

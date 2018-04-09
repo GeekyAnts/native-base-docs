@@ -33,5 +33,7 @@ export default class LayoutExample extends Component {
 
 
 
-**NOTE:** <code>&lt;Content></code> component uses <code>&lt;ScrollView></code>. This is required by <code>&lt;Col></code> and <code>&lt;Row></code> elements of Easy-Grid to have a defined height.<br />
+**Note:** If you're using `<Row />` inside a `<ScrollView />`, the height of the component would be flexible according to the content, though you can always apply the height styling.
+
+NativeBase <code>&lt;Content></code> component uses <code>&lt;ScrollView></code>. This is required by <code>&lt;Col></code> and <code>&lt;Row></code> elements of Easy-Grid to have a defined height.<br />
 Replacing Component for Grid, Col, Row: React Native [View](https://facebook.github.io/react-native/docs/view.html)

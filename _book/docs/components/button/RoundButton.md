@@ -1,7 +1,7 @@
 ## button-rounded-headref
 #### Rounded Button
 
-Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons.<br/>
+Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons with slightly rounded edges.<br/>
 
 ![Preview ios button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/button-rounded.png)
 ![Preview android button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-rounded.png)

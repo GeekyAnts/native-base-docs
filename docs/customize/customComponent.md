@@ -1,7 +1,7 @@
 ## custom-component-headref
 ## Theme Your Custom Component
 
-To add support for themes to your component you need to make two simple minor changes to it.
+To add support for themes to your component you need to make two simple changes to it.
 <br />
 
 The main thing you need to change is to start using the style rules from the `props.style` property, instead of using the static variable defined alongside the component. You can define the default style of the component statically (the same way as before) but you shouldn’t use that property to get the actual style in runtime. This allows us to merge the default style with any theme style that may be active in the app, and provide the final style to components.

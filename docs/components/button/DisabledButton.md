@@ -2,7 +2,7 @@
 #### Disabled Button
 
 A disabled button is unusable and un-clickable.<br />
-The disabled prop of NativeBase Button is of type boolean. When present, it specifies that the button should be disabled. The disabled prop can be set to keep a user from clicking on the button until some other condition has been met (like selecting a checkbox, etc.). Then, a conditional code could remove the disabled value, and make the button usable.<br />
+The <code>disabled</code> prop of NativeBase Button is of type boolean. When present, it specifies that the button should be disabled. The disabled prop can be set to keep a user from clicking on the button until some other conditions are met (like selecting a checkbox, etc.). Then, a conditional code could remove the disabled value, and make the button usable.<br />
 
 ![Preview ios button-disabled-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/button-disabled.png)
 ![Preview android button-disabled-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/button-disabled.png)

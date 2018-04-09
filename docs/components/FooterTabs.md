@@ -61,7 +61,7 @@ export default class FooterTabsExample extends Component {
                 <td>true</td>
                 <td>boolean</td>
                 <td>
-                This is Button prop <i>(applicable with FooterTab only)</i>. Sets a Footer Button active.
+                This is <code>button</code> prop <i>(applicable with FooterTab only)</i>. Sets a Footer Button active.
                 </td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@ export default class FooterTabsExample extends Component {
                 <td>true</td>
                 <td>boolean</td>
                 <td>
-                This is Button prop <i>(applicable with FooterTab only)</i>. Set to true if using Badges.
+                This is <code>button</code> prop <i>(applicable with FooterTab only)</i>. Set to <code>true</code> if using Badges.
                 </td>
             </tr>
             <tr>
@@ -77,7 +77,7 @@ export default class FooterTabsExample extends Component {
                 <td>true</td>
                 <td>boolean</td>
                 <td>
-                This is Button prop <i>(applicable with FooterTab only)</i>. Use this prop to vertically align footer elements like icons and text. Necessary when using Badge in Footer Tabs.
+                This is <code>button</code> prop <i>(applicable with FooterTab only)</i>. Use this prop to vertically align footer elements like icons and text. Necessary when using Badge in Footer Tabs.
                 </td>
             </tr>
         </tbody>

@@ -1,9 +1,5 @@
 ### [2.0.0-alpha1](https://github.com/GeekyAnts/NativeBase/releases/tag/v2.0.0-alpha1)
 
-#### Upgraded Features
-* With <code>StyleProvider</code>, all components are fully customizable.
-* **CardItem, Header and ListItem:** Use of <code>Left</code>, <code>Body</code> and <code>Right</code> components for proper alignments and customization.
-
 #### New Features
 * **Tab:** Uncontrolled Tabs similar to FooterTabs.
 * **Icon:** Gives platform specific icons.
@@ -15,5 +11,11 @@
   * **Button**
   * **Tabs**
 * **StyleProvider:** To apply themes and customize any components.
+
+
+#### Upgraded Features
+* With <code>StyleProvider</code>, all components are fully customizable.
+* **CardItem, Header and ListItem:** Use of <code>Left</code>, <code>Body</code> and <code>Right</code> components for proper alignments and customization.
+
 
 <hr>
