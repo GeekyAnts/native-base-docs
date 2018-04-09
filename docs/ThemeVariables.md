@@ -1,6 +1,75 @@
 # Theme variables Cheat sheet
 
-Cheat sheet uses values from `native-base-theme/variables/platform.js`
+Cheatsheet use values from `native-base-theme/variables/platform.js`
+
+<h3>Brand colors</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>brandPrimary</td>
+            <td>color</td>
+            <td>Brand primary color</td>
+            <td>#007aff</td>
+            <td>#3F51B5</td>
+        </tr>
+        <tr>
+            <td>brandInfo</td>
+            <td>color</td>
+            <td>Brand info color</td>
+            <td>#62B1F6</td>
+            <td>#62B1F6</td>
+        </tr>
+        <tr>
+            <td>brandSuccess</td>
+            <td>color</td>
+            <td>Brand success color</td>
+            <td>#5cb85c</td>
+            <td>#5cb85c</td>
+        </tr>
+        <tr>
+            <td>brandDanger</td>
+            <td>color</td>
+            <td>Brand danger color</td>
+            <td>#d9534f</td>
+            <td>#d9534f</td>
+        </tr>
+        <tr>
+            <td>brandWarning</td>
+            <td>color</td>
+            <td>Brand warning color</td>
+            <td>#f0ad4e</td>
+            <td>#f0ad4e</td>
+        </tr>
+        <tr>
+            <td>brandDark</td>
+            <td>color</td>
+            <td>Brand dark color</td>
+            <td>#000</td>
+            <td>#000</td>
+        </tr>
+        <tr>
+            <td>brandLight</td>
+            <td>color</td>
+            <td>Brand light color</td>
+            <td>#f4f4f4</td>
+            <td>#f4f4f4</td>
+        </tr>
+    </tbody>
+</table><br />
 
 <h3>Badge</h3>
 <table width="80%" class="table table-hover">
@@ -23,8 +92,8 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
             <td>badgeBg</td>
             <td>color</td>
             <td>Badge text color</td>
-            <td>#ED1727</td>
-            <td>#ED1727</td>
+            <td>#ed1727</td>
+            <td>#ed1727</td>
         </tr>
         <tr>
             <td>badgeColor</td>
@@ -61,7 +130,7 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
     <tbody>
         <tr>
             <td>btnFontFamily</td>
-            <td>Font Family</td>
+            <td>font family</td>
             <td>Font family of button text</td>
             <td>System</td>
             <td>Roboto_medium</td>
@@ -215,6 +284,42 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
     </tbody>
 </table>
 <br/>
+
+<h3>Font</h3>
+<table>
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+            </th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>fontFamily</td>
+            <td>font family</td>
+            <td>text font family</td>
+            <td>System</td>
+            <td>Roboto</td>
+        </tr>
+        <tr>
+            <td>fontSizeBase</td>
+            <td>number</td>
+            <td>text font size</td>
+            <td>15</td>
+            <td>15</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+
+
 <h3>Footer</h3>
 <table width="80%" class="table table-hover">
     <thead>
@@ -284,7 +389,7 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
         <tr>
             <td>tabBarTextSize</td>
             <td>number</td>
-            <td>Text size of tab</td>
+            <td>Font size of tab</td>
             <td>14</td>
             <td>11</td>
         </tr>
@@ -340,7 +445,7 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
         <tr>
             <td>toolbarBtnColor</td>
             <td>color</td>
-            <td>Button color of header</td>
+            <td>Button color in header</td>
             <td>#F8F8F8</td>
             <td>#3F51B5</td>
         </tr>
@@ -473,28 +578,28 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
         <tr>
             <td>inputFontSize</td>
             <td>number</td>
-            <td>Size of input text</td>
+            <td>Font size of input text</td>
             <td>17</td>
             <td>17</td>
         </tr>
         <tr>
             <td>inputBorderColor</td>
             <td>color</td>
-            <td>Color of input text</td>
+            <td>Texbox border color</td>
             <td>#D9D5DC</td>
             <td>#D9D5DC</td>
         </tr>
         <tr>
             <td>inputSuccessBorderColor</td>
             <td>color</td>
-            <td>Border color with success prop</td>
+            <td>Textbox border color with success prop</td>
             <td>#2b8339</td>
             <td>#2b8339</td>
         </tr>
         <tr>
             <td>inputErrorBorderColor</td>
             <td>color</td>
-            <td>Border color with error prop</td>
+            <td>Textbox border color with error prop</td>
             <td>#ed2f2f</td>
             <td>#ed2f2f</td>
         </tr>
@@ -854,7 +959,7 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
         <tr>
             <td>tabFontSize</td>
             <td>number</td>
-            <td>Size of tab font</td>
+            <td>Font size of tab</td>
             <td>15</td>
             <td>15</td>
         </tr>
@@ -944,85 +1049,16 @@ Cheat sheet uses values from `native-base-theme/variables/platform.js`
         <tr>
             <td>subtitleColor</td>
             <td>color</td>
-            <td>Color of subtitle text</td>
+            <td>Font color of subtitle</td>
             <td>#8e8e93</td>
             <td>#FFF</td>
         </tr>
         <tr>
             <td>titleFontColor</td>
             <td>color</td>
-            <td>Color of title text</td>
+            <td>Font color of title</td>
             <td>#000</td>
             <td>#FFF</td>
-        </tr>
-    </tbody>
-</table>
-<br />
-<h3>Brand colors</h3>
-<table width="80%" class="table table-hover">
-    <thead>
-        <tr>
-            <th rowspan=2>Variable</th>
-            <th rowspan=2>Type</th>
-            <th rowspan=2>Description</th>
-            <th colspan=2>
-                Platform values
-                <tr>
-                    <td>iOS</td>
-                    <td>Android</td>
-                </tr>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>brandPrimary</td>
-            <td>color</td>
-            <td>Brand primary color</td>
-            <td>#007aff</td>
-            <td>#3F51B5</td>
-        </tr>
-        <tr>
-            <td>brandInfo</td>
-            <td>color</td>
-            <td>Brand info color</td>
-            <td>#62B1F6</td>
-            <td>#62B1F6</td>
-        </tr>
-        <tr>
-            <td>brandSuccess</td>
-            <td>color</td>
-            <td>Brand success color</td>
-            <td>#5cb85c</td>
-            <td>#5cb85c</td>
-        </tr>
-        <tr>
-            <td>brandDanger</td>
-            <td>color</td>
-            <td>Brand danger color</td>
-            <td>#d9534f</td>
-            <td>#d9534f</td>
-        </tr>
-        <tr>
-            <td>brandWarning</td>
-            <td>color</td>
-            <td>Brand warning color</td>
-            <td>#f0ad4e</td>
-            <td>#f0ad4e</td>
-        </tr>
-        <tr>
-            <td>brandDark</td>
-            <td>color</td>
-            <td>Brand dark color</td>
-            <td>#000</td>
-            <td>#000</td>
-        </tr>
-        <tr>
-            <td>brandLight</td>
-            <td>color</td>
-            <td>Brand light color</td>
-            <td>#f4f4f4</td>
-            <td>#f4f4f4</td>
         </tr>
     </tbody>
 </table>

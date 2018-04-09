@@ -2,6 +2,8 @@
 * [NativeBase](http://nativebase.io/)
 * [Introduction](README.md)
 * [Getting Started](/docs/GetStarted.md)
+* [Compatibility](/docs/Compatibility.md)
+* [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 * [Components](Components.md#Components)
     * [Anatomy](Components.md#anatomy-headref)
     * [ActionSheet](Components.md#actionsheet-def-headref)
@@ -98,28 +100,17 @@
     * [Typography](Components.md#Typography)
     * [Drawer](Components.md#Drawer)
     * [Ref](Components.md#ref-components-headref)
-
-* [What's New in v2.0?](/docs/introduction/WhatsNew.md)
-
 * [Customize](Customize.md#Customize)
+  * [NativeBase Customizer](Customize.md#nativebase-customizer-headref)
+  * [Theme and Varibales](Customize.md#theme-and-variables-headref)
   * [Set Up](Customize.md#theaming-nb-headref)
-  * [Theme Your Custom Components](Customize.md#custom-component-headref)
   * [Theme Color](Customize.md#theme-color-headref)
   * [Theme Font](Customize.md#theme-font-headref)
   * [Button](Customize.md#customize-button-headref)
-
-* [Featured Apps](/docs/FeaturedApps.md)
-
+  * [Theme Custom Component](Customize.md#custom-component-headref)
+* [Theme Variables](/docs/ThemeVariables.md)
 * [Release Notes](/docs/release-notes/Release.md)
-
-* [Contribute](/docs/Contribute.md)
-
-* [FAQs](/docs/faq/FAQs.md)
-
-* [CheatSheet](/docs/CheatSheet.md)
-
-* [Compatibility](/docs/Compatibility.md)
-
+* [Featured Apps](/docs/FeaturedApps.md)
 * [Examples](/docs/examples/Examples.md)
   * [Redux](/docs/examples/ReduxCounterExample.md)
   * [Mobx](/docs/examples/MobxCounterExample.md)
@@ -130,3 +121,6 @@
   * [Redux-Form](/docs/examples/ReduxFormExample.md)
   * [Sticky Headers](/docs/examples/StickyHeaderExample.md)
   * [FlatList + Sticky Headers](/docs/examples/FlatListExample.md)
+* [CheatSheet](/docs/CheatSheet.md)
+* [Contribute](/docs/Contribute.md)
+* [FAQs](/docs/faq/FAQs.md)
