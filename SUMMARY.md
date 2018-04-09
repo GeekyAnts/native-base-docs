@@ -3,7 +3,6 @@
 * [Introduction](README.md)
 * [Getting Started](/docs/GetStarted.md)
 * [Compatibility](/docs/Compatibility.md)
-* [What's New in v2.0?](/docs/introduction/WhatsNew.md)
 * [Components](Components.md#Components)
     * [Anatomy](Components.md#anatomy-headref)
     * [ActionSheet](Components.md#actionsheet-def-headref)
