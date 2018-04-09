@@ -2,7 +2,6 @@
 #### Toast position
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import React, { Component } from "react";
 import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
 class ToastPosition extends Component {
   constructor(props) {

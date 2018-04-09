@@ -1,11 +1,10 @@
-##picker-text-and-item-text-styles-headref
+## picker-text-and-item-text-styles-headref
 #### Picker Text and Item Text Style
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, View, H3, Item as FormItem } from "native-base";
-export default class PickerTextAndItemStyle extends Component {
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
+export default class PickerTextAndItemStyleExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +26,7 @@ export default class PickerTextAndItemStyle extends Component {
             &lt;/Button>
           &lt;/Left>
           &lt;Body style=&#123;{ flex: 3 }}>
-            &lt;Title>Placeholder Picker</Title>
+            &lt;Title>Picker Text & ItemText Styles</Title>
           &lt;/Body>
           &lt;Right />
         &lt;/Header>
@@ -37,10 +36,15 @@ export default class PickerTextAndItemStyle extends Component {
               mode="dropdown"
               placeholder="Select One"
               iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
-              placeholderIconColor="#007aff"
-              textStyle=&#123;{ color: "#007aff" }}
-              itemStyle=&#123;{ backgroundColor: "#d3d3d3", marginLeft: 0, paddingLeft: 10 }}
-              itemTextStyle=&#123;{ color: '#007aff' }}
+              placeholder="Select your SIM"
+              textStyle={&#123; color: "#5cb85c" }}
+              itemStyle={&#123;
+                backgroundColor: "#d3d3d3",
+                marginLeft: 0,
+                paddingLeft: 10
+              }}
+              itemTextStyle=&#123;{ color: '#788ad2' }}
+              style={&#123; width: undefined }}
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
             >

@@ -11,8 +11,8 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 * [Picker with Icon](Components.md#picker-with-icon-headref)
 * [Placeholder Picker](Components.md#picker-placeholder-headref)
 * [Placeholder Picker without Note](Components.md#picker-placeholder-without-note-headref)
-* [Picker with Custom Back Button](Components.md#picker-with-custom-back-button-headref)
 * [Picker Text and Item Style](Components.md#picker-text-and-item-text-styles-headref)
+* [Picker with Custom Back Button](Components.md#picker-with-custom-back-button-headref)
 * [Picker with Custom Header](Components.md#picker-with-custom-header-headref)
 * [Picker with Custom Header Text](Components.md#picker-with-custom-header-text-headref)
 * [Picker with Custom Header Style](Components.md#picker-with-custom-header-style-headref)
@@ -20,8 +20,7 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 *Regular Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);

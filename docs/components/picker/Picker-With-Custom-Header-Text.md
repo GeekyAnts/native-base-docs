@@ -5,8 +5,7 @@
 ![Preview android picker-with-custom-header-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, } from "native-base";
 export default class PickerCustomHeaderTextExample extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +28,7 @@ export default class PickerCustomHeaderTextExample extends Component {
             &lt;/Button>
           &lt;/Left>
           &lt;Body>
-            &lt;Title>Custom Title&lt;/Title>
+            &lt;Title>Custom Header Title&lt;/Title>
           &lt;/Body>
           &lt;Right />
         &lt;/Header>
@@ -38,6 +37,8 @@ export default class PickerCustomHeaderTextExample extends Component {
             &lt;Picker
               mode="dropdown"
               iosHeader="Your Header"
+              iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
+              style=&#123;{ width: Platform.OS === "ios" ? undefined : 120 }}
               selectedValue={this.state.selected3}
               onValueChange={this.onValueChange3.bind(this)}
             >
