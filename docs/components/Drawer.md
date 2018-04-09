@@ -31,3 +31,54 @@ export default class DrawerExample extends Component {
 }</code></pre><br />
 
 Note: You need to create your own SideBar component and import it.
+
+**Configuration**<br />
+    <table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>overlay</td>
+                <td>-</td>
+                <td>Type of drawer</td>
+            </tr>
+            <tr>
+                <td>tapToClose</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>Close drawer on tap</td>
+            </tr>
+             <tr>
+                <td>openDrawerOffset</td>
+                <td>0.2</td>
+                <td>number</td>
+                <td>Define drawer's margin when open</td>
+            </tr>
+             <tr>
+                <td>panCloseMask</td>
+                <td>0.2</td>
+                <td>number</td>
+                <td>Defines the screen width for the start of pan close action</td>
+            </tr>
+             <tr>
+                <td>closedDrawerOffset</td>
+                <td>0</td>
+                <td>number</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>tweenHandler</td>
+                <td>null</td>
+                <td>Function</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table><br />
+

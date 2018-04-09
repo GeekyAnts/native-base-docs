@@ -1,22 +1,20 @@
-## picker-placeholder-headref
-#### Placeholder Picker
-
-![Preview ios picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/picker-with-placeholder.gif)
-![Preview android picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
+##picker-text-and-item-text-styles-headref
+#### Picker Text and Item Text Style
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
+import React, { Component } from "react";
 import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
-export default class PickerPlaceholderExample extends Component {
+import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, View, H3, Item as FormItem } from "native-base";
+export default class PickerTextAndItemStyle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected2: undefined
+      selected: undefined
     };
   }
-  onValueChange2(value: string) {
+  onValueChange(value) {
     this.setState({
-      selected2: value
+      selected: value
     });
   }
   render() {
@@ -24,12 +22,12 @@ export default class PickerPlaceholderExample extends Component {
       &lt;Container>
         &lt;Header>
           &lt;Left>
-            &lt;Button transparent onPress={() => this.props.navigation.goBack()}>
+            &lt;Button transparent>
               &lt;Icon name="arrow-back" />
             &lt;/Button>
           &lt;/Left>
-          &lt;Body>
-            &lt;Title>Placeholder Picker&lt;/Title>
+          &lt;Body style=&#123;{ flex: 3 }}>
+            &lt;Title>Placeholder Picker</Title>
           &lt;/Body>
           &lt;Right />
         &lt;/Header>
@@ -38,8 +36,13 @@ export default class PickerPlaceholderExample extends Component {
             &lt;Picker
               mode="dropdown"
               placeholder="Select One"
-              selectedValue={this.state.selected2}
-              onValueChange={this.onValueChange2.bind(this)}
+              iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
+              placeholderIconColor="#007aff"
+              textStyle=&#123;{ color: "#007aff" }}
+              itemStyle=&#123;{ backgroundColor: "#d3d3d3", marginLeft: 0, paddingLeft: 10 }}
+              itemTextStyle=&#123;{ color: '#007aff' }}
+              selectedValue={this.state.selected}
+              onValueChange={this.onValueChange.bind(this)}
             >
               &lt;Picker.Item label="Wallet" value="key0" />
               &lt;Picker.Item label="ATM Card" value="key1" />
@@ -49,7 +52,7 @@ export default class PickerPlaceholderExample extends Component {
             &lt;/Picker>
           &lt;/Form>
         &lt;/Content>
-      &lt;/Container>
+      &lt;/Container >
     );
   }
 }</code></pre><br />

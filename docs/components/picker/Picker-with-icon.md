@@ -1,33 +1,33 @@
-##picker-with-custom-styles-headref
-#### Picker with Custom Styles
+### Advanced Pickers (iOS only)
+## picker-with-icon-headref
+#### Picker with Icon
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
+<pre class="line-numbers"><code class="language-jsx">
 import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, View, H3, Item as FormItem } from "native-base";
-export default class PickerCustomStyles extends Component {
+import {Container,Header,Title,Content,Button,Icon,Right,Body,Left,Picker,Form} from "native-base";
+class PickerWithIcon extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: undefined
+      selected: "key1"
     };
   }
-  onValueChange(value) {
+  onValueChange(value: string) {
     this.setState({
       selected: value
     });
   }
   render() {
     return (
-      &lt;Container style={styles.container}>
+      &lt;Container>
         &lt;Header>
           &lt;Left>
-            &lt;Button transparent onPress={() => this.props.navigation.goBack()}>
+            &lt;Button transparent>
               &lt;Icon name="arrow-back" />
             &lt;/Button>
           &lt;/Left>
           &lt;Body style=&#123;{ flex: 3 }}>
-            &lt;Title>Placeholder Picker</Title>
+            &lt;Title>Picker with Icon&lt;/Title>
           &lt;/Body>
           &lt;Right />
         &lt;/Header>
@@ -35,12 +35,9 @@ export default class PickerCustomStyles extends Component {
           &lt;Form>
             &lt;Picker
               mode="dropdown"
-              placeholder="Select One"
+              iosHeader="Select your SIM"
               iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
-              placeholderIconColor="#007aff"
-              textStyle=&#123;{ color: "#007aff" }}
-              itemStyle=&#123;{ backgroundColor: "#d3d3d3", marginLeft: 0, paddingLeft: 10 }}
-              itemTextStyle=&#123;{ color: '#007aff' }}
+              style=&#123;{ width: undefined }}
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
             >
@@ -52,7 +49,7 @@ export default class PickerCustomStyles extends Component {
             &lt;/Picker>
           &lt;/Form>
         &lt;/Content>
-      &lt;/Container >
+      &lt;/Container>
     );
   }
 }</code></pre><br />
