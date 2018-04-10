@@ -1,8 +1,8 @@
 ## header-multiple-icon-headref
 #### Header with Multiple Icon Buttons
 
-![Preview ios header-multiple-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/header-with-icon-button-and-text.png)
-![Preview android header-multiple-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/header-with-icon-button-and-text.png)
+![Preview ios header-multiple-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/header-with-multiple-icon-button.png)
+![Preview android header-multiple-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/header-with-multiple-icon-button.png)
 
 *Syntax*
 

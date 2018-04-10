@@ -5,10 +5,11 @@
 
 Creates a text area to input multiline text.
 
-![Preview ios text-area-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/master/screenshots/ios/text-area.png)
-![Preview android text-area-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/master/screenshots/android/text-area.png)
+![Preview ios textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-textarea.png)
+![Preview android textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-textarea.png)
 
 *Syntax*
+
 ```
 import React, { Component } from "react";
 import { Container, Header, Left, Body, Title, Right, Content, Textarea, Form } from "native-base";

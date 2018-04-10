@@ -1,6 +1,9 @@
 ## header-span-headref
 #### Header Span
 
+![Preview ios header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/header-span.png)
+![Preview android header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/header-span.png)
+
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">

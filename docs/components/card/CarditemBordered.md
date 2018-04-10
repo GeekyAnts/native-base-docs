@@ -3,6 +3,10 @@
 
 Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for card item.
 
+![Preview ios carditem-bordered-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/card-bordered.png)
+![Preview android carditem-bordered-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/card-bordered.png)
+
+
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

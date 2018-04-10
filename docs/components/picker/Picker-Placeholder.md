@@ -1,8 +1,10 @@
 ## picker-placeholder-headref
 #### Placeholder Picker
 
-![Preview ios picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/picker-with-placeholder.gif)
-![Preview android picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
+![Preview ios picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker-with-placeholder.gif)
+![Preview android picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
+
+*Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";

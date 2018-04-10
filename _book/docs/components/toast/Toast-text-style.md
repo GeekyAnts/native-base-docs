@@ -1,6 +1,11 @@
 ## toast-text-style-headref
 #### Toast text style
 
+![Preview ios toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/toast-text-style.gif)
+![Preview android toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/toast-text-style.gif)
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
 export default class ToastText extends Component {

@@ -1,6 +1,9 @@
 ## title-header-headref
 #### Header with only title
 
+![Preview ios title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/header-with-title.png)
+![Preview android title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/header-with-title.png)
+
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

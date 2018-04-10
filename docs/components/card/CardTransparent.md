@@ -4,6 +4,9 @@
 
 A transparent card can be created using `transparent` props with &lt;CardItem>.
 
+![Preview ios card-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/card-transparent.png)
+![Preview android card-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/card-transparent.png)
+
 *Syntax*
 
 ```

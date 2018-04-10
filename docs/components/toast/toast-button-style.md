@@ -1,6 +1,11 @@
 ## toast-button-style-headref
 #### Toast button style 
 
+![Preview ios toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/toast-button-style.gif)
+![Preview android toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/toast-button-style.gif)
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
 class ToastButton extends Component {

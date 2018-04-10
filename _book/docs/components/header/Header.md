@@ -10,14 +10,14 @@
 * User can add custom styles while defining <code>Header</code> within their app.
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/header-with-title.png)
-![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/header-with-title.png)
+![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/header-with-title.png)
+![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/header-with-title.png)
 
 **Contents:**
 * [Header with only title](Components.md#title-header-headref)
 * [Header with Title and Subtitle](Components.md#header-title-subtitle-headref)
 * [Header with Icon Buttons](Components.md#header-icon-headref)
-* [Header with Text Buttons](Components.md#header-text-headref)
+* [Header with Text Buttons](Components.md#header-text-button-headref)
 * [Header with Icon Button and Text Button](Components.md#header-icon-button-text-button-headref)
 * [Header with Icon and Text Button](Components.md#header-icon-text-button-headref)
 * [Header with Multiple Icon Button](Components.md#header-multiple-icon-headref)

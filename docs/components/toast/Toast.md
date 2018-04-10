@@ -1,3 +1,4 @@
+## toast-def-headref
 ## Toast
 
 NativeBase Toast can be used to display quick warning or error messages.
@@ -5,8 +6,8 @@ For `Toast` to work, you need to wrap your topmost component inside `<Root>` fro
 
 Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html).
 
-![Preview ios Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/toast.gif)
-![Preview android Toast](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/toast.gif)
+![Preview ios toast-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/toast-basic.gif)
+![Preview android toast-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/toast-basic.gif)
 
   **Contents:**
 * [Toast with duration](Components.md#toast-with-duration-headref)

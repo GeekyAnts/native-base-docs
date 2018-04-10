@@ -1,6 +1,11 @@
 ## picker-text-and-item-text-styles-headref
 #### Picker Text and Item Text Style
 
+![Preview ios picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker-text-itemtext-style.gif)
+![Preview android picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
+
+*Syntax*
+
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";

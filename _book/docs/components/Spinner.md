@@ -3,8 +3,8 @@
 If you have certain screens of your app that take some time to load, you may want to consider a page loader. A page loader is any kind of animation that visually communicates to a visitor that the page is loading and to just sit tight for a few seconds. Without a page loader, user might think that the app is being unresponsive and just click away in frustration. A page loader also provides a small distraction which can actually makes the wait seem much shorter.<br />
 Replacing Component: React Native [ActivityIndicator](https://facebook.github.io/react-native/docs/activityindicator.html)
 
-![Preview ios Spinner](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/spinner.gif)
-![Preview android Spinner](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/spinner.gif)
+![Preview ios Spinner](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/spinner.gif)
+![Preview android Spinner](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/spinner.gif)
 
 *Syntax*
 

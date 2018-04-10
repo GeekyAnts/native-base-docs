@@ -31,7 +31,7 @@ This docs have limited examples. For more examples go through [NativeBase-Kitche
 * [Swipable List](Components.md#swipeable-multi-def-headref)
 * [Tabs](Components.md#tabs-def-headref)
 * [Thumbnail](Components.md#Thumbnail)
-* [Toast](Components.md#Toast)
+* [Toast](Components.md#toast-def-headref)
 * [Typography](Components.md#Typography)
 * [Drawer](Components.md#Drawer)
 * [Ref](Components.md#ref-components-headref)
