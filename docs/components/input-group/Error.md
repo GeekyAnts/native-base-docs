@@ -1,10 +1,10 @@
 ## error-textbox-headref
 #### Error Input Textbox
 
-To display textbox with invalid data, include the <b>error</b> prop with <code>Item</code>.
+To display textbox with invalid data, include the <code>error</code> prop with <code>Item</code>.
 
-![Preview ios error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-error.png)
-![Preview android error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-error.png)
+![Preview ios error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-error.png)
+![Preview android error-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-error.png)
 
 *Syntax*
 

@@ -4,8 +4,8 @@
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 
-![Preview ios icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/icons.png)
-![Preview android icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/icons.png)
+![Preview ios icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/icons.png)
+![Preview android icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/icons.png)
 
 *Syntax*
 
@@ -19,6 +19,7 @@ export default class IconExample extends Component {
         &lt;Content>
           &lt;Icon name='home' />
           &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>
+          &lt;Icon type="FontAwesome" name="home" />
         &lt;/Content>
       &lt;/Container>
     );
@@ -64,11 +65,9 @@ export default class IconExample extends Component {
             </tr>
             <tr>
                 <td>active</td>
-                <td>default</td>
+                <td>true</td>
                 <td>boolean</td>
-                <td>Renders filled icons.<br />
-                    By default renders outline icon.
-                </td>
+                <td>Renders filled icons</td>
             </tr>
             <tr>
                 <td>color</td>
@@ -87,6 +86,12 @@ export default class IconExample extends Component {
                     Renders icon with defined icon-size.<br />
                     Include this prop within <code>style</code>
                 </td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Ionicons</td>
+                <td>Ionicons, Entypo, EvilIcons, Feather, FontAwesome, Foundation, MaterialIcons, MaterialCommunityIcons, Octicons, SimpleLineIcons, Zocial</td>
+                <td>Specifies icon family from IonIcons</td>
             </tr>
         </tbody>
     </table><br />

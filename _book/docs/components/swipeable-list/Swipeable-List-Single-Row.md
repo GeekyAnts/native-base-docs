@@ -3,8 +3,8 @@
 
 Single Swipable ListItem (Outside List)
 
-![Preview ios swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/ios/list-swipe-single-row.gif)
-![Preview android swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.2.0/screenshots/android/list-swipe-single-row.gif)
+![Preview ios swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/list-swipe-single-row.gif)
+![Preview android swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/list-swipe-single-row.gif)
 
 *Syntax*
 
@@ -139,6 +139,14 @@ import { Container, Header, Content, SwipeRow, View, Text, Icon, Button } from '
                 <td> Function </td>
                 <td>
                     Callback function which triggers when a swipe row is animating open/close
+                </td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td> - </td>
+                <td> style object </td>
+                <td>
+                    Style body
                 </td>
             </tr>
         </tbody>

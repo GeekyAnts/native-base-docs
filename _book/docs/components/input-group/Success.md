@@ -1,10 +1,10 @@
 ## success-textbox-headref
 #### Success Input Textbox
 
-To display textbox with valid data, include the <b>success</b> prop with <code>Item</code>.
+To display textbox with valid data, include the <code>success</code> prop with <code>Item</code>.
 
-![Preview ios success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-success.png)
-![Preview android success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-success.png)
+![Preview ios success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-success.png)
+![Preview android success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-success.png)
 
 *Syntax*
 

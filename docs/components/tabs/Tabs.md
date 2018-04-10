@@ -5,8 +5,8 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 *Replacing Component: [react-native-scrollable-tab-view <code>&lt;ScrollableTabView></code>](https://github.com/brentvatne/react-native-scrollable-tab-view)*
 
 
-![Preview ios tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/tabs-basic.gif)
-![Preview android tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/tabs-basic.gif)
+![Preview ios tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/tabs-basic.gif)
+![Preview android tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/tabs-basic.gif)
 
 *Syntax*
 
@@ -64,6 +64,14 @@ import Tab2 from './tabTwo';
                 </td>
             </tr>
             <tr>
+                <td>page</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Set selected tab
+                </td>
+            </tr>
+            <tr>
                 <td>tabBarPosition</td>
                 <td> top </td>
                 <td> top, bottom, overlayTop, overlayBottom </td>
@@ -76,7 +84,23 @@ import Tab2 from './tabTwo';
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Style of the default tab bar's underline.
+                    Style of the default tab bar's underline
+                </td>
+            </tr>
+            <tr>
+                <td>onChangeTab</td>
+                <td>Function</td>
+                <td> - </td>
+                <td>
+                    Function to call when tab changes
+                </td>
+            </tr>
+            <tr>
+                <td>onScroll</td>
+                <td>Function</td>
+                <td> - </td>
+                <td>
+                    Function to call when pages are sliding
                 </td>
             </tr>
         </tbody>

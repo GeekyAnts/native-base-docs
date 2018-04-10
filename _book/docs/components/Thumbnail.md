@@ -3,8 +3,8 @@
 Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br />
 Replacing Component: React Native [Image](https://facebook.github.io/react-native/docs/image.html)
 
-![Preview ios Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/thumbnail.png)
-![Preview android Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/thumbnail.png)
+![Preview ios Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/thumbnail.png)
+![Preview android Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/thumbnail.png)
 
 *Syntax*
 
@@ -12,21 +12,24 @@ Replacing Component: React Native [Image](https://facebook.github.io/react-nativ
 import { Container, Header, Content, Thumbnail, Text } from 'native-base';
 export default class ThumbnailExample extends Component {
   render() {
+    const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
     return (
       &lt;Container>
         &lt;Header />
         &lt;Content>
           &lt;Text>Square Thumbnail&lt;/Text>
-          &lt;Thumbnail square source=&#123;{uri: 'Image URL'}} />
-          &lt;Thumbnail square small source=&#123;{uri: 'Image URL'}} />
+          &lt;Thumbnail square source=&#123;{uri: uri}} />
+          &lt;Thumbnail square small source=&#123;{uri: uri}} />
           &lt;Text>Circular Thumbnail&lt;/Text>
-          &lt;Thumbnail source=&#123;{uri: 'Image URL'}} />
-          &lt;Thumbnail large source=&#123;{uri: 'Image URL'}} />
+          &lt;Thumbnail source=&#123;{uri: uri}} />
+          &lt;Thumbnail large source=&#123;{uri: uri}} />
         &lt;/Content>
       &lt;/Container>
     );
   }
 }</code></pre><br />
+
+**Note:** To have Thumbnail of custom size, include height and width with <code>style</code>.
 
 
 **Configuration**
@@ -47,8 +50,8 @@ export default class ThumbnailExample extends Component {
                 <td>Image path for thumbnail.</td>
             </tr>
             <tr>
-                <td>square</td>
-                <td> - </td>
+                <td>circle</td>
+                <td>true</td>
                 <td> - </td>
                 <td>
                     Represents shape of thumbnail.<br />
@@ -56,16 +59,24 @@ export default class ThumbnailExample extends Component {
                 </td>
             </tr>
             <tr>
+                <td>square</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Represents shape of thumbnail
+                </td>
+            </tr>
+            <tr>
                 <td>small</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Small thumbnail with width and height of 40px.</td>
+                <td>Small thumbnail with width and height of 36px</td>
             </tr>
             <tr>
                 <td>large</td>
                 <td> - </td>
                 <td> - </td>
-                <td>Large thumbnail with width and height of 80px.</td>
+                <td>Large thumbnail with width and height of 80px</td>
             </tr>
         </tbody>
     </table><br />

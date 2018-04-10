@@ -1,13 +1,11 @@
 ## picker-with-custom-header-headref
 #### Picker with Custom Header
 
-![Preview ios picker-with-custom-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/picker-with-custom-header.gif)
-![Preview android picker-with-custom-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
+![Preview ios picker-with-custom-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker-custom-header.gif)
+![Preview android picker-with-custom-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, View, H3, Item as FormItem } from "native-base";
-const Item = Picker.Item;
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
 export default class PickerCustomHeaderExample extends Component {
   constructor(props) {
     super(props);
@@ -50,15 +48,16 @@ export default class PickerCustomHeaderExample extends Component {
                   &lt;Right />
                 &lt;/Header>}
               mode="dropdown"
-              style=&#123;{ width: Platform.OS === "ios" ? undefined : 200 }}
+              iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
+              style=&#123;{ width: undefined }}
               selectedValue={this.state.selected1}
               onValueChange={this.onValueChange.bind(this)}
             >
-              &lt;Item label="Wallet" value="key0" />
-              &lt;Item label="ATM Card" value="key1" />
-              &lt;Item label="Debit Card" value="key2" />
-              &lt;Item label="Credit Card" value="key3" />
-              &lt;Item label="Net Banking" value="key4" />
+              &lt;Picker.Item label="Wallet" value="key0" />
+              &lt;Picker.Item label="ATM Card" value="key1" />
+              &lt;Picker.Item label="Debit Card" value="key2" />
+              &lt;Picker.Item label="Credit Card" value="key3" />
+              &lt;Picker.Item label="Net Banking" value="key4" />
             &lt;/Picker>
           &lt;/Form>
         &lt;/Content>

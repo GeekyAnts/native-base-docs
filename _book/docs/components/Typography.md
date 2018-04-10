@@ -3,8 +3,8 @@
 NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br />
 Replacing Component for H1, H2, H3, Text: React Native [Text](http://facebook.github.io/react-native/docs/text.html) <br />
 
-![Preview ios Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/typography.png)
-![Preview android Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/typography.png)
+![Preview ios Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/typography.png)
+![Preview android Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/typography.png)
 
 
 *Syntax*
@@ -42,19 +42,19 @@ export default class TypographyExample extends Component {
             <tr>
                 <td>H1</td>
                 <td>font-size: 27</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H1></td>
             </tr>
             <tr>
                 <td>H2</td>
                 <td>font-size: 24</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H2></td>
             </tr>
             <tr>
                 <td>H3</td>
                 <td>font-size: 21</td>
-                <td>user-defined</td>
+                <td>string, number</td>
                 <td>Heading tag &lt;H3></td>
             </tr>
         </tbody>

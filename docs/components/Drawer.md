@@ -2,9 +2,10 @@
 
 Drawer for both iOS and Android.<br />
 Drawer can be the perfect option to provide navigation options. <br />
+Replacing Component: [React Native Drawer](https://github.com/root-two/react-native-drawer)
 
-![Preview ios Drawer](https://docs.nativebase.io/docs/assets/ios/components/drawer.png)
-![Preview android Drawer](https://docs.nativebase.io/docs/assets/android/components/drawer.png)
+![Preview ios Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/drawer.png)
+![Preview android Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/drawer.png)
 
 **Syntax**
 
@@ -30,4 +31,55 @@ export default class DrawerExample extends Component {
   }
 }</code></pre><br />
 
-Note: You need to create your own SideBar component and import it.
+**Note:** You need to create your own <code>SideBar</code> component and import it.
+
+**Configuration**<br />
+    <table class = "table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>overlay</td>
+                <td> - </td>
+                <td>type of drawer</td>
+            </tr>
+            <tr>
+                <td>tapToClose</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>Close drawer on tap</td>
+            </tr>
+             <tr>
+                <td>openDrawerOffset</td>
+                <td>0.2</td>
+                <td>number</td>
+                <td>Defines right hand margin when drawer open</td>
+            </tr>
+             <tr>
+                <td>panCloseMask</td>
+                <td>0.2</td>
+                <td>number</td>
+                <td>Defines the screen width for the start of pan close action</td>
+            </tr>
+             <tr>
+                <td>closedDrawerOffset</td>
+                <td>0</td>
+                <td>number</td>
+                <td>Defines left hand margin when drawer closed</td>
+            </tr>
+            <tr>
+                <td>tweenHandler</td>
+                <td> - </td>
+                <td>Function</td>
+                <td>Takes in pan ratio that represents the tween percent and returns an object of native props to be set on constituent views</td>
+            </tr>
+        </tbody>
+    </table><br />
+

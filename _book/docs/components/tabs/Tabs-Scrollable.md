@@ -1,13 +1,13 @@
 ## tabs-scrollable-headref
 #### Scrollable Tabs
 
-![Preview ios tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/tabs-scrollable.gif)
-![Preview android tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/tabs-scrollable.gif)
+![Preview ios tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/tabs-scrollable.gif)
+![Preview android tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/tabs-scrollable.gif)
 
 *Syntax*
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Tab, Tabs } from 'native-base';
+import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 ​export default class TabsScrollableExample extends Component {

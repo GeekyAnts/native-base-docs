@@ -4,8 +4,8 @@
 FABs (Floating Action Buttons) are used for a special type of promoted action. They are distinguished by a circled icon floating above the UI in a fixed position and have special motion behaviors. When clicked, it may contain more related actions.<br />
 Replacing Component: React Native [Animated](http://facebook.github.io/react-native/docs/animated.html)
 
-![Preview ios fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/FAB-single.gif)
-![Preview android fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/FAB-single.gif)
+![Preview ios fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/FAB-single.gif)
+![Preview android fabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/FAB-single.gif)
 
 *Syntax*
 
@@ -72,7 +72,7 @@ export default class FABExample extends Component {
                 <td>
                     up, down, left, right
                 </td>
-                <td>Direction of Buttons that popup on click of FAB.</td>
+                <td>Direction of buttons that popup on click of FAB</td>
             </tr>
             <tr>
                 <td>position</td>
@@ -81,19 +81,13 @@ export default class FABExample extends Component {
                     topLeft, topRight<br />
                     bottomLeft, bottomRight<br />
                 </td>
-                <td>Position of FAB on screen.</td>
+                <td>Position of FAB on screen</td>
             </tr>
             <tr>
                 <td>containerStyle</td>
                 <td> - </td>
                 <td>user-defined</td>
-                <td>Padding options to render FAB.</td>
-            </tr>
-            <tr>
-                <td>style</td>
-                <td> - </td>
-                <td>user-defined</td>
-                <td>User defined styles.</td>
+                <td>Padding options to render FAB</td>
             </tr>
         </tbody>
     </table><br />
@@ -101,8 +95,8 @@ export default class FABExample extends Component {
 ## fabs-multiple-headref
 #### Multiple FABs
 
-![Preview ios fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/FAB-multiple.gif)
-![Preview android fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/FAB-multiple.gif)
+![Preview ios fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/FAB-multiple.gif)
+![Preview android fabs-multiple-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/FAB-multiple.gif)
 
 *Syntax*
 
@@ -142,3 +136,5 @@ import { Container, Header, View, Fab, Button, Icon } from 'native-base';
     );
   }
 }</code></pre><br />
+
+**Note:** Always prefer to place FAB inside NativeBase `<Container/>`. Placing FAB inside `<Content/>` is not encouraged, as `<Content/>` is an implementation of `<ScrollView/>`.

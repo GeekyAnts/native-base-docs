@@ -5,8 +5,8 @@ Separator component is a separator usually used in list, which can be used for g
 
 Replacing Component: React Native [View](http://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/list-separator.png)
-![Preview android list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/list-separator.png)
+![Preview ios list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/list-separator.png)
+![Preview android list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/list-separator.png)
 
 *Syntax*
 
@@ -60,7 +60,7 @@ export default class ListSeparatorExample extends Component {
                 <td>bordered</td>
                 <td> - </td>
                 <td> - </td>
-                <td> adds border to top and bottom of the separator </td>
+                <td>Adds border to top and bottom of the separator</td>
             </tr>
             </tbody>
             </table><br />

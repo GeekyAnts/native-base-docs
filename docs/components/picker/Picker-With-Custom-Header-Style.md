@@ -1,12 +1,11 @@
 ## picker-with-custom-header-style-headref
 #### Picker with Custom Header Style
 
-![Preview ios picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/picker-with-custom-header-style.gif)
-![Preview android picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/picker.gif)
+![Preview ios picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker-custom-header-style.gif)
+![Preview android picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Platform } from "react-native";
-import { Container, Header, Title, Content, Button, Icon, Text, Right, Body, Left, Picker, Form, Item as FormItem } from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
 export default class PickerCustomHeaderStyleExample extends Component {
   constructor(props) {
     super(props);
@@ -37,9 +36,11 @@ export default class PickerCustomHeaderStyleExample extends Component {
           &lt;Form>
             &lt;Picker
               mode="dropdown"
+              iosIcon={&#123;Icon name="ios-arrow-down-outline" />}
               headerStyle=&#123;{ backgroundColor: "#b95dd3" }}
               headerBackButtonTextStyle=&#123;{ color: "#fff" }}
               headerTitleStyle=&#123;{ color: "#fff" }}
+              style=&#123;{ width: undefined }}
               selectedValue={this.state.selected5}
               onValueChange={this.onValueChange5.bind(this)}
             >

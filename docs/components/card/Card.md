@@ -5,11 +5,14 @@ Card is a pure [NativeBase](https://nativebase.io/) component.<br />
 Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
 [NativeBase](https://nativebase.io/) Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/card-basic.png)
-![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/card-basic.png)
+![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/card-basic.png)
+![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/card-basic.png)
 
   **Contents:**
 * [Card Header and Footer](Components.md#card-headfoot-headref)
+* [CardItem Bordered](Components.md#carditem-bordered-headref)
+* [CardItem Button](Components.md#carditem-button-headref)
+* [Card Transparent](Components.md#card-transparent-headref)
 * [Card List](Components.md#card-list-headref)
 * [Card Image](Components.md#card-image-headref)
 * [Card Showcase](Components.md#card-showcase-headref)
@@ -125,7 +128,7 @@ export default class CardExample extends Component {
             <td>bordered</td>
             <td>false</td>
             <td>boolean</td>
-            <td>To add border to the cardItems</td>
+            <td>Adds border to the cardItems</td>
         </tr>
     </tbody>
 </table><br />

@@ -1,10 +1,10 @@
 ## floating-label-headref
 #### Floating Label
 
-The <code>floatingLabel</code> property creates an Input component, whose Label animates upward when the input is selected and animates downward when input is erased.
+The <code>floatingLabel</code> property creates an Input component, whose Label animates upward when input is selected and animates downward when input is erased.
 
-![Preview ios floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/input-floating.gif)
-![Preview android floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/input-floating.gif)
+![Preview ios floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-floating.gif)
+![Preview android floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-floating.gif)
 
 *Syntax*
 
@@ -31,3 +31,5 @@ export default class FloatingLabelExample extends Component {
     );
   }
 }</code></pre><br />
+
+When using floatingLabel, use `getRef` to get the reference of `<Input/>` component. Always wrap floatingLabel component with `<Form/>`.

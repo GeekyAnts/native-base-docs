@@ -4,8 +4,8 @@
 Check Box allows the user to select a number of items from a set of choices.<br />
 Replacing Component: React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html)
 
-![Preview ios checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/ios/checkbox.png)
-![Preview android checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.2.0/screenshots/android/checkbox.png)
+![Preview ios checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/checkbox.png)
+![Preview android checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/checkbox.png)
 
 *Syntax*
 
@@ -27,6 +27,12 @@ export default class CheckBoxExample extends Component {
             &lt;CheckBox checked={false} />
             &lt;Body>
               &lt;Text>Discussion with Client&lt;/Text>
+            &lt;/Body>
+          &lt;/ListItem>
+          &lt;ListItem>
+            &lt;CheckBox checked={false} color="green"/>
+            &lt;Body>
+              &lt;Text>Finish list Screen&lt;/Text>
             &lt;/Body>
           &lt;/ListItem>
         &lt;/Content>
@@ -51,7 +57,7 @@ export default class CheckBoxExample extends Component {
                 <td>checked</td>
                 <td>false</td>
                 <td>boolean</td>
-                <td>Represents the state value of an item from set of choices.</td>
+                <td>State value of an item from set of choices</td>
             </tr>
             <tr>
                 <td>color</td>
