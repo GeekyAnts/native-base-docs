@@ -92,7 +92,7 @@ import Tab2 from './tabTwo';
                 <td>Function</td>
                 <td> - </td>
                 <td>
-                    Function to call when tab changes
+                    Function to call when tab changes.  It accepts one argument that is an Object containing two keys: i: the index of the tab that is selected, ref: the ref of the tab that is selected.
                 </td>
             </tr>
             <tr>
