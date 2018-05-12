@@ -71,7 +71,7 @@ Check out the [NativeBase KitchenSink](https://expo.io/@geekyants/nativebasekitc
 npm install -g create-react-app
 create-react-app nativebase-web-app
 cd nativebase-web-app
-npm eject
+npm run eject
 npm install native-base --save
 npm install create-react-app --save
 npm install react-native-web --save
