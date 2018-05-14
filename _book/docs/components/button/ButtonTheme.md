@@ -11,8 +11,8 @@ NativeBase provides following color themes:
   * Light
   * Dark<br />
 
-![Preview ios button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/buttons.png)
-![Preview android button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/buttons.png)
+![Preview ios button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/ios/buttons.png)
+![Preview android button-theme-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/android/buttons.png)
 
 *Syntax*
 

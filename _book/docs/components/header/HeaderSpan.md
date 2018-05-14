@@ -1,8 +1,8 @@
 ## header-span-headref
 #### Header Span
 
-![Preview ios header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/header-span.png)
-![Preview android header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/header-span.png)
+![Preview ios header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/ios/header-span.png)
+![Preview android header-span-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/android/header-span.png)
 
 *Syntax*
 

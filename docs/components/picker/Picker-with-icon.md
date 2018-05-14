@@ -2,14 +2,14 @@
 ## picker-with-icon-headref
 #### Picker with Icon
 
-![Preview ios picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker-with-icon.gif)
-![Preview android picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
+![Preview ios picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/picker-with-icon.gif)
+![Preview android picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/picker.gif)
 
 *Synatx*
 
 <pre class="line-numbers"><code class="language-jsx">
 import React, { Component } from "react";
-import {Container,Header,Title,Content,Button,Icon,Right,Body,Left,Picker,Form} from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
 class PickerWithIcon extends Component {
   constructor(props) {
     super(props);

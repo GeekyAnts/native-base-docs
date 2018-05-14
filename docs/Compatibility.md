@@ -45,7 +45,7 @@
                     <td>v0.46.0 and above</td>
                 </tr>
                 <tr>
-                    <td>v2.3.0 to 2.4.1</td>
+                    <td>v2.3.0 and above</td>
                     <td>
                         v0.46.0 and above
                         <font size="1">

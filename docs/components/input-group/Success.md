@@ -3,8 +3,8 @@
 
 To display textbox with valid data, include the <code>success</code> prop with <code>Item</code>.
 
-![Preview ios success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-success.png)
-![Preview android success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-success.png)
+![Preview ios success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/input-success.png)
+![Preview android success-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/input-success.png)
 
 *Syntax*
 

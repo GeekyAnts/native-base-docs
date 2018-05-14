@@ -2,8 +2,8 @@
 
 #### Header with Text Buttons
 
-![Preview ios header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/header-with-text-button.png)
-![Preview android header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/header-with-text-button.png)
+![Preview ios header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/header-with-text-button.png)
+![Preview android header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/header-with-text-button.png)
 
 *Syntax*
 

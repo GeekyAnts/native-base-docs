@@ -5,8 +5,8 @@ Radio buttons let the user select any one from a set of options.<br />
 Replacing Component: React Native [TouchableOpacity](http://facebook.github.io/react-native/docs/touchableopacity.html)
 
 
-![Preview ios radio-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/radio.png)
-![Preview android radio-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/radio.png)
+![Preview ios radio-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/radio.png)
+![Preview android radio-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/radio.png)
 
 *Syntax*
 
@@ -54,6 +54,22 @@ export default class RadioButtonExample extends Component {
                 <td>false</td>
                 <td>boolean</td>
                 <td>Represents the state value of an item from set of choices.</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>color</td>
+                <td>-</td>
+                <td>user-defined color</td>
+                <td>Inactive radio color</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>selectedColor</td>
+                <td>-</td>
+                <td>user-defined color</td>
+                <td>Active radio color</td>
             </tr>
         </tbody>
     </table><br />

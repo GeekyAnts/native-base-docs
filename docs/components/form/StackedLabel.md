@@ -3,8 +3,8 @@
 
 The <code>stackedLabel</code> property creates an Input component that places the label on top of input element which appears like a stack. This can also be used along with placeholder.
 
-![Preview ios stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/input-stacked.png)
-![Preview android stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/input-stacked.png)
+![Preview ios stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/input-stacked.png)
+![Preview android stacked-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/input-stacked.png)
 
 *Syntax*
 

@@ -20,8 +20,8 @@ export default () =>
 ```
 
 
-![Preview ios actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/actionsheet.gif)
-![Preview android actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/actionsheet.gif)
+![Preview ios actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/actionsheet.gif)
+![Preview android actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/actionsheet.gif)
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";

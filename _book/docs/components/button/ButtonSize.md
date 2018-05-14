@@ -6,8 +6,8 @@ Include the following props with your <code>Button</code>.
 * <code>small</code>: for small size button.
 * <code>large</code>: for large size button.<br />
 
-![Preview ios button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/button-size.png)
-![Preview android button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/button-size.png)
+![Preview ios button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/button-size.png)
+![Preview android button-size-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/button-size.png)
 
 *Syntax*
 

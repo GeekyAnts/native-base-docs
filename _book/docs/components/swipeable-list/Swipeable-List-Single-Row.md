@@ -3,8 +3,8 @@
 
 Single Swipable ListItem (Outside List)
 
-![Preview ios swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/list-swipe-single-row.gif)
-![Preview android swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/list-swipe-single-row.gif)
+![Preview ios swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/ios/list-swipe-single-row.gif)
+![Preview android swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/android/list-swipe-single-row.gif)
 
 *Syntax*
 

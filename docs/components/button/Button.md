@@ -6,8 +6,8 @@ Buttons are the integral part of an application. They are used for various purpo
 
 **Note:** Always import and use Text from NativeBase with Buttons. 
 
-![Preview ios button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/ios/buttons.png)
-![Preview android button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.7/screenshots/android/buttons.png)
+![Preview ios button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/ios/buttons.png)
+![Preview android button-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/android/buttons.png)
 
 **Contents:**
 * [Button Theme](Components.md#button-theme-headref)

@@ -1,8 +1,8 @@
 ## header-icon-headref
 #### Header with Icon Buttons
 
-![Preview ios header-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/header-with-icons.png)
-![Preview android header-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/header-with-icons.png)
+![Preview ios header-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/header-with-icons.png)
+![Preview android header-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/header-with-icons.png)
 
 *Syntax*
 

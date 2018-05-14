@@ -7,8 +7,8 @@ The layout system in [NativeBase](https://nativebase.io/) is very powerful and f
 Flexbox makes it look like percentages, however what actually is happening is just ratios. On the easier part, ratios are easier to represent than percentage / decimals. For this reason, the Easy Grid takes in ratios in place of percentage. <br />
 Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much of calculation.
 
-![Preview ios Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/layout.png)
-![Preview android Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/layout.png)
+![Preview ios Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/layout.png)
+![Preview android Layout](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/layout.png)
 
 *Syntax*
 

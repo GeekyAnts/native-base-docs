@@ -1,9 +1,9 @@
 ## actionsheet-icon-headref
 #### Icon ActionSheet (Android only)
 
-![Preview ios actionsheet-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/actionsheet.gif)
+![Preview ios actionsheet-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/actionsheet.gif)
 
-![Preview android actionsheet-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/actionsheet-icon.gif)
+![Preview android actionsheet-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/actionsheet-icon.gif)
 
 *Syntax for Icon ActionSheet*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";

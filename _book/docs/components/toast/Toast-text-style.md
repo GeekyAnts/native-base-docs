@@ -1,8 +1,8 @@
 ## toast-text-style-headref
 #### Toast text style
 
-![Preview ios toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/toast-text-style.gif)
-![Preview android toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/toast-text-style.gif)
+![Preview ios toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/toast-text-style.gif)
+![Preview android toast-text-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/toast-text-style.gif)
 
 *Syntax*
 
