@@ -15,7 +15,7 @@ export default class HeaderTextExample extends Component {
       &lt;Container>
         &lt;Header>
           &lt;Left>
-            &lt;Button transparent>
+            &lt;Button hasText transparent>
               &lt;Text>Back&lt;/Text>
             &lt;/Button>
           &lt;/Left>
@@ -23,7 +23,7 @@ export default class HeaderTextExample extends Component {
             &lt;Title>Header&lt;/Title>
           &lt;/Body>
           &lt;Right>
-            &lt;Button transparent>
+            &lt;Button hasText transparent>
               &lt;Text>Cancel&lt;/Text>
             &lt;/Button>
           &lt;/Right>
