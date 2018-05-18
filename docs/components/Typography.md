@@ -3,8 +3,8 @@
 NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br />
 Replacing Component for H1, H2, H3, Text: React Native [Text](http://facebook.github.io/react-native/docs/text.html) <br />
 
-![Preview ios Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/typography.png)
-![Preview android Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/typography.png)
+![Preview ios Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/typography.png)
+![Preview android Typography](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/typography.png)
 
 
 *Syntax*

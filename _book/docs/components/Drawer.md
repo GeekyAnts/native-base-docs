@@ -4,8 +4,8 @@ Drawer for both iOS and Android.<br />
 Drawer can be the perfect option to provide navigation options. <br />
 Replacing Component: [React Native Drawer](https://github.com/root-two/react-native-drawer)
 
-![Preview ios Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/drawer.png)
-![Preview android Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/drawer.png)
+![Preview ios Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/drawer.png)
+![Preview android Drawer](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/drawer.png)
 
 **Syntax**
 

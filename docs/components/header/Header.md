@@ -10,8 +10,8 @@
 * User can add custom styles while defining <code>Header</code> within their app.
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/ios/header-with-title.png)
-![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.8/screenshots/android/header-with-title.png)
+![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/header-with-title.png)
+![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/header-with-title.png)
 
 **Contents:**
 * [Header with only title](Components.md#title-header-headref)
@@ -23,6 +23,7 @@
 * [Header with Multiple Icon Button](Components.md#header-multiple-icon-headref)
 * [Header Span](Components.md#header-span-headref)
 * [Header No Shadow](Components.md#header-no-shadow-headref)
+* [Header No Left](Components.md#header-no-left-headref)
 
 
 *Syntax*
@@ -129,6 +130,18 @@ export default class HeaderExample extends Component {
                 <td> - </td>
                 <td> boolean </td>
                 <td>Add tabs to header</td>
+            </tr>
+            <tr>
+                <td>hasText</td>
+                <td> - </td>
+                <td> boolean </td>
+                <td>This is <code>button</code> prop. Adds necessary padding when Text button defined in Left / Right of Header (iOS)</td>
+            </tr>
+            <tr>
+                <td>noLeft</td>
+                <td> - </td>
+                <td> boolean </td>
+                <td>Eliminates Left component and moves Title towards left (Android)</td>
             </tr>
             </tr>
                 <td>span</td>

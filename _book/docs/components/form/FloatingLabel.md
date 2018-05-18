@@ -3,8 +3,8 @@
 
 The <code>floatingLabel</code> property creates an Input component, whose Label animates upward when input is selected and animates downward when input is erased.
 
-![Preview ios floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/input-floating.gif)
-![Preview android floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/input-floating.gif)
+![Preview ios floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/input-floating.gif)
+![Preview android floating-label-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/input-floating.gif)
 
 *Syntax*
 

@@ -5,8 +5,8 @@ Want to have something more with Card Lists? <br />
 Include image with <code>CardItem</code> within <code>Card</code> along with some text before and after image to create a card with lists. <br />
 Here is your Card Image ready !
 
-![Preview ios card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/card-image.png)
-![Preview android card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/card-image.png)
+![Preview ios card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/card-image.png)
+![Preview android card-image-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/card-image.png)
 
 
 *Syntax*

@@ -893,6 +893,24 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>hasText</li>
+                        </ul>
+                    </td>
+                    <td><code>button</code> prop, add padding to Left for Text Button (iOS)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>noLeft</li>
+                        </ul>
+                    </td>
+                    <td>eliminates Left, moves Title to left (Android)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>span</li>
                         </ul>
                     </td>

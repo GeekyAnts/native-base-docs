@@ -48,6 +48,7 @@
 {% include "./docs/components/header/MultipleIcon.md" %}
 {% include "./docs/components/header/HeaderSpan.md" %}
 {% include "./docs/components/header/HeaderNoshadow.md" %}
+{% include "./docs/components/header/HeaderNoLeft.md" %}
 {% include "./docs/components/Icon.md" %}
 {% include "./docs/components/Layout.md" %}
 {% include "./docs/components/list/List.md" %}

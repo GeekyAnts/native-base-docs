@@ -58,6 +58,7 @@
         * [Multiple Icon Button](Components.md#header-multiple-icon-headref)
         * [Span](Components.md#header-span-headref)
         * [NoShadow](Components.md#header-no-shadow-headref)
+        * [NoLeft](Components.md#header-no-left-headref)
     * [Icon](Components.md#icon-def-headref)
     * [Layout](Components.md#Layout)
     * [List](Components.md#list-def-headref)

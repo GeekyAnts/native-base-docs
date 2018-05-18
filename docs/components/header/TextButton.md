@@ -2,8 +2,8 @@
 
 #### Header with Text Buttons
 
-![Preview ios header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/ios/header-with-text-button.png)
-![Preview android header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.8/screenshots/android/header-with-text-button.png)
+![Preview ios header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/header-with-text-button.png)
+![Preview android header-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/header-with-text-button.png)
 
 *Syntax*
 
@@ -15,7 +15,7 @@ export default class HeaderTextExample extends Component {
       &lt;Container>
         &lt;Header>
           &lt;Left>
-            &lt;Button transparent>
+            &lt;Button hasText transparent>
               &lt;Text>Back&lt;/Text>
             &lt;/Button>
           &lt;/Left>
@@ -23,7 +23,7 @@ export default class HeaderTextExample extends Component {
             &lt;Title>Header&lt;/Title>
           &lt;/Body>
           &lt;Right>
-            &lt;Button transparent>
+            &lt;Button hasText transparent>
               &lt;Text>Cancel&lt;/Text>
             &lt;/Button>
           &lt;/Right>
