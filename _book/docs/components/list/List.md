@@ -3,12 +3,14 @@
 
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follow styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
-![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/list-basic.png)
-![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/list-basic.png)
+![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/list-basic.png)
+![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/list-basic.png)
 
 **Contents:**
 * [List Divider](Components.md#list-divider-headref)
 * [List Header](Components.md#list-header-headref)
+* [ListItem Selected](Components.md#listitem-selected-headref)
+* [ListItem NoIndent](Components.md#listitem-noIndent-headref)
 * [List Icon](Components.md#list-icon-headref)
 * [List Avatar](Components.md#list-avatar-headref)
 * [List Thumbnail](Components.md#list-thumbnail-headref)
@@ -90,6 +92,15 @@ Replacing Component
                 <td>boolean</td>
                 <td>
                     Highlights the selected item
+                </td>
+            </tr>
+            <tr>
+                <td>noIndent</td>
+                <td>true</td>
+                <td>boolean</td>
+                <td>
+                    Removes margin from left<br />
+                    Useful incase of setting backgroundColor for ListItem.
                 </td>
             </tr>
             <tr>

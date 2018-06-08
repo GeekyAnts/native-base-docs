@@ -1,8 +1,8 @@
 ## tabs-advanced-headref
 #### Advanced Tabs
 
-![Preview ios tabs-advanced-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/tabs-advanced.gif)
-![Preview android tabs-advanced-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/tabs-advanced.gif)
+![Preview ios tabs-advanced-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/tabs-advanced.gif)
+![Preview android tabs-advanced-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/tabs-advanced.gif)
 
 *Syntax*
 

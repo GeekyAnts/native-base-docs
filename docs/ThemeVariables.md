@@ -736,6 +736,13 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
             <td>13</td>
             <td>13</td>
         </tr>
+        <tr>
+            <td>listItemSelected</td>
+            <td>color</td>
+            <td>Color of Text and Icons when ListItem is selected</td>
+            <td>13</td>
+            <td>13</td>
+        </tr>
     </tbody>
 </table>
 <br />

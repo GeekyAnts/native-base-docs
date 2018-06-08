@@ -893,6 +893,24 @@
                 <tr>
                     <td>
                         <ul>
+                            <li>hasText</li>
+                        </ul>
+                    </td>
+                    <td><code>button</code> prop, add padding to Left for Text Button (iOS)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>noLeft</li>
+                        </ul>
+                    </td>
+                    <td>eliminates Left, moves Title to left (Android)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
                             <li>span</li>
                         </ul>
                     </td>
@@ -1233,6 +1251,15 @@
                     <td>style the list to have Thumbnails</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>noIndent</li>
+                        </ul>
+                    </td>
+                    <td>removes margin from left</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -1396,6 +1423,24 @@
                         </ul>
                     </td>
                     <td>represents the state value of an item</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>color</li>
+                        </ul>
+                    </td>
+                    <td>inactive radio color</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>selectedColor</li>
+                        </ul>
+                    </td>
+                    <td>active radio color</td>
                     <td></td>
                 </tr>
 

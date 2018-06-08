@@ -4,11 +4,12 @@
 Renders the native picker component on iOS and Android.<br />
 Replacing Component: React Native [Picker](https://facebook.github.io/react-native/docs/picker.html)<br />
 
-![Preview ios picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/picker.gif)
-![Preview android picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/picker.gif)
+![Preview ios picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/picker.gif)
+![Preview android picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/picker.gif)
 
   **Contents:**
 * [Picker with Icon](Components.md#picker-with-icon-headref)
+* [Picker with Icon Style](Components.md#picker-with-icon-style-headref)
 * [Placeholder Picker](Components.md#picker-placeholder-headref)
 * [Placeholder Picker without Note](Components.md#picker-placeholder-without-note-headref)
 * [Picker Text and Item Style](Components.md#picker-text-and-item-text-styles-headref)

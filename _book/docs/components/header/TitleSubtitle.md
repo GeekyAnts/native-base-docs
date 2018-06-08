@@ -1,8 +1,8 @@
 ## header-title-subtitle-headref
 #### Header with Title and Subtitle
 
-![Preview ios header-title-subtitle-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/ios/header-with-title-and-subtitle.png)
-![Preview android header-title-subtitle-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.7/screenshots/android/header-with-title-and-subtitle.png)
+![Preview ios header-title-subtitle-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/header-with-title-and-subtitle.png)
+![Preview android header-title-subtitle-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/header-with-title-and-subtitle.png)
 
 *Syntax*
 
