@@ -3,8 +3,8 @@
 
 Segments are best used as an alternative for tabs. Mainly used in iOS.
 
-![Preview ios segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/segment-inside-header.gif)
-![Preview android segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/segment-inside-header.gif)
+![Preview ios segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/segment-inside-header.gif)
+![Preview android segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/segment-inside-header.gif)
 
 *Syntax*
 
@@ -14,7 +14,7 @@ import { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, T
   render() {
     return (
       &lt;Container>
-        &lt;Header>
+        &lt;Header hasSegment>
           &lt;Left>
             &lt;Button transparent>
               &lt;Icon name="arrow-back" />

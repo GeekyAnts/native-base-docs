@@ -4,8 +4,8 @@
 Renders the native picker component on iOS and Android.<br />
 Replacing Component: React Native [Picker](https://facebook.github.io/react-native/docs/picker.html)<br />
 
-![Preview ios picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/picker.gif)
-![Preview android picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/picker.gif)
+![Preview ios picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/picker.gif)
+![Preview android picker-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/picker.gif)
 
   **Contents:**
 * [Picker with Icon](Components.md#picker-with-icon-headref)
@@ -166,6 +166,12 @@ export default class PickerExample extends Component {
           <td> - </td>
           <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
           <td>Allows the modal to rotate to any of the specified orientations</td>
+      </tr>
+      <tr>
+          <td>enabled</td>
+          <td> - </td>
+          <td>boolean</td>
+          <td>Enable / disable Picker button</td>
       </tr>
     </tbody>
   </table><br />

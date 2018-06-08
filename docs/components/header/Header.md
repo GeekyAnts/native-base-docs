@@ -10,8 +10,8 @@
 * User can add custom styles while defining <code>Header</code> within their app.
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/header-with-title.png)
-![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/header-with-title.png)
+![Preview ios header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/header-with-title.png)
+![Preview android header-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/header-with-title.png)
 
 **Contents:**
 * [Header with only title](Components.md#title-header-headref)

@@ -3,8 +3,8 @@
 
 The <code>noLeft</code> prop of Header removes `<Left>` from Android Header.
 
-![Preview ios header-no-left-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/header-with-title.png)
-![Preview android header-no-left-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/header-noleft.png)
+![Preview ios header-no-left-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/header-with-title.png)
+![Preview android header-no-left-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/header-noleft.png)
 
 *Syntax*
 

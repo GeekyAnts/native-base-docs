@@ -1,8 +1,8 @@
 ## picker-with-custom-back-button-headref
 #### Picker with Custom Back Button
 
-![Preview ios picker-with-custom-back-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/picker-custom-back-button.gif)
-![Preview android picker-with-custom-back-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/picker.gif)
+![Preview ios picker-with-custom-back-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/picker-custom-back-button.gif)
+![Preview android picker-with-custom-back-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";

@@ -3,8 +3,8 @@
 
 To use the regular textbox which is rectangular in shape, include the <code>regular</code> prop with <code>Item</code>.
 
-![Preview ios regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/input-regular.png)
-![Preview android regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/input-regular.png)
+![Preview ios regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/input-regular.png)
+![Preview android regular-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/input-regular.png)
 
 *Syntax*
 

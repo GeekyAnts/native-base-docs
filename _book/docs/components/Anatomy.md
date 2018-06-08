@@ -4,8 +4,8 @@
 Automatically animates view to its new position.<br />
 A common way to use [NativeBase](https://nativebase.io/) screen structure is to have all the components within <code>&lt;Container></code><br />
 
-![Preview ios anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/anatomy.png)
-![Preview android anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/anatomy.png)
+![Preview ios anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/anatomy.png)
+![Preview android anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/anatomy.png)
 
 *General Syntax*
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

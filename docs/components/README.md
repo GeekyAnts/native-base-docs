@@ -10,11 +10,13 @@ This docs have limited examples. For more examples go through [NativeBase-Kitche
 
 
 * [Anatomy](Components.md#anatomy-headref)
+* [Accordion](Components.md#accordion-def-headref)
 * [ActionSheet](Components.md#actionsheet-def-headref)
 * [Badge](Components.md#Badge)
 * [Button](Components.md#button-def-headref)
 * [Card](Components.md#card-def-headref)
 * [Check Box](Components.md#checkbox-headref)
+* [Date Picker](Components.md#date-picker-def-headref)
 * [Deck Swiper](Components.md#deckswiper-def-headref)
 * [FABs](Components.md#fabs-def-headref)
 * [Footer Tabs](Components.md#footer-tabs-def-headref)

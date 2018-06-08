@@ -71,6 +71,55 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
     </tbody>
 </table><br />
 
+<h3>Accordion</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>headerStyle</td>
+            <td>color</td>
+            <td>Header color</td>
+            <td>#edebed</td>
+            <td>#edebed</td>
+        </tr>
+        <tr>
+            <td>iconStyle</td>
+            <td>color</td>
+            <td>Icon color when closed</td>
+            <td>#000</td>
+            <td>#000</td>
+        </tr>
+        <tr>
+            <td>contentStyle</td>
+            <td>color</td>
+            <td>Content color</td>
+            <td>#f5f4f5</td>
+            <td>#f5f4f5</td>
+        </tr>
+        <tr>
+            <td>expandedIconStyle</td>
+            <td>color</td>
+            <td>Icon color when open</td>
+            <td>#000</td>
+            <td>#000</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
 <h3>Badge</h3>
 <table width="80%" class="table table-hover">
     <thead>
@@ -284,6 +333,41 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
     </tbody>
 </table>
 <br/>
+
+<h3>Date Picker</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>datePickerTextColor</td>
+            <td>color</td>
+            <td>date display color</td>
+            <td>#000</td>
+            <td>#000</td>
+        </tr>
+        <tr>
+            <td>datePickerBg</td>
+            <td>color</td>
+            <td>Background color of modal</td>
+            <td>transparent</td>
+            <td>transparent</td>
+        </tr>
+    </tbody>
+</table>
+<br />
 
 <h3>Font</h3>
 <table>

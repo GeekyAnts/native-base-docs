@@ -1,7 +1,7 @@
 ## segment-outside-header-headref
 
-![Preview ios segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/segment-outside-header.gif)
-![Preview android segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/segment-outside-header.gif)
+![Preview ios segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/segment-outside-header.gif)
+![Preview android segment-outside-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/segment-outside-header.gif)
 
 *Syntax (Outside Header)*
 
@@ -11,7 +11,7 @@ import { Container, Header, Left, Body, Right, Button, Icon, Title, Segment, Con
   render() {
     return (
       &lt;Container>
-        &lt;Header hasTabs>
+        &lt;Header hasSegment>
           &lt;Left>
             &lt;Button transparent>
               &lt;Icon name="arrow-back" />

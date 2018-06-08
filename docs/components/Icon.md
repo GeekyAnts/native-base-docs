@@ -6,8 +6,8 @@ Here is a repo that lists down icons of available `react-native-vector-icons` ic
 
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 
-![Preview ios icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/icons.png)
-![Preview android icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/icons.png)
+![Preview ios icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/icons.png)
+![Preview android icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/icons.png)
 
 *Syntax*
 

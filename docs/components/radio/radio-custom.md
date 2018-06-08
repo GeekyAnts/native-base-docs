@@ -2,8 +2,8 @@
 ## Custom Radio Button
 
 
-![Preview ios custom-radio-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/radio-custom.png)
-![Preview android custom-radio-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/radio-custom.png)
+![Preview ios custom-radio-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/radio-custom.png)
+![Preview android custom-radio-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/radio-custom.png)
 
 *Syntax*
 

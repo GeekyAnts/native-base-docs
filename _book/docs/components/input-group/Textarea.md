@@ -5,8 +5,8 @@
 
 Creates a text area to input multiline text.
 
-![Preview ios textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/input-textarea.png)
-![Preview android textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/input-textarea.png)
+![Preview ios textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/input-textarea.png)
+![Preview android textarea-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/input-textarea.png)
 
 *Syntax*
 

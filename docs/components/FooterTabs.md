@@ -9,8 +9,8 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 * [Footer with icons and text](Components.md#footer-tabs-icon-text-headref)
 * [Footer Badge](Components.md#footer-tabs-badge-headref)
 
-![Preview ios footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/footer-text.png)
-![Preview android footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/footer-text.png)
+![Preview ios footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/footer-text.png)
+![Preview android footer-tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/footer-text.png)
 
 *Syntax*
 
@@ -85,8 +85,8 @@ export default class FooterTabsExample extends Component {
 
 ## footer-tabs-icon-headref
 #### Icon Footer
-![Preview ios footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/footer-icon.png)
-![Preview android footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/footer-icon.png)
+![Preview ios footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/footer-icon.png)
+![Preview android footer-tabs-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/footer-icon.png)
 
 *Syntax*
 
@@ -121,8 +121,8 @@ export default class FooterTabsIconExample extends Component {
 
 ## footer-tabs-icon-text-headref
 #### Icon Footer with Text
-![Preview ios footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/footer-icon-text.png)
-![Preview android footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/footer-icon-text.png)
+![Preview ios footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/footer-icon-text.png)
+![Preview android footer-tabs-icon-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/footer-icon-text.png)
 
 *Syntax*
 
@@ -161,8 +161,8 @@ export default class FooterTabsIconTextExample extends Component {
 
 ## footer-tabs-badge-headref
 #### Footer with badge
-![Preview ios footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/footer-badge.png)
-![Preview android footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/footer-badge.png)
+![Preview ios footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/footer-badge.png)
+![Preview android footer-tabs-badge-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/footer-badge.png)
 
 *Syntax*
 

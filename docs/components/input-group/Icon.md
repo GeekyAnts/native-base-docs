@@ -5,8 +5,8 @@ Icons can be easily added to the NativeBase Textbox. To do so, include an icon w
 The icons render in the order of its definition within <code>Item</code>.<br />
 
 
-![Preview ios icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/input-icon.png)
-![Preview android icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/input-icon.png)
+![Preview ios icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/input-icon.png)
+![Preview android icon-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/input-icon.png)
 
 *Syntax*        
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';

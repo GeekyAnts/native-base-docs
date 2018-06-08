@@ -3,8 +3,8 @@
 
 List Avatars are medium to showcase an image with your list item whose dimension lays between icon and thumbnail. To create a avatar list, nest <code>&lt;Thumbnail></code> component within <code>&lt;ListItem></code> component with <code>avatar</code> prop.
 
-![Preview ios list-avatar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/ios/list-avatar.png)
-![Preview android list-avatar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.4.9/screenshots/android/list-avatar.png)
+![Preview ios list-avatar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/list-avatar.png)
+![Preview android list-avatar-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/list-avatar.png)
 
 *Syntax*
 

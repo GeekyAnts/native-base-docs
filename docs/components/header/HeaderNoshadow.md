@@ -3,8 +3,8 @@
 
 The <code>noShadow</code> prop of Header removes shadow from iOS Header and elevation from Android Header.
 
-![Preview ios header-no-shadow-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/ios/header-noshadow.png)
-![Preview android header-no-shadow-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.4.9/screenshots/android/header-noshadow.png)
+![Preview ios header-no-shadow-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/header-noshadow.png)
+![Preview android header-no-shadow-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/header-noshadow.png)
 
 *Syntax*
 
