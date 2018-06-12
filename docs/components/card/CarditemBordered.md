@@ -1,4 +1,5 @@
 ## carditem-bordered-headref
+
 #### CardItem Bordered
 
 Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for card item.
@@ -6,11 +7,9 @@ Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for c
 ![Preview ios carditem-bordered-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/card-bordered.png)
 ![Preview android carditem-bordered-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/card-bordered.png)
 
-
-*Syntax*
+_Syntax_
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Card, CardItem, Text, Body, Left, Right, IconNB } from "native-base";
 export default class CardItemBordered extends Component {
   render() {
