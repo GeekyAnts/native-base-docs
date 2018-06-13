@@ -36,7 +36,7 @@ export default class PickerCustomHeaderStyleExample extends Component {
           &lt;Form>
             &lt;Picker
               mode="dropdown"
-              iosIcon={&#123;Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="ios-arrow-down-outline" />}
               headerStyle=&#123;{ backgroundColor: "#b95dd3" }}
               headerBackButtonTextStyle=&#123;{ color: "#fff" }}
               headerTitleStyle=&#123;{ color: "#fff" }}
