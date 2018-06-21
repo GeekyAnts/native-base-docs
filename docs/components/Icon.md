@@ -4,7 +4,7 @@
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 Here is a repo that lists down icons of available `react-native-vector-icons` icon families. [Repo](https://github.com/GeekyAnts/NativeBase-VectorIconApp)<br />
 
-*Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
+*Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons) ([Icons List](https://ionicframework.com/docs/ionicons/))*
 
 ![Preview ios icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/icons.png)
 ![Preview android icon-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/icons.png)
