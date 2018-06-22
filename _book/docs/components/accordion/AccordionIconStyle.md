@@ -1,8 +1,8 @@
 ## accordion-icon-style-headref
 #### Icon and Expanded Icon Style
 
-![Preview ios accordion-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/accordion-icon-style.gif)
-![Preview android accordion-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/accordion-icon-style.gif)
+![Preview ios accordion-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/accordion-icon-style.gif)
+![Preview android accordion-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/accordion-icon-style.gif)
 
 
 *General Syntax*

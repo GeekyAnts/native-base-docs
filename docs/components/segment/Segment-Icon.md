@@ -1,8 +1,8 @@
 ## segment-icon-headref
 ## Segment Icon
 
-![Preview ios segment-icon-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/ios/segment-icon.png)
-![Preview android segment-icon-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.0/screenshots/android/segment-icon.png)
+![Preview ios segment-icon-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/ios/segment-icon.png)
+![Preview android segment-icon-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/android/segment-icon.png)
 
 *Syntax*
 

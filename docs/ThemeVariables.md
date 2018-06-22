@@ -116,6 +116,13 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
             <td>#000</td>
             <td>#000</td>
         </tr>
+        <tr>
+            <td>accordionBorderColor</td>
+            <td>color</td>
+            <td>Header and Content border color</td>
+            <td>#d3d3d3</td>
+            <td>#d3d3d3</td>
+        </tr>
     </tbody>
 </table>
 <br />
@@ -232,6 +239,13 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
             <td>Border color for card</td>
             <td>#ccc</td>
             <td>#ccc</td>
+        </tr>
+        <tr>
+            <td>cardBorderRadius</td>
+            <td>number</td>
+            <td>Border Radius</td>
+            <td>2</td>
+            <td>2</td>
         </tr>
     </tbody>
 </table>

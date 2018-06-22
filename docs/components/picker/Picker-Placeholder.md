@@ -1,8 +1,8 @@
 ## picker-placeholder-headref
 #### Placeholder Picker
 
-![Preview ios picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/picker-with-placeholder.gif)
-![Preview android picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/picker.gif)
+![Preview ios picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/picker-with-placeholder.gif)
+![Preview android picker-placeholder-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/picker.gif)
 
 *Syntax*
 

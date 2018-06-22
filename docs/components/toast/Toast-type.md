@@ -1,8 +1,8 @@
 ## toast-type-headref
 #### Toast types
 
-![Preview ios toast-type-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/toast-type.gif)
-![Preview android toast-type-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/toast-type.gif)
+![Preview ios toast-type-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/toast-type.gif)
+![Preview android toast-type-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/toast-type.gif)
 
 *Syntax*
 

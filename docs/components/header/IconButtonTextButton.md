@@ -1,8 +1,8 @@
 ## header-icon-button-text-button-headref
 #### Header with Icon Button and Text Button
 
-![Preview ios header-icon-button-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/header-with-icon-button-text-button.png)
-![Preview android header-icon-button-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/header-with-icon-button-text-button.png)
+![Preview ios header-icon-button-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/header-with-icon-button-text-button.png)
+![Preview android header-icon-button-text-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/header-with-icon-button-text-button.png)
 
 *Syntax*
 

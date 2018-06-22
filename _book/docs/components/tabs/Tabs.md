@@ -5,8 +5,8 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 *Replacing Component: [react-native-scrollable-tab-view <code>&lt;ScrollableTabView></code>](https://github.com/brentvatne/react-native-scrollable-tab-view)*
 
 
-![Preview ios tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/tabs-basic.gif)
-![Preview android tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/tabs-basic.gif)
+![Preview ios tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/tabs-basic.gif)
+![Preview android tabs-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/tabs-basic.gif)
 
 *Syntax*
 

@@ -4,8 +4,8 @@
 Toggle the visibility of content across items of your screen. Accordion toggle through a number of text blocks with a single click.<br />
 NativeBase Accordion renders with pre-defined icons on toggle of text block, header and content style.
 
-![Preview ios accordion-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/accordion.gif)
-![Preview android accordion-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/accordion.gif)
+![Preview ios accordion-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/accordion.gif)
+![Preview android accordion-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/accordion.gif)
 
 
 **Contents:**

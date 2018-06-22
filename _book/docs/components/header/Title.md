@@ -1,8 +1,8 @@
 ## title-header-headref
 #### Header with only title
 
-![Preview ios title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/header-with-title.png)
-![Preview android title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/header-with-title.png)
+![Preview ios title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/header-with-title.png)
+![Preview android title-header-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/header-with-title.png)
 
 *Syntax*
 

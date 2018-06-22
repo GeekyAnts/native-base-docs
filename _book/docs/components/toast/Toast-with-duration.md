@@ -1,8 +1,8 @@
 ## toast-with-duration-headref
 #### Toast with duration
 
-![Preview ios toast-with-duration-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/toast-duration.gif)
-![Preview android toast-with-duration-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/toast-duration.gif)
+![Preview ios toast-with-duration-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/toast-duration.gif)
+![Preview android toast-with-duration-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/toast-duration.gif)
 
 *Syntax* 
 

@@ -5,8 +5,8 @@ Separator component is a separator usually used in list, which can be used for g
 
 Replacing Component: React Native [View](http://facebook.github.io/react-native/docs/view.html)
 
-![Preview ios list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/list-separator.png)
-![Preview android list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/list-separator.png)
+![Preview ios list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/list-separator.png)
+![Preview android list-seperator-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/list-separator.png)
 
 *Syntax*
 

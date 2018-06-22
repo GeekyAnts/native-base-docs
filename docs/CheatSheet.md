@@ -397,6 +397,24 @@
                     <td>adds border to card item</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>first</li>
+                        </ul>
+                    </td>
+                    <td>custom card border radius</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>last</li>
+                        </ul>
+                    </td>
+                    <td>custom card border radius</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -915,6 +933,15 @@
                         </ul>
                     </td>
                     <td>doubles the header sizet</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>transparent</li>
+                        </ul>
+                    </td>
+                    <td>No Border, shadow, elevation</td>
                     <td></td>
                 </tr>
 

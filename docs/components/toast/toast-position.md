@@ -1,8 +1,8 @@
 ## toast-position-headref
 #### Toast position
 
-![Preview ios toast-position-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/toast-position.gif)
-![Preview android toast-position-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/toast-position.gif)
+![Preview ios toast-position-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/toast-position.gif)
+![Preview android toast-position-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/toast-position.gif)
 
 *Syntax*
 

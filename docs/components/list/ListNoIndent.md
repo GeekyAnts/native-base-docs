@@ -1,8 +1,8 @@
 ## listitem-noIndent-headref
 #### ListItem NoIndent
 
-![Preview ios listitem-noIndent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/list-noIndent.png)
-![Preview android listitem-noIndent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/list-noIndent.png)
+![Preview ios listitem-noIndent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/list-noIndent.png)
+![Preview android listitem-noIndent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/list-noIndent.png)
 
 *Syntax*
 

@@ -4,8 +4,8 @@
 The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.<br />
 The List Divider of NativeBase comes with default style which is easily customisable.
 
-![Preview ios list-divider-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/list-divider.png)
-![Preview android list-divider-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/list-divider.png)
+![Preview ios list-divider-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/list-divider.png)
+![Preview android list-divider-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/list-divider.png)
 
 *Syntax*
 

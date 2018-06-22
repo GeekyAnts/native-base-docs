@@ -6,8 +6,8 @@ Card Showcase is further customization of Card Image. It uses several different 
 * Make use of Left, Body and Right components to align the content of your Card header.
 * To mixup Image with other NativeBase components in a single CardItem, include the content within Body component.
 
-![Preview ios card-showcase-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/card-showcase.png)
-![Preview android card-showcase-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/card-showcase.png)
+![Preview ios card-showcase-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/card-showcase.png)
+![Preview android card-showcase-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/card-showcase.png)
 
 *Syntax*
 

@@ -1,8 +1,8 @@
 ## picker-with-custom-header-text-headref
 #### Picker with Custom Header Text
 
-![Preview ios picker-with-custom-header-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/picker-custom-header-text.gif)
-![Preview android picker-with-custom-header-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/picker.gif)
+![Preview ios picker-with-custom-header-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/picker-custom-header-text.gif)
+![Preview android picker-with-custom-header-text-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/picker.gif)
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, } from "native-base";

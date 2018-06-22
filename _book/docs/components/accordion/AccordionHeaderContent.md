@@ -1,8 +1,8 @@
 ## accordion-header-content-headref
 #### Header and Content Style
 
-![Preview ios accordion-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/accordion-header-content-style.gif)
-![Preview android accordion-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/accordion-header-content-style.gif)
+![Preview ios accordion-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/accordion-header-content-style.gif)
+![Preview android accordion-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/accordion-header-content-style.gif)
 
 
 *General Syntax*

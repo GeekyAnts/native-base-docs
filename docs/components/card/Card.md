@@ -5,8 +5,8 @@ Card is a pure [NativeBase](https://nativebase.io/) component.<br />
 Card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. <br />
 [NativeBase](https://nativebase.io/) Cards support a wide variety of content, including images, text, list groups, links, and more. Mix and match multiple content types to create the card you need.
 
-![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/card-basic.png)
-![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/card-basic.png)
+![Preview ios card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/card-basic.png)
+![Preview android card-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/card-basic.png)
 
   **Contents:**
 * [Card Header and Footer](Components.md#card-headfoot-headref)
@@ -129,6 +129,18 @@ export default class CardExample extends Component {
             <td>false</td>
             <td>boolean</td>
             <td>Adds border to the cardItems</td>
+        </tr>
+        <tr>
+            <td>first</td>
+            <td>-</td>
+            <td>-</td>
+            <td>First CardItem, use in case of custom Card BorderRadius</td>
+        </tr>
+        <tr>
+            <td>last</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Last CardItem, use in case of custom Card BorderRadius</td>
         </tr>
     </tbody>
 </table><br />

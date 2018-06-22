@@ -1015,6 +1015,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.13.11" data-path="../../Components.html">
+            
+                <a href="../../Components.html#header-transparent-headref">
+            
+                    
+                    Transparent
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -2041,20 +2054,52 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="Release_Notes">Release Notes</h1>
-<h3 id="2_5_1">0.1. 2.5.1</h3>
+<h3 id="2_5_2">0.1. 2.5.2</h3>
 <h4 id="Upgraded_Features">0.1.1. Upgraded Features</h4>
+<ul>
+<li><strong>Accordion:</strong> Added border style to accordion along with customisable from theme.</li>
+<li><strong>Card:</strong> Added card borderRadius to theme.</li>
+<li><strong>DatePicker:</strong><ul>
+<li>Exposed <code>onDateChange</code> method for iOS.</li>
+<li>Added <code>placeHolderTextStyle</code> props to DatePicker.</li>
+</ul>
+</li>
+<li><strong>Header:</strong> Added <code>transparent</code> prop with Header.</li>
+<li><strong>Typescript:</strong> Added definitions for Accordion and DatePicker.</li>
+</ul>
+<h4 id="Bug_Fixes">0.1.2. Bug Fixes</h4>
+<ul>
+<li><strong>General:</strong> NativeBase passes flow check.</li>
+<li><strong>Header:</strong> Fix header padding issue on iphoneX in case of inline styles.</li>
+<li><strong>Input:</strong><ul>
+<li>StackedLabel supports <code>multiline</code> prop.</li>
+<li>Fixed back StackedLabel input scroll.</li>
+<li>FloatingLabel supports <code>multiline</code> prop.</li>
+<li>Added check to filter out Input.</li>
+</ul>
+</li>
+<li><strong>Tabs:</strong> Tab button text font size is customizable from theme.</li>
+<li><strong>Typescript:</strong> <ul>
+<li>Fixed typo.</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+<h3 id="2_5_1">0.2. 2.5.1</h3>
+<h4 id="Upgraded_Features">0.2.1. Upgraded Features</h4>
 <ul>
 <li>Changes in <code>package.json</code> to improve install and jest performance</li>
 </ul>
 <p><hr></p>
-<h3 id="2_5_0">0.2. 2.5.0</h3>
-<h4 id="New_Features">0.2.1. New Features</h4>
+<h3 id="2_5_0">0.3. 2.5.0</h3>
+<h4 id="New_Features">0.3.1. New Features</h4>
 <ul>
 <li>Added Accordion component.</li>
 <li>Added Date Picker component.</li>
 <li>Added Jest test cases to components.</li>
 </ul>
-<h4 id="Upgraded_Features">0.2.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.3.2. Upgraded Features</h4>
 <ul>
 <li>Upgraded dev dependencies to support Jest test cases.</li>
 <li>Safearea implementation for Header, Content and Footer.</li>
@@ -2072,7 +2117,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.2.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.3.3. Bug Fixes</h4>
 <ul>
 <li><strong>ActionSheet:</strong><ul>
 <li>Update ActionSheet <code>refs</code>, if application root is reinitialized.</li>
@@ -2101,13 +2146,13 @@
 </ul>
 <hr>
 
-<h3 id="2_4_5">0.3. 2.4.5</h3>
+<h3 id="2_4_5">0.4. 2.4.5</h3>
 <p><em>Fixed Header as per iOS and material design guidelines</em></p>
-<h3 id="Upgraded_Features">0.4. Upgraded Features</h3>
+<h3 id="Upgraded_Features">0.5. Upgraded Features</h3>
 <ul>
 <li>Added <code>noLeft</code> prop with Header. Irrespective of Left component defined or not, Android will display Body&apos;s Title component to left of display. Applicable for Android platform, no changes when used for iOS</li>
 </ul>
-<h3 id="Bug_Fixes">0.5. Bug Fixes</h3>
+<h3 id="Bug_Fixes">0.6. Bug Fixes</h3>
 <ul>
 <li>Fixed lineHeight for Left, Body, Right components</li>
 <li>Fixed alignment of child elements of Left, Body and Right components</li>
@@ -2119,12 +2164,12 @@
 </ul>
 <hr>
 
-<h3 id="2_4_4">0.6. 2.4.4</h3>
-<h4 id="Upgraded_Features">0.6.1. Upgraded Features</h4>
+<h3 id="2_4_4">0.7. 2.4.4</h3>
+<h4 id="Upgraded_Features">0.7.1. Upgraded Features</h4>
 <ul>
 <li><strong>Font:</strong> Default font size changed to 16.</li>
 </ul>
-<h4 id="Bug_Fixes">0.6.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.7.2. Bug Fixes</h4>
 <ul>
 <li><strong>Card:</strong> Fixed CardItem <code>bordered</code> from displaying randomly for Android.</li>
 <li><strong>Font:</strong> Added Font <code>rubicon-icon-font.ttf</code>.</li>
@@ -2145,12 +2190,12 @@
 </ul>
 <hr>
 
-<h3 id="2_4_3">0.7. 2.4.3</h3>
-<h4 id="General">0.7.1. General</h4>
+<h3 id="2_4_3">0.8. 2.4.3</h3>
+<h4 id="General">0.8.1. General</h4>
 <ul>
 <li><strong>Folder Structure:</strong> Renamed <code>Utils</code> to <code>utils</code>.</li>
 </ul>
-<h4 id="Bug_Fixes">0.7.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.8.2. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong> Removed <code>lineHeight</code> dependency in button.</li>
 <li><strong>Card:</strong><ul>
@@ -2176,13 +2221,13 @@
 </li>
 </ul>
 <p><hr></p>
-<h3 id="2_4_2">0.8. 2.4.2</h3>
-<h4 id="General">0.8.1. General</h4>
+<h3 id="2_4_2">0.9. 2.4.2</h3>
+<h4 id="General">0.9.1. General</h4>
 <ul>
 <li>Upgraded <code>react native vector icons</code>.</li>
 <li>Upgraded <code>react-native-keyboard-aware-scroll-view</code>.</li>
 </ul>
-<h4 id="Bug_Fixes">0.8.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.9.2. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong><ul>
 <li>Fixed icon alignment with <code>small</code> button for iOS.</li>
@@ -2206,26 +2251,26 @@
 </ul>
 <hr>
 
-<h3 id="2_4_1">0.9. 2.4.1</h3>
-<h4 id="Bug_Fixes">0.9.1. Bug Fixes</h4>
+<h3 id="2_4_1">0.10. 2.4.1</h3>
+<h4 id="Bug_Fixes">0.10.1. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong> Updated <code>npm-ignore</code> to fix install issue.</li>
 </ul>
 <hr>
 
-<h3 id="2_4_0">0.10. 2.4.0</h3>
-<h4 id="New_Features">0.10.1. New Features</h4>
+<h3 id="2_4_0">0.11. 2.4.0</h3>
+<h4 id="New_Features">0.11.1. New Features</h4>
 <ul>
 <li>NativeBase is now available for web. </li>
 </ul>
-<h4 id="Upgraded_Features">0.10.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.11.2. Upgraded Features</h4>
 <ul>
 <li><strong>Theme:</strong><ul>
 <li>Removed excess marginLeft with List.</li>
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.10.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.11.3. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong> Fixed ripple / highlight effect on a rounded button with respect to its border radius.</li>
 <li><strong>CardItem:</strong> Fixed Text color of CardItem with <code>bordered</code>. Fixed Footer text when used with <code>bordered</code> CardItem.</li>
@@ -2244,13 +2289,13 @@
 </ul>
 <hr>
 
-<h3 id="2_3_10">0.11. 2.3.10</h3>
-<h4 id="Upgraded_Features">0.11.1. Upgraded Features</h4>
+<h3 id="2_3_10">0.12. 2.3.10</h3>
+<h4 id="Upgraded_Features">0.12.1. Upgraded Features</h4>
 <ul>
 <li><strong>General:</strong> Included NativeBase support for Ignite in ReadMe.</li>
 <li><strong>Icons:</strong> Added EvilIcons support for Icons.</li>
 </ul>
-<h4 id="Bug_Fixes">0.11.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.12.2. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong> NativeBase components resolved in <code>PhpStorm / WebStorm</code>.</li>
 <li><strong>FAB:</strong> Added stylesheet support for styling Fab child buttons.</li>
@@ -2272,12 +2317,12 @@
 </ul>
 <hr>
 
-<h3 id="2_3_9">0.12. 2.3.9</h3>
-<h4 id="General">0.12.1. General</h4>
+<h3 id="2_3_9">0.13. 2.3.9</h3>
+<h4 id="General">0.13.1. General</h4>
 <ul>
 <li><strong>Button:</strong> TouchableNativeFeedback supports Android Platform Version 21 onwards.</li>
 </ul>
-<h4 id="Upgraded_Features">0.12.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.13.2. Upgraded Features</h4>
 <ul>
 <li><strong>Theme:</strong> Fix/remove platform dependency/materialjs.</li>
 <li><strong>Toast:</strong><ul>
@@ -2295,7 +2340,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.12.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.13.3. Bug Fixes</h4>
 <ul>
 <li><strong>ActionSheet:</strong><ul>
 <li>Fixed warning issue. Changed Flatlist keytype from number to string.</li>
@@ -2311,12 +2356,12 @@
 </ul>
 <hr>
 
-<h3 id="2_3_8">0.13. 2.3.8</h3>
-<h4 id="General">0.13.1. General</h4>
+<h3 id="2_3_8">0.14. 2.3.8</h3>
+<h4 id="General">0.14.1. General</h4>
 <ul>
 <li><strong>Dev-dependencies:</strong> Upgraded <code>react-native-easy-grid</code> from 0.1.15 to 0.1.17</li>
 </ul>
-<h4 id="Upgraded_Features">0.13.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.14.2. Upgraded Features</h4>
 <ul>
 <li><strong>Button:</strong> Improved Button theme structure to remove code redundancies.</li>
 <li><strong>CardItem:</strong> Improved CardItem theme structure to remove code redundancies.</li>
@@ -2329,7 +2374,7 @@
 </li>
 <li><strong>TypeScript:</strong> Added optional <code>SwipeRow</code> properties to prevent tslint error.</li>
 </ul>
-<h4 id="Bug_Fixes">0.13.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.14.3. Bug Fixes</h4>
 <ul>
 <li><strong>Input:</strong> FLoating Label is cropped from top while it floats on top.</li>
 <li><strong>H1, H2, H3:</strong> <code>H1</code>, <code>H2</code>, <code>H3</code> now takes number along with string as input.</li>
@@ -2345,16 +2390,16 @@
 </ul>
 <hr>
 
-<h3 id="2_3_7">0.14. 2.3.7</h3>
-<h4 id="Upgraded_Features">0.14.1. Upgraded Features</h4>
+<h3 id="2_3_7">0.15. 2.3.7</h3>
+<h4 id="Upgraded_Features">0.15.1. Upgraded Features</h4>
 <ul>
 <li><strong>Packages:</strong> Replaced git URL by release versions for <code>react-native-drawer</code> and <code>react-native-keyboard-aware-scroll-view</code>.</li>
 <li><strong>Theme:</strong> Updated some of the theme variables.</li>
 </ul>
 <hr>
 
-<h3 id="2_3_6">0.15. 2.3.6</h3>
-<h4 id="New_Features">0.15.1. New Features</h4>
+<h3 id="2_3_6">0.16. 2.3.6</h3>
+<h4 id="New_Features">0.16.1. New Features</h4>
 <ul>
 <li><strong>Font:</strong><ul>
 <li>Adding support for Feather Font.</li>
@@ -2362,7 +2407,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Upgraded_Features">0.15.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.16.2. Upgraded Features</h4>
 <ul>
 <li><strong>ActionSheet:</strong> Replaced ListView with FlatList in ActionSheet.</li>
 <li><strong>CardItem:</strong> Added activeOpacity prop for CardItem.</li>
@@ -2380,7 +2425,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.15.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.16.3. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong><ul>
 <li>Removes unused and broken var declaration.</li>
@@ -2398,8 +2443,8 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="2_3_5">0.16. 2.3.5</h3>
-<h4 id="Bug_Fixes">0.16.1. Bug Fixes</h4>
+<h3 id="2_3_5">0.17. 2.3.5</h3>
+<h4 id="Bug_Fixes">0.17.1. Bug Fixes</h4>
 <ul>
 <li><strong>Release Crash:</strong> Fixed PropTypes issue, which caused Release Crash for iOS and Android.</li>
 <li><strong>Actionsheet:</strong> <ul>
@@ -2421,21 +2466,21 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="2_3_4">0.17. 2.3.4</h3>
-<h4 id="Bug_Fixes">0.17.1. Bug Fixes</h4>
+<h3 id="2_3_4">0.18. 2.3.4</h3>
+<h4 id="Bug_Fixes">0.18.1. Bug Fixes</h4>
 <ul>
 <li><strong>Keyboard behaviour:</strong> Added <code>keyboardShouldPersistTaps</code> prop with handled as default value.</li>
 </ul>
 <hr>
 
-<h3 id="2_1_4">0.18. 2.1.4</h3>
-<h4 id="Upgraded_Features">0.18.1. Upgraded Features</h4>
+<h3 id="2_1_4">0.19. 2.1.4</h3>
+<h4 id="Upgraded_Features">0.19.1. Upgraded Features</h4>
 <ul>
 <li>Upgraded <strong>react-native-vector-icons</strong> to 4.1.1</li>
 <li>Upgraded <strong>native-base-shoutem-theme</strong> to 0.1.4</li>
 <li>Excluded <em>react-native-scrollable-tab-view</em> dependency</li>
 </ul>
-<h4 id="Bug_Fixes">0.18.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.19.2. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong> Made button text uppercase by default for Android</li>
 <li><strong>Text:</strong> Added <em>uppercase</em> prop to Text</li>
@@ -2443,13 +2488,13 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="2_1_3">0.19. 2.1.3</h3>
-<h4 id="Upgraded_Features">0.19.1. Upgraded Features</h4>
+<h3 id="2_1_3">0.20. 2.1.3</h3>
+<h4 id="Upgraded_Features">0.20.1. Upgraded Features</h4>
 <ul>
 <li>Fixed <strong>StaticContainer</strong> issue</li>
 <li>Update <strong>Typescript</strong> definitions</li>
 </ul>
-<h4 id="Bug_Fixes">0.19.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.20.2. Bug Fixes</h4>
 <ul>
 <li><strong>ActionSheet:</strong> Fixed issue on pressing Android Back button while an ActionSheet is displayed</li>
 <li><strong>Segment:</strong> Fixed Segment issue to render at the center of Header</li>
@@ -2472,14 +2517,14 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="2_1_2">0.20. 2.1.2</h3>
-<h4 id="Upgraded_Features:">0.20.1. Upgraded Features:</h4>
+<h3 id="2_1_2">0.21. 2.1.2</h3>
+<h4 id="Upgraded_Features:">0.21.1. Upgraded Features:</h4>
 <ul>
 <li>Changed package name for <strong>Shoutem</strong> theme</li>
 <li><strong>Touchable</strong> effect to Card</li>
 <li>Updated Doc URL for Customize section in <em>ejectTheme.js</em></li>
 </ul>
-<h4 id="Bug_Fixes">0.20.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.21.2. Bug Fixes</h4>
 <ul>
 <li>Fixed Icon color with Form item Floating labels</li>
 <li>Fixed property for changing CheckBox background color</li>
@@ -2487,16 +2532,16 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="2_1_0">0.21. 2.1.0</h3>
-<h4 id="Bug_Fixes">0.21.1. Bug Fixes</h4>
+<h3 id="2_1_0">0.22. 2.1.0</h3>
+<h4 id="Bug_Fixes">0.22.1. Bug Fixes</h4>
 <ul>
 <li><strong>Picker:</strong> Fixed related picker issue.</li>
 <li><strong>General:</strong> Performance issue resolved.</li>
 </ul>
 <hr>
 
-<h3 id="2_0_0-alpha1">0.22. 2.0.0-alpha1</h3>
-<h4 id="New_Features">0.22.1. New Features</h4>
+<h3 id="2_0_0-alpha1">0.23. 2.0.0-alpha1</h3>
+<h4 id="New_Features">0.23.1. New Features</h4>
 <ul>
 <li><strong>Tab:</strong> Uncontrolled Tabs similar to FooterTabs.</li>
 <li><strong>Icon:</strong> Gives platform specific icons.</li>
@@ -2513,28 +2558,28 @@ for all positions.</li>
 </li>
 <li><strong>StyleProvider:</strong> To apply themes and customize any components.</li>
 </ul>
-<h4 id="Upgraded_Features">0.22.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.23.2. Upgraded Features</h4>
 <ul>
 <li>With <code>StyleProvider</code>, all components are fully customizable.</li>
 <li><strong>CardItem, Header and ListItem:</strong> Use of <code>Left</code>, <code>Body</code> and <code>Right</code> components for proper alignments and customization.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_21">0.23. 0.5.21</h3>
-<h4 id="Bug_Fixes">0.23.1. Bug Fixes</h4>
+<h3 id="0_5_21">0.24. 0.5.21</h3>
+<h4 id="Bug_Fixes">0.24.1. Bug Fixes</h4>
 <ul>
 <li><strong>FABs:</strong> Fixed scrolling issue.</li>
 <li><strong>Footer Tabs:</strong> Fixed TabBar text size issue.</li>
 </ul>
-<h4 id="Upgraded_Features">0.23.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.24.2. Upgraded Features</h4>
 <ul>
 <li><strong>List:</strong> Added refreshControl feature.</li>
 <li><strong>Vector Icons:</strong> Fixed installation dependency of <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a>.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_20">0.24. 0.5.20</h3>
-<h4 id="Bug_Fixes">0.24.1. Bug Fixes</h4>
+<h3 id="0_5_20">0.25. 0.5.20</h3>
+<h4 id="Bug_Fixes">0.25.1. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong> Fixed for null children condition.</li>
 <li><strong>Vector Icons:</strong> Fixed installation dependency of <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a>.</li>
@@ -2542,12 +2587,12 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_19">0.25. 0.5.19</h3>
-<h4 id="New_Features">0.25.1. New Features</h4>
+<h3 id="0_5_19">0.26. 0.5.19</h3>
+<h4 id="New_Features">0.26.1. New Features</h4>
 <ul>
 <li><strong>Gravatar:</strong> Thumbnail like feature which pulls out avatar of user if registered globally.</li>
 </ul>
-<h4 id="Upgraded_Features">0.25.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.26.2. Upgraded Features</h4>
 <ul>
 <li><strong>Picker:</strong><ul>
 <li>Added new props.</li>
@@ -2555,22 +2600,22 @@ for all positions.</li>
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.25.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.26.3. Bug Fixes</h4>
 <ul>
 <li><strong>InputGroup:</strong> Fixed issue when Button inside a InputGroup without Icon.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_17">0.26. 0.5.17</h3>
-<h4 id="Bug_Fixes">0.26.1. Bug Fixes</h4>
+<h3 id="0_5_17">0.27. 0.5.17</h3>
+<h4 id="Bug_Fixes">0.27.1. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong> Fixed <a href="https://github.com/GeekyAnts/react-native-easy-grid" target="_blank">Easy-Grid</a> dependency.</li>
 <li><strong>Deck Swiper:</strong> Fixed onSwiping feature.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_16">0.27. 0.5.16</h3>
-<h4 id="Upgraded_Features">0.27.1. Upgraded Features</h4>
+<h3 id="0_5_16">0.28. 0.5.16</h3>
+<h4 id="Upgraded_Features">0.28.1. Upgraded Features</h4>
 <ul>
 <li><strong>Picker:</strong><ul>
 <li>Support inline label for Picker(Android).</li>
@@ -2578,7 +2623,7 @@ for all positions.</li>
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.27.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.28.2. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong><ul>
 <li>Changed import for <strong>ReactNativePropRegistry</strong>.</li>
@@ -2590,28 +2635,28 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_15">0.28. 0.5.15</h3>
-<h4 id="Upgraded_Features">0.28.1. Upgraded Features</h4>
+<h3 id="0_5_15">0.29. 0.5.15</h3>
+<h4 id="Upgraded_Features">0.29.1. Upgraded Features</h4>
 <ul>
 <li>Added Linting rules to missing files</li>
 </ul>
-<h4 id="Bug_Fixes">0.28.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.29.2. Bug Fixes</h4>
 <ul>
 <li><strong>General:</strong> Widgets support null or undefined children.</li>
 <li><strong>DeckSwiper:</strong> Fixed onSwiping feature.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_14">0.29. 0.5.14</h3>
-<h4 id="New_Features">0.29.1. New Features</h4>
+<h3 id="0_5_14">0.30. 0.5.14</h3>
+<h4 id="New_Features">0.30.1. New Features</h4>
 <ul>
 <li>Added <strong>Typings</strong></li>
 </ul>
-<h4 id="Upgraded_Features">0.29.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.30.2. Upgraded Features</h4>
 <ul>
 <li><strong>DeckSwiper:</strong> Added new props onSwiping, renderTop, renderBottom.</li>
 </ul>
-<h4 id="Bug_Fixes">0.29.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.30.3. Bug Fixes</h4>
 <ul>
 <li><strong>Button:</strong> Fixed toUpperCase error on Android.</li>
 <li><strong>FAB:</strong> Fixed alignment for FAB in all four direction.</li>
@@ -2619,45 +2664,45 @@ for all positions.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_13">0.30. 0.5.13</h3>
-<h4 id="Upgraded_Features">0.30.1. Upgraded Features</h4>
+<h3 id="0_5_13">0.31. 0.5.13</h3>
+<h4 id="Upgraded_Features">0.31.1. Upgraded Features</h4>
 <ul>
 <li><strong>Ref:</strong> Added _root ref to all components.</li>
 </ul>
-<h4 id="Bug_Fixes">0.30.2. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.31.2. Bug Fixes</h4>
 <ul>
 <li><strong>ListItem:</strong> Fixed bug in case of null child.</li>
 </ul>
 <hr>
 
-<h3 id="0_5_12">0.31. 0.5.12</h3>
-<h4 id="New_Features">0.31.1. New Features</h4>
+<h3 id="0_5_12">0.32. 0.5.12</h3>
+<h4 id="New_Features">0.32.1. New Features</h4>
 <ul>
 <li><strong>Badge with FooterTab Button:</strong> NativeBase Badge with Buttons in FooterTab; much like Facebook notifications.</li>
 <li><strong>FABs:</strong> A special type of promoted action, which when clicked may contain more related actions.</li>
 <li><strong>Shallow Merge:</strong> NativeBase switched to shallow merge.</li>
 <li><strong>Top TabBar</strong></li>
 </ul>
-<h4 id="Upgraded_Features">0.31.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.32.2. Upgraded Features</h4>
 <ul>
 <li><strong>CardItem:</strong> Fixed padding between card items for iOS and Android.</li>
 </ul>
-<h4 id="Bug_Fixes">0.31.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.32.3. Bug Fixes</h4>
 <ul>
 <li><strong>Tabs:</strong> Updated Tabs background color.</li>
 <li><strong>Vector Icons:</strong> Fixed installation dependency of <a href="https://github.com/oblador/react-native-vector-icons" target="_blank">React Native Vector Icons</a>.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_11">0.32. 0.5.11</h3>
-<h4 id="Upgraded_Features">0.32.1. Upgraded Features</h4>
+<h3 id="0_5_11">0.33. 0.5.11</h3>
+<h4 id="Upgraded_Features">0.33.1. Upgraded Features</h4>
 <ul>
 <li><strong>Header:</strong> Improved alignment.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_10">0.33. 0.5.10</h3>
-<h4 id="Upgraded_Features">0.33.1. Upgraded Features</h4>
+<h3 id="0_5_10">0.34. 0.5.10</h3>
+<h4 id="Upgraded_Features">0.34.1. Upgraded Features</h4>
 <ul>
 <li><strong>Badge:</strong> Updated Text style for Badge.</li>
 <li><strong>Button:</strong> Improved alignment.</li>
@@ -2679,14 +2724,14 @@ for all positions.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_9">0.34. 0.5.9</h3>
-<h4 id="New_Features">0.34.1. New Features</h4>
+<h3 id="0_5_9">0.35. 0.5.9</h3>
+<h4 id="New_Features">0.35.1. New Features</h4>
 <ul>
 <li><strong>Deck Swiper:</strong> Tinder-like swipe cards to select/reject data set with features to swipe left and right.</li>
 <li><strong>Generate Image from Icon:</strong> Genrates an Image resource for NativeBase Icons.</li>
 <li><strong>filter() for null value:</strong> Usually if a null value is passed as a child to Component, it throws few errors. This .filter() removes all falsey values from this.props.children, preventing the errors, and returning the correct result.</li>
 </ul>
-<h4 id="Upgraded_Features">0.34.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.35.2. Upgraded Features</h4>
 <ul>
 <li><strong>FooterTab:</strong> Added onPress support for elements of FooterTab.</li>
 <li><strong>InputGroup:</strong> Allows null block inside InputGroup Component.</li>
@@ -2697,7 +2742,7 @@ for all positions.</li>
 </li>
 <li><strong>ES Lint:</strong> Config ESLint (airbnb) to enforce coding style.</li>
 </ul>
-<h4 id="Bug_Fixes">0.34.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.35.3. Bug Fixes</h4>
 <ul>
 <li><strong>Picker:</strong> Updates <i>Picker.Item</i> value dynamically.</li>
 <li><strong>Keyboard-aware-scroll-view:</strong><ul>
@@ -2710,12 +2755,12 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.5.9/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_8">0.35. 0.5.8</h3>
-<h4 id="New_Features">0.35.1. New Features</h4>
+<h3 id="0_5_8">0.36. 0.5.8</h3>
+<h4 id="New_Features">0.36.1. New Features</h4>
 <ul>
 <li><strong>FooterTab:</strong> Button Tabs in Footer.</li>
 </ul>
-<h4 id="Upgraded_Features">0.35.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.36.2. Upgraded Features</h4>
 <ul>
 <li>Upgraded <a href="https://github.com/APSL/react-native-keyboard-aware-scroll-view" target="_blank">react-native-keyboard-aware-scroll-view</a> from 0.1.2 to 0.2.0</li>
 <li><strong>Button:</strong> Supports prop <code>capitalize</code> <i>(only Android)</i></li>
@@ -2727,7 +2772,7 @@ for all positions.</li>
 </ul>
 </li>
 </ul>
-<h4 id="Bug_Fixes">0.35.3. Bug Fixes</h4>
+<h4 id="Bug_Fixes">0.36.3. Bug Fixes</h4>
 <ul>
 <li><strong>Badge:</strong> Supports font-size, lineHeight, width and color.</li>
 <li><strong>Checkbox:</strong> Responds on user&apos;s click.</li>
@@ -2741,8 +2786,8 @@ for all positions.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_7">0.36. 0.5.7</h3>
-<h4 id="Upgraded_Features">0.36.1. Upgraded Features</h4>
+<h3 id="0_5_7">0.37. 0.5.7</h3>
+<h4 id="Upgraded_Features">0.37.1. Upgraded Features</h4>
 <ul>
 <li>Theme applicable to iconFontFamily</li>
 <li>Fixed Button issues for Android</li>
@@ -2751,8 +2796,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.5.7/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_6">0.37. 0.5.6</h3>
-<h4 id="Upgraded_Features">0.37.1. Upgraded Features</h4>
+<h3 id="0_5_6">0.38. 0.5.6</h3>
+<h4 id="Upgraded_Features">0.38.1. Upgraded Features</h4>
 <ul>
 <li>Picker<ul>
 <li>Styling Picker</li>
@@ -2764,12 +2809,12 @@ for all positions.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_5">0.38. 0.5.5</h3>
-<h4 id="New_Features">0.38.1. New Features</h4>
+<h3 id="0_5_5">0.39. 0.5.5</h3>
+<h4 id="New_Features">0.39.1. New Features</h4>
 <ul>
 <li>Button includes a new prop, <b>disabled</b>.</li>
 </ul>
-<h4 id="Upgraded_Features">0.38.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.39.2. Upgraded Features</h4>
 <ul>
 <li>Revised Anatomy</li>
 <li>Fixed bugs when adding props with components to NativeBase widgets.</li>
@@ -2782,8 +2827,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.5.5/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_4">0.39. 0.5.4</h3>
-<h4 id="New_Features">0.39.1. New Features</h4>
+<h3 id="0_5_4">0.40. 0.5.4</h3>
+<h4 id="New_Features">0.40.1. New Features</h4>
 <ul>
 <li>InputGroup<ul>
 <li>Provides three types of textbox: <strong>success</strong>, <strong>disabled</strong> and <strong>error</strong>.</li>
@@ -2791,34 +2836,34 @@ for all positions.</li>
 </ul>
 </li>
 </ul>
-<h4 id="Upgraded_Features">0.39.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.40.2. Upgraded Features</h4>
 <ul>
 <li>Header component now takes even a single element, Button or Title.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_3">0.40. 0.5.3</h3>
-<h4 id="New_Features">0.40.1. New Features</h4>
+<h3 id="0_5_3">0.41. 0.5.3</h3>
+<h4 id="New_Features">0.41.1. New Features</h4>
 <ul>
 <li>Added CardSwiper</li>
 <li>Added DeckSwiper</li>
 <li>Integrated <a href="https://github.com/hughsk/clamp" target="_blank">Clamp</a> 1.0.1</li>
 <li>Prop types added to all components of NativeBase.</li>
 </ul>
-<h4 id="Upgraded_Features">0.40.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.41.2. Upgraded Features</h4>
 <ul>
 <li>Fixed alignment for TextInput</li>
 <li>Thumbnail supports styles using <strong>Theme</strong> file.</li>
 </ul>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_2">0.41. 0.5.2</h3>
-<h4 id="New_Features">0.41.1. New Features</h4>
+<h3 id="0_5_2">0.42. 0.5.2</h3>
+<h4 id="New_Features">0.42.1. New Features</h4>
 <ul>
 <li>Added Picker (dropdown)</li>
 <li>Integrated <a href="https://github.com/APSL/react-native-keyboard-aware-scroll-view" target="_blank">Keyboard aware scrollview</a> 0.1.2</li>
 </ul>
-<h4 id="Upgraded_Features">0.41.2. Upgraded Features</h4>
+<h4 id="Upgraded_Features">0.42.2. Upgraded Features</h4>
 <ul>
 <li>Header component for Android</li>
 <li>Button</li>
@@ -2832,8 +2877,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.5.2/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_5_0">0.42. 0.5.0</h3>
-<h4 id="New_Features">0.42.1. New Features</h4>
+<h3 id="0_5_0">0.43. 0.5.0</h3>
+<h4 id="New_Features">0.43.1. New Features</h4>
 <ul>
 <li>Platform specific components with single codebase.</li>
 <li>Added a set of Fonts.</li>
@@ -2847,8 +2892,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.5.0/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_4_6">0.43. 0.4.6</h3>
-<h4 id="New_Features">0.43.1. New Features</h4>
+<h3 id="0_4_6">0.44. 0.4.6</h3>
+<h4 id="New_Features">0.44.1. New Features</h4>
 <ul>
 <li>Supports upgraded version of <a href="https://facebook.github.io/react/" target="_blank">React</a>: v15.0.2 to v15.1.0</li>
 <li>Supports upgraded version of <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a>: v0.26.0 to v0.27.1</li>
@@ -2857,8 +2902,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.4.6/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_3_1">0.44. 0.3.1</h3>
-<h4 id="New_Features">0.44.1. New Features</h4>
+<h3 id="0_3_1">0.45. 0.3.1</h3>
+<h4 id="New_Features">0.45.1. New Features</h4>
 <ul>
 <li>Added Form</li>
 <li>Added ProgressBar</li>
@@ -2867,8 +2912,8 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.3.1/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_3_0">0.45. 0.3.0</h3>
-<h4 id="New_Features">0.45.1. New Features</h4>
+<h3 id="0_3_0">0.46. 0.3.0</h3>
+<h4 id="New_Features">0.46.1. New Features</h4>
 <ul>
 <li>Added Card types.<ul>
 <li>Card with Header and Footer</li>
@@ -2884,12 +2929,12 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.3.0/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_2_1">0.46. 0.2.1</h3>
-<h4 id="Upgraded_Features">0.46.1. Upgraded Features</h4>
+<h3 id="0_2_1">0.47. 0.2.1</h3>
+<h4 id="Upgraded_Features">0.47.1. Upgraded Features</h4>
 <ul>
 <li>Styling for Icon component.</li>
 </ul>
-<h4 id="New_Features">0.46.2. New Features</h4>
+<h4 id="New_Features">0.47.2. New Features</h4>
 <ul>
 <li>Added Badge component.</li>
 <li>Added Button types.<ul>
@@ -2911,12 +2956,12 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.2.1/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<h3 id="0_2_0">0.47. 0.2.0</h3>
-<h4 id="New_Features">0.47.1. New Features</h4>
+<h3 id="0_2_0">0.48. 0.2.0</h3>
+<h4 id="New_Features">0.48.1. New Features</h4>
 <ul>
 <li>Added List component.</li>
 </ul>
-<h4 id="Upgraded_Feature">0.47.2. Upgraded Feature</h4>
+<h4 id="Upgraded_Feature">0.48.2. Upgraded Feature</h4>
 <ul>
 <li>Toolbar is recreated as two new components: Header and Footer.</li>
 <li>Added props to Button.</li>
@@ -2925,8 +2970,8 @@ for all positions.</li>
 <hr style="margin-top: 40px">
 
 
-<h3 id="0_1_1">0.48. 0.1.1</h3>
-<h4 id="New_Features">0.48.1. New Features</h4>
+<h3 id="0_1_1">0.49. 0.1.1</h3>
+<h4 id="New_Features">0.49.1. New Features</h4>
 <ul>
 <li>Added layout for screen, separating header and footer from the body.</li>
 <li>Added Header and Footer using layout.</li>
@@ -2937,7 +2982,7 @@ for all positions.</li>
 <p><a href="https://nativebase.io/docs/v0.1.0/" target="_blank">Detailed Documentation</a></p>
 <hr style="margin-top: 40px">
 
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Release_Notes">Release Notes</a></p><li><a href="#">none</a></li><ul><li><a href="#2_5_1">0.1. 2.5.1</a></li><ul><li><a href="#Upgraded_Features">0.1.1. Upgraded Features</a></li></ul><li><a href="#2_5_0">0.2. 2.5.0</a></li><ul><li><a href="#New_Features">0.2.1. New Features</a></li><li><a href="#Upgraded_Features">0.2.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.2.3. Bug Fixes</a></li></ul><li><a href="#2_4_5">0.3. 2.4.5</a></li><li><a href="#Upgraded_Features">0.4. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.5. Bug Fixes</a></li><li><a href="#2_4_4">0.6. 2.4.4</a></li><ul><li><a href="#Upgraded_Features">0.6.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.6.2. Bug Fixes</a></li></ul><li><a href="#2_4_3">0.7. 2.4.3</a></li><ul><li><a href="#General">0.7.1. General</a></li><li><a href="#Bug_Fixes">0.7.2. Bug Fixes</a></li></ul><li><a href="#2_4_2">0.8. 2.4.2</a></li><ul><li><a href="#General">0.8.1. General</a></li><li><a href="#Bug_Fixes">0.8.2. Bug Fixes</a></li></ul><li><a href="#2_4_1">0.9. 2.4.1</a></li><ul><li><a href="#Bug_Fixes">0.9.1. Bug Fixes</a></li></ul><li><a href="#2_4_0">0.10. 2.4.0</a></li><ul><li><a href="#New_Features">0.10.1. New Features</a></li><li><a href="#Upgraded_Features">0.10.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.10.3. Bug Fixes</a></li></ul><li><a href="#2_3_10">0.11. 2.3.10</a></li><ul><li><a href="#Upgraded_Features">0.11.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.11.2. Bug Fixes</a></li></ul><li><a href="#2_3_9">0.12. 2.3.9</a></li><ul><li><a href="#General">0.12.1. General</a></li><li><a href="#Upgraded_Features">0.12.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.12.3. Bug Fixes</a></li></ul><li><a href="#2_3_8">0.13. 2.3.8</a></li><ul><li><a href="#General">0.13.1. General</a></li><li><a href="#Upgraded_Features">0.13.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.13.3. Bug Fixes</a></li></ul><li><a href="#2_3_7">0.14. 2.3.7</a></li><ul><li><a href="#Upgraded_Features">0.14.1. Upgraded Features</a></li></ul><li><a href="#2_3_6">0.15. 2.3.6</a></li><ul><li><a href="#New_Features">0.15.1. New Features</a></li><li><a href="#Upgraded_Features">0.15.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.15.3. Bug Fixes</a></li></ul><li><a href="#2_3_5">0.16. 2.3.5</a></li><ul><li><a href="#Bug_Fixes">0.16.1. Bug Fixes</a></li></ul><li><a href="#2_3_4">0.17. 2.3.4</a></li><ul><li><a href="#Bug_Fixes">0.17.1. Bug Fixes</a></li></ul><li><a href="#2_1_4">0.18. 2.1.4</a></li><ul><li><a href="#Upgraded_Features">0.18.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.18.2. Bug Fixes</a></li></ul><li><a href="#2_1_3">0.19. 2.1.3</a></li><ul><li><a href="#Upgraded_Features">0.19.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.19.2. Bug Fixes</a></li></ul><li><a href="#2_1_2">0.20. 2.1.2</a></li><ul><li><a href="#Upgraded_Features:">0.20.1. Upgraded Features:</a></li><li><a href="#Bug_Fixes">0.20.2. Bug Fixes</a></li></ul><li><a href="#2_1_0">0.21. 2.1.0</a></li><ul><li><a href="#Bug_Fixes">0.21.1. Bug Fixes</a></li></ul><li><a href="#2_0_0-alpha1">0.22. 2.0.0-alpha1</a></li><ul><li><a href="#New_Features">0.22.1. New Features</a></li><li><a href="#Upgraded_Features">0.22.2. Upgraded Features</a></li></ul><li><a href="#0_5_21">0.23. 0.5.21</a></li><ul><li><a href="#Bug_Fixes">0.23.1. Bug Fixes</a></li><li><a href="#Upgraded_Features">0.23.2. Upgraded Features</a></li></ul><li><a href="#0_5_20">0.24. 0.5.20</a></li><ul><li><a href="#Bug_Fixes">0.24.1. Bug Fixes</a></li></ul><li><a href="#0_5_19">0.25. 0.5.19</a></li><ul><li><a href="#New_Features">0.25.1. New Features</a></li><li><a href="#Upgraded_Features">0.25.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.25.3. Bug Fixes</a></li></ul><li><a href="#0_5_17">0.26. 0.5.17</a></li><ul><li><a href="#Bug_Fixes">0.26.1. Bug Fixes</a></li></ul><li><a href="#0_5_16">0.27. 0.5.16</a></li><ul><li><a href="#Upgraded_Features">0.27.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.27.2. Bug Fixes</a></li></ul><li><a href="#0_5_15">0.28. 0.5.15</a></li><ul><li><a href="#Upgraded_Features">0.28.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.28.2. Bug Fixes</a></li></ul><li><a href="#0_5_14">0.29. 0.5.14</a></li><ul><li><a href="#New_Features">0.29.1. New Features</a></li><li><a href="#Upgraded_Features">0.29.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.29.3. Bug Fixes</a></li></ul><li><a href="#0_5_13">0.30. 0.5.13</a></li><ul><li><a href="#Upgraded_Features">0.30.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.30.2. Bug Fixes</a></li></ul><li><a href="#0_5_12">0.31. 0.5.12</a></li><ul><li><a href="#New_Features">0.31.1. New Features</a></li><li><a href="#Upgraded_Features">0.31.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.31.3. Bug Fixes</a></li></ul><li><a href="#0_5_11">0.32. 0.5.11</a></li><ul><li><a href="#Upgraded_Features">0.32.1. Upgraded Features</a></li></ul><li><a href="#0_5_10">0.33. 0.5.10</a></li><ul><li><a href="#Upgraded_Features">0.33.1. Upgraded Features</a></li></ul><li><a href="#0_5_9">0.34. 0.5.9</a></li><ul><li><a href="#New_Features">0.34.1. New Features</a></li><li><a href="#Upgraded_Features">0.34.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.34.3. Bug Fixes</a></li></ul><li><a href="#0_5_8">0.35. 0.5.8</a></li><ul><li><a href="#New_Features">0.35.1. New Features</a></li><li><a href="#Upgraded_Features">0.35.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.35.3. Bug Fixes</a></li></ul><li><a href="#0_5_7">0.36. 0.5.7</a></li><ul><li><a href="#Upgraded_Features">0.36.1. Upgraded Features</a></li></ul><li><a href="#0_5_6">0.37. 0.5.6</a></li><ul><li><a href="#Upgraded_Features">0.37.1. Upgraded Features</a></li></ul><li><a href="#0_5_5">0.38. 0.5.5</a></li><ul><li><a href="#New_Features">0.38.1. New Features</a></li><li><a href="#Upgraded_Features">0.38.2. Upgraded Features</a></li></ul><li><a href="#0_5_4">0.39. 0.5.4</a></li><ul><li><a href="#New_Features">0.39.1. New Features</a></li><li><a href="#Upgraded_Features">0.39.2. Upgraded Features</a></li></ul><li><a href="#0_5_3">0.40. 0.5.3</a></li><ul><li><a href="#New_Features">0.40.1. New Features</a></li><li><a href="#Upgraded_Features">0.40.2. Upgraded Features</a></li></ul><li><a href="#0_5_2">0.41. 0.5.2</a></li><ul><li><a href="#New_Features">0.41.1. New Features</a></li><li><a href="#Upgraded_Features">0.41.2. Upgraded Features</a></li></ul><li><a href="#0_5_0">0.42. 0.5.0</a></li><ul><li><a href="#New_Features">0.42.1. New Features</a></li></ul><li><a href="#0_4_6">0.43. 0.4.6</a></li><ul><li><a href="#New_Features">0.43.1. New Features</a></li></ul><li><a href="#0_3_1">0.44. 0.3.1</a></li><ul><li><a href="#New_Features">0.44.1. New Features</a></li></ul><li><a href="#0_3_0">0.45. 0.3.0</a></li><ul><li><a href="#New_Features">0.45.1. New Features</a></li></ul><li><a href="#0_2_1">0.46. 0.2.1</a></li><ul><li><a href="#Upgraded_Features">0.46.1. Upgraded Features</a></li><li><a href="#New_Features">0.46.2. New Features</a></li></ul><li><a href="#0_2_0">0.47. 0.2.0</a></li><ul><li><a href="#New_Features">0.47.1. New Features</a></li><li><a href="#Upgraded_Feature">0.47.2. Upgraded Feature</a></li></ul><li><a href="#0_1_1">0.48. 0.1.1</a></li><ul><li><a href="#New_Features">0.48.1. New Features</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Release_Notes">Release Notes</a></p><li><a href="#">none</a></li><ul><li><a href="#2_5_2">0.1. 2.5.2</a></li><ul><li><a href="#Upgraded_Features">0.1.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.1.2. Bug Fixes</a></li></ul><li><a href="#2_5_1">0.2. 2.5.1</a></li><ul><li><a href="#Upgraded_Features">0.2.1. Upgraded Features</a></li></ul><li><a href="#2_5_0">0.3. 2.5.0</a></li><ul><li><a href="#New_Features">0.3.1. New Features</a></li><li><a href="#Upgraded_Features">0.3.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.3.3. Bug Fixes</a></li></ul><li><a href="#2_4_5">0.4. 2.4.5</a></li><li><a href="#Upgraded_Features">0.5. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.6. Bug Fixes</a></li><li><a href="#2_4_4">0.7. 2.4.4</a></li><ul><li><a href="#Upgraded_Features">0.7.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.7.2. Bug Fixes</a></li></ul><li><a href="#2_4_3">0.8. 2.4.3</a></li><ul><li><a href="#General">0.8.1. General</a></li><li><a href="#Bug_Fixes">0.8.2. Bug Fixes</a></li></ul><li><a href="#2_4_2">0.9. 2.4.2</a></li><ul><li><a href="#General">0.9.1. General</a></li><li><a href="#Bug_Fixes">0.9.2. Bug Fixes</a></li></ul><li><a href="#2_4_1">0.10. 2.4.1</a></li><ul><li><a href="#Bug_Fixes">0.10.1. Bug Fixes</a></li></ul><li><a href="#2_4_0">0.11. 2.4.0</a></li><ul><li><a href="#New_Features">0.11.1. New Features</a></li><li><a href="#Upgraded_Features">0.11.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.11.3. Bug Fixes</a></li></ul><li><a href="#2_3_10">0.12. 2.3.10</a></li><ul><li><a href="#Upgraded_Features">0.12.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.12.2. Bug Fixes</a></li></ul><li><a href="#2_3_9">0.13. 2.3.9</a></li><ul><li><a href="#General">0.13.1. General</a></li><li><a href="#Upgraded_Features">0.13.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.13.3. Bug Fixes</a></li></ul><li><a href="#2_3_8">0.14. 2.3.8</a></li><ul><li><a href="#General">0.14.1. General</a></li><li><a href="#Upgraded_Features">0.14.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.14.3. Bug Fixes</a></li></ul><li><a href="#2_3_7">0.15. 2.3.7</a></li><ul><li><a href="#Upgraded_Features">0.15.1. Upgraded Features</a></li></ul><li><a href="#2_3_6">0.16. 2.3.6</a></li><ul><li><a href="#New_Features">0.16.1. New Features</a></li><li><a href="#Upgraded_Features">0.16.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.16.3. Bug Fixes</a></li></ul><li><a href="#2_3_5">0.17. 2.3.5</a></li><ul><li><a href="#Bug_Fixes">0.17.1. Bug Fixes</a></li></ul><li><a href="#2_3_4">0.18. 2.3.4</a></li><ul><li><a href="#Bug_Fixes">0.18.1. Bug Fixes</a></li></ul><li><a href="#2_1_4">0.19. 2.1.4</a></li><ul><li><a href="#Upgraded_Features">0.19.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.19.2. Bug Fixes</a></li></ul><li><a href="#2_1_3">0.20. 2.1.3</a></li><ul><li><a href="#Upgraded_Features">0.20.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.20.2. Bug Fixes</a></li></ul><li><a href="#2_1_2">0.21. 2.1.2</a></li><ul><li><a href="#Upgraded_Features:">0.21.1. Upgraded Features:</a></li><li><a href="#Bug_Fixes">0.21.2. Bug Fixes</a></li></ul><li><a href="#2_1_0">0.22. 2.1.0</a></li><ul><li><a href="#Bug_Fixes">0.22.1. Bug Fixes</a></li></ul><li><a href="#2_0_0-alpha1">0.23. 2.0.0-alpha1</a></li><ul><li><a href="#New_Features">0.23.1. New Features</a></li><li><a href="#Upgraded_Features">0.23.2. Upgraded Features</a></li></ul><li><a href="#0_5_21">0.24. 0.5.21</a></li><ul><li><a href="#Bug_Fixes">0.24.1. Bug Fixes</a></li><li><a href="#Upgraded_Features">0.24.2. Upgraded Features</a></li></ul><li><a href="#0_5_20">0.25. 0.5.20</a></li><ul><li><a href="#Bug_Fixes">0.25.1. Bug Fixes</a></li></ul><li><a href="#0_5_19">0.26. 0.5.19</a></li><ul><li><a href="#New_Features">0.26.1. New Features</a></li><li><a href="#Upgraded_Features">0.26.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.26.3. Bug Fixes</a></li></ul><li><a href="#0_5_17">0.27. 0.5.17</a></li><ul><li><a href="#Bug_Fixes">0.27.1. Bug Fixes</a></li></ul><li><a href="#0_5_16">0.28. 0.5.16</a></li><ul><li><a href="#Upgraded_Features">0.28.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.28.2. Bug Fixes</a></li></ul><li><a href="#0_5_15">0.29. 0.5.15</a></li><ul><li><a href="#Upgraded_Features">0.29.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.29.2. Bug Fixes</a></li></ul><li><a href="#0_5_14">0.30. 0.5.14</a></li><ul><li><a href="#New_Features">0.30.1. New Features</a></li><li><a href="#Upgraded_Features">0.30.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.30.3. Bug Fixes</a></li></ul><li><a href="#0_5_13">0.31. 0.5.13</a></li><ul><li><a href="#Upgraded_Features">0.31.1. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.31.2. Bug Fixes</a></li></ul><li><a href="#0_5_12">0.32. 0.5.12</a></li><ul><li><a href="#New_Features">0.32.1. New Features</a></li><li><a href="#Upgraded_Features">0.32.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.32.3. Bug Fixes</a></li></ul><li><a href="#0_5_11">0.33. 0.5.11</a></li><ul><li><a href="#Upgraded_Features">0.33.1. Upgraded Features</a></li></ul><li><a href="#0_5_10">0.34. 0.5.10</a></li><ul><li><a href="#Upgraded_Features">0.34.1. Upgraded Features</a></li></ul><li><a href="#0_5_9">0.35. 0.5.9</a></li><ul><li><a href="#New_Features">0.35.1. New Features</a></li><li><a href="#Upgraded_Features">0.35.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.35.3. Bug Fixes</a></li></ul><li><a href="#0_5_8">0.36. 0.5.8</a></li><ul><li><a href="#New_Features">0.36.1. New Features</a></li><li><a href="#Upgraded_Features">0.36.2. Upgraded Features</a></li><li><a href="#Bug_Fixes">0.36.3. Bug Fixes</a></li></ul><li><a href="#0_5_7">0.37. 0.5.7</a></li><ul><li><a href="#Upgraded_Features">0.37.1. Upgraded Features</a></li></ul><li><a href="#0_5_6">0.38. 0.5.6</a></li><ul><li><a href="#Upgraded_Features">0.38.1. Upgraded Features</a></li></ul><li><a href="#0_5_5">0.39. 0.5.5</a></li><ul><li><a href="#New_Features">0.39.1. New Features</a></li><li><a href="#Upgraded_Features">0.39.2. Upgraded Features</a></li></ul><li><a href="#0_5_4">0.40. 0.5.4</a></li><ul><li><a href="#New_Features">0.40.1. New Features</a></li><li><a href="#Upgraded_Features">0.40.2. Upgraded Features</a></li></ul><li><a href="#0_5_3">0.41. 0.5.3</a></li><ul><li><a href="#New_Features">0.41.1. New Features</a></li><li><a href="#Upgraded_Features">0.41.2. Upgraded Features</a></li></ul><li><a href="#0_5_2">0.42. 0.5.2</a></li><ul><li><a href="#New_Features">0.42.1. New Features</a></li><li><a href="#Upgraded_Features">0.42.2. Upgraded Features</a></li></ul><li><a href="#0_5_0">0.43. 0.5.0</a></li><ul><li><a href="#New_Features">0.43.1. New Features</a></li></ul><li><a href="#0_4_6">0.44. 0.4.6</a></li><ul><li><a href="#New_Features">0.44.1. New Features</a></li></ul><li><a href="#0_3_1">0.45. 0.3.1</a></li><ul><li><a href="#New_Features">0.45.1. New Features</a></li></ul><li><a href="#0_3_0">0.46. 0.3.0</a></li><ul><li><a href="#New_Features">0.46.1. New Features</a></li></ul><li><a href="#0_2_1">0.47. 0.2.1</a></li><ul><li><a href="#Upgraded_Features">0.47.1. Upgraded Features</a></li><li><a href="#New_Features">0.47.2. New Features</a></li></ul><li><a href="#0_2_0">0.48. 0.2.0</a></li><ul><li><a href="#New_Features">0.48.1. New Features</a></li><li><a href="#Upgraded_Feature">0.48.2. Upgraded Feature</a></li></ul><li><a href="#0_1_1">0.49. 0.1.1</a></li><ul><li><a href="#New_Features">0.49.1. New Features</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -2980,7 +3025,7 @@ for all positions.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Release Notes","level":"1.8","depth":1,"next":{"title":"Featured Apps","level":"1.9","depth":1,"path":"docs/FeaturedApps.md","ref":"docs/FeaturedApps.md","articles":[]},"previous":{"title":"Theme Variables","level":"1.7","depth":1,"path":"docs/ThemeVariables.md","ref":"docs/ThemeVariables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.5.0/","text":"v2.5.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/release-notes/Release.md","mtime":"2018-06-08T12:03:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-06-08T12:54:03.773Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Release Notes","level":"1.8","depth":1,"next":{"title":"Featured Apps","level":"1.9","depth":1,"path":"docs/FeaturedApps.md","ref":"docs/FeaturedApps.md","articles":[]},"previous":{"title":"Theme Variables","level":"1.7","depth":1,"path":"docs/ThemeVariables.md","ref":"docs/ThemeVariables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.5.0/","text":"v2.5.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/release-notes/Release.md","mtime":"2018-06-22T12:01:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-06-22T12:11:33.208Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

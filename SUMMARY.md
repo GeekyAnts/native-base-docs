@@ -65,6 +65,7 @@
         * [Span](Components.md#header-span-headref)
         * [NoShadow](Components.md#header-no-shadow-headref)
         * [NoLeft](Components.md#header-no-left-headref)
+        * [Transparent](Components.md#header-transparent-headref)
     * [Icon](Components.md#icon-def-headref)
     * [Layout](Components.md#Layout)
     * [List](Components.md#list-def-headref)

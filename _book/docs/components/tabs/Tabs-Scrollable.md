@@ -1,8 +1,8 @@
 ## tabs-scrollable-headref
 #### Scrollable Tabs
 
-![Preview ios tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/ios/tabs-scrollable.gif)
-![Preview android tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.0/screenshots/android/tabs-scrollable.gif)
+![Preview ios tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/tabs-scrollable.gif)
+![Preview android tabs-scrollable-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/tabs-scrollable.gif)
 
 *Syntax*
 
