@@ -28,7 +28,7 @@ export default class AccordionExample extends Component {
       &lt;Container>
         &lt;Header />
         &lt;Content padder>
-          &lt;Accordion dataArray={dataArray} />
+          &lt;Accordion dataArray={dataArray} expanded={0}/>
         &lt;/Content>
       &lt;/Container>
     );

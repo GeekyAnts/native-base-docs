@@ -14,7 +14,7 @@ const dataArray = [
   { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
 ];
 export default class AccordionCustomHeaderContentExample extends Component {
-     _renderHeader(title) {
+     _renderHeader(title, expanded) {
     return (
       &lt;View
         style=&#123;{
@@ -28,7 +28,9 @@ export default class AccordionCustomHeaderContentExample extends Component {
         &lt;Text style=&#123;{ fontWeight: "600" }}>
           {" "}{title}
         &lt;/Text>
-        &lt;Icon style=&#123;{ fontSize: 18 }} name="add-circle" />
+        {expanded
+          ? &lt;Icon style={&#123; fontSize: 18 }} name="remove-circle" />
+          : &lt;Icon style={&#123; fontSize: 18 }} name="add-circle" />}
       &lt;/View>
     );
   }
