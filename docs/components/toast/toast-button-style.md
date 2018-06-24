@@ -1,8 +1,8 @@
 ## toast-button-style-headref
 #### Toast button style 
 
-![Preview ios toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/toast-button-style.gif)
-![Preview android toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/toast-button-style.gif)
+![Preview ios toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-button-style.gif)
+![Preview android toast-button-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-button-style.gif)
 
 *Syntax*
 

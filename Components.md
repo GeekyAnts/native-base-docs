@@ -36,6 +36,7 @@
 {% include "./docs/components/form/InlineLabel.md" %}
 {% include "./docs/components/form/FloatingLabel.md" %}
 {% include "./docs/components/form/StackedLabel.md" %}
+{% include "./docs/components/form/PickerInput.md" %}
 {% include "./docs/components/input-group/Regular.md" %}
 {% include "./docs/components/input-group/Underlined.md" %}
 {% include "./docs/components/input-group/Rounded.md" %}

@@ -26,8 +26,8 @@ Replacing Component:
 * [Disabled Textbox](Components.md#disabled-textbox-headref)
 * [Textarea](Components.md#textarea-textbox-headref)
 
-![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/input-placeholder.png)
-![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/input-placeholder.png)
+![Preview ios Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/input-placeholder.png)
+![Preview android Form](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/input-placeholder.png)
 
 *Syntax*
 
@@ -177,6 +177,14 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td>
                     Border color of textbox for valid input
+                </td>
+            </tr>
+            <tr>
+                <td>picker</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Styles picker field with Input
                 </td>
             </tr>
         </tbody>

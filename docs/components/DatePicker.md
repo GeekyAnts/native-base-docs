@@ -1,8 +1,8 @@
 ## date-picker-def-headref
 ## Date Picker
 
-![Preview ios date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/ios/date-picker.gif)
-![Preview android date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/android/date-picker.gif)
+![Preview ios date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/date-picker.gif)
+![Preview android date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/date-picker.gif)
 
 *Syntax*
 

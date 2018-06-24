@@ -1,8 +1,8 @@
 ## picker-with-icon-style-headref
 #### Picker with Icon Style
 
-![Preview ios picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/picker-with-icon-style.png)
-![Preview android picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/picker.gif)
+![Preview ios picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon-style.png)
+![Preview android picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif)
 
 *Synatx*
 

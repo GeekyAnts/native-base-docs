@@ -3,8 +3,8 @@
 
 Swipable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br />
 
-![Preview ios swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/ios/list-swipe-multiple.gif)
-![Preview android swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/android/list-swipe-multiple.gif)
+![Preview ios swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-multiple.gif)
+![Preview android swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-multiple.gif)
 
 *Syntax*
 

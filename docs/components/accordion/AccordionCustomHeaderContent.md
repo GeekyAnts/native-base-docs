@@ -1,8 +1,8 @@
 ## accordion-custom-header-content-headref
 #### Cusotm Header and Content
 
-![Preview ios accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/accordion-custom-header-content.gif)
-![Preview android accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/accordion-custom-header-content.gif)
+![Preview ios accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/accordion-custom-header-content.gif)
+![Preview android accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/accordion-custom-header-content.gif)
 
 
 *General Syntax*

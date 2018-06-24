@@ -3,8 +3,8 @@
 
 Segments are best used as an alternative for tabs. Mainly used in iOS.
 
-![Preview ios segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/ios/segment-inside-header.gif)
-![Preview android segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/android/segment-inside-header.gif)
+![Preview ios segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/segment-inside-header.gif)
+![Preview android segment-inside-header-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/segment-inside-header.gif)
 
 *Syntax*
 

@@ -46,6 +46,7 @@
         * [Inline Label](Components.md#inline-label-headref)
         * [Floating Label](Components.md#floating-label-headref)
         * [Stacked Label](Components.md#stacked-label-headref)
+        * [Picker Input](Components.md#picker-input-headref)
         * [Regular Textbox](Components.md#regular-textbox-headref)
         * [Underlined Textbox](Components.md#underlined-textbox-headref)
         * [Rounded Textbox](Components.md#rounded-textbox-headref)

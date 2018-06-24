@@ -3,8 +3,8 @@
 
 The <code>transparent</code> prop of Header removes border, shadow from iOS Header and elevation from Android Header.
 
-![Preview ios header-transparent-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/ios/header-transparent.png)
-![Preview android header-transparent-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.5.2/screenshots/android/header-transparent.png)
+![Preview ios header-transparent-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/header-transparent.png)
+![Preview android header-transparent-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/header-transparent.png)
 
 *Syntax*
 

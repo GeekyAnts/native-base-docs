@@ -3,8 +3,8 @@
 
 Include <code>button</code> prop with &lt;CardItem> to achieve onClick function with card items.
 
-![Preview ios carditem-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/card-button.gif)
-![Preview android carditem-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/card-button.gif)
+![Preview ios carditem-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/card-button.gif)
+![Preview android carditem-button-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/card-button.gif)
 
 
 *Syntax*

@@ -128,3 +128,31 @@ yarn start
 ```
 
 Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-web-app) with Web support for an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/web-support) for NativeBase KitchenSink.
+
+
+
+## Setup with Vue Native
+
+```js
+npm install -g vue-native-cli
+vue-native init AwesomeNativeBase               // Initializes crna project
+vue-native init AwesomeNativeBase --no-crna     // Initializes react-native project
+cd AwesomeNativeBase
+```
+
+
+*Install NativeBase*
+
+```js
+npm install native-base --save
+```
+
+**Run**
+
+```
+npm start
+```
+
+You've successfully setup [NativeBase](https://nativebase.io/) with your [Vue Native](https://vue-native.io) app. Your Vue Native app is ready to run on iOS and Android devices.
+
+Check out [Vue Native Docs](https://vue-native.io/docs/installation.html). Also, NativeBase KitchenSink, an example of NativeBase components implementation with Vue Native, [source code](https://github.com/GeekyAnts/KitchenSink-Vue-Native) is here.

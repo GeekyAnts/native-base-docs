@@ -4,8 +4,8 @@
 Check Box allows the user to select a number of items from a set of choices.<br />
 Replacing Component: React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html)
 
-![Preview ios checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/checkbox.png)
-![Preview android checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/checkbox.png)
+![Preview ios checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/checkbox.png)
+![Preview android checkbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/checkbox.png)
 
 *Syntax*
 

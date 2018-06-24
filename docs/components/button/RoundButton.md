@@ -3,8 +3,8 @@
 
 Include <code>rounded</code> prop with <code>Button</code> to easily style your buttons with slightly rounded edges.<br/>
 
-![Preview ios button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/button-rounded.png)
-![Preview android button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/button-rounded.png)
+![Preview ios button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/button-rounded.png)
+![Preview android button-rounded-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/button-rounded.png)
 
 *Syntax*
 

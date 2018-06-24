@@ -247,6 +247,13 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
             <td>2</td>
             <td>2</td>
         </tr>
+        <tr>
+            <td>cardItemPadding</td>
+            <td>number</td>
+            <td>Padding between Card and CardItem</td>
+            <td>10</td>
+            <td>12</td>
+        </tr>
     </tbody>
 </table>
 <br/>

@@ -1,8 +1,8 @@
 ## picker-text-and-item-text-styles-headref
 #### Picker Text and Item Text Style
 
-![Preview ios picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/ios/picker-text-itemtext-style.gif)
-![Preview android picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.5.2/screenshots/android/picker.gif)
+![Preview ios picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-text-itemtext-style.gif)
+![Preview android picker-text-and-item-text-styles-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif)
 
 *Syntax*
 
