@@ -1,5 +1,5 @@
 ## accordion-custom-header-content-headref
-#### Cusotm Header and Content
+#### Custom Header and Content
 
 ![Preview ios accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/accordion-custom-header-content.gif)
 ![Preview android accordion-custom-header-content-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/accordion-custom-header-content.gif)
