@@ -137,4 +137,4 @@ import { Container, Header, View, Fab, Button, Icon } from 'native-base';
   }
 }</code></pre><br />
 
-**Note:** Always prefer to place FAB inside NativeBase `<Container/>`. Placing FAB inside `<Content/>` is not encouraged, as `<Content/>` is an implementation of `<ScrollView/>`.
+**Note:** Always prefer to place FAB inside NativeBase `<Container/>` and after `<Content/>`. Placing FAB inside `<Content/>` is not encouraged, as `<Content/>` is an implementation of `<ScrollView/>`. 
