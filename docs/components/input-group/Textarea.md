@@ -10,20 +10,14 @@ Creates a text area to input multiline text.
 
 *Syntax*
 
-```
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Left, Body, Title, Right, Content, Textarea, Form } from "native-base";
+import { Container, Header, Content, Textarea, Form } from "native-base";
 export default class TextArea extends Component {
   render() {
     return (
       <Container>
-        <Header>
-          <Left />
-          <Body>
-            <Title>Textarea</Title>
-          </Body>
-          <Right />
-        </Header>
+        <Header />
         <Content padder>
           <Form>
             <Textarea rowSpan={5} bordered placeholder="Textarea" />
@@ -33,4 +27,15 @@ export default class TextArea extends Component {
     );
   }
 }
-```
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-textarea :rowSpan="5" bordered placeholder="Textarea" />
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}

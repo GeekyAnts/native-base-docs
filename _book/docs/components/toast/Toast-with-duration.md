@@ -6,8 +6,9 @@
 
 *Syntax* 
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
+import { Container, Header, Content, Text, Button, Toast } from "native-base";
 export default class ToastDuration extends Component {
   constructor(props) {
     super(props);
@@ -17,20 +18,10 @@ export default class ToastDuration extends Component {
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Toast with duration&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Button
+      <Container>
+        <Header />
+        <Content padder>
+          <Button
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -38,10 +29,38 @@ export default class ToastDuration extends Component {
                 duration: 3000
               })}
           >
-            &lt;Text>Toast&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+            <Text>Toast</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button :onPress="handleBtnPress">
+        <nb-text>Toast</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Toast } from "native-base";
+export default {
+  methods: {
+    handleBtnPress: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        duration: 3000
+      });
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

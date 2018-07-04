@@ -16,23 +16,41 @@ NativeBase provides following color themes:
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonThemeExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button light>&lt;Text> Light &lt;/Text>&lt;/Button>
-          &lt;Button primary>&lt;Text> Primary &lt;/Text>&lt;/Button>
-          &lt;Button success>&lt;Text> Success &lt;/Text>&lt;/Button>
-          &lt;Button info>&lt;Text> Info &lt;/Text>&lt;/Button>
-          &lt;Button warning>&lt;Text> Warning &lt;/Text>&lt;/Button>
-          &lt;Button danger>&lt;Text> Danger &lt;/Text>&lt;/Button>
-          &lt;Button dark>&lt;Text> Dark &lt;/Text>&lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button light><Text> Light </Text></Button>
+          <Button primary><Text> Primary </Text></Button>
+          <Button success><Text> Success </Text></Button>
+          <Button info><Text> Info </Text></Button>
+          <Button warning><Text> Warning </Text></Button>
+          <Button danger><Text> Danger </Text></Button>
+          <Button dark><Text> Dark </Text></Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-button light><nb-text>Light</nb-text></nb-button>
+      <nb-button info><nb-text>Info</nb-text></nb-button>
+      <nb-button primary><nb-text>Primary</nb-text></nb-button>
+      <nb-button success><nb-text>Success</nb-text></nb-button>
+      <nb-button warning><nb-text>Warning</nb-text></nb-button>
+      <nb-button danger><nb-text>Danger</nb-text></nb-button>
+      <nb-button dark><nb-text>Dark</nb-text></nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

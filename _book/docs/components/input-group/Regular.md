@@ -8,19 +8,35 @@ To use the regular textbox which is rectangular in shape, include the <code>regu
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Input, Item } from 'native-base';
 export default class RegularTextboxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Item regular>
-            &lt;Input placeholder='Regular Textbox' />
-          &lt;/Item>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Item regular>
+            <Input placeholder='Regular Textbox' />
+          </Item>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item regular>
+          <nb-input placeholder="Regular Textbox" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

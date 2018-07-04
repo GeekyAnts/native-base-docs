@@ -7,37 +7,69 @@ Include <code>transparent</code> prop with Button. This will render button with 
 ![Preview android button-transparent-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/button-transparent.png)
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonTransparentExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button transparent light>
-            &lt;Text>Light&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent>
-            &lt;Text>Primary&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent success>
-            &lt;Text>Success&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent info>
-            &lt;Text>Info&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent warning>
-            &lt;Text>Warning&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent danger>
-            &lt;Text>Danger&lt;/Text>
-          &lt;/Button>
-          &lt;Button transparent dark>
-            &lt;Text>Dark&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button transparent light>
+            <Text>Light</Text>
+          </Button>
+          <Button transparent>
+            <Text>Primary</Text>
+          </Button>
+          <Button transparent success>
+            <Text>Success</Text>
+          </Button>
+          <Button transparent info>
+            <Text>Info</Text>
+          </Button>
+          <Button transparent warning>
+            <Text>Warning</Text>
+          </Button>
+          <Button transparent danger>
+            <Text>Danger</Text>
+          </Button>
+          <Button transparent dark>
+            <Text>Dark</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content padder>
+      <nb-button transparent light>
+        <nb-text>Light</nb-text>
+      </nb-button>
+      <nb-button transparent info>
+        <nb-text>Info</nb-text>
+      </nb-button>
+      <nb-button transparent primary>
+        <nb-text>Primary</nb-text>
+      </nb-button>
+      <nb-button transparent success>
+        <nb-text>Success</nb-text>
+      </nb-button>
+      <nb-button transparent warning>
+        <nb-text>Warning</nb-text>
+      </nb-button>
+      <nb-button transparent danger>
+        <nb-text>Danger</nb-text>
+      </nb-button>
+      <nb-button transparent dark>
+        <nb-text>Dark</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

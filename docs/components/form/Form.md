@@ -32,27 +32,46 @@ Replacing Component:
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Input } from 'native-base';
 export default class FormExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Form>
-            &lt;Item>
-              &lt;Input placeholder="Username" />
-            &lt;/Item>
-            &lt;Item last>
-              &lt;Input placeholder="Password" />
-            &lt;/Item>
-          &lt;/Form>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Form>
+            <Item>
+              <Input placeholder="Username" />
+            </Item>
+            <Item last>
+              <Input placeholder="Password" />
+            </Item>
+          </Form>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item>
+          <nb-input placeholder="Username" />
+        </nb-item>
+        <nb-item last>
+          <nb-input placeholder="Password" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 

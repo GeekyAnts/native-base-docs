@@ -9,23 +9,38 @@ Replacing Component for H1, H2, H3, Text: React Native [Text](http://facebook.gi
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, H1, H2, H3, Text } from 'native-base';
 export default class TypographyExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;H1>Header One&lt;/H1>
-          &lt;H2>Header Two&lt;/H2>
-          &lt;H3>Header Three&lt;/H3>
-          &lt;Text>Default&lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <H1>Header One</H1>
+          <H2>Header Two</H2>
+          <H3>Header Three</H3>
+          <Text>Default</Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-h1>Header One</nb-h1>
+      <nb-h2>Header Two</nb-h2>
+      <nb-h3>Header Three</nb-h3>
+      <nb-text>Default</nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 **Configuration**

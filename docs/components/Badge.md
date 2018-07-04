@@ -7,43 +7,88 @@ All of us must have seen notification badges somewhere, such as on smart phones 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Badge, Text, Icon } from 'native-base';
 export default class BadgeExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Badge>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge primary>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge success>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge info>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge warning>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge danger>
-            &lt;Text>2&lt;/Text>
-          &lt;/Badge>
-          &lt;Badge primary>
-            &lt;Icon name="star" style=&#123;{ fontSize: 15, color: "#fff", lineHeight: 20 }}/>
-          &lt;/Badge>
-          &lt;Badge style=&#123;{ backgroundColor: 'black' }}>
-            &lt;Text style=&#123;{ color: 'white' }}>1866&lt;/Text>
-          &lt;/Badge>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Badge>
+            <Text>2</Text>
+          </Badge>
+          <Badge primary>
+            <Text>2</Text>
+          </Badge>
+          <Badge success>
+            <Text>2</Text>
+          </Badge>
+          <Badge info>
+            <Text>2</Text>
+          </Badge>
+          <Badge warning>
+            <Text>2</Text>
+          </Badge>
+          <Badge danger>
+            <Text>2</Text>
+          </Badge>
+          <Badge primary>
+          {% raw %}<Icon name="star" style={{ fontSize: 15, color: "#fff", lineHeight: 20 }}/>{% endraw %}
+          </Badge>
+          {% raw %}<Badge style={{ backgroundColor: 'black' }}>{% endraw %}
+            {% raw %}<Text style={{ color: 'white' }}>1866</Text>{% endraw %}
+          </Badge>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content padder>
+      <nb-badge>
+          <nb-text>2</nb-text>
+      </nb-badge>
+      <nb-badge primary>
+          <nb-text>2</nb-text>
+      </nb-badge>
+      <nb-badge success>
+          <nb-text>2</nb-text>
+      </nb-badge>
+      <nb-badge info>
+          <nb-text>5</nb-text>
+      </nb-badge>
+      <nb-badge warning>
+          <nb-text>2</nb-text>
+      </nb-badge>
+      <nb-badge danger>
+          <nb-text>2</nb-text>
+      </nb-badge>
+      <nb-badge primary>
+          <nb-icon name="star" class="icon-star" />
+      </nb-badge>
+      <nb-badge class="badge-custom-bg">
+          <nb-text>1866</nb-text>
+      </nb-badge>
+    </nb-content>
+  </nb-container>
+</template>
+<style>
+.icon-star {
+  font-size: 15;
+  color: #fff;
+  line-height: 20;
+}
+.badge-custom-bg {
+  background-color: black;
+}
+</style>
+{%- endcodetabs %}
+<br />
 
   * [NativeBase](https://nativebase.io/) spectrum of colors are compatible with Badge.
   * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html) <br />

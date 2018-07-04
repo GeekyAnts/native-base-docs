@@ -6,8 +6,9 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
+import { Container, Header, Content, Text, Button, Toast } from "native-base";
 class ToastPosition extends Component {
   constructor(props) {
     super(props);
@@ -17,20 +18,10 @@ class ToastPosition extends Component {
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Toast Position&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Button
+      <Container>
+        <Header />
+        <Content padder>
+          <Button
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -38,9 +29,9 @@ class ToastPosition extends Component {
                 position: "top"
               })}
           >
-            &lt;Text>Top Toast&lt;/Text>
-          &lt;/Button>
-          &lt;Button
+            <Text>Top Toast</Text>
+          </Button>
+          <Button
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -48,10 +39,48 @@ class ToastPosition extends Component {
                 position: "bottom"
               })}
           >
-            &lt;Text>Bottom Toast&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+            <Text>Bottom Toast</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button :onPress="handleBtnPress1">
+        <nb-text>Top Toast</nb-text>
+      </nb-button>
+      <nb-button :onPress="handleBtnPress2">
+        <nb-text>Bottom Toast</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Toast } from "native-base";
+export default {
+  methods: {
+    handleBtnPress1: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        position: "top"
+      });
+    },
+    handleBtnPress2: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        position: "bottom"
+      });
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

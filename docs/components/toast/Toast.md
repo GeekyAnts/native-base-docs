@@ -18,7 +18,7 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 
 *Syntax*
 
-```
+{% codetabs name="React Native", type="js" -%}
 import { Root } from "native-base";
 import { StackNavigator } from "react-navigation";
 const AppNavigator = StackNavigator(
@@ -30,33 +30,73 @@ export default () =>
   <Root>
     <AppNavigator />
   </Root>;
-```
-
-<pre class="line-numbers"><code class="language-jsx">import React, &lcub; Component } from 'react';
-import { Container, Header, Content, Toast, Button, Text } from 'native-base';
-export default class ToastExample extends Component &lcub;
-  constructor(props) {
-    super(props);
-    this.state = &lcub;
-      showToast: false
-    }
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <root>
+    <app-navigation></app-navigation>
+  </root>
+</template>
+<script>
+import { Root } from "native-base";
+import { StackNavigator } from "vue-native-router";
+const AppNavigation = StackNavigator(
+  {
+    Page: { screen: Page },
   }
-  render() &lcub;
+);
+export default {
+  components: { Root, AppNavigation }
+};
+</script>
+{%- endcodetabs %}
+
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Content, Toast, Button, Text } from 'native-base';
+export default class ToastExample extends Component {
+  render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content padder>
-          &lt;Button onPress={()=> Toast.show({
+      <Container>
+        <Header />
+        <Content padder>
+          <Button onPress={()=> Toast.show({
               text: 'Wrong password!',
               buttonText: 'Okay'
             })}>
-            &lt;Text>Toast&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+            <Text>Toast</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button :onPress="handleBtnPress">
+        <nb-text>Toast</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Toast } from "native-base";
+export default {
+  methods: {
+    handleBtnPress: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay"
+      });
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 <table class="table table-bordered">

@@ -6,21 +6,37 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Subtitle } from 'native-base';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Left, Body, Right, Title, Subtitle } from 'native-base';
 export default class HeaderTitleSubtitleExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left />
-          &lt;Body>
-            &lt;Title>Title&lt;/Title>
-            &lt;Subtitle>Subtitle&lt;/Subtitle>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-      &lt;/Container>
+      <Container>
+        <Header>
+          <Left />
+          <Body>
+            <Title>Title</Title>
+            <Subtitle>Subtitle</Subtitle>
+          </Body>
+          <Right />
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header>
+      <nb-left/>
+      <nb-body>
+        <nb-title>Title</nb-title>
+        <nb-subtitle>Subtitle</nb-subtitle>
+      </nb-body>
+      <nb-right/>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

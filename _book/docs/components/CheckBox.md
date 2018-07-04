@@ -9,37 +9,66 @@ Replacing Component: React Native [TouchableOpacity](https://facebook.github.io/
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, ListItem, CheckBox, Text, Body } from 'native-base';
 export default class CheckBoxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;ListItem>
-            &lt;CheckBox checked={true} />
-            &lt;Body>
-              &lt;Text>Daily Stand Up&lt;/Text>
-            &lt;/Body>
-          &lt;/ListItem>
-          &lt;ListItem>
-            &lt;CheckBox checked={false} />
-            &lt;Body>
-              &lt;Text>Discussion with Client&lt;/Text>
-            &lt;/Body>
-          &lt;/ListItem>
-          &lt;ListItem>
-            &lt;CheckBox checked={false} color="green"/>
-            &lt;Body>
-              &lt;Text>Finish list Screen&lt;/Text>
-            &lt;/Body>
-          &lt;/ListItem>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <ListItem>
+            <CheckBox checked={true} />
+            <Body>
+              <Text>Daily Stand Up</Text>
+            </Body>
+          </ListItem>
+          <ListItem>
+            <CheckBox checked={false} />
+            <Body>
+              <Text>Discussion with Client</Text>
+            </Body>
+          </ListItem>
+          <ListItem>
+            <CheckBox checked={false} color="green"/>
+            <Body>
+              <Text>Finish list Screen</Text>
+            </Body>
+          </ListItem>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item>
+        <nb-checkbox :checked="true" />
+        <nb-body>
+          <nb-text>Daily Stand Up</nb-text>
+        </nb-body>
+      </nb-list-item>
+      <nb-list-item>
+        <nb-checkbox :checked="false" />
+        <nb-body>
+          <nb-text>Discussion with Client</nb-text>
+        </nb-body>
+      </nb-list-item>
+      <nb-list-item>
+        <nb-checkbox :checked="false" color="green"/>
+        <nb-body>
+          <nb-text>Finish list Screen</nb-text>
+        </nb-body>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+br />
 
 **Configuration**
 

@@ -7,20 +7,37 @@ To restrict inputting data into textbox, include the <code>disabled</code> prop 
 ![Preview android disabled-textbox-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/input-disabled.png)
 
 *Syntax*
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Item, Input, Icon } from 'native-base';
 export default class DisabledTextboxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Item disabled>
-            &lt;Input disabled placeholder='Disabled Textbox'/>
-            &lt;Icon name='information-circle' />
-          &lt;/Item>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Item disabled>
+            <Input disabled placeholder='Disabled Textbox'/>
+            <Icon name='information-circle' />
+          </Item>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item disabled>
+          <nb-input disabled placeholder='Disabled Textbox' />
+          <nb-icon name="information-circle" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

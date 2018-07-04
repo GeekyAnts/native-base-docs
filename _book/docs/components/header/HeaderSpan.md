@@ -6,30 +6,43 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
+import { Container, Header, Title, Button, Icon, Left, Right, Body } from "native-base";
 export default class HeaderSpan extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header span>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header Span&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>
-            Header span example
-          &lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header span>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header Span</Title>
+          </Body>
+          <Right />
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header span>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header Span</nb-title>
+      </nb-body>
+      <nb-right/>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

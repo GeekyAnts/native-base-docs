@@ -6,7 +6,8 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, DatePicker, Text } from 'native-base';
 export default class DatePickerExample extends Component {
   constructor(props) {
@@ -19,10 +20,10 @@ export default class DatePickerExample extends Component {
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;DatePicker
+      <Container>
+        <Header />
+        <Content>
+          <DatePicker
             defaultDate={new Date(2018, 4, 4)}
             minimumDate={new Date(2018, 1, 1)}
             maximumDate={new Date(2018, 12, 31)}
@@ -32,15 +33,58 @@ export default class DatePickerExample extends Component {
             animationType={"fade"}
             androidMode={"default"}
             placeHolderText="Select date"
-            textStyle={&#123; color: "green" }}
-            placeHolderTextStyle={&#123; color: "#d3d3d3" }}
+            {% raw %}textStyle={{ color: "green" }}{% endraw %}
+            {% raw %}placeHolderTextStyle={{ color: "#d3d3d3" }}{% endraw %}
             onDateChange={this.setDate}
             />
-            &lt;Text>
+            <Text>
               Date: {this.state.chosenDate.toString().substr(4, 12)}
-            &lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+            </Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-date-picker
+        :defaultDate="defaultDate"
+        :minimumDate="minimumDate"
+        :maximumDate="maximumDate"
+        :modalTransparent="false"
+        animationType="fade"
+        androidMode="default"
+        placeHolderText="Select date"
+        :textStyle="{ color: 'green' }"
+        :placeHolderTextStyle="{ color: '#d3d3d3' }"
+        :onDateChange="setDate"
+      />
+      <nb-text>
+        {% raw %}Date: {{chosenDate.toString().substr(4, 12)}}{% endraw %}
+      </nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+export default {
+  data: function() {
+    return {
+      defaultDate: new Date('2018-06-04'),
+      minimumDate: new Date('2018-01-01'),
+      maximumDate: new Date('2018-12-31'),
+      chosenDate:  new Date()
+    };
+  },
+  methods: {
+    setDate: function(newDate) {
+      this.chosenDate = newDate;
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

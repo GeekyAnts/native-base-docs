@@ -11,48 +11,113 @@ Here is your Card Image ready !
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
 export default class CardImageExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Card>
-            &lt;CardItem>
-              &lt;Left>
-                &lt;Thumbnail source=&#123;{uri: 'Image URL'}} />
-                &lt;Body>
-                  &lt;Text>NativeBase&lt;/Text>
-                  &lt;Text note>GeekyAnts&lt;/Text>
-                &lt;/Body>
-              &lt;/Left>
-            &lt;/CardItem>
-            &lt;CardItem cardBody>
-              &lt;Image source=&#123;{uri: 'Image URL'}} style=&#123;{height: 200, width: null, flex: 1}}/>
-            &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Left>
-                &lt;Button transparent>
-                  &lt;Icon active name="thumbs-up" />
-                  &lt;Text>12 Likes&lt;/Text>
-                &lt;/Button>
-              &lt;/Left>
-              &lt;Body>
-                &lt;Button transparent>
-                  &lt;Icon active name="chatbubbles" />
-                  &lt;Text>4 Comments&lt;/Text>
-                &lt;/Button>
-              &lt;/Body>
-              &lt;Right>
-                &lt;Text>11h ago&lt;/Text>
-              &lt;/Right>
-            &lt;/CardItem>
-          &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem>
+              <Left>
+                {% raw %}<Thumbnail source={{uri: 'Image URL'}} />{% endraw %}
+                <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>GeekyAnts</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem cardBody>
+              {% raw %}<Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>{% endraw %}
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Button transparent>
+                  <Icon active name="thumbs-up" />
+                  <Text>12 Likes</Text>
+                </Button>
+              </Left>
+              <Body>
+                <Button transparent>
+                  <Icon active name="chatbubbles" />
+                  <Text>4 Comments</Text>
+                </Button>
+              </Body>
+              <Right>
+                <Text>11h ago</Text>
+              </Right>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-card>
+        <nb-card-item>
+          <nb-left>
+            <nb-thumbnail :source="logo"></nb-thumbnail>
+            <nb-body>
+              <nb-text>NativeBase</nb-text>
+              <nb-text note>GeekyAnts</nb-text>
+            </nb-body>
+          </nb-left>
+        </nb-card-item> 
+        <nb-card-item cardBody>
+            <image :source="cardImage" class="card-item-image" :style="stylesObj.cardItemImage"/>
+        </nb-card-item>
+        <nb-card-item>
+          <nb-left>
+            <nb-button transparent>
+              <nb-icon name="thumbs-up" active></nb-icon>
+              <nb-text>4923 Likes</nb-text>
+            </nb-button>
+          </nb-left>
+          <nb-body>
+            <nb-button transparent>
+              <nb-icon name="chatbubbles" active></nb-icon>
+              <nb-text>89 Comments</nb-text>
+            </nb-button>
+          </nb-body>
+          <nb-right>
+            <nb-text>11h ago</nb-text>
+          </nb-right>
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+  import logo from "logo.png";
+  import cardImage from "drawer-cover.png";
+  export default {
+    data: function() {
+      return {
+        logo,
+        cardImage,
+        stylesObj: {
+          cardItemImage: {
+            resizeMode: "cover"
+          }
+        }
+      };
+    }
+  };
+</script>
+<style>
+  .card-item-image {
+    flex: 1;
+    height: 200;
+  }
+</style>
+{%- endcodetabs %}
+<br />

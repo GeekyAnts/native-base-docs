@@ -9,37 +9,69 @@ Create block level buttons by adding <code>block</code> prop with the <code>Butt
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonBlockExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button block light>
-            &lt;Text>Light&lt;/Text>
-          &lt;/Button>
-          &lt;Button block>
-            &lt;Text>Primary&lt;/Text>
-          &lt;/Button>
-          &lt;Button block success>
-            &lt;Text>Success&lt;/Text>
-          &lt;/Button>
-          &lt;Button block info>
-            &lt;Text>Info&lt;/Text>
-          &lt;/Button>
-          &lt;Button block warning>
-            &lt;Text>Warning&lt;/Text>
-          &lt;/Button>
-          &lt;Button block danger>
-            &lt;Text>Danger&lt;/Text>
-          &lt;/Button>
-          &lt;Button block dark>
-            &lt;Text>Dark&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button block light>
+            <Text>Light</Text>
+          </Button>
+          <Button block>
+            <Text>Primary</Text>
+          </Button>
+          <Button block success>
+            <Text>Success</Text>
+          </Button>
+          <Button block info>
+            <Text>Info</Text>
+          </Button>
+          <Button block warning>
+            <Text>Warning</Text>
+          </Button>
+          <Button block danger>
+            <Text>Danger</Text>
+          </Button>
+          <Button block dark>
+            <Text>Dark</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button block light>
+        <nb-text>Light</nb-text>
+      </nb-button>
+      <nb-button block info>
+        <nb-text>Info</nb-text>
+      </nb-button>
+      <nb-button block primary>
+        <nb-text>Primary</nb-text>
+      </nb-button>
+      <nb-button block success>
+        <nb-text>Success</nb-text>
+      </nb-button>
+      <nb-button block warning>
+        <nb-text>Warning</nb-text>
+      </nb-button>
+      <nb-button block danger>
+        <nb-text>Danger</nb-text>
+      </nb-button>
+      <nb-button block dark>
+        <nb-text>Dark</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

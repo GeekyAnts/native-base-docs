@@ -9,7 +9,8 @@ Replacing Component: React Native [Animated](http://facebook.github.io/react-nat
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, View, Button, Icon, Fab } from 'native-base';
 export default class FABExample extends Component {
   constructor() {
@@ -19,32 +20,78 @@ export default class FABExample extends Component {
   }
   render() {
     return (  
-      &lt;Container>
-        &lt;Header />
-        &lt;View style=&#123;{ flex: 1 }}>
-          &lt;Fab
+      <Container>
+        <Header />
+        {% raw %}<View style={{ flex: 1 }}>{% endraw %}
+          <Fab
             active={this.state.active}
             direction="up"
-            containerStyle=&#123;{ }}
-            style=&#123;{ backgroundColor: '#5067FF' }}
+            {% raw %}containerStyle={{ }}{% endraw %}
+            {% raw %}style={{ backgroundColor: '#5067FF' }}{% endraw %}
             position="bottomRight"
             onPress={() => this.setState({ active: !this.state.active })}>
-            &lt;Icon name="share" />
-            &lt;Button style=&#123;{ backgroundColor: '#34A34F' }}>
-              &lt;Icon name="logo-whatsapp" />
-            &lt;/Button>
-            &lt;Button style=&#123;{ backgroundColor: '#3B5998' }}>
-              &lt;Icon name="logo-facebook" />
-            &lt;/Button>
-            &lt;Button disabled style=&#123;{ backgroundColor: '#DD5144' }}>
-              &lt;Icon name="mail" />
-            &lt;/Button>
-          &lt;/Fab>
-        &lt;/View>
-      &lt;/Container>
+            <Icon name="share" />
+            {% raw %}<Button style={{ backgroundColor: '#34A34F' }}>{% endraw %}
+              <Icon name="logo-whatsapp" />
+            </Button>
+            {% raw %}<Button style={{ backgroundColor: '#3B5998' }}>{% endraw %}
+              <Icon name="logo-facebook" />
+            </Button>
+            {% raw %}<Button disabled style={{ backgroundColor: '#DD5144' }}>{% endraw %}
+              <Icon name="mail" />
+            </Button>
+          </Fab>
+        </View>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+      <view :style="{flex: 1}">
+        <nb-fab 
+          :active="isFabIconActive" 
+          :onPress="handleFabIconPress"
+          direction="up"
+          position="bottomRight"
+        >
+          <nb-icon-nb name="md-share"></nb-icon-nb>
+          <nb-button :style="{backgroundColor: '#34A34F'}">
+            <nb-icon-nb name="logo-whatsapp"></nb-icon-nb>
+          </nb-button>
+          <nb-button :style="{backgroundColor: '#3B5998'}">
+            <nb-icon-nb name="logo-facebook"></nb-icon-nb>
+          </nb-button>
+          <nb-button :style="{backgroundColor: '#DD5144'}">
+            <nb-icon-nb name="ios-mail"></nb-icon-nb>
+          </nb-button>
+        </nb-fab>
+      </view>
+  </nb-container>
+</template>
+<script>
+export default {
+  data: function() {
+    return {
+      isFabIconActive: false,
+      stylesObj: {
+        fabContainer: {
+          position: "bottomRight"
+        }
+      }
+    };
+  },
+  methods: {
+    handleFabIconPress: function() {
+      this.isFabIconActive = !this.isFabIconActive;
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 
@@ -100,7 +147,8 @@ export default class FABExample extends Component {
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, View, Fab, Button, Icon } from 'native-base';
 ​export default class FABMultipleExample extends Component {
   constructor() {
@@ -110,31 +158,68 @@ import { Container, Header, View, Fab, Button, Icon } from 'native-base';
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;View style=&#123;{ flex: 1 }}>
-          &lt;Fab
+      <Container>
+        <Header />
+        {% raw %}<View style={{ flex: 1 }}>{% endraw %}
+          <Fab
             active={this.state.active}
             direction="up"
-            containerStyle=&#123;{ }}
-            style=&#123;{ backgroundColor: '#5067FF' }}
+            {% raw %}containerStyle={{ }}{% endraw %}
+            {% raw %}style={{ backgroundColor: '#5067FF' }}{% endraw %}
             position="bottomRight"
             onPress={() => this.setState({ active: !this.state.active })}>
               ....
-            &lt;/Fab>
-          &lt;Fab direction="left" position="topRight">
+            </Fab>
+          <Fab direction="left" position="topRight">
             ....
-          &lt;/Fab>
-          &lt;Fab direction="down" position="topLeft">
+          </Fab>
+          <Fab direction="down" position="topLeft">
             ....
-          &lt;/Fab>
-          &lt;Fab direction="right" position="bottomLeft">
+          </Fab>
+          <Fab direction="right" position="bottomLeft">
             ....
-          &lt;/Fab>
-        &lt;/View>
-      &lt;/Container>
+          </Fab>
+        </View>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <view :style="{flex: 1}">
+      <nb-fab 
+        :active="isFabIconActive" 
+        :onPress="isFabIconActive"
+        direction="up"
+        position="bottomRight"
+      >
+        . . .
+      </nb-fab>
+      <nb-fab  direction="left" position="topRight">
+        . . .
+      </nb-fab> 
+      <nb-fab  direction="down" position="topLeft">
+        . . .
+      </nb-fab>
+      <nb-fab direction="right" position="bottomLeft">
+        . . .
+      </nb-fab>
+    </view>
+  </nb-container>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      isFabIconActive1: true,
+    };
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Note:** Always prefer to place FAB inside NativeBase `<Container/>`. Placing FAB inside `<Content/>` is not encouraged, as `<Content/>` is an implementation of `<ScrollView/>`.

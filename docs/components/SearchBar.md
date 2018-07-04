@@ -8,26 +8,44 @@ It’s kind of common on the Internet where – if we fail to get what we are lo
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Item, Input, Icon, Button, Text } from 'native-base';
 export default class SearchBarExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header searchBar rounded>
-          &lt;Item>
-            &lt;Icon name="ios-search" />
-            &lt;Input placeholder="Search" />
-            &lt;Icon name="ios-people" />
-          &lt;/Item>
-          &lt;Button transparent>
-            &lt;Text>Search&lt;/Text>
-          &lt;/Button>
-        &lt;/Header>
-      &lt;/Container>
+      <Container>
+        <Header searchBar rounded>
+          <Item>
+            <Icon name="ios-search" />
+            <Input placeholder="Search" />
+            <Icon name="ios-people" />
+          </Item>
+          <Button transparent>
+            <Text>Search</Text>
+          </Button>
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header searchBar rounded>
+      <nb-item>
+        <nb-icon active name="search" />
+        <nb-input placeholder="Search" />
+        <nb-icon active name="people" />
+      </nb-item>
+      <nb-button transparent>
+        <nb-text>Search</nb-text>
+      </nb-button>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 * <code>searchBar</code>: Prop to be used with <code>&lt;Header></code> component to have Search bar onto the Header section of your screen.
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html)

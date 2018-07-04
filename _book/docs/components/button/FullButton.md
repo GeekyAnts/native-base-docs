@@ -9,37 +9,69 @@ Adding full to a button will make the button take 100% of its parent’s width. 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonFullExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button full light>
-            &lt;Text>Light&lt;/Text>
-          &lt;/Button>
-          &lt;Button full>
-            &lt;Text>Primary&lt;/Text>
-          &lt;/Button>
-          &lt;Button full success>
-            &lt;Text>Success&lt;/Text>
-          &lt;/Button>
-          &lt;Button full info>
-            &lt;Text>Info&lt;/Text>
-          &lt;/Button>
-          &lt;Button full warning>
-            &lt;Text>Warning&lt;/Text>
-          &lt;/Button>
-          &lt;Button full danger>
-            &lt;Text>Danger&lt;/Text>
-          &lt;/Button>
-          &lt;Button full dark>
-            &lt;Text>Dark&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button full light>
+            <Text>Light</Text>
+          </Button>
+          <Button full>
+            <Text>Primary</Text>
+          </Button>
+          <Button full success>
+            <Text>Success</Text>
+          </Button>
+          <Button full info>
+            <Text>Info</Text>
+          </Button>
+          <Button full warning>
+            <Text>Warning</Text>
+          </Button>
+          <Button full danger>
+            <Text>Danger</Text>
+          </Button>
+          <Button full dark>
+            <Text>Dark</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-button full light>
+        <nb-text>Light</nb-text>
+      </nb-button>
+      <nb-button full info>
+        <nb-text>Info</nb-text>
+      </nb-button>
+      <nb-button full primary>
+        <nb-text>Primary</nb-text>
+      </nb-button>
+      <nb-button full success>
+        <nb-text>Success</nb-text>
+      </nb-button>
+      <nb-button full warning>
+        <nb-text>Warning</nb-text>
+      </nb-button>
+      <nb-button full danger>
+        <nb-text>Danger</nb-text>
+      </nb-button>
+      <nb-button full dark>
+        <nb-text>Dark</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

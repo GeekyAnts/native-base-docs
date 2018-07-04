@@ -11,22 +11,36 @@ Here is a repo that lists down icons of available `react-native-vector-icons` ic
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Icon } from 'native-base';
 export default class IconExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Icon name='home' />
-          &lt;Icon ios='ios-menu' android="md-menu" style=&#123;{fontSize: 20, color: 'red'}}/>
-          &lt;Icon type="FontAwesome" name="home" />
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Icon name='home' />
+          {% raw %}<Icon ios='ios-menu' android="md-menu" style={{fontSize: 20, color: 'red'}}/>{% endraw %}
+          <Icon type="FontAwesome" name="home" />
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-icon name='home' />
+      <nb-icon ios="ios-menu" android="md-menu" :style="{ fontSize: 20, color: 'red' }" />
+      <nb-icon type="FontAwesome" name="home"/>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 * <code>Icon</code> can take any two of the following attributes: name, ios, android.

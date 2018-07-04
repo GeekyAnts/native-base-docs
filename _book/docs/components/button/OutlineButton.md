@@ -8,37 +8,69 @@ Include <code>bordered</code> prop with Button to apply outline button style.<br
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonOutlineExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button bordered light>
-            &lt;Text>Light&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered>
-            &lt;Text>Primary&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered success>
-            &lt;Text>Success&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered info>
-            &lt;Text>Info&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered warning>
-            &lt;Text>Warning&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered danger>
-            &lt;Text>Danger&lt;/Text>
-          &lt;/Button>
-          &lt;Button bordered dark>
-            &lt;Text>Dark&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button bordered light>
+            <Text>Light</Text>
+          </Button>
+          <Button bordered>
+            <Text>Primary</Text>
+          </Button>
+          <Button bordered success>
+            <Text>Success</Text>
+          </Button>
+          <Button bordered info>
+            <Text>Info</Text>
+          </Button>
+          <Button bordered warning>
+            <Text>Warning</Text>
+          </Button>
+          <Button bordered danger>
+            <Text>Danger</Text>
+          </Button>
+          <Button bordered dark>
+            <Text>Dark</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content padder>
+      <nb-button bordered light>
+        <nb-text>Light</nb-text>
+      </nb-button>
+      <nb-button bordered info>
+        <nb-text>Info</nb-text>
+      </nb-button>
+      <nb-button bordered primary>
+        <nb-text>Primary</nb-text>
+      </nb-button>
+      <nb-button bordered success>
+        <nb-text>Success</nb-text>
+      </nb-button>
+      <nb-button bordered warning>
+        <nb-text>Warning</nb-text>
+      </nb-button>
+      <nb-button bordered danger>
+        <nb-text>Danger</nb-text>
+      </nb-button>
+      <nb-button bordered dark>
+        <nb-text>Dark</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

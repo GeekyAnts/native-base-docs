@@ -8,34 +8,51 @@ The <code>noShadow</code> prop of Header removes shadow from iOS Header and elev
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
+import { Container, Header, Title, Button, Icon, Left, Right, Body } from "native-base";
 export default class HeaderNoShadow extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header noShadow>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header No Shadow&lt;/Title>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Icon name="menu" />
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>
-            Header with noShadow prop
-          &lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header noShadow>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header No Shadow</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name="menu" />
+            </Button>
+          </Right>
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header noShadow>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header No Shadow</nb-title>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-icon name="menu" />
+        </nb-button>
+      </nb-right>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

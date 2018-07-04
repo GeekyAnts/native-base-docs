@@ -11,28 +11,48 @@ Include the following props with your <code>Button</code>.
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonSizeExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
+      <Container>
+        <Header />
+        <Content>
           //Small size button
-          &lt;Button small primary>
-            &lt;Text>Default Small&lt;/Text>
-          &lt;/Button>
+          <Button small primary>
+            <Text>Default Small</Text>
+          </Button>
           //Regular size button
-          &lt;Button success>
-            &lt;Text>Success Default&lt;/Text>
-          &lt;/Button>
+          <Button success>
+            <Text>Success Default</Text>
+          </Button>
           //Large size button
-          &lt;Button large dark>
-            &lt;Text>Dark Large&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+          <Button large dark>
+            <Text>Dark Large</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-button small light>
+        <nb-text>Default Small </nb-text>
+      </nb-button>
+      <nb-button success info>
+        <nb-text>Success Default</nb-text>
+      </nb-button>
+      <nb-button large primary>
+        <nb-text>Dark Large</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

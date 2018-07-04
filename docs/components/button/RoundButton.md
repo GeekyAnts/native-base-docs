@@ -8,37 +8,69 @@ Include <code>rounded</code> prop with <code>Button</code> to easily style your 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonRoundedExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button rounded light>
-            &lt;Text>Light&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded>
-            &lt;Text>Primary&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded success>
-            &lt;Text>Success&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded info>
-            &lt;Text>Info&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded warning>
-            &lt;Text>Warning&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded danger>
-            &lt;Text>Danger&lt;/Text>
-          &lt;/Button>
-          &lt;Button rounded dark>
-            &lt;Text>Dark&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button rounded light>
+            <Text>Light</Text>
+          </Button>
+          <Button rounded>
+            <Text>Primary</Text>
+          </Button>
+          <Button rounded success>
+            <Text>Success</Text>
+          </Button>
+          <Button rounded info>
+            <Text>Info</Text>
+          </Button>
+          <Button rounded warning>
+            <Text>Warning</Text>
+          </Button>
+          <Button rounded danger>
+            <Text>Danger</Text>
+          </Button>
+          <Button rounded dark>
+            <Text>Dark</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button rounded light>
+        <nb-text>Light</nb-text>
+      </nb-button>
+      <nb-button rounded info>
+        <nb-text>Info</nb-text>
+      </nb-button>
+      <nb-button rounded primary>
+        <nb-text>Primary</nb-text>
+      </nb-button>
+      <nb-button rounded success>
+        <nb-text>Success</nb-text>
+      </nb-button>
+      <nb-button rounded warning>
+        <nb-text>Warning</nb-text>
+      </nb-button>
+      <nb-button rounded danger>
+        <nb-text>Danger</nb-text>
+      </nb-button>
+      <nb-button rounded dark>
+        <nb-text>Dark</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

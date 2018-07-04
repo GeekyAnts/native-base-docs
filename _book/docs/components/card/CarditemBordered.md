@@ -9,64 +9,62 @@ Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for c
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Card, CardItem, Text, Body, Left, Right, IconNB } from "native-base";
+import { Container, Header, Content, Card, CardItem, Text, Body } from "native-base";
 export default class CardItemBordered extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Card Item Bordered&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Card>
-            &lt;CardItem header bordered>
-              &lt;Text>NativeBase&lt;/Text>
-            &lt;/CardItem>
-            &lt;CardItem bordered>
-              &lt;Body>
-                &lt;Text>
+      <Container>
+        <Header />
+        <Content padder>
+          <Card>
+            <CardItem header bordered>
+              <Text>NativeBase</Text>
+            </CardItem>
+            <CardItem bordered>
+              <Body>
+                <Text>
                   NativeBase is a free and open source framework that enable
                   developers to build
                   high-quality mobile apps using React Native iOS and Android
                   apps
                   with a fusion of ES6.
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem bordered>
-              &lt;Body>
-                &lt;Text>
-                  NativeBase builds a layer on top of React Native that provides
-                  you with
-                  basic set of components for mobile application development.
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem bordered>
-              &lt;Body>
-                &lt;Text>
-                  Get on the mobile fast track with NativeBase, the
-                  fastest-growing platform
-                  and tool set for iOS and Android development.
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem footer bordered>
-              &lt;Text>GeekyAnts&lt;/Text>
-            &lt;/CardItem>
-          &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem footer bordered>
+              <Text>GeekyAnts</Text>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-card>
+        <nb-card-item header bordered>
+          <nb-text>NativeBase</nb-text>
+        </nb-card-item>
+        <nb-card-item bordered>
+          <nb-body>
+            <nb-text>
+              NativeBase is a free and open source framework that enable developers to build high-quality mobile apps using React Native iOS and Android apps with a fusion of ES6.
+            </nb-text>
+          </nb-body>            
+        </nb-card-item>
+        <nb-card-item footer bordered>
+          <nb-text>GeekyAnts</nb-text>
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

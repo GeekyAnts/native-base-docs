@@ -7,41 +7,76 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, ListItem, Text, Radio, Right, Left } from 'native-base';
 export default class CustomRadioButtonExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;ListItem selected={false} >
-            &lt;Left>
-              &lt;Text>Lunch Break&lt;/Text>
-            &lt;/Left>
-            &lt;Right>
-              &lt;Radio
+      <Container>
+        <Header />
+        <Content>
+          <ListItem selected={false} >
+            <Left>
+              <Text>Lunch Break</Text>
+            </Left>
+            <Right>
+              <Radio
                 color={"#f0ad4e"}
                 selectedColor={"#5cb85c"}
                 selected={false}
               />
-            &lt;/Right>
-          &lt;/ListItem>
-          &lt;ListItem selected={true}>
-            &lt;Left>
-              &lt;Text>Discussion with Client&lt;/Text>
-            &lt;/Left>
-            &lt;Right>
-              &lt;Radio
+            </Right>
+          </ListItem>
+          <ListItem selected={true}>
+            <Left>
+              <Text>Discussion with Client</Text>
+            </Left>
+            <Right>
+              <Radio
                 color={"#f0ad4e"}
                 selectedColor={"#5cb85c"}
                 selected={true}
               />
-            &lt;/Right>
-          &lt;/ListItem>
-        &lt;/Content>
-      &lt;/Container>
+            </Right>
+          </ListItem>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item :selected="false">
+        <nb-left>
+          <nb-text>Lunch Break</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio
+            color='#f0ad4e'
+            selectedColor='#5cb85c'
+            :selected="false"
+          />
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item :selected="true">
+        <nb-left>
+          <nb-text>Discussion with Client</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio
+            color='#f0ad4e'
+            selectedColor='#5cb85c'
+            :selected="true"
+          />
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 

@@ -4,55 +4,92 @@
 ![Preview ios picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-custom-header-style.gif)
 ![Preview android picker-with-custom-header-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif)
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } from "native-base";
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
+import { Container, Header, Content, Icon, Picker, Form } from "native-base";
 export default class PickerCustomHeaderStyleExample extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected5: "key2"
+      selected: "key2"
     };
   }
-  onValueChange5(value: string) {
+  onValueChange(value: string) {
     this.setState({
-      selected5: value
+      selected: value
     });
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent onPress={() => this.props.navigation.goBack()}>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Cutom Header Style&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content>
-          &lt;Form>
-            &lt;Picker
+      <Container>
+        <Header />
+        <Content>
+          <Form>
+            <Picker
               mode="dropdown"
-              iosIcon={&#123;Icon name="ios-arrow-down-outline" />}
-              headerStyle=&#123;{ backgroundColor: "#b95dd3" }}
-              headerBackButtonTextStyle=&#123;{ color: "#fff" }}
-              headerTitleStyle=&#123;{ color: "#fff" }}
-              style=&#123;{ width: undefined }}
-              selectedValue={this.state.selected5}
-              onValueChange={this.onValueChange5.bind(this)}
+              {% raw %}iosIcon={{Icon name="ios-arrow-down-outline" />}{% endraw %}
+              {% raw %}headerStyle={{ backgroundColor: "#b95dd3" }}{% endraw %}
+              {% raw %}headerBackButtonTextStyle={{ color: "#fff" }}{% endraw %}
+              {% raw %}headerTitleStyle={{ color: "#fff" }}{% endraw %}
+              selectedValue={this.state.selected}
+              onValueChange={this.onValueChange.bind(this)}
             >
-              &lt;Picker.Item label="Wallet" value="key0" />
-              &lt;Picker.Item label="ATM Card" value="key1" />
-              &lt;Picker.Item label="Debit Card" value="key2" />
-              &lt;Picker.Item label="Credit Card" value="key3" />
-              &lt;Picker.Item label="Net Banking" value="key4" />
-            &lt;/Picker>
-          &lt;/Form>
-        &lt;/Content>
-      &lt;/Container>
+              <Picker.Item label="Wallet" value="key0" />
+              <Picker.Item label="ATM Card" value="key1" />
+              <Picker.Item label="Debit Card" value="key2" />
+              <Picker.Item label="Credit Card" value="key3" />
+              <Picker.Item label="Net Banking" value="key4" />
+            </Picker>
+          </Form>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-picker
+          mode="dropdown"
+          :iosIcon="getIosIcon()"
+          :headerStyle="{ backgroundColor: '#b95dd3' }"
+          :headerBackButtonTextStyle="{ color: '#fff' }"
+          :headerTitleStyle="{ color: '#fff' }"
+          :selectedValue="selected"
+          :onValueChange="onValueChange"
+        >
+          <item label="Wallet" value="key0" />
+          <item label="ATM Card" value="key1" />
+          <item label="Debit Card" value="key2" />
+          <item label="Credit Card" value="key3" />
+          <item label="Net Banking" value="key4" />
+        </nb-picker>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Picker, Icon } from "native-base";
+export default {
+  components: { Item: Picker.Item },
+  data: function() {
+    return {
+      selected: "key1"
+    };
+  },
+  methods: {
+    onValueChange: function(value) {
+      this.selected = value;
+    },
+    getIosIcon: function() {
+      return <Icon name="ios-arrow-down-outline" />;
+    },
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

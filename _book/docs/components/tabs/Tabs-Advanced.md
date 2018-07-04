@@ -6,27 +6,82 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
+import Tab3 from './tabThree';
 ​export default class TabsAdvancedExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header hasTabs/>
-        &lt;Tabs>
-          &lt;Tab heading={ &lt;TabHeading>&lt;Icon name="camera" />&lt;Text>Camera&lt;/Text>&lt;/TabHeading>}>
-            &lt;Tab1 />
-          &lt;/Tab>
-          &lt;Tab heading={ &lt;TabHeading>&lt;Text>No Icon&lt;/Text>&lt;/TabHeading>}>
-            &lt;Tab2 />
-          &lt;/Tab>
-          &lt;Tab heading={ &lt;TabHeading>&lt;Icon name="apps" />&lt;/TabHeading>}>
-            &lt;Tab3 />
-          &lt;/Tab>
-        &lt;/Tabs>
-      &lt;/Container>
+      <Container>
+        <Header hasTabs/>
+        <Tabs>
+          <Tab heading={ <TabHeading><Icon name="camera" /><Text>Camera</Text></TabHeading>}>
+            <Tab1 />
+          </Tab>
+          <Tab heading={ <TabHeading><Text>No Icon</Text></TabHeading>}>
+            <Tab2 />
+          </Tab>
+          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
+            <Tab3 />
+          </Tab>
+        </Tabs>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header hasTabs/>
+    <nb-tabs>
+      <nb-tab :heading="getHeadingCompForTab1()">
+        <tab-one />
+      </nb-tab>
+      <nb-tab :heading="getHeadingCompForTab2()">
+        <tab-two />
+      </nb-tab>
+      <nb-tab :heading="getHeadingCompForTab3()">
+        <tab-three />
+      </nb-tab>
+    </nb-tabs>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { TabHeading, Icon, Text } from "native-base";
+import TabOne from "./components/tabOne";
+import TabTwo from "./components/tabTwo";
+import TabThree from "./components/tabThree";
+export default {
+  components: { TabOne, TabTwo, TabThree },
+  methods: {
+    getHeadingCompForTab1: function() {
+      return (
+        <TabHeading>
+          <Icon name="camera" />
+          <Text>Camera</Text>
+        </TabHeading>
+      );
+    },
+    getHeadingCompForTab2: function() {
+      return (
+        <TabHeading>
+          <Text>No Icon</Text>
+        </TabHeading>
+      );
+    },
+    getHeadingCompForTab3: function() {
+      return (
+        <TabHeading>
+          <Icon name="apps" />
+        </TabHeading>
+      );
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

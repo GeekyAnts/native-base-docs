@@ -15,7 +15,9 @@ NativeBase Accordion renders with pre-defined icons on toggle of text block, hea
 * [Custom Header and Content](Components.md#accordion-custom-header-content-headref)
 
 *General Syntax*
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
+
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
 import { Container, Header, Content, Accordion } from "native-base";
 const dataArray = [
   { title: "First Element", content: "Lorem ipsum dolor sit amet" },
@@ -25,15 +27,40 @@ const dataArray = [
 export default class AccordionExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content padder>
-          &lt;Accordion dataArray={dataArray} expanded={0}/>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content padder>
+          <Accordion dataArray={dataArray} expanded={0}/>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-accordion :dataArray="dataArray" expanded={0}/>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+export default {
+  data: function() {
+    return {
+      dataArray: [
+        { title: "First Element", content: "Lorem ipsum dolor sit amet" },
+        { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
+        { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
+      ],
+    };
+  },
+};
+</script>
+{%- endcodetabs %}
+<br />
+
 **Configuration**<br />
     <table class="table table-bordered">
         <thead>

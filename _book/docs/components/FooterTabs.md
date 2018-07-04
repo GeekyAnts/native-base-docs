@@ -14,34 +14,59 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 export default class FooterTabsExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content />
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button>
-              &lt;Text>Apps&lt;/Text>
-            &lt;/Button>
-            &lt;Button>
-              &lt;Text>Camera&lt;/Text>
-            &lt;/Button>
-            &lt;Button active>
-              &lt;Text>Navigate&lt;/Text>
-            &lt;/Button>
-            &lt;Button>
-              &lt;Text>Contact&lt;/Text>
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button>
+              <Text>Apps</Text>
+            </Button>
+            <Button>
+              <Text>Camera</Text>
+            </Button>
+            <Button active>
+              <Text>Navigate</Text>
+            </Button>
+            <Button>
+              <Text>Contact</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content />
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button>
+          <nb-text>Apps</nb-text>
+        </nb-button>
+        <nb-button>
+          <nb-text>Camera</nb-text>
+        </nb-button>
+        <nb-button :active="true">
+          <nb-text>Navigate</nb-text>
+        </nb-button>
+        <nb-button>
+          <nb-text>Contact</nb-text>
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 **Configuration**
@@ -90,34 +115,60 @@ export default class FooterTabsExample extends Component {
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 export default class FooterTabsIconExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content />
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button>
-              &lt;Icon name="apps" />
-            &lt;/Button>
-            &lt;Button>
-              &lt;Icon name="camera" />
-            &lt;/Button>
-            &lt;Button active>
-              &lt;Icon active name="navigate" />
-            &lt;/Button>
-            &lt;Button>
-              &lt;Icon name="person" />
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button>
+              <Icon name="apps" />
+            </Button>
+            <Button>
+              <Icon name="camera" />
+            </Button>
+            <Button active>
+              <Icon active name="navigate" />
+            </Button>
+            <Button>
+              <Icon name="person" />
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content />
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button>
+          <nb-icon name="apps" />
+        </nb-button>
+        <nb-button>
+          <nb-icon name="camera" />
+        </nb-button>
+        <nb-button :active="true">
+          <nb-icon name="apps" :active="true"/>
+        </nb-button>
+        <nb-button>
+          <nb-icon name="person" />
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 ## footer-tabs-icon-text-headref
 #### Icon Footer with Text
@@ -126,38 +177,67 @@ export default class FooterTabsIconExample extends Component {
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 export default class FooterTabsIconTextExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content />
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button vertical>
-              &lt;Icon name="apps" />
-              &lt;Text>Apps&lt;/Text>
-            &lt;/Button>
-            &lt;Button vertical>
-              &lt;Icon name="camera" />
-              &lt;Text>Camera&lt;/Text>
-            &lt;/Button>
-            &lt;Button vertical active>
-              &lt;Icon active name="navigate" />
-              &lt;Text>Navigate&lt;/Text>
-            &lt;/Button>
-            &lt;Button vertical>
-              &lt;Icon name="person" />
-              &lt;Text>Contact&lt;/Text>
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button vertical>
+              <Icon name="apps" />
+              <Text>Apps</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="camera" />
+              <Text>Camera</Text>
+            </Button>
+            <Button vertical active>
+              <Icon active name="navigate" />
+              <Text>Navigate</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="person" />
+              <Text>Contact</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content />
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button>
+          <nb-icon name="apps" />
+          <nb-text>Apps</nb-text>
+        </nb-button>
+        <nb-button>
+          <nb-icon name="camera" />
+          <nb-text>Camera</nb-text>
+        </nb-button>
+        <nb-button :active="true">
+          <nb-icon name="navigate" :active="true" />
+          <nb-text>Navigate</nb-text>
+        </nb-button>
+        <nb-button>
+          <nb-icon name="person" />
+          <nb-text>Contact</nb-text>
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 ## footer-tabs-badge-headref
 #### Footer with badge
@@ -166,37 +246,73 @@ export default class FooterTabsIconTextExample extends Component {
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text, Badge } from 'native-base';
 export default class FooterTabsBadgeExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content />
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button badge vertical>
-              &lt;Badge>&lt;Text>2&lt;/Text>&lt;/Badge>
-              &lt;Icon name="apps" />
-              &lt;Text>Apps&lt;/Text>
-            &lt;/Button>
-            &lt;Button vertical>
-              &lt;Icon name="camera" />
-              &lt;Text>Camera&lt;/Text>
-            &lt;/Button>
-            &lt;Button active badge vertical>
-              &lt;Badge >&lt;Text>51&lt;/Text>&lt;/Badge>
-              &lt;Icon active name="navigate" />
-              &lt;Text>Navigate&lt;/Text>
-            &lt;/Button>
-            &lt;Button vertical>
-              &lt;Icon name="person" />
-              &lt;Text>Contact&lt;/Text>
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button badge vertical>
+              <Badge><Text>2</Text></Badge>
+              <Icon name="apps" />
+              <Text>Apps</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="camera" />
+              <Text>Camera</Text>
+            </Button>
+            <Button active badge vertical>
+              <Badge ><Text>51</Text></Badge>
+              <Icon active name="navigate" />
+              <Text>Navigate</Text>
+            </Button>
+            <Button vertical>
+              <Icon name="person" />
+              <Text>Contact</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content />
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button vertical badge>
+          <nb-badge>
+              <nb-text>2</nb-text>
+          </nb-badge>
+          <nb-icon name="apps" />
+          <nb-text>Apps</nb-text>
+        </nb-button>
+        <nb-button >
+          <nb-icon name="camera" />
+          <nb-text>Camera</nb-text>
+        </nb-button>
+        <nb-button vertical badge :active="true">
+          <nb-badge :style="{background-color: 'green'}">
+            <nb-text>51</nb-text>
+          </nb-badge>
+          <nb-icon name="navigate" :active="true" />
+          <nb-text>Navigate</nb-text>
+        </nb-button>
+        <nb-button>
+          <nb-icon name="contact" />
+          <nb-text>Contact</nb-text>
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

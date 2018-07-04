@@ -10,7 +10,8 @@ Replacing Component: React Native [View](https://facebook.github.io/react-native
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 const cards = [
@@ -24,37 +25,117 @@ const cards = [
 export default class DeckSwiperExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;View>
-          &lt;DeckSwiper
+      <Container>
+        <Header />
+        <View>
+          <DeckSwiper
             dataSource={cards}
             renderItem={item =>
-              &lt;Card style=&#123;{ elevation: 3 }}>
-                &lt;CardItem>
-                  &lt;Left>
-                    &lt;Thumbnail source={item.image} />
-                    &lt;Body>
-                      &lt;Text>{item.text}&lt;/Text>
-                      &lt;Text note>NativeBase&lt;/Text>
-                    &lt;/Body>
-                  &lt;/Left>
-                &lt;/CardItem>
-                &lt;CardItem cardBody>
-                  &lt;Image style=&#123;{ height: 300, flex: 1 }} source={item.image} />
-                &lt;/CardItem>
-                &lt;CardItem>
-                  &lt;Icon name="heart" style=&#123;{ color: '#ED4A6A' }} />
-                  &lt;Text>{item.name}&lt;/Text>
-                &lt;/CardItem>
-              &lt;/Card>
+              {% raw %}<Card style={{ elevation: 3 }}>{% endraw %}
+                <CardItem>
+                  <Left>
+                    <Thumbnail source={item.image} />
+                    <Body>
+                      <Text>{item.text}</Text>
+                      <Text note>NativeBase</Text>
+                    </Body>
+                  </Left>
+                </CardItem>
+                <CardItem cardBody>
+                  {% raw %}<Image style={{ height: 300, flex: 1 }} source={item.image} />{% endraw %}
+                </CardItem>
+                <CardItem>
+                  {% raw %}<Icon name="heart" style={{ color: '#ED4A6A' }} />{% endraw %}
+                  <Text>{item.name}</Text>
+                </CardItem>
+              </Card>
             }
           />
-        &lt;/View>
-      &lt;/Container>
+        </View>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <view :style="{flex: 1, padding: 12}">
+      <nb-deck-swiper
+          :dataSource="cardItemsArr"
+          :looping="isLoopingRequired"
+          :renderItem="handleCardRendering"
+      />
+    </view>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { View, Text } from "react-native";
+import cardOne from "swiper-1.png";
+import CardComponent from "../common/card";
+export default {
+  data: function() {
+    return {
+      cardItemsArr: [
+        {
+          text: "Card One",
+          name: "One",
+          image: cardOne
+        },
+        . . .
+      ],
+      isLoopingRequired: false
+    };
+  },
+  methods: {
+    handleCardRendering: function(item) {
+      return <CardComponent item={item} />;
+    }
+  }
+};
+</script>
+
+// Card Component
+<template>
+  <nb-card :style="{ elevation: 3 }">
+    <nb-cardItem>
+      <nb-left>
+        <nb-thumbnail :source="item.image" />
+        <nb-body>
+          <nb-text>{{item.text}}</nb-text>
+          <nb-text note>NativeBase</nb-text>
+        </nb-body>
+      </nb-left>
+    </nb-cardItem>
+    <nb-cardItem cardBody>
+      <image
+        :style="{
+          resizeMode: 'cover',
+          width: null,
+          flex: 1,
+          height: 300
+        }"
+        :source="item.image"
+      />
+    </nb-cardItem>
+    <nb-cardItem>
+      <nb-icon-nb name="ios-heart" :style="{ color: '#ED4A6A' }" />
+      <nb-text>{{item.name}}</nb-text>
+    </nb-cardItem>
+  </nb-card>
+</template>
+<script>
+export default {
+  props: {
+    item: {
+      type: Object
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**<br />
     <table class = "table table-bordered">
@@ -128,7 +209,8 @@ Swipe Deck with callback function.
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 const cards = [
@@ -142,49 +224,166 @@ const cards = [
 export default class DeckSwiperAdvancedExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;View>
-          &lt;DeckSwiper
+      <Container>
+        <Header />
+        <View>
+          <DeckSwiper
             ref={(c) => this._deckSwiper = c}
             dataSource={cards}
             renderEmpty={() =>
-              &lt;View style=&#123;{ alignSelf: "center" }}>
-                &lt;Text>Over&lt;/Text>
-              &lt;/View>
+              {% raw %}<View style={{ alignSelf: "center" }}>{% endraw %}
+                <Text>Over</Text>
+              </View>
             renderItem={item =>
-              &lt;Card style=&#123;{ elevation: 3 }}>
-                &lt;CardItem>
-                  &lt;Left>
-                    &lt;Thumbnail source={item.image} />
-                    &lt;Body>
-                      &lt;Text>{item.text}&lt;/Text>
-                      &lt;Text note>NativeBase&lt;/Text>
-                    &lt;/Body>
-                  &lt;/Left>
-                &lt;/CardItem>
-                &lt;CardItem cardBody>
-                  &lt;Image style=&#123;{ height: 300, flex: 1 }} source={item.image} />
-                &lt;/CardItem>
-                &lt;CardItem>
-                  &lt;Icon name="heart" style=&#123;{ color: '#ED4A6A' }} />
-                  &lt;Text>{item.name}&lt;/Text>
-                &lt;/CardItem>
-              &lt;/Card>
+              {% raw %}<Card style={{ elevation: 3 }}>{% endraw %}
+                <CardItem>
+                  <Left>
+                    <Thumbnail source={item.image} />
+                    <Body>
+                      <Text>{item.text}</Text>
+                      <Text note>NativeBase</Text>
+                    </Body>
+                  </Left>
+                </CardItem>
+                <CardItem cardBody>
+                  {% raw %}<Image style={{ height: 300, flex: 1 }} source={item.image} />{% endraw %}
+                </CardItem>
+                <CardItem>
+                  {% raw %}<Icon name="heart" style={{ color: '#ED4A6A' }} />{% endraw %}
+                  <Text>{item.name}</Text>
+                </CardItem>
+              </Card>
             }
           />
-        &lt;/View>
-        &lt;View style=&#123;{ flexDirection: "row", flex: 1, position: "absolute", bottom: 50, left: 0, right: 0, justifyContent: 'space-between', padding: 15 }}>
-          &lt;Button iconLeft onPress={() => this._deckSwiper._root.swipeLeft()}>
-            &lt;Icon name="arrow-back" />
-            &lt;Text>Swipe Left&lt;/Text>
-          &lt;/Button>
-          &lt;Button iconRight onPress={() => this._deckSwiper._root.swipeRight()}>
-            &lt;Icon name="arrow-forward" />
-            &lt;Text>Swipe Right&lt;/Text>
-          &lt;/Button>
-        &lt;/View>
-      &lt;/Container>
+        </View>
+        {% raw %}<View style={{ flexDirection: "row", flex: 1, position: "absolute", bottom: 50, left: 0, right: 0, justifyContent: 'space-between', padding: 15 }}>{% endraw %}
+          <Button iconLeft onPress={() => this._deckSwiper._root.swipeLeft()}>
+            <Icon name="arrow-back" />
+            <Text>Swipe Left</Text>
+          </Button>
+          <Button iconRight onPress={() => this._deckSwiper._root.swipeRight()}>
+            <Icon name="arrow-forward" />
+            <Text>Swipe Right</Text>
+          </Button>
+        </View>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <view :style="{flex: 1, padding: 12}">
+      <nb-deck-swiper
+          ref="_deckSwiper"
+          :dataSource="cardItemsArr"
+          :looping="isLoopingRequired"
+          :renderEmpty="handleCardEmpty"
+          :renderItem="handleCardRendering"
+      />
+    </view>
+    <view :style="stylesObj.bottomBtnContainer">
+      <nb-button iconLeft :onPress="handleDeckSwiperBackBtn">
+        <nb-icon name="arrow-back" />
+        <nb-text>Swipe Left</nb-text>
+      </nb-button>
+      <nb-button iconRight :onPress="handleDeckSwiperForwardBtn">
+        <nb-text>Swipe Right</nb-text>
+        <nb-icon name="arrow-forward" />
+      </nb-button>
+    </View>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { View, Text } from "react-native";
+import cardOne from "../../../../assets/swiper-1.png";
+import CardComponent from "../common/card";
+export default {
+  data: function() {
+    return {
+      cardItemsArr: [
+        {
+          text: "Card One",
+          name: "One",
+          image: cardOne
+        },
+        . . .
+      ],
+      isLoopingRequired: false,
+      stylesObj: {
+        bottomBtnContainer: {
+          flexDirection: "row",
+          flex: 1,
+          position: "absolute",
+          bottom: 50,
+          left: 0,
+          right: 0,
+          justifyContent: "space-between",
+          padding: 15
+        }
+      }
+    };
+  },
+  methods: {
+    handleCardEmpty: function() {
+      return (
+        <View>
+          <Text>Over </Text>
+        </View>
+      );
+    },
+    handleCardRendering: function(item) {
+      return <CardComponent item={item} />;
+    },
+    handleDeckSwiperBackBtn: function() {
+      this.$refs._deckSwiper._root.swipeLeft();
+    },
+    handleDeckSwiperForwardBtn: function() {
+      this.$refs._deckSwiper._root.swipeRight();
+    }
+  }
+};
+</script>
+
+// Card Component
+<template>
+  <nb-card :style="{ elevation: 3 }">
+    <nb-cardItem>
+      <nb-left>
+        <nb-thumbnail :source="item.image" />
+        <nb-body>
+          <nb-text>{{item.text}}</nb-text>
+          <nb-text note>NativeBase</nb-text>
+        </nb-body>
+      </nb-left>
+    </nb-cardItem>
+    <nb-cardItem cardBody>
+      <image
+        :style="{
+          resizeMode: 'cover',
+          width: null,
+          flex: 1,
+          height: 300
+        }"
+        :source="item.image"
+      />
+    </nb-cardItem>
+    <nb-cardItem>
+      <nb-icon-nb name="ios-heart" :style="{ color: '#ED4A6A' }" />
+      <nb-text>{{item.name}}</nb-text>
+    </nb-cardItem>
+  </nb-card>
+</template>
+<script>
+export default {
+  props: {
+    item: {
+      type: Object
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

@@ -8,20 +8,37 @@ To display textbox with invalid data, include the <code>error</code> prop with <
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Item, Input, Icon } from 'native-base';
 export default class ErrorInputTextboxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Item error>
-            &lt;Input placeholder='Textbox with Error Input'/>
-            &lt;Icon name='close-circle' />
-          &lt;/Item>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Item error>
+            <Input placeholder='Textbox with Error Input'/>
+            <Icon name='close-circle' />
+          </Item>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item error>
+          <nb-input placeholder='Textbox with Error Input' />
+          <nb-icon name="close-circle" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

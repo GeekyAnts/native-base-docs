@@ -8,23 +8,38 @@ Replacing Component: React Native [ActivityIndicator](https://facebook.github.io
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Spinner } from 'native-base';
 export default class SpinnerExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Spinner />
-          &lt;Spinner color='red' />
-          &lt;Spinner color='green' />
-          &lt;Spinner color='blue' />
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Spinner />
+          <Spinner color='red' />
+          <Spinner color='green' />
+          <Spinner color='blue' />
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content>
+        <nb-spinner />
+        <nb-spinner color="red" />
+        <nb-spinner color="green" />
+        <nb-spinner color="blue" />
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 **Configuration**

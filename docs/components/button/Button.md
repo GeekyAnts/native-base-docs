@@ -22,7 +22,8 @@ Buttons are the integral part of an application. They are used for various purpo
 
 
 *Syntax*
-{% codetabs name="Basic", type="js" -%}
+
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text } from 'native-base';
 export default class ButtonExample extends Component {
@@ -31,34 +32,27 @@ export default class ButtonExample extends Component {
       <Container>
         <Header />
         <Content>
-          // NativeBase default style
           <Button>
-            <Text>Click Me! </Text>
+            <Text>Click Me!</Text>
           </Button>
         </Content>
       </Container>
     );
   }
 }
-{%- language name="Advanced", type="js" -%}
-import React, { Component } from 'react';
-import { Container, Header, Content, Button, Text } from 'native-base';
-export default class ButtonExample extends Component {
-  render() {
-    return (
-      <Container>
-        <Header />
-        <Content>
-          // NativeBase default style
-          <Button>
-            <Text> Click Me! </Text>
-          </Button>
-        </Content>
-      </Container>
-    );
-  }
-}
-{%- endcodetabs %}<br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content>
+      <nb-button>
+        <nb-text>Click Me!</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 * Supports React Native app on both iOS and Android devices.
 * Button component takes input such as: Text, Icon, Text with Icon.

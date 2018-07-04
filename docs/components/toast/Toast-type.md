@@ -6,8 +6,9 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
-import { Container, Header, Title, Content, Text, Button, Icon, Left, Right, Body, Toast } from "native-base";
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
+import { Container, Header, Content, Text, Button, Toast } from "native-base";
 class ToastType extends Component {
   constructor(props) {
     super(props);
@@ -17,30 +18,19 @@ class ToastType extends Component {
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Toast Type&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Button
+      <Container>
+        <Header />
+        <Content padder>
+          <Button
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
                 buttonText: "Okay"
               })}
           >
-            &lt;Text>Default Toast&lt;/Text>
-          &lt;/Button>
-          &lt;Button
-            success
+            <Text>Default Toast</Text>
+          </Button>
+          <Button success
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -48,10 +38,9 @@ class ToastType extends Component {
                 type: "success"
               })}
           >
-            &lt;Text>Success Toast&lt;/Text>
-          &lt;/Button>
-          &lt;Button
-            warning
+            <Text>Success Toast</Text>
+          </Button>
+          <Button warning
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -59,10 +48,9 @@ class ToastType extends Component {
                 type: "warning"
               })}
           >
-            &lt;Text>Warning Toast&lt;/Text>
-          &lt;/Button>
-          &lt;Button
-            danger
+            <Text>Warning Toast</Text>
+          </Button>
+          <Button danger
             onPress={() =>
               Toast.show({
                 text: "Wrong password!",
@@ -70,10 +58,67 @@ class ToastType extends Component {
                 type: "danger"
               })}
           >
-            &lt;Text>Danger Toast&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+            <Text>Danger Toast</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-button :onPress="handleBtnPress1">
+        <nb-text>Default Toast</nb-text>
+      </nb-button>
+      <nb-button success :onPress="handleBtnPress2">
+        <nb-text>Success Toast</nb-text>
+      </nb-button>
+      <nb-button warning :onPress="handleBtnPress3">
+        <nb-text>Warning Toast</nb-text>
+      </nb-button>
+      <nb-button danger :onPress="handleBtnPress4">
+        <nb-text>Danger Toast</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Toast } from "native-base";
+export default {
+  methods: {
+    handleBtnPress1: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay"
+      });
+    },
+    handleBtnPress2: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        type: "success"
+      });
+    },
+    handleBtnPress3: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        type: "warning"
+      });
+    },
+    handleBtnPress4: function() {
+      Toast.show({
+        text: "Wrong password!",
+        buttonText: "Okay",
+        type: "danger"
+      });
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
