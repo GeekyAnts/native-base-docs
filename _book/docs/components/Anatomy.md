@@ -48,7 +48,7 @@ export default class AnatomyExample extends Component {
     <nb-header>
       <nb-left>
         <nb-button transparent>
-          <nb-icon :name="'menu'" />
+          <nb-icon :name="menu" />
         </nb-button>
       </nb-left>
       <nb-body>
