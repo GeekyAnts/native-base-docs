@@ -6,34 +6,62 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } from 'native-base';
 ​export default class SegmentIconExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header hasSegment>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Segment>
-              &lt;Button first>&lt;Icon name="arrow-back" />&lt;/Button>
-              &lt;Button last active>&lt;Icon name="arrow-forward" />&lt;/Button>
-            &lt;/Segment>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Icon name="search" />
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>Awesome segment&lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header hasSegment>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Segment>
+              <Button first active><Icon name="arrow-back" /></Button>
+              <Button last><Icon name="arrow-forward" /></Button>
+            </Segment>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name="search" />
+            </Button>
+          </Right>
+        </Header>
+        <Content padder>
+          <Text>Segment One</Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header hasSegment>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-segment>
+          <nb-button first active><nb-icon name="arrow-back" /></nb-button>
+          <nb-button last><nb-icon name="arrow-forward" />
+        </nb-segment>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-icon name="search" />
+        </nb-button>
+      </nb-right>
+    </nb-header>
+    <nb-content padder>
+      <nb-text>Segment One</nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

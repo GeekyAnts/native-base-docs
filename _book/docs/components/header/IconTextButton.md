@@ -6,29 +6,53 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
 export default class HeaderIconTextButtonExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='arrow-back' />
-              &lt;Text>Back&lt;/Text>
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Text>Cancel&lt;/Text>
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-      &lt;/Container>
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='arrow-back' />
+              <Text>Back</Text>
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Text>Cancel</Text>
+            </Button>
+          </Right>
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+          <nb-text>Back</nb-text>
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-text>Cancel</nb-text>
+        </nb-button>
+      </nb-right>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

@@ -8,27 +8,63 @@ A center aspect designed for efficient representation of vertically scrolling li
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text } from 'native-base';
 export default class DynamicListExample extends Component {
   render() {
-    var items = ['Simon Mignolet','Nathaniel Clyne','Dejan Lovren','Mama Sakho','Emre Can'];
+    var items = [
+      'Simon Mignolet',
+      'Nathaniel Clyne',
+      'Dejan Lovren',
+      'Mama Sakho',
+      'Emre Can'
+    ];
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List dataArray={items}
+      <Container>
+        <Header />
+        <Content>
+          <List dataArray={items}
             renderRow={(item) =>
-              &lt;ListItem>
-                &lt;Text>{item}&lt;/Text>
-              &lt;/ListItem>
+              <ListItem>
+                <Text>{item}</Text>
+              </ListItem>
             }>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list>
+        <nb-list-item v-for="item in items" :key="item">
+          {% raw %}<nb-text>{{item}}</nb-text>{% endraw %}
+        </nb-list-item>
+      </nb-list>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+export default {
+  data: function() {
+    return {
+      items: [
+        "Simon Mignolet",
+        "Nathaniel Clyne",
+        "Dejan Lovren",
+        "Mama Sakho",
+        "Emre Can",
+      ]
+    };
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 For more advanced implementation of rendering list dynamically, take a look at [nativebase-tutorial](https://github.com/GeekyAnts/nativebase-tutorial).

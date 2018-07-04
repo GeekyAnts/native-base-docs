@@ -8,37 +8,66 @@ Segments are best used as an alternative for tabs. Mainly used in iOS.
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } from 'native-base';
 ​export default class SegmentExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header hasSegment>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Segment>
-              &lt;Button first>&lt;Text>Puppies&lt;/Text>&lt;/Button>
-              &lt;Button last active>&lt;Text>Cubs&lt;/Text>&lt;/Button>
-            &lt;/Segment>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Icon name="search" />
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>Awesome segment&lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header hasSegment>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Segment>
+              <Button first><Text>Puppies</Text></Button>
+              <Button last active><Text>Cubs</Text></Button>
+            </Segment>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name="search" />
+            </Button>
+          </Right>
+        </Header>
+        <Content padder>
+          <Text>Awesome segment</Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header hasSegment>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-segment>
+          <nb-button first><nb-text>Puppies</nb-text></nb-button>
+          <nb-button last :active="true"><nb-text>Cubs</nb-text></nb-button>
+        </nb-segment>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-icon name="search" />
+        </nb-button>
+      </nb-right>
+    </nb-header>
+    <nb-content padder>
+      <nb-text>Awesome segment</nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 Segment takes Button as children. The active Button shoud be given an active prop (implementation is totally up to you).
 Also the **first** and **last** buttons should be given props **first** and **last** respectively.<br />

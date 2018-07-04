@@ -8,19 +8,35 @@ To have a textbox with round type border, include the <code>rounded</code> prop 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Item, Input } from 'native-base';
 export default class RoundedTextboxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Item rounded>
-            &lt;Input placeholder='Rounded Textbox'/>
-          &lt;/Item>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Item rounded>
+            <Input placeholder='Rounded Textbox'/>
+          </Item>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item rounded>
+          <nb-input placeholder="Rounded Textbox" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

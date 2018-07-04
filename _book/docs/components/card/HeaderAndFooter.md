@@ -10,31 +10,57 @@ To add an optional header and/or footer within a card, include <code>header</cod
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Body } from 'native-base';
 export default class CardHeaderFooterExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Card>
-            &lt;CardItem header>
-              &lt;Text>NativeBase&lt;/Text>
-            &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Body>
-                &lt;Text>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem header>
+              <Text>NativeBase</Text>
+            </CardItem>
+            <CardItem>
+              <Body>
+                <Text>
                   //Your text here
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem footer>
-              &lt;Text>GeekyAnts&lt;/Text>
-            &lt;/CardItem>
-         &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem footer>
+              <Text>GeekyAnts</Text>
+            </CardItem>
+         </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-card>
+        <nb-card-item header>
+          <nb-text>NativeBase</nb-text>
+        </nb-card-item>
+        <nb-card-item>
+          <nb-body>
+            <nb-text>
+              //Your text here
+            </nb-text>
+          </nb-body>            
+        </nb-card-item>
+        <nb-card-item footer>
+          <nb-text>GeekyAnts</nb-text>
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

@@ -11,44 +11,107 @@ Card Showcase is further customization of Card Image. It uses several different 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
 export default class CardShowcaseExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Card style=&#123;{flex: 0}}>
-            &lt;CardItem>
-              &lt;Left>
-                &lt;Thumbnail source=&#123;{uri: 'Image URL'}} />
-                &lt;Body>
-                  &lt;Text>NativeBase&lt;/Text>
-                  &lt;Text note>April 15, 2016&lt;/Text>
-                &lt;/Body>
-              &lt;/Left>
-            &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Body>
-                &lt;Image source=&#123;{uri: 'Image URL'}} style=&#123;{height: 200, width: 200, flex: 1}}/>
-                &lt;Text>
+      <Container>
+        <Header />
+        <Content>
+          {% raw %}<Card style={{flex: 0}}>{% endraw %}
+            <CardItem>
+              <Left>
+                {% raw %}<Thumbnail source={{uri: 'Image URL'}} />{% endraw %}
+                <Body>
+                  <Text>NativeBase</Text>
+                  <Text note>April 15, 2016</Text>
+                </Body>
+              </Left>
+            </CardItem>
+            <CardItem>
+              <Body>
+                {% raw %}<Image source={{uri: 'Image URL'}} style={{height: 200, width: 200, flex: 1}}/>{% endraw %}
+                <Text>
                   //Your text here
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem>
-              &lt;Left>
-                &lt;Button transparent textStyle=&#123;{color: '#87838B'}}>
-                  &lt;Icon name="logo-github" />
-                  &lt;Text>1,926 stars&lt;/Text>
-                &lt;/Button>
-              &lt;/Left>
-            &lt;/CardItem>
-          &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem>
+              <Left>
+                {% raw %}<Button transparent textStyle={{color: '#87838B'}}>{% endraw %}
+                  <Icon name="logo-github" />
+                  <Text>1,926 stars</Text>
+                </Button>
+              </Left>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-card>
+        <nb-card-item bordered>
+          <nb-left>
+            <nb-thumbnail :source="logo"></nb-thumbnail>
+            <nb-body>
+              <nb-text>NativeBase</nb-text>
+              <nb-text note>April 20, 2018</nb-text>
+            </nb-body>
+          </nb-left>
+        </nb-card-item> 
+        <nb-card-item>
+          <nb-body>
+            <image :source="cardImage" class="card-item-image" :style="stylesObj.cardItemImage"/>
+            <nb-text>//Your text here</nb-text>
+          </nb-body>
+        </nb-card-item>
+        <nb-card-item :style="{ paddingVertical: 0 }">
+          <nb-left>
+            <nb-button transparent>
+              <nb-icon name="logo-github"></nb-icon>
+              <nb-text>8000 stars</nb-text>
+            </nb-button>
+          </nb-left>
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+  import { Dimensions } from "react-native";
+  import logo from "logo.png";
+  import cardImage from "drawer-cover.png";
+  const deviceWidth = Dimensions.get("window").width;
+  export default {
+    data: function() {
+      return {
+        logo,
+        cardImage,
+        stylesObj: {
+          cardItemImage: {
+            resizeMode: "cover",
+            width: deviceWidth / 1.18
+          }
+        }
+      };
+    }
+  };
+</script>
+<style>
+  .card-item-image {
+    align-self: center;
+    height: 150;
+    margin-vertical: 5;
+  }
+</style>
+{%- endcodetabs %}
+<br />

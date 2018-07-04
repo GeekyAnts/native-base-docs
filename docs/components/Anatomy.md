@@ -8,39 +8,68 @@ A common way to use [NativeBase](https://nativebase.io/) screen structure is to 
 ![Preview android anatomy-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/anatomy.png)
 
 *General Syntax*
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base';
 export default class AnatomyExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='menu' />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content>
-          &lt;Text>
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+          <Text>
             This is Content Section
-          &lt;/Text>
-        &lt;/Content>
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button full>
-              &lt;Text>Footer&lt;/Text>
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+          </Text>
+        </Content>
+        <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>Footer</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon :name="'menu'" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+    <nb-content padder>
+      <nb-text>Content goes here</nb-text>
+    </nb-content>
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button active full>
+          <nb-text>Footer</nb-text>
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 * [NativeBase](https://nativebase.io/) provides its own frame component, named after <code>&lt;Container></code>.
@@ -91,28 +120,46 @@ export default class AnatomyExample extends Component {
 
 #### Header Anatomy
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Title, Button, Left, Right, Body, Icon } from 'native-base';
 export default class HeaderExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name='menu' />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-      &lt;/Container>
+      <Container>
+        <Header>
+          <Left>
+            <Button transparent>
+              <Icon name='menu' />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right />
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
-
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon :name="'menu'" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right />
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 #### Content Anatomy
 
@@ -124,23 +171,36 @@ export default class HeaderExample extends Component {
 * Replacing Component:
   React Native Keyboard Aware Scroll View's [KeyboardAwareScrollView](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Footer, Text } from 'native-base';
 export default class ContentExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content padder>
-          &lt;Text>
+      <Container>
+        <Header />
+        <Content padder>
+          <Text>
             This is Content Section
-          &lt;/Text>
-        &lt;/Content>
-        &lt;Footer />
-      &lt;/Container>
+          </Text>
+        </Content>
+        <Footer />
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content padder>
+      <nb-text>Content goes here</nb-text>
+    </nb-content>
+    <nb-footer/>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 <table class="table table-bordered">
     <thead>
@@ -187,22 +247,39 @@ export default class ContentExample extends Component {
 * Replacing Component: React Native [View](https://facebook.github.io/react-native/docs/view.html).
 
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 export default class FooterExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content />
-        &lt;Footer>
-          &lt;FooterTab>
-            &lt;Button full>
-              &lt;Text>Footer&lt;/Text>
-            &lt;/Button>
-          &lt;/FooterTab>
-        &lt;/Footer>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content />
+        <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>Footer</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content />
+    <nb-footer>
+      <nb-footer-tab>
+        <nb-button full>
+          <nb-text>Footer</nb-text>
+        </nb-button>
+      </nb-footer-tab>
+    </nb-footer>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

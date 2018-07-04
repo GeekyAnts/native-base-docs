@@ -19,28 +19,46 @@ Card is a flexible and extensible content container. It includes options for hea
 
 *Genertal Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Body, Text } from 'native-base';
 export default class CardExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Card>
-            &lt;CardItem>
-              &lt;Body>
-                &lt;Text>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem>
+              <Body>
+                <Text>
                    //Your text here
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-          &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+                </Text>
+              </Body>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-card>
+        <nb-card-item>
+          <nb-body>
+            <nb-text>//Your text here</nb-text>
+          </nb-body>            
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 * **Card**
     -   This component adds a box-shadow by default.

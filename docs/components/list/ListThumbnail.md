@@ -9,26 +9,57 @@ List Thumbnails are the medium to exhibit an image with your list item. To creat
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 export default class ListThumbnailExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List>
-            &lt;ListItem>
-              &lt;Thumbnail square size={80} source={&#123; uri: 'Image URL' }} />
-              &lt;Body>
-                &lt;Text>Sankhadeep&lt;/Text>
-                &lt;Text note>Its time to build a difference . .&lt;/Text>
-              &lt;/Body>
-            &lt;/ListItem>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <List>
+            <ListItem thumbnail>
+              <Left>
+                {% raw %}<Thumbnail square source={{ uri: 'Image URL' }} />{% endraw %}
+              </Left>
+              <Body>
+                <Text>Sankhadeep</Text>
+                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item thumbnail>
+        <nb-left>
+          <nb-thumbnail square :source="img.png" />
+        </nb-left>
+        <nb-body>
+          <nb-text>Sankhadeep</nb-Text>
+          <nb-text note :numberOfLines="1">Its time to build a difference . .</nb-Text>
+        </nb-body>
+        <nb-right>
+          <nb-button transparent>
+            <nb-text>View</nb-text>
+          </nb-button>
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

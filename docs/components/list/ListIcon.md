@@ -10,57 +10,112 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
 export default class ListIconExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List>
-            &lt;ListItem icon>
-              &lt;Left>
-                &lt;Icon name="plane" />
-              &lt;/Left>
-              &lt;Body>
-                &lt;Text>Airplane Mode&lt;/Text>
-              &lt;/Body>
-              &lt;Right>
-                &lt;Switch value={false} />
-              &lt;/Right>
-            &lt;/ListItem>
-            &lt;ListItem icon>
-              &lt;Left>
-                &lt;Icon name="wifi" />
-              &lt;/Left>
-              &lt;Body>
-                &lt;Text>Wi-Fi&lt;/Text>
-              &lt;/Body>
-              &lt;Right>
-                &lt;Text>GeekyAnts&lt;/Text>
-                &lt;Icon name="arrow-forward" />
-              &lt;/Right>
-            &lt;/ListItem>
-            &lt;ListItem icon>
-              &lt;Left>
-                &lt;Icon name="bluetooth" />
-              &lt;/Left>
-              &lt;Body>
-                &lt;Text>Bluetooth&lt;/Text>
-              &lt;/Body>
-              &lt;Right>
-                &lt;Text>On&lt;/Text>
-                &lt;Icon name="arrow-forward" />
-              &lt;/Right>
-            &lt;/ListItem>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <ListItem icon>
+            <Left>
+              {% raw %}<Button style={{ backgroundColor: "#FF9501" }}>{% endraw %}
+                <Icon active name="plane" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Airplane Mode</Text>
+            </Body>
+            <Right>
+              <Switch value={false} />
+            </Right>
+          </ListItem>
+          <ListItem icon>
+            <Left>
+              {% raw %}<Button style={{ backgroundColor: "#007AFF" }}>{% endraw %}
+                <Icon active name="wifi" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Wi-Fi</Text>
+            </Body>
+            <Right>
+              <Text>GeekyAnts</Text>
+              <Icon active name="arrow-forward" />
+            </Right>
+          </ListItem>
+          <ListItem icon>
+            <Left>
+              {% raw %}<Button style={{ backgroundColor: "#007AFF" }}>{% endraw %}
+                <Icon active name="bluetooth" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Bluetooth</Text>
+            </Body>
+            <Right>
+              <Text>On</Text>
+              <Icon active name="arrow-forward" />
+            </Right>
+          </ListItem>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item icon>
+        <nb-left>
+          <nb-button :style="{ backgroundColor: '#FF9501' }">
+            <nb-icon active name="plane" />
+          </nb-button>
+        </nb-left>
+        <nb-body>
+          <nb-text>Airplane Mode</nb-Text>
+        </nb-body>
+        <nb-right>
+          <nb-switch :value="false" />
+      </nb-right>
+    </nb-list-item>
+      <nb-list-item icon>
+        <nb-left>
+          <nb-button :style="{ backgroundColor: '#007AFF' }">
+            <nb-icon active name="wifi" />
+          </nb-button>
+        </nb-left>
+        <nb-body>
+          <nb-text>Wi-Fi</nb-text>
+        </nb-body>
+        <nb-right>
+          <nb-text>GeekyAnts</nb-text>
+          <nb-icon active name="arrow-forward" />
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item icon>
+        <nb-left>
+          <nb-button :style="{ backgroundColor: '#007AFF' }">
+            <nb-icon active name="bluetooth" />
+          </nb-button>
+        </nb-left>
+        <nb-body>
+          <nb-text>Bluetooth</nb-text>
+        </nb-body>
+        <nb-right>
+          <nb-text>On</nb-text>
+          <nb-icon active name="arrow-forward" />
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 

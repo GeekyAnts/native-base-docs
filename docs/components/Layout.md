@@ -12,24 +12,35 @@ Performance wise, Easy Grid is noteworthy and works as fine as Flexbox, not much
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Content } from 'native-base';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 export default class LayoutExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Grid>
-            &lt;Col style=&#123;{ backgroundColor: '#635DB7', height: 200 }}>&lt;/Col>
-            &lt;Col style=&#123;{ backgroundColor: '#00CE9F', height: 200 }}>&lt;/Col>
-          &lt;/Grid>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+          <Grid>
+            {% raw %}<Col style={{ backgroundColor: '#635DB7', height: 200 }}></Col>{% endraw %}
+            {% raw %}<Col style={{ backgroundColor: '#00CE9F', height: 200 }}></Col>{% endraw %}
+          </Grid>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-grid>
+      <nb-col :style="{ backgroundColor: '#635DB7' }"></nb-col>
+      <nb-col :style="{ backgroundColor: '#00CE9F' }"></nb-col>
+    </nb-grid>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 

@@ -8,36 +8,61 @@ The List Header component creates a list header, which can be used for grouping 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text } from 'native-base';
 export default class ListHeaderExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List>
-            &lt;ListItem itemHeader first>
-              &lt;Text>COMEDY&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem >
-              &lt;Text>Hangover&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem>
-              &lt;Text>Horrible Bosses&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem last>
-              &lt;Text>Conjuring&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem itemHeader>
-              &lt;Text>ACTION&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem>
-              &lt;Text>Terminator Genesis&lt;/Text>
-            &lt;/ListItem>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <List>
+            <ListItem itemHeader first>
+              <Text>COMEDY</Text>
+            </ListItem>
+            <ListItem >
+              <Text>Hangover</Text>
+            </ListItem>
+            <ListItem last>
+              <Text>Cop Out</Text>
+            </ListItem>
+            <ListItem itemHeader>
+              <Text>ACTION</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Terminator Genesis</Text>
+            </ListItem>
+          </List>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list>
+        <nb-list-item itemHeader first>
+          <nb-text>COMEDY</nb-text>
+        </nb-list-item>
+        <nb-list-item>
+          <nb-text>Hangover</nb-text>
+        </nb-list-item>
+        <nb-list-item last>
+          <nb-text>Cop Out</nb-text>
+        </nb-list-item>
+        <nb-list-item itemHeader>
+          <nb-text>ACTION</nb-text>
+        </nb-list-item>
+        <nb-list-item>
+          <nb-text>Terminator Genesis</nb-text>
+        </nb-list-item>
+      </nb-list>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

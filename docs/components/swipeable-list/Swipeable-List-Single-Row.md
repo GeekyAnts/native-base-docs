@@ -8,38 +8,85 @@ Single Swipable ListItem (Outside List)
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, SwipeRow, View, Text, Icon, Button } from 'native-base';
 ​export default class SwipeRowExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content scrollEnabled={false}>
-          &lt;SwipeRow
+      <Container>
+        <Header />
+        <Content scrollEnabled={false}>
+          <SwipeRow
             leftOpenValue={75}
             rightOpenValue={-75}
             left={
-              &lt;Button success onPress={() => alert('Add')}>
-                &lt;Icon active name="add" />
-              &lt;/Button>
+              <Button success onPress={() => alert('Add')}>
+                <Icon active name="add" />
+              </Button>
             }
             body={
-              &lt;View>
-                &lt;Text>SwipeRow Body Text&lt;/Text>
-              &lt;/View>
+              <View>
+                <Text>SwipeRow Body Text</Text>
+              </View>
             }
             right={
-              &lt;Button danger onPress={() => alert('Trash')}>
-                &lt;Icon active name="trash" />
-              &lt;/Button>
+              <Button danger onPress={() => alert('Trash')}>
+                <Icon active name="trash" />
+              </Button>
             }
           />
-        &lt;/Content>
-      &lt;/Container>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content :scrollEnabled="false">
+      <nb-swipe-row 
+        :leftOpenValue="75"
+        :rightOpenValue="-75"
+        :left="getSwipeLeftComponet()"
+        :body="getSwipeBodyComponet()"
+        :right="getSwipeRightComponet()"
+      />
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { Button, Icon, Text, View } from "native-base";
+export default {
+  methods: {
+    getSwipeLeftComponet: function() {
+      return (
+        <Button success onPress={() => alert("Add")}>
+          <Icon active name="add" />
+        </Button>
+      );
+    },
+    getSwipeBodyComponet: function() {
+      return (
+        <View>
+          <Text>Swipe me to left and right</Text>
+        </View>
+      );
+    },
+    getSwipeRightComponet: function() {
+      return (
+        <Button danger onPress={() => alert("Trash")}>
+          <Icon active name="trash" />
+        </Button>
+      );
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 

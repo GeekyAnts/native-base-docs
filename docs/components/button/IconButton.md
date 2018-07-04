@@ -9,36 +9,67 @@ This goes as simple as this: include your choice of icon using <code>Icon</code>
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Icon, Text } from 'native-base';
 export default class ButtonIconExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button iconLeft light>
-            &lt;Icon name='arrow-back' />
-            &lt;Text>Back&lt;/Text>
-          &lt;/Button>
-          &lt;Button iconRight light>
-            &lt;Text>Next&lt;/Text>
-            &lt;Icon name='arrow-forward' />
-          &lt;/Button>
-          &lt;Button iconLeft>
-            &lt;Icon name='home' />
-            &lt;Text>Home&lt;/Text>
-          &lt;/Button>
-          &lt;Button iconLeft transparent primary>
-            &lt;Icon name='beer' />
-            &lt;Text>Pub&lt;/Text>
-          &lt;/Button>
-          &lt;Button iconLeft dark>
-            &lt;Icon name='cog' />
-            &lt;Text>Settings&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button iconLeft light>
+            <Icon name='arrow-back' />
+            <Text>Back</Text>
+          </Button>
+          <Button iconRight light>
+            <Text>Next</Text>
+            <Icon name='arrow-forward' />
+          </Button>
+          <Button iconLeft>
+            <Icon name='home' />
+            <Text>Home</Text>
+          </Button>
+          <Button iconLeft transparent primary>
+            <Icon name='beer' />
+            <Text>Pub</Text>
+          </Button>
+          <Button iconLeft dark>
+            <Icon name='cog' />
+            <Text>Settings</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-button iconLeft light>
+        <nb-icon active name="arrow-back" />
+        <nb-text>Back</nb-text>
+      </nb-button>
+      <nb-button iconRight light>
+        <nb-text>Next</nb-text>
+        <nb-icon active name="arrow-forward" />
+      </nb-button>
+      <nb-button iconLeft>
+        <nb-icon active name="home" />
+        <nb-text>Home</nb-text>
+      </nb-button>
+      <nb-button iconLeft transparent>
+        <nb-icon active name="beer" />
+        <nb-text>Pub</nb-text>
+      </nb-button>
+      <nb-button iconLeft dark>
+        <nb-icon active name="cog" />
+        <nb-text>Settings</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

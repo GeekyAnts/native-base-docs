@@ -8,34 +8,59 @@ The <code>noLeft</code> prop of Header removes `<Left>` from Android Header.
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Left, Right, Body, Text } from "native-base";
 export default class HeaderNoLeft extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header noLeft>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right>
-            &lt;Button transparent>
-              &lt;Text>Cancel&lt;/Text>
-            &lt;/Button>
-          &lt;/Right>
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>
+      <Container>
+        <Header noLeft>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Text>Cancel</Text>
+            </Button>
+          </Right>
+        </Header>
+        <Content padder>
+          <Text>
             Header with noLeft prop, eliminates Left component for Android
-          &lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+          </Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header noLeft>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-text>Cancel</nb-text>
+        </nb-button>
+      </nb-right>
+    </nb-header>
+    <nb-content padder>
+      <nb-text>Header with noLeft prop, eliminates Left component for Android</nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

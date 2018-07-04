@@ -147,6 +147,18 @@ cd AwesomeNativeBase
 npm install native-base --save
 ```
 
+*Register NativeBase components*
+```
+import Vue from "vue-native-core";
+import { VueNativeBase } from "native-base";
+
+// registering all native-base components to the global scope of the Vue
+Vue.use(VueNativeBase);
+```
+Vue Native components are very similar to React Native components. You can use all the React Native components, by making use of the `kebab case` (hyphen-delimited) equivalent components. This is because Vue Native is a wrapper around the React Native APIs.
+
+To use NativeBase components with Vue Native, follow the same pattern, `kebab case`. And prefix NativeBase components with `nb-`
+
 **Run**
 
 ```

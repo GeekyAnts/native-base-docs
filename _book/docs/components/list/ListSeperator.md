@@ -10,37 +10,68 @@ Replacing Component: React Native [View](http://facebook.github.io/react-native/
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text, Separator } from 'native-base';
 export default class ListSeparatorExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Separator bordered>
-            &lt;Text>FORWARD&lt;/Text>
-          &lt;/Separator>
-          &lt;ListItem >
-            &lt;Text>Aaron Bennet&lt;/Text>
-          &lt;/ListItem>
-          &lt;ListItem>
-            &lt;Text>Claire Barclay&lt;/Text>
-          &lt;/ListItem>
-          &lt;ListItem last>
-            &lt;Text>Kelso Brittany&lt;/Text>
-          &lt;/ListItem>
-          &lt;Separator bordered>
-            &lt;Text>MIDFIELD&lt;/Text>
-          &lt;/Separator>
-          &lt;ListItem>
-            &lt;Text>Caroline Aaron&lt;/Text>
-          &lt;/ListItem>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Separator bordered>
+            <Text>MIDFIELD</Text>
+          </Separator>
+          <ListItem>
+            <Text>Caroline Aaron</Text>
+          </ListItem>
+          <ListItem last>
+            <Text>Lee Allen</Text>
+          </ListItem>
+          <Separator bordered>
+            <Text>MIDFIELD</Text>
+          </Separator>
+          <ListItem>
+            <Text>Caroline Aaron</Text>
+          </ListItem>
+          <ListItem last>
+            <Text>Lee Allen</Text>
+          </ListItem>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list>
+        <nb-separator bordered>
+          <nb-text>MIDFIELD</nb-text>
+        </nb-separator>
+        <nb-list-item>
+          <nb-text>Caroline Aaron</nb-text>
+        </nb-list-item>
+        <nb-list-item last>
+          <nb-text>Lee Allen</nb-text>
+        </nb-list-item>
+        <nb-separator bordered>
+          <nb-text>MIDFIELD</nb-text>
+        </nb-separator>
+        <nb-list-item>
+          <nb-text>Caroline Aaron</nb-text>
+        </nb-list-item>
+        <nb-list-item last>
+          <nb-text>Lee Allen</nb-text>
+        </nb-list-item>    
+      </nb-list>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+</code></pre><br />
 
 **Configuration**
 

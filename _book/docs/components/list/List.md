@@ -19,31 +19,52 @@ A base component for specifying lists of information. List must contain one or m
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Text } from 'native-base';
 export default class ListExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List>
-            &lt;ListItem>
-              &lt;Text>Simon Mignolet&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem>
-              &lt;Text>Nathaniel Clyne&lt;/Text>
-            &lt;/ListItem>
-            &lt;ListItem>
-              &lt;Text>Dejan Lovren&lt;/Text>
-            &lt;/ListItem>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <List>
+            <ListItem>
+              <Text>Simon Mignolet</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Nathaniel Clyne</Text>
+            </ListItem>
+            <ListItem>
+              <Text>Dejan Lovren</Text>
+            </ListItem>
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list>
+        <nb-list-item>
+          <nb-text>Simon Mignolet</nb-text>
+        </nb-list-item>
+        <nb-list-item>
+          <nb-text>Nathaniel Clyne</nb-text>
+        </nb-list-item>
+        <nb-list-item>
+          <nb-text>Dejan Lovren</nb-text>
+        </nb-list-item>
+      </nb-list>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 * <code>List</code>: This component defines a section to include your list items.
 * <code>ListItem</code>:

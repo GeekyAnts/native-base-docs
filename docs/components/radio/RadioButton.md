@@ -10,31 +10,62 @@ Replacing Component: React Native [TouchableOpacity](http://facebook.github.io/r
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
-import { Container, Header, Content, ListItem, Text, Radio, Right } from 'native-base';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
+import { Container, Header, Content, ListItem, Text, Radio, Right, Left } from 'native-base';
 export default class RadioButtonExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;ListItem>
-            &lt;Text>Daily Stand Up&lt;/Text>
-            &lt;Right>
-              &lt;Radio selected={false} />
-            &lt;/Right>
-          &lt;/ListItem>
-          &lt;ListItem>
-            &lt;Text>Discussion with Client&lt;/Text>
-            &lt;Right>
-              &lt;Radio selected={true} />
-            &lt;/Right>
-          &lt;/ListItem>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <ListItem>
+            <Left>
+              <Text>Daily Stand Up</Text>
+            </Left>
+            <Right>
+              <Radio selected={false} />
+            </Right>
+          </ListItem>
+          <ListItem>
+            <Left>
+              <Text>Discussion with Client</Text>
+            </Left>
+            <Right>
+              <Radio selected={true} />
+            </Right>
+          </ListItem>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item :selected="true">
+        <nb-left>
+          <nb-text>Lunch Break</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="true" />
+        </nb-right>
+      </nb-list-item>
+      <nb-list-item :selected="false">
+        <nb-left>
+          <nb-text>Daily Stand Up</nb-text>
+        </nb-left>
+        <nb-right>
+          <nb-radio :selected="false"/>
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />
 
 
 **Configuration**

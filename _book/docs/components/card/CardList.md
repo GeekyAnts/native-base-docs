@@ -9,25 +9,46 @@ Include <code>CardItem</code> subsequently within <code>Card</code> to create a 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Icon, Right } from 'native-base';
 export default class CardListExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Card>
-            &lt;CardItem>
-              &lt;Icon active name="logo-googleplus" />
-              &lt;Text>Google Plus&lt;/Text>
-              &lt;Right>
-                &lt;Icon name="arrow-forward" />
-              &lt;/Right>
-             &lt;/CardItem>
-           &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem>
+              <Icon active name="logo-googleplus" />
+              <Text>Google Plus</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+           </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content padder>
+      <nb-card>
+        <nb-card-item>
+          <nb-left>
+            <nb-icon name="logo-googleplus"></nb-icon>
+            <nb-text>Google Plus</nb-text>
+          </nb-left>            
+          <nb-right>
+            <nb-icon name="arrow-forward"></nb-icon>
+          </nb-right>            
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

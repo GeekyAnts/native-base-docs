@@ -8,26 +8,57 @@ Replacing Component: React Native [Image](https://facebook.github.io/react-nativ
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Thumbnail, Text } from 'native-base';
 export default class ThumbnailExample extends Component {
   render() {
     const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Text>Square Thumbnail&lt;/Text>
-          &lt;Thumbnail square source=&#123;{uri: uri}} />
-          &lt;Thumbnail square small source=&#123;{uri: uri}} />
-          &lt;Text>Circular Thumbnail&lt;/Text>
-          &lt;Thumbnail source=&#123;{uri: uri}} />
-          &lt;Thumbnail large source=&#123;{uri: uri}} />
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Text>Square Thumbnail</Text>
+          {% raw %}<Thumbnail square small source={{uri: uri}} />{% endraw %}
+          {% raw %}<Thumbnail square source={{uri: uri}} />{% endraw %}
+          {% raw %}<Thumbnail square large source={{uri: uri}} />{% endraw %}
+          <Text>Circular Thumbnail</Text>
+          {% raw %}<Thumbnail small source={{uri: uri}} />{% endraw %}
+          {% raw %}<Thumbnail source={{uri: uri}} />{% endraw %}
+          {% raw %}<Thumbnail large source={{uri: uri}} />{% endraw %}
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-text>Square Thumbnail</nb-text>
+      <nb-thumbnail square small :source="logo" />
+      <nb-thumbnail square :source="logo" />
+      <nb-thumbnail square large :source="logo" />
+      <nb-text>Circular Thumbnail</nb-text>
+      <nb-thumbnail small :source="logo" />
+      <nb-thumbnail :source="logo" />
+      <nb-thumbnail large :source="logo" />
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import logo from "favicon.png";
+export default {
+  data: function() {
+    return {
+      logo: logo,
+    };
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Note:** To have Thumbnail of custom size, include height and width with <code>style</code>.
 

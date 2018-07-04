@@ -87,7 +87,7 @@
         * [Picker Text and Item Styles](Components.md#picker-text-and-item-text-styles-headref)
         * [Picker Custom Back](Components.md#picker-with-custom-back-button-headref)
         * [Picker Custom Header](Components.md#picker-with-custom-header-headref)
-        * [Picker Custom Header Text](Components.md#picker-with-custom-header-text-headref)
+        <!-- * [Picker Custom Header Text](Components.md#picker-with-custom-header-text-headref) -->
         * [Picker Custom Header Style](Components.md#picker-with-custom-header-style-headref)
     * [Radio Button](Components.md#radio-button-headref)
         * [Custom Radio](Components.md#custom-radio-headref)

@@ -8,31 +8,53 @@ List Avatars are medium to showcase an image with your list item whose dimension
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Left, Body, Right, Thumbnail, Text } from 'native-base';
 export default class ListAvatarExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List>
-            &lt;ListItem avatar>
-              &lt;Left>
-                &lt;Thumbnail source={&#123; uri: 'Image URL' }} />
-              &lt;/Left>
-              &lt;Body>
-                &lt;Text>Kumar Pratik&lt;/Text>
-                &lt;Text note>Doing what you like will always keep you happy . .&lt;/Text>
-              &lt;/Body>
-              &lt;Right>
-                &lt;Text note>3:43 pm&lt;/Text>
-              &lt;/Right>
-            &lt;/ListItem>
-          &lt;/List>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <List>
+            <ListItem avatar>
+              <Left>
+                {% raw %}<Thumbnail source={{ uri: 'Image URL' }} />{% endraw %}
+              </Left>
+              <Body>
+                <Text>Kumar Pratik</Text>
+                <Text note>Doing what you like will always keep you happy . .</Text>
+              </Body>
+              <Right>
+                <Text note>3:43 pm</Text>
+              </Right>
+            </ListItem>
+          </List>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list-item avatar>
+        <nb-left>
+          <nb-thumbnail small :source="img.png" />
+        </nb-left>
+        <nb-body>
+          <nb-text>Kumar Pratik</nb-Text>
+          <nb-text note :numberOfLines="1">Doing what you like will always keep you happy . .</nb-Text>
+        </nb-body>
+        <nb-right>
+          <nb-text note>3:43 pm</nb-text>
+        </nb-right>
+      </nb-list-item>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

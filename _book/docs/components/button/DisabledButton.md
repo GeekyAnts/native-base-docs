@@ -8,26 +8,65 @@ The <code>disabled</code> prop of NativeBase Button is of type boolean. When pre
 ![Preview android button-disabled-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/button-disabled.png)
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Button, Text, Icon } from 'native-base';
 export default class ButtonDisabledExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Button disabled>&lt;Text>Default&lt;/Text>&lt;/Button>
-          &lt;Button disabled bordered>&lt;Text>Bordered&lt;/Text>&lt;/Button>
-          &lt;Button disabled rounded>&lt;Text>Rounded&lt;/Text>&lt;/Button>
-          &lt;Button disabled large>&lt;Text>Large&lt;/Text>&lt;/Button>
-          &lt;Button disabled iconRight>
-            &lt;Text>Icon Button&lt;/Text>
-            &lt;Icon name="home" />
-          &lt;/Button>
-          &lt;Button disabled block>&lt;Text>Block&lt;/Text>&lt;/Button>
-          &lt;Button disabled full>&lt;Text>Full&lt;/Text>&lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Button disabled>
+              <Text>Default</Text>
+            </Button>
+            <Button disabled bordered>
+              <Text>Outline</Text>
+            </Button>
+            <Button disabled rounded>
+              <Text>Rounded</Text>
+            </Button>
+            <Button disabled large>
+              <Text>Custom</Text>
+            </Button>
+            <Button disabled iconRight>
+              <Text>Icon Button</Text>
+              <Icon name="home" />
+            </Button>
+            <Button disabled block>
+              <Text>Block</Text>
+            </Button>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-button disabled light>
+        <nb-text>Default</nb-text>
+      </nb-button>
+      <nb-button disabled bordered>
+        <nb-text>Outline</nb-text>
+      </nb-button>
+      <nb-button disabled rounded>
+        <nb-text>Rounded</nb-text>
+      </nb-button>
+      <nb-button disabled large>
+        <nb-text>Custom</nb-text>
+      </nb-button>
+      <nb-button disabled iconRight>
+        <nb-text>Icon Button</nb-text>
+          <nb-icon name="home" />
+      </nb-button>
+      <nb-button disabled block>
+        <nb-text>Block</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

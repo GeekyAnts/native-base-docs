@@ -9,42 +9,70 @@ Include <code>button</code> prop with &lt;CardItem> to achieve onClick function 
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Card, CardItem, Text, Body, Left, Right, IconNB } from "native-base";
+import { Container, Header, Content, Card, CardItem, Text, Body } from "native-base";
 export default class CardItemButton extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Card Item Button&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Card>
-            &lt;CardItem header button onPress={() => alert("This is Card Header")}>
-              &lt;Text>NativeBase&lt;/Text>
-            &lt;/CardItem>
-            &lt;CardItem button onPress={() => alert("This is Card Body")}>
-              &lt;Body>
-                &lt;Text>
+      <Container>
+        <Header />
+        <Content padder>
+          <Card>
+            <CardItem header button onPress={() => alert("This is Card Header")}>
+              <Text>NativeBase</Text>
+            </CardItem>
+            <CardItem button onPress={() => alert("This is Card Body")}>
+              <Body>
+                <Text>
                   Click on any carditem
-                &lt;/Text>
-              &lt;/Body>
-            &lt;/CardItem>
-            &lt;CardItem footer button onPress={() => alert("This is Card Footer")}>
-              &lt;Text>GeekyAnts&lt;/Text>
-            &lt;/CardItem>
-          &lt;/Card>
-        &lt;/Content>
-      &lt;/Container>
+                </Text>
+              </Body>
+            </CardItem>
+            <CardItem footer button onPress={() => alert("This is Card Footer")}>
+              <Text>GeekyAnts</Text>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-card>
+        <nb-card-item header button :onPress="handleHeaderClick">
+          <nb-text>NativeBase</nb-text>
+        </nb-card-item>
+        <nb-card-item button :onPress="handleBodyClick">
+          <nb-body>
+            <nb-text>Click on any carditem.</nb-text>
+          </nb-body>            
+        </nb-card-item>
+        <nb-card-item footer button :onPress="handleFooterClick">
+          <nb-text>GeekyAnts</nb-text>
+        </nb-card-item>
+      </nb-card>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+export default {
+  methods: {
+    handleHeaderClick: function() {
+      alert("This is Card Header");
+    },
+    handleBodyClick: function() {
+      alert("This is Card Body");
+    },
+    handleFooterClick: function() {
+      alert("This is Card Footer");
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

@@ -8,29 +8,59 @@ The <code>transparent</code> prop of Header removes border, shadow from iOS Head
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">
+{% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Left, Body, Text } from "native-base";
 export default class HeaderTransparent extends Component {
   render() {
     return (
-      &lt;Container style={&#123;backgroundColor: "#87cefa"}}>
-        &lt;Header transparent>
-          &lt;Left>
-            &lt;Button transparent>
-              &lt;Icon name="arrow-back" />
-            &lt;/Button>
-          &lt;/Left>
-          &lt;Body>
-            &lt;Title>Transparent&lt;/Title>
-          &lt;/Body>
-        &lt;/Header>
-        &lt;Content padder>
-          &lt;Text>
+      {% raw %}<Container style={{backgroundColor: "#87cefa"}}>{% endraw %}
+        <Header transparent>
+          <Left>
+            <Button transparent>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Transparent</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Text>Cancel</Text>
+            </Button>
+          </Right>
+        </Header>
+        <Content padder>
+          <Text>
             Header with transparent prop
-          &lt;/Text>
-        &lt;/Content>
-      &lt;/Container>
+          </Text>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container :style="{backgroundColor: '#87cefa'}">
+    <nb-header transparent>
+      <nb-left>
+        <nb-button transparent>
+          <nb-icon name="arrow-back" />
+        </nb-button>
+      </nb-left>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right>
+        <nb-button transparent>
+          <nb-text>Cancel</nb-text>
+        </nb-button>
+      </nb-right>
+    </nb-header>
+    <nb-content padder>
+      <nb-text>Header with transparent prop</nb-text>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

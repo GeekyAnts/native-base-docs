@@ -8,20 +8,37 @@ To display textbox with valid data, include the <code>success</code> prop with <
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Item, Input, Icon } from 'native-base';
 export default class SuccessInputTextboxExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;Item success>
-            &lt;Input placeholder='Textbox with Success Input'/>
-            &lt;Icon name='checkmark-circle' />
-          &lt;/Item>
-        &lt;/Content>
-      &lt;/Container>
+      <Container>
+        <Header />
+        <Content>
+          <Item success>
+            <Input placeholder='Textbox with Success Input'/>
+            <Icon name='checkmark-circle' />
+          </Item>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-form>
+        <nb-item success>
+          <nb-input placeholder='Textbox with Success Input' />
+          <nb-icon name="checkmark-circle" />
+        </nb-item>
+      </nb-form>
+    </nb-content>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

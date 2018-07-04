@@ -10,30 +10,59 @@ Tabs are a horizontal region of buttons or links that allow for a consistent nav
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Content, Tab, Tabs } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
+import Tab3 from './tabThree';
 ​export default class TabsExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header hasTabs />
-        &lt;Tabs initialPage={1}>
-          &lt;Tab heading="Tab1">
-            &lt;Tab1 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab2">
-            &lt;Tab2 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab3">
-            &lt;Tab3 />
-          &lt;/Tab>
-        &lt;/Tabs>
-      &lt;/Container>
+      <Container>
+        <Header hasTabs />
+        <Tabs>
+          <Tab heading="Tab1">
+            <Tab1 />
+          </Tab>
+          <Tab heading="Tab2">
+            <Tab2 />
+          </Tab>
+          <Tab heading="Tab3">
+            <Tab3 />
+          </Tab>
+        </Tabs>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header hasTabs/>
+    <nb-tabs>
+      <nb-tab heading="Tab1">
+        <tab-one />
+      </nb-tab>
+      <nb-tab heading="Tab2">
+        <tab-two />
+      </nb-tab>
+       <nb-tab heading="Tab3">
+        <tab-three />
+      </nb-tab>
+    </nb-tabs>
+  </nb-container>
+</template>
+<script>
+import TabOne from "./components/tabOne";
+import TabTwo from "./components/tabTwo";
+import TabThree from "./components/tabThree";
+export default {
+  components: { TabOne, TabTwo, TabThree }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 

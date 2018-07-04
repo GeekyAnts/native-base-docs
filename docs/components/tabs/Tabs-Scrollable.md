@@ -6,36 +6,78 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
 import Tab1 from './tabOne';
-import Tab2 from './tabTwo';
+. . .
+import Tab5 from './tabFive';
 ​export default class TabsScrollableExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header hasTabs/>
-        &lt;Tabs renderTabBar={()=> &lt;ScrollableTab />}>
-          &lt;Tab heading="Tab1">
-            &lt;Tab1 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab2">
-            &lt;Tab2 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab3">
-            &lt;Tab3 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab4">
-            &lt;Tab4 />
-          &lt;/Tab>
-          &lt;Tab heading="Tab5">
-            &lt;Tab5 />
-          &lt;/Tab>
-        &lt;/Tabs>
-      &lt;/Container>
+      <Container>
+        <Header hasTabs/>
+        <Tabs renderTabBar={()=> <ScrollableTab />}>
+          <Tab heading="Tab1">
+            <Tab1 />
+          </Tab>
+          <Tab heading="Tab2">
+            <Tab2 />
+          </Tab>
+          <Tab heading="Tab3">
+            <Tab3 />
+          </Tab>
+          <Tab heading="Tab4">
+            <Tab4 />
+          </Tab>
+          <Tab heading="Tab5">
+            <Tab5 />
+          </Tab>
+        </Tabs>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header hasTabs/>
+    <nb-tabs :renderTabBar="getScollableTabComp">
+      <nb-tab heading="Tab1">
+        <tab-one />
+      </nb-tab>
+      <nb-tab heading="Tab2">
+        <tab-two />
+      </nb-tab>
+      <nb-tab heading="Tab3">
+        <tab-three />
+      </nb-tab>
+      <nb-tab heading="Tab4">
+        <tab-four />
+      </nb-tab>
+      <nb-tab heading="Tab5">
+        <tab-five />
+      </nb-tab>
+    </nb-tabs>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { ScrollableTab } from "native-base";
+import TabOne from "./components/tabOne";
+. . .
+import TabFive from "./components/tabFive";
+export default {
+  components: { TabOne, TabTwo, TabThree, TabFour, TabFive },
+  methods: {
+    getScollableTabComp: function() {
+      return <ScrollableTab />;
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 <table class="table table-bordered">
         <thead>

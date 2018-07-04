@@ -6,20 +6,35 @@
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Title } from 'native-base';
 export default class HeaderTitleExample extends Component {
   render() {
     return (
-      &lt;Container>
-        &lt;Header>
-          &lt;Left/>
-          &lt;Body>
-            &lt;Title>Header&lt;/Title>
-          &lt;/Body>
-          &lt;Right />
-        &lt;/Header>
-      &lt;/Container>
+      <Container>
+        <Header>
+          <Left/>
+          <Body>
+            <Title>Header</Title>
+          </Body>
+          <Right />
+        </Header>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header>
+      <nb-left/>
+      <nb-body>
+        <nb-title>Header</nb-title>
+      </nb-body>
+      <nb-right/>
+    </nb-header>
+  </nb-container>
+</template>
+{%- endcodetabs %}
+<br />

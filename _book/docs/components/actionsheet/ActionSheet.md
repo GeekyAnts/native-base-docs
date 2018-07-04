@@ -5,7 +5,7 @@ NativeBase ActionSheet is a wrapper around the React Native [ActionSheetIOS](htt
 
 For `ActionSheet` to work, you need to wrap your topmost component inside `<Root>` from native-base.
 
-```
+{% codetabs name="React Native", type="js" -%}
 import { Root } from "native-base";
 import { StackNavigator } from "react-navigation";
 const AppNavigator = StackNavigator(
@@ -17,14 +17,34 @@ export default () =>
   <Root>
     <AppNavigator />
   </Root>;
-```
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <root>
+    <app-navigation></app-navigation>
+  </root>
+</template>
+<script>
+import { Root } from "native-base";
+import { StackNavigator } from "vue-native-router";
+const AppNavigation = StackNavigator(
+  {
+    Page: { screen: Page },
+  }
+);
+export default {
+  components: { Root, AppNavigation }
+};
+</script>
+{%- endcodetabs %}
 
 
 ![Preview ios actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/actionsheet.gif)
 ![Preview android actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/actionsheet.gif)
 
 *General Syntax*
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
+
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from "react";
 import { Container, Header, Button, Content, ActionSheet, Text } from "native-base";
 var BUTTONS = ["Option 0", "Option 1", "Option 2", "Delete", "Cancel"];
 var DESTRUCTIVE_INDEX = 3;
@@ -36,10 +56,10 @@ export default class ActionSheetExample extends Component {
   }
   render() {
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content padder>
-          &lt;Button
+      <Container>
+        <Header />
+        <Content padder>
+          <Button
             onPress={() =>
             ActionSheet.show(
               {
@@ -53,11 +73,52 @@ export default class ActionSheetExample extends Component {
               }
             )}
           >
-            &lt;Text>Actionsheet&lt;/Text>
-          &lt;/Button>
-        &lt;/Content>
-      &lt;/Container>
+            <Text>Actionsheet</Text>
+          </Button>
+        </Content>
+      </Container>
     );
   }
 }
-</code></pre><br />
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header/>
+    <nb-content padder>
+      <nb-button :onPress="handleBtnPress">
+        <nb-text>Actionsheet</nb-text>
+      </nb-button>
+    </nb-content>
+  </nb-container>
+</template>
+
+<script>
+import { ActionSheet } from "native-base";
+export default {
+  data: function() {
+    return {
+      btnOptions: ["Option 0", "Option 1", "Option 2", "Delete", "Cancel"],
+      optionCancelIndex: 4,
+      optionDestructiveIndex: 3,
+      clicked: 0
+    };
+  },
+  methods: {
+    handleBtnPress: function() {
+      ActionSheet.show(
+        {
+          options: this.btnOptions,
+          cancelButtonIndex: this.optionCancelIndex,
+          destructiveButtonIndex: this.optionDestructiveIndex,
+          title: "Select An Option"
+        },
+        buttonIndex => {
+          this.clicked = this.btnOptions[buttonIndex];
+        }
+      );
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />

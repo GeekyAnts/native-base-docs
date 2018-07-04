@@ -8,7 +8,8 @@ Swipable List are ListItems that swipe open and close. Handles default native be
 
 *Syntax*
 
-<pre class="line-numbers"><code class="language-jsx">import React, { Component } from 'react';
+{% codetabs name="React Native", type="js" -%}
+import React, { Component } from 'react';
 import { ListView } from 'react-native';
 import { Container, Header, Content, Button, Icon, List, ListItem, Text } from 'native-base';
 const datas = [
@@ -39,31 +40,105 @@ export default class SwipeableListExample extends Component {
   render() {
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     return (
-      &lt;Container>
-        &lt;Header />
-        &lt;Content>
-          &lt;List
-            dataSource={this.ds.cloneWithRows(this.state.listViewData)}
-            renderRow={data =>
-              &lt;ListItem>
-                &lt;Text> {data} &lt;/Text>
-              &lt;/ListItem>}
-            renderLeftHiddenRow={data =>
-              &lt;Button full onPress={() => alert(data)}>
-                &lt;Icon active name="information-circle" />
-              &lt;/Button>}
-            renderRightHiddenRow={(data, secId, rowId, rowMap) =>
-              &lt;Button full danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
-                &lt;Icon active name="trash" />
-              &lt;/Button>}
+      <Container>
+        <Header />
+        <Content>
+          <List
             leftOpenValue={75}
             rightOpenValue={-75}
+            dataSource={this.ds.cloneWithRows(this.state.listViewData)}
+            renderRow={data =>
+              <ListItem>
+                <Text> {data} </Text>
+              </ListItem>}
+            renderLeftHiddenRow={data =>
+              <Button full onPress={() => alert(data)}>
+                <Icon active name="information-circle" />
+              </Button>}
+            renderRightHiddenRow={(data, secId, rowId, rowMap) =>
+              <Button full danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
+                <Icon active name="trash" />
+              </Button>}
           />
-        &lt;/Content>
-      &lt;/Container>
+        </Content>
+      </Container>
     );
   }
-}</code></pre><br />
+}
+{%- language name="Vue Native", type="vue" -%}
+<template>
+  <nb-container>
+    <nb-header />
+    <nb-content>
+      <nb-list
+        :leftOpenValue="75"
+        :rightOpenValue="-75"
+        :dataSource="getListArr()"
+        :renderRow="getListItemRow"
+        :renderLeftHiddenRow="getLeftHiddenRowComponet"
+        :renderRightHiddenRow="getRighttHiddenRowComponet"
+      >
+      </nb-list>
+    </nb-content>
+  </nb-container>
+</template>
+<script>
+import React from "react";
+import { ListView } from "react-native";
+import { Button, Icon, Text, ListItem } from "native-base";
+export default {
+  data: function() {
+    return {
+      ds: new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 }),
+      basic: true,
+      listViewData: [
+        "Simon Mignolet",
+        "Nathaniel Clyne",
+        "Dejan Lovren",
+        "Mama Sakho",
+        "Alberto Moreno",
+        "Emre Can",
+        "Joe Allen",
+        "Phil Coutinho"
+      ]
+    };
+  },
+  methods: {
+    deleteRow: function(secId, rowId, rowMap) {
+      rowMap[`${secId}${rowId}`].props.closeRow();
+      const newData = [...this.listViewData];
+      newData.splice(rowId, 1);
+      this.listViewData = newData;
+    },
+    getLeftHiddenRowComponet: function(data) {
+      return (
+        <Button full onPress={() => alert(data)}>
+          <Icon active name="information-circle" />
+        </Button>
+      );
+    },
+    getRighttHiddenRowComponet: function(data, secId, rowId, rowMap) {
+      return (
+        <Button full danger onPress={_ => this.deleteRow(secId, rowId, rowMap)}>
+          <Icon active name="trash" />
+        </Button>
+      );
+    },
+    getListArr: function() {
+      return this.ds.cloneWithRows(this.listViewData);
+    },
+    getListItemRow: function(data) {
+      return (
+        <ListItem>
+          <Text>{data}</Text>
+        </ListItem>
+      );
+    }
+  }
+};
+</script>
+{%- endcodetabs %}
+<br />
 
 **Configuration**
 

@@ -77,7 +77,7 @@
 {% include "./docs/components/picker/Picker-text-and-item-text-styles.md" %}
 {% include "./docs/components/picker/Picker-With-Custom-Back-Button.md" %}
 {% include "./docs/components/picker/Picker-With-Custom-Header.md" %}
-{% include "./docs/components/picker/Picker-With-Custom-Header-Text.md" %}
+<!-- {% include "./docs/components/picker/Picker-With-Custom-Header-Text.md" %} -->
 {% include "./docs/components/picker/Picker-With-Custom-Header-Style.md" %}
 {% include "./docs/components/radio/RadioButton.md" %}
 {% include "./docs/components/radio/radio-custom.md" %}
