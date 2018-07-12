@@ -27,7 +27,7 @@ export default class PickerCustomHeaderStyleExample extends Component {
           <Form>
             <Picker
               mode="dropdown"
-              {% raw %}iosIcon={{Icon name="ios-arrow-down-outline" />}{% endraw %}
+              {% raw %}iosIcon={<Icon name="ios-arrow-down-outline" />}{% endraw %}
               {% raw %}headerStyle={{ backgroundColor: "#b95dd3" }}{% endraw %}
               {% raw %}headerBackButtonTextStyle={{ color: "#fff" }}{% endraw %}
               {% raw %}headerTitleStyle={{ color: "#fff" }}{% endraw %}
