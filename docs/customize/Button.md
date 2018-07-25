@@ -6,7 +6,7 @@ Steps to customize theme for Button attributes:
 
 ##### With Button theme
 
-With this theme of Button component you can modify any style rules applied to the default Button component.
+With the Button component, you can modify any of the style rules that were applied by default.
 
 *Syntax*
 
@@ -54,8 +54,8 @@ export default class ThemeButtonExample extends Component {
 
 ##### With Variables
 
-With the <code>variable.js</code> file you can modify the variable values passed to the theme of the Button component.<br />
-Say value of <code>btnTextSize</code> to change the fontSize of the Text in Button.
+With the <code>variable.js</code> file, you can modify the variable values passed to the theme of the Button component.<br />
+For example, if you want to change the button's font size, you would use  <code>btnTextSize</code> and set it to a value.
 
 *Syntax*
 
@@ -101,4 +101,4 @@ export default class ThemeButtonExample extends Component {
   }
 }</code></pre><br />
 
-**Note:** To customise button theme, refer [Theme Color](https://docs.nativebase.io/Customize.html#theme-color-headref)
+**Note:** To customise the button theme, refer to [Theme Color](https://docs.nativebase.io/Customize.html#theme-color-headref)
