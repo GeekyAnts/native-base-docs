@@ -2,7 +2,7 @@
 
 This plugin will add a `table of content` navigator on the right top of each page, and a `return to top` button.
 
-It is based on https://github.com/yaneryou/gitbook-plugin-anchor-navigation, fix the gitbook compatability.
+It is based on https://github.com/yaneryou/gitbook-plugin-anchor-navigation, fix the gitbook compatibility.
 
 ## What's it look like?
 

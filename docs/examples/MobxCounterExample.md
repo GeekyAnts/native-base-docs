@@ -126,7 +126,7 @@ export default class Counter extends Component{
 
 - We import <code>observer</code> from <code>mobx-react</code> and make our Class <code>observer</code> by pre-fixing @observer. <br />
 - <code>async componentWillMount()</code> method is used to load fonts as described [here](./GetStarted.md#Setup_with_CRNA). <br />
-- <code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile,we display <code>Expo.AppLoading</code> screen. <br />
+- <code>state.isReady</code> is used to find out if fonts are loaded. In the meanwhile, we display <code>Expo.AppLoading</code> screen. <br />
 - We import our <code>counterStore</code> and display the observable store value <code>counter</code> in a <code>Card</code>. Buttons will fire respective functions from the Store Class.
 
 ## Finishing Up

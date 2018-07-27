@@ -5,7 +5,7 @@
 ![Preview ios picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon.gif)
 ![Preview android picker-with-icon-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif)
 
-*Synatx*
+*Syntax*
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";

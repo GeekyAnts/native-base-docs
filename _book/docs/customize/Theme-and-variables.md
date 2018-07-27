@@ -12,7 +12,7 @@ NativeBase comes with a `theme` folder which comprises of two sub-folders
 NativeBase is packed with three preset themes. <br />
 * **Platform:** The default theme of NativeBase which maps to the design of the platform where the app runs i.e., platform-specific theme for iOS and Android.
 * **Material:** Sometimes, you need Material design for both the platforms. Not everyone is a fan of it, but Google does use Material design on iOS. This theme is not 100% material yet but, it can be used today. <br />
-* **CommonColor:** Most of the brands use a common color scheme for both the platforms.But they also follow platform specific icons, font and orientation of the components. CommonColor theme is best suited for such use-cases. <br />
+* **CommonColor:** Most of the brands use a common color scheme for both the platforms. But they also follow platform specific icons, font and orientation of the components. CommonColor theme is best suited for such use-cases. <br />
 
 Check [Theme and Variables](https://docs.nativebase.io/docs/ThemeVariables.html) to know list of customizable variables.
 Before going ahead of modifying in your `node_modules/native-base/theme`, check the procedure below to generate new theme for you to play with.

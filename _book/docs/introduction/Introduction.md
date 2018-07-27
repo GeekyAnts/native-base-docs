@@ -6,7 +6,7 @@
 ![Cover NativeBase](https://docs.nativebase.io/docs/assets/web-cover1.jpg)
 
 
-One of our main goal with [NativeBase](https://nativebase.io/) **2.0** is to make it easy to theme the components with very little changes to components themself.
+One of our main goal with [NativeBase](https://nativebase.io/) **2.0** is to make it easy to theme the components with very little changes to components themselves.
 
 *General Syntax of NativeBase Component*
 

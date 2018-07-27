@@ -1,4 +1,4 @@
-##list-seperator-headref
+##list-separator-headref
 #### List Separator
 
 Separator component is a separator usually used in list, which can be used for grouping list items. Though it is used with List, you can use it anywhere in your app.<br />
