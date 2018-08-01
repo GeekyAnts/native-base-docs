@@ -99,5 +99,4 @@
 {% include "./docs/components/toast/Toast-text-style.md" %}
 {% include "./docs/components/toast/Toast-button-style.md" %}
 {% include "./docs/components/Typography.md" %}
-{% include "./docs/components/Drawer.md" %}
 {% include "./docs/components/Ref.md" %}
