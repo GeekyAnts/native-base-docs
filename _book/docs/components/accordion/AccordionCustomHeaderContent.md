@@ -16,7 +16,7 @@ const dataArray = [
   { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
 ];
 export default class AccordionCustomHeaderContentExample extends Component {
-  _renderHeader({title, expanded}) {
+  _renderHeader({title}, expanded) {
     return (
       <View
         {% raw %}style={{ flexDirection: "row", padding: 10, justifyContent: "space-between", alignItems: "center", backgroundColor: "#A9DAD6" }}{% endraw %}
