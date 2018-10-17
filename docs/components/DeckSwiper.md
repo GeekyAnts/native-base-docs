@@ -234,6 +234,7 @@ export default class DeckSwiperAdvancedExample extends Component {
               {% raw %}<View style={{ alignSelf: "center" }}>{% endraw %}
                 <Text>Over</Text>
               </View>
+            }
             renderItem={item =>
               {% raw %}<Card style={{ elevation: 3 }}>{% endraw %}
                 <CardItem>
