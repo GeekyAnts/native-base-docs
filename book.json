@@ -16,7 +16,9 @@
       "token": "UA-100873927-1"
     },
     "scripts": {
-      "files": ["./engine.js"]
+      "files": [
+        "./engine.js"
+      ]
     },
     "edit-link": {
       "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
