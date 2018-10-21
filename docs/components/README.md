@@ -35,5 +35,4 @@ This docs have limited examples. For more examples go through [NativeBase-Kitche
 * [Thumbnail](Components.md#Thumbnail)
 * [Toast](Components.md#toast-def-headref)
 * [Typography](Components.md#Typography)
-* [Drawer](Components.md#Drawer)
 * [Ref](Components.md#ref-components-headref)
