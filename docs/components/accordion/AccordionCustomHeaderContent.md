@@ -81,14 +81,14 @@ export default {
     };
   },
   methods: {
-    _renderContent: function(content) {
+    _renderContent: function({ content }) {
       return (
         {% raw %}<Text style={{ backgroundColor: "#e3f1f1", padding: 10, fontStyle: "italic" }}>{% endraw %}
           {content}
         </Text>
       );
     },
-    _renderHeader: function(title, expanded) {
+    _renderHeader: function({ title }, expanded) {
       return (
         <View
           {% raw %}style={{ flexDirection: "row", padding: 10, justifyContent: "space-between", alignItems: "center", backgroundColor: "#A9DAD6"}}{% endraw %}
