@@ -33,10 +33,10 @@ You've successfully setup [NativeBase](https://nativebase.io/) with your [React 
 Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-app) an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
 
 
-## Setup with CRNA
-Create React Native project using the CRNA CLI.<br />
-CRNA helps you make React Native apps with no build configuration. CRNA works on macOS, Windows, and Linux. <br />
-Refer this link for additional information [CRNA](https://github.com/react-community/create-react-native-app)
+## Setup with Expo
+Create React Native project using expo.<br />
+Expo helps you make React Native apps with no build configuration. Expo works on macOS, Windows, and Linux. <br />
+Refer this link for additional information [Expo](https://expo.io/)
 
 *Install NativeBase*
 ```js
