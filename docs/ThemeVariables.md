@@ -355,6 +355,34 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
 </table>
 <br/>
 
+<h3>Container</h3>
+<table width="80%" class="table table-hover">
+    <thead>
+        <tr>
+            <th rowspan=2>Variable</th>
+            <th rowspan=2>Type</th>
+            <th rowspan=2>Description</th>
+            <th colspan=2>
+                Platform values
+                <tr>
+                    <td>iOS</td>
+                    <td>Android</td>
+                </tr>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>containerBgColor</td>
+            <td>color</td>
+            <td>Default background color</td>
+            <td>#fff</td>
+            <td>#fff</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+
 <h3>Date Picker</h3>
 <table width="80%" class="table table-hover">
     <thead>

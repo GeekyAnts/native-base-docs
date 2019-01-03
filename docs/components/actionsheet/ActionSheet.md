@@ -41,6 +41,58 @@ export default {
 ![Preview ios actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/actionsheet.gif)
 ![Preview android actionsheet-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/actionsheet.gif)
 
+
+**Configuration**<br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>options</td>
+              <td> - </td>
+              <td>Array of strings</td>
+              <td>List of button titles</td>
+          </tr>
+          <tr>
+              <td>cancelButtonIndex</td>
+              <td>-</td>
+              <td>int</td>
+              <td>index of cancel button in 'options'</td>
+          </tr>
+          <tr>
+              <td>destructiveButtonIndex</td>
+              <td>-</td>
+              <td>int</td>
+              <td>index of destructive button in 'options'</td>
+          </tr>
+          <tr>
+              <td>title</td>
+              <td>-</td>
+              <td>string</td>
+              <td>a title to show above the ActionSheet</td>
+          </tr>
+          <tr>
+              <td>show()</td>
+              <td>-</td>
+              <td>method</td>
+              <td>show ActionSheet</td>
+          </tr>
+          <tr>
+              <td>hide()</td>
+              <td>-</td>
+              <td>method</td>
+              <td>hide ActionSheet</td>
+          </tr>
+        </tbody>
+    </table>
+<br />
+
 *General Syntax*
 
 {% codetabs name="React Native", type="js" -%}

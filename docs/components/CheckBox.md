@@ -68,7 +68,7 @@ export default class CheckBoxExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
-br />
+<br />
 
 **Configuration**
 
