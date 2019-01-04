@@ -52,6 +52,106 @@
             </thead>
             <tbody>
 
+                <!-- Accordion -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Accordion></td>
+                    <td>Toggle the visibility of content across items of your screen</td>
+                    <td>
+                       -
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>dataArray</li>
+                        </ul>
+                    </td>
+                    <td>Array of data chunks to render iteratively</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>expanded</li>
+                        </ul>
+                    </td>
+                    <td>Index of accordion set open</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>headerStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style accordion header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>contentStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style accordion content</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>icon</li>
+                        </ul>
+                    </td>
+                    <td>Icon when accordion is closed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>expandedIcon</li>
+                        </ul>
+                    </td>
+                    <td>Icon when accordion is open</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>iconStyle</li>
+                        </ul>
+                    </td>
+                    <td>Icon style when accordion is closed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>expandedIconStyle</li>
+                        </ul>
+                    </td>
+                    <td>Icon style when accordion is open</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderHeader</li>
+                        </ul>
+                    </td>
+                    <td>Custom design of Accordion header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderContent</li>
+                        </ul>
+                    </td>
+                    <td>Custom design of Accordion content</td>
+                    <td></td>
+                </tr>
+
+
                 <!-- ActionSheet -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;ActionSheet></td>
@@ -62,6 +162,60 @@
                             Modal
                         </a>
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>options</li>
+                        </ul>
+                    </td>
+                    <td>List of button titles</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>cancelButtonIndex</li>
+                        </ul>
+                    </td>
+                    <td>index of cancel button in 'options'</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>destructiveButtonIndex</li>
+                        </ul>
+                    </td>
+                    <td>index of destructive button in 'options'</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>title</li>
+                        </ul>
+                    </td>
+                    <td>a title to show above the ActionSheet</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>show()</li>
+                        </ul>
+                    </td>
+                    <td>show ActionSheet</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>hide()</li>
+                        </ul>
+                    </td>
+                    <td>hide ActionSheet</td>
+                    <td></td>
                 </tr>
 
 
@@ -502,6 +656,111 @@
 
 
 
+                <!-- Date Picker -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;DatePicker></td>
+                    <td>Select a date from a time range</td>
+                    <td>
+                        React Native
+                        <a href="https://facebook.github.io/react-native/docs/datepickerios">
+                            DatePickerIOS
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>defaultDate</li>
+                        </ul>
+                    </td>
+                    <td>Sets default date in calendar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>minimumDate</li>
+                        </ul>
+                    </td>
+                    <td>Sets minimum date that can be set in calendar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>maximumDate</li>
+                        </ul>
+                    </td>
+                    <td>Sets maximum date that can be set in calender</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>androidMode</li>
+                        </ul>
+                    </td>
+                    <td>can take either of values 'default','calendar','spinner'</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>animationType</li>
+                        </ul>
+                    </td>
+                    <td>can take either of values 'fade','slide','none'</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disabled</li>
+                        </ul>
+                    </td>
+                    <td>Prevent user from making selection of date</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>iconStyle</li>
+                        </ul>
+                    </td>
+                    <td>Icon style when accordion is closed</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>expandedIconStyle</li>
+                        </ul>
+                    </td>
+                    <td>Icon style when accordion is open</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderHeader</li>
+                        </ul>
+                    </td>
+                    <td>Custom design of Accordion header</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderContent</li>
+                        </ul>
+                    </td>
+                    <td>Custom design of Accordion content</td>
+                    <td></td>
+                </tr>
+
+
+
+
                 <!-- Deck Swiper -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;DeckSwiper></td>
@@ -512,6 +771,78 @@
                             &lt;View>
                         </a>
                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>dataSource</li>
+                        </ul>
+                    </td>
+                    <td>Chunk of data(object)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderEmpty</li>
+                        </ul>
+                    </td>
+                    <td>Callback called when all cards are swiped & dataSource empty</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderItem</li>
+                        </ul>
+                    </td>
+                    <td>Callback takes a chunk of data & returns a component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderTop</li>
+                        </ul>
+                    </td>
+                    <td>Callback takes a chunk of data & returns a top layer component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderBottom</li>
+                        </ul>
+                    </td>
+                    <td>Callback takes a chunk of data & returns a bottom layer component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>looping</li>
+                        </ul>
+                    </td>
+                    <td>Loop through the data</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onSwipeRight</li>
+                        </ul>
+                    </td>
+                    <td>Callback called when Card is swiped Right</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onSwipeLeft</li>
+                        </ul>
+                    </td>
+                    <td>Callback called when Card is swiped Left</td>
+                    <td></td>
                 </tr>
 
 

@@ -30,7 +30,7 @@ This docs have limited examples. For more examples go through [NativeBase-Kitche
 * [Search Bar](Components.md#search-bar-headref)
 * [Segment](Components.md#segment-inside-header-headref)
 * [Spinner](Components.md#Spinner)
-* [Swipable List](Components.md#swipeable-multi-def-headref)
+* [Swipeable List](Components.md#swipeable-multi-def-headref)
 * [Tabs](Components.md#tabs-def-headref)
 * [Thumbnail](Components.md#Thumbnail)
 * [Toast](Components.md#toast-def-headref)

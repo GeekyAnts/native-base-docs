@@ -1,7 +1,7 @@
 ## swipeable-multi-def-headref
 ## Swipeable List
 
-Swipable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br />
+Swipeable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br />
 
 ![Preview ios swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-multiple.gif)
 ![Preview android swipeable-multi-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-multiple.gif)

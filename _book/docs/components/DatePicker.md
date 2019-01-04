@@ -1,6 +1,8 @@
 ## date-picker-def-headref
 ## Date Picker
 
+Date Picker allows the user to select a date from a time range.<br />
+
 ![Preview ios date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/date-picker.gif)
 ![Preview android date-picker-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/date-picker.gif)
 
@@ -36,6 +38,7 @@ export default class DatePickerExample extends Component {
             {% raw %}textStyle={{ color: "green" }}{% endraw %}
             {% raw %}placeHolderTextStyle={{ color: "#d3d3d3" }}{% endraw %}
             onDateChange={this.setDate}
+            disabled={false}
             />
             <Text>
               Date: {this.state.chosenDate.toString().substr(4, 12)}
@@ -87,4 +90,55 @@ export default {
 };
 </script>
 {%- endcodetabs %}
+<br />
+
+**Configuration**<br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>defaultDate</td>
+              <td> - </td>
+              <td>Date Object</td>
+              <td>Sets default date in calendar</td>
+          </tr>
+          <tr>
+              <td>minimumDate</td>
+              <td>-</td>
+              <td>Date Object</td>
+              <td>Sets minimum date that can be set in calendar</td>
+          </tr>
+          <tr>
+              <td>maximumDate</td>
+              <td>-</td>
+              <td>Date Object</td>
+              <td>Sets maximum date that can be set in calendar</td>
+          </tr>
+          <tr>
+              <td>androidMode</td>
+              <td>-</td>
+              <td>string</td>
+              <td>can take either of values 'default','calendar','spinner'</td>
+          </tr>
+          <tr>
+              <td>animationType</td>
+              <td>-</td>
+              <td>string</td>
+              <td>can take either of values 'fade','slide','none'</td>
+          </tr>
+          <tr>
+              <td>disabled</td>
+              <td>true</td>
+              <td>boolean</td>
+              <td>Prevent user from making selection of date</td>
+          </tr>
+        </tbody>
+    </table>
 <br />

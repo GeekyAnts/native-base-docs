@@ -158,10 +158,22 @@ export default {
             <td>Milliseconds after which Toast disappers</td>
         </tr>
         <tr>
-            <td>onClose</td>
+            <td>onClose()</td>
             <td> - </td>
             <td> function </td>
             <td>Called just before the toast hides</td>
+        </tr>
+        <tr>
+            <td>show()</td>
+            <td> - </td>
+            <td> function </td>
+            <td>Displays the Toast</td>
+        </tr>
+        <tr>
+            <td>hide()</td>
+            <td> - </td>
+            <td> function </td>
+            <td>Hides the Toast</td>
         </tr>
     </tbody>
 </table><br />

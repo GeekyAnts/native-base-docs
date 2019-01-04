@@ -1,7 +1,7 @@
 ## swipeable-single-def-headref
 #### SwipeRow
 
-Single Swipable ListItem (Outside List)
+Single Swipeable ListItem (Outside List)
 
 ![Preview ios swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-single-row.gif)
 ![Preview android swipeable-single-def-headref](https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-single-row.gif)
