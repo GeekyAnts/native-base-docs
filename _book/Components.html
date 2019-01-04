@@ -1452,7 +1452,7 @@
                 <a href="Components.html#swipeable-multi-def-headref">
             
                     
-                    Swipable List
+                    Swipeable List
             
                 </a>
             
@@ -1466,7 +1466,7 @@
                 <a href="Components.html#swipeable-multi-def-headref">
             
                     
-                    Multiple Swipable List
+                    Multiple Swipeable List
             
                 </a>
             
@@ -2079,7 +2079,7 @@
 <li><a href="Components.html#search-bar-headref">Search Bar</a></li>
 <li><a href="Components.html#segment-inside-header-headref">Segment</a></li>
 <li><a href="Components.html#Spinner">Spinner</a></li>
-<li><a href="Components.html#swipeable-multi-def-headref">Swipable List</a></li>
+<li><a href="Components.html#swipeable-multi-def-headref">Swipeable List</a></li>
 <li><a href="Components.html#tabs-def-headref">Tabs</a></li>
 <li><a href="Components.html#Thumbnail">Thumbnail</a></li>
 <li><a href="Components.html#toast-def-headref">Toast</a></li>
@@ -2635,20 +2635,24 @@ export default {
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/accordion-custom-header-content.gif" alt="Preview android accordion-custom-header-content-headref"></p>
 <p><em>General Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Content, Accordion, View, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Accordion, Text, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">const</span> dataArray = [
   { title: <span class="hljs-string">&quot;First Element&quot;</span>, content: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet&quot;</span> },
   { title: <span class="hljs-string">&quot;Second Element&quot;</span>, content: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet&quot;</span> },
   { title: <span class="hljs-string">&quot;Third Element&quot;</span>, content: <span class="hljs-string">&quot;Lorem ipsum dolor sit amet&quot;</span> }
 ];
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccordionCustomHeaderContentExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-  _renderHeader(title, expanded) {
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AccordionCustomHeaderContent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  _renderHeader(item, expanded) {
     <span class="hljs-keyword">return</span> (
-      &lt;View
-        style={{ flexDirection: &quot;row&quot;, padding: 10, justifyContent: &quot;space-between&quot;, alignItems: &quot;center&quot;, backgroundColor: &quot;#A9DAD6&quot; }}
-      &gt;
-        &lt;Text style={{ fontWeight: &quot;600&quot; }}&gt;
-          {&quot; &quot;}{title}
+      &lt;View style={{
+        flexDirection: &quot;row&quot;,
+        padding: 10,
+        justifyContent: &quot;space-between&quot;,
+        alignItems: &quot;center&quot; ,
+        backgroundColor: &quot;#A9DAD6&quot; }}&gt;
+      &lt;Text style={{ fontWeight: &quot;600&quot; }}&gt;
+          {&quot; &quot;}{item.title}
         &lt;/Text&gt;
         {expanded
           ? &lt;Icon style={{ fontSize: 18 }} name=&quot;remove-circle&quot; /&gt;
@@ -2656,12 +2660,16 @@ export default {
       &lt;/View&gt;
     );
   }
-  _renderContent(content) {
+  _renderContent(item) {
     return (
       &lt;Text
-        style={{ backgroundColor: &quot;#e3f1f1&quot;, padding: 10, fontStyle: &quot;italic&quot; }}
+        style={{
+          backgroundColor: &quot;#e3f1f1&quot;,
+          padding: 10,
+          fontStyle: &quot;italic&quot;,
+        }}
       &gt;
-        {content}
+        {item.content}
       &lt;/Text&gt;
     );
   }
@@ -2669,9 +2677,11 @@ export default {
     return (
       &lt;Container&gt;
         &lt;Header /&gt;
-        &lt;Content padder&gt;
+        &lt;Content padder style={{ backgroundColor: &quot;white&quot; }}&gt;
           &lt;Accordion
             dataArray={dataArray}
+            animation={true}
+            expanded={true}
             renderHeader={this._renderHeader}
             renderContent={this._renderContent}
           /&gt;
@@ -2679,7 +2689,8 @@ export default {
       &lt;/Container&gt;
     );
   }
-}</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-vue">&lt;template&gt;
+}
+&lt;br/&gt;</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-vue">&lt;template&gt;
   &lt;nb-container&gt;
     &lt;nb-header /&gt;
     &lt;nb-content&gt;
@@ -2764,6 +2775,56 @@ export default {
 &lt;/script&gt;</code></pre></div></div></div></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/actionsheet.gif" alt="Preview ios actionsheet-def-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/actionsheet.gif" alt="Preview android actionsheet-def-headref"></p>
+<p><strong>Configuration</strong><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>options</td>
+              <td> - </td>
+              <td>Array of strings</td>
+              <td>List of button titles</td>
+          </tr>
+          <tr>
+              <td>cancelButtonIndex</td>
+              <td>-</td>
+              <td>int</td>
+              <td>index of cancel button in &apos;options&apos;</td>
+          </tr>
+          <tr>
+              <td>destructiveButtonIndex</td>
+              <td>-</td>
+              <td>int</td>
+              <td>index of destructive button in &apos;options&apos;</td>
+          </tr>
+          <tr>
+              <td>title</td>
+              <td>-</td>
+              <td>string</td>
+              <td>a title to show above the ActionSheet</td>
+          </tr>
+          <tr>
+              <td>show()</td>
+              <td>-</td>
+              <td>method</td>
+              <td>show ActionSheet</td>
+          </tr>
+          <tr>
+              <td>hide()</td>
+              <td>-</td>
+              <td>method</td>
+              <td>hide ActionSheet</td>
+          </tr>
+        </tbody>
+    </table>
+<br></p>
 <p><em>General Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Button, Content, ActionSheet, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
@@ -4547,7 +4608,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
     &lt;/nb-content&gt;
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
-br /&gt;</p>
+<br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -4581,6 +4642,7 @@ br /&gt;</p>
     </table><br></p>
 <h2 id="date-picker-def-headref">35. date-picker-def-headref</h2>
 <h2 id="Date_Picker">36. Date Picker</h2>
+<p>Date Picker allows the user to select a date from a time range.<br></p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/date-picker.gif" alt="Preview ios date-picker-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/date-picker.gif" alt="Preview android date-picker-def-headref"></p>
 <p><em>Syntax</em></p>
@@ -4613,6 +4675,7 @@ br /&gt;</p>
             textStyle={{ color: &quot;green&quot; }}
             placeHolderTextStyle={{ color: &quot;#d3d3d3&quot; }}
             onDateChange={this.setDate}
+            disabled={false}
             /&gt;
             &lt;Text&gt;
               Date: {this.state.chosenDate.toString().substr(4, 12)}
@@ -4661,6 +4724,56 @@ export default {
   }
 };
 &lt;/script&gt;</code></pre></div></div></div>
+<br></p>
+<p><strong>Configuration</strong><br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Default</th>
+                <th>Option</th>
+                <th width="50%">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>defaultDate</td>
+              <td> - </td>
+              <td>Date Object</td>
+              <td>Sets default date in calendar</td>
+          </tr>
+          <tr>
+              <td>minimumDate</td>
+              <td>-</td>
+              <td>Date Object</td>
+              <td>Sets minimum date that can be set in calendar</td>
+          </tr>
+          <tr>
+              <td>maximumDate</td>
+              <td>-</td>
+              <td>Date Object</td>
+              <td>Sets maximum date that can be set in calendar</td>
+          </tr>
+          <tr>
+              <td>androidMode</td>
+              <td>-</td>
+              <td>string</td>
+              <td>can take either of values &apos;default&apos;,&apos;calendar&apos;,&apos;spinner&apos;</td>
+          </tr>
+          <tr>
+              <td>animationType</td>
+              <td>-</td>
+              <td>string</td>
+              <td>can take either of values &apos;fade&apos;,&apos;slide&apos;,&apos;none&apos;</td>
+          </tr>
+          <tr>
+              <td>disabled</td>
+              <td>true</td>
+              <td>boolean</td>
+              <td>Prevent user from making selection of date</td>
+          </tr>
+        </tbody>
+    </table>
 <br></p>
 <h2 id="deckswiper-def-headref">37. deckswiper-def-headref</h2>
 <h2 id="Deck_Swiper">38. Deck Swiper</h2>
@@ -9470,7 +9583,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
     </table><br></p>
 <h2 id="swipeable-multi-def-headref">111. swipeable-multi-def-headref</h2>
 <h2 id="Swipeable_List">112. Swipeable List</h2>
-<p>Swipable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br></p>
+<p>Swipeable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br></p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-multiple.gif" alt="Preview ios swipeable-multi-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-multiple.gif" alt="Preview android swipeable-multi-def-headref"></p>
 <p><em>Syntax</em></p>
@@ -9714,7 +9827,7 @@ export default {
 <strong>Known Issues :</strong> Native behavior of closing row when List is scrolled doesn&apos;t work. <br></p>
 <h2 id="swipeable-single-def-headref">113. swipeable-single-def-headref</h2>
 <h4 id="SwipeRow">113.0.1. SwipeRow</h4>
-<p>Single Swipable ListItem (Outside List)</p>
+<p>Single Swipeable ListItem (Outside List)</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-single-row.gif" alt="Preview ios swipeable-single-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-single-row.gif" alt="Preview android swipeable-single-def-headref"></p>
 <p><em>Syntax</em></p>
@@ -10482,10 +10595,22 @@ export default {
             <td>Milliseconds after which Toast disappers</td>
         </tr>
         <tr>
-            <td>onClose</td>
+            <td>onClose()</td>
             <td> - </td>
             <td> function </td>
             <td>Called just before the toast hides</td>
+        </tr>
+        <tr>
+            <td>show()</td>
+            <td> - </td>
+            <td> function </td>
+            <td>Displays the Toast</td>
+        </tr>
+        <tr>
+            <td>hide()</td>
+            <td> - </td>
+            <td> function </td>
+            <td>Hides the Toast</td>
         </tr>
     </tbody>
 </table><br></p>
@@ -11082,7 +11207,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.6.0/","text":"v2.6.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2018-10-16T03:47:59.860Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-17T07:33:11.892Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.7.0/","text":"v2.7.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-01-02T08:24:01.367Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-04T07:15:24.482Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -11116,7 +11241,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
         
     
         
-        <script src="gitbook/gitbook-plugin-scripts/9e6202442e99acf7464a516eed9df182-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-scripts/fefef87dedeb7e938a302ebf2ddbd665-engine.js"></script>
         
     
         

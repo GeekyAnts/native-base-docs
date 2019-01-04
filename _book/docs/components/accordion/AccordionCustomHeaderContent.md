@@ -9,33 +9,41 @@
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Content, Accordion, View, Text } from "native-base";
+import { Container, Header, Content, Icon, Accordion, Text, View } from "native-base";
 const dataArray = [
   { title: "First Element", content: "Lorem ipsum dolor sit amet" },
   { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
   { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
 ];
-export default class AccordionCustomHeaderContentExample extends Component {
-  _renderHeader(title, expanded) {
+
+export default class AccordionCustomHeaderContent extends Component {
+  _renderHeader(item, expanded) {
     return (
-      <View
-        {% raw %}style={{ flexDirection: "row", padding: 10, justifyContent: "space-between", alignItems: "center", backgroundColor: "#A9DAD6" }}{% endraw %}
-      >
-        {% raw %}<Text style={{ fontWeight: "600" }}>{% endraw %}
-          {" "}{title}
+      {% raw %}<View style={{
+        flexDirection: "row",
+        padding: 10,
+        justifyContent: "space-between",
+        alignItems: "center" ,
+        backgroundColor: "#A9DAD6" }}>{% endraw %}
+      {% raw %}<Text style={{ fontWeight: "600" }}>{% endraw %}
+          {" "}{item.title}
         </Text>
         {expanded
-          {% raw %}? <Icon style={{ fontSize: 18 }} name="remove-circle" />{% endraw %}
-          {% raw %}: <Icon style={{ fontSize: 18 }} name="add-circle" />}{% endraw %}
+          ? {% raw %}<Icon style={{ fontSize: 18 }} name="remove-circle" />{% endraw %}
+          : {% raw %}<Icon style={{ fontSize: 18 }} name="add-circle" />}{% endraw %}
       </View>
     );
   }
-  _renderContent(content) {
+  _renderContent(item) {
     return (
-      <Text
-        {% raw %}style={{ backgroundColor: "#e3f1f1", padding: 10, fontStyle: "italic" }}{% endraw %}
-      >
-        {content}
+      {% raw %}<Text
+        style={{
+          backgroundColor: "#e3f1f1",
+          padding: 10,
+          fontStyle: "italic",
+        }}
+      >{% endraw %}
+        {item.content}
       </Text>
     );
   }
@@ -43,17 +51,20 @@ export default class AccordionCustomHeaderContentExample extends Component {
     return (
       <Container>
         <Header />
-        <Content padder>
-          <Accordion
+        {% raw %}<Content padder style={{ backgroundColor: "white" }}>{% endraw %}
+          {% raw %}<Accordion
             dataArray={dataArray}
+            animation={true}
+            expanded={true}
             renderHeader={this._renderHeader}
             renderContent={this._renderContent}
-          />
+          />{% endraw %}
         </Content>
       </Container>
     );
   }
 }
+<br/>
 {%- language name="Vue Native", type="vue" -%}
 <template>
   <nb-container>
