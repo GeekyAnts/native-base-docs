@@ -44,7 +44,7 @@ yarn add native-base --save
 ```
 *Install @expo/vector-icons*
 ```js
-npm install @expo/vector-icons --save
+yarn add @expo/vector-icons --save
 ```
 <br />
 
