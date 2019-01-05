@@ -139,6 +139,12 @@ export default {
               <td>boolean</td>
               <td>Prevent user from making selection of date</td>
           </tr>
+          <tr>
+              <td>supportedOrientations</td>
+              <td> - </td>
+              <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
+              <td>Allows the modal to rotate to any of the specified orientations</td>
+      </tr>
         </tbody>
     </table>
 <br />

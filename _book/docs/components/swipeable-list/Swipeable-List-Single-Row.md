@@ -153,7 +153,7 @@ export default {
                 <td> - </td>
                 <td> number </td>
                 <td>
-                    TranslateX value to stop the row to the swipe left (<i>Negative number</i>)
+                    TranslateX value to stop the row to the swipe right (<i>Negative number</i>)
                 </td>
             </tr>
             <tr>
@@ -186,6 +186,14 @@ export default {
                 <td> Function </td>
                 <td>
                     Callback function which triggers when a swipe row is animating open/close
+                </td>
+            </tr>
+            <tr>
+                <td>openLeftRow, openRightRow</td>
+                <td> - </td>
+                <td> Function </td>
+                <td>
+                    Dynamically toggle SwipeRow
                 </td>
             </tr>
             <tr>
