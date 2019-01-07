@@ -167,11 +167,17 @@ export default class HeaderExample extends Component {
                 <td> boolean </td>
                 <td>Eliminates Left component and moves Title towards left (Android)</td>
             </tr>
-            </tr>
+            <tr>
                 <td>span</td>
                 <td> - </td>
                 <td> boolean </td>
                 <td>Doubles the header size</td>
+            </tr>
+            <tr>
+                <td>transparent</td>
+                <td> - </td>
+                <td> boolean </td>
+                <td> removes border of Header,shadow from iOS Header and elevation from Android Header. </td>
             </tr>
         </tbody>
     </table><br />

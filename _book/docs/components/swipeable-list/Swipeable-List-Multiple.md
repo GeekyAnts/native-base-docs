@@ -177,7 +177,7 @@ export default {
                 </td>
             </tr>
             <tr>
-                <td>renderRighHiddenRow</td>
+                <td>renderRightHiddenRow</td>
                 <td> - </td>
                 <td> Function </td>
                 <td>
