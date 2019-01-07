@@ -757,6 +757,15 @@
                     <td>Custom design of Accordion content</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>supportedOrientations</li>
+                        </ul>
+                    </td>
+                    <td>allows the modal to be rotated to any of the specified orientations</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -1750,7 +1759,7 @@
                     <td>Custom style for placeholder text in iOS</td>
                     <td></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>
                         <ul>
                             <li>placeholderIconColor</li>
@@ -1866,13 +1875,251 @@
 
 
 
-                <!-- Swipeable List -->
+
+                <!-- Swipeable List(Multiple Rows) -->
                 <tr style="background-color: #f5f5f5">
-                    <td>&lt;Swipeable List></td>
-                    <td>ListItems that swipe open and close</td>
+                    <td>&lt;Swipeable List><br/>(Multiple Rows)</td>
+                    <td>Swipeable List are ListItems that swipe open and close</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>dataSource</li>
+                        </ul>
+                    </td>
+                    <td>data chunks to render iteratively</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderRow</li>
+                        </ul>
+                    </td>
+                    <td>Callback which takes a chunk of data from dataSource and returns as a body component, which is visible</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderLeftHiddenRow</li>
+                        </ul>
+                    </td>
+                    <td>Callback which takes a chunk of data from dataSource and returns as a left component, which is hidden</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>renderRightHiddenRow</li>
+                        </ul>
+                    </td>
+                    <td>Callback which takes a chunk of data from dataSource and returns as a right component, which is hidden</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>leftOpenValue</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value for opening the row to the left (Positive Value)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>rightOpenValue</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value for opening the row to the right (Negative Value)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>closeOnRowBeginSwipe</li>
+                        </ul>
+                    </td>
+                    <td>Open row be closed as soon as a row begin to swipe open</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>swipeToOpenPercent</li>
+                        </ul>
+                    </td>
+                    <td>Swipe percent of left/right component's width to trigger the row opening</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disableLeftSwipe</li>
+                        </ul>
+                    </td>
+                    <td>Disable ability to swipe the row left</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disableRightSwipe</li>
+                        </ul>
+                    </td>
+                    <td>Disable ability to swipe the row right</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onRowOpen, onRowClose</li>
+                        </ul>
+                    </td>
+                    <td>Callback function which triggers when a swipe row is animating open/close</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onRowDidOpen, onRowDidClose</li>
+                        </ul>
+                    </td>
+                    <td>Callback function which triggers when a swipe row has animated open/close</td>
                     <td></td>
                 </tr>
 
+                
+
+
+
+                <!-- Swipeable List(Single Row) -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Swipeable List><br/>(Single Row)</td>
+                    <td>Single Swipable ListItem (Outside List)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>body</li>
+                        </ul>
+                    </td>
+                    <td>Native Base or React Native component(Visible Component)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>left</li>
+                        </ul>
+                    </td>
+                    <td>Native Base or React Native component(Left hidden Component)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>right</li>
+                        </ul>
+                    </td>
+                    <td>Native Base or React Native component(Right hidden Component)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>leftOpenValue</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value for opening the row to the left (Positive Value)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>rightOpenValue</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value for opening the row to the right (Negative Value)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>stopLeftSwipe</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value to stop the row to the swipe left (Positive number)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>stopRightSwipe</li>
+                        </ul>
+                    </td>
+                    <td>TranslateX value to stop the row to the swipe right (Negative number)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>swipeToOpenPercent</li>
+                        </ul>
+                    </td>
+                    <td>Swipe percent of left/right component's width to trigger the row opening</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disableLeftSwipe</li>
+                        </ul>
+                    </td>
+                    <td>Disable ability to swipe the row left</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>disableRightSwipe</li>
+                        </ul>
+                    </td>
+                    <td>Disable ability to swipe the row right</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onRowOpen, onRowClose</li>
+                        </ul>
+                    </td>
+                    <td>Callback function which triggers when a swipe row is animating open/close</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>openLeftRow, openRightRow</li>
+                        </ul>
+                    </td>
+                    <td>Dynamically toggle SwipeRow</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>style</li>
+                        </ul>
+                    </td>
+                    <td>Style body</td>
+                    <td></td>
+                </tr>
+
+                
 
 
                 <!-- Tabs -->
