@@ -27,7 +27,7 @@ export default class PickerCustomBackButtonExample extends Component {
           <Form>
             <Picker
               mode="dropdown"
-              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="arrow-down" />}
               headerBackButtonText="Baaack!"
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
