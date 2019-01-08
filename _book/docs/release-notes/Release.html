@@ -2057,44 +2057,49 @@
 <h3 id="2_8_2">0.1. 2.8.2</h3>
 <h4 id="General_Features">0.1.1. General Features</h4>
 <ul>
-<li>Upgraded react-native-vector-icons to 6.0.2. </li>
+<li><strong>react-native-vector-icons:</strong> Upgraded from 4.6.0 to 6.0.2.</li>
 </ul>
 <h4 id="Upgraded_Features">0.1.2. Upgraded Features</h4>
 <ul>
 <li><strong>ListemItem:</strong> <ul>
-<li>Used &apos;undefined&apos; instead of &apos;null&apos; for exports.ListItem. </li>
+<li>Used &apos;undefined&apos; instead of &apos;null&apos; for exports.ListItem.</li>
 <li>Fixed <code>testID</code> for ListItem.</li>
 </ul>
 </li>
 <li><strong>Typescript:</strong><ul>
 <li>Added radio property to Typescript definition.</li>
-<li>Added tabs property to Typescript definition. </li>
+<li>Added tabs property to Typescript definition.</li>
 </ul>
 </li>
-<li><strong>Drawer:</strong> Android drawer overlay fix. </li>
 <li><strong>TextArea:</strong> Added <code>bordered</code> attribute in index.d.ts.</li>
 <li><strong>Theme:</strong> passed <code>variables</code> param to cardTheme.</li>
-<li><strong>TabBar:</strong> Removed circular dependency. </li>
-<li><strong>DatePicker:</strong>Removed circular dependency. </li>
-<li>Fixed linter warnings. </li>
+<li><strong>TabBar:</strong> Removed circular dependency.</li>
+<li><strong>DatePicker:</strong> <ul>
+<li>Removed circular dependency.</li>
+<li>Added prop <code>supportedOrientations</code>.   </li>
+</ul>
+</li>
+<li><strong>List:</strong> Added functions openLeftRow() &amp; openRightRow() in Swipeable List.</li>
 </ul>
 <h4 id="Bug_Fixes">0.1.3. Bug Fixes</h4>
 <ul>
 <li><strong>Checkbox:</strong> <ul>
-<li>Checkbox Icon display issue fixed. </li>
-<li>&#x201C;transparent&#x201D; tick/alpha issue in Android fixed. </li>
+<li>Checkbox Icon display issue fixed.</li>
+<li>&#x201C;transparent&#x201D; tick/alpha issue in Android fixed.</li>
 </ul>
 </li>
-<li><strong>Picker:</strong> Landscape mode orientation issue fixed with prop <code>supportedOrientations</code>. </li>
-<li><strong>DatePicker:</strong> Added prop <code>supportedOrientations</code>.</li>
-<li><strong>Item:</strong> FloatingLabel animation issue fixed. </li>
-<li><strong>List:</strong> Added functions openLeftRow() &amp; openRightRow() in Swipeable List. <h3 id="2_8_1">0.2. 2.8.1</h3>
-</li>
+<li><strong>Drawer:</strong> Android drawer overlay fix.</li>
+<li><strong>Picker:</strong> Landscape mode orientation issue fixed with prop <code>supportedOrientations</code>.</li>
+<li><strong>Item:</strong> FloatingLabel animation issue fixed.</li>
+<li>Fixed linter warnings.</li>
 </ul>
+<p><hr></p>
+<h3 id="2_8_1">0.2. 2.8.1</h3>
 <h4 id="Upgraded_Features">0.2.1. Upgraded Features</h4>
 <ul>
 <li><strong>Header:</strong> Added <code>transparent</code> prop.</li>
 <li>Added transpiled flow-typed.</li>
+<li><strong>Theme:</strong> Added <code>// @flow</code> support to ejected Theme.</li>
 </ul>
 <h4 id="Bug_Fixes">0.2.2. Bug Fixes</h4>
 <ul>
@@ -2106,8 +2111,9 @@
 </li>
 <li><strong>Button:</strong> Background bug issue fixed. </li>
 <li><strong>Accordion:</strong> TypeScript error for <code>expanded</code> property on renderHeader issue fixed.</li>
-<li><strong>Theme:</strong> Added <code>// @flow</code> support to ejected Theme. </li>
 </ul>
+<hr> 
+
 <h3 id="2_8_0">0.3. 2.8.0</h3>
 <h4 id="General_Features">0.3.1. General Features</h4>
 <ul>
@@ -2117,6 +2123,7 @@
 <ul>
 <li><strong>Drawer:</strong> Added back Drawer.</li>
 <li><strong>Form:</strong> Added <code>disabled</code> prop with TextArea.</li>
+<li><strong>Gravatar:</strong> Added missing import <code>prop-types</code> package.</li>
 </ul>
 <h4 id="Bug_Fixes">0.3.3. Bug Fixes</h4>
 <ul>
@@ -2125,7 +2132,6 @@
 <li>Fixed modifying the assertion on the Item component to use displayName prop.</li>
 </ul>
 </li>
-<li><strong>Gravatar:</strong> Added missing import <code>prop-types</code> package.</li>
 <li><strong>Header:</strong> Fixed Icon size for Left and Right component of Header.</li>
 <li><strong>ListItem:</strong> Fixed Left component alignment for ListItem avatar when the content in Body is in multiple lines.</li>
 </ul>
@@ -3216,7 +3222,7 @@ for all positions.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Release Notes","level":"1.8","depth":1,"next":{"title":"Featured Apps","level":"1.9","depth":1,"path":"docs/FeaturedApps.md","ref":"docs/FeaturedApps.md","articles":[]},"previous":{"title":"Theme Variables","level":"1.7","depth":1,"path":"docs/ThemeVariables.md","ref":"docs/ThemeVariables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.8.0/","text":"v2.8.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/release-notes/Release.md","mtime":"2019-01-04T12:04:23.528Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-05T10:37:01.448Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Release Notes","level":"1.8","depth":1,"next":{"title":"Featured Apps","level":"1.9","depth":1,"path":"docs/FeaturedApps.md","ref":"docs/FeaturedApps.md","articles":[]},"previous":{"title":"Theme Variables","level":"1.7","depth":1,"path":"docs/ThemeVariables.md","ref":"docs/ThemeVariables.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.8.0/","text":"v2.8.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/release-notes/Release.md","mtime":"2019-01-04T12:04:23.528Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T08:15:35.315Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
