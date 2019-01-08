@@ -6042,7 +6042,7 @@ Provides a number of attributes that follows styling and interaction guidelines 
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/input-picker.gif" alt="Preview android picker-input-headref"></p>
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Picker } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
+<span class="hljs-keyword">import</span> { Container, Header, Content, Form, Item, Picker, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerInputExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -6064,7 +6064,7 @@ Provides a number of attributes that follows styling and interaction guidelines 
             &lt;Item picker&gt;
               &lt;Picker
                 mode=&quot;dropdown&quot;
-                iosIcon={&lt;Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+                iosIcon={&lt;Icon name=&quot;arrow-down&quot; /&gt;}
                 style={{ width: undefined }}
                 placeholder=&quot;Select your SIM&quot;
                 placeholderStyle={{ color: &quot;#bfc6ea&quot; }}
@@ -7763,7 +7763,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
           &lt;ListItem icon&gt;
             &lt;Left&gt;
               &lt;Button style={{ backgroundColor: &quot;#FF9501&quot; }}&gt;
-                &lt;Icon active name=&quot;plane&quot; /&gt;
+                &lt;Icon active name=&quot;airplane&quot; /&gt;
               &lt;/Button&gt;
             &lt;/Left&gt;
             &lt;Body&gt;
@@ -8319,7 +8319,7 @@ export default {
 <p><em>Synatx</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIcon</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIcon</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
     <span class="hljs-keyword">this</span>.state = {
@@ -8340,7 +8340,7 @@ export default {
             &lt;Picker
               mode=&quot;dropdown&quot;
               iosHeader=&quot;Select your SIM&quot;
-              iosIcon={&lt;Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+              iosIcon={&lt;Icon name=&quot;arrow-down&quot; /&gt;}
               style={{ width: undefined }}
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
@@ -8406,7 +8406,7 @@ export default {
 <p><em>Synatx</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIconStyle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIconStyle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
     <span class="hljs-keyword">this</span>.state = {
@@ -8513,7 +8513,7 @@ export default {
           &lt;Form&gt;
             &lt;Picker
               mode=&quot;dropdown&quot;
-              iosIcon={&lt;Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+              iosIcon={&lt;Icon name=&quot;arrow-down&quot; /&gt;}
               placeholder=&quot;Select your SIM&quot;
               placeholderStyle={{ color: &quot;#bfc6ea&quot; }}
               placeholderIconColor=&quot;#007aff&quot;
@@ -8690,7 +8690,7 @@ export default {
             &lt;Picker
               mode=&quot;dropdown&quot;
               placeholder=&quot;Select your SIM&quot;
-              iosIcon={&lt;Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+              iosIcon={&lt;Icon name=&quot;arrow-down&quot; /&gt;}
               placeholder=&quot;Select your SIM&quot;
               textStyle={{ color: &quot;#5cb85c&quot; }}
               itemStyle={{
@@ -8790,7 +8790,7 @@ export default {
           &lt;Form&gt;
             &lt;Picker
               mode=&quot;dropdown&quot;
-              iosIcon={&lt;Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+              iosIcon={&lt;Icon name=&quot;arrow-down&quot; /&gt;}
               headerBackButtonText=&quot;Baaack!&quot;
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
@@ -8999,7 +8999,7 @@ export default class PickerCustomHeaderTextExample extends Component {
             &lt;Picker
               mode="dropdown"
               iosHeader="Your Header"
-              iosIcon={&lt;Icon name="ios-arrow-down-outline" />}
+              iosIcon={&lt;Icon name="arrow-down" />}
               style=&#123;{ width: Platform.OS === "ios" ? undefined : 120 }}
               selectedValue={this.state.selected3}
               onValueChange={this.onValueChange3.bind(this)}
@@ -9043,7 +9043,7 @@ export default class PickerCustomHeaderTextExample extends Component {
           &lt;Form&gt;
             &lt;Picker
               mode=&quot;dropdown&quot;
-              iosIcon={{Icon name=&quot;ios-arrow-down-outline&quot; /&gt;}
+              iosIcon={{Icon name=&quot;arrow-down&quot; /&gt;}
               headerStyle={{ backgroundColor: &quot;#b95dd3&quot; }}
               headerBackButtonTextStyle={{ color: &quot;#fff&quot; }}
               headerTitleStyle={{ color: &quot;#fff&quot; }}
@@ -11227,7 +11227,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.8.0/","text":"v2.8.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-01-04T11:41:09.477Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-05T10:37:01.448Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.9.0/","text":"v2.9.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-01-07T10:42:29.803Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T07:54:02.013Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -11261,7 +11261,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
         
     
         
-        <script src="gitbook/gitbook-plugin-scripts/a92910ccfd86f115e0119e5bd94dcaed-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-scripts/90f3b3dfb03d5deb3821147de0f38a2e-engine.js"></script>
         
     
         

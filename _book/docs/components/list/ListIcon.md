@@ -22,7 +22,7 @@ export default class ListIconExample extends Component {
           <ListItem icon>
             <Left>
               {% raw %}<Button style={{ backgroundColor: "#FF9501" }}>{% endraw %}
-                <Icon active name="plane" />
+                <Icon active name="airplane" />
               </Button>
             </Left>
             <Body>

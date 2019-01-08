@@ -31,7 +31,7 @@ export default class PickerTextAndItemStyleExample extends Component {
             <Picker
               mode="dropdown"
               placeholder="Select your SIM"
-              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="arrow-down" />}
               placeholder="Select your SIM"
               {% raw %}textStyle={{ color: "#5cb85c" }}{% endraw %}
               {% raw %}itemStyle={{{% endraw %}

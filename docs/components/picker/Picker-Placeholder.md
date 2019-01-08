@@ -29,7 +29,7 @@ export default class PickerPlaceholderExample extends Component {
           <Form>
             <Picker
               mode="dropdown"
-              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="arrow-down" />}
               placeholder="Select your SIM"
               {% raw %}placeholderStyle={{ color: "#bfc6ea" }}{% endraw %}
               placeholderIconColor="#007aff"

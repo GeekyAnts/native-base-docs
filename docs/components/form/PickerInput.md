@@ -11,7 +11,7 @@ Include `picker` prop with `<Item>` to have picker type of input field.
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
-import { Container, Header, Content, Form, Item, Picker } from 'native-base';
+import { Container, Header, Content, Form, Item, Picker, Icon } from 'native-base';
 export default class PickerInputExample extends Component {
     constructor(props) {
     super(props);
@@ -33,7 +33,7 @@ export default class PickerInputExample extends Component {
             <Item picker>
               <Picker
                 mode="dropdown"
-                iosIcon={<Icon name="ios-arrow-down-outline" />}
+                iosIcon={<Icon name="arrow-down" />}
                 {% raw %}style={{ width: undefined }}{% endraw %}
                 placeholder="Select your SIM"
                 {% raw %}placeholderStyle={{ color: "#bfc6ea" }}{% endraw %}

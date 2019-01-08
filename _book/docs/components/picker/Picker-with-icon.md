@@ -10,7 +10,7 @@
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
 import { Container, Header, Content, Icon, Picker, Form } from "native-base";
-class PickerWithIcon extends Component {
+export default class PickerWithIcon extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,7 +31,7 @@ class PickerWithIcon extends Component {
             <Picker
               mode="dropdown"
               iosHeader="Select your SIM"
-              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="arrow-down" />}
               {% raw %}style={{ width: undefined }}{% endraw %}
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
