@@ -6,15 +6,20 @@ Having different font types in your [React Native](https://facebook.github.io/re
 To include these fonts into your app, go to `native-base-theme/platform.js` (you can change this in any of the three theme variable files) and  replace value for <code>fontFamily</code> with your choice of font name. NativeBase allows you to add more font styles on your own.
 
 Font families included with NativeBase:
+* AntDesign
 * Entypo
 * EvilIcons
+* Feather
 * FontAwesome
+* FontAwesome5
 * Foundation
 * Ionicons
 * MaterialIcons
+* MaterialCommunityIcons
 * Octicons
 * Roboto
 * Roboto_medium
+* rubicon-icon-font
 * SimpleLineIcons
 * Zocial
 
