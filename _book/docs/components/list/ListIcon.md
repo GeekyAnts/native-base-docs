@@ -22,7 +22,7 @@ export default class ListIconExample extends Component {
           <ListItem icon>
             <Left>
               {% raw %}<Button style={{ backgroundColor: "#FF9501" }}>{% endraw %}
-                <Icon active name="plane" />
+                <Icon active name="airplane" />
               </Button>
             </Left>
             <Body>
@@ -120,8 +120,3 @@ export default class ListIconExample extends Component {
 
 
 **Note:** [Switch](http://facebook.github.io/react-native/docs/switch.html) included in above example is from React Native.
-
-
-
-
-
