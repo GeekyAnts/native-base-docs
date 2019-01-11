@@ -68,3 +68,4 @@ export default {
 <br />
 
 For more advanced implementation of rendering list dynamically, take a look at [nativebase-tutorial](https://github.com/GeekyAnts/nativebase-tutorial).
+

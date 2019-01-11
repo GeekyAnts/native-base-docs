@@ -60,7 +60,7 @@ export default {
 {%- endcodetabs %}
 <br />
 
-**Note:** To have Thumbnail of custom size, include height and width with <code>style</code>.
+**Note:** To have Thumbnail of custom size, specify <code>height</code>, <code>width</code> and <code>borderRadius</code> within <code>style</code>.
 
 
 **Configuration**

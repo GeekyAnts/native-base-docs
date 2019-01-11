@@ -12,7 +12,7 @@ import { Container, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-bas
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 import Tab3 from './tabThree';
-​export default class TabsAdvancedExample extends Component {
+export default class TabsAdvancedExample extends Component {
   render() {
     return (
       <Container>

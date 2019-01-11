@@ -67,7 +67,7 @@
 {% include "./docs/components/list/ListIcon.md" %}
 {% include "./docs/components/list/ListAvatar.md" %}
 {% include "./docs/components/list/ListThumbnail.md" %}
-{% include "./docs/components/list/DynamicList.md" %}
+<!-- {% include "./docs/components/list/DynamicList.md" %} -->
 {% include "./docs/components/list/ListSeperator.md" %}
 {% include "./docs/components/picker/Picker.md" %}
 {% include "./docs/components/picker/Picker-with-icon.md" %}

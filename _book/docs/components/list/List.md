@@ -195,4 +195,4 @@ Replacing Component
         </tbody>
     </table><br />
 
-**Note:** List is deprecated. Use of List for dynamic list generation is discouraged. Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.
+**Note:** List is deprecated. Use of List for dynamic list generation is discouraged.For more advanced implementation of rendering list dynamically, take a look at [nativebase-tutorial](https://github.com/GeekyAnts/nativebase-tutorial). Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.

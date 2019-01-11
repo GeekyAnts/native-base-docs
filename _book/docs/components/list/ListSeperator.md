@@ -71,7 +71,7 @@ export default class ListSeparatorExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
-</code></pre><br />
+<br />
 
 **Configuration**
 

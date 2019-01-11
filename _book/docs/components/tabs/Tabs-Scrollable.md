@@ -12,7 +12,7 @@ import { Container, Header, Tab, Tabs, ScrollableTab } from 'native-base';
 import Tab1 from './tabOne';
 . . .
 import Tab5 from './tabFive';
-​export default class TabsScrollableExample extends Component {
+export default class TabsScrollableExample extends Component {
   render() {
     return (
       <Container>
@@ -79,55 +79,49 @@ export default {
 {%- endcodetabs %}
 <br />
 
+**Configuration(ScrollableTab)**    
+
 <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>heading</td>
-                <td> - </td>
-                <td> string, <TabHeading/> </td>
-                <td>
-                    Label String, or Component
-                </td>
-            </tr>
-            <tr>
-                <td>tabStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for tab bar
-                </td>
-            </tr>
-            <tr>
-                <td>activeTabStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for active tab bar
-                </td>
-            </tr>
-            <tr>
-                <td>textStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for text
-                </td>
-              </tr>
-              <tr>
-                <td>activeTextStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for active text
-                </td>
-            </tr>
-        </tbody>
-    </table><br />
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Option</th>
+            <th width="50%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>style</td>
+            <td> - </td>
+            <td> style object</td>
+            <td>
+                Style for ScrollableTab
+            </td>
+        </tr>
+        <tr>
+            <td>tabsContainerStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for tabs within ScrollableTab
+            </td>
+        </tr>
+        <tr>
+            <td>underlineStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style of the Scrollable Tab's underline
+            </td>
+        </tr>
+        <tr>
+            <td>onScroll</td>
+            <td> - </td>
+            <td> Function </td>
+            <td>
+                Function to call when pages are sliding
+            </td>
+        </tr>
+    </tbody>
+</table><br />

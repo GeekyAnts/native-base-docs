@@ -1179,19 +1179,6 @@
     
         <li class="chapter " data-level="1.5.16.8" data-path="Components.html">
             
-                <a href="Components.html#dynamic-list-headref">
-            
-                    
-                    Dynamic List
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.16.9" data-path="Components.html">
-            
                 <a href="Components.html#list-seperator-headref">
             
                     
@@ -2292,6 +2279,12 @@ React Native Keyboard Aware Scroll View&apos;s <a href="https://github.com/APSL/
             <td>false</td>
             <td>boolean</td>
             <td>Disables automatic scroll on focus.</td>
+        </tr>
+        <tr>
+            <td>contentContainerStyle</td>
+            <td>-</td>
+            <td>style</td>
+            <td>Lets the user style the <code>Content</code> component.</td>
         </tr>
         <tr>
             <td>enableResetScrollToCoords</td>
@@ -5816,6 +5809,14 @@ Provides a number of attributes that follows styling and interaction guidelines 
                 </td>
             </tr>
             <tr>
+                <td>placeholderTextColor</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Color of the Input placeholder
+                </td>
+            </tr>
+            <tr>
                 <td>last</td>
                 <td> - </td>
                 <td> - </td>
@@ -7476,7 +7477,7 @@ Replacing Component for Grid, Col, Row: React Native <a href="https://facebook.g
             </tr>
         </tbody>
     </table><br></p>
-<p><strong>Note:</strong> List is deprecated. Use of List for dynamic list generation is discouraged. Use <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">Flatlist</a> instead.</p>
+<p><strong>Note:</strong> List is deprecated. Use of List for dynamic list generation is discouraged.For more advanced implementation of rendering list dynamically, take a look at <a href="https://github.com/GeekyAnts/nativebase-tutorial" target="_blank">nativebase-tutorial</a>. Use <a href="https://facebook.github.io/react-native/docs/flatlist.html" target="_blank">Flatlist</a> instead.</p>
 <h2 id="list-divider-headref">80. list-divider-headref</h2>
 <h4 id="List_Divider">80.0.1. List Divider</h4>
 <p>The List Divider component creates a list separator, which can be used for grouping list items. To create a divider for any child element of the list, include <code>itemDivider</code> prop with <code>ListItem</code> component.<br>
@@ -7977,39 +7978,43 @@ To have note kind of text for list item, include <code>note</code> prop with <co
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="dynamic-list-headref">87. dynamic-list-headref</h2>
-<h4 id="Dynamic_List">87.0.1. Dynamic List</h4>
-<p>A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.</p>
-<p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-dynamic.png" alt="Preview ios dynamic-list-headref">
-<img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/list-dynamic.png" alt="Preview android dynamic-list-headref"></p>
-<p><em>Syntax</em></p>
-<p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Container, Header, Content, List, ListItem, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DynamicListExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<!-- ## dynamic-list-headref
+#### Dynamic List
+
+A center aspect designed for efficient representation of vertically scrolling lists of changing data. The simplest way is to create a <code>List dataArray</code>, populate it with an array of data chunks, and instantiate a <code>ListItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.
+
+![Preview ios dynamic-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-dynamic.png)
+![Preview android dynamic-list-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/list-dynamic.png)
+
+*Syntax*
+
+<div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js">import React, { Component } from &#39;react&#39;;
+import { Container, Header, Content, List, ListItem, Text } from &#39;native-base&#39;;
+export default class DynamicListExample extends Component {
   render() {
-    <span class="hljs-keyword">var</span> items = [
-      <span class="hljs-string">&apos;Simon Mignolet&apos;</span>,
-      <span class="hljs-string">&apos;Nathaniel Clyne&apos;</span>,
-      <span class="hljs-string">&apos;Dejan Lovren&apos;</span>,
-      <span class="hljs-string">&apos;Mama Sakho&apos;</span>,
-      <span class="hljs-string">&apos;Emre Can&apos;</span>
+    var items = [
+      &#39;Simon Mignolet&#39;,
+      &#39;Nathaniel Clyne&#39;,
+      &#39;Dejan Lovren&#39;,
+      &#39;Mama Sakho&#39;,
+      &#39;Emre Can&#39;
     ];
-    <span class="hljs-keyword">return</span> (
-      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">List</span> <span class="hljs-attr">dataArray</span>=<span class="hljs-string">{items}</span>
-            <span class="hljs-attr">renderRow</span>=<span class="hljs-string">{(item)</span> =&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-name">ListItem</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>{item}<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-name">ListItem</span>&gt;</span>
+    return (
+      &lt;Container&gt;
+        &lt;Header /&gt;
+        &lt;Content&gt;
+          &lt;List dataArray={items}
+            renderRow={(item) =&gt;
+              &lt;ListItem&gt;
+                &lt;Text&gt;{item}&lt;/Text&gt;
+              &lt;/ListItem&gt;
             }&gt;
-          <span class="hljs-tag">&lt;/<span class="hljs-name">List</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span>
+          &lt;/List&gt;
+        &lt;/Content&gt;
+      &lt;/Container&gt;
     );
   }
-}</span></code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-vue">&lt;template&gt;
+}</code></pre></div><div class="tab" data-codetab="1"><pre><code class="lang-vue">&lt;template&gt;
   &lt;nb-container&gt;
     &lt;nb-header /&gt;
     &lt;nb-content&gt;
@@ -8036,10 +8041,13 @@ export default {
   }
 };
 &lt;/script&gt;</code></pre></div></div></div>
-<br></p>
-<p>For more advanced implementation of rendering list dynamically, take a look at <a href="https://github.com/GeekyAnts/nativebase-tutorial" target="_blank">nativebase-tutorial</a>.</p>
-<h2 id="list-seperator-headref">88. list-seperator-headref</h2>
-<h4 id="List_Separator">88.0.1. List Separator</h4>
+<br />
+
+For more advanced implementation of rendering list dynamically, take a look at [nativebase-tutorial](https://github.com/GeekyAnts/nativebase-tutorial).
+
+ -->
+<h2 id="list-seperator-headref">87. list-seperator-headref</h2>
+<h4 id="List_Separator">87.0.1. List Separator</h4>
 <p>Separator component is a separator usually used in list, which can be used for grouping list items. Though it is used with List, you can use it anywhere in your app.<br></p>
 <p>Replacing Component: React Native <a href="http://facebook.github.io/react-native/docs/view.html" target="_blank">View</a></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-separator.png" alt="Preview ios list-seperator-headref">
@@ -8102,7 +8110,7 @@ export default {
     &lt;/nb-content&gt;
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
-&lt;/code&gt;&lt;/pre&gt;<br></p>
+<br></p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -8124,8 +8132,8 @@ export default {
             </tr>
             </tbody>
             </table><br></p>
-<h2 id="picker-def-headref">89. picker-def-headref</h2>
-<h2 id="Picker">90. Picker</h2>
+<h2 id="picker-def-headref">88. picker-def-headref</h2>
+<h2 id="Picker">89. Picker</h2>
 <p>Renders the native picker component on iOS and Android.<br>
 Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/picker.html" target="_blank">Picker</a><br></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker.gif" alt="Preview ios picker-def-headref">
@@ -8278,7 +8286,7 @@ export default {
           <td>placeholder</td>
           <td> - </td>
           <td> - </td>
-          <td>Placeholder for Picker component</td>
+          <td>Placeholder for Picker component (iOS)</td>
       </tr>
       <tr>
           <td>placeholderStyle</td>
@@ -8325,9 +8333,9 @@ export default {
     </tbody>
   </table><br></p>
 <p><strong>Note:</strong> Styling Picker is restricted to the style props provided in the table. NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements.</p>
-<h3 id="Advanced_Pickers_(iOS_only)">90.1. Advanced Pickers (iOS only)</h3>
-<h2 id="picker-with-icon-headref">91. picker-with-icon-headref</h2>
-<h4 id="Picker_with_Icon">91.0.1. Picker with Icon</h4>
+<h3 id="Advanced_Pickers_(iOS_only)">89.1. Advanced Pickers (iOS only)</h3>
+<h2 id="picker-with-icon-headref">90. picker-with-icon-headref</h2>
+<h4 id="Picker_with_Icon">90.0.1. Picker with Icon</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon.gif" alt="Preview ios picker-with-icon-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-icon-headref"></p>
 <p><em>Synatx</em></p>
@@ -8413,8 +8421,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-with-icon-style-headref">92. picker-with-icon-style-headref</h2>
-<h4 id="Picker_with_Icon_Style">92.0.1. Picker with Icon Style</h4>
+<h2 id="picker-with-icon-style-headref">91. picker-with-icon-style-headref</h2>
+<h4 id="Picker_with_Icon_Style">91.0.1. Picker with Icon Style</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon-style.png" alt="Preview ios picker-with-icon-style-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-icon-style-headref"></p>
 <p><em>Synatx</em></p>
@@ -8500,8 +8508,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-placeholder-headref">93. picker-placeholder-headref</h2>
-<h4 id="Placeholder_Picker">93.0.1. Placeholder Picker</h4>
+<h2 id="picker-placeholder-headref">92. picker-placeholder-headref</h2>
+<h4 id="Placeholder_Picker">92.0.1. Placeholder Picker</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-placeholder.gif" alt="Preview ios picker-placeholder-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-placeholder-headref"></p>
 <p><em>Syntax</em></p>
@@ -8591,8 +8599,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-placeholder-without-note-headref">94. picker-placeholder-without-note-headref</h2>
-<h4 id="Placeholder_Picker_(without_note)">94.0.1. Placeholder Picker (without note)</h4>
+<h2 id="picker-placeholder-without-note-headref">93. picker-placeholder-without-note-headref</h2>
+<h4 id="Placeholder_Picker_(without_note)">93.0.1. Placeholder Picker (without note)</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-placeholder-without-note.gif" alt="Preview ios picker-placeholder-without-note-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-placeholder-without-note-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -8675,8 +8683,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-text-and-item-text-styles-headref">95. picker-text-and-item-text-styles-headref</h2>
-<h4 id="Picker_Text_and_Item_Text_Style">95.0.1. Picker Text and Item Text Style</h4>
+<h2 id="picker-text-and-item-text-styles-headref">94. picker-text-and-item-text-styles-headref</h2>
+<h4 id="Picker_Text_and_Item_Text_Style">94.0.1. Picker Text and Item Text Style</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-text-itemtext-style.gif" alt="Preview ios picker-text-and-item-text-styles-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-text-and-item-text-styles-headref"></p>
 <p><em>Syntax</em></p>
@@ -8778,8 +8786,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-with-custom-back-button-headref">96. picker-with-custom-back-button-headref</h2>
-<h4 id="Picker_with_Custom_Back_Button">96.0.1. Picker with Custom Back Button</h4>
+<h2 id="picker-with-custom-back-button-headref">95. picker-with-custom-back-button-headref</h2>
+<h4 id="Picker_with_Custom_Back_Button">95.0.1. Picker with Custom Back Button</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-custom-back-button.gif" alt="Preview ios picker-with-custom-back-button-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-back-button-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -8863,8 +8871,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="picker-with-custom-header-headref">97. picker-with-custom-header-headref</h2>
-<h4 id="Picker_with_Custom_Header">97.0.1. Picker with Custom Header</h4>
+<h2 id="picker-with-custom-header-headref">96. picker-with-custom-header-headref</h2>
+<h4 id="Picker_with_Custom_Header">96.0.1. Picker with Custom Header</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-custom-header.gif" alt="Preview ios picker-with-custom-header-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-header-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -9031,8 +9039,8 @@ export default class PickerCustomHeaderTextExample extends Component {
   }
 }</code></pre><br />
  -->
-<h2 id="picker-with-custom-header-style-headref">98. picker-with-custom-header-style-headref</h2>
-<h4 id="Picker_with_Custom_Header_Style">98.0.1. Picker with Custom Header Style</h4>
+<h2 id="picker-with-custom-header-style-headref">97. picker-with-custom-header-style-headref</h2>
+<h4 id="Picker_with_Custom_Header_Style">97.0.1. Picker with Custom Header Style</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-custom-header-style.gif" alt="Preview ios picker-with-custom-header-style-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-header-style-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
@@ -9120,8 +9128,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="radio-button-headref">99. radio-button-headref</h2>
-<h2 id="Radio_Button">100. Radio Button</h2>
+<h2 id="radio-button-headref">98. radio-button-headref</h2>
+<h2 id="Radio_Button">99. Radio Button</h2>
 <p>Radio buttons let the user select any one from a set of options.<br>
 Replacing Component: React Native <a href="http://facebook.github.io/react-native/docs/touchableopacity.html" target="_blank">TouchableOpacity</a></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/radio.png" alt="Preview ios radio-button-headref">
@@ -9214,8 +9222,8 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="custom-radio-headref">101. custom-radio-headref</h2>
-<h2 id="Custom_Radio_Button">102. Custom Radio Button</h2>
+<h2 id="custom-radio-headref">100. custom-radio-headref</h2>
+<h2 id="Custom_Radio_Button">101. Custom Radio Button</h2>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/radio-custom.png" alt="Preview ios custom-radio-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/radio-custom.png" alt="Preview android custom-radio-headref"></p>
 <p><em>Syntax</em></p>
@@ -9287,8 +9295,8 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="search-bar-headref">103. search-bar-headref</h2>
-<h2 id="Search_Bar">104. Search Bar</h2>
+<h2 id="search-bar-headref">102. search-bar-headref</h2>
+<h2 id="Search_Bar">103. Search Bar</h2>
 <p>It&#x2019;s kind of common on the Internet where &#x2013; if we fail to get what we are looking for on a website, we resort to searching. Search box has always been an essential part of any application.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/searchbar.png" alt="Preview ios search-bar-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/searchbar.png" alt="Preview android search-bar-headref"></p>
@@ -9352,15 +9360,15 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="segment-inside-header-headref">105. segment-inside-header-headref</h2>
-<h2 id="Segment">106. Segment</h2>
+<h2 id="segment-inside-header-headref">104. segment-inside-header-headref</h2>
+<h2 id="Segment">105. Segment</h2>
 <p>Segments are best used as an alternative for tabs. Mainly used in iOS.</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/segment-inside-header.gif" alt="Preview ios segment-inside-header-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/segment-inside-header.gif" alt="Preview android segment-inside-header-headref"></p>
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -9417,13 +9425,13 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
 <p>Segment takes Button as children. The active Button shoud be given an active prop (implementation is totally up to you).
 Also the <strong>first</strong> and <strong>last</strong> buttons should be given props <strong>first</strong> and <strong>last</strong> respectively.<br>
 <strong>Pro tip:</strong> It is advisable to use <code>hasSegment</code> prop with Header if you&apos;re using Segment below the header.</p>
-<h2 id="segment-outside-header-headref">107. segment-outside-header-headref</h2>
+<h2 id="segment-outside-header-headref">106. segment-outside-header-headref</h2>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/segment-outside-header.gif" alt="Preview ios segment-outside-header-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/segment-outside-header.gif" alt="Preview android segment-outside-header-headref"></p>
 <p><em>Syntax (Outside Header)</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Title, Segment, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentOutsideHeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentOutsideHeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -9493,14 +9501,14 @@ Also the <strong>first</strong> and <strong>last</strong> buttons should be give
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="segment-icon-headref">108. segment-icon-headref</h2>
-<h2 id="Segment_Icon">109. Segment Icon</h2>
+<h2 id="segment-icon-headref">107. segment-icon-headref</h2>
+<h2 id="Segment_Icon">108. Segment Icon</h2>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/segment-icon.png" alt="Preview ios segment-icon-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/segment-icon.png" alt="Preview android segment-icon-headref"></p>
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentIconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SegmentIconExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -9554,7 +9562,7 @@ Also the <strong>first</strong> and <strong>last</strong> buttons should be give
   &lt;/nb-container&gt;
 &lt;/template&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="Spinner">110. Spinner</h2>
+<h2 id="Spinner">109. Spinner</h2>
 <p>If you have certain screens of your app that take some time to load, you may want to consider a page loader. A page loader is any kind of animation that visually communicates to a visitor that the page is loading and to just sit tight for a few seconds. Without a page loader, user might think that the app is being unresponsive and just click away in frustration. A page loader also provides a small distraction which can actually makes the wait seem much shorter.<br>
 Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/activityindicator.html" target="_blank">ActivityIndicator</a></p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/spinner.gif" alt="Preview ios Spinner">
@@ -9607,8 +9615,8 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="swipeable-multi-def-headref">111. swipeable-multi-def-headref</h2>
-<h2 id="Swipeable_List">112. Swipeable List</h2>
+<h2 id="swipeable-multi-def-headref">110. swipeable-multi-def-headref</h2>
+<h2 id="Swipeable_List">111. Swipeable List</h2>
 <p>Swipeable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br></p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-multiple.gif" alt="Preview ios swipeable-multi-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-multiple.gif" alt="Preview android swipeable-multi-def-headref"></p>
@@ -9851,8 +9859,8 @@ export default {
     </table><br>
 <br>
 <strong>Known Issues :</strong> Native behavior of closing row when List is scrolled doesn&apos;t work. <br></p>
-<h2 id="swipeable-single-def-headref">113. swipeable-single-def-headref</h2>
-<h4 id="SwipeRow">113.0.1. SwipeRow</h4>
+<h2 id="swipeable-single-def-headref">112. swipeable-single-def-headref</h2>
+<h4 id="SwipeRow">112.0.1. SwipeRow</h4>
 <p>Single Swipeable ListItem (Outside List)</p>
 <p><img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/list-swipe-single-row.gif" alt="Preview ios swipeable-single-def-headref">
 <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/android/list-swipe-single-row.gif" alt="Preview android swipeable-single-def-headref"></p>
@@ -10049,8 +10057,8 @@ export default {
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="tabs-def-headref">114. tabs-def-headref</h2>
-<h2 id="Tabs">115. Tabs</h2>
+<h2 id="tabs-def-headref">113. tabs-def-headref</h2>
+<h2 id="Tabs">114. Tabs</h2>
 <p>Tabs are a horizontal region of buttons or links that allow for a consistent navigation experience between screens. It can contain any combination of text and icons, and is a popular method for enabling mobile navigation.<br>
 <em>Replacing Component: <a href="https://github.com/brentvatne/react-native-scrollable-tab-view" target="_blank">react-native-scrollable-tab-view <code>&lt;ScrollableTabView&gt;</code></a></em></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/tabs-basic.gif" alt="Preview ios tabs-def-headref">
@@ -10061,7 +10069,7 @@ export default {
 <span class="hljs-keyword">import</span> Tab1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabOne&apos;</span>;
 <span class="hljs-keyword">import</span> Tab2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabTwo&apos;</span>;
 <span class="hljs-keyword">import</span> Tab3 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabThree&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -10105,7 +10113,7 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<p><strong>Configuration</strong></p>
+<p><strong>Configuration(Tabs)</strong></p>
 <p><table class="table table-bordered">
         <thead>
             <tr>
@@ -10174,10 +10182,71 @@ export default {
             </tr>
         </tbody>
     </table><br></p>
+<p><strong>Configuration(Tab,TabHeading)</strong>    </p>
+<p><table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Option</th>
+            <th width="50%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>heading(only for Tab)</td>
+            <td> - </td>
+            <td> string </td>
+            <td>
+                Label String, or Component
+            </td>
+        </tr>
+        <tr>
+            <td>style(only for TabHeading)</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for TabHeading Component
+            </td>
+        </tr>
+        <tr>
+            <td>tabStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for tab bar
+            </td>
+        </tr>
+        <tr>
+            <td>activeTabStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for active tab bar
+            </td>
+        </tr>
+        <tr>
+            <td>textStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for text
+            </td>
+        </tr>
+        <tr>
+            <td>activeTextStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for active text
+            </td>
+        </tr>
+    </tbody>
+</table><br></p>
 <p><strong>Known Issues :</strong> Custom tabHeading is not yet supported for <code>ScrollableTab</code> heading only accepts a string. <br>
 <strong>Pro-Tip :</strong> It is advisable to use <code>hasTabs</code> prop with Header while using Tabs. <br></p>
-<h2 id="tabs-advanced-headref">116. tabs-advanced-headref</h2>
-<h4 id="Advanced_Tabs">116.0.1. Advanced Tabs</h4>
+<h2 id="tabs-advanced-headref">115. tabs-advanced-headref</h2>
+<h4 id="Advanced_Tabs">115.0.1. Advanced Tabs</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/tabs-advanced.gif" alt="Preview ios tabs-advanced-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/tabs-advanced.gif" alt="Preview android tabs-advanced-headref"></p>
 <p><em>Syntax</em></p>
@@ -10186,7 +10255,7 @@ export default {
 <span class="hljs-keyword">import</span> Tab1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabOne&apos;</span>;
 <span class="hljs-keyword">import</span> Tab2 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabTwo&apos;</span>;
 <span class="hljs-keyword">import</span> Tab3 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabThree&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsAdvancedExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsAdvancedExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -10256,8 +10325,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="tabs-scrollable-headref">117. tabs-scrollable-headref</h2>
-<h4 id="Scrollable_Tabs">117.0.1. Scrollable Tabs</h4>
+<h2 id="tabs-scrollable-headref">116. tabs-scrollable-headref</h2>
+<h4 id="Scrollable_Tabs">116.0.1. Scrollable Tabs</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/tabs-scrollable.gif" alt="Preview ios tabs-scrollable-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/tabs-scrollable.gif" alt="Preview android tabs-scrollable-headref"></p>
 <p><em>Syntax</em></p>
@@ -10266,7 +10335,7 @@ export default {
 <span class="hljs-keyword">import</span> Tab1 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabOne&apos;</span>;
 . . .
 import Tab5 <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./tabFive&apos;</span>;
-&#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsScrollableExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabsScrollableExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
     <span class="hljs-keyword">return</span> (
       &lt;Container&gt;
@@ -10329,59 +10398,52 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
+<p><strong>Configuration(ScrollableTab)</strong>    </p>
 <p><table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Property</th>
-                <th>Default</th>
-                <th>Option</th>
-                <th width="50%">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>heading</td>
-                <td> - </td>
-                <td> string, <tabheading> </tabheading></td>
-                <td>
-                    Label String, or Component
-                </td>
-            </tr>
-            <tr>
-                <td>tabStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for tab bar
-                </td>
-            </tr>
-            <tr>
-                <td>activeTabStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for active tab bar
-                </td>
-            </tr>
-            <tr>
-                <td>textStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for text
-                </td>
-              </tr>
-              <tr>
-                <td>activeTextStyle</td>
-                <td> - </td>
-                <td> style object </td>
-                <td>
-                    Style for active text
-                </td>
-            </tr>
-        </tbody>
-    </table><br></p>
-<h2 id="Thumbnail">118. Thumbnail</h2>
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Option</th>
+            <th width="50%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>style</td>
+            <td> - </td>
+            <td> style object</td>
+            <td>
+                Style for ScrollableTab
+            </td>
+        </tr>
+        <tr>
+            <td>tabsContainerStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for tabs within ScrollableTab
+            </td>
+        </tr>
+        <tr>
+            <td>underlineStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style of the Scrollable Tab&apos;s underline
+            </td>
+        </tr>
+        <tr>
+            <td>onScroll</td>
+            <td> - </td>
+            <td> Function </td>
+            <td>
+                Function to call when pages are sliding
+            </td>
+        </tr>
+    </tbody>
+</table><br></p>
+<h2 id="Thumbnail">117. Thumbnail</h2>
 <p>Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br>
 Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/image.html" target="_blank">Image</a></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/thumbnail.png" alt="Preview ios Thumbnail">
@@ -10434,7 +10496,7 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<p><strong>Note:</strong> To have Thumbnail of custom size, include height and width with <code>style</code>.</p>
+<p><strong>Note:</strong> To have Thumbnail of custom size, specify <code>height</code>, <code>width</code> and <code>borderRadius</code> within <code>style</code>.</p>
 <p><strong>Configuration</strong></p>
 <p><table class="table table-bordered">
         <thead>
@@ -10483,8 +10545,8 @@ export default {
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="toast-def-headref">119. toast-def-headref</h2>
-<h2 id="Toast">120. Toast</h2>
+<h2 id="toast-def-headref">118. toast-def-headref</h2>
+<h2 id="Toast">119. Toast</h2>
 <p>NativeBase Toast can be used to display quick warning or error messages.
 For <code>Toast</code> to work, you need to wrap your topmost component inside <code>&lt;Root&gt;</code> from native-base.</p>
 <p>Replacing Component: React Native <a href="https://facebook.github.io/react-native/docs/view.html" target="_blank">View</a>.</p>
@@ -10648,8 +10710,8 @@ export default {
         </tr>
     </tbody>
 </table><br></p>
-<h2 id="toast-with-duration-headref">121. toast-with-duration-headref</h2>
-<h4 id="Toast_with_duration">121.0.1. Toast with duration</h4>
+<h2 id="toast-with-duration-headref">120. toast-with-duration-headref</h2>
+<h4 id="Toast_with_duration">120.0.1. Toast with duration</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-duration.gif" alt="Preview ios toast-with-duration-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-duration.gif" alt="Preview android toast-with-duration-headref"></p>
 <p><em>Syntax</em> </p>
@@ -10707,8 +10769,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="toast-position-headref">122. toast-position-headref</h2>
-<h4 id="Toast_position">122.0.1. Toast position</h4>
+<h2 id="toast-position-headref">121. toast-position-headref</h2>
+<h4 id="Toast_position">121.0.1. Toast position</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-position.gif" alt="Preview ios toast-position-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-position.gif" alt="Preview android toast-position-headref"></p>
 <p><em>Syntax</em></p>
@@ -10786,8 +10848,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="toast-type-headref">123. toast-type-headref</h2>
-<h4 id="Toast_types">123.0.1. Toast types</h4>
+<h2 id="toast-type-headref">122. toast-type-headref</h2>
+<h4 id="Toast_types">122.0.1. Toast types</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-type.gif" alt="Preview ios toast-type-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-type.gif" alt="Preview android toast-type-headref"></p>
 <p><em>Syntax</em></p>
@@ -10903,8 +10965,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="toast-text-style-headref">124. toast-text-style-headref</h2>
-<h4 id="Toast_text_style">124.0.1. Toast text style</h4>
+<h2 id="toast-text-style-headref">123. toast-text-style-headref</h2>
+<h4 id="Toast_text_style">123.0.1. Toast text style</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-text-style.gif" alt="Preview ios toast-text-style-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-text-style.gif" alt="Preview android toast-text-style-headref"></p>
 <p><em>Syntax</em></p>
@@ -10963,8 +11025,8 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="toast-button-style-headref">125. toast-button-style-headref</h2>
-<h4 id="Toast_button_style">125.0.1. Toast button style</h4>
+<h2 id="toast-button-style-headref">124. toast-button-style-headref</h2>
+<h4 id="Toast_button_style">124.0.1. Toast button style</h4>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/toast-button-style.gif" alt="Preview ios toast-button-style-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/toast-button-style.gif" alt="Preview android toast-button-style-headref"></p>
 <p><em>Syntax</em></p>
@@ -11024,7 +11086,7 @@ export default {
 };
 &lt;/script&gt;</code></pre></div></div></div>
 <br></p>
-<h2 id="Typography">126. Typography</h2>
+<h2 id="Typography">125. Typography</h2>
 <p>NativeBase provides you with the Heading Tags, namely <code>H1</code>, <code>H2</code> and <code>H3</code> components. These Heading tags helps you prioritize the content of your screen.<br>
 Replacing Component for H1, H2, H3, Text: React Native <a href="http://facebook.github.io/react-native/docs/text.html" target="_blank">Text</a> <br></p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/typography.png" alt="Preview ios Typography">
@@ -11089,7 +11151,7 @@ Replacing Component for H1, H2, H3, Text: React Native <a href="http://facebook.
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="Drawer">127. Drawer</h2>
+<h2 id="Drawer">126. Drawer</h2>
 <p>Drawer for both iOS and Android.<br>
 Drawer can be the perfect option to provide navigation options. <br>
 Replacing Component: <a href="https://github.com/root-two/react-native-drawer" target="_blank">React Native Drawer</a></p>
@@ -11167,8 +11229,8 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
             </tr>
         </tbody>
     </table><br></p>
-<h2 id="ref-components-headref">128. ref-components-headref</h2>
-<h2 id="Ref_to_Components">129. Ref to Components</h2>
+<h2 id="ref-components-headref">127. ref-components-headref</h2>
+<h2 id="Ref_to_Components">128. Ref to Components</h2>
 <ul>
 <li>NativeBase is built on top of React Native. Hence, the components of NativeBase have respective replacing React Native elements.</li>
 <li>NativeBase has now made it easy for developers, to access the any of its components using <b>ref</b>, along with its associated React Native elements.</li>
@@ -11198,7 +11260,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
 <li><code>this._button._root</code> gets you the reference of NativeBase Button&apos;s replacing React Native element i.e., TouchableOpacity.</li>
 <li>This feature is accessible with all of NativeBase components.</li>
 </ul>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Components">Components</a></p><li><a href="#anatomy-headref">1. anatomy-headref</a></li><li><a href="#Anatomy">2. Anatomy</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Anatomy">2.0.1. Header Anatomy</a></li><li><a href="#Content_Anatomy">2.0.2. Content Anatomy</a></li><li><a href="#Footer_Anatomy">2.0.3. Footer Anatomy</a></li></ul></ul><li><a href="#accordion-def-headref">3. accordion-def-headref</a></li><li><a href="#Accordion">4. Accordion</a></li><li><a href="#accordion-icon-headref">5. accordion-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_and_Expanded_Icon">5.0.1. Icon and Expanded Icon</a></li></ul></ul><li><a href="#accordion-icon-style-headref">6. accordion-icon-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_and_Expanded_Icon_Style">6.0.1. Icon and Expanded Icon Style</a></li></ul></ul><li><a href="#accordion-header-content-headref">7. accordion-header-content-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_and_Content_Style">7.0.1. Header and Content Style</a></li></ul></ul><li><a href="#accordion-custom-header-content-headref">8. accordion-custom-header-content-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Custom_Header_and_Content">8.0.1. Custom Header and Content</a></li></ul></ul><li><a href="#actionsheet-def-headref">9. actionsheet-def-headref</a></li><li><a href="#ActionSheet">10. ActionSheet</a></li><li><a href="#actionsheet-icon-headref">11. actionsheet-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_ActionSheet_(Android_only)">11.0.1. Icon ActionSheet (Android only)</a></li></ul></ul><li><a href="#Badge">12. Badge</a></li><li><a href="#button-def-headref">13. button-def-headref</a></li><li><a href="#Button">14. Button</a></li><li><a href="#button-theme-headref">15. button-theme-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">15.0.1. Button Theme</a></li></ul></ul><li><a href="#button-transparent-headref">16. button-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Button">16.0.1. Transparent Button</a></li></ul></ul><li><a href="#button-outline-headref">17. button-outline-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Outline_Button">17.0.1. Outline Button</a></li></ul></ul><li><a href="#button-rounded-headref">18. button-rounded-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Button">18.0.1. Rounded Button</a></li></ul></ul><li><a href="#button-block-headref">19. button-block-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Block_Button">19.0.1. Block Button</a></li></ul></ul><li><a href="#button-full-headref">20. button-full-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Full_Button">20.0.1. Full Button</a></li></ul></ul><li><a href="#button-icon-headref">21. button-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Button">21.0.1. Icon Button</a></li></ul></ul><li><a href="#button-size-headref">22. button-size-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Size">22.0.1. Button Size</a></li></ul></ul><li><a href="#button-disabled-headref">23. button-disabled-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Button">23.0.1. Disabled Button</a></li></ul></ul><li><a href="#card-def-headref">24. card-def-headref</a></li><li><a href="#Card">25. Card</a></li><li><a href="#card-headfoot-headref">26. card-headfoot-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Header_and_Footer">26.0.1. Card Header and Footer</a></li></ul></ul><li><a href="#carditem-bordered-headref">27. carditem-bordered-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#CardItem_Bordered">27.0.1. CardItem Bordered</a></li></ul></ul><li><a href="#carditem-button-headref">28. carditem-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#CardItem_Button">28.0.1. CardItem Button</a></li></ul></ul><li><a href="#card-transparent-headref">29. card-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Card">29.0.1. Transparent Card</a></li></ul></ul><li><a href="#card-list-headref">30. card-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_List">30.0.1. Card List</a></li></ul></ul><li><a href="#card-image-headref">31. card-image-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Image">31.0.1. Card Image</a></li></ul></ul><li><a href="#card-showcase-headref">32. card-showcase-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Showcase">32.0.1. Card Showcase</a></li></ul></ul><li><a href="#checkbox-headref">33. checkbox-headref</a></li><li><a href="#Check_Box">34. Check Box</a></li><li><a href="#date-picker-def-headref">35. date-picker-def-headref</a></li><li><a href="#Date_Picker">36. Date Picker</a></li><li><a href="#deckswiper-def-headref">37. deckswiper-def-headref</a></li><li><a href="#Deck_Swiper">38. Deck Swiper</a></li><li><a href="#deckswiper-adv-headref">39. deckswiper-adv-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Deck_Swiper">39.0.1. Advanced Deck Swiper</a></li></ul></ul><li><a href="#fabs-def-headref">40. fabs-def-headref</a></li><li><a href="#FABs">41. FABs</a></li><li><a href="#fabs-multiple-headref">42. fabs-multiple-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Multiple_FABs">42.0.1. Multiple FABs</a></li></ul></ul><li><a href="#footer-tabs-def-headref">43. footer-tabs-def-headref</a></li><li><a href="#Footer_Tabs">44. Footer Tabs</a></li><li><a href="#footer-tabs-icon-headref">45. footer-tabs-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer">45.0.1. Icon Footer</a></li></ul></ul><li><a href="#footer-tabs-icon-text-headref">46. footer-tabs-icon-text-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer_with_Text">46.0.1. Icon Footer with Text</a></li></ul></ul><li><a href="#footer-tabs-badge-headref">47. footer-tabs-badge-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Footer_with_badge">47.0.1. Footer with badge</a></li></ul></ul><li><a href="#Form">48. Form</a></li><li><a href="#fixed-label-headref">49. fixed-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Fixed_Label">49.0.1. Fixed Label</a></li></ul></ul><li><a href="#inline-label-headref">50. inline-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Inline_Label">50.0.1. Inline Label</a></li></ul></ul><li><a href="#floating-label-headref">51. floating-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Floating_Label">51.0.1. Floating Label</a></li></ul></ul><li><a href="#stacked-label-headref">52. stacked-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Stacked_Label">52.0.1. Stacked Label</a></li></ul></ul><li><a href="#list-icon-headref">53. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">53.0.1. List Icon</a></li></ul></ul><li><a href="#regular-textbox-headref">54. regular-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Regular_Textbox">54.0.1. Regular Textbox</a></li></ul></ul><li><a href="#underlined-textbox-headref">55. underlined-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Underlined_Textbox">55.0.1. Underlined Textbox</a></li></ul></ul><li><a href="#rounded-textbox-headref">56. rounded-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Textbox">56.0.1. Rounded Textbox</a></li></ul></ul><li><a href="#icon-textbox-headref">57. icon-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Textbox">57.0.1. Icon Textbox</a></li></ul></ul><li><a href="#success-textbox-headref">58. success-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Success_Input_Textbox">58.0.1. Success Input Textbox</a></li></ul></ul><li><a href="#error-textbox-headref">59. error-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Error_Input_Textbox">59.0.1. Error Input Textbox</a></li></ul></ul><li><a href="#disabled-textbox-headref">60. disabled-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Textbox">60.0.1. Disabled Textbox</a></li></ul></ul><li><a href="#textarea-textbox-headref">61. textarea-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Textarea">61.0.1. Textarea</a></li></ul></ul><li><a href="#header-def-headref">62. header-def-headref</a></li><li><a href="#Header">63. Header</a></li><li><a href="#title-header-headref">64. title-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_only_title">64.0.1. Header with only title</a></li></ul></ul><li><a href="#header-title-subtitle-headref">65. header-title-subtitle-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Title_and_Subtitle">65.0.1. Header with Title and Subtitle</a></li></ul></ul><li><a href="#header-icon-headref">66. header-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_Buttons">66.0.1. Header with Icon Buttons</a></li></ul></ul><li><a href="#header-text-button-headref">67. header-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Text_Buttons">67.0.1. Header with Text Buttons</a></li></ul></ul><li><a href="#header-icon-button-text-button-headref">68. header-icon-button-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_Button_and_Text_Button">68.0.1. Header with Icon Button and Text Button</a></li></ul></ul><li><a href="#header-icon-text-button-headref">69. header-icon-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_and_Text_Button">69.0.1. Header with Icon and Text Button</a></li></ul></ul><li><a href="#header-multiple-icon-headref">70. header-multiple-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Multiple_Icon_Buttons">70.0.1. Header with Multiple Icon Buttons</a></li></ul></ul><li><a href="#header-span-headref">71. header-span-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Span">71.0.1. Header Span</a></li></ul></ul><li><a href="#header-no-shadow-headref">72. header-no-shadow-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_NoShadow">72.0.1. Header NoShadow</a></li></ul></ul><li><a href="#header-no-left-headref">73. header-no-left-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_NoLeft">73.0.1. Header NoLeft</a></li></ul></ul><li><a href="#header-transparent-headref">74. header-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Transparent">74.0.1. Header Transparent</a></li></ul></ul><li><a href="#icon-def-headref">75. icon-def-headref</a></li><li><a href="#Icon">76. Icon</a></li><li><a href="#Layout">77. Layout</a></li><li><a href="#list-def-headref">78. list-def-headref</a></li><li><a href="#List">79. List</a></li><li><a href="#list-divider-headref">80. list-divider-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Divider">80.0.1. List Divider</a></li></ul></ul><li><a href="#list-header-headref">81. list-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Header">81.0.1. List Header</a></li></ul></ul><li><a href="#listitem-selected-headref">82. listitem-selected-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#ListItem_Selected">82.0.1. ListItem Selected</a></li></ul></ul><li><a href="#listitem-noIndent-headref">83. listitem-noIndent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#ListItem_NoIndent">83.0.1. ListItem NoIndent</a></li></ul></ul><li><a href="#list-icon-headref">84. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">84.0.1. List Icon</a></li></ul></ul><li><a href="#list-avatar-headref">85. list-avatar-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Avatar">85.0.1. List Avatar</a></li></ul></ul><li><a href="#list-thumbnail-headref">86. list-thumbnail-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Thumbnail">86.0.1. List Thumbnail</a></li></ul></ul><li><a href="#dynamic-list-headref">87. dynamic-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Dynamic_List">87.0.1. Dynamic List</a></li></ul></ul><li><a href="#list-seperator-headref">88. list-seperator-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Separator">88.0.1. List Separator</a></li></ul></ul><li><a href="#picker-def-headref">89. picker-def-headref</a></li><li><a href="#Picker">90. Picker</a></li><ul><li><a href="#Advanced_Pickers_(iOS_only)">90.1. Advanced Pickers (iOS only)</a></li></ul><li><a href="#picker-with-icon-headref">91. picker-with-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Icon">91.0.1. Picker with Icon</a></li></ul></ul><li><a href="#picker-with-icon-style-headref">92. picker-with-icon-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Icon_Style">92.0.1. Picker with Icon Style</a></li></ul></ul><li><a href="#picker-placeholder-headref">93. picker-placeholder-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Placeholder_Picker">93.0.1. Placeholder Picker</a></li></ul></ul><li><a href="#picker-placeholder-without-note-headref">94. picker-placeholder-without-note-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Placeholder_Picker_(without_note)">94.0.1. Placeholder Picker (without note)</a></li></ul></ul><li><a href="#picker-text-and-item-text-styles-headref">95. picker-text-and-item-text-styles-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_Text_and_Item_Text_Style">95.0.1. Picker Text and Item Text Style</a></li></ul></ul><li><a href="#picker-with-custom-back-button-headref">96. picker-with-custom-back-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Back_Button">96.0.1. Picker with Custom Back Button</a></li></ul></ul><li><a href="#picker-with-custom-header-headref">97. picker-with-custom-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Header">97.0.1. Picker with Custom Header</a></li></ul></ul><li><a href="#picker-with-custom-header-style-headref">98. picker-with-custom-header-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Header_Style">98.0.1. Picker with Custom Header Style</a></li></ul></ul><li><a href="#radio-button-headref">99. radio-button-headref</a></li><li><a href="#Radio_Button">100. Radio Button</a></li><li><a href="#custom-radio-headref">101. custom-radio-headref</a></li><li><a href="#Custom_Radio_Button">102. Custom Radio Button</a></li><li><a href="#search-bar-headref">103. search-bar-headref</a></li><li><a href="#Search_Bar">104. Search Bar</a></li><li><a href="#segment-inside-header-headref">105. segment-inside-header-headref</a></li><li><a href="#Segment">106. Segment</a></li><li><a href="#segment-outside-header-headref">107. segment-outside-header-headref</a></li><li><a href="#segment-icon-headref">108. segment-icon-headref</a></li><li><a href="#Segment_Icon">109. Segment Icon</a></li><li><a href="#Spinner">110. Spinner</a></li><li><a href="#swipeable-multi-def-headref">111. swipeable-multi-def-headref</a></li><li><a href="#Swipeable_List">112. Swipeable List</a></li><li><a href="#swipeable-single-def-headref">113. swipeable-single-def-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#SwipeRow">113.0.1. SwipeRow</a></li></ul></ul><li><a href="#tabs-def-headref">114. tabs-def-headref</a></li><li><a href="#Tabs">115. Tabs</a></li><li><a href="#tabs-advanced-headref">116. tabs-advanced-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Tabs">116.0.1. Advanced Tabs</a></li></ul></ul><li><a href="#tabs-scrollable-headref">117. tabs-scrollable-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Scrollable_Tabs">117.0.1. Scrollable Tabs</a></li></ul></ul><li><a href="#Thumbnail">118. Thumbnail</a></li><li><a href="#toast-def-headref">119. toast-def-headref</a></li><li><a href="#Toast">120. Toast</a></li><li><a href="#toast-with-duration-headref">121. toast-with-duration-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_with_duration">121.0.1. Toast with duration</a></li></ul></ul><li><a href="#toast-position-headref">122. toast-position-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_position">122.0.1. Toast position</a></li></ul></ul><li><a href="#toast-type-headref">123. toast-type-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_types">123.0.1. Toast types</a></li></ul></ul><li><a href="#toast-text-style-headref">124. toast-text-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_text_style">124.0.1. Toast text style</a></li></ul></ul><li><a href="#toast-button-style-headref">125. toast-button-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_button_style">125.0.1. Toast button style</a></li></ul></ul><li><a href="#Typography">126. Typography</a></li><li><a href="#Drawer">127. Drawer</a></li><li><a href="#ref-components-headref">128. ref-components-headref</a></li><li><a href="#Ref_to_Components">129. Ref to Components</a></li></ul></div><a href="#anatomy-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#Components">Components</a></p><li><a href="#anatomy-headref">1. anatomy-headref</a></li><li><a href="#Anatomy">2. Anatomy</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Anatomy">2.0.1. Header Anatomy</a></li><li><a href="#Content_Anatomy">2.0.2. Content Anatomy</a></li><li><a href="#Footer_Anatomy">2.0.3. Footer Anatomy</a></li></ul></ul><li><a href="#accordion-def-headref">3. accordion-def-headref</a></li><li><a href="#Accordion">4. Accordion</a></li><li><a href="#accordion-icon-headref">5. accordion-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_and_Expanded_Icon">5.0.1. Icon and Expanded Icon</a></li></ul></ul><li><a href="#accordion-icon-style-headref">6. accordion-icon-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_and_Expanded_Icon_Style">6.0.1. Icon and Expanded Icon Style</a></li></ul></ul><li><a href="#accordion-header-content-headref">7. accordion-header-content-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_and_Content_Style">7.0.1. Header and Content Style</a></li></ul></ul><li><a href="#accordion-custom-header-content-headref">8. accordion-custom-header-content-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Custom_Header_and_Content">8.0.1. Custom Header and Content</a></li></ul></ul><li><a href="#actionsheet-def-headref">9. actionsheet-def-headref</a></li><li><a href="#ActionSheet">10. ActionSheet</a></li><li><a href="#actionsheet-icon-headref">11. actionsheet-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_ActionSheet_(Android_only)">11.0.1. Icon ActionSheet (Android only)</a></li></ul></ul><li><a href="#Badge">12. Badge</a></li><li><a href="#button-def-headref">13. button-def-headref</a></li><li><a href="#Button">14. Button</a></li><li><a href="#button-theme-headref">15. button-theme-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Theme">15.0.1. Button Theme</a></li></ul></ul><li><a href="#button-transparent-headref">16. button-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Button">16.0.1. Transparent Button</a></li></ul></ul><li><a href="#button-outline-headref">17. button-outline-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Outline_Button">17.0.1. Outline Button</a></li></ul></ul><li><a href="#button-rounded-headref">18. button-rounded-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Button">18.0.1. Rounded Button</a></li></ul></ul><li><a href="#button-block-headref">19. button-block-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Block_Button">19.0.1. Block Button</a></li></ul></ul><li><a href="#button-full-headref">20. button-full-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Full_Button">20.0.1. Full Button</a></li></ul></ul><li><a href="#button-icon-headref">21. button-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Button">21.0.1. Icon Button</a></li></ul></ul><li><a href="#button-size-headref">22. button-size-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Button_Size">22.0.1. Button Size</a></li></ul></ul><li><a href="#button-disabled-headref">23. button-disabled-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Button">23.0.1. Disabled Button</a></li></ul></ul><li><a href="#card-def-headref">24. card-def-headref</a></li><li><a href="#Card">25. Card</a></li><li><a href="#card-headfoot-headref">26. card-headfoot-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Header_and_Footer">26.0.1. Card Header and Footer</a></li></ul></ul><li><a href="#carditem-bordered-headref">27. carditem-bordered-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#CardItem_Bordered">27.0.1. CardItem Bordered</a></li></ul></ul><li><a href="#carditem-button-headref">28. carditem-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#CardItem_Button">28.0.1. CardItem Button</a></li></ul></ul><li><a href="#card-transparent-headref">29. card-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Transparent_Card">29.0.1. Transparent Card</a></li></ul></ul><li><a href="#card-list-headref">30. card-list-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_List">30.0.1. Card List</a></li></ul></ul><li><a href="#card-image-headref">31. card-image-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Image">31.0.1. Card Image</a></li></ul></ul><li><a href="#card-showcase-headref">32. card-showcase-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Card_Showcase">32.0.1. Card Showcase</a></li></ul></ul><li><a href="#checkbox-headref">33. checkbox-headref</a></li><li><a href="#Check_Box">34. Check Box</a></li><li><a href="#date-picker-def-headref">35. date-picker-def-headref</a></li><li><a href="#Date_Picker">36. Date Picker</a></li><li><a href="#deckswiper-def-headref">37. deckswiper-def-headref</a></li><li><a href="#Deck_Swiper">38. Deck Swiper</a></li><li><a href="#deckswiper-adv-headref">39. deckswiper-adv-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Deck_Swiper">39.0.1. Advanced Deck Swiper</a></li></ul></ul><li><a href="#fabs-def-headref">40. fabs-def-headref</a></li><li><a href="#FABs">41. FABs</a></li><li><a href="#fabs-multiple-headref">42. fabs-multiple-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Multiple_FABs">42.0.1. Multiple FABs</a></li></ul></ul><li><a href="#footer-tabs-def-headref">43. footer-tabs-def-headref</a></li><li><a href="#Footer_Tabs">44. Footer Tabs</a></li><li><a href="#footer-tabs-icon-headref">45. footer-tabs-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer">45.0.1. Icon Footer</a></li></ul></ul><li><a href="#footer-tabs-icon-text-headref">46. footer-tabs-icon-text-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Footer_with_Text">46.0.1. Icon Footer with Text</a></li></ul></ul><li><a href="#footer-tabs-badge-headref">47. footer-tabs-badge-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Footer_with_badge">47.0.1. Footer with badge</a></li></ul></ul><li><a href="#Form">48. Form</a></li><li><a href="#fixed-label-headref">49. fixed-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Fixed_Label">49.0.1. Fixed Label</a></li></ul></ul><li><a href="#inline-label-headref">50. inline-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Inline_Label">50.0.1. Inline Label</a></li></ul></ul><li><a href="#floating-label-headref">51. floating-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Floating_Label">51.0.1. Floating Label</a></li></ul></ul><li><a href="#stacked-label-headref">52. stacked-label-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Stacked_Label">52.0.1. Stacked Label</a></li></ul></ul><li><a href="#list-icon-headref">53. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">53.0.1. List Icon</a></li></ul></ul><li><a href="#regular-textbox-headref">54. regular-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Regular_Textbox">54.0.1. Regular Textbox</a></li></ul></ul><li><a href="#underlined-textbox-headref">55. underlined-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Underlined_Textbox">55.0.1. Underlined Textbox</a></li></ul></ul><li><a href="#rounded-textbox-headref">56. rounded-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Rounded_Textbox">56.0.1. Rounded Textbox</a></li></ul></ul><li><a href="#icon-textbox-headref">57. icon-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Icon_Textbox">57.0.1. Icon Textbox</a></li></ul></ul><li><a href="#success-textbox-headref">58. success-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Success_Input_Textbox">58.0.1. Success Input Textbox</a></li></ul></ul><li><a href="#error-textbox-headref">59. error-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Error_Input_Textbox">59.0.1. Error Input Textbox</a></li></ul></ul><li><a href="#disabled-textbox-headref">60. disabled-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Disabled_Textbox">60.0.1. Disabled Textbox</a></li></ul></ul><li><a href="#textarea-textbox-headref">61. textarea-textbox-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Textarea">61.0.1. Textarea</a></li></ul></ul><li><a href="#header-def-headref">62. header-def-headref</a></li><li><a href="#Header">63. Header</a></li><li><a href="#title-header-headref">64. title-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_only_title">64.0.1. Header with only title</a></li></ul></ul><li><a href="#header-title-subtitle-headref">65. header-title-subtitle-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Title_and_Subtitle">65.0.1. Header with Title and Subtitle</a></li></ul></ul><li><a href="#header-icon-headref">66. header-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_Buttons">66.0.1. Header with Icon Buttons</a></li></ul></ul><li><a href="#header-text-button-headref">67. header-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Text_Buttons">67.0.1. Header with Text Buttons</a></li></ul></ul><li><a href="#header-icon-button-text-button-headref">68. header-icon-button-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_Button_and_Text_Button">68.0.1. Header with Icon Button and Text Button</a></li></ul></ul><li><a href="#header-icon-text-button-headref">69. header-icon-text-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Icon_and_Text_Button">69.0.1. Header with Icon and Text Button</a></li></ul></ul><li><a href="#header-multiple-icon-headref">70. header-multiple-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_with_Multiple_Icon_Buttons">70.0.1. Header with Multiple Icon Buttons</a></li></ul></ul><li><a href="#header-span-headref">71. header-span-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Span">71.0.1. Header Span</a></li></ul></ul><li><a href="#header-no-shadow-headref">72. header-no-shadow-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_NoShadow">72.0.1. Header NoShadow</a></li></ul></ul><li><a href="#header-no-left-headref">73. header-no-left-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_NoLeft">73.0.1. Header NoLeft</a></li></ul></ul><li><a href="#header-transparent-headref">74. header-transparent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Header_Transparent">74.0.1. Header Transparent</a></li></ul></ul><li><a href="#icon-def-headref">75. icon-def-headref</a></li><li><a href="#Icon">76. Icon</a></li><li><a href="#Layout">77. Layout</a></li><li><a href="#list-def-headref">78. list-def-headref</a></li><li><a href="#List">79. List</a></li><li><a href="#list-divider-headref">80. list-divider-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Divider">80.0.1. List Divider</a></li></ul></ul><li><a href="#list-header-headref">81. list-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Header">81.0.1. List Header</a></li></ul></ul><li><a href="#listitem-selected-headref">82. listitem-selected-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#ListItem_Selected">82.0.1. ListItem Selected</a></li></ul></ul><li><a href="#listitem-noIndent-headref">83. listitem-noIndent-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#ListItem_NoIndent">83.0.1. ListItem NoIndent</a></li></ul></ul><li><a href="#list-icon-headref">84. list-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Icon">84.0.1. List Icon</a></li></ul></ul><li><a href="#list-avatar-headref">85. list-avatar-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Avatar">85.0.1. List Avatar</a></li></ul></ul><li><a href="#list-thumbnail-headref">86. list-thumbnail-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Thumbnail">86.0.1. List Thumbnail</a></li></ul></ul><li><a href="#list-seperator-headref">87. list-seperator-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#List_Separator">87.0.1. List Separator</a></li></ul></ul><li><a href="#picker-def-headref">88. picker-def-headref</a></li><li><a href="#Picker">89. Picker</a></li><ul><li><a href="#Advanced_Pickers_(iOS_only)">89.1. Advanced Pickers (iOS only)</a></li></ul><li><a href="#picker-with-icon-headref">90. picker-with-icon-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Icon">90.0.1. Picker with Icon</a></li></ul></ul><li><a href="#picker-with-icon-style-headref">91. picker-with-icon-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Icon_Style">91.0.1. Picker with Icon Style</a></li></ul></ul><li><a href="#picker-placeholder-headref">92. picker-placeholder-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Placeholder_Picker">92.0.1. Placeholder Picker</a></li></ul></ul><li><a href="#picker-placeholder-without-note-headref">93. picker-placeholder-without-note-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Placeholder_Picker_(without_note)">93.0.1. Placeholder Picker (without note)</a></li></ul></ul><li><a href="#picker-text-and-item-text-styles-headref">94. picker-text-and-item-text-styles-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_Text_and_Item_Text_Style">94.0.1. Picker Text and Item Text Style</a></li></ul></ul><li><a href="#picker-with-custom-back-button-headref">95. picker-with-custom-back-button-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Back_Button">95.0.1. Picker with Custom Back Button</a></li></ul></ul><li><a href="#picker-with-custom-header-headref">96. picker-with-custom-header-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Header">96.0.1. Picker with Custom Header</a></li></ul></ul><li><a href="#picker-with-custom-header-style-headref">97. picker-with-custom-header-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Picker_with_Custom_Header_Style">97.0.1. Picker with Custom Header Style</a></li></ul></ul><li><a href="#radio-button-headref">98. radio-button-headref</a></li><li><a href="#Radio_Button">99. Radio Button</a></li><li><a href="#custom-radio-headref">100. custom-radio-headref</a></li><li><a href="#Custom_Radio_Button">101. Custom Radio Button</a></li><li><a href="#search-bar-headref">102. search-bar-headref</a></li><li><a href="#Search_Bar">103. Search Bar</a></li><li><a href="#segment-inside-header-headref">104. segment-inside-header-headref</a></li><li><a href="#Segment">105. Segment</a></li><li><a href="#segment-outside-header-headref">106. segment-outside-header-headref</a></li><li><a href="#segment-icon-headref">107. segment-icon-headref</a></li><li><a href="#Segment_Icon">108. Segment Icon</a></li><li><a href="#Spinner">109. Spinner</a></li><li><a href="#swipeable-multi-def-headref">110. swipeable-multi-def-headref</a></li><li><a href="#Swipeable_List">111. Swipeable List</a></li><li><a href="#swipeable-single-def-headref">112. swipeable-single-def-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#SwipeRow">112.0.1. SwipeRow</a></li></ul></ul><li><a href="#tabs-def-headref">113. tabs-def-headref</a></li><li><a href="#Tabs">114. Tabs</a></li><li><a href="#tabs-advanced-headref">115. tabs-advanced-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Advanced_Tabs">115.0.1. Advanced Tabs</a></li></ul></ul><li><a href="#tabs-scrollable-headref">116. tabs-scrollable-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Scrollable_Tabs">116.0.1. Scrollable Tabs</a></li></ul></ul><li><a href="#Thumbnail">117. Thumbnail</a></li><li><a href="#toast-def-headref">118. toast-def-headref</a></li><li><a href="#Toast">119. Toast</a></li><li><a href="#toast-with-duration-headref">120. toast-with-duration-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_with_duration">120.0.1. Toast with duration</a></li></ul></ul><li><a href="#toast-position-headref">121. toast-position-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_position">121.0.1. Toast position</a></li></ul></ul><li><a href="#toast-type-headref">122. toast-type-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_types">122.0.1. Toast types</a></li></ul></ul><li><a href="#toast-text-style-headref">123. toast-text-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_text_style">123.0.1. Toast text style</a></li></ul></ul><li><a href="#toast-button-style-headref">124. toast-button-style-headref</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#Toast_button_style">124.0.1. Toast button style</a></li></ul></ul><li><a href="#Typography">125. Typography</a></li><li><a href="#Drawer">126. Drawer</a></li><li><a href="#ref-components-headref">127. ref-components-headref</a></li><li><a href="#Ref_to_Components">128. Ref to Components</a></li></ul></div><a href="#anatomy-headref" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -11241,7 +11303,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.9.0/","text":"v2.9.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-01-08T12:30:51.732Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T12:53:10.380Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.10.0/","text":"v2.10.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-01-10T10:01:59.430Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-11T12:28:53.257Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -11275,7 +11337,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
         
     
         
-        <script src="gitbook/gitbook-plugin-scripts/60a8f406d06ddec685081073789ed41a-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-scripts/1e26a2af8a2f2a94b1a05334ad5b6d18-engine.js"></script>
         
     
         

@@ -77,7 +77,7 @@
         * [List Icon](Components.md#list-icon-headref)
         * [List Avatar](Components.md#list-avatar-headref)
         * [List Thumbnail](Components.md#list-thumbnail-headref)
-        * [Dynamic List](Components.md#dynamic-list-headref)
+        <!-- * [Dynamic List](Components.md#dynamic-list-headref) -->
         * [List Separator](Components.md#list-seperator-headref)
     * [Picker](Components.md#picker-def-headref)
         * [Picker with Icon](Components.md#picker-with-icon-headref)
