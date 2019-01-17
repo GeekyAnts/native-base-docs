@@ -191,3 +191,83 @@ Please verify the system requirements mentioned in [installation](/docs/GetStart
         Hence the collection of icons from Vector Icons holds good with that in NativeBase.
     </div>
 </div>
+
+<br />
+<hr>
+<br />
+
+<a id="FlatList-inside-Content-item"></a>
+#### FlatList inside Content item invokes onEndReached infinite times
+
+<div id="faq-10" class="panel-collapse collapse">
+    <div class="panel-body">
+        I was facing the issue that <code>onEndReached</code> was getting called again and again after an interval when setting onEndReachedThreshold greater than 0.
+    </div>
+    <br />
+    <div class="panel-footer">
+        <b> Solution: </b><br />
+        Use prop <code>contentContainerStyle</code> of <code>Content</code> component as in<br/>
+        <code>{% raw %}contentContainerStyle={{flex: 1}}{% endraw %}</code>
+</div>
+
+<br />
+<hr>
+<br />
+
+<a id="styling-Tabs"></a>
+#### I want to style Tabs, change text color of individual Tab
+
+<div id="faq-11" class="panel-collapse collapse">
+    <div class="panel-body">
+        I want to change width of Tabs, and change TextColor of individual Tab.
+    </div>
+    <br />
+    <div class="panel-footer">
+        <b> Solution: </b><br />
+        Use <code>tabsContainerStyle</code> to style <code>Tabs</code> component,<br/>
+        Use <code>textStyle</code> and <code>activeTextStyle</code> to change text color of individual <code>Tab</code> component, and <code>tabStyle</code> to style individual <code>Tab</code> component.<br/>
+    </div>
+</div>
+
+<br />
+<hr>
+<br />
+
+<a id="Left-component-alignment"></a>
+#### Content of Left Component not being rendered at the left of the screen
+
+<div id="faq-12" class="panel-collapse collapse">
+    <div class="panel-body">
+        I am not sure why the content of <code>Left</code> appears at somewhere middle of the screen. It should appear at left side.
+    </div>
+    <br />
+    <div class="panel-footer">
+        <b> Solution: </b><br />
+        If you use <code>Left</code> or <code>Body</code> or <code>Right</code> with any NativeBase component, you must include these 3, to align the components.
+    </div>
+</div>
+
+<br />
+<hr>
+<br />
+
+<a id="reference-of-Input-floatingLabel"></a>
+#### I want to get the reference of native-base floatinglabel Input
+
+<div id="faq-13" class="panel-collapse collapse">
+    <div class="panel-body">
+        How can I get the reference of native-base floatinglabel Input?
+    </div>
+    <br />
+    <div class="panel-footer">
+        <b> Solution: </b><br />
+        When using floatingLabel, use <code>getRef</code> to get the reference of <code>Input</code> component. Always wrap floatingLabel component with <code>Form</code>.
+    </div>
+</div>
+
+<br />
+<hr>
+<br />
+
+
+
