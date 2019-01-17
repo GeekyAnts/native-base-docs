@@ -2209,7 +2209,76 @@
         Hence the collection of icons from Vector Icons holds good with that in NativeBase.
     </div>
 </div>
-<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#FAQs">FAQs</a></p><li><a href="#">none</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#I_am_facing_issues_while_setting_up_">0.0.1. I am facing issues while setting up.</a></li><li><a href="#I_am_getting_a_watchman_error_when_I_run_npm_install_">0.0.2. I am getting a watchman error when I run npm install.</a></li><li><a href="#Unrecognized_font_family_ionicons">0.0.3. Unrecognized font family ionicons</a></li><li><a href="#react-native-vector-icons_peer_installation_failed">0.0.4. react-native-vector-icons peer installation failed</a></li><li><a href="#How_to_override_style_in_NativeBase?">0.0.5. How to override style in NativeBase?</a></li><li><a href="#How_do_I_add_events_with_the_components?">0.0.6. How do I add events with the components?</a></li><li><a href="#None_of_the_above__I_have_a_different_error">0.0.7. None of the above, I have a different error</a></li><li><a href="#How_to_customize_components_of_NativeBase?">0.0.8. How to customize components of NativeBase?</a></li><li><a href="#I_want_list_of_icons_with_their_names_used_in_NativeBase">0.0.9. I want list of icons with their names used in NativeBase</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
+
+<p><br></p>
+<p><hr>
+<br></p>
+<p><a id="FlatList-inside-Content-item"></a></p>
+<h4 id="FlatList_inside_Content_item_invokes_onEndReached_infinite_times">0.0.10. FlatList inside Content item invokes onEndReached infinite times</h4>
+<div id="faq-10" class="panel-collapse collapse">
+    <div class="panel-body">
+        I was facing the issue that <code>onEndReached</code> was getting called again and again after an interval when setting onEndReachedThreshold greater than 0.
+    </div>
+    <br>
+    <div class="panel-footer">
+        <b> Solution: </b><br>
+        Use prop <code>contentContainerStyle</code> of <code>Content</code> component as in<br>
+        <code>contentContainerStyle={{flex: 1}}</code>
+</div>
+
+<p><br></p>
+<p><hr>
+<br></p>
+<p><a id="styling-Tabs"></a></p>
+<h4 id="I_want_to_style_Tabs__change_text_color_of_individual_Tab">0.0.11. I want to style Tabs, change text color of individual Tab</h4>
+<div id="faq-11" class="panel-collapse collapse">
+    <div class="panel-body">
+        I want to change width of Tabs, and change TextColor of individual Tab.
+    </div>
+    <br>
+    <div class="panel-footer">
+        <b> Solution: </b><br>
+        Use <code>tabsContainerStyle</code> to style <code>Tabs</code> component,<br>
+        Use <code>textStyle</code> and <code>activeTextStyle</code> to change text color of individual <code>Tab</code> component, and <code>tabStyle</code> to style individual <code>Tab</code> component.<br>
+    </div>
+</div>
+
+<p><br></p>
+<p><hr>
+<br></p>
+<p><a id="Left-component-alignment"></a></p>
+<h4 id="Content_of_Left_Component_not_being_rendered_at_the_left_of_the_screen">0.0.12. Content of Left Component not being rendered at the left of the screen</h4>
+<div id="faq-12" class="panel-collapse collapse">
+    <div class="panel-body">
+        I am not sure why the content of <code>Left</code> appears at somewhere middle of the screen. It should appear at left side.
+    </div>
+    <br>
+    <div class="panel-footer">
+        <b> Solution: </b><br>
+        If you use <code>Left</code> or <code>Body</code> or <code>Right</code> with any NativeBase component, you must include these 3, to align the components.
+    </div>
+</div>
+
+<p><br></p>
+<p><hr>
+<br></p>
+<p><a id="reference-of-Input-floatingLabel"></a></p>
+<h4 id="I_want_to_get_the_reference_of_native-base_floatinglabel_Input">0.0.13. I want to get the reference of native-base floatinglabel Input</h4>
+<div id="faq-13" class="panel-collapse collapse">
+    <div class="panel-body">
+        How can I get the reference of native-base floatinglabel Input?
+    </div>
+    <br>
+    <div class="panel-footer">
+        <b> Solution: </b><br>
+        When using floatingLabel, use <code>getRef</code> to get the reference of <code>Input</code> component. Always wrap floatingLabel component with <code>Form</code>.
+    </div>
+</div>
+
+<p><br></p>
+<p><hr>
+<br></p>
+</div><div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#FAQs">FAQs</a></p><li><a href="#">none</a></li><ul><li><a href="#">none</a></li><ul><li><a href="#I_am_facing_issues_while_setting_up_">0.0.1. I am facing issues while setting up.</a></li><li><a href="#I_am_getting_a_watchman_error_when_I_run_npm_install_">0.0.2. I am getting a watchman error when I run npm install.</a></li><li><a href="#Unrecognized_font_family_ionicons">0.0.3. Unrecognized font family ionicons</a></li><li><a href="#react-native-vector-icons_peer_installation_failed">0.0.4. react-native-vector-icons peer installation failed</a></li><li><a href="#How_to_override_style_in_NativeBase?">0.0.5. How to override style in NativeBase?</a></li><li><a href="#How_do_I_add_events_with_the_components?">0.0.6. How do I add events with the components?</a></li><li><a href="#None_of_the_above__I_have_a_different_error">0.0.7. None of the above, I have a different error</a></li><li><a href="#How_to_customize_components_of_NativeBase?">0.0.8. How to customize components of NativeBase?</a></li><li><a href="#I_want_list_of_icons_with_their_names_used_in_NativeBase">0.0.9. I want list of icons with their names used in NativeBase</a></li><li><a href="#FlatList_inside_Content_item_invokes_onEndReached_infinite_times">0.0.10. FlatList inside Content item invokes onEndReached infinite times</a></li><li><a href="#I_want_to_style_Tabs__change_text_color_of_individual_Tab">0.0.11. I want to style Tabs, change text color of individual Tab</a></li><li><a href="#Content_of_Left_Component_not_being_rendered_at_the_left_of_the_screen">0.0.12. Content of Left Component not being rendered at the left of the screen</a></li><li><a href="#I_want_to_get_the_reference_of_native-base_floatinglabel_Input">0.0.13. I want to get the reference of native-base floatinglabel Input</a></li></ul></ul></ul></div><a href="#" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -2248,7 +2317,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.13","depth":1,"previous":{"title":"Contribute","level":"1.12","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.10.0/","text":"v2.10.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/faq/FAQs.md","mtime":"2019-01-10T07:44:17.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-12T16:19:59.854Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FAQs","level":"1.13","depth":1,"previous":{"title":"Contribute","level":"1.12","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.10.0/","text":"v2.10.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/faq/FAQs.md","mtime":"2019-01-17T09:47:14.619Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-17T09:32:16.061Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
