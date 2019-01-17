@@ -11,7 +11,7 @@ Segments are best used as an alternative for tabs. Mainly used in iOS.
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } from 'native-base';
-​export default class SegmentExample extends Component {
+export default class SegmentExample extends Component {
   render() {
     return (
       <Container>

@@ -161,7 +161,7 @@ export default {
           <td>placeholder</td>
           <td> - </td>
           <td> - </td>
-          <td>Placeholder for Picker component</td>
+          <td>Placeholder for Picker component (iOS)</td>
       </tr>
       <tr>
           <td>placeholderStyle</td>

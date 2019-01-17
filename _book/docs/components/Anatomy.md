@@ -225,6 +225,12 @@ export default class ContentExample extends Component {
             <td>Disables automatic scroll on focus.</td>
         </tr>
         <tr>
+            <td>contentContainerStyle</td>
+            <td>-</td>
+            <td>style</td>
+            <td>Lets the user style the <code>Content</code> component.</td>
+        </tr>
+        <tr>
             <td>enableResetScrollToCoords</td>
             <td>true</td>
             <td>boolean</td>

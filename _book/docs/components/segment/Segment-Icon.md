@@ -8,7 +8,7 @@
 
 {% codetabs name="React Native", type="js" -%}import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Segment, Content, Text } from 'native-base';
-​export default class SegmentIconExample extends Component {
+export default class SegmentIconExample extends Component {
   render() {
     return (
       <Container>

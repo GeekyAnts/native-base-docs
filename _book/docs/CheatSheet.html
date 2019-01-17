@@ -1179,19 +1179,6 @@
     
         <li class="chapter " data-level="1.5.16.8" data-path="../Components.html">
             
-                <a href="../Components.html#dynamic-list-headref">
-            
-                    
-                    Dynamic List
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.16.9" data-path="../Components.html">
-            
                 <a href="../Components.html#list-seperator-headref">
             
                     
@@ -2707,6 +2694,15 @@
                     <td>lets the user enable or disable automatic resetScrollToCoords</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>contentContainerStyle</li>
+                        </ul>
+                    </td>
+                    <td>lets the user style the <code>Content</code> component.</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -3151,6 +3147,15 @@
                         </ul>
                     </td>
                     <td>string that will be rendered before text input has been entered</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderTextColor</li>
+                        </ul>
+                    </td>
+                    <td>color of the Input placeholder</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -3801,7 +3806,7 @@
                             <li>placeholder</li>
                         </ul>
                     </td>
-                    <td>default placeholder when no value is selected</td>
+                    <td>default placeholder when no value is selected in iOS</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -4254,6 +4259,126 @@
 
 
 
+                <!-- Tab, TabHeading -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Tab&gt;,&lt;TabHeading&gt;</td>
+                    <td>Individual Tab</td>
+                    <td>
+                        react-native-scrollable-tab-view
+                        <a href="https://github.com/brentvatne/react-native-scrollable-tab-view" target="_blank">
+                            &lt;ScrollableTabView&gt;
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>heading(only for Tab)</li>
+                        </ul>
+                    </td>
+                    <td>Label String, or Component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>style(only for TabHeading)</li>
+                        </ul>
+                    </td>
+                    <td>Style for TabHeading Component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for tab bar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>activeTabStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for active tab bar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>textStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for text</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>activeTextStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for active text</td>
+                    <td></td>
+                </tr>
+
+
+
+
+                <!-- ScrollableTab -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;ScrollableTab&gt;</td>
+                    <td>Horizontal scrolling of tabs</td>
+                    <td>
+                        react-native-scrollable-tab-view
+                        <a href="https://github.com/brentvatne/react-native-scrollable-tab-view" target="_blank">
+                            &lt;ScrollableTabView&gt;
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>style</li>
+                        </ul>
+                    </td>
+                    <td>Style for ScrollableTab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabsContainerStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for tabs within ScrollableTab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>underlineStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style of the Scrollable Tab&apos;s underline</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onScroll</li>
+                        </ul>
+                    </td>
+                    <td>Function to call when pages are sliding</td>
+                    <td></td>
+                </tr>
+
+
+
+
                 <!-- Thumbnail -->
                 <tr style="background-color: #f5f5f5">
                     <td>&lt;Thumbnail&gt;</td>
@@ -4491,7 +4616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CheatSheet","level":"1.11","depth":1,"next":{"title":"Contribute","level":"1.12","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"previous":{"title":"FlatList + Sticky Headers","level":"1.10.7","depth":2,"path":"docs/examples/FlatListExample.md","ref":"docs/examples/FlatListExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.9.0/","text":"v2.9.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/CheatSheet.md","mtime":"2019-01-08T12:30:52.740Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-08T12:53:10.380Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CheatSheet","level":"1.11","depth":1,"next":{"title":"Contribute","level":"1.12","depth":1,"path":"docs/Contribute.md","ref":"docs/Contribute.md","articles":[]},"previous":{"title":"FlatList + Sticky Headers","level":"1.10.7","depth":2,"path":"docs/examples/FlatListExample.md","ref":"docs/examples/FlatListExample.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.10.0/","text":"v2.10.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/CheatSheet.md","mtime":"2019-01-11T12:25:35.838Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-12T16:19:59.854Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -4525,11 +4650,15 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-scripts/60a8f406d06ddec685081073789ed41a-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-scripts/1e26a2af8a2f2a94b1a05334ad5b6d18-engine.js"></script>
         
     
         
         <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

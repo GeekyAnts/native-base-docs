@@ -205,6 +205,13 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
             <td>6</td>
             <td>6</td>
         </tr>
+        <tr>
+            <td>btnUppercaseAndroidText</td>
+            <td>boolean</td>
+            <td>UpperCase Text in Android</td>
+            <td>-</td>
+            <td>true</td>
+        </tr>
     </tbody>
 </table>
 <br/>

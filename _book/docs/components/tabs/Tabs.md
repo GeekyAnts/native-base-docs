@@ -16,7 +16,7 @@ import { Container, Header, Content, Tab, Tabs } from 'native-base';
 import Tab1 from './tabOne';
 import Tab2 from './tabTwo';
 import Tab3 from './tabThree';
-​export default class TabsExample extends Component {
+export default class TabsExample extends Component {
   render() {
     return (
       <Container>
@@ -64,7 +64,7 @@ export default {
 {%- endcodetabs %}
 <br />
 
-**Configuration**
+**Configuration(Tabs)**
 
 <table class="table table-bordered">
         <thead>
@@ -134,6 +134,70 @@ export default {
             </tr>
         </tbody>
     </table><br />
+
+**Configuration(Tab,TabHeading)**    
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Option</th>
+            <th width="50%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>heading(only for Tab)</td>
+            <td> - </td>
+            <td> string </td>
+            <td>
+                Label String, or Component
+            </td>
+        </tr>
+        <tr>
+            <td>style(only for TabHeading)</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for TabHeading Component
+            </td>
+        </tr>
+        <tr>
+            <td>tabStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for tab bar
+            </td>
+        </tr>
+        <tr>
+            <td>activeTabStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for active tab bar
+            </td>
+        </tr>
+        <tr>
+            <td>textStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for text
+            </td>
+        </tr>
+        <tr>
+            <td>activeTextStyle</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>
+                Style for active text
+            </td>
+        </tr>
+    </tbody>
+</table><br />
+
 
 **Known Issues :** Custom tabHeading is not yet supported for <code>ScrollableTab</code> heading only accepts a string. <br />
 **Pro-Tip :** It is advisable to use <code>hasTabs</code> prop with Header while using Tabs. <br />

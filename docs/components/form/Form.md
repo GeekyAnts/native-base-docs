@@ -176,6 +176,14 @@ export default class FormExample extends Component {
                 </td>
             </tr>
             <tr>
+                <td>placeholderTextColor</td>
+                <td> - </td>
+                <td> - </td>
+                <td>
+                    Color of the Input placeholder
+                </td>
+            </tr>
+            <tr>
                 <td>last</td>
                 <td> - </td>
                 <td> - </td>

@@ -653,6 +653,15 @@
                     <td>lets the user enable or disable automatic resetScrollToCoords</td>
                     <td></td>
                 </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>contentContainerStyle</li>
+                        </ul>
+                    </td>
+                    <td>lets the user style the <code>Content</code> component.</td>
+                    <td></td>
+                </tr>
 
 
 
@@ -1097,6 +1106,15 @@
                         </ul>
                     </td>
                     <td>string that will be rendered before text input has been entered</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>placeholderTextColor</li>
+                        </ul>
+                    </td>
+                    <td>color of the Input placeholder</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -1747,7 +1765,7 @@
                             <li>placeholder</li>
                         </ul>
                     </td>
-                    <td>default placeholder when no value is selected</td>
+                    <td>default placeholder when no value is selected in iOS</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -2194,6 +2212,126 @@
                         </ul>
                     </td>
                     <td>function to call when pages are sliding</td>
+                    <td></td>
+                </tr>
+
+
+
+
+                <!-- Tab, TabHeading -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;Tab>,&lt;TabHeading></td>
+                    <td>Individual Tab</td>
+                    <td>
+                        react-native-scrollable-tab-view
+                        <a href="https://github.com/brentvatne/react-native-scrollable-tab-view">
+                            &lt;ScrollableTabView>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>heading(only for Tab)</li>
+                        </ul>
+                    </td>
+                    <td>Label String, or Component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>style(only for TabHeading)</li>
+                        </ul>
+                    </td>
+                    <td>Style for TabHeading Component</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for tab bar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>activeTabStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for active tab bar</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>textStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for text</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>activeTextStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for active text</td>
+                    <td></td>
+                </tr>
+
+
+
+
+                <!-- ScrollableTab -->
+                <tr style="background-color: #f5f5f5">
+                    <td>&lt;ScrollableTab></td>
+                    <td>Horizontal scrolling of tabs</td>
+                    <td>
+                        react-native-scrollable-tab-view
+                        <a href="https://github.com/brentvatne/react-native-scrollable-tab-view">
+                            &lt;ScrollableTabView>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>style</li>
+                        </ul>
+                    </td>
+                    <td>Style for ScrollableTab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>tabsContainerStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style for tabs within ScrollableTab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>underlineStyle</li>
+                        </ul>
+                    </td>
+                    <td>Style of the Scrollable Tab's underline</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>onScroll</li>
+                        </ul>
+                    </td>
+                    <td>Function to call when pages are sliding</td>
                     <td></td>
                 </tr>
 
