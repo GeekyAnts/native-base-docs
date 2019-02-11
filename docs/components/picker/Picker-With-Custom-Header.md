@@ -38,7 +38,7 @@ export default class PickerCustomHeaderExample extends Component {
                   <Right />
                 </Header>}
               mode="dropdown"
-              iosIcon={<Icon name="ios-arrow-down-outline" />}
+              iosIcon={<Icon name="arrow-down" />}
               selectedValue={this.state.selected}
               onValueChange={this.onValueChange.bind(this)}
             >
