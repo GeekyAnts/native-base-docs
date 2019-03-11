@@ -2049,6 +2049,13 @@
 <li>Globally installed <a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">React Native CLI</a> which allow you to easily create and initialize projects.   </li>
 <li><a href="Compatibility.html">Click here</a> to know about React Native version compatibility with NativeBase.</li>
 </ul>
+<hr>
+
+
+
+
+
+
 <h2 id="Setup_with_React_Native">1. Setup with React Native</h2>
 <pre><code class="lang-js">react-native init AwesomeNativeBase
 cd AwesomeNativeBase
@@ -2062,13 +2069,20 @@ The peer dependencies included from any npm packages does not automatically get 
 </code></pre>
 <p>You&apos;ve successfully setup <a href="https://nativebase.io/" target="_blank">NativeBase</a> with your <a href="https://facebook.github.io/react-native/" target="_blank">React Native</a> app. Your React Native app is ready to run on iOS and Android devices.</p>
 <p>Check out the <a href="https://nativebase.io/kitchen-sink-app" target="_blank">NativeBase KitchenSink</a> an example of NativeBase components implementation. Here&apos;s the <a href="https://github.com/GeekyAnts/NativeBase-KitchenSink" target="_blank">source code</a> for NativeBase KitchenSink.</p>
+<hr>
+
+
+
+
+
+
+
 <h2 id="Setup_with_Expo">2. Setup with Expo</h2>
 <p>Expo helps you make React Native apps with no build configuration. It works on macOS, Windows, and Linux. <br>
 Refer this link for additional information on <a href="https://docs.expo.io/" target="_blank">Expo</a></p>
 <p><em>Install NativeBase</em></p>
 <pre><code class="lang-js">yarn add native-base --save
 </code></pre>
-<p><br></p>
 <p>NativeBase use some custom fonts that can be loaded using <strong>Font.loadAsync</strong> function. Check out the <a href="https://docs.expo.io/versions/latest/sdk/font/" target="_blank">Expo Font documentation</a>.
 <br></p>
 <p><em>Syntax</em> <br></p>
@@ -2088,50 +2102,64 @@ Refer this link for additional information on <a href="https://docs.expo.io/" ta
 <p><br>
 Check out the <a href="https://expo.io/@geekyants/nativebasekitchensink" target="_blank">KitchenSink</a> with Expo for an example of the implementation.<br>
 Find the <a href="https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/CRNA" target="_blank">KitchenSink repo here</a></p>
+<hr>
+
+
+
+
+
+
+
 <h2 id="Setup_with_Web">3. Setup with Web</h2>
 <pre><code>npm install -g create-react-app
-create-react-app nativebase-web-app
-cd nativebase-web-app
-npm eject
-npm install native-base --save
-npm install create-react-app --save
-npm install react-native-web --save
+npx create-react-app nativebase-app
+cd nativebase-app
+npm i native-base react-art react-native-web --save
+npm i react-app-rewired customize-cra @babel/plugin-proposal-class-properties --dev --save
 </code></pre><ul>
-<li><strong>Setup resolve alias in your webpack configuration</strong></li>
+<li><strong>Replace scripts in package.json</strong></li>
 </ul>
-<pre><code>alias: {
-  &quot;react-native/Libraries/Renderer/shims/ReactNativePropRegistry&quot;: &quot;react-native-web/dist/modules/ReactNativePropRegistry&quot;,
-  &quot;react-native&quot;: &quot;react-native-web&quot;
-},
+<pre><code>&quot;scripts&quot;: {
+    &quot;start&quot;: &quot;react-app-rewired start&quot;,
+    &quot;build&quot;: &quot;react-app-rewired build&quot;,
+    &quot;test&quot;: &quot;react-app-rewired test&quot;,
+}
 </code></pre><ul>
-<li><strong>Add Path resolver for NativeBase dependencies in your webpack configuration</strong></li>
+<li><strong>Create file config-overrides.js at root of your project</strong></li>
 </ul>
-<pre><code>{
-  test: /\.(js|jsx|mjs)$/,
-  include: [
-    paths.appSrc,
-    path.resolve(paths.appNodeModules, &quot;native-base-shoutem-theme&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-navigation&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-native-easy-grid&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-native-drawer&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-native-safe-area-view&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-native-vector-icons&quot;),
-    path.resolve(
-      paths.appNodeModules,
-      &quot;react-native-keyboard-aware-scroll-view&quot;
-    ),
-    path.resolve(paths.appNodeModules, &quot;react-native-web&quot;),
-    path.resolve(paths.appNodeModules, &quot;react-native-tab-view&quot;),
-    path.resolve(paths.appNodeModules, &quot;static-container&quot;)
-  ],
-  loader: require.resolve(&quot;babel-loader&quot;),
-  options: {
-    cacheDirectory: true
-  }
-},
+<pre><code>const path = require(&apos;path&apos;);
+const {
+  override,
+  addWebpackAlias,
+  babelInclude,
+  addBabelPlugins
+} = require(&apos;customize-cra&apos;);
+
+module.exports = override(
+  addWebpackAlias({
+    &quot;react-native/Libraries/Renderer/shims/ReactNativePropRegistry&quot;: &quot;react-native-web/dist/modules/ReactNativePropRegistry&quot;,
+    &quot;react-native&quot;: &quot;react-native-web&quot;
+  }),
+  babelInclude([
+    path.resolve(&apos;src&apos;),
+    path.resolve(&apos;node_modules/native-base-shoutem-theme&apos;),
+    path.resolve(&apos;node_modules/react-navigation&apos;),
+    path.resolve(&apos;node_modules/react-native-easy-grid&apos;),
+    path.resolve(&apos;node_modules/react-native-drawer&apos;),
+    path.resolve(&apos;node_modules/react-native-safe-area-view&apos;),
+    path.resolve(&apos;node_modules/react-native-vector-icons&apos;),
+    path.resolve(&apos;node_modules/react-native-keyboard-aware-scroll-view&apos;),
+    path.resolve(&apos;node_modules/react-native-web&apos;),
+    path.resolve(&apos;node_modules/react-native-tab-view&apos;),
+    path.resolve(&apos;node_modules/static-container&apos;),
+  ]),
+  addBabelPlugins(
+    &quot;@babel/plugin-proposal-class-properties&quot;
+  ),
+);
 </code></pre><ul>
 <li><p><strong>Include Icons</strong></p>
-<p>  Copy font.css to App.css</p>
+<p>  Copy <a href="https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/web-support/src/font.css" target="_blank">font.css</a> to App.css</p>
 </li>
 </ul>
 <ul>
@@ -2141,6 +2169,14 @@ npm install react-native-web --save
 </code></pre><p>OR</p>
 <pre><code>yarn start
 </code></pre><p>Check out the <a href="https://nativebase.io/kitchen-sink-web-app" target="_blank">NativeBase KitchenSink</a> with Web support for an example of NativeBase components implementation. Here&apos;s the <a href="https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/web-support" target="_blank">source code</a> for NativeBase KitchenSink.</p>
+<hr>
+
+
+
+
+
+
+
 <h2 id="Setup_with_Vue_Native">4. Setup with Vue Native</h2>
 <pre><code class="lang-js">npm install -g vue-native-cli
 vue-native init AwesomeNativeBase               <span class="hljs-comment">// Initializes crna project</span>
@@ -2205,7 +2241,7 @@ Vue.use(VueNativeBase);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"1.3","depth":1,"next":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.12.0/","text":"v2.12.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html","text":"v2.11.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html","text":"v2.10.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/GetStarted.md","mtime":"2019-02-22T10:25:24.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-11T05:17:52.988Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"1.3","depth":1,"next":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"previous":{"title":"Introduction","level":"1.2","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"http://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.12.0/","text":"v2.12.0","selected":true},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html","text":"v2.11.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html","text":"v2.10.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"http://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"http://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"http://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"http://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"http://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"http://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"http://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"http://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"http://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"docs/GetStarted.md","mtime":"2019-03-11T05:24:27.607Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-11T05:24:54.545Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
