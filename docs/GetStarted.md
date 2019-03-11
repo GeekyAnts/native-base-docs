@@ -8,6 +8,13 @@ To have [NativeBase](https://nativebase.io/) components running onto your native
 * Globally installed [React Native CLI](https://facebook.github.io/react-native/docs/getting-started.html) which allow you to easily create and initialize projects.   
 * [Click here](/docs/Compatibility.md) to know about React Native version compatibility with NativeBase.
 
+<hr />
+
+
+
+
+
+
 ## Setup with React Native
 
 ```js
@@ -15,12 +22,12 @@ react-native init AwesomeNativeBase
 cd AwesomeNativeBase
 ```
 
-
 *Install NativeBase*
 
 ```js
 npm install native-base --save
 ```
+
 *Install Peer Dependencies*<br />
 The peer dependencies included from any npm packages does not automatically get installed. Your application will not depend on it explicitly.
 
@@ -32,6 +39,13 @@ You've successfully setup [NativeBase](https://nativebase.io/) with your [React 
 
 Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-app) an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink) for NativeBase KitchenSink.
 
+<hr />
+
+
+
+
+
+
 
 ## Setup with Expo
 Expo helps you make React Native apps with no build configuration. It works on macOS, Windows, and Linux. <br />
@@ -41,7 +55,6 @@ Refer this link for additional information on [Expo](https://docs.expo.io/)
 ```js
 yarn add native-base --save
 ```
-<br />
 
 NativeBase use some custom fonts that can be loaded using **Font.loadAsync** function. Check out the [Expo Font documentation](https://docs.expo.io/versions/latest/sdk/font/).
 <br />
@@ -65,58 +78,72 @@ async componentDidMount() {
 Check out the [KitchenSink](https://expo.io/@geekyants/nativebasekitchensink) with Expo for an example of the implementation.<br />
 Find the [KitchenSink repo here](https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/CRNA)
 
+<hr />
+
+
+
+
+
+
 
 ## Setup with Web
 
 
 ```
 npm install -g create-react-app
-create-react-app nativebase-web-app
-cd nativebase-web-app
-npm eject
-npm install native-base --save
-npm install create-react-app --save
-npm install react-native-web --save
+npx create-react-app nativebase-app
+cd nativebase-app
+npm i native-base react-art react-native-web --save
+npm i react-app-rewired customize-cra @babel/plugin-proposal-class-properties --dev --save
 ```
-* **Setup resolve alias in your webpack configuration**
+
+* **Replace scripts in package.json**
 
 ```
-alias: {
-  "react-native/Libraries/Renderer/shims/ReactNativePropRegistry": "react-native-web/dist/modules/ReactNativePropRegistry",
-  "react-native": "react-native-web"
-},
+"scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+}
 ```
-* **Add Path resolver for NativeBase dependencies in your webpack configuration**
+* **Create file config-overrides.js at root of your project**
 
 ```
-{
-  test: /\.(js|jsx|mjs)$/,
-  include: [
-    paths.appSrc,
-    path.resolve(paths.appNodeModules, "native-base-shoutem-theme"),
-    path.resolve(paths.appNodeModules, "react-navigation"),
-    path.resolve(paths.appNodeModules, "react-native-easy-grid"),
-    path.resolve(paths.appNodeModules, "react-native-drawer"),
-    path.resolve(paths.appNodeModules, "react-native-safe-area-view"),
-    path.resolve(paths.appNodeModules, "react-native-vector-icons"),
-    path.resolve(
-      paths.appNodeModules,
-      "react-native-keyboard-aware-scroll-view"
-    ),
-    path.resolve(paths.appNodeModules, "react-native-web"),
-    path.resolve(paths.appNodeModules, "react-native-tab-view"),
-    path.resolve(paths.appNodeModules, "static-container")
-  ],
-  loader: require.resolve("babel-loader"),
-  options: {
-    cacheDirectory: true
-  }
-},
+const path = require('path');
+const {
+  override,
+  addWebpackAlias,
+  babelInclude,
+  addBabelPlugins
+} = require('customize-cra');
+
+module.exports = override(
+  addWebpackAlias({
+    "react-native/Libraries/Renderer/shims/ReactNativePropRegistry": "react-native-web/dist/modules/ReactNativePropRegistry",
+    "react-native": "react-native-web"
+  }),
+  babelInclude([
+    path.resolve('src'),
+    path.resolve('node_modules/native-base-shoutem-theme'),
+    path.resolve('node_modules/react-navigation'),
+    path.resolve('node_modules/react-native-easy-grid'),
+    path.resolve('node_modules/react-native-drawer'),
+    path.resolve('node_modules/react-native-safe-area-view'),
+    path.resolve('node_modules/react-native-vector-icons'),
+    path.resolve('node_modules/react-native-keyboard-aware-scroll-view'),
+    path.resolve('node_modules/react-native-web'),
+    path.resolve('node_modules/react-native-tab-view'),
+    path.resolve('node_modules/static-container'),
+  ]),
+  addBabelPlugins(
+    "@babel/plugin-proposal-class-properties"
+  ),
+);
 ```
 
 * **Include Icons**
 
-    Copy font.css to App.css
+    Copy [font.css](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/web-support/src/font.css) to App.css
 
 
 * **Run**
@@ -130,6 +157,12 @@ yarn start
 ```
 
 Check out the [NativeBase KitchenSink](https://nativebase.io/kitchen-sink-web-app) with Web support for an example of NativeBase components implementation. Here's the [source code](https://github.com/GeekyAnts/NativeBase-KitchenSink/tree/web-support) for NativeBase KitchenSink.
+
+<hr />
+
+
+
+
 
 
 
