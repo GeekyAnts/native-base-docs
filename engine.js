@@ -112,7 +112,7 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 88px";
   }
   else if(currentHeight< 725){
-    anchor.style= "position: fixed; right: 50px;top: 30px";
+    anchor.style= "position: fixed; right: 50px;top: 80px";
   }
 
   if(currentWidth < 600){

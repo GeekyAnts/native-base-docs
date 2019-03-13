@@ -43,3 +43,22 @@ transform: translate(290px,0) !important;
 
 
 }
+@media (min-width: 600px){
+  .with-summary .book-header{
+    width:calc(100% - 300px);
+
+  }
+  .book-header{
+    width:100%;
+  }
+}
+.book-header{
+  position: fixed; 
+ background: #fff;
+}
+.book-header .fa{
+  color:#333;
+}
+.page-inner {
+  padding: 50px 15px 40px 15px !important;
+}
