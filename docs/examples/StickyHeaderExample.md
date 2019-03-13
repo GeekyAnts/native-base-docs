@@ -67,11 +67,11 @@ export default class Application extends React.Component {
   }
   async componentWillMount() {
     this.populateList();
-      await Expo.Font.loadAsync({
-        'Roboto': require('native-base/Fonts/Roboto.ttf'),
-        'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
-      });
-      this.setState({isReady: true});
+    await Expo.Font.loadAsync({
+      'Roboto': require('native-base/Fonts/Roboto.ttf'),
+      'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+    });
+    this.setState({isReady: true});
   }
   renderSectionHeader(sectionData, sectionID) {
     return (
