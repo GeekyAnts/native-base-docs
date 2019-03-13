@@ -16,3 +16,30 @@
   color: #558674;
   font-weight: bold;
 }
+
+@media (max-width: 800px){
+  .page-wrapper{
+    width:100% !important;
+  }
+  .markdown-section table, table{
+    display:block !important;
+    overflow:scroll !important;
+  }
+  
+}
+
+@media (max-width: 600px){
+.book-summary{
+  width:290px !important
+}
+.page-wrapper{
+}
+  .book.with-summary .book-body{
+transform: translate(290px,0) !important;
+-webkit-transform: translate(290px,0) !important;
+-moz-transform: translate(290px,0) !important;
+
+  }
+
+
+}
