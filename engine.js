@@ -115,8 +115,8 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 30px";
   }
 
-  if(currentWidth < 830){
-    anchor.style= "position: relative;margin:0 auto;float:none; text-align:center";
+  if(currentWidth < 600){
+    anchor.style= "position: relative;margin:0 auto;float:none; text-align:center;display:none";
     if(androidSelected){
       anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 20px 10px; width: 292px; height: 600px; background-position:center;text-align:center;margin:0 auto"
     } else if(!androidSelected){
