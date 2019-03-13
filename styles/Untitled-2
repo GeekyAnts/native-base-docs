@@ -17,7 +17,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 600px){
+@media (max-width: 800px){
   .page-wrapper{
     width:100% !important;
   }

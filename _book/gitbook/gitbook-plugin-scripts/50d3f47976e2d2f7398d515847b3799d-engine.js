@@ -2,7 +2,10 @@ var chapters=document.getElementsByTagName('a');
 var anchorContainer= document.createElement("div");
 var anchorImage= document.createElement("img");
 var anchor= document.createElement("div");
+var bookBody = document.getElementsByClassName('book-body');
 var currentHeight= 0;
+var currentWidth= 0;
+
 
 //   Remove Header number appended by plugin
 function removeHeaders(){
@@ -101,6 +104,7 @@ var filterListIos= [];
 // Check for URL changes every 200ms
 setInterval(function(){
   currentHeight= window.innerHeight;
+  currentWidth= window.innerWidth;
   if(currentHeight> 830){
     anchor.style= "position: fixed; right: 50px;top: 178px";
   }
@@ -111,6 +115,18 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 30px";
   }
 
+  if(currentWidth < 600){
+    anchor.style= "position: relative;margin:0 auto;float:none; text-align:center;display:none";
+    if(androidSelected){
+      anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 20px 10px; width: 292px; height: 600px; background-position:center;text-align:center;margin:0 auto"
+    } else if(!androidSelected){
+      anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 20px 15px; width: 292px; height: 600px; background-position:center;text-align:center;margin:0 auto";
+    }
+
+
+
+
+  }
   if(window.location.href.includes("Components.html")){
     if(window.location.href.includes("#Components") || window.location.href.includes("#ref-components")){
     anchorImage.style= "width: 0px; height: 0px;"
@@ -126,11 +142,14 @@ setInterval(function(){
   }
 
   // Set Anchor background Phone image with button changes
+  if(currentWidth > 830){
+
   if(androidSelected){
     anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
   } else if(!androidSelected){
     anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
   }
+}
 
   // Hide useless buttons for our big pages
   var nowHref= window.location.href;
