@@ -21,10 +21,10 @@ export default class LayoutExample extends Component {
     return (
       <Container>
         <Header />
-          <Grid>
-            {% raw %}<Col style={{ backgroundColor: '#635DB7', height: 200 }}></Col>{% endraw %}
-            {% raw %}<Col style={{ backgroundColor: '#00CE9F', height: 200 }}></Col>{% endraw %}
-          </Grid>
+        <Grid>
+          {% raw %}<Col style={{ backgroundColor: '#635DB7', height: 200 }}></Col>{% endraw %}
+          {% raw %}<Col style={{ backgroundColor: '#00CE9F', height: 200 }}></Col>{% endraw %}
+        </Grid>
       </Container>
     );
   }
