@@ -81,6 +81,14 @@ export default {
             </tr>
         </thead>
         <tbody>
+           <tr>
+                <td>scrollWithoutAnimation</td>
+                <td> false </td>
+                <td> boolean </td>
+                <td>
+                    Disable Tab Change Animation
+                </td>
+            </tr>
             <tr>
                 <td>locked</td>
                 <td> false </td>
