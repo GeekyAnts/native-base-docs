@@ -66,6 +66,11 @@ export default class FooterTabsExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/footer-text.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 
@@ -168,6 +173,11 @@ export default class FooterTabsIconExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/footer-icon.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 ## footer-tabs-icon-text-headref
@@ -237,6 +247,11 @@ export default class FooterTabsIconTextExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/footer-icon-text.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 ## footer-tabs-badge-headref
@@ -315,4 +330,9 @@ export default class FooterTabsBadgeExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/footer-badge.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />

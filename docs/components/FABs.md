@@ -138,7 +138,13 @@ export default {
                 <td>Padding options to render FAB</td>
             </tr>
         </tbody>
-    </table><br />
+    </table>
+     <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/FAB-single.gif" alt="" style="display:block !important" />
+    </div>
+</p>
+    <br />
 
 ## fabs-multiple-headref
 #### Multiple FABs
@@ -221,6 +227,12 @@ export default {
 };
 </script>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/FAB-multiple.gif" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
+
 
 **Note:** Always prefer to place FAB inside NativeBase `<Container/>`. Placing FAB inside `<Content/>` is not encouraged, as `<Content/>` is an implementation of `<ScrollView/>`.

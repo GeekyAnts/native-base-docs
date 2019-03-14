@@ -193,6 +193,12 @@ Replacing Component
                 </td>
             </tr>
         </tbody>
-    </table><br />
+    </table>
+     <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-basic.png" alt="" style="display:block !important" />
+    </div>
+</p>
+    <br />
 
 **Note:** List is deprecated. Use of List for dynamic list generation is discouraged.For more advanced implementation of rendering list dynamically, take a look at [nativebase-tutorial](https://github.com/GeekyAnts/nativebase-tutorial). Use [Flatlist](https://facebook.github.io/react-native/docs/flatlist.html) instead.
