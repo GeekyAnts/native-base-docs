@@ -29,7 +29,7 @@
       "theme": "monokai"
     },
     "versions": {
-      "gitbookConfigURL": "http://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
+      "gitbookConfigURL": "https://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
       "options": [
         {
           "value": "https://nativebase.io/docs/v2.12.0/",
@@ -37,79 +37,79 @@
           "selected": true
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html",
           "text": "v2.11.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html",
           "text": "v2.10.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html",
           "text": "v2.9.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html",
           "text": "v2.8.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html",
           "text": "v2.7.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html",
           "text": "v2.6.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html",
           "text": "v2.5.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html",
           "text": "v2.4.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html",
           "text": "v2.2.0"
         },
         {
-          "value": "http://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html",
           "text": "v2.0.0"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.13/",
+          "value": "https://nativebase.io/docs/v0.5.13/",
           "text": "v0.5.13"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.9/",
+          "value": "https://nativebase.io/docs/v0.5.9/",
           "text": "v0.5.9"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.7/",
+          "value": "https://nativebase.io/docs/v0.5.7/",
           "text": "v0.5.7"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.5/",
+          "value": "https://nativebase.io/docs/v0.5.5/",
           "text": "v0.5.5"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.2/",
+          "value": "https://nativebase.io/docs/v0.5.2/",
           "text": "v0.5.2"
         },
         {
-          "value": "http://nativebase.io/docs/v0.5.0/",
+          "value": "https://nativebase.io/docs/v0.5.0/",
           "text": "v0.5.0"
         },
         {
-          "value": "http://nativebase.io/docs/v0.4.6/",
+          "value": "https://nativebase.io/docs/v0.4.6/",
           "text": "v0.4.6"
         },
         {
-          "value": "http://nativebase.io/docs/v0.3.1/",
+          "value": "https://nativebase.io/docs/v0.3.1/",
           "text": "v0.3.1"
         },
         {
-          "value": "http://nativebase.io/docs/v0.3.0/",
+          "value": "https://nativebase.io/docs/v0.3.0/",
           "text": "v0.3.0"
         }
       ]
