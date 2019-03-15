@@ -12,10 +12,10 @@ We aim to create a simple App that has a counter with increment and decrement fu
 ## Installation
 
 1. **Create React Native App**: Use [CRNA](https://github.com/react-community/create-react-native-app) tool to create an App like this <br />
-<pre><code>$ npm install -g create-react-native-app
-$ create-react-native-app my-app
-$ cd my-app/
-$ npm start</pre>
+<pre><code>npm install -g create-react-native-app
+create-react-native-app my-app
+cd my-app/
+npm start</pre>
 
 2. **Install Mobx**: <br />
 <pre><code>npm i mobx mobx-react --save</pre>
