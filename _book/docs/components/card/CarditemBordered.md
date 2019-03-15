@@ -10,7 +10,6 @@ Include <code>bordered</code> prop with &lt;CardItem> to have borderBottom for c
 *Syntax*
 
 {% codetabs name="React Native", type="js" -%}
-import React, { Component } from 'react';
 import React, { Component } from "react";
 import { Container, Header, Content, Card, CardItem, Text, Body } from "native-base";
 export default class CardItemBordered extends Component {
