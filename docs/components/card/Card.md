@@ -17,7 +17,7 @@ Card is a flexible and extensible content container. It includes options for hea
 * [Card Image](Components.md#card-image-headref)
 * [Card Showcase](Components.md#card-showcase-headref)
 
-*Genertal Syntax*
+*General Syntax*
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
