@@ -134,7 +134,7 @@ export default {
                 <td>Function</td>
                 <td> - </td>
                 <td>
-                    Function to call when tab changes.  It accepts one argument that is an Object containing two keys: i: the index of the tab that is selected, ref: the ref of the tab that is selected.
+                    Function to call when tab changes
                 </td>
             </tr>
             <tr>
