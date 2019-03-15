@@ -112,21 +112,27 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 88px";
   }
   else if(currentHeight< 725){
-    anchor.style= "position: fixed; right: 50px;top: 30px";
+    anchor.style= "position: fixed; right: 50px;top: 80px";
   }
 
-  if(currentWidth < 600){
-    anchor.style= "position: relative;margin:0 auto;float:none; text-align:center;display:none";
-    if(androidSelected){
-      anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 20px 10px; width: 292px; height: 600px; background-position:center;text-align:center;margin:0 auto"
-    } else if(!androidSelected){
-      anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 20px 15px; width: 292px; height: 600px; background-position:center;text-align:center;margin:0 auto";
-    }
+  if(currentWidth < 800){
+    // anchorImage.style="width: 125px !important; height: 240px !important";
+    // andBut.style ="height: 40px; width: 100px; background-color: grey; display: inline-block; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin:10px 10px !important; padding-bottom: 15px;";
+    // iosBut.style ="height: 40px; width: 100px; background-color: #00b386; display: inline-block ; margin-right: 5px; text-align: center; cursor: pointer; border-radius: 25px; margin:10px 10 px!important; padding-bottom: 15px; margin-left: 10px !important;";
 
+    anchor.style= "position: fixed; right: 50px;top: 80px; width:150px;display:none !important ";
 
+    // if(androidSelected){
+    //   anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 30px 0px 20px 10px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
+    // } else if(!androidSelected){
+    //   anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 30px 10px 20px 15px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
+    // }
+
+   
 
 
   }
+ 
   if(window.location.href.includes("Components.html")){
     if(window.location.href.includes("#Components") || window.location.href.includes("#ref-components")){
     anchorImage.style= "width: 0px; height: 0px;"
@@ -177,7 +183,9 @@ setInterval(function(){
 },200);
 
 // set image according to pointer received.
+
 function setImage(pointer){
+
   if(androidSelected){
     for(var i=0;i< filterListAndroid.length;i++){
       if(filterListAndroid[i].alt.includes(pointer)){
@@ -203,6 +211,7 @@ function setImage(pointer){
   }
 }
 }
+
 
 require(['gitbook', 'jQuery'], function(gitbook, $) {
     gitbook.events.bind("page.change", function(e, config) {

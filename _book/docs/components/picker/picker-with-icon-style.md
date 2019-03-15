@@ -4,11 +4,12 @@
 ![Preview ios picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon-style.png)
 ![Preview android picker-with-icon-style-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif)
 
-*Synatx*
+*Syntax*
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
 import { Container, Header, Content, Icon, Picker, Form } from "native-base";
+
 export default class PickerWithIconStyle extends Component {
   constructor(props) {
     super(props);
@@ -91,4 +92,9 @@ export default {
 };
 </script>
 {%- endcodetabs %}
+  <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/picker-with-icon-style.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />

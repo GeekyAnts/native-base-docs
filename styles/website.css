@@ -16,8 +16,20 @@
   color: #558674;
   font-weight: bold;
 }
+.mobileDevice{
+  display:none;
+}
 
-@media (max-width: 600px){
+@media (max-width: 800px){
+  .book-header .btn{
+    padding:0px 10px !important
+  }
+  .mobileDevice{
+  display:block !important;
+  }
+  .with-summary .page-wrapper{
+    top:50px;
+  }
   .page-wrapper{
     width:100% !important;
   }
@@ -25,21 +37,41 @@
     display:block !important;
     overflow:scroll !important;
   }
+  .with-summary .book-header{
+    width:100%;
+
+  }
+  .book-header{
+    width:100%;
+  }
+}
+@media (max-width: 600px){
+  .page-wrapper{
+  }
+  
   
 }
 
-@media (max-width: 600px){
-.book-summary{
-  width:290px !important
-}
-.page-wrapper{
-}
-  .book.with-summary .book-body{
-transform: translate(290px,0) !important;
--webkit-transform: translate(290px,0) !important;
--moz-transform: translate(290px,0) !important;
+
+
+@media (min-width: 800px){
+  .with-summary .book-header{
+    width:100%;
 
   }
+  .book-header{
+    width:100%;
+  }
+}
 
-
+.book-header{
+  position: fixed; 
+ background: #fff;
+ z-index:999;
+}
+.book-header .fa{
+  color:#333;
+}
+.page-inner {
+  padding: 50px 15px 40px 15px !important;
 }

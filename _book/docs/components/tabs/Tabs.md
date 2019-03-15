@@ -62,6 +62,11 @@ export default {
 };
 </script>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/tabs-basic.gif" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 **Configuration(Tabs)**
@@ -76,6 +81,14 @@ export default {
             </tr>
         </thead>
         <tbody>
+           <tr>
+                <td>scrollWithoutAnimation</td>
+                <td> false </td>
+                <td> boolean </td>
+                <td>
+                    Disable Tab Change Animation
+                </td>
+            </tr>
             <tr>
                 <td>locked</td>
                 <td> false </td>

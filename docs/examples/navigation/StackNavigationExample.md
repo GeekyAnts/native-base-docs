@@ -37,7 +37,7 @@ Inside this folder we make 3 folders:
 
 ## HomeScreen
 
-This is going to be the first landing screen of out App. We are going to implement the navigation logic here.<br />
+This is going to be the first landing screen of our App. We are going to implement the navigation logic here.<br />
 For our purpose here, we have used **DrawerNavigator** for navigation through the entire app.<br />
 Further screens will have **nested navigators** in them. <br />
 Go ahead and add the following file in your project. <br />
@@ -113,7 +113,7 @@ export default HomeScreenRouter;
 </code></pre><br />
 
 **Explained**
-- Here we have simply imported all the screens we will be needing. We will be building these screens in the comming sections. These screens in fact are **router components** which themselves have multiple screens.
+- Here we have simply imported all the screens we will be needing. We will be building these screens in the coming sections. These screens in fact are **router components** which themselves have multiple screens.
 - We pass the screens to the **DrawerNavigator** as shown above.
 - Note how we have used a custom [NativeBase](https://nativebase.io/) components using **customComponent** prop and we pass our custom *drawer* component.<br />
 

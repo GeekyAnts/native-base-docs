@@ -52,7 +52,7 @@ The ideal starter kit / app script with all the needed UI elements alongwith Mob
 ## Taxi App with Backend
 The ideal starter kit with all the needed UI elements and Backend Integration to build your iOS and Android Taxi app like Uber / Ola / Lyft. <br />
 
-  ![React Native Taxt App With Backend 4.0.0](https://market.nativebase.io/uploads/user/2016/12/27/46/39/MFZhXig5SsmyeSWL.gif) <br />
+  ![React Native Taxi App With Backend 4.0.0](https://market.nativebase.io/uploads/user/2016/12/27/46/39/MFZhXig5SsmyeSWL.gif) <br />
   Learn more about [React Native Taxi App Theme with Backend 4.0.0](https://market.nativebase.io/view/react-native-taxi-app-with-backend)
 
 ## Social App Theme

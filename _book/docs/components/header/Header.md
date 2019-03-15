@@ -180,4 +180,10 @@ export default class HeaderExample extends Component {
                 <td> removes border of Header,shadow from iOS Header and elevation from Android Header. </td>
             </tr>
         </tbody>
-    </table><br />
+    </table>
+     <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/header-with-title.png" alt="" style="display:block !important" />
+    </div>
+</p>
+    <br />

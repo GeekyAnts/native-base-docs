@@ -21,10 +21,10 @@ export default class LayoutExample extends Component {
     return (
       <Container>
         <Header />
-          <Grid>
-            {% raw %}<Col style={{ backgroundColor: '#635DB7', height: 200 }}></Col>{% endraw %}
-            {% raw %}<Col style={{ backgroundColor: '#00CE9F', height: 200 }}></Col>{% endraw %}
-          </Grid>
+        <Grid>
+          {% raw %}<Col style={{ backgroundColor: '#635DB7', height: 200 }}></Col>{% endraw %}
+          {% raw %}<Col style={{ backgroundColor: '#00CE9F', height: 200 }}></Col>{% endraw %}
+        </Grid>
       </Container>
     );
   }
@@ -40,6 +40,11 @@ export default class LayoutExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+  <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/layout.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 

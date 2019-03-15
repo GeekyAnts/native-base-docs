@@ -22,6 +22,7 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 
 {% codetabs name="React Native", type="js" -%}import React, { Component } from "react";
 import { Container, Header, Content, Picker, Form } from "native-base";
+
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);
@@ -206,6 +207,12 @@ export default {
           <td>Enable / disable Picker button</td>
       </tr>
     </tbody>
-  </table><br />
+  </table>
+   <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/picker.gif" alt="" style="display:block !important" />
+    </div>
+</p>
+  <br />
 
 **Note:** Styling Picker is restricted to the style props provided in the table. NativeBase Picker wont support its styling to work out of the box. But one can always style the components as per requirements.

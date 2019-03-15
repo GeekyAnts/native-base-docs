@@ -6,6 +6,7 @@
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, } from "native-base";
+
 export default class PickerCustomHeaderTextExample extends Component {
   constructor(props) {
     super(props);

@@ -1,6 +1,6 @@
 ## Thumbnail
 
-Thumbnail component works very similar to Image. It helps you to showcase an image with variuos dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br />
+Thumbnail component works very similar to Image. It helps you to showcase an image with various dimensions and shapes. By default, Thumbnail renders an image in circular shape.<br />
 Replacing Component: React Native [Image](https://facebook.github.io/react-native/docs/image.html)
 
 ![Preview ios Thumbnail](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/thumbnail.png)
@@ -58,6 +58,11 @@ export default {
 };
 </script>
 {%- endcodetabs %}
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/thumbnail.png" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
 **Note:** To have Thumbnail of custom size, specify <code>height</code>, <code>width</code> and <code>borderRadius</code> within <code>style</code>.

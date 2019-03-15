@@ -67,8 +67,13 @@ export default class SegmentExample extends Component {
   </nb-container>
 </template>
 {%- endcodetabs %}
+<p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/segment-inside-header.gif" alt="" style="display:block !important" />
+    </div>
+</p>
 <br />
 
-Segment takes Button as children. The active Button shoud be given an active prop (implementation is totally up to you).
+Segment takes Button as children. The active Button should be given an active prop (implementation is totally up to you).
 Also the **first** and **last** buttons should be given props **first** and **last** respectively.<br />
 **Pro tip:** It is advisable to use <code>hasSegment</code> prop with Header if you're using Segment below the header.

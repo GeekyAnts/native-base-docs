@@ -13,13 +13,15 @@ Replacing Component: [React Native Drawer](https://github.com/root-two/react-nat
 import { Drawer } from 'native-base';
 import SideBar from './yourPathToSideBar';
 export default class DrawerExample extends Component {
+  closeDrawer () => {
+    this.drawer._root.close()
+  };
+  
+  openDrawer () => {
+    this.drawer._root.open()
+  };
+
   render() {
-    closeDrawer = () => {
-      this.drawer._root.close()
-    };
-    openDrawer = () => {
-      this.drawer._root.open()
-    };
     return (
       &lt;Drawer
         ref={(ref) => { this.drawer = ref; }}
@@ -29,7 +31,13 @@ export default class DrawerExample extends Component {
       &lt;/Drawer>
     );
   }
-}</code></pre><br />
+}</code></pre>
+ <p>
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+        <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/drawer.png" alt="" style="display:block !important" />
+    </div>
+</p>
+<br />
 
 **Note:** You need to create your own <code>SideBar</code> component and import it.
 

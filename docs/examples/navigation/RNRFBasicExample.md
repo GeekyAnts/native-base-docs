@@ -90,7 +90,7 @@ export default class pageOne extends Component {
               &lt;/Body>
             &lt;/CardItem>
           &lt;/Card>
-          &lt;Button dark bordered style = alignSelf: 'center', margin: 30}}
+          &lt;Button dark bordered style = {&#123;alignSelf: 'center', margin: 30}}
             onPress= {() => {Actions.pageTwo(); }}>
             &lt;Text>Goto Page 2&lt;/Text>
           &lt;/Button>
