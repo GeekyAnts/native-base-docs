@@ -10,6 +10,7 @@
 import React, { Component } from "react";
 import React, { Component } from "react";
 import { Container, Header, Content, Icon, Picker, Form } from "native-base";
+
 export default class PickerTextAndItemStyleExample extends Component {
   constructor(props) {
     super(props);

@@ -1,7 +1,7 @@
 ## actionsheet-def-headref
 ## ActionSheet
 
-NativeBase ActionSheet is a wrapper around the React Native [ActionSheetIOS](http://facebook.github.io/react-native/releases/0.44/docs/actionsheetios.html) component.
+NativeBase ActionSheet is a wrapper around the React Native [ActionSheetIOS](https://facebook.github.io/react-native/docs/actionsheetios) component.
 
 For `ActionSheet` to work, you need to wrap your topmost component inside `<Root>` from native-base.
 
