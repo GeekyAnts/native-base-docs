@@ -3,6 +3,8 @@
 
 A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follow styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br />
 
+NativeBase List will be deprecated in the near future. So please use React Native’s FlatList in place of it. You can continue to use ListItem for the necessary styling.
+
 ![Preview ios list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-basic.png)
 ![Preview android list-def-headref](https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/list-basic.png)
 

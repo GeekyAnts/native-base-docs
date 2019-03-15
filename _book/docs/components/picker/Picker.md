@@ -22,6 +22,7 @@ Replacing Component: React Native [Picker](https://facebook.github.io/react-nati
 
 {% codetabs name="React Native", type="js" -%}import React, { Component } from "react";
 import { Container, Header, Content, Picker, Form } from "native-base";
+
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);

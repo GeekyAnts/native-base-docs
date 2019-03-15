@@ -7,6 +7,7 @@
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
 import { Container, Header, Content, Icon, Picker, Form } from "native-base";
+
 export default class PickerCustomHeaderStyleExample extends Component {
   constructor(props) {
     super(props);

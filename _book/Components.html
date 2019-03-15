@@ -2767,7 +2767,7 @@ export default {
 <br><p></p>
 <h2 id="actionsheet-def-headref">9. actionsheet-def-headref</h2>
 <h2 id="ActionSheet">10. ActionSheet</h2>
-<p>NativeBase ActionSheet is a wrapper around the React Native <a href="http://facebook.github.io/react-native/releases/0.44/docs/actionsheetios.html" target="_blank">ActionSheetIOS</a> component.</p>
+<p>NativeBase ActionSheet is a wrapper around the React Native <a href="https://facebook.github.io/react-native/docs/actionsheetios" target="_blank">ActionSheetIOS</a> component.</p>
 <p>For <code>ActionSheet</code> to work, you need to wrap your topmost component inside <code>&lt;Root&gt;</code> from native-base.</p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> { Root } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
 <span class="hljs-keyword">import</span> { StackNavigator } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-navigation&quot;</span>;
@@ -5311,7 +5311,7 @@ Replacing Component: React Native <a href="http://facebook.github.io/react-nativ
 <span class="hljs-keyword">import</span> { Container, Header, View, Button, Icon, Fab } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FABExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
-  <span class="hljs-keyword">super</span>(props)
+    <span class="hljs-keyword">super</span>(props)
     <span class="hljs-keyword">this</span>.state = {
       active: <span class="hljs-string">&apos;true&apos;</span>
     };
@@ -5445,7 +5445,8 @@ export default {
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, View, Fab, Button, Icon } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;native-base&apos;</span>;
 &#x200B;<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FABMultipleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
-  <span class="hljs-keyword">constructor</span>() {
+  <span class="hljs-keyword">constructor</span>(props) {
+    <span class="hljs-keyword">super</span>(props)
     <span class="hljs-keyword">this</span>.state = {
       active: <span class="hljs-string">&apos;true&apos;</span>
     };
@@ -7595,6 +7596,7 @@ Replacing Component for Grid, Col, Row: React Native <a href="https://facebook.g
 <h2 id="list-def-headref">78. list-def-headref</h2>
 <h2 id="List">79. List</h2>
 <p>A base component for specifying lists of information. List must contain one or more list elements. Props provide configurability for several features. Provides a number of attributes that follow styling and interaction guidelines for each platform, so that they are intuitive for users to interact with.<br></p>
+<p>NativeBase List will be deprecated in the near future. So please use React Native&#x2019;s FlatList in place of it. You can continue to use ListItem for the necessary styling.</p>
 <p><img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/ios/list-basic.png" alt="Preview ios list-def-headref">
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/list-basic.png" alt="Preview android list-def-headref"></p>
 <p><strong>Contents:</strong></p>
@@ -8510,6 +8512,7 @@ Replacing Component: React Native <a href="https://facebook.github.io/react-nati
 <p><em>Regular Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -8705,6 +8708,7 @@ export default {
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIcon</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -8797,6 +8801,7 @@ export default {
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerWithIconStyle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -8889,6 +8894,7 @@ export default {
 <p><em>Syntax</em></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerPlaceholderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -8984,6 +8990,7 @@ export default {
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-placeholder-without-note-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerPlaceholderw</span>/<span class="hljs-title">oNoteExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -9075,6 +9082,7 @@ export default {
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerTextAndItemStyleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -9181,6 +9189,7 @@ export default {
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-back-button-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerCustomBackButtonExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -9271,6 +9280,7 @@ export default {
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-header-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerCustomHeaderExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -9389,6 +9399,7 @@ export default {
 
 <pre class="line-numbers"><code class="language-jsx">import React, { Component } from "react";
 import { Container, Header, Title, Content, Button, Icon, Right, Body, Left, Picker, Form, } from "native-base";
+
 export default class PickerCustomHeaderTextExample extends Component {
   constructor(props) {
     super(props);
@@ -9444,6 +9455,7 @@ export default class PickerCustomHeaderTextExample extends Component {
 <img src="https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/v2.6.1/screenshots/android/picker.gif" alt="Preview android picker-with-custom-header-style-headref"></p>
 <p><div class="codetabs"><div class="codetabs-header"><div class="tab active" data-codetab="0">React Native</div><div class="tab" data-codetab="1">Vue Native</div></div><div class="codetabs-body"><div class="tab active" data-codetab="0"><pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
 <span class="hljs-keyword">import</span> { Container, Header, Content, Icon, Picker, Form } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;native-base&quot;</span>;
+
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PickerCustomHeaderStyleExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   <span class="hljs-keyword">constructor</span>(props) {
     <span class="hljs-keyword">super</span>(props);
@@ -11822,7 +11834,7 @@ Replacing Component: <a href="https://github.com/root-two/react-native-drawer" t
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"https://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.12.0/","text":"v2.12.0","selected":true},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html","text":"v2.11.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html","text":"v2.10.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"https://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"https://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"https://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"https://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"https://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"https://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"https://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"https://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"https://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-02-22T10:15:33.469Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-15T09:53:47.042Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components","level":"1.5","depth":1,"next":{"title":"Anatomy","level":"1.5.1","depth":2,"anchor":"#anatomy-headref","path":"Components.md","ref":"Components.md#anatomy-headref","articles":[]},"previous":{"title":"Compatibility","level":"1.4","depth":1,"path":"docs/Compatibility.md","ref":"docs/Compatibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","codetabs","include-codeblock","ace","copy-code-button","edit-link","scripts","navigator","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"scripts":{"files":["./engine.js"]},"search":{},"codetabs":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"navigator":{},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-100873927-1"},"versions":{"type":"branches","gitbookConfigURL":"https://rawgit.com/GeekyAnts/native-base-docs/master/book.json","options":[{"value":"https://nativebase.io/docs/v2.12.0/","text":"v2.12.0","selected":true},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html","text":"v2.11.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.10.0/_book/index.html","text":"v2.10.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.9.0/_book/index.html","text":"v2.9.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.8.0/_book/index.html","text":"v2.8.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.7.0/_book/index.html","text":"v2.7.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.6.0/_book/index.html","text":"v2.6.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.5.0/_book/index.html","text":"v2.5.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.4.0/_book/index.html","text":"v2.4.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.2/_book/index.html","text":"v2.2.0"},{"value":"https://rawgit.com/GeekyAnts/native-base-docs/v2.0/_book/index.html","text":"v2.0.0"},{"value":"https://nativebase.io/docs/v0.5.13/","text":"v0.5.13"},{"value":"https://nativebase.io/docs/v0.5.9/","text":"v0.5.9"},{"value":"https://nativebase.io/docs/v0.5.7/","text":"v0.5.7"},{"value":"https://nativebase.io/docs/v0.5.5/","text":"v0.5.5"},{"value":"https://nativebase.io/docs/v0.5.2/","text":"v0.5.2"},{"value":"https://nativebase.io/docs/v0.5.0/","text":"v0.5.0"},{"value":"https://nativebase.io/docs/v0.4.6/","text":"v0.4.6"},{"value":"https://nativebase.io/docs/v0.3.1/","text":"v0.3.1"},{"value":"https://nativebase.io/docs/v0.3.0/","text":"v0.3.0"}]},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"monokai","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NativeBase","gitbook":"*"},"file":{"path":"Components.md","mtime":"2019-02-22T10:15:33.469Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-15T10:40:58.952Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
