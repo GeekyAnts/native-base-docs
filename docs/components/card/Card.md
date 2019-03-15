@@ -88,7 +88,7 @@ export default class CardExample extends Component {
             <td>transparent</td>
             <td> - </td>
             <td> - </td>
-            <td>Removes card shadow from iOS and elevation from android</td>
+            <td>Removes card shadow from iOS and elevation from Android</td>
         </tr>
         <tr>
             <td>dataArray</td>
