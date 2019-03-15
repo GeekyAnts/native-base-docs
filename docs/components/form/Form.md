@@ -140,7 +140,7 @@ export default class FormExample extends Component {
                 <td> - </td>
                 <td> - </td>
                 <td>
-                    Includes rectangluar border with the textbox.
+                    Includes rectangular border with the textbox.
                 </td>
             </tr>
             <tr>

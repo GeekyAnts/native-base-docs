@@ -115,7 +115,7 @@
     * [Ref](Components.md#ref-components-headref)
 * [Customize](Customize.md#Customize)
   * [NativeBase Customizer](Customize.md#nativebase-customizer-headref)
-  * [Theme and Varibales](Customize.md#theme-and-variables-headref)
+  * [Theme and Variables](Customize.md#theme-and-variables-headref)
   * [Set Up](Customize.md#theaming-nb-headref)
   * [Theme Color](Customize.md#theme-color-headref)
   * [Theme Font](Customize.md#theme-font-headref)

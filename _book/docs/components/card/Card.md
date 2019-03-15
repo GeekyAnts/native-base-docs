@@ -17,7 +17,7 @@ Card is a flexible and extensible content container. It includes options for hea
 * [Card Image](Components.md#card-image-headref)
 * [Card Showcase](Components.md#card-showcase-headref)
 
-*Genertal Syntax*
+*General Syntax*
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
@@ -88,7 +88,7 @@ export default class CardExample extends Component {
             <td>transparent</td>
             <td> - </td>
             <td> - </td>
-            <td>Removes card shadow from iOS and elevation from android</td>
+            <td>Removes card shadow from iOS and elevation from Android</td>
         </tr>
         <tr>
             <td>dataArray</td>

@@ -333,7 +333,7 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
         <tr>
             <td>DefaultFontSize</td>
             <td>number</td>
-            <td>Deafault Font size</td>
+            <td>Default Font size</td>
             <td>17</td>
             <td>17</td>
         </tr>
@@ -725,7 +725,7 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
         <tr>
             <td>inputBorderColor</td>
             <td>color</td>
-            <td>Texbox border color</td>
+            <td>Textbox border color</td>
             <td>#D9D5DC</td>
             <td>#D9D5DC</td>
         </tr>

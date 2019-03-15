@@ -160,7 +160,7 @@ export default {
             <td>duration</td>
             <td> 1500 </td>
             <td>user defined (integer)</td>
-            <td>Milliseconds after which Toast disappers</td>
+            <td>Milliseconds after which Toast disappears</td>
         </tr>
         <tr>
             <td>onClose()</td>

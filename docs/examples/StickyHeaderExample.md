@@ -114,7 +114,7 @@ export default class Application extends React.Component {
 }</code></pre>
 
 **Explained** <br />
-- In our constructor, we initialize our state with a <code>dataSource</code> object. Use similae syntax to initialize the <code>ListView.dataSource</code>.
+- In our constructor, we initialize our state with a <code>dataSource</code> object. Use similar syntax to initialize the <code>ListView.dataSource</code>.
 - <code>async componentWillMount</code> function is used to load fonts for [NativeBase](https://nativebase.io/) as mentioned in previous examples. Check out [this](https://github.com/GeekyAnts/NativeBase-KitchenSink/blob/CRNA/js/setup.js) example.
 - <code>populateList</code> function creates our dataSource object to be used by our list. <code>dataSource.cloneWithRowsAndSections</code> function will convert data into a ListView Map. Here we have used dummy data in a simple format, implementation can vary according data structure.
 - Next we simply place our <code>List</code>(wrapper around ListView) component from [NativeBase](https://nativebase.io/) and pass data as props as shown. <br />

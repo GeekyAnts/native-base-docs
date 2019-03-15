@@ -74,6 +74,6 @@ export default class SegmentExample extends Component {
 </p>
 <br />
 
-Segment takes Button as children. The active Button shoud be given an active prop (implementation is totally up to you).
+Segment takes Button as children. The active Button should be given an active prop (implementation is totally up to you).
 Also the **first** and **last** buttons should be given props **first** and **last** respectively.<br />
 **Pro tip:** It is advisable to use <code>hasSegment</code> prop with Header if you're using Segment below the header.
