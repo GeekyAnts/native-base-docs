@@ -53,7 +53,7 @@ Refer this link for additional information on [Expo](https://docs.expo.io/)
 
 *Install NativeBase*
 ```js
-yarn add native-base --save
+npm install native-base --save
 ```
 
 NativeBase use some custom fonts that can be loaded using **Font.loadAsync** function. Check out the [Expo Font documentation](https://docs.expo.io/versions/latest/sdk/font/).
