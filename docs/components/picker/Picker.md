@@ -126,37 +126,37 @@ export default {
           <td>headerStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Custom style for header</td>
+          <td>Custom style for header (iOS)</td>
       </tr>
       <tr>
           <td>iosHeader</td>
           <td> - </td>
           <td> - </td>
-          <td>Custom text for the header title</td>
+          <td>Custom text for the header title (iOS)</td>
       </tr>
       <tr>
           <td>headerBackButtonText</td>
           <td> - </td>
           <td> - </td>
-          <td>Custom text for the header back button</td>
+          <td>Custom text for the header back button (iOS)</td>
       </tr>
       <tr>
           <td>headerBackButtonTextStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Custom text style for the header back button</td>
+          <td>Custom text style for the header back button< (iOS)/td>
       </tr>
       <tr>
           <td>headerTitleStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Custom title style for the header title</td>
+          <td>Custom title style for the header title (iOS)</td>
       </tr>
       <tr>
           <td>iosIcon</td>
           <td> - </td>
           <td> - </td>
-          <td>Icon with picker dropdown</td>
+          <td>Icon with picker dropdown (iOS)</td>
       </tr>
       <tr>
           <td>placeholder</td>
@@ -180,19 +180,19 @@ export default {
           <td>itemStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Style of items in Picker</td>
+          <td>Style of items in Picker (iOS)</td>
       </tr>
       <tr>
           <td>itemTextStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Text style of item component in Picker</td>
+          <td>Text style of item component in Picker (iOS)</td>
       </tr>
       <tr>
           <td>textStyle</td>
           <td> - </td>
           <td> - </td>
-          <td>Text style of header</td>
+          <td>Text style of header (iOS)</td>
       </tr>
       <tr>
           <td>supportedOrientations</td>
