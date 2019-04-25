@@ -180,6 +180,12 @@ export default {
             <td> function </td>
             <td>Hides the Toast</td>
         </tr>
+        <tr>
+            <td>style</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>Style for the Toast</td>
+        </tr>
     </tbody>
 </table><br />
 
