@@ -63,7 +63,7 @@ export default new CounterStore();
 </code></pre>
 
 **Explained**: <br />
-- We import <code>observable</code> from <code>mobs</code>. Inside our Store class we create an observable sore variable <code>counter</code>.
+- We import <code>observable</code> from <code>mobx</code>. Inside our Store class we create an observable sore variable <code>counter</code>.
 - We create two methods <code>increment()</code> and <code>decrement()</code> that will be called from out component to update the store.
 - Lastly, we export a new object of our <code>store</code> class.
 
