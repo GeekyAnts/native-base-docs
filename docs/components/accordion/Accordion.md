@@ -103,13 +103,13 @@ export default {
         </tr>
         <tr>
             <td>icon</td>
-            <td>arrow-up</td>
+            <td>arrow-down</td>
             <td>user-defined</td>
             <td>Icon when accordion is closed</td>
         </tr>
         <tr>
             <td>expandedIcon</td>
-            <td>arrow-down</td>
+            <td>arrow-up</td>
             <td>user-defined</td>
             <td>Icon when accordion is open</td>
         </tr>
