@@ -16,9 +16,7 @@
       "token": "UA-100873927-1"
     },
     "scripts": {
-      "files": [
-        "./engine.js"
-      ]
+      "files": ["./engine.js"]
     },
     "edit-link": {
       "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
@@ -32,9 +30,13 @@
       "gitbookConfigURL": "https://rawgit.com/GeekyAnts/native-base-docs/master/book.json",
       "options": [
         {
-          "value": "https://nativebase.io/docs/v2.12.0/",
-          "text": "v2.12.0",
+          "value": "https://nativebase.io/docs/v2.12.3/",
+          "text": "v2.12.3",
           "selected": true
+        },
+        {
+          "value": "https://nativebase.io/docs/v2.12.0/",
+          "text": "v2.12.0"
         },
         {
           "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.11.0/_book/index.html",
