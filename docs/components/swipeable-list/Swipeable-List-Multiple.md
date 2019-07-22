@@ -1,5 +1,6 @@
 ## swipeable-multi-def-headref
-## Swipeable List
+## Swipeable List (removed)
+We recommend [react-native-swipe-list-view](https://github.com/jemise111/react-native-swipe-list-view) instead.
 
 Swipeable List are ListItems that swipe open and close. Handles default native behavior such as closing rows when other rows are opened.<br />
 
