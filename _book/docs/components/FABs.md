@@ -16,7 +16,7 @@ export default class FABExample extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      active: 'true'
+      active: false
     };
   }
   render() {
@@ -161,7 +161,7 @@ import { Container, Header, View, Fab, Button, Icon } from 'native-base';
   constructor(props) {
     super(props)
     this.state = {
-      active: 'true'
+      active: false
     };
   }
   render() {

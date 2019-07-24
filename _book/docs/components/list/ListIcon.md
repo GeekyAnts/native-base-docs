@@ -12,7 +12,7 @@ To have note kind of text for list item, include <code>note</code> prop with <co
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
+import { Container, Header, Content, Button, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
 export default class ListIconExample extends Component {
   render() {
     return (
