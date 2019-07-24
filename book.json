@@ -16,7 +16,9 @@
       "token": "UA-100873927-1"
     },
     "scripts": {
-      "files": ["./engine.js"]
+      "files": [
+        "./engine.js"
+      ]
     },
     "edit-link": {
       "base": "https://github.com/GeekyAnts/native-base-docs/tree/master",
@@ -35,7 +37,7 @@
           "selected": true
         },
         {
-          "value": "https://nativebase.io/docs/v2.12.0/",
+          "value": "https://rawgit.com/GeekyAnts/native-base-docs/v2.12.0/_book/index.html",
           "text": "v2.12.0"
         },
         {
