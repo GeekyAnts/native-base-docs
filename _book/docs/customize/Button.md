@@ -69,7 +69,7 @@ export default class ThemeButtonExample extends Component {
     return (
       &lt;Container>
         &lt;Content>
-          &lt;StyleProvider style={buttonTheme(customVariables)}>
+          &lt;StyleProvider style={getTheme(customVariables)}>
             &lt;Button primary>
               &lt;Text> Primary &lt;/Text>
             &lt;/Button>
