@@ -163,10 +163,10 @@ export default {
             <td>Milliseconds after which Toast disappears</td>
         </tr>
         <tr>
-            <td>onClose()</td>
+            <td>onClose(reason)</td>
             <td> - </td>
             <td> function </td>
-            <td>Called just before the toast hides</td>
+            <td>Called just before the toast hides. reason can be "user" when the user click on the button; "timeout" when timeout.</td>
         </tr>
         <tr>
             <td>show()</td>
@@ -179,6 +179,12 @@ export default {
             <td> - </td>
             <td> function </td>
             <td>Hides the Toast</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td> - </td>
+            <td> style object </td>
+            <td>Style for the Toast</td>
         </tr>
     </tbody>
 </table><br />

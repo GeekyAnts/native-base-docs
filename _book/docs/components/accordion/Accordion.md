@@ -103,13 +103,13 @@ export default {
         </tr>
         <tr>
             <td>icon</td>
-            <td>arrow-up</td>
+            <td>arrow-down</td>
             <td>user-defined</td>
             <td>Icon when accordion is closed</td>
         </tr>
         <tr>
             <td>expandedIcon</td>
-            <td>arrow-down</td>
+            <td>arrow-up</td>
             <td>user-defined</td>
             <td>Icon when accordion is open</td>
         </tr>
@@ -136,18 +136,6 @@ export default {
             <td> - </td>
             <td> - </td>
             <td>Custom design of Accordion content</td>
-        </tr>
-        <tr>
-            <td>onAccordionOpen</td>
-            <td> Function </td>
-            <td> - </td>
-            <td>Callback that is executed when Accordion is opened. It provides two additional metadata: item and index </td>
-        </tr>
-        <tr>
-            <td>onAccordionClose</td>
-            <td> Function </td>
-            <td> - </td>
-            <td>Callback that is executed when Accordion is closed. It provides two additional metadata: item and index </td>
         </tr>
         </tbody>
     </table><br />
