@@ -16,11 +16,9 @@ export default class DrawerExample extends Component {
   closeDrawer () => {
     this.drawer._root.close()
   };
-  
   openDrawer () => {
     this.drawer._root.open()
   };
-
   render() {
     return (
       &lt;Drawer
@@ -90,4 +88,3 @@ export default class DrawerExample extends Component {
             </tr>
         </tbody>
     </table><br />
-
