@@ -161,6 +161,14 @@ export default {
     </thead>
     <tbody>
         <tr>
+            <td>disabled(only for Tab)</td>
+            <td> false </td>
+            <td> boolean </td>
+            <td>
+               Disables click option for tab
+            </td>
+        </tr>
+        <tr>
             <td>heading(only for Tab)</td>
             <td> - </td>
             <td> string </td>

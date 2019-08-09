@@ -137,5 +137,17 @@ export default {
             <td> - </td>
             <td>Custom design of Accordion content</td>
         </tr>
+        <tr>
+        <td>onAccordionOpen</td>
+            <td> Function </td>
+            <td> - </td>
+            <td>Callback that is executed when Accordion is opened. It provides two additional metadata: item and index </td>
+        </tr>
+        <tr>
+            <td>onAccordionClose</td>
+            <td> Function </td>
+            <td> - </td>
+            <td>Callback that is executed when Accordion is closed. It provides two additional metadata: item and index </td>
+        </tr>
         </tbody>
     </table><br />

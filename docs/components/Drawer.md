@@ -88,4 +88,3 @@ export default class DrawerExample extends Component {
             </tr>
         </tbody>
     </table><br />
-
