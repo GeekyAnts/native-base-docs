@@ -1,5 +1,6 @@
 ## swipeable-single-def-headref
-#### SwipeRow
+#### SwipeRow (removed)
+We recommend [react-native-swipe-list-view](https://github.com/jemise111/react-native-swipe-list-view) instead.
 
 Single Swipeable ListItem (Outside List)
 
