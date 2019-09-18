@@ -45,13 +45,17 @@
                     <td>v0.46.0 and above</td>
                 </tr>
                 <tr>
-                    <td>v2.3.0 and above</td>
+                    <td>v2.3.0 to 2.6.1</td>
                     <td>
                         v0.46.0 and above
                         <font size="1">
                             <i>(does not support React 16.0.0-alpha.13)</i>
                         </font>
                     </td>
+                </tr>
+                <tr>
+                    <td>v2.7.0</td>
+                    <td>v0.56.0 and above</td>
                 </tr>
             </tbody>
         </table><br />
