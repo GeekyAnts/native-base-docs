@@ -26,6 +26,7 @@ export default class DatePickerExample extends Component {
         <Header />
         <Content>
           <DatePicker
+            formatChosenDate={date => return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();}
             defaultDate={new Date(2018, 4, 4)}
             minimumDate={new Date(2018, 1, 1)}
             maximumDate={new Date(2018, 12, 31)}
@@ -144,7 +145,13 @@ export default {
               <td> - </td>
               <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
               <td>Allows the modal to rotate to any of the specified orientations</td>
-      </tr>
+          </tr>
+          <tr>
+              <td>formatChosenDate</td>
+              <td>date</td>
+              <td>string</td>
+              <td>Customizes the text displayed instead of the default date.</td>
+          </tr>
         </tbody>
     </table>
       <p>
