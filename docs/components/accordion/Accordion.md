@@ -149,5 +149,11 @@ export default {
             <td> - </td>
             <td>Callback that is executed when Accordion is closed. It provides two additional metadata: item and index </td>
         </tr>
+        <tr>
+            <td>setSelected</td>
+            <td> Function </td>
+            <td> - </td>
+            <td>Function to set the accondion open. Uset setSelected(-1) to close all. </td>
+        </tr>
         </tbody>
     </table><br />
