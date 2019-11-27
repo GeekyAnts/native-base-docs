@@ -13,12 +13,12 @@ Replacing Component: [React Native Drawer](https://github.com/root-two/react-nat
 import { Drawer } from 'native-base';
 import SideBar from './yourPathToSideBar';
 export default class DrawerExample extends Component {
-  closeDrawer () => {
-    this.drawer._root.close()
-  };
-  openDrawer () => {
-    this.drawer._root.open()
-  };
+  closeDrawer() {
+    this.drawer._root.close();
+  }
+  openDrawer() {
+    this.drawer._root.open();
+  }
   render() {
     return (
       &lt;Drawer
