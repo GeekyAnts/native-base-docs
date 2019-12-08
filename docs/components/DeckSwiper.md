@@ -20,7 +20,7 @@ const cards = [
     name: 'One',
     image: require('./img/swiper-1.png'),
   },
-  .  .  .
+  ...
 ];
 export default class DeckSwiperExample extends Component {
   render() {
@@ -212,14 +212,14 @@ Swipe Deck with callback function.
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon, Button } from 'native-base';
 const cards = [
   {
     text: 'Card One',
     name: 'One',
     image: require('./img/swiper-1.png'),
   },
-  .  .  .
+  ...
 ];
 export default class DeckSwiperAdvancedExample extends Component {
   render() {
@@ -263,8 +263,8 @@ export default class DeckSwiperAdvancedExample extends Component {
             <Text>Swipe Left</Text>
           </Button>
           <Button iconRight onPress={() => this._deckSwiper._root.swipeRight()}>
-            <Icon name="arrow-forward" />
             <Text>Swipe Right</Text>
+            <Icon name="arrow-forward" />
           </Button>
         </View>
       </Container>
