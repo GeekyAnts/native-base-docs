@@ -1,3 +1,4 @@
+docs/Compatibility.md
 # NativeBase Compatibility Modes
 
 <table width="80%" class="table table-hover">
