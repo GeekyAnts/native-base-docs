@@ -1,3 +1,4 @@
+docs/Contribute.md
 # Contributing to NativeBase
 
 Thank you for your interest in contributing to the [NativeBase](https://nativebase.io/) project!
