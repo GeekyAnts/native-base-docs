@@ -1,3 +1,4 @@
+Components.md
 {% include "./docs/components/README.md" %}
 {% include "./docs/components/Anatomy.md" %}
 {% include "./docs/components/accordion/Accordion.md" %}
