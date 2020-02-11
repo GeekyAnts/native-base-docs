@@ -64,5 +64,11 @@ export default class SpinnerExample extends Component {
                 <td>user-defined</td>
                 <td>Color of Spinner</td>
             </tr>
+          <tr>
+                <td>inverse</td>
+                <td>false</td>
+                <td>boolean</td>
+                <td>Applies variable `inverseSpinnerColor` if true.</td>
+            </tr>
         </tbody>
     </table><br />
