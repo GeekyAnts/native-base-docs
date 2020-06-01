@@ -3,6 +3,7 @@
 
 Perfect, crisp, high definition icons and pixel ideal fonts powered by <a href="https://nativebase.io/">NativeBase</a> to preserve matters very high first-rate. You will continually have pixel perfect icons on your initiatives.<br />
 Here is a repo that lists down icons of available `react-native-vector-icons` icon families. [Repo](https://github.com/GeekyAnts/NativeBase-VectorIconApp)<br />
+**Note:** Follow the installation steps from the `react-native-vector-icons` library if the icons show up as boxes with crosses in them.
 
 *Uses Ionicons from [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)*
 
