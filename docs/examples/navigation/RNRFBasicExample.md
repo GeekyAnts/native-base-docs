@@ -46,8 +46,8 @@ import PageTwo from './pageTwo';
 export default class App extends Component {
   render() {
     return (
-      &lt;Router hideNavBar= "true">
-        &lt;Scene key="root">
+      &lt;Router>
+        &lt;Scene hideNavBar= "true" key="root">
           &lt;Scene key="pageOne" component={PageOne} title="PageOne" initial={true} />
           &lt;Scene key="pageTwo" component={PageTwo} title="PageTwo" />
         &lt;/Scene>
