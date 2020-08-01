@@ -20,10 +20,10 @@ export default class SearchBarExample extends Component {
             <Icon name="ios-search" />
             <Input placeholder="Search" />
             <Icon name="ios-people" />
+            <Button transparent>
+              <Text>Search</Text>
+            </Button>
           </Item>
-          <Button transparent>
-            <Text>Search</Text>
-          </Button>
         </Header>
       </Container>
     );
