@@ -17,7 +17,7 @@ const dataArray = [
 ];
 
 export default class AccordionCustomHeaderContent extends Component {
-  _renderHeader(item, expanded) {
+  _renderHeader(item, expanded, index) {
     return (
       {% raw %}<View style={{
         flexDirection: "row",
@@ -34,7 +34,7 @@ export default class AccordionCustomHeaderContent extends Component {
       </View>
     );
   }
-  _renderContent(item) {
+  _renderContent(item, index) {
     return (
       {% raw %}<Text
         style={{
