@@ -25,7 +25,7 @@ cd AwesomeNativeBase
 *Install NativeBase*
 
 ```js
-npm install native-base --save
+npm install native-base --save / yarn add native-base --save
 ```
 
 *Install Peer Dependencies*<br />
