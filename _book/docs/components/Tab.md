@@ -6,8 +6,8 @@ They are much similar to <code>FooterTabs</code>.
   [React Native](https://facebook.github.io/react-native/)
   [<code>&lt;View></code>](https://facebook.github.io/react-native/docs/view.html)*
 
-![Preview ios Tab_Default](https://docs.nativebase.io/docs/assets/ios/components/tabs.gif)
-![Preview android Tab_Default](https://docs.nativebase.io/docs/assets/android/components/tabs.gif)
+![Preview ios Tab_Default](https://docs-v2.nativebase.io/docs/assets/ios/components/tabs.gif)
+![Preview android Tab_Default](https://docs-v2.nativebase.io/docs/assets/android/components/tabs.gif)
 
 *Syntax*
 

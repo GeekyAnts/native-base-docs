@@ -10,9 +10,9 @@
     <thead>
       <tr style="border-style: hidden">
         <th style="border-style: hidden;">
-          <div style="background: url(https://docs.nativebase.io/docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('https://docs.nativebase.io/docs/assets/ios/components/header.png')}}" alt="" /></div></th>
+          <div style="background: url(https://docs-v2.nativebase.io/docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('https://docs-v2.nativebase.io/docs/assets/ios/components/header.png')}}" alt="" /></div></th>
         <th>
-          <div style="background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img src="{{('https://docs.nativebase.io/docs/assets/android/components/header.png')}}" alt="" width="266px" height="490px" /></div></th>
+          <div style="background: url(https://docs-v2.nativebase.io/docs/assets/android.png) no-repeat; padding: 45px 118px 68px 0px; background-size: 292px 576px;"><img src="{{('https://docs-v2.nativebase.io/docs/assets/android/components/header.png')}}" alt="" width="266px" height="490px" /></div></th>
       </tr>
     </thead>
   </table>

@@ -4,8 +4,8 @@
 A center aspect designed for efficient representation of vertically scrolling lists of changing data. This can be achieved with the concept of <b>dataArray</b>.<br />
 Create a <code>Card dataArray</code>, populate it with an easy array of data chunks, and instantiate a <code>CardItem</code> component with that chunk of data and a <code>renderRow</code> callback which takes a chunk from the whole data array and returns a renderable component.
 
-![Preview ios Dynamic_Card](https://docs.nativebase.io/docs/assets/ios/components/dynamic-card.png)
-![Preview android Dynamic_Card](https://docs.nativebase.io/docs/assets/android/components/dynamic-card.png)
+![Preview ios Dynamic_Card](https://docs-v2.nativebase.io/docs/assets/ios/components/dynamic-card.png)
+![Preview android Dynamic_Card](https://docs-v2.nativebase.io/docs/assets/android/components/dynamic-card.png)
 
 *Syntax*
 

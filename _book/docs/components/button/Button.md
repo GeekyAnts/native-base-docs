@@ -59,7 +59,7 @@ export default class ButtonExample extends Component {
 * NativeBase gives you privilege to customize the props of this component.<br />
   *Example*: To have custom style for button, include them in <code>style</code> prop of button.
 * Intakes user-defined styles.
-* You can change the default button text case(in Android) from variables file after [ejecting](http://docs.nativebase.io/Customize.html#theaming-nb-headref).
+* You can change the default button text case(in Android) from variables file after [ejecting](http://docs-v2.nativebase.io/Customize.html#theaming-nb-headref).
 * NativeBase has provided its users with enormous list of <code>props</code> that can be used with Button.
 * Replacing Component:
     -   React Native [TouchableOpacity](https://facebook.github.io/react-native/docs/touchableopacity.html) for iOS
@@ -189,7 +189,7 @@ export default class ButtonExample extends Component {
     </tbody>
 </table>
 <p>
-    <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
+    <div id="" class="mobileDevice" style="background: url(&quot;https://docs-v2.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
         <img src="https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/v2.6.1/screenshots/ios/buttons.png" alt="" style="display:block !important" />
     </div>
 </p>

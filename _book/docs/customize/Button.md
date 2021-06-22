@@ -101,4 +101,4 @@ export default class ThemeButtonExample extends Component {
   }
 }</code></pre><br />
 
-**Note:** To customise button theme, refer [Theme Color](https://docs.nativebase.io/Customize.html#theme-color-headref)
+**Note:** To customise button theme, refer [Theme Color](https://docs-v2.nativebase.io/Customize.html#theme-color-headref)

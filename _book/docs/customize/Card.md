@@ -7,7 +7,7 @@ Steps to customize theme for Card attributes:
 <table>
   <thead>
     <tr style="border-style: hidden">
-      <th style="border-style: hidden"><div style="background: url(https://docs.nativebase.io/docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('https://docs.nativebase.io/docs/assets/ios/guide/theme-card.png')}}" alt="" /></div></th>
+      <th style="border-style: hidden"><div style="background: url(https://docs-v2.nativebase.io/docs/assets/iphone.png) no-repeat; padding: 63px 20px 100px 18px; width: 292px"><img src="{{('https://docs-v2.nativebase.io/docs/assets/ios/guide/theme-card.png')}}" alt="" /></div></th>
     </tr>
   </thead>
 </table>

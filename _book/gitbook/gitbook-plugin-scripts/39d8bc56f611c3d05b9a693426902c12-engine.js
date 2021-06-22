@@ -86,7 +86,7 @@ andBut.onclick= function(){
 // Style anchor and its chilren
 anchor.id= "anchor";
   anchor.style= "position: fixed; right: 50px;top: 78px;";
-anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
+anchorContainer.style= "background: url(https://docs-v2.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 18px; width: 292px; height: 600px;";
 anchorContainer.id= "anchorContainer";
 anchorImage.id= "anchorImage";
 anchorImage.src='';
@@ -123,9 +123,9 @@ setInterval(function(){
     anchor.style= "position: fixed; right: 50px;top: 80px; width:150px;display:none !important ";
 
     // if(androidSelected){
-    //   anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 30px 0px 20px 10px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
+    //   anchorContainer.style= "background: url(https://docs-v2.nativebase.io/docs/assets/android.png) no-repeat; padding: 30px 0px 20px 10px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
     // } else if(!androidSelected){
-    //   anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 30px 10px 20px 15px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
+    //   anchorContainer.style= "background: url(https://docs-v2.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 30px 10px 20px 15px; width: 150px; height: 300px; background-position:center;text-align:center;margin:0 auto; background-size:100%"
     // }
 
    
@@ -151,9 +151,9 @@ setInterval(function(){
   if(currentWidth > 830){
 
   if(androidSelected){
-    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
+    anchorContainer.style= "background: url(https://docs-v2.nativebase.io/docs/assets/android.png) no-repeat; padding: 42px 0px 68px 10px; width: 292px; height: 600px;"
   } else if(!androidSelected){
-    anchorContainer.style= "background: url(https://docs.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
+    anchorContainer.style= "background: url(https://docs-v2.nativebase.io/docs/assets/iosphone.png) no-repeat;padding: 63px 20px 100px 15px; width: 292px; height: 600px;";
   }
 }
 
