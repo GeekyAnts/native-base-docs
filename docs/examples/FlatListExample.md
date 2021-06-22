@@ -18,7 +18,7 @@ $ cd my-app/
 $ npm start</code></pre>
 
 2. **NativeBase** <br />
-<pre><code>npm install native-base --save</code></pre>
+<pre><code>npm install native-base@2 --save</code></pre>
 
 3. **Configure dependencies**<br />
 <pre><code>react-native link</code></pre>

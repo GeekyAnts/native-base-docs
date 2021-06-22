@@ -19,7 +19,7 @@ $ npm start</code></pre>
 a. **React Navigation** <br />
 <pre><code>npm install --save react-navigation</code></pre>
 b. **NativeBase** <br />
-<pre><code>npm install native-base --save</code></pre>
+<pre><code>npm install native-base@2 --save</code></pre>
 c. **Configure dependencies** <br />
 <pre><code>react-native link</code></pre>
 By the end of Installation, your package.json file should look something like this.<br />

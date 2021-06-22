@@ -17,7 +17,7 @@ With a React Native project SetUp, We can now install all required Libraries as 
 a. **React Native Router Flux**<br />
 <pre><code>npm install react-native-router-flux --save</code></pre><br />
 b. **NativeBase**<br />
-<pre><code>npm install native-base --save</code></pre><br />
+<pre><code>npm install native-base@2 --save</code></pre><br />
 c. **Configure dependencies**<br />
 <pre><code>react-native link</code></pre><br />
 

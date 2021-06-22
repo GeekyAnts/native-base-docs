@@ -19,7 +19,7 @@ a. **Redux** and **react-redux** <br />
 b. **React Native Router Flux** <br />
 <pre><code>npm install react-native-router-flux --save</code></pre> <br />
 c. **NativeBase** <br />
-<pre><code>npm install native-base --save</code></pre> <br />
+<pre><code>npm install native-base@2 --save</code></pre> <br />
 d. **Configure dependencies** <br />
 <pre><code>react-native link</code></pre> <br />
 By the end of Installation, your package.json file should look something like this.<br />

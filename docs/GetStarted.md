@@ -25,7 +25,7 @@ cd AwesomeNativeBase
 *Install NativeBase*
 
 ```js
-npm install native-base --save
+npm install native-base@2 --save
 ```
 
 *Install Peer Dependencies*<br />
@@ -53,7 +53,7 @@ Refer this link for additional information on [Expo](https://docs.expo.io/)
 
 *Install NativeBase*
 ```js
-yarn add native-base --save
+yarn add native-base@2 --save
 ```
 
 NativeBase use some custom fonts that can be loaded using **Font.loadAsync** function. Check out the [Expo Font documentation](https://docs.expo.io/versions/latest/sdk/font/).
@@ -121,7 +121,7 @@ Find the [KitchenSink repo here](https://github.com/GeekyAnts/NativeBase-Kitchen
 npm install -g create-react-app
 npx create-react-app nativebase-app
 cd nativebase-app
-npm i native-base react-art react-native-web --save
+npm i native-base@2 react-art react-native-web --save
 npm i react-app-rewired customize-cra @babel/plugin-proposal-class-properties --dev --save
 ```
 
@@ -207,7 +207,7 @@ cd AwesomeNativeBase
 *Install NativeBase*
 
 ```js
-npm install native-base --save
+npm install native-base@2 --save
 ```
 
 *Register NativeBase components*

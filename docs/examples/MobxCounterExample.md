@@ -33,7 +33,7 @@ Now, let’s create a .babelrc file to configure our babel plugins: <br />
 ```
 
 5. **NativeBase** <br />
-<pre><code>npm install native-base --save</pre>
+<pre><code>npm install native-base@2 --save</pre>
 
 6. **Configure dependencies** <br />
 <pre><code>react-native link</pre>

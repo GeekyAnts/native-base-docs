@@ -19,7 +19,7 @@ In your terminal enter the following <br />
 b. **redux-form** <br />
 <pre><code>npm install --save redux-form</code></pre> <br />
 c. **NativeBase** <br />
-<pre><code>npm install native-base --save</code></pre> <br />
+<pre><code>npm install native-base@2 --save</code></pre> <br />
 **Configure all dependencies by running the following command** <br />
 <pre><code>react-native link</code></pre> <br />
 

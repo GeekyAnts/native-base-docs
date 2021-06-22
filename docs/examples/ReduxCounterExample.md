@@ -19,7 +19,7 @@ a. **Redux** and **react-redux** <br />
 In your terminal enter the following <br />
 <pre><code>npm install redux react-redux --save</pre><br />
 b. **NativeBase** <br />
-<pre><code>npm install native-base --save</pre> <br />
+<pre><code>npm install native-base@2 --save</pre> <br />
 c. **Configure dependencies** <br />
 <pre><code>react-native link</pre> <br />
 By the end of Installation, your package.json file should look something like this.<br />
