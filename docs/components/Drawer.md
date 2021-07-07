@@ -13,22 +13,22 @@ Replacing Component: [React Native Drawer](https://github.com/root-two/react-nat
 import { Drawer } from 'native-base';
 import SideBar from './yourPathToSideBar';
 export default class DrawerExample extends Component {
-  closeDrawer () => {
-    this.drawer._root.close()
-  };
-  openDrawer () => {
-    this.drawer._root.open()
-  };
-  render() {
-    return (
-      &lt;Drawer
-        ref={(ref) => { this.drawer = ref; }}
-        content={&lt;SideBar navigator={this.navigator} />}
-        onClose={() => this.closeDrawer()} >
-      // Main View
-      &lt;/Drawer>
-    );
-  }
+    closeDrawer = () =&gt; {
+        this.drawer._root.close()
+    };
+    openDrawer = () =&gt; {
+        this.drawer._root.open()
+    };
+    render() {
+        return (
+            &lt;Drawer
+                ref={(ref) =&gt; { this.drawer = ref; }}
+                content={&lt;SideBar navigator={this.navigator} /&gt;}
+                onClose={() =&gt; this.closeDrawer()} &gt;
+            // Main View
+            &lt;/Drawer&gt;
+        );
+    }
 }</code></pre>
  <p>
     <div id="" class="mobileDevice" style="background: url(&quot;https://docs.nativebase.io/docs/assets/iosphone.png&quot;) no-repeat; padding: 63px 20px 100px 15px; width: 292px; height: 600px;margin:0 auto;float:none;">
