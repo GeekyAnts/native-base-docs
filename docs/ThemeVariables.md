@@ -612,7 +612,7 @@ Cheatsheet use values from `native-base-theme/variables/platform.js`
         </tr>
         <tr>
             <td>toolbarInputColor</td>
-            <td>number</td>
+            <td>color</td>
             <td>Input color of header</td>
             <td>#CECDD2</td>
             <td>#fff</td>
