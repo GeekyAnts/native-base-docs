@@ -13,7 +13,7 @@ Include `picker` prop with `<Item>` to have picker type of input field.
 import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Picker } from 'native-base';
 export default class PickerInputExample extends Component {
-    constructor(props) {
+  constructor(props) {
     super(props);
     this.state = {
       selected2: undefined
