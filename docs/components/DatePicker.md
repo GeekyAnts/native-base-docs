@@ -144,7 +144,13 @@ export default {
               <td> - </td>
               <td> Portrait, Landscape, Landscape-left, Landscape-right </td>
               <td>Allows the modal to rotate to any of the specified orientations</td>
-      </tr>
+          </tr>
+          <tr>
+            <td>formatChosenDate(date)</td>
+            <td> - </td>
+            <td>Function</td>
+            <td>Returns the date in the format specified</td>
+          </tr>
         </tbody>
     </table>
       <p>
