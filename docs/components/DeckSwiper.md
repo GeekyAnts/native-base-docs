@@ -212,7 +212,7 @@ Swipe Deck with callback function.
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon, Button } from 'native-base';
 const cards = [
   {
     text: 'Card One',
