@@ -10,7 +10,7 @@ The <code>transparent</code> prop of Header removes border, shadow from iOS Head
 
 {% codetabs name="React Native", type="js" -%}
 import React, { Component } from "react";
-import { Container, Header, Title, Content, Button, Icon, Left, Body, Text } from "native-base";
+import { Container, Header, Title, Content, Button, Icon, Left, Body, Text, Right } from "native-base";
 export default class HeaderTransparent extends Component {
   render() {
     return (
